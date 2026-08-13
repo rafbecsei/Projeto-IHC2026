@@ -17,19 +17,20 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 
 ## Identificação
 
-**Título do projeto de IHC:** {{TÍTULO DO PROJETO}}  
-**TCC/projeto de origem:** {{TÍTULO ORIGINAL DO TCC}}  
-**Orientador(a):** {{NOME}}  
+**Título do projeto:** {{TÍTULO DO PROJETO}}  
+**TCC/projeto de origem:** {{TÍTULO ORIGINAL DO TCC, SE HOUVER}}  
+**Orientador(a):** Rafael Gomes Alves  
 **Disciplina:** Interação Humano-Computador  
-**Instituição:** {{INSTITUIÇÃO}}  
-**Semestre:** {{ANO/SEMESTRE}}
+**Instituição:** Fundação Educacional Inaciana Padre Sabóia de Medeiros  
+**Semestre:** 2026/2º
 
 ### Equipe
 
 | Nome completo | Matrícula | GitHub | Responsabilidade principal |
 |---|---:|---|---|
-| {{Nome 1}} | {{matrícula}} | {{@usuario}} | {{...}} |
-| {{Nome 2}} | {{matrícula}} | {{@usuario}} | {{...}} |
+| Eric Song Watanabe | 22.125.086-3 | @EricSongWatanabe | {{...}} |
+| Rafael Iamashita Becsei | 22.225.037-5 | @rafbecsei | {{...}} |
+| Victor Pimentel Lario | 22.125.064-0 | @VictorPimentelLario | {{...}} |
 
 ## Relação entre TCC e projeto de IHC
 

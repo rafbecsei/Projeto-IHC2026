@@ -131,9 +131,9 @@ F - As pessoas estarão melhor informadas e poderão evitar passar por situaçõ
 
 ## 2.1 Quem interage diretamente com o produto, se já existe interface prevista?
 
-Se não houver interface prevista no TCC, escreva `NÃO SE APLICA AO ESCOPO ORIGINAL` e prossiga para 2.2.
+H - Usuários interessados em consultar o risco de alagamentos e inundações em regiões da cidade de São Paulo poderão interagir diretamente com a interface, visualizando informações e estimativas de risco geradas pelo sistema.
 
-{{[F/H/?] ...}}
+H - A interface também poderá ser utilizada por profissionais ou agentes envolvidos com monitoramento e prevenção de eventos hidrológicos, caso a solução seja adequada às necessidades desses públicos.
 
 ## 2.2 Quem poderia **usar, configurar, administrar, operar, interpretar ou tomar decisões** a partir da contribuição técnica?
 
@@ -141,21 +141,22 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 | Perfil | Relação com a contribuição | O que faria | Status/evidência |
 |---|---|---|---|
-| {{DBA / analista / gestor / técnico / pesquisador / usuário final...}} | {{...}} | {{...}} | F / H / ? |
+| Usuário final | Consulta direta da interface | Visualizaria estimativas de risco de alagamento/inundação por região e poderia usar essa informação para decidir deslocamentos ou evitar áreas de maior risco | H - Público previsto, mas ainda não validado com usuários reais |
+| Agente da Defesa Civil | Uso das previsões como apoio operacional | Interpretaria níveis de risco e poderia priorizar monitoramento, alerta ou atenção a determinadas regiões | H - Aplicação plausível, mas ainda não validada institucionalmente |
+| Desenvolvedor / administrador do sistema | Manutenção da aplicação e pipeline | Integraria novas bases, manteria o banco de dados, pipeline geoespacial, modelos e interface | F - Necessário para operação técnica da solução
 
 ## 2.3 Existem pessoas afetadas que não usariam a interface diretamente?
 
 | Stakeholder | Como é afetado | Usa interface? | Status/evidência |
 |---|---|---|---|
-| {{...}} | {{...}} | sim/não | {{...}} |
+| Motoristas e usuários do transporte urbano | Poderiam ser afetados por mudanças de rota, bloqueios ou alertas em áreas de risco | Não | H - Impacto plausível em situações de evento |
+| Instituições de pesquisa e universidades | Poderiam utilizar metodologia, dados processados ou resultados em estudos futuros | Não | H - Aplicação acadêmica potencial |
 
 ## 2.4 Que características desses perfis podem influenciar a interação?
 
 Considere conhecimento do domínio, experiência tecnológica, frequência de uso, necessidades de acessibilidade, responsabilidade profissional, familiaridade com métricas, linguagem técnica, urgência etc.
 
-{{[F/H/?] ...}}
-
----
+H - As principais características que podem influenciar a interação são o nível de conhecimento técnico e a familiaridade com informações de risco, mapas e probabilidades, já que usuários finais podem precisar de uma apresentação mais simples e visual, enquanto perfis técnicos ou profissionais podem demandar informações mais detalhadas para interpretação e tomada de decisão.
 
 # 3. Entendendo objetivos e atividades
 
@@ -163,23 +164,23 @@ Considere conhecimento do domínio, experiência tecnológica, frequência de us
 
 Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashboard”.
 
-{{[F/H/?] ...}}
+H - Obter informações antecipadas sobre o risco de alagamentos e inundações em determinada região, permitindo maior planejamento e prevenção diante de possíveis eventos.
 
 ## 3.2 Quais são as atividades mais importantes?
 
 | ID | Atividade/objetivo | Quem realiza | Frequência/criticidade inicial | Status/evidência |
 |---|---|---|---|---|
-| A01 | {{...}} | {{...}} | {{...}} | {{...}} |
-| A02 | {{...}} | {{...}} | {{...}} | {{...}} |
-| A03 | {{...}} | {{...}} | {{...}} | {{...}} |
+| A01 | Consultar o risco de alagamento em determinada região | Usuário final | Alta frequência | H |
+| A02 | Planejar deslocamentos ou ações preventivas com base no risco apresentado | Usuário final | Alta criticidade | H |
+| A03 | Interpretar informações de risco para apoiar decisões de monitoramento e prevenção | Profissionais/órgãos responsáveis | Alta criticidade | H |
 
 ## 3.3 Qual atividade parece mais frequente? Por quê?
 
-{{[F/H/?] ...}}
+H - A consulta do risco de alagamento por região parece ser a atividade mais frequente, pois representa a principal forma de obtenção das informações necessárias para as demais ações do usuário.
 
 ## 3.4 Qual parece mais crítica? Que consequência existe se for mal executada?
 
-{{[F/H/?] ...}}
+H - A interpretação das informações de risco parece ser a atividade mais crítica, pois uma interpretação incorreta pode levar a decisões inadequadas, como realizar um deslocamento por uma região com risco elevado ou deixar de adotar medidas preventivas.
 
 ---
 
@@ -189,31 +190,33 @@ Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashbo
 
 Pode existir software concorrente, linha de comando, planilha, notebook, script, painel técnico, processo manual, consulta a logs, análise visual, troca de mensagens, decisão por especialista etc.
 
-{{[F/H/?] ...}}
+F - Atualmente, informações relacionadas a chuvas, alagamentos e áreas de risco são consultadas em diferentes fontes, como portais públicos, mapas, sistemas de monitoramento e alertas meteorológicos, exigindo que o usuário interprete essas informações separadamente para avaliar uma situação de risco.
 
 ## 4.2 O que é difícil, demorado, confuso, repetitivo, arriscado ou pouco transparente?
 
-{{[F/H/?] ...}}
+H - A dispersão das informações em diferentes fontes pode dificultar a interpretação rápida do risco, principalmente para usuários sem conhecimento técnico sobre dados meteorológicos e hidrológicos.
 
 ## 4.3 Que informações o profissional precisa interpretar para tomar decisão?
 
-{{[F/H/?] ...}}
+H - Profissionais podem precisar considerar informações como intensidade e acúmulo de chuva, localização das ocorrências, características das áreas de risco e condições geográficas da região para avaliar a possibilidade de um evento e definir ações preventivas.
 
 ## 4.4 O que acontece quando a atividade falha ou quando o resultado é interpretado incorretamente?
 
-{{[F/H/?] ...}}
+H - Uma avaliação incorreta do risco pode resultar na ausência ou atraso de ações preventivas, exposição de pessoas a regiões potencialmente perigosas ou priorização inadequada de áreas para monitoramento.
 
 ## 4.5 Conte uma situação concreta.
 
 Escreva uma pequena narrativa com pessoa, objetivo, atividade, contexto, dificuldade e consequência. **Não descreva ainda a futura solução.**
 
-{{[F/H/?] narrativa...}}
+[H] Em um período de chuva intensa, uma pessoa precisa se deslocar pela cidade e deseja avaliar se determinada região apresenta risco de alagamento. Para isso, consulta diferentes fontes de informações meteorológicas e de ocorrências, mas encontra dificuldade para relacionar a intensidade da chuva com o risco específico daquela região. Essa dificuldade pode levar à escolha de um trajeto que passe por uma área suscetível a alagamentos.
 
 ## 4.6 Que evidência existe hoje?
 
 | Evidência/fonte | O que sustenta | Limitação |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Bases públicas utilizadas no TCC, como dados geoespaciais do GeoSampa e dados meteorológicos | F - Existem diferentes informações relevantes para análise de alagamentos, incluindo ocorrências, risco hidrológico, características geográficas e precipitação | A existência dos dados não comprova, por si só, como os usuários atualmente os consultam ou quais dificuldades enfrentam |
+| Literatura e referências utilizadas no TCC | F - Alagamentos urbanos constituem um problema relevante e fatores meteorológicos, hidrológicos e geográficos estão relacionados à sua ocorrência | Não valida diretamente as necessidades dos usuários da interface proposta |
+| Entrevistas/testes com potenciais usuários | ? - Poderiam validar dificuldades, necessidades e formas atuais de tomada de decisão | Ainda não realizados |
 
 ---
 

@@ -1,7 +1,7 @@
 # Entrega 1 — Conhecendo o projeto, o usuário e o problema
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** 19/08/2026
+**Status:** 🟨 Em andamento
 **Responsabilidade:** 1 solução consolidada por equipe
 
 ## Objetivo da atividade
@@ -57,23 +57,26 @@ Uma hipótese explicitada é melhor do que uma suposição escondida.
 
 ## 0.1 Membros
 
-| Nome completo | Matrícula | GitHub |
-|---|---:|---|
-| {{...}} | {{...}} | {{...}} |
+| Nome completo | Matrícula | GitHub
+|---|---:|---|---|
+| Eric Song Watanabe | 22.125.086-3 | @EricSongWatanabe
+| Rafael Iamashita Becsei | 22.225.037-5 | @rafbecsei
+| Victor Pimentel Lario | 22.125.064-0 | @VictorPimentelLario
+| Henrique Hodel Babler | 22.125.084-8 | @Babler05
 
 ## 0.2 Título atual do TCC
 
-{{...}}
+Estimativa de Risco de Alagamentos e Inundações Urbanas em São Paulo por meio de Dados Geoespaciais e Aprendizado de Máquina.
 
 ## 0.3 Orientador(a)
 
-{{...}}
+Rafael Gomes Alves
 
 ## 0.4 Qual é o resultado principal atualmente previsto no TCC?
 
 Marque e descreva:
 
-- [ ] sistema/aplicação interativa;
+- [X] sistema/aplicação interativa;
 - [ ] algoritmo;
 - [ ] modelo de IA/ML/LLM;
 - [ ] biblioteca/API/framework;
@@ -83,15 +86,15 @@ Marque e descreva:
 - [ ] componente embarcado/IoT;
 - [ ] outro: {{...}}.
 
-**Descrição:** {{...}}
+**Descrição:** O resultado previsto será uma ferramenta interativa para visualização e identificação de áreas com risco de inundação.
 
 ## 0.5 O TCC já previa desenvolvimento de interface com usuário?
 
-- [ ] Sim, a interface já faz parte do TCC.
+- [X] Sim, a interface já faz parte do TCC.
 - [ ] Parcialmente; existe alguma interação, mas ainda não está bem definida.
 - [ ] Não. O TCC é predominantemente técnico e não previa interface.
 
-**Explique o que está formalmente previsto no TCC:** {{...}}
+**Explique o que está formalmente previsto no TCC:** Uma interface para visualização de áreas com alagamentos e futuros riscos (alertas).
 
 > Esta resposta serve para separar o compromisso do TCC do projeto da disciplina. Mesmo quando a opção for **não**, a equipe irá definir uma interface para exercitar IHC.
 
@@ -101,31 +104,26 @@ Marque e descreva:
 
 ## 1.1 Explique o TCC em uma frase, sem citar linguagem de programação, framework ou banco de dados.
 
-{{...}}
+Interpretação de ocorrências de alagamentos e inundações em São Paulo para estimar futuros casos na cidade.
 
 ## 1.2 Qual situação, atividade ou problema do mundo real motivou o TCC?
 
-{{[F/H/?] ...}}
+F - O TCC é motivado pelos alagamentos e enchentes recorrentes em São Paulo, que travam a mobilidade urbana, causam prejuízos bilionários e geram riscos à vida.
 
 ## 1.3 Qual é a **capacidade/contribuição central** produzida pelo TCC?
 
-Complete, se ajudar:
-
-> “Nosso TCC produz, melhora, analisa ou permite `{{capacidade}}`.”
-
-Exemplos: otimizar consultas; classificar imagens; detectar anomalias; comparar modelos; identificar padrões; prever demanda; analisar desempenho; gerar resumos; recomendar configurações.
-
-{{...}}
+Nosso TCC permite prever pontos críticos de alagamento urbanos por meio do cruzamento de dados geoespaciais e algoritmos de aprendizado de máquina.
 
 ## 1.4 O que se espera que esteja diferente **para pessoas, organizações ou processos** se essa contribuição for bem-sucedida?
 
-{{[F/H/?] ...}}
+F - As pessoas estarão melhor informadas e poderão evitar passar por situações que coloque elas e seus bens em risco. Organizações também terão acesso a mais uma ferramenta para auxiliar na predição de inundações e alagamentos.
 
 ## 1.5 O que é mérito técnico/científico do TCC e o que seria uma possível aplicação prática?
 
 | Mérito/contribuição técnica | Possível aplicação/valor em uso |
 |---|---|
-| {{...}} | {{...}} |
+| O algoritmo de Machine Learning avalia instantaneamente se a chuva simulada causará transbordamentos em pontos específicos da cidade. | Manter os usuários informados em tempo real através da tela de output, disparando avisos visuais no mapa para que evitem vias perigosas e protejam seus bens e sua integridade física.
+| Capacidade do modelo de IA de segmentar a cidade de São Paulo em níveis de vulnerabilidade altamente específicos. | Geração de um mapa dinâmico e visual para a Defesa Civil, permitindo rotas de fuga automáticas e emissão de alertas preventivos à população antes do início do temporal. |
 
 ---
 

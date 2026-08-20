@@ -57,12 +57,12 @@ Uma hipótese explicitada é melhor do que uma suposição escondida.
 
 ## 0.1 Membros
 
-| Nome completo | Matrícula | GitHub
-|---|---:|---|---|
-| Eric Song Watanabe | 22.125.086-3 | @EricSongWatanabe
-| Rafael Iamashita Becsei | 22.225.037-5 | @rafbecsei
-| Victor Pimentel Lario | 22.125.064-0 | @VictorPimentelLario
-| Henrique Hodel Babler | 22.125.084-8 | @Babler05
+| Nome completo | Matrícula | GitHub |
+|---|---|---|---|
+| Eric Song Watanabe | 22.125.086-3 | @EricSongWatanabe |
+| Rafael Iamashita Becsei | 22.225.037-5 | @rafbecsei |
+| Victor Pimentel Lario | 22.125.064-0 | @VictorPimentelLario |
+| Henrique Hodel Babler | 22.125.084-8 | @Babler05 |
 
 ## 0.2 Título atual do TCC
 

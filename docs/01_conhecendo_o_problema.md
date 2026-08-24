@@ -224,31 +224,31 @@ Escreva uma pequena narrativa com pessoa, objetivo, atividade, contexto, dificul
 
 ## 5.1 Onde e em quais situações a interação poderia ocorrer?
 
-{{[F/H/?] ...}}
+H - A interação poderá ocorrer principalmente em situações de consulta e monitoramento do risco de alagamentos, especialmente durante períodos de chuva ou antes de deslocamentos por regiões potencialmente afetadas.
 
 ## 5.2 Em quais dispositivos/equipamentos?
 
-{{[F/H/?] ...}}
+H - A interface poderá ser acessada principalmente por computadores e dispositivos móveis, como smartphones, permitindo consultas tanto em ambientes de trabalho quanto durante deslocamentos.
 
 ## 5.3 Existem condições físicas relevantes?
 
 Considere iluminação, ruído, mobilidade, conexão, privacidade, uso compartilhado, interrupções, pressão de tempo etc.
 
-{{[F/H/?] ...}}
+H - A mobilidade, a qualidade da conexão com a internet e a pressão de tempo podem ser relevantes, principalmente durante eventos de chuva intensa, quando o usuário pode precisar consultar e interpretar rapidamente as informações apresentadas.
 
 ## 5.4 Existem fatores sociais ou organizacionais?
 
 Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade profissional, auditoria, turnos e colaboração.
 
-{{[F/H/?] ...}}
+H - Em contextos profissionais, diferentes níveis de responsabilidade podem influenciar o uso das informações. Profissionais técnicos podem interpretar os dados, enquanto gestores ou agentes responsáveis podem utilizá-los como apoio à tomada de decisão e à definição de ações preventivas.
 
 ## 5.5 Existe necessidade de histórico, rastreabilidade ou auditoria?
 
-{{[F/H/?] ...}}
+H - O armazenamento de previsões e informações históricas pode ser importante para comparar eventos ao longo do tempo, avaliar o desempenho do sistema e permitir análises posteriores das previsões realizadas.
 
 ## 5.6 Um erro pode produzir consequência relevante? Qual?
 
-{{[F/H/?] ...}}
+H - Sim. Uma previsão incorreta ou uma interpretação inadequada do nível de risco pode levar o usuário a considerar uma região segura quando existe possibilidade de alagamento ou, no contexto profissional, contribuir para uma priorização inadequada de ações preventivas.
 
 ---
 
@@ -260,29 +260,31 @@ Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade 
 
 | Alternativa atual | Quem usa | Para quê | Status/evidência |
 |---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{...}} |
+| CGE – Centro de Gerenciamento de Emergências Climáticas de São Paulo | População e profissionais de monitoramento | Consultar condições meteorológicas, estados de atenção/alerta e pontos de alagamento | F - O CGE disponibiliza essas informações publicamente. |
+Aplicativos de meteorologia |	População em geral |	Consultar previsão de chuva e condições meteorológicas |	F - Categoria de solução já existente |
+Waze e outros aplicativos de navegação |	Motoristas e usuários em deslocamento |	Consultar condições de trânsito e planejar rotas	| F - O Waze oferece informações de trânsito e navegação em tempo real. |
 
 ## 6.2 Existem produtos que atuam na mesma área, mesmo sem serem equivalentes ao TCC?
 
-{{[F/H/?] ...}}
+F - Sim. O CGE de São Paulo atua diretamente no monitoramento meteorológico e de alagamentos, apresentando estados de atenção e alerta, condições de chuva e pontos de alagamento. Aplicativos meteorológicos e de navegação também atendem partes do problema, embora não sejam equivalentes à proposta do TCC.
 
 ## 6.3 Quais interfaces profissionais esse público já conhece?
 
 Exemplos possíveis: ferramentas de banco, IDEs, consoles de nuvem, dashboards, plataformas de dados, ferramentas de monitoramento, painéis de IA, sistemas administrativos.
 
-{{[F/H/?] ...}}
+H -Para usuários comuns, são familiares interfaces baseadas em mapas, previsão meteorológica, localização e alertas. Para usuários profissionais, podem ser familiares painéis de monitoramento, mapas geográficos e dashboards com indicadores.
 
 ## 6.4 O que essas soluções parecem fazer bem?
 
-{{[F/H/?] ...}}
+F - Soluções existentes conseguem apresentar informações meteorológicas e ocorrências de maneira relativamente rápida e visual. O CGE, por exemplo, apresenta pontos de alagamento ativos e diferencia ocorrências transitáveis e intransitáveis, além de emitir estados de atenção e alerta.
 
 ## 6.5 O que parecem fazer mal, dificultar ou não atender?
 
-{{[F/H/?] ...}}
+? - Ainda precisa ser investigado quais dificuldades os usuários encontram nas soluções atuais e quais necessidades não são atendidas. Uma questão a ser analisada na próxima etapa é se existe espaço para uma solução que integre características geoespaciais, dados meteorológicos e estimativas probabilísticas de risco por região.
 
 ## 6.6 Que padrões de interface ou vocabulário parecem familiares a esse público?
 
-{{[F/H/?] ...}}
+H - Mapas interativos, localização por região, níveis de risco, alertas, previsão de chuva, uso de cores para representar severidade e informações de trânsito parecem ser padrões familiares ao público potencial da solução.
 
 ---
 
@@ -294,7 +296,7 @@ Exemplos possíveis: ferramentas de banco, IDEs, consoles de nuvem, dashboards, 
 
 Explique qual parte da interface será usada como recorte da disciplina e por que esse fluxo é relevante.
 
-{{...}}
+F - O recorte da disciplina será a interface de consulta de risco de alagamentos e inundações por região. Esse fluxo é relevante porque representa a principal forma de interação do usuário com a contribuição técnica do TCC, permitindo transformar as estimativas probabilísticas geradas pelos modelos em informações compreensíveis para apoio à prevenção e ao planejamento.
 
 ### Caminho B — TCC não possui interface prevista
 
@@ -315,13 +317,13 @@ Responda:
 
 ## 7.2 Qual perfil será priorizado no projeto de IHC?
 
-{{...}}
+Usuário final que deseja consultar o risco de alagamentos em determinada região da cidade de São Paulo.
 
-**Por que esse perfil foi escolhido?** {{...}}
+**Por que esse perfil foi escolhido?** Porque esse usuário precisa interpretar rapidamente informações de risco para apoiar decisões como evitar regiões potencialmente afetadas ou planejar deslocamentos em períodos de chuva.
 
 ## 7.3 Qual objetivo desse usuário será priorizado?
 
-{{...}}
+Identificar de forma rápida e clara o nível de risco de alagamento em uma determinada região, de modo a apoiar decisões preventivas.
 
 ## 7.4 Que interface será explorada na disciplina?
 
@@ -329,11 +331,11 @@ Complete:
 
 > **Para fins da disciplina de IHC, será projetada uma interface que permita a `{{perfil}}` utilizar `{{capacidade/resultado do TCC}}` para `{{objetivo}}`, no contexto de `{{situação}}`.**
 
-{{...}}
+Para fins da disciplina de IHC, será projetada uma interface que permita ao usuário final utilizar as estimativas probabilísticas de risco geradas pelo TCC para identificar regiões com maior suscetibilidade a alagamentos e apoiar decisões preventivas, especialmente em situações de chuva intensa.
 
 ## 7.5 Qual é a relação dessa interface com o TCC?
 
-- [ ] Já fazia parte do TCC.
+- [X] Já fazia parte do TCC.
 - [ ] É um aprofundamento de algo parcialmente previsto.
 - [ ] É uma extensão conceitual criada para a disciplina.
 - [ ] É um protótipo demonstrativo de aplicação potencial.
@@ -351,20 +353,20 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 | Possibilidade | Pode fazer sentido? | Objetivo/tarefa que justificaria | Evidência atual |
 |---|---|---|---|
-| Dashboard/visão geral | sim/não/talvez | {{...}} | {{...}} |
-| Configuração/parametrização | sim/não/talvez | {{...}} | {{...}} |
-| Entrada/upload/seleção de dados | sim/não/talvez | {{...}} | {{...}} |
-| Acompanhamento de processamento | sim/não/talvez | {{...}} | {{...}} |
-| Relatório/resultados | sim/não/talvez | {{...}} | {{...}} |
-| Histórico com busca/filtros | sim/não/talvez | {{...}} | {{...}} |
-| Comparação de resultados | sim/não/talvez | {{...}} | {{...}} |
-| Explicabilidade/detalhamento | sim/não/talvez | {{...}} | {{...}} |
-| Administração/configurações globais | sim/não/talvez | {{...}} | {{...}} |
-| Usuários/perfis/permissões | sim/não/talvez | {{...}} | {{...}} |
-| CRUD de entidade do domínio | sim/não/talvez | {{...}} | {{...}} |
-| Auditoria/logs | sim/não/talvez | {{...}} | {{...}} |
-| Alertas/ocorrências | sim/não/talvez | {{...}} | {{...}} |
-| Ajuda/documentação | sim/não/talvez | {{...}} | {{...}} |
+| Dashboard/visão geral | sim | Permitir ao usuário visualizar rapidamente o nível de risco nas diferentes regiões | H - compatível com o objetivo de consulta de risco |
+| Configuração/parametrização | talvez | Permitir ajustes específicos para usuários técnicos | ? - ainda não foi definido se isso fará parte da interface |
+| Entrada/upload/seleção de dados | não | Não é uma necessidade do usuário final priorizado | F - os dados são obtidos e processados pelo próprio sistema |
+| Acompanhamento de processamento | não | Não é necessário para quem apenas consulta o risco | H - pode ser útil apenas para perfis técnicos |
+| Relatório/resultados | talvez | Permitir análise mais detalhada das previsões e eventos | H - pode ser relevante para usuários profissionais |
+| Histórico com busca/filtros | sim | Consultar riscos e ocorrências passadas por região ou período | H - útil para comparação e análise temporal |
+| Comparação de resultados | talvez | Comparar diferentes regiões ou períodos | H - pode ajudar na interpretação do risco |
+| Explicabilidade/detalhamento | sim | Permitir entender quais fatores contribuíram para o risco apresentado  | H - importante para aumentar compreensão e confiança |
+| Administração/configurações globais | não  | Não é necessária para o usuário final priorizado | H - poderia existir apenas em perfil administrativo |
+| Usuários/perfis/permissões | talvez | Diferenciar acesso entre usuários comuns e profissionais | ? - ainda não definido |
+| CRUD de entidade do domínio | não  | O usuário final não precisa cadastrar manualmente dados hidrológicos ou geográficos | F - os dados vêm de fontes externas e processamento interno |
+| Auditoria/logs | talvez | Permitir análise técnica de previsões e comportamento do sistema | H - relevante principalmente para administradores |
+| Alertas/ocorrências | sim | Avisar o usuário sobre regiões com risco elevado | H - diretamente relacionado ao apoio preventivo |
+| Ajuda/documentação | sim | Explicar significado de níveis de risco, probabilidades e informações apresentadas |	H - importante para usuários sem conhecimento técnico |
 
 > **Atenção:** “login + dashboard + CRUD” não é uma solução universal. Cada padrão deve surgir de uma tarefa real.
 
@@ -376,13 +378,19 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 | Benefício esperado | Problema/necessidade | Usuário | Status/evidência |
 |---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{...}} |
+| Facilitar a compreensão do risco de alagamento por região |	Informações climáticas e geográficas podem ser difíceis de interpretar isoladamente |	Usuário final |	H - necessidade ainda não validada com usuários |
+| Apoiar decisões preventivas e planejamento de deslocamentos	| Usuário pode precisar decidir se deve evitar determinada região em situação de chuva	| Usuário final |	H - aplicação plausível do sistema |
+| Apresentar informações complexas de forma simples e visual |	Probabilidades e dados hidrológicos podem ser difíceis de compreender |	Usuário final |	H - compatível com o perfil priorizado |
 
 ## 9.2 Que ações o usuário deverá conseguir realizar?
 
 | ID | O usuário precisa conseguir... | Para alcançar... | Prioridade inicial |
 |---|---|---|---|
-| F01 | {{ação}} | {{objetivo}} | alta/média/baixa |
+| F01	Consultar o risco de alagamento por região |	Avaliar rapidamente uma área de interesse |	alta
+| F02	Visualizar o nível de risco de forma clara |	Compreender a situação sem conhecimento técnico avançado |	alta
+| F03	Consultar informações relacionadas ao risco, como chuva e características da região |	Entender melhor o motivo da classificação apresentada |	média
+| F04	Consultar histórico ou ocorrências anteriores |	Comparar situações atuais com eventos passados |	média
+| F05	Receber ou visualizar alertas de risco elevado |	Apoiar decisões preventivas |	alta
 
 ## 9.3 Tecnologias/restrições já definidas no TCC
 
@@ -390,7 +398,12 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 
 | Tecnologia/restrição | Por que existe | Possível impacto na interação |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Random Forest e LSTM	| São os modelos utilizados para classificação e estimativa de probabilidade de ocorrência	| A interface deverá apresentar os resultados dos modelos de forma compreensível
+| Dados GeoSampa |	Fornecem informações geoespaciais e ambientais	| Permitem exibir risco por região e informações geográficas
+| Dados meteorológicos |	Fornecem informações de precipitação	| Permitem contextualizar o risco em função das condições climáticas
+| PostgreSQL/PostGIS | Armazena dados geoespaciais utilizados pelo sistema	| Pode permitir consultas espaciais e históricas mais estruturadas
+| Interface com foco em risco por região | É o principal recorte de interação definido para a disciplina	| Exige apresentação visual clara e rápida das informações
+| Probabilidade de ocorrência | É uma das principais saídas dos modelos	| Deve ser apresentada de forma que não seja confundida com certeza de ocorrência
 
 ---
 
@@ -398,9 +411,11 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 
 | ID | Hipótese/dúvida | Por que importa | Como poderá ser investigada |
 |---|---|---|---|
-| H01 | {{...}} | {{...}} | Entrega 2/3/7/... |
-| H02 | {{...}} | {{...}} | {{...}} |
-| H03 | {{...}} | {{...}} | {{...}} |
+| H01	| Usuários compreendem melhor o risco quando ele é apresentado por níveis, como baixo, médio e alto, além da porcentagem	A forma de apresentação pode influenciar diretamente a interpretação	| Entrega 2/3 - entrevistas, análise de similares ou testes iniciais
+| H02	| Um mapa é a melhor forma de permitir a consulta de risco por região	O componente espacial é central no projeto	| Entrega 2/3 - análise de interfaces existentes e prototipação
+| H03	| Usuários consideram alertas de risco úteis para decisões preventivas	Alertas podem ser uma das principais aplicações práticas da interface	| Entrega 2/3/7 - entrevistas e testes de usabilidade
+| H04	| Usuários não técnicos podem ter dificuldade para interpretar probabilidades isoladas	Uma interpretação incorreta pode comprometer decisões	| Entrega 2/3 - pesquisa com usuários e testes de compreensão
+| H05	| Informações adicionais sobre chuva e características da região aumentam a confiança na previsão	Explicabilidade pode melhorar a compreensão do resultado	| Entrega 3/7 - protótipos e avaliação com usuários
 
 Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
@@ -410,23 +425,23 @@ Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
 | Pergunta | Síntese atual |
 |---|---|
-| Qual é a contribuição central do TCC? | {{...}} |
-| O TCC já previa interface? | {{...}} |
-| Quem é o usuário prioritário de IHC? | {{...}} |
-| O que ele precisa alcançar? | {{...}} |
-| Qual problema/atividade será estudado? | {{...}} |
-| Como isso acontece hoje? | {{...}} |
-| Qual é o contexto de uso? | {{...}} |
-| Que interface/recorte será explorado? | {{...}} |
-| Como a interface se relaciona ao TCC? | {{...}} |
-| Quais pontos ainda são hipóteses? | {{H01...}} |
+| Qual é a contribuição central do TCC?	| F - Desenvolvimento de uma abordagem baseada em dados geoespaciais, meteorológicos e aprendizado de máquina para estimar a probabilidade de ocorrência de alagamentos e inundações na cidade de São Paulo.
+| O TCC já previa interface?	| F - Sim. O projeto prevê uma interface para disponibilizar e facilitar a consulta das estimativas de risco geradas pelo sistema.
+| Quem é o usuário prioritário de IHC?	| H - Usuário final interessado em consultar o risco de alagamento em regiões da cidade de São Paulo.
+| O que ele precisa alcançar?	| H - Compreender rapidamente o risco de alagamento de uma região para apoiar decisões preventivas, como planejamento de deslocamentos.
+| Qual problema/atividade será estudado?	| H - A consulta e interpretação das informações de risco de alagamento apresentadas ao usuário.
+| Como isso acontece hoje?	| H - Informações relacionadas a chuva, alagamentos e condições das regiões podem ser consultadas em diferentes serviços, mapas, sistemas de monitoramento e fontes meteorológicas.
+| Qual é o contexto de uso?	| H - Principalmente consultas durante períodos de chuva ou antes de deslocamentos, possivelmente por computadores ou dispositivos móveis e, em alguns casos, sob pressão de tempo.
+| Que interface/recorte será explorado?	| H - Uma interface de consulta do risco por região, com apresentação clara do nível/probabilidade de risco e informações relevantes para sua interpretação.
+| Como a interface se relaciona ao TCC?	| F - A interface utiliza como base as estimativas produzidas pela contribuição técnica do TCC e já está prevista como forma de disponibilização dos resultados ao usuário.
+| Quais pontos ainda são hipóteses?	| H01-H05 - Forma mais compreensível de apresentar o risco; adequação do mapa como principal forma de consulta; utilidade dos alertas; compreensão das probabilidades por usuários não técnicos; e relevância de informações adicionais para explicar as previsões.
 
 ### Delimitação
 
-**Dentro do escopo de IHC:** {{...}}  
-**Fora do escopo de IHC:** {{...}}  
-**Dentro do escopo formal do TCC:** {{...}}  
-**Interface da disciplina será implementada no TCC?** não definido / sim / não — {{justificativa, se houver}}
+**Dentro do escopo de IHC:** projeto e avaliação da interação do usuário com a consulta de risco por região, incluindo visualização do nível de risco, probabilidades, informações complementares, mapas e possíveis alertas.
+**Fora do escopo de IHC:** treinamento e otimização dos modelos Random Forest e LSTM, processamento geoespacial, coleta e tratamento dos dados, banco de dados e demais componentes internos do sistema que não envolvem diretamente a interação com o usuário.
+**Dentro do escopo formal do TCC:** coleta e integração dos dados geoespaciais e meteorológicos, processamento geoespacial, construção do dataset espaço-temporal, aplicação e comparação dos modelos Random Forest e LSTM, avaliação das previsões, simulação de cenários e disponibilização dos resultados por meio da aplicação proposta.
+**Interface da disciplina será implementada no TCC?** Não definido, a interface já faz parte da proposta do TCC, porém as decisões de IHC desenvolvidas nesta disciplina poderão ser incorporadas posteriormente conforme a evolução do projeto e o alinhamento da equipe com o orientador.
 
 ---
 
@@ -450,9 +465,9 @@ A Entrega 1 é uma **fotografia inicial do conhecimento**. Ela pode e deve ser r
 
 Prepare uma explicação de até três frases:
 
-1. **Problema/atividade humana:** {{...}}
-2. **Contribuição técnica do TCC:** {{...}}
-3. **Como uma pessoa poderia utilizar essa contribuição:** {{...}}
+1. **Problema/atividade humana:** Pessoas podem precisar identificar rapidamente regiões com maior risco de alagamento para apoiar decisões preventivas, especialmente em períodos de chuva intensa.
+2. **Contribuição técnica do TCC:** O trabalho propõe integrar dados geoespaciais, meteorológicos e históricos para treinar modelos de aprendizado de máquina capazes de classificar a ocorrência de eventos e estimar probabilidades de risco por região.
+3. **Como uma pessoa poderia utilizar essa contribuição:** O usuário poderá consultar essas estimativas por meio de uma interface, visualizar o risco de uma determinada região e utilizar essa informação como apoio para planejamento e prevenção.
 
 Essa síntese ajuda a apresentar o projeto para público não especializado sem reduzir seu mérito técnico.
 
@@ -460,21 +475,21 @@ Essa síntese ajuda a apresentar o projeto para público não especializado sem 
 
 # Checklist de qualidade
 
-- [ ] Está clara a diferença entre tema do TCC, escopo formal do TCC e escopo de IHC.
-- [ ] A equipe declarou se o TCC já previa interface.
+- [X] Está clara a diferença entre tema do TCC, escopo formal do TCC e escopo de IHC.
+- [X] A equipe declarou se o TCC já previa interface.
 - [ ] Se não previa, foi derivado um usuário plausível e um objetivo de uso.
-- [ ] A interface de IHC não foi apresentada como obrigação automática do TCC.
-- [ ] A contribuição do TCC foi descrita sem começar por tecnologias de implementação.
-- [ ] Usuários diretos e stakeholders foram diferenciados.
-- [ ] Foram considerados profissionais que configuram, administram, interpretam ou decidem, quando pertinente.
-- [ ] Objetivo do usuário não foi confundido com objetivo do projeto.
-- [ ] Processo/problema atual foi descrito antes da solução.
-- [ ] Existe situação concreta de uso/problema.
-- [ ] Contexto físico, social/organizacional, dispositivos e consequências de erro foram considerados.
-- [ ] Mercado/alternativas existentes foram levantados inicialmente.
-- [ ] Possibilidades como dashboard, relatório, histórico, filtros e CRUD foram tratadas como hipóteses de solução, não como requisitos automáticos.
-- [ ] Cada possibilidade de interface tem um objetivo/tarefa que poderia justificá-la.
-- [ ] Afirmações relevantes estão marcadas `[F]`, `[H]` ou `[?]`.
-- [ ] Hipóteses prioritárias receberam IDs e foram para a rastreabilidade.
-- [ ] O recorte de IHC é viável para modelar, prototipar e avaliar no semestre.
-- [ ] A equipe consegue explicar problema humano → contribuição computacional → forma de uso.
+- [X] A interface de IHC não foi apresentada como obrigação automática do TCC.
+- [X] A contribuição do TCC foi descrita sem começar por tecnologias de implementação.
+- [X] Usuários diretos e stakeholders foram diferenciados.
+- [X] Foram considerados profissionais que configuram, administram, interpretam ou decidem, quando pertinente.
+- [X] Objetivo do usuário não foi confundido com objetivo do projeto.
+- [X] Processo/problema atual foi descrito antes da solução.
+- [X] Existe situação concreta de uso/problema.
+- [X] Contexto físico, social/organizacional, dispositivos e consequências de erro foram considerados.
+- [X] Mercado/alternativas existentes foram levantados inicialmente.
+- [X] Possibilidades como dashboard, relatório, histórico, filtros e CRUD foram tratadas como hipóteses de solução, não como requisitos automáticos.
+- [X] Cada possibilidade de interface tem um objetivo/tarefa que poderia justificá-la.
+- [X] Afirmações relevantes estão marcadas `[F]`, `[H]` ou `[?]`.
+- [X] Hipóteses prioritárias receberam IDs e foram para a rastreabilidade.
+- [X] O recorte de IHC é viável para modelar, prototipar e avaliar no semestre.
+- [X] A equipe consegue explicar problema humano → contribuição computacional → forma de uso.

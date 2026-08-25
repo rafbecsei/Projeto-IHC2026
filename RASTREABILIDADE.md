@@ -8,16 +8,16 @@ Para projetos cujo TCC não previa interface, esta matriz é especialmente impor
 
 | Elemento | Registro da equipe | Evidência/justificativa | Estado |
 |---|---|---|---|
-| Tema do TCC | {{...}} | {{documento/TCC}} | definido |
-| Resultado técnico esperado | {{algoritmo, análise, sistema, modelo, API...}} | {{...}} | definido |
-| O TCC previa interface? | sim / não / parcialmente | {{...}} | definido |
-| Capacidade/contribuição central | {{o que a tecnologia permite}} | {{...}} | definido |
-| Possíveis beneficiários/stakeholders | {{...}} | {{fonte ou hipótese}} | F / H / ? |
-| Usuário escolhido para IHC | {{...}} | {{por que esse perfil}} | F / H / ? |
-| Objetivo principal do usuário | {{...}} | {{...}} | F / H / ? |
-| Contexto de uso adotado | {{...}} | {{...}} | F / H / ? |
-| Interface/recorte de IHC | {{...}} | {{como deriva dos itens acima}} | proposta / revisada |
-| Relação com o TCC | parte prevista / extensão conceitual / protótipo demonstrativo / outra | {{...}} | definido |
+| Tema do TCC | Estimativa de risco de alagamentos e inundações urbanas por meio de dados geoespaciais e aprendizado de máquina | Proposta presente no Artigo do TCC 1 e Entrega 1 | definido |
+| Resultado técnico esperado | Sistema para estimativa e visualização do risco de alagamentos e inundações utilizando aprendizado de máquina | Proposta presente no Artigo do TCC 1 Entrega 1 | definido |
+| O TCC previa interface? | Sim | Proposta inicial do TCC 1 era desenvolvimento de uma interface para visualizar áreas de risco | definido |
+| Capacidade/contribuição central | Integrar dados meteorológicos, históricos e geoespaciais para estimar a probabilidade de ocorrência de alagamentos e inundações em uma área urbana | Proposta presente no Artigo do TCC 1 e Entrega 1 | definido |
+| Possíveis beneficiários/stakeholders | Usuários interessados em consultar o risco de alagamentos e inundações e órgãos de monitoramento e prevenção de desastres naturais | Hipótese levantada pela equipe a partir da aplicação inicial do TCC | H |
+| Usuário escolhido para IHC | Usuário interessado em consultar o risco de alagamento e inundação  | Usuário primário definido na Entrega 1 | H |
+| Objetivo principal do usuário | Analisar uma área que mora ou irá passar e apoiar decisões preventivas, como mudar o percurso para evitar regiões potencialmente afetadas | Ideia presente no TCC 1 e Entrega 1 | H |
+| Contexto de uso adotado | Interesse maior durante períodos chuvosos ou antes de trajetos em áreas de possível risco | Proposta presente no Artigo do TCC 1 e Entrega 1 | H |
+| Interface/recorte de IHC | Interface para consulta e interpretação do risco de alagamentos e inundações | Deriva da necessidade de disponibilizar dados geoespaciais aos usuários de forma compreensível e que ajude na tomada de decisões preventivas | proposta |
+| Relação com o TCC | parte prevista | A interface já fazia parte da proposta inicial do TCC | definido |
 
 > Se o escopo de IHC mudar ao longo do semestre, preserve a decisão anterior no histórico e registre **qual evidência motivou a mudança**.
 

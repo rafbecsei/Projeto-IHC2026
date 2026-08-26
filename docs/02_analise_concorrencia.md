@@ -1,7 +1,7 @@
 # Entrega 2 — Público-alvo e análise de concorrência
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** {{25/08/2026}}  
+**Status:** 🟨 em andamento  
 **Responsabilidade mínima:** cada integrante analisa pelo menos 1 concorrente/interface representativa; a equipe produz síntese comparativa.
 
 ## Objetivo da atividade
@@ -30,13 +30,16 @@ Retome o mapa inicial de alternativas e produtos citado na Entrega 1. Aqui a equ
 
 | Item citado na Entrega 1 | Tipo | Por que foi citado | Status inicial | Decisão nesta entrega |
 |---|---|---|---|---|
-| {{...}} | concorrente / análogo / ferramenta cotidiana / processo manual | {{...}} | F / H / ? | analisar / descartar com justificativa |
+| CGE (Centro de Gerenciamento de Emergências Climáticas de São Paulo) | concorrente | Apresenta informações meteorológicas e de ocorrências de alagamento na cidade de São Paulo | F | analisar |
+| Aplicativos Meteorológicos | concorrente | Apresenta informações de condições meteorológicas e da previsão de chuvas | F | analisar |
+| Waze | concorrente | Apresenta informações sobre ocorrências durante percursos e condição de vias | F | analisar |
 
 Se uma hipótese da Entrega 1 for confirmada ou refutada durante esta análise, atualize `H01`, `H02`... em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
 ## 1. Público-alvo desta análise
 
-{{descrever e ligar à Entrega 1}}
+O público-alvo primário desta análise são os usuários no geral que buscam obter informações sobre os riscos e ocorrências de alagamentos e inundações.
+Como foi citado na Entrega 1, o objetivo principal é permitir que esse público consulte essas informações de forma rápida e de fácil entendimento, para apoiar decisões preventivas antes ou durante o deslocamento em áreas urbanas e em períodos de chuva ou não.
 
 ## 2. Concorrentes diretos/indiretos
 

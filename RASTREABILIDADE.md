@@ -27,8 +27,11 @@ Use esta tabela para itens importantes marcados como `[H]` ou `[?]`. Preserve o 
 
 | ID | Afirmação / dúvida inicial | Tipo | Por que importa | Como/onde investigar | Evidência obtida | Estado atual | Impacto no projeto |
 |---|---|---|---|---|---|---|---|
-| H01 | {{...}} | H / ? | {{...}} | Entrega 2 / 3 / 7 / outra | {{link/fonte ou PENDENTE}} | aberta / sustentada / refutada / refinada | {{...}} |
-| H02 | {{...}} | H / ? | {{...}} | {{...}} | {{...}} | aberta | {{...}} |
+| H01 | Usuários compreendem melhor o risco quando ele é apresentado por níveis, como baixo, médio e alto, além da porcentagem A forma de apresentação pode influenciar diretamente a interpretação | H | {{...}} | Entrega 2 / 3 / 7 / outra | PENDENTE | aberta / sustentada / refutada / refinada | Pode ter influência na forma que o risco é representado|
+| H02 | Um mapa é a melhor forma de permitir a consulta de risco por região O componente espacial é central no projeto | H | {{...}} | Entrega 2 | PENDENTE | aberta | Justifica o uso de um mapa como principal forma de consultar as informações da interface |
+| H03 | Usuários consideram alertas de risco úteis para decisões preventivas Alertas podem ser uma das principais aplicações práticas da interface | H | {{...}} | Entrega 2 | PENDENTE | aberta | Justifica a adição de alertas de risco, além da interface|
+| H04 | Usuários não técnicos podem ter dificuldade para interpretar probabilidades isoladas Uma interpretação incorreta pode comprometer decisões | H | {{...}} | Entrega 2 | PENDENTE | aberta | Justifica a adoção de maneiras menos complexas de visualizar os riscos apresentados, como o mapa interativo do H02 |
+| H05 | Informações adicionais sobre chuva e características da região aumentam a confiança na previsão Explicabilidade pode melhorar a compreensão do resultado | H | {{...}} | Entrega 2 | PENDENTE | aberta | Justificam a utilização de informações complementares às inicialmente propostas |
 
 ## 3. Rastreabilidade entre contribuição técnica, necessidades e artefatos
 

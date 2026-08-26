@@ -411,11 +411,11 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 
 | ID | Hipótese/dúvida | Por que importa | Como poderá ser investigada |
 |---|---|---|---|
-| H01	| Usuários compreendem melhor o risco quando ele é apresentado por níveis, como baixo, médio e alto, além da porcentagem	A forma de apresentação pode influenciar diretamente a interpretação	| Entrega 2/3 - entrevistas, análise de similares ou testes iniciais
-| H02	| Um mapa é a melhor forma de permitir a consulta de risco por região	O componente espacial é central no projeto	| Entrega 2/3 - análise de interfaces existentes e prototipação
-| H03	| Usuários consideram alertas de risco úteis para decisões preventivas	Alertas podem ser uma das principais aplicações práticas da interface	| Entrega 2/3/7 - entrevistas e testes de usabilidade
-| H04	| Usuários não técnicos podem ter dificuldade para interpretar probabilidades isoladas	Uma interpretação incorreta pode comprometer decisões	| Entrega 2/3 - pesquisa com usuários e testes de compreensão
-| H05	| Informações adicionais sobre chuva e características da região aumentam a confiança na previsão	Explicabilidade pode melhorar a compreensão do resultado	| Entrega 3/7 - protótipos e avaliação com usuários
+| H01	| Usuários compreendem melhor o risco quando ele é apresentado por níveis, como baixo, médio e alto, além da porcentagem. Influenciando diretamente sua interpretação	| Entrega 2/3 - entrevistas, análise de similares ou testes iniciais
+| H02	| Um mapa é a melhor forma de permitir a consulta de risco por região | Entrega 2/3 - análise de interfaces existentes e prototipação
+| H03	| Usuários consideram alertas de risco úteis para decisões preventivas | Entrega 2/3/7 - entrevistas e testes de usabilidade
+| H04	| Usuários não técnicos podem ter dificuldade para interpretar probabilidades e dados isolados	| Entrega 2/3 - pesquisa com usuários e testes de compreensão
+| H05	| Informações adicionais sobre chuva e características da região aumentam a confiança na previsão	| Entrega 3/7 - protótipos e avaliação com usuários
 
 Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 

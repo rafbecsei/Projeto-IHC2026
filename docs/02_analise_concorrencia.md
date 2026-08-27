@@ -44,12 +44,12 @@ Como foi citado na Entrega 1, o objetivo principal é permitir que esse público
 
 ## 2. Concorrentes diretos/indiretos
 
-### Análise C01 — {{produto}}
+### Análise C01 — CGE
 
-**Autor(a):** {{nome — matrícula}}  
-**Tipo:** direto / indireto / análogo  
-**Link oficial:** {{URL}}  
-**Data de acesso:** {{dd/mm/aaaa}}
+**Autor(a):** Rafael I. Becsei — 22.225.037-5  
+**Tipo:** análogo  
+**Link oficial:** [{{URL}}](https://www.cgesp.org/v3/alagamentos.jsp?)  
+**Data de acesso:** {{19/05/2026}}
 
 #### Contexto e proposta
 

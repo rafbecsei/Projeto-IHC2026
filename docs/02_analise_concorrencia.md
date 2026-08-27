@@ -30,9 +30,10 @@ Retome o mapa inicial de alternativas e produtos citado na Entrega 1. Aqui a equ
 
 | Item citado na Entrega 1 | Tipo | Por que foi citado | Status inicial | Decisão nesta entrega |
 |---|---|---|---|---|
-| CGE (Centro de Gerenciamento de Emergências Climáticas de São Paulo) | concorrente | Apresenta informações meteorológicas e de ocorrências de alagamento na cidade de São Paulo | F | analisar |
-| Aplicativos Meteorológicos | concorrente | Apresenta informações de condições meteorológicas e da previsão de chuvas | F | analisar |
-| Waze | concorrente | Apresenta informações sobre ocorrências durante percursos e condição de vias | F | analisar |
+| CGE (Centro de Gerenciamento de Emergências Climáticas de São Paulo) | análogo | Apresenta informações meteorológicas e de ocorrências de alagamento na cidade de São Paulo | F | analisar |
+| GEOSAMPA | análogo | Apresenta informações históricas de ocorrências de alagamento e inundação, dados de pluviômetros, áreas de risco e outros parâmetros | F | analisar |
+| CEMADEN (Centro Nacional de Monitoramento e Alertas de Desastres Naturais) | análogo | Apresenta dados históricos de precipitação | F | analisar |
+| API OpenWeather | análogo | Apresenta informações de condições meteorológicas e da previsão de chuvas | F | analisar |
 
 Se uma hipótese da Entrega 1 for confirmada ou refutada durante esta análise, atualize `H01`, `H02`... em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 

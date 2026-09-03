@@ -69,7 +69,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 **Decisões de design influenciadas por P01:**
 
-- {{...}}
+- Priorizar uma apresentação simples e visual do risco, utilizando linguagem acessível, níveis de risco facilmente identificáveis e informações geográficas claras, permitindo uma consulta rápida mesmo em dispositivos móveis e evitando depender de conhecimentos técnicos sobre hidrologia.
 
 > Repita para P02, P03... Cada integrante deve produzir ao menos uma persona.
 

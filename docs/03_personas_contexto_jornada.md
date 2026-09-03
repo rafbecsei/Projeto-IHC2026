@@ -1,7 +1,7 @@
 # Entrega 3 — Personas, mapa de empatia, contexto de uso e jornada
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** {{02/09/2026}}  
+**Status:** 🟨 em andamento  
 **Responsabilidade:** 1 persona por integrante; 1 mapa de empatia, 1 contexto de uso consolidado e 1 jornada por equipe (salvo orientação diferente do docente).
 
 ## Objetivo da atividade
@@ -28,32 +28,44 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 | Item da Entrega 1 | Status inicial | Evidência disponível agora | Como será tratado nesta entrega |
 |---|---|---|---|
-| {{usuário/objetivo/característica/H01...}} | F / H / ? | {{...}} | incorporar / manter como hipótese / descartar / investigar |
+| 2.1 - Usuário final interessado em consultar o risco de alagamentos e inundações | H | Definido na Entrega 1 como público potencial da interface, mas ainda sem validação om usuário reais | Manter como hipótese e representar como persona e validar |
+| 2.1/2.2 - Profissionais ou agentes envolvidos com monitoramento e prevenção | H | Identificados como possíveis usuários da contribuição, incluindo agentes da Defesa Civil | Manter como hipótese e considerar na criação das personas |
+| 2.4 - Diferentes níveis de conhecimento técnico podem influenciar a interação | H | Hipótese de que os usuários comuns precisam de informações mais simples, enquanto profissionais podem demandar maior detalhamento | Incorporar nas personas e investigar |
+| 3.1 - Obter informações antecipadas sobre o risco de alagamento de determinada região | H | Definido como objetivo principal do usuário na Entrega 1 | Incorporar como objetivo central das personas e manter como hipótese |
+| 3.2/A01 - Consultar o risco de alagamento em determinada região | H | Identificada como possível atividade mais frequente | Incorporar à jornada e investigar |
+| 3.2/A02 - Planejar deslocamentos ou ações preventivas com base no risco | H | Identificada como atividade de alta criticidade para o usuário final | Incorporar à jornada e manter como hipótese |
+| 5.1/5.3 - Uso principalmente durante períodos de chuva ou antes de deslocamentos, possivelmente sob pressão de tempo | H | Contexto de uso proposto na Entrega 1, ainda sem validação com usuários | Incorporar ao contexto de uso e investigar |
+| 5.2 - Uso por computador ou dispositivo móvel | H | Dispositivos considerados plausíveis na Entrega 1 | Manter como hipótese e considerar no contexto de uso |
+| H01 - Usuários compreendem melhor risco com níveis + porcentagem | H | Hipótese registrada na Entrega 1; ainda sem evidência com usuários | Manter como hipótese e investigar |
+| H02 - Mapa é a melhor forma de consultar risco por região | H | Hipótese registrada na Entrega 1; mapas também aparecem em soluções semelhantes | Manter como hipótese e investigar |
+| H03 - Alertas de risco são úteis para decisões preventivas | H | Hipótese registrada na Entrega 1 | Manter como hipótese e investigar |
+| H04 - Usuários não técnicos podem ter dificuldade com probabilidades e dados isolados | H | Hipótese registrada na Entrega 1 | Incorporar à proto-persona e investigar |
+| H05 - Informações adicionais sobre chuva e região aumentam a confiança na previsão | H | Hipótese registrada na Entrega 1 | Manter como hipótese e investigar |
 
 ## 1. Personas
 
-### Persona P01 — {{nome fictício}}
+### Persona P01 — Paulo Andre Oliveira
 
-**Autor(a):** {{nome — matrícula}}  
-**Tipo:** primária / secundária  
-**Base de evidências:** entrevista / questionário / literatura / observação / proto-persona a validar / combinação  
-**Hipóteses da Entrega 1 relacionadas:** {{H01, H02 ou —}}
+**Autor(a):** Eric Song Watanabe - 22.125.086-3
+**Tipo:** primária
+**Base de evidências:** proto-persona a validar 
+**Hipóteses da Entrega 1 relacionadas:** H01, H02, H03 e H04
 
 ![Persona P01](../assets/03_personas/persona_p01.svg)
 
 | Campo | Descrição |
 |---|---|
-| Faixa etária / contexto relevante | {{somente o que impacta o uso}} |
-| Ocupação/papel | {{...}} |
-| Conhecimento do domínio | {{...}} |
-| Experiência tecnológica | {{...}} |
-| Objetivos | {{...}} |
-| Necessidades | {{...}} |
-| Dores/frustrações | {{...}} |
-| Motivadores | {{...}} |
-| Restrições/acessibilidade | {{...}} |
-| Ambiente típico de uso | {{...}} |
-| Comportamentos relevantes | {{...}} |
+| Faixa etária / contexto relevante | Adulto em idade ativa, com rotina de deslocamentos frequentes pela cidade de São Paulo. [H] |
+| Ocupação/papel | Funcionário de escritório que trabalha presencialmente e precisa se deslocar entre casa e trabalho. [H] |
+| Conhecimento do domínio | Baixo conhecimento técnico sobre hidrologia, precipitação e modelos de risco; entende conceitos cotidianos como chuva forte, alagamento e região de risco. [H] |
+| Experiência tecnológica | Familiaridade intermediária com smartphones, mapas, aplicativos de navegação e previsão do tempo. [H] |
+| Objetivos | Saber rapidamente se uma região apresenta risco de alagamento e usar essa informação para planejar deslocamentos com maior segurança. [H] |
+| Necessidades | Informação clara, rápida e visual sobre localização, nível de risco, chuva e possíveis alertas, sem depender de conhecimento técnico avançado. [H] |
+| Dores/frustrações | Ter que consultar diferentes fontes para entender a situação; dificuldade para interpretar porcentagens ou dados técnicos isolados; receber informação tarde demais. [H] |
+| Motivadores | Evitar regiões potencialmente perigosas, reduzir imprevistos no trajeto e proteger sua segurança e seus bens. [H] |
+| Restrições/acessibilidade | Pode consultar a interface sob pressão de tempo, em movimento e pelo celular; precisa de boa legibilidade, linguagem simples e informação que não dependa somente de cores. [H] |
+| Ambiente típico de uso | Durante o trabalho, antes de sair de casa ou do escritório, ou durante um deslocamento em períodos de chuva intensa. [H] |
+| Comportamentos relevantes | Costuma verificar mapas, trânsito ou previsão do tempo antes de determinados deslocamentos e tende a buscar informações rápidas antes de decidir uma rota. [H] |
 
 **Decisões de design influenciadas por P01:**
 

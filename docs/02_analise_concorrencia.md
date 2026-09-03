@@ -83,10 +83,10 @@ Use avaliações públicas, relatos, estudos, testes próprios ou outra fonte id
 
 ### Análise C04 — OpenWeather
 
-**Autor(a):** Victor P. Lario — 22.125.064-0
-**Tipo:** análogo
-**Link oficial:** https://openweathermap.org/
-**Data de acesso:** 02/09/2026
+**Autor(a):** Victor P. Lario — 22.125.064-0                                                                      
+**Tipo:** Análogo                                                                                     
+**Link oficial:** https://openweathermap.org/                                                                         
+**Data de acesso:** 02/09/2026                     
 
 #### Contexto e proposta
 
@@ -96,9 +96,10 @@ A OpenWeather é uma plataforma voltada ao fornecimento de dados meteorológicos
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| Acesso à API de previsão climática | Criando uma conta, obtendo uma chave de API e escolhendo um plano de acordo com a quantidade de requisições necessárias | `assets/02_concorrencia/Captura de tela 2026-09-02 200013.png` | O acesso é direcionado principalmente a desenvolvedores e exige conhecimento básico sobre APIs |
-| Consulta de condições meteorológicas | Por meio de requisições à API utilizando informações como latitude e longitude | `assets/02_concorrencia/Captura de tela 2026-09-02 201945.png` | O uso de coordenadas facilita a integração com sistemas que trabalham com informações geográficas |
-| Previsão meteorológica | A API disponibiliza previsões climáticas para diferentes períodos de tempo | `assets/02_concorrencia/Captura de tela 2026-09-02 201908.png` | A organização dos dados por período facilita sua utilização em sistemas de previsão |
+| Acesso à API de previsão climática | Criando uma conta, obtendo uma chave de API e escolhendo um plano conforme a quantidade de requisições | <img src="https://github.com/user-attachments/assets/7ad5ea0d-1cab-471c-baad-dffc7367a617" width="220"> | Direcionado principalmente a desenvolvedores e exige conhecimento básico sobre APIs |
+| Consulta de condições meteorológicas | Por meio de requisições à API utilizando latitude e longitude | <img src="https://github.com/user-attachments/assets/38d415a0-703f-4085-9706-ee6273eb703a" width="220"> | O uso de coordenadas facilita a integração com informações geográficas |
+| Previsão meteorológica | A API disponibiliza previsões para diferentes períodos de tempo | <img src="https://github.com/user-attachments/assets/a24751af-2ce1-45a7-bdfe-97b64fe3c797" width="220"> | A organização por período facilita o uso dos dados em sistemas de previsão |
+ 
 #### Experiência do usuário e opiniões
 
 As avaliações dos usuários destacam positivamente a precisão das previsões, a simplicidade da interface e a facilidade de visualização das informações. Por outro lado, algumas avaliações apontam limitações no aplicativo, principalmente relacionadas à ausência de funcionalidades como radar meteorológico, poucas opções de widgets e menor quantidade de recursos de personalização.
@@ -115,15 +116,14 @@ A plataforma também apresenta uma tendência de centralização de diferentes t
 
 #### Pontos positivos, limitações e lições
 
-| Ponto                                                        | Evidência                                                                                                                                    | Implicação para nosso projeto                                                                                                                   |
-| ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| Grande variedade de dados meteorológicos                     | Disponibiliza temperatura, chuva, umidade, vento, pressão e outros parâmetros.                                                               | Permite utilizar diferentes variáveis climáticas como entrada para o modelo de previsão.                                                        |
-| Fácil integração através de API                              | Os dados podem ser consultados através de requisições utilizando uma chave de API.                                                           | Facilita a obtenção automática e periódica de dados climáticos pelo sistema.                                                                    |
-| Disponibilidade de dados históricos                          | Alguns serviços disponibilizam mais de 47 anos de histórico meteorológico.                                                                   | Pode auxiliar na análise de padrões históricos e na construção ou complementação de bases de treinamento.                                       |
-| Modelo gratuito limitado por requisições                     | Os planos possuem limites de chamadas e determinadas funcionalidades dependem do plano contratado.                                           | É necessário controlar a frequência das consultas e considerar o custo caso o volume de utilização aumente.                                     |
-| Precisão pode variar dependendo da variável e da localização | Estudos comparativos encontraram boa proximidade para algumas variáveis, como temperatura, mas diferenças maiores para outras, como umidade. | Os dados utilizados pelo modelo devem ser comparados ou validados com fontes locais quando possível.                                            |
-| Algumas limitações na experiência do aplicativo              | Usuários relatam ausência de radar, poucos widgets e opções limitadas de personalização.                                                     | Mostra a importância de oferecer informações relevantes sem deixar de considerar funcionalidades de visualização mais avançadas para o usuário. |
-
+| Ponto | Evidência | Implicação para nosso projeto |
+|---|---|---|
+| Grande variedade de dados meteorológicos | Disponibiliza temperatura, chuva, umidade, vento, pressão e outros parâmetros. | Permite utilizar diferentes variáveis climáticas como entrada para o modelo de previsão. |
+| Fácil integração através de API | Os dados podem ser consultados através de requisições utilizando uma chave de API. | Facilita a obtenção automática e periódica de dados climáticos pelo sistema. |
+| Disponibilidade de dados históricos | Alguns serviços disponibilizam mais de 47 anos de histórico meteorológico. | Pode auxiliar na análise de padrões históricos e na construção ou complementação de bases de treinamento. |
+| Modelo gratuito limitado por requisições | Os planos possuem limites de chamadas e determinadas funcionalidades dependem do plano contratado. | É necessário controlar a frequência das consultas e considerar o custo caso o volume de utilização aumente. |
+| Precisão pode variar dependendo da variável e da localização | Estudos comparativos encontraram boa proximidade para algumas variáveis, como temperatura, mas diferenças maiores para outras, como umidade. | Os dados utilizados pelo modelo devem ser comparados ou validados com fontes locais quando possível. |
+| Algumas limitações na experiência do aplicativo | Usuários relatam ausência de radar, poucos widgets e opções limitadas de personalização. | Mostra a importância de oferecer informações relevantes sem deixar de considerar funcionalidades de visualização mais avançadas para o usuário. |
 
 ## 3. Softwares que o público-alvo usa no cotidiano
 
@@ -131,7 +131,9 @@ Analise interfaces que moldam a expectativa do público, mesmo que não sejam co
 
 | Software | Por que o público usa | Padrões relevantes | Prints | O que aprender |
 |---|---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{link local}} | {{...}} |
+| Google Maps | Consultar localizações, rotas e lugares próximos | Mapa interativo, localização atual, zoom e marcadores | <img src="https://github.com/user-attachments/assets/cd95caaa-5f55-4d64-b12e-1af1f7bd3c13" width="250"> | Utilizar padrões de navegação já familiares e facilitar a visualização dos riscos próximos |
+| Waze | Navegar e acompanhar condições e ocorrências no trajeto | Alertas no mapa, ícones de ocorrências e informações por localização | <img src="https://github.com/user-attachments/assets/60e6931e-c615-4aa2-aae4-c5a7bcc5180f" width="250"> | Mostrar alagamentos e riscos diretamente no mapa com marcadores de fácil identificação |
+| Climatempo | Consultar previsão do tempo, chuva e alertas | Cores por intensidade, mapas de chuva e níveis de alerta | <img src="https://github.com/user-attachments/assets/eacecb66-eb87-46ec-98c6-2cba9c50f3b7" width="250"> | Usar cores e indicadores visuais para representar chuva e nível de risco |
 
 ## 3.1 Padrões de interface relevantes ao escopo de IHC
 

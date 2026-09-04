@@ -81,6 +81,59 @@ Use avaliações públicas, relatos, estudos, testes próprios ou outra fonte id
 
 > Repita a subseção para C02, C03... até atender à quantidade da equipe.
 
+### Análise C03 — CEMADEN
+
+**Autor(a):** Eric S. Watanabe — 22.125.086-3                                                                      
+**Tipo:** Análogo                                                                                     
+**Link oficial:** https://www.gov.br/cemaden/pt-br/                                                                         
+**Data de acesso:** 04/09/2026                     
+
+#### Contexto e proposta
+
+O CEMADEN (Centro Nacional de Monitoramento e Alertas de Desastres Naturais) é uma instituição responsável pelo monitoramento de condições que podem contribuir para a ocorrência de desastres naturais, como alagamentos, inundações, enxurradas e deslizamentos. Para isso, utiliza dados meteorológicos, hidrológicos e geoespaciais provenientes de pluviômetros e outros equipamentos de monitoramento.
+
+Para este projeto, o principal interesse está na disponibilização de dados de precipitação e em sua representação geográfica por meio de um mapa interativo. Essas informações possuem relação com a estimativa de risco de alagamentos e inundações, permitindo observar a quantidade de chuva registrada em diferentes regiões.
+
+#### Funcionalidades relevantes
+
+| Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
+|---|---|---|---|
+| Visualização de dados no mapa | Por meio de um mapa interativo que apresenta geograficamente os equipamentos de monitoramento | **Inserir print do mapa interativo** | A representação espacial facilita a localização das informações e sua associação com regiões conhecidas pelo usuário |
+| Consulta de precipitação | Selecionando um pluviômetro no mapa para visualizar informações sobre a quantidade de chuva registrada | **Inserir print de um pluviômetro selecionado** | Permite consultar a chuva de uma região específica, porém os valores podem exigir interpretação do usuário |
+| Consulta de dados históricos | Através da seleção do equipamento e do período desejado para obter registros anteriores de precipitação | **Inserir print da consulta de dados históricos** | Permite observar o comportamento da chuva ao longo do tempo |
+
+#### Experiência do usuário e opiniões
+
+No cotidiano, o usuário pode procurar o CEMADEN ao perceber uma chuva intensa e ficar preocupado com possíveis alagamentos próximos de sua residência, trabalho ou trajeto. Ao acessar o mapa interativo, consegue localizar equipamentos de monitoramento próximos da região desejada e consultar os valores de precipitação registrados.
+
+O uso do mapa facilita a associação das informações com locais conhecidos. Entretanto, após visualizar os dados, o usuário ainda precisa interpretar se determinada quantidade de chuva representa ou não uma situação de risco, já que os valores apresentados possuem caráter mais técnico.
+
+Essa característica é importante para nosso projeto, pois mostra a oportunidade de apresentar essas informações de maneira mais direta. Nosso sistema pretende utilizar dados climáticos, históricos e geoespaciais para apresentar ao usuário uma estimativa de risco de alagamento ou inundação diretamente no mapa, reduzindo a necessidade de interpretação dos dados brutos.
+
+#### Preço/modelo de negócio
+
+O CEMADEN é uma instituição pública vinculada ao Governo Federal. O acesso às informações disponibilizadas em seus sistemas de monitoramento e aos dados históricos de sua rede é gratuito, não existindo um modelo comercial baseado em assinaturas ou cobrança por quantidade de consultas.
+
+Dessa forma, o principal aspecto para nosso projeto não está relacionado ao custo, mas à disponibilidade, organização e tratamento dos dados fornecidos.
+
+#### Padrões e tendências percebidos
+
+A plataforma utiliza o mapa como elemento central para apresentar informações relacionadas à localização. Os equipamentos de monitoramento são posicionados geograficamente, permitindo que o usuário encontre dados referentes a uma determinada região de maneira visual.
+
+Outro padrão identificado é a possibilidade de partir de uma visualização geral e acessar informações mais específicas ao selecionar um ponto no mapa. Esse modelo pode ser aplicado ao nosso projeto, permitindo que o usuário visualize inicialmente os níveis de risco das regiões de São Paulo e selecione uma área para consultar informações mais detalhadas.
+
+Também é possível perceber o uso de dados atuais e históricos, característica relacionada ao nosso sistema, que utiliza diferentes fontes de dados para identificar padrões associados à ocorrência de alagamentos e inundações.
+
+#### Pontos positivos, limitações e lições
+
+| Ponto | Evidência | Implicação para nosso projeto |
+|---|---|---|
+| Representação geográfica das informações | Os equipamentos de monitoramento são apresentados de acordo com sua localização em um mapa interativo. | Reforça a utilização do mapa como forma de apresentar informações relacionadas ao risco de cada região. |
+| Disponibilidade de dados de precipitação | É possível consultar a quantidade de chuva registrada pelos pluviômetros. | Os dados de precipitação podem ser utilizados como uma das variáveis relacionadas à estimativa de risco. |
+| Disponibilidade de dados históricos | O CEMADEN disponibiliza registros históricos de sua rede de monitoramento. | Os dados podem auxiliar na identificação de padrões e na construção da base utilizada pelo modelo. |
+| Informações podem exigir interpretação técnica | A plataforma apresenta valores de precipitação e outras informações provenientes dos equipamentos. | Nosso sistema deve transformar dados técnicos em informações de risco mais simples e compreensíveis. |
+| Foco no monitoramento dos dados | O usuário consegue visualizar informações meteorológicas, mas os valores não representam diretamente o risco de alagamento de uma região. | Nosso produto pode apresentar diretamente uma estimativa de risco no mapa, facilitando a tomada de decisão do usuário. |
+
 ### Análise C04 — OpenWeather
 
 **Autor(a):** Victor P. Lario — 22.125.064-0                                                                      

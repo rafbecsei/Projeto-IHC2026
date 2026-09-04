@@ -79,8 +79,8 @@ Explique diferenças entre os perfis e qual persona é prioritária. Evite perso
 
 ## 2. Mapa de empatia — equipe
 
-**Persona escolhida:** {{P01}}  
-**Justificativa:** {{por que esse perfil é relevante}}
+**Persona escolhida:** P01 - Paulo Andre Oliveira
+**Justificativa:** A P01 foi escolhida por representar o usuário final priorizado no projeto de IHC, que precisa compreender rapidamente o risco de alagamento de uma região para apoiar decisões preventivas durante seus deslocamentos pela cidade. [H]
 
 ![Mapa de empatia](../assets/03_personas/mapa_empatia.svg)
 

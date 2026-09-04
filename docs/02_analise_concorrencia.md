@@ -98,9 +98,12 @@ Para este projeto, o principal interesse está na disponibilização de dados de
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| Visualização de dados no mapa | Por meio de um mapa interativo que apresenta geograficamente os equipamentos de monitoramento | **Inserir print do mapa interativo** | A representação espacial facilita a localização das informações e sua associação com regiões conhecidas pelo usuário |
-| Consulta de precipitação | Selecionando um pluviômetro no mapa para visualizar informações sobre a quantidade de chuva registrada | **Inserir print de um pluviômetro selecionado** | Permite consultar a chuva de uma região específica, porém os valores podem exigir interpretação do usuário |
-| Consulta de dados históricos | Através da seleção do equipamento e do período desejado para obter registros anteriores de precipitação | **Inserir print da consulta de dados históricos** | Permite observar o comportamento da chuva ao longo do tempo |
+| Visualização de dados no mapa | Por meio de um mapa interativo que apresenta geograficamente os equipamentos de monitoramento | <img width="220" src="https://github.com/user-attachments/assets/0563ccec-69ef-4234-8877-e47a13510c40" />
+ | A representação espacial facilita a localização das informações e sua associação com regiões conhecidas pelo usuário |
+| Consulta de precipitação | Selecionando um pluviômetro no mapa para visualizar informações sobre a quantidade de chuva registrada | <img width="220" src="https://github.com/user-attachments/assets/d84a51bd-56fb-46d0-bed4-487269c4bd28" />
+ | Permite consultar a chuva de uma região específica, porém os valores podem exigir interpretação do usuário |
+| Consulta de dados históricos | Através da seleção do equipamento e do período desejado para obter registros anteriores de precipitação | <img width="220" src="https://github.com/user-attachments/assets/7ae91941-dc34-437a-8596-87be7e0bc948" />
+ | Permite observar o comportamento da chuva ao longo do tempo |
 
 #### Experiência do usuário e opiniões
 

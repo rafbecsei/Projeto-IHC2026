@@ -61,11 +61,11 @@ A proposta do CGE não é a mesma de nossa interface, apenas atua no mesmo domí
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| Visualização de pontos de alagamento no mapa | O usuário pode ver através de um mapa a localização dos alagamentos daquele dia | <img width="1686" height="1270" alt="image" src="https://github.com/user-attachments/assets/a27a0870-29e1-4153-b1c1-a6bb5453d1f6" />
+| Visualização de pontos de alagamento no mapa | O usuário pode ver através de um mapa a localização dos alagamentos daquele dia | <img width="250" src="https://github.com/user-attachments/assets/a27a0870-29e1-4153-b1c1-a6bb5453d1f6" />
  | Permite o usuário identificar em formato de mapa a localização das ocorrências de alagamento |
-| Visualização de pontos de alagamento por consulta de data | O usuário pode consultar os alagamentos de uma data específica | <img width="1958" height="1228" alt="image" src="https://github.com/user-attachments/assets/1bc61cc2-ee8f-4fdf-b330-7268ced98d41" />
+| Visualização de pontos de alagamento por consulta de data | O usuário pode consultar os alagamentos de uma data específica | <img width="250" src="https://github.com/user-attachments/assets/1bc61cc2-ee8f-4fdf-b330-7268ced98d41" />
  | Permite o usuário pesquisar e visualizar a localização das ocorrências de alagamento da data pesquisada |
-| Classificação dos pontos de alagamentos | O sistema classifica as ocorrências entre ativas e inativas, e transitáveis e intransitáveis | <img width="1874" height="640" alt="image" src="https://github.com/user-attachments/assets/f5b406ca-0779-40a8-972f-063712fbfdb9" />
+| Classificação dos pontos de alagamentos | O sistema classifica as ocorrências entre ativas e inativas, e transitáveis e intransitáveis | <img width="250" src="https://github.com/user-attachments/assets/f5b406ca-0779-40a8-972f-063712fbfdb9" />
  | Permite o usuário compreender de forma mais fácil o status  e intensidade da ocorrência|
 
 

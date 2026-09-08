@@ -48,39 +48,48 @@ Como foi citado na Entrega 1, o objetivo principal é permitir que esse público
 
 **Autor(a):** Rafael I. Becsei — 22.225.037-5  
 **Tipo:** análogo  
-**Link oficial:** [{{URL}}](https://www.cgesp.org/v3/alagamentos.jsp?)  
+**Link oficial:** [{{LINK}}](https://www.cgesp.org/v3/alagamentos.jsp?)  
 **Data de acesso:** {{19/05/2026}}
 
 #### Contexto e proposta
 
-{{...}}
+O Centro de Gerenciamento de Emergências Climáticas da Prefeitura de São Paulo disponibiliza informações relacionadas às condições meteorológicas e ocorrências de alagamentos no município de São Paulo.  
+
+A proposta do CGE não é a mesma de nossa interface, apenas atua no mesmo domínio e apresenta informações relevantes para o desenvolvimento do sistema desenvolvido no TCC.
 
 #### Funcionalidades relevantes
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| {{...}} | {{...}} | `../assets/02_concorrencia/...` | {{...}} |
+| Visualização de pontos de alagamento no mapa | O usuário pode ver através de um mapa a localização dos alagamentos daquele dia | <img width="1686" height="1270" alt="image" src="https://github.com/user-attachments/assets/a27a0870-29e1-4153-b1c1-a6bb5453d1f6" />
+ | Permite o usuário identificar em formato de mapa a localização das ocorrências de alagamento |
+| Visualização de pontos de alagamento por consulta de data | O usuário pode consultar os alagamentos de uma data específica | <img width="1958" height="1228" alt="image" src="https://github.com/user-attachments/assets/1bc61cc2-ee8f-4fdf-b330-7268ced98d41" />
+ | Permite o usuário pesquisar e visualizar a localização das ocorrências de alagamento da data pesquisada |
+| Classificação dos pontos de alagamentos | O sistema classifica as ocorrências entre ativas e inativas, e transitáveis e intransitáveis | <img width="1874" height="640" alt="image" src="https://github.com/user-attachments/assets/f5b406ca-0779-40a8-972f-063712fbfdb9" />
+ | Permite o usuário compreender de forma mais fácil o status  e intensidade da ocorrência|
+
 
 #### Experiência do usuário e opiniões
 
-Use avaliações públicas, relatos, estudos, testes próprios ou outra fonte identificável. Não trate opinião isolada como verdade universal.
+Durante o uso do site durante nossas pesquisas, foi observado que o CGE  apresenta informações relevantes que podem ser usadas para verificar outras bases de dados, através da localização e data/horário. Porém, também foi encontrados alguns problemas, como limitação para smartphones, por causa da grande quantidade de informações em formato de texto na tela e pelas consultas manuais, que dependendo da proximidade da ocorrência, ainda pode não ter aparecido no site. 
 
 #### Preço/modelo de negócio
 
-{{...}}
+O acesso às informações presentes no CGE são gratuitas para o usuário. Por ser um serviço público da Prefeitura de São Paulo, não possui assinatura ou cobrança para ter acesso às informações. 
 
 #### Padrões e tendências percebidos
 
-{{...}}
+A classificação das ocorrências de alagamentos sempre apresentam um padrão de classificação de se está ativo ou inativo, e se é transitável ou intransitável. Além disso, apresenta informações padronizadas, com localização, ponto de referência, horário e sentido da via. Tudo isso é apresentado no site em formato de texto e em alguns casos, como na classificação, aparecem nas cores verde, vermelho e amarelo.
 
 #### Pontos positivos, limitações e lições
 
 | Ponto | Evidência | Implicação para nosso projeto |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
-
-> Repita a subseção para C02, C03... até atender à quantidade da equipe.
-
+| Positivo | Classificação dos alagamentos em transitável e intransitável | Reforça a ideia de entendimento mais fácil através do uso de imagens e cores para associar a intensidade do risco |
+| Positivo | Ocorrências apresentam informações da localização com mais detalhes como a via e região | Essas informações mostram a importância de apresentar informações espaciais claras para que o usuário consiga localizar de forma mais precisa a localização da ocorrência |
+| Limitação | O mapa apresenta as condições por áreas monitoradas, mas oferece pouca interação para uma consulta mais específica pelo usuário | O projeto procura apresentar um mapa mais interativo, permitindo consulta de forma mais detalhada e focada na consulta do usuário |
+| Limitação | O mapa usa siglas para identificar as áreas monitoradas, o que dificulta a identificação das regiões para usuário que não conhecem essa siglas | No projeto, as regiões devem ser apresentadas de forma mais clara, evitando que o usuário precise ter um conhecimento prévio ou pesquisar por significados |
+  
 ### Análise C03 — CEMADEN
 
 **Autor(a):** Eric S. Watanabe — 22.125.086-3                                                                      

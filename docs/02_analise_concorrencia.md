@@ -206,9 +206,9 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 
 | Padrão observado | Produto(s) | Para qual tarefa serve | Vantagem percebida | Risco/limitação | Aplicável ao nosso escopo? |
 |---|---|---|---|---|---|
-| dashboard | {{...}} | {{...}} | {{...}} | {{...}} | sim/não/talvez |
-| relatório | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
-| histórico + filtros | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
+| Mapa Interativo | CGE, CEMADEN, Google Maps, Waze e Climatempo | visualizar informações de uma região específica | facilita a identificação e entendimento das informações de forma visual e mais clara| dados muito técnicos e excesso de informações pode atrapalhar a compreensão e confundir o usuário | sim |
+| Níveis e classificação dos riscos | CGE e Climatempo | uso de diferentes classificações e cores para os níveis de atenção | a identificação e entendimento das situações que estão ocorrendo é mais rápida e simples de interpretar | o uso de algumas cores pode ser uma limitação para pessoas com distúrbios visuais como daltonismo | sim |
+| Consulta de áreas e data | CEMADEN, Google Maps, Waze | consultar informações de uma região e data especificas | ajuda a consulta de informações mais específicas e detalhadas e não apenas gerais | excesso de informações e dados muito técnicos pode interferir no entendimento  | sim |
 | administração/CRUD | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
 | comparação de resultados | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
 

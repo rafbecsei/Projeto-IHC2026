@@ -216,14 +216,14 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 
 ## 4. Síntese comparativa da equipe
 
-| Critério | C01 | C02 | C03 | Oportunidade para o projeto |
-|---|---|---|---|---|
-| Navegação |  |  |  |  |
-| Feedback/estado |  |  |  |  |
-| Prevenção/recuperação de erro |  |  |  |  |
-| Terminologia |  |  |  |  |
-| Acessibilidade |  |  |  |  |
-| Eficiência |  |  |  |  |
+| Critério | C01 | C02 | C03 | C04 | Oportunidade para o projeto |
+|---|---|---|---|---|---|
+| Navegação | O usuário que deseja verificar alagamentos pode consultar as ocorrências pelo mapa e por data, porém algumas informações exigem consultas manuais. |  | O usuário pode localizar sua região pelo mapa e selecionar equipamentos próximos para consultar dados de chuva. | A consulta é voltada principalmente a desenvolvedores por meio de APIs, não sendo direcionada ao usuário comum. | Permitir que o usuário encontre rapidamente sua localização ou região no mapa e consulte o risco sem precisar navegar por várias telas ou sistemas. |
+| Feedback/estado | Após consultar uma ocorrência, o usuário consegue identificar se ela está ativa ou inativa e se a via está transitável ou intransitável. |  | Após selecionar uma região, o usuário recebe valores de precipitação, mas ainda precisa interpretar se representam uma situação de risco. | Fornece dados meteorológicos atuais e previsões que podem ser utilizados pelo sistema para identificar mudanças nas condições climáticas. | Mostrar diretamente ao usuário o nível de risco da região, utilizando cores e classificações simples que indiquem a situação atual. |
+| Prevenção/recuperação de erro | Siglas e grande quantidade de texto podem dificultar a compreensão, principalmente para usuários que não conhecem previamente o sistema. |  | Valores técnicos de precipitação podem dificultar a compreensão de quem apenas deseja saber se existe risco em determinada região. | O acesso aos dados exige parâmetros e configurações técnicas adequadas, sendo pouco acessível diretamente ao usuário final. | Evitar que o usuário precise interpretar informações técnicas, apresentando mensagens claras quando não houver dados ou quando uma consulta não puder ser realizada. |
+| Terminologia | Termos como transitável e intransitável ajudam na decisão do usuário, porém algumas regiões são identificadas por siglas pouco intuitivas. |  | Utiliza informações como precipitação e dados de equipamentos, que podem não ser facilmente compreendidos por todos os usuários. | Utiliza termos relacionados a dados meteorológicos e APIs, direcionados principalmente a um público técnico. | Traduzir dados meteorológicos e geoespaciais para uma linguagem próxima do cotidiano, como risco baixo, médio ou alto. |
+| Acessibilidade | A quantidade de textos e as limitações em smartphones podem dificultar uma consulta rápida durante um deslocamento. |  | O mapa facilita encontrar visualmente uma região, mas a interpretação dos dados ainda pode ser uma barreira. | Por ser direcionada principalmente à integração por API, não possui como foco a consulta direta pelo usuário comum. | Criar uma interface responsiva e visual que possa ser consultada rapidamente pelo celular antes ou durante um deslocamento. |
+| Eficiência | O usuário consegue verificar ocorrências e suas condições, porém pode precisar pesquisar manualmente por data ou localização. |  | O usuário consegue encontrar dados de chuva de uma região, mas precisa interpretar os valores para entender possíveis consequências. | Permite obter automaticamente dados atuais e de previsão meteorológica, reduzindo a necessidade de coleta manual dessas informações. | Reunir dados climáticos, históricos e geoespaciais e transformar tudo em uma única estimativa de risco, permitindo que o usuário tome uma decisão rapidamente. |
 
 ## 5. Recomendações derivadas
 

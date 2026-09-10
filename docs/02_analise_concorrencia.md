@@ -49,7 +49,7 @@ Como foi citado na Entrega 1, o objetivo principal é permitir que esse público
 **Autor(a):** Rafael I. Becsei — 22.225.037-5  
 **Tipo:** análogo  
 **Link oficial:** https://www.cgesp.org/v3/alagamentos.jsp
-**Data de acesso:** {{19/05/2026}}
+**Data de acesso:** 19/05/2026
 
 #### Contexto e proposta
 

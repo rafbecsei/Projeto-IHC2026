@@ -71,6 +71,33 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 - Priorizar uma apresentação simples e visual do risco, utilizando linguagem acessível, níveis de risco facilmente identificáveis e informações geográficas claras, permitindo uma consulta rápida mesmo em dispositivos móveis e evitando depender de conhecimentos técnicos sobre hidrologia.
 
+
+### Persona P02 — Victor Merker Binda
+
+**Autor(a):** Victor Pimentel Lario - 22.125.064-0  
+**Tipo:** secundária  
+**Base de evidências:** proto-persona a validar  
+**Hipóteses da Entrega 1 relacionadas:** H05
+
+![Persona P02](../assets/03_personas/persona_p02.svg)
+
+| Campo | Descrição |
+|---|---|
+| Faixa etária / contexto relevante | Adulto que mora em uma região da cidade de São Paulo que pode sofrer impactos durante períodos de chuva intensa. [H] |
+| Ocupação/papel | Morador que acompanha as condições da região onde vive para se preparar para possíveis situações de alagamento ou inundação. [H] |
+| Conhecimento do domínio | Conhecimento básico sobre chuvas e alagamentos, adquirido principalmente pela experiência cotidiana e por notícias sobre eventos anteriores. [H] |
+| Experiência tecnológica | Utiliza smartphones, aplicativos de previsão do tempo, mapas e sites de notícias com frequência. [H] |
+| Objetivos | Entender o risco de alagamento em sua região e acompanhar informações que ajudem a decidir se precisa tomar alguma medida preventiva. [H] |
+| Necessidades | Visualizar o risco da região acompanhado de informações sobre chuva e características locais que expliquem melhor a situação apresentada pelo sistema. [H] |
+| Dores/frustrações | Receber apenas uma indicação de risco sem entender o que está causando aquela situação ou se ela realmente pode afetar sua região. [H] |
+| Motivadores | Proteger sua casa e seus bens, evitar situações perigosas e conseguir se preparar com antecedência para períodos de chuva intensa. [H] |
+| Restrições/acessibilidade | Precisa encontrar rapidamente as informações mais importantes, com explicações simples e sem excesso de dados técnicos. [H] |
+| Ambiente típico de uso | Em casa, principalmente antes ou durante períodos de chuva forte, ao perceber mudanças no tempo ou receber notícias sobre possíveis alagamentos na cidade. [H] |
+| Comportamentos relevantes | Costuma acompanhar a previsão do tempo e notícias sobre chuva. Ao perceber possibilidade de chuva intensa, consulta o sistema para verificar sua região, observa o nível de risco e as informações adicionais apresentadas e, caso o risco seja elevado, pode tomar medidas preventivas para proteger seus bens e evitar sair de casa. [H] |
+
+**Decisões de design influenciadas por P02:**
+
+- Apresentar o nível de risco junto de informações complementares, como intensidade da chuva e características da região, permitindo que o usuário entenda melhor o motivo do risco apresentado e tenha mais confiança para tomar decisões preventivas.
 > Repita para P02, P03... Cada integrante deve produzir ao menos uma persona.
 
 ### Síntese das personas

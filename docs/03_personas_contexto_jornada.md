@@ -106,7 +106,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Base de evidências:** proto-persona a validar
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H04 e H05 
 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/522ee990-a426-492b-a74b-b15fab4ea482" />
+<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/522ee990-a426-492b-a74b-b15fab4ea482" />
 
 | Campo | Descrição |
 |---|---|

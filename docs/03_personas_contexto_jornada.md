@@ -51,7 +51,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Base de evidências:** proto-persona a validar 
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H03 e H04
 
-![Persona P01](../assets/03_personas/persona_p01.svg)
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8c6df8a5-9eb5-4307-99c8-74944594a73b"/>
 
 | Campo | Descrição |
 |---|---|
@@ -98,6 +98,30 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Decisões de design influenciadas por P02:**
 
 - Apresentar o nível de risco junto de informações complementares, como intensidade da chuva e características da região, permitindo que o usuário entenda melhor o motivo do risco apresentado e tenha mais confiança para tomar decisões preventivas.
+
+### Persona P03 - Viviane Santos Machado
+
+**Autor(a):** Rafael Iamashita Becsei - 22.225.037-5
+**Tipo:** secundária
+**Base de evidências:** proto-persona a validar
+**Hipóteses da Entrega 1 relacionadas:** H01, H02, H04 e H05 
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/522ee990-a426-492b-a74b-b15fab4ea482" />
+
+| Campo | Descrição |
+|---|---|
+| Faixa etária / contexto relevante | Mulher adulta de 34, que trabalha em uma região que sofre impactos durante períodos de chuva intensa. [H] |
+| Ocupação/papel | Autônoma e proprietária de um pequeno comércio, responsável pelo funcionamento e organização das atividades do estabelecimento. [H] |
+| Conhecimento do domínio | Conhecimento básico sobre chuvas e alagamentos, adquirido principalmente pela experiência cotidiana e por notícias sobre eventos anteriores. [H] |
+| Experiência tecnológica | Utiliza smartphones, aplicativos de previsão do tempo, mapas e sites de notícias para acompanhar informações que possam afetar sua rotina e seu comércio. [H] |
+| Objetivos | Antecipar possíveis impactos de chuvas fortes no funcionamento do seu comércio e tomar decisões preventivas para não ter prejuízos quando houver risco de alagamento na região. [H] |
+| Necessidades | Visualizar o risco de alagamento da região em que trabalha com antecipação, acompanhado de informações meteorológicas que ajudem a entender a situação apresentada no sistema . [H] |
+| Dores/frustrações | Dificuldade de encontrar informações da região específica em que tem comércio e receber informações que não apresentam clareza se a situação irá afetar a região. [H] |
+| Motivadores | Evitar prejuízos ao comércio, protegendo produtos e equipamentos, e conseguir se preparar com antecedência para dias com alagamentos. [H] |
+| Restrições/acessibilidade | Precisa encontrar rapidamente as informações mais importantes, sem depender de conhecimento técnico para compreender os níveis de risco apresentados. [H] |
+| Ambiente típico de uso | No estabelecimento ou em casa, principalmente antes ou durante períodos de chuva forte. [H] |
+| Comportamentos relevantes | Costuma acompanhar a previsão do tempo e notícias sobre chuva. Ao perceber possibilidade de chuva intensa, consulta o sistema para verificar sua região, observa o nível de risco e as informações adicionais apresentadas e, caso identifique uma situação de maior risco, se preparar para possíveis impactos no funcionamento do estabelecimento e instalação de comportas. [H] |
+
 > Repita para P02, P03... Cada integrante deve produzir ao menos uma persona.
 
 ### Síntese das personas

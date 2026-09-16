@@ -51,7 +51,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Base de evidências:** proto-persona a validar 
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H03 e H04
 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8c6df8a5-9eb5-4307-99c8-74944594a73b"/>
+![Persona P02](../assets/03_personas/persona_p01.svg)
 
 | Campo | Descrição |
 |---|---|
@@ -80,6 +80,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Hipóteses da Entrega 1 relacionadas:** H05
 
 ![Persona P02](../assets/03_personas/persona_p02.svg)
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8c6df8a5-9eb5-4307-99c8-74944594a73b"/>
 
 | Campo | Descrição |
 |---|---|

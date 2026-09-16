@@ -263,8 +263,7 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 | Mapa Interativo | CGE, CEMADEN, Google Maps, Waze e Climatempo | visualizar informações de uma região específica | facilita a identificação e entendimento das informações de forma visual e mais clara| dados muito técnicos e excesso de informações pode atrapalhar a compreensão e confundir o usuário | sim |
 | Níveis e classificação dos riscos | CGE e Climatempo | uso de diferentes classificações e cores para os níveis de atenção | a identificação e entendimento das situações que estão ocorrendo é mais rápida e simples de interpretar | o uso de algumas cores pode ser uma limitação para pessoas com distúrbios visuais como daltonismo | sim |
 | Consulta de áreas e data | CEMADEN, Google Maps, Waze | consultar informações de uma região e data especificas | ajuda a consulta de informações mais específicas e detalhadas e não apenas gerais | excesso de informações e dados muito técnicos pode interferir no entendimento  | sim |
-| administração/CRUD | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
-| comparação de resultados | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
+| Informações complementares ao risco | CGE, GeoSampa, CEMADEN e Climatempo | compreender melhor a situação da ocorrência | ajuda o usuário a interpretar as informações apresentadas | o excesso de informações pode dificultar uma consulta rápida | sim |
 
 > O objetivo não é concluir “todo concorrente tem dashboard, então teremos um”. O padrão só será adotado se apoiar uma tarefa rastreável.
 
@@ -281,12 +280,14 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 
 ## 5. Recomendações derivadas
 
-* **RC01:** Apresentar o nível de risco de alagamento ou inundação diretamente no mapa, utilizando classificações simples e de fácil identificação — derivada de C01, C02 e C03.
-* **RC02:** Utilizar cores e indicadores visuais para diferenciar os níveis de risco, sem depender apenas das cores para transmitir a informação — derivada de C01 e dos padrões observados no Climatempo.
-* **RC03:** Permitir que o usuário pesquise sua região ou utilize sua localização atual para consultar rapidamente o risco próximo — derivada de C02, C03, Google Maps e Waze.
-* **RC04:** Evitar a apresentação direta de dados técnicos, como valores de precipitação e informações geoespaciais, transformando-os em informações de risco mais simples — derivada de C02 e C03.
-* **RC05:** Priorizar uma interface responsiva e de fácil utilização em dispositivos móveis, permitindo consultas rápidas antes ou durante um deslocamento — derivada de C01, Google Maps e Waze.
-* **RC06:** Integrar automaticamente dados climáticos, históricos e geoespaciais para reduzir a necessidade de consultas manuais em diferentes plataformas — derivada de C01, C02, C03 e C04.
+Liste recomendações com origem explícita.
+
+- **RC01:** Apresentar o nível de risco de alagamento ou inundação diretamente no mapa, utilizando classificações simples e de fácil identificação — derivada de C01, C02 e C03.
+- **RC02:** Utilizar cores e indicadores visuais para diferenciar os níveis de risco, sem depender apenas das cores para transmitir a informação — derivada de C01 e Climatempo.
+- **RC03:** Permitir que o usuário pesquise uma região específica no mapa para consultar rapidamente o risco correspondente — derivada de C02, C03, Google Maps e Waze.
+- **RC04:** Evitar a apresentação direta de dados técnicos, como valores de precipitação e informações geoespaciais, transformando-os em informações de risco mais simples e compreensíveis — derivada de C02 e C03.
+- **RC05:** Priorizar uma interface responsiva e de fácil utilização em dispositivos móveis, permitindo consultas rápidas antes ou durante um deslocamento — derivada de C01, Google Maps e Waze.
+- **RC06:** Integrar dados climáticos, históricos e geoespaciais para reduzir a necessidade de consultas manuais em diferentes plataformas — derivada de C01, C02, C03 e C04.
 
 ## Referências
 
@@ -297,7 +298,6 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 * GOOGLE. **Google Maps**. Plataforma de mapas, localização e rotas.
 * WAZE. **Waze**. Aplicativo de navegação, rotas e informações de trânsito.
 * CLIMATEMPO. **Climatempo**. Plataforma de previsão meteorológica, chuva e alertas climáticos.
-
 
 ## Checklist
 

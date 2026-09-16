@@ -89,6 +89,60 @@ A classificação das ocorrências de alagamentos sempre apresentam um padrão d
 | Positivo | Ocorrências apresentam informações da localização com mais detalhes como a via e região | Essas informações mostram a importância de apresentar informações espaciais claras para que o usuário consiga localizar de forma mais precisa a localização da ocorrência |
 | Limitação | O mapa apresenta as condições por áreas monitoradas, mas oferece pouca interação para uma consulta mais específica pelo usuário | O projeto procura apresentar um mapa mais interativo, permitindo consulta de forma mais detalhada e focada na consulta do usuário |
 | Limitação | O mapa usa siglas para identificar as áreas monitoradas, o que dificulta a identificação das regiões para usuário que não conhecem essa siglas | No projeto, as regiões devem ser apresentadas de forma mais clara, evitando que o usuário precise ter um conhecimento prévio ou pesquisar por significados |
+
+### Análise C02 — GEOSAMPA
+
+**Autor(a):** Henrique H. Babler — 22.125.084-8  
+**Tipo:** Análogo  
+**Link oficial:** https://novogeosampa.prefeitura.sp.gov.br/  
+**Data de acesso:** 15/07/2026
+
+#### Contexto e proposta
+
+O GeoSampa é o mapa digital oficial da cidade de São Paulo, mantido pela Prefeitura. Trata-se de um sistema de informação geográfica que reúne, em um único ambiente, uma grande quantidade de dados sobre o município, organizados em diversas camadas relacionadas a temas urbanos.
+
+A proposta do GeoSampa não é a mesma de nossa interface, pois atua como uma plataforma ampla de consulta territorial. Para este projeto, o principal interesse está na forma como a plataforma representa a divisão territorial do município e na disponibilização de dados relacionados à chuva, como áreas de inundação, ocorrências de alagamento e informações de drenagem, que possuem relação direta com a estimativa de risco de alagamentos e inundações.
+
+#### Funcionalidades relevantes
+
+| Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
+|---|---|---|---|
+| Consulta por divisão territorial | O usuário pesquisa ou seleciona uma subprefeitura ou distrito e o mapa aproxima e destaca a região escolhida |<img width="220" alt="SubPrefeitura_Distrito" src="https://github.com/user-attachments/assets/0ce9aa8e-5b20-497c-b56a-f6972eeb6f5e" /> | Permite localizar uma região de forma organizada, mesmo sem conhecer sua posição exata no mapa |
+| Visualização de áreas de inundação e alagamento | Ativando camadas que mostram áreas com potencial de inundação e registros históricos de alagamento sobre o mapa | <img width="220" alt="Alagamento_Inundação" src="https://github.com/user-attachments/assets/bc046a43-054d-4a2e-8b69-838b8bd5f232" /> | A representação no mapa facilita associar o risco a regiões conhecidas, mas depende de o usuário ativar as camadas corretas |
+| Consulta de dados de drenagem | Ativando camadas relacionadas ao sistema de drenagem | <img width="220" alt="Drenagem" src="https://github.com/user-attachments/assets/8dee2a9e-7be9-4da4-9964-34373daf5e00" /> | Reúne informações importantes para entender o risco, porém com forte caráter técnico |
+
+#### Experiência do usuário e opiniões
+
+No cotidiano, o usuário pode procurar o GeoSampa para saber se o bairro onde mora, trabalha ou por onde passa já teve problemas com alagamentos. Ao acessar a plataforma, consegue localizar a região desejada por meio da pesquisa por distrito ou subprefeitura, e a divisão territorial é apresentada de forma bem organizada.
+
+Entretanto, para encontrar as informações sobre alagamento, o usuário precisa saber quais camadas ativar entre muitas opções disponíveis, e depois interpretar os dados apresentados. A grande quantidade de camadas e a terminologia técnica podem dificultar a compreensão de quem apenas deseja saber se existe risco em determinada região. Além disso, as informações possuem caráter mais histórico, não indicando se existe risco no momento da consulta.
+
+Essa característica é importante para nosso projeto, pois mostra a oportunidade de aproveitar os dados territoriais e de chuva do GeoSampa, mas apresentando-os de forma mais direta. Nosso sistema pretende utilizar dados climáticos, históricos e geoespaciais para apresentar ao usuário uma estimativa de risco diretamente no mapa, reduzindo a necessidade de configurar camadas e interpretar dados brutos.
+
+#### Preço/modelo de negócio
+
+O GeoSampa é um serviço público da Prefeitura de São Paulo. O acesso à plataforma e às suas camadas é gratuito, não existindo assinatura ou cobrança para consultar as informações. A plataforma também disponibiliza dados abertos para download.
+
+Dessa forma, o principal aspecto para nosso projeto não está relacionado ao custo, mas à disponibilidade, organização e tratamento dos dados fornecidos.
+
+#### Padrões e tendências percebidos
+
+A plataforma utiliza o mapa como elemento central, sobre o qual são sobrepostas diferentes camadas de informação. Um padrão relevante é a organização da cidade por subprefeituras e distritos, permitindo que o usuário parta de uma visão geral e aproxime a visualização de uma região específica.
+
+Outro padrão identificado é o modelo de camadas ativáveis, em que o próprio usuário escolhe quais informações deseja ver no mapa. Esse modelo oferece bastante flexibilidade, mas também aumenta a complexidade da interface.
+
+Esse formato pode inspirar nosso projeto na forma de partir de uma visualização territorial e permitir o detalhamento por região, mas indica também a importância de simplificar a escolha das informações para não sobrecarregar o usuário.
+
+#### Pontos positivos, limitações e lições
+
+| Ponto | Evidência | Implicação para nosso projeto |
+|---|---|---|
+| Divisão territorial bem estruturada | A plataforma permite localizar subprefeituras e distritos de forma organizada por meio de pesquisa. | Reforça a utilidade de organizar as informações de risco por região, facilitando a localização pelo usuário. |
+| Disponibilidade de dados ligados à chuva | Apresenta camadas de áreas de inundação, registros históricos de alagamentos e informações de drenagem. | Esses dados podem ser utilizados como variáveis relacionadas à estimativa de risco de alagamentos e inundações. |
+| Dados oficiais da Prefeitura | As informações são mantidas pela Prefeitura e disponibilizadas também como dados abertos. | Pode ser utilizado como fonte para compor ou validar a base de dados utilizada pelo sistema. |
+| Excesso de camadas e forte caráter técnico | O usuário precisa escolher e ativar manualmente as camadas, que utilizam termos voltados à gestão territorial. | Nosso sistema deve apresentar apenas as informações relevantes ao risco, em uma linguagem simples e compreensível. |
+| Foco em dados históricos | As camadas mostram áreas de inundação e ocorrências passadas, sem indicar a situação de chuva no momento. | Nosso produto pode combinar dados históricos com dados climáticos atuais para mostrar o risco no momento da consulta. |
+
   
 ### Análise C03 — CEMADEN
 

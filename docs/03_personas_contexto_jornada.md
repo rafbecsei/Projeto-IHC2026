@@ -1,6 +1,6 @@
 # Entrega 3 — Personas, mapa de empatia, contexto de uso e jornada
 
-**Data:** {{02/09/2026}}  
+**Data:** 02/09/2026
 **Status:** 🟨 em andamento  
 **Responsabilidade:** 1 persona por integrante; 1 mapa de empatia, 1 contexto de uso consolidado e 1 jornada por equipe (salvo orientação diferente do docente).
 
@@ -79,8 +79,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Base de evidências:** proto-persona a validar  
 **Hipóteses da Entrega 1 relacionadas:** H05
 
-![Persona P02](../assets/03_personas/persona_p02.svg)
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8c6df8a5-9eb5-4307-99c8-74944594a73b"/>
+![Persona P02](../assets/03_personas/persona2.svg)
 
 | Campo | Descrição |
 |---|---|
@@ -107,7 +106,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Base de evidências:** proto-persona a validar
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H04 e H05 
 
-<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/522ee990-a426-492b-a74b-b15fab4ea482" />
+![Persona P03](../assets/03_personas/persona3_p03.svg)
 
 | Campo | Descrição |
 |---|---|

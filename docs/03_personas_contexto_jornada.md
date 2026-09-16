@@ -152,19 +152,24 @@ Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos
 
 ## 4. Jornada do usuário — equipe
 
-**Persona:** {{P01}}  
-**Objetivo da jornada:** {{...}}  
-**Início e fim da jornada:** {{...}}
+**Persona:** P01 — Paulo Andre Oliveira  
+**Objetivo da jornada:** Verificar o risco de alagamento antes de um deslocamento e utilizar essa informação para escolher um trajeto mais seguro.  
+**Início e fim da jornada:** A jornada começa quando Paulo percebe que está chovendo forte e precisa se deslocar pela cidade. Termina quando ele chega ao destino após utilizar as informações de risco para decidir como realizar seu trajeto.
 
 | Etapa | Situação/ação | Objetivo | Pensamento/emoção | Dor | Oportunidade de design | Evidência |
 |---|---|---|---|---|---|---|
-| 1 | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
+| 1 | Paulo está terminando o expediente e percebe que a chuva aumentou antes de sair do trabalho. | Entender se a chuva pode afetar seu caminho até em casa. | “Será que tem algum alagamento no meu caminho?” Preocupação e incerteza. | Não saber se a chuva representa algum risco para o deslocamento. | Disponibilizar informações atualizadas sobre risco de alagamento de forma rápida. | P01 - ambiente típico, motivadores e dores |
+| 2 | Antes de sair, Paulo pega o celular para verificar a situação das regiões por onde costuma passar. | Encontrar informações sobre possíveis áreas de risco sem precisar consultar várias fontes. | “Quero saber rapidamente onde está perigoso antes de sair.” | Ter que procurar informações em diferentes aplicativos ou fontes e interpretar dados separados. | Reunir informações climáticas, históricas e geográficas em uma única interface. | P01 - dores/frustrações e comportamentos |
+| 3 | Paulo acessa o sistema e consulta no mapa sua localização e as regiões próximas ao seu trajeto. | Identificar visualmente quais regiões apresentam risco. | “Preciso entender isso rápido, sem ficar analisando números.” | Dificuldade para interpretar porcentagens, precipitação e outros dados técnicos. | Mostrar níveis de risco com linguagem simples, indicadores visuais e informações que não dependam apenas de cores. | P01 - necessidades, restrições e conhecimento do domínio |
+| 4 | Paulo identifica que uma região de seu trajeto apresenta risco elevado de alagamento. | Decidir se deve manter o caminho habitual ou evitar aquela região. | “Melhor não passar por ali hoje.” Preocupação, mas com maior segurança para decidir. | Descobrir uma situação de risco apenas quando já estiver próximo ou dentro da região afetada. | Destacar áreas de maior risco no mapa e permitir que o usuário identifique rapidamente regiões que devem ser evitadas. | P01 - objetivos, motivadores e dores |
+| 5 | Com base nas informações apresentadas, Paulo escolhe um caminho que evita a região de maior risco e inicia seu deslocamento. | Chegar ao destino com maior segurança e menos imprevistos. | “Agora sei por onde é melhor passar.” Maior confiança e tranquilidade. | Precisar decidir o trajeto sem informações claras sobre possíveis alagamentos. | Apoiar a decisão de deslocamento apresentando o risco de forma clara e associado à localização do usuário. | P01 - objetivos e motivadores |
+| 6 | Paulo chega ao destino sem passar pela região identificada como de maior risco. | Concluir o deslocamento com segurança e perceber utilidade nas informações consultadas. | “Valeu a pena verificar antes de sair.” Sensação de segurança e confiança no sistema. | Receber informações tarde demais ou somente após enfrentar um problema no trajeto. | Manter informações de risco úteis antes e durante futuros deslocamentos, incentivando consultas preventivas. | P01 - dores, motivadores e comportamentos |
 
-> A jornada pode incluir etapas **antes, durante e depois** do uso do produto. Não transforme a jornada em lista de telas.
+> A jornada considera momentos antes, durante e depois do uso do produto, relacionando o sistema ao cotidiano e à necessidade real de deslocamento da persona.
 
 ## Síntese
 
-Quais necessidades e objetivos devem obrigatoriamente aparecer nos cenários e nas tarefas seguintes?
+Os cenários e tarefas seguintes devem considerar principalmente a necessidade de Paulo consultar rapidamente o risco de alagamento de uma região, localizar esse risco no mapa e compreender sua intensidade sem precisar interpretar dados técnicos. Também devem permitir que ele utilize essa informação antes ou durante um deslocamento para evitar regiões potencialmente perigosas e tomar decisões com maior segurança. A interface deve priorizar uso pelo celular, linguagem simples, boa legibilidade e indicadores que não dependam somente de cores.
 
 ## Checklist
 

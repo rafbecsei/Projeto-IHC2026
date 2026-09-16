@@ -281,14 +281,23 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 
 ## 5. Recomendações derivadas
 
-Liste recomendações com origem explícita.
-
-- **RC01:** {{recomendação}} — derivada de {{C01/C02/evidência}}.
-- **RC02:** {{...}}
+* **RC01:** Apresentar o nível de risco de alagamento ou inundação diretamente no mapa, utilizando classificações simples e de fácil identificação — derivada de C01, C02 e C03.
+* **RC02:** Utilizar cores e indicadores visuais para diferenciar os níveis de risco, sem depender apenas das cores para transmitir a informação — derivada de C01 e dos padrões observados no Climatempo.
+* **RC03:** Permitir que o usuário pesquise sua região ou utilize sua localização atual para consultar rapidamente o risco próximo — derivada de C02, C03, Google Maps e Waze.
+* **RC04:** Evitar a apresentação direta de dados técnicos, como valores de precipitação e informações geoespaciais, transformando-os em informações de risco mais simples — derivada de C02 e C03.
+* **RC05:** Priorizar uma interface responsiva e de fácil utilização em dispositivos móveis, permitindo consultas rápidas antes ou durante um deslocamento — derivada de C01, Google Maps e Waze.
+* **RC06:** Integrar automaticamente dados climáticos, históricos e geoespaciais para reduzir a necessidade de consultas manuais em diferentes plataformas — derivada de C01, C02, C03 e C04.
 
 ## Referências
 
-{{fontes dos produtos, avaliações e literatura}}
+* CENTRO DE GERENCIAMENTO DE EMERGÊNCIAS CLIMÁTICAS DE SÃO PAULO (CGE). **Alagamentos**. Disponível em: https://www.cgesp.org/v3/alagamentos.jsp. Acesso em: 19 maio 2026.
+* PREFEITURA DE SÃO PAULO. **GeoSampa — Mapa Digital da Cidade de São Paulo**. Disponível em: https://novogeosampa.prefeitura.sp.gov.br/. Acesso em: 15 jul. 2026.
+* CENTRO NACIONAL DE MONITORAMENTO E ALERTAS DE DESASTRES NATURAIS (CEMADEN). **Portal CEMADEN**. Disponível em: https://www.gov.br/cemaden/pt-br/. Acesso em: 4 set. 2026.
+* OPENWEATHER. **Weather API**. Disponível em: https://openweathermap.org/. Acesso em: 2 set. 2026.
+* GOOGLE. **Google Maps**. Plataforma de mapas, localização e rotas.
+* WAZE. **Waze**. Aplicativo de navegação, rotas e informações de trânsito.
+* CLIMATEMPO. **Climatempo**. Plataforma de previsão meteorológica, chuva e alertas climáticos.
+
 
 ## Checklist
 

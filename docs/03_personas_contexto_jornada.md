@@ -142,13 +142,13 @@ Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos
 
 | Dimensão | Descrição | Implicação de design |
 |---|---|---|
-| Usuários | {{...}} | {{...}} |
-| Tarefas | {{...}} | {{...}} |
-| Equipamentos | {{...}} | {{...}} |
-| Ambiente físico | {{...}} | {{...}} |
-| Ambiente social/organizacional | {{...}} | {{...}} |
-| Papéis/permissões/governança | {{...}} | {{...}} |
-| Volume de dados/histórico | {{...}} | {{...}} |
+| Usuários | Adultos que se deslocam pela cidade e precisam consultar informações sobre risco de alagamentos e inundações. | A interface deve utilizar linguagem simples e apresentar o risco de forma fácil de entender. |
+| Tarefas | Consultar o risco de uma região, visualizar informações no mapa e verificar condições antes ou durante um deslocamento. | As principais informações devem ser acessíveis rapidamente e exigir poucas ações do usuário. |
+| Equipamentos | Computadores e smartphones. | A interface deve ser responsiva e adequada principalmente ao uso em dispositivos móveis. |
+| Ambiente físico | Pode ser utilizado em casa, no trabalho ou durante deslocamentos pela cidade, inclusive em situações de chuva. | Informações importantes devem possuir boa legibilidade e fácil visualização mesmo em consultas rápidas. |
+| Ambiente social/organizacional | O usuário pode realizar a consulta individualmente ou utilizar as informações para orientar familiares, amigos ou colegas. | As informações apresentadas devem ser claras e de fácil compreensão para diferentes usuários. |
+| Papéis/permissões/governança | O usuário comum consulta as informações disponibilizadas pelo sistema, sem necessidade de alterar os dados utilizados na estimativa. | As funções de consulta devem ser simples e não exigir permissões ou configurações complexas. |
+| Volume de dados/histórico | O sistema utiliza dados geoespaciais, meteorológicos e registros históricos para estimar o risco de alagamentos e inundações. | O sistema deve organizar os dados e apresentar ao usuário apenas as informações necessárias para compreender o risco. |
 
 ## 4. Jornada do usuário — equipe
 

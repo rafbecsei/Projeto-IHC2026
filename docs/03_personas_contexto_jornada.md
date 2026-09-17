@@ -1,6 +1,6 @@
 # Entrega 3 — Personas, mapa de empatia, contexto de uso e jornada
 
-**Data:** 02/09/2026
+**Data:** 02/09/2026  
 **Status:** 🟨 em andamento  
 **Responsabilidade:** 1 persona por integrante; 1 mapa de empatia, 1 contexto de uso consolidado e 1 jornada por equipe (salvo orientação diferente do docente).
 
@@ -46,9 +46,9 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 ### Persona P01 — Paulo Andre Oliveira
 
-**Autor(a):** Eric Song Watanabe - 22.125.086-3
-**Tipo:** primária
-**Base de evidências:** proto-persona a validar 
+**Autor(a):** Eric Song Watanabe - 22.125.086-3  
+**Tipo:** primária  
+**Base de evidências:** proto-persona a validar  
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H03 e H04
 
 ![Persona P02](../assets/03_personas/persona_p01.svg)
@@ -101,9 +101,9 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 ### Persona P03 - Viviane Santos Machado
 
-**Autor(a):** Rafael Iamashita Becsei - 22.225.037-5
-**Tipo:** secundária
-**Base de evidências:** proto-persona a validar
+**Autor(a):** Rafael Iamashita Becsei - 22.225.037-5  
+**Tipo:** secundária  
+**Base de evidências:** proto-persona a validar  
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H04 e H05 
 
 ![Persona P03](../assets/03_personas/persona3_p03.svg)
@@ -130,7 +130,7 @@ Explique diferenças entre os perfis e qual persona é prioritária. Evite perso
 
 ## 2. Mapa de empatia — equipe
 
-**Persona escolhida:** P01 - Paulo Andre Oliveira
+**Persona escolhida:** P01 - Paulo Andre Oliveira  
 **Justificativa:** A P01 foi escolhida por representar o usuário final priorizado no projeto de IHC, que precisa compreender rapidamente o risco de alagamento de uma região para apoiar decisões preventivas durante seus deslocamentos pela cidade. [H]
 
 ![Mapa de empatia](../assets/03_personas/mapa_empatia.svg)

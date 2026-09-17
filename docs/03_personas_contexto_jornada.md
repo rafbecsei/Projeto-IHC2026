@@ -69,35 +69,41 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 **Decisões de design influenciadas por P01:**
 
-- Priorizar uma apresentação simples e visual do risco, utilizando linguagem acessível, níveis de risco facilmente identificáveis e informações geográficas claras, permitindo uma consulta rápida mesmo em dispositivos móveis e evitando depender de conhecimentos técnicos sobre hidrologia.
-
+- Apresentar o nível de risco de forma simples e visual, permitindo uma consulta rápida antes ou durante um deslocamento.
+- Destacar claramente as regiões que apresentam maior risco de alagamento, facilitando a identificação de áreas que podem ser evitadas.
+- Utilizar linguagem acessível e indicadores que não dependam somente de cores, permitindo que diferentes usuários compreendam os níveis de risco.
+- Priorizar uma interface responsiva e adequada ao uso em smartphones, considerando que a consulta pode ocorrer pouco antes ou durante um deslocamento.
+- Reunir informações relevantes sobre risco, localização e condições de chuva em uma única interface, reduzindo a necessidade de consultar diferentes fontes.
 
 ### Persona P02 — Victor Merker Binda
 
 **Autor(a):** Victor Pimentel Lario - 22.125.064-0  
-**Tipo:** primária
+**Tipo:** primária  
 **Base de evidências:** proto-persona a validar  
 **Hipóteses da Entrega 1 relacionadas:** H05
 
-![Persona P02](../assets/03_personas/persona2.svg)
+<img src="../assets/03_personas/persona2_p02.svg" alt="Persona P02" width="300">
 
 | Campo | Descrição |
 |---|---|
-| Faixa etária / contexto relevante | Adulto que mora em uma região da cidade de São Paulo que pode sofrer impactos durante períodos de chuva intensa. [H] |
-| Ocupação/papel | Morador que acompanha as condições da região onde vive para se preparar para possíveis situações de alagamento ou inundação. [H] |
-| Conhecimento do domínio | Conhecimento básico sobre chuvas e alagamentos, adquirido principalmente pela experiência cotidiana e por notícias sobre eventos anteriores. [H] |
-| Experiência tecnológica | Utiliza smartphones, aplicativos de previsão do tempo, mapas e sites de notícias com frequência. [H] |
-| Objetivos | Entender o risco de alagamento em sua região e acompanhar informações que ajudem a decidir se precisa tomar alguma medida preventiva. [H] |
-| Necessidades | Visualizar o risco da região acompanhado de informações sobre chuva e características locais que expliquem melhor a situação apresentada pelo sistema. [H] |
-| Dores/frustrações | Receber apenas uma indicação de risco sem entender o que está causando aquela situação ou se ela realmente pode afetar sua região. [H] |
+| Faixa etária / contexto relevante | Homem mais velho que mora em uma região que pode sofrer impactos durante períodos de chuva intensa. [H] |
+| Ocupação/papel | Morador que acompanha as condições da região onde vive e busca se preparar para possíveis situações de alagamento ou inundação. [H] |
+| Conhecimento do domínio | Possui conhecimento básico sobre chuvas e alagamentos, adquirido principalmente pela experiência cotidiana e por informações recebidas em notícias e reportagens. Não possui conhecimento técnico sobre previsão ou modelos de risco. [H] |
+| Experiência tecnológica | Possui familiaridade básica com smartphones e utiliza principalmente funções simples, como chamadas, mensagens e aplicativos de notícias. Costuma acompanhar informações sobre chuvas e alagamentos pela televisão, mas começou a experimentar ferramentas digitais para consultar informações de sua região. [H] |
+| Objetivos | Entender de forma simples se a região onde mora apresenta risco de alagamento ou inundação e identificar quando precisa tomar alguma medida preventiva. [H] |
+| Necessidades | Saber se o risco de alagamento da região em que mora é alto [H] |
+| Dores/frustrações | Ter dificuldade para interpretar mapas, porcentagens ou informações técnicas; não saber onde encontrar rapidamente informações da necessidade que tem; depender de diferentes fontes para entender a situação. [H] |
 | Motivadores | Proteger sua casa e seus bens, evitar situações perigosas e conseguir se preparar com antecedência para períodos de chuva intensa. [H] |
-| Restrições/acessibilidade | Precisa encontrar rapidamente as informações mais importantes, com explicações simples e sem excesso de dados técnicos. [H] |
-| Ambiente típico de uso | Em casa, principalmente antes ou durante períodos de chuva forte, ao perceber mudanças no tempo ou receber notícias sobre possíveis alagamentos na cidade. [H] |
-| Comportamentos relevantes | Costuma acompanhar a previsão do tempo e notícias sobre chuva. Ao perceber possibilidade de chuva intensa, consulta o sistema para verificar sua região, observa o nível de risco e as informações adicionais apresentadas e, caso o risco seja elevado, pode tomar medidas preventivas para proteger seus bens e evitar sair de casa. [H] |
+| Restrições/acessibilidade | Pode apresentar maior dificuldade ao utilizar interfaces complexas ou com muitas informações. Precisa de textos legíveis, linguagem simples, elementos bem identificados e poucos passos para realizar uma consulta. [H] |
+| Ambiente típico de uso | Em casa, principalmente antes ou durante períodos de chuva forte, ao perceber mudanças no tempo ou assistir notícias sobre possíveis alagamentos na cidade. [H] |
+| Comportamentos relevantes | Costuma acompanhar notícias sobre previsão do tempo e situações de chuva pela televisão. Quando recebe informações sobre possibilidade de chuva intensa, pode buscar informações adicionais pelo celular e experimentar ferramentas digitais para verificar a situação de sua região. [H] |
 
 **Decisões de design influenciadas por P02:**
 
-- Apresentar o nível de risco junto de informações complementares, como intensidade da chuva e características da região, permitindo que o usuário entenda melhor o motivo do risco apresentado e tenha mais confiança para tomar decisões preventivas.
+- Utilizar linguagem simples e evitar a apresentação direta de dados técnicos que possam dificultar a compreensão do risco.
+- Apresentar níveis de risco e informações complementares de forma clara, permitindo que o usuário compreenda a situação sem precisar possuir conhecimento técnico.
+- Priorizar elementos visuais e textos legíveis, com navegação simples e poucos passos para realizar uma consulta.
+- Não depender exclusivamente de cores para diferenciar os níveis de risco, utilizando também textos, ícones ou outros indicadores visuais.
 
 ### Persona P03 - Viviane Santos Machado
 
@@ -106,7 +112,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Base de evidências:** proto-persona a validar  
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H04 e H05 
 
-![Persona P03](../assets/03_personas/persona3_p03.svg)
+<img src="../assets/03_personas/persona3_p03.svg" alt="Persona P03" width="300">
 
 | Campo | Descrição |
 |---|---|
@@ -122,6 +128,14 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | Ambiente típico de uso | No estabelecimento ou em casa, principalmente antes ou durante períodos de chuva forte. [H] |
 | Comportamentos relevantes | Costuma acompanhar a previsão do tempo e notícias sobre chuva. Ao perceber possibilidade de chuva intensa, consulta o sistema para verificar sua região, observa o nível de risco e as informações adicionais apresentadas e, caso identifique uma situação de maior risco, se preparar para possíveis impactos no funcionamento do estabelecimento e instalação de comportas. [H] |
 
+**Decisões de design influenciadas por P02:**
+
+- Apresentar o risco de alagamento de forma antecipada e associada à região do estabelecimento, permitindo que a usuária identifique possíveis impactos antes de uma situação crítica.
+- Disponibilizar informações complementares sobre chuva e condições da região para ajudar o usuário a compreender o motivo do risco apresentado e avaliar possíveis impactos em seu comércio.
+- Destacar de forma clara situações de maior risco, facilitando a tomada de decisões preventivas, como proteger produtos e equipamentos ou preparar o estabelecimento para uma possível ocorrência.
+- Priorizar uma consulta rápida e objetiva, considerando que o usuário pode precisar verificar a situação enquanto realiza outras atividades, como nesse caso, o funcionamento do comércio.
+- Utilizar linguagem simples e indicadores visuais de fácil interpretação, evitando que a usuária precise compreender dados técnicos para tomar decisões preventivas.
+
 ### Persona P04 — Juliana Ferreira Costa
 
 **Autor(a):** Henrique Hodel Babler - 22.125.084-8  
@@ -129,33 +143,31 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Base de evidências:** proto-persona a validar  
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H03 e H04
 
-![Persona P04](../assets/03_personas/persona4_p04.jpg)
+<img src="../assets/03_personas/persona4_p04.svg" alt="Persona P04" width="300">
 
 | Campo | Descrição |
 |---|---|
-| Faixa etária / contexto relevante | Mulher adulta de 27 anos que mora em um município da Região Metropolitana de São Paulo e trabalha na capital, realizando deslocamento intermunicipal diário. [H] |
-| Ocupação/papel | Atendente de loja em um shopping center, com escala 6x1 e turnos que podem terminar após o fechamento do shopping, no período noturno. [H] |
-| Conhecimento do domínio | Baixo conhecimento técnico sobre hidrologia e precipitação; conhece por experiência própria alguns pontos do trajeto que costumam alagar em dias de chuva forte. [H] |
-| Experiência tecnológica | Usa smartphone com frequência, principalmente aplicativos de mensagens, redes sociais, navegação (Waze/Google Maps) e previsão do tempo. [H] |
-| Objetivos | Saber, antes de sair de casa e antes de sair do trabalho, se o trajeto de moto apresenta risco de alagamento, para decidir o caminho ou o horário de saída com segurança. [H] |
-| Necessidades | Consultar o risco ao longo do trajeto completo entre casa e trabalho, e não apenas de uma região isolada, de forma muito rápida e com poucos toques no celular. [H] |
-| Dores/frustrações | Por usar moto, um alagamento que um carro atravessaria pode representar risco de queda, dano ao veículo ou perda do dia de trabalho; descobrir o alagamento só quando já está no caminho; ter menos informação e mais insegurança na volta noturna; perder tempo juntando informações de várias fontes antes do turno. [H] |
-| Motivadores | Proteger sua integridade física e a moto, que é seu meio de transporte e de sustento; chegar no horário, já que atrasos e faltas afetam sua relação com a loja; voltar para casa com segurança após o expediente. [H] |
-| Restrições/acessibilidade | Consulta rápida e sob pressão de tempo, geralmente minutos antes de sair; não consegue usar o celular enquanto pilota; pode consultar com capacete na mão, com pouca bateria ou com conexão móvel limitada; precisa de leitura imediata do nível de risco sem depender só de cores. [H] |
-| Ambiente típico de uso | Em casa, antes de sair para o trabalho, e no shopping (vestiário ou saída de funcionários), antes de voltar para casa à noite. [H] |
-| Comportamentos relevantes | Olha o celular toda vez antes de sair de casa e antes de voltar do trabalho, verificando previsão do tempo e trânsito. Se identifica risco em algum ponto do trajeto, muda o caminho, espera a chuva diminuir ou, em último caso, avisa a loja de um possível atraso. [H] |
+| Faixa etária / contexto relevante | Jovem adulta de 20 anos, estudante universitária, que precisa se deslocar diariamente até a faculdade. [H] |
+| Ocupação/papel | Estudante universitária que utiliza principalmente transporte público para chegar à faculdade. [H] |
+| Conhecimento do domínio | Baixo conhecimento técnico sobre hidrologia e precipitação, mas possui experiência cotidiana com situações de chuva intensa, congestionamentos e alagamentos em seus trajetos. [H] |
+| Experiência tecnológica | Alta familiaridade com smartphones, aplicativos de mapas, navegação, transporte público, previsão do tempo e redes sociais. Está acostumada a utilizar ferramentas digitais para planejar seus deslocamentos. [H] |
+| Objetivos | Verificar se há risco de alagamento no caminho até a faculdade e decidir antecipadamente se precisa alterar seu trajeto ou horário de saída. [H] |
+| Necessidades | Consultar rapidamente o risco de alagamento nas regiões por onde passará e compreender como uma área afetada pode impactar seu deslocamento. [H] |
+| Dores/frustrações | Descobrir um alagamento somente durante o trajeto; enfrentar congestionamentos intensos quando uma via importante está alagada; precisar consultar diferentes aplicativos para entender a situação; não saber se deve manter o trajeto habitual ou procurar uma alternativa. [H] |
+| Motivadores | Evitar atrasos para aulas e compromissos, reduzir o tempo de deslocamento e evitar situações em que o transporte público fique preso em regiões afetadas por alagamentos. [H] |
+| Restrições/acessibilidade | Geralmente realiza a consulta poucos minutos antes de sair e precisa compreender rapidamente as informações apresentadas. [H] |
+| Ambiente típico de uso | Em casa, antes de sair para a faculdade, ou durante uma espera pelo transporte público, principalmente em períodos de chuva intensa. [H] |
+| Comportamentos relevantes | Costuma consultar aplicativos de mapas, transporte público e previsão do tempo antes de sair. Ao perceber possibilidade de chuva forte, verifica as condições do trajeto e pode escolher outro caminho, sair mais cedo ou aguardar a situação melhorar. [H] |
 
-**Lacuna de conhecimento relacionada:**
-
-- [?] O trajeto de P04 atravessa mais de um município, mas as estimativas do TCC abrangem apenas a cidade de São Paulo. Ainda não sabemos como a interface deve comunicar ao usuário que parte do trajeto está fora da área coberta.
 
 **Decisões de design influenciadas por P04:**
 
-- Permitir a consulta do risco ao longo de um trajeto frequente (casa <-> trabalho), possivelmente salvo, reduzindo a quantidade de ações em consultas repetidas duas vezes ao dia.
-- Apresentar o resultado de forma resumida e imediata (ex.: "trajeto com ponto de risco alto em X"), adequada a consultas de poucos segundos antes de sair.
-- Considerar alertas antes dos horários habituais de saída e de retorno, inclusive no período noturno, relacionados à hipótese H03.
-- Indicar claramente quando parte do trajeto está fora da área coberta pelas estimativas, evitando que a ausência de dado seja interpretada como ausência de risco.
-> Repita para P02, P03... Cada integrante deve produzir ao menos uma persona.
+- Permitir uma consulta rápida do risco de alagamento nas regiões relacionadas ao deslocamento do usuário.
+- Destacar visualmente áreas de risco que possam afetar vias utilizadas no trajeto.
+- Apresentar informações de forma resumida e objetiva, permitindo que o usuário compreenda a situação em poucos segundos.
+- Priorizar uma interface responsiva para smartphones, considerando que a consulta pode ocorrer antes ou durante o deslocamento.
+- Considerar a utilização de alertas sobre alterações no risco, relacionada à hipótese H03.
+- Permitir que usuários com maior familiaridade tecnológica explorem o mapa e as informações apresentadas sem exigir navegação complexa.
 
 ### Síntese das personas
 
@@ -201,7 +213,17 @@ Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos
 
 ## Síntese
 
-Os cenários e tarefas seguintes devem considerar principalmente a necessidade de Paulo consultar rapidamente o risco de alagamento de uma região, localizar esse risco no mapa e compreender sua intensidade sem precisar interpretar dados técnicos. Também devem permitir que ele utilize essa informação antes ou durante um deslocamento para evitar regiões potencialmente perigosas e tomar decisões com maior segurança. A interface deve priorizar uso pelo celular, linguagem simples, boa legibilidade e indicadores que não dependam somente de cores.
+A P01 — Paulo Andre Oliveira representa o usuário que realiza deslocamentos frequentes pela cidade e precisa consultar rapidamente o risco antes ou durante seu trajeto. Seu perfil evidencia a necessidade de informações objetivas, visualização clara do risco e facilidade de consulta em dispositivos móveis. [H]
+
+A P02 — Victor Merker Binda representa um usuário com menor familiaridade tecnológica, que tradicionalmente acompanha informações sobre chuvas por meios como televisão e notícias, mas começou a utilizar ferramentas digitais para consultar sua região. Seu perfil evidencia a importância de uma interface simples, acessível e com linguagem que não dependa de conhecimentos técnicos. [H]
+
+A P03 — Viviane Santos Machado representa uma usuária que possui um pequeno comércio e utiliza as informações sobre risco para antecipar possíveis impactos em suas atividades. Seu perfil evidencia a necessidade de apresentar o risco de forma antecipada e acompanhada de informações que auxiliem na tomada de decisões preventivas. [H]
+
+A P04 — Juliana Ferreira Costa representa uma usuária jovem e com alta familiaridade tecnológica, que utiliza transporte público para se deslocar até a faculdade. Seu principal interesse é identificar rapidamente riscos de alagamento que possam afetar seu trajeto e causar congestionamentos ou atrasos. Seu perfil evidencia a necessidade de consultas rápidas, mapas claros e informações relacionadas às regiões percorridas durante o deslocamento. [H]
+
+As diferenças entre as personas indicam que a interface deve atender tanto usuários com pouca familiaridade tecnológica quanto usuários habituados a ferramentas digitais, além de contemplar diferentes contextos de uso, como deslocamentos, residência e atividades comerciais. Dessa forma, devem ser priorizadas linguagem simples, boa legibilidade, representação visual clara do risco, consulta rápida e informações associadas à localização. [H]
+
+A P01 é definida como persona prioritária por representar o usuário final central considerado no escopo atual do projeto de IHC: uma pessoa que precisa consultar rapidamente o risco de alagamento de uma região para apoiar decisões relacionadas ao seu deslocamento. As demais personas ampliam o contexto de uso e ajudam a identificar requisitos que devem ser considerados para diferentes níveis de familiaridade tecnológica e diferentes objetivos de consulta. [H]
 
 ## Checklist
 

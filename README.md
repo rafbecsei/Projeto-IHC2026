@@ -17,9 +17,9 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 
 ## Identificação
 
-**Equipe:** 13
-**Título do projeto:** Alerta de alagamento
-**TCC/projeto de origem:** Estimativa de Risco de Alagamentos e Inundações Urbanas em São Paulo por meio de Dados Geoespaciais e Aprendizado de Máquina.
+**Equipe:** 13  
+**Título do projeto:** Alerta de alagamento  
+**TCC/projeto de origem:** Estimativa de Risco de Alagamentos e Inundações Urbanas em São Paulo por meio de Dados Geoespaciais e Aprendizado de Máquina.  
 **Orientador(a):** Rafael Gomes Alves  
 **Disciplina:** Interação Humano-Computador  
 **Instituição:** Fundação Educacional Inaciana Padre Sabóia de Medeiros  

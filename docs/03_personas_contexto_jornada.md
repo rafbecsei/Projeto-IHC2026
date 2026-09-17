@@ -122,6 +122,39 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | Ambiente típico de uso | No estabelecimento ou em casa, principalmente antes ou durante períodos de chuva forte. [H] |
 | Comportamentos relevantes | Costuma acompanhar a previsão do tempo e notícias sobre chuva. Ao perceber possibilidade de chuva intensa, consulta o sistema para verificar sua região, observa o nível de risco e as informações adicionais apresentadas e, caso identifique uma situação de maior risco, se preparar para possíveis impactos no funcionamento do estabelecimento e instalação de comportas. [H] |
 
+### Persona P04 — Juliana Ferreira Costa
+
+**Autor(a):** Henrique Hodel Babler - 22.125.084-8  
+**Tipo:** primária  
+**Base de evidências:** proto-persona a validar  
+**Hipóteses da Entrega 1 relacionadas:** H01, H02, H03 e H04
+
+![Persona P04](../assets/03_personas/persona4_p04.jpg)
+
+| Campo | Descrição |
+|---|---|
+| Faixa etária / contexto relevante | Mulher adulta de 27 anos que mora em um município da Região Metropolitana de São Paulo e trabalha na capital, realizando deslocamento intermunicipal diário. [H] |
+| Ocupação/papel | Atendente de loja em um shopping center, com escala 6x1 e turnos que podem terminar após o fechamento do shopping, no período noturno. [H] |
+| Conhecimento do domínio | Baixo conhecimento técnico sobre hidrologia e precipitação; conhece por experiência própria alguns pontos do trajeto que costumam alagar em dias de chuva forte. [H] |
+| Experiência tecnológica | Usa smartphone com frequência, principalmente aplicativos de mensagens, redes sociais, navegação (Waze/Google Maps) e previsão do tempo. [H] |
+| Objetivos | Saber, antes de sair de casa e antes de sair do trabalho, se o trajeto de moto apresenta risco de alagamento, para decidir o caminho ou o horário de saída com segurança. [H] |
+| Necessidades | Consultar o risco ao longo do trajeto completo entre casa e trabalho, e não apenas de uma região isolada, de forma muito rápida e com poucos toques no celular. [H] |
+| Dores/frustrações | Por usar moto, um alagamento que um carro atravessaria pode representar risco de queda, dano ao veículo ou perda do dia de trabalho; descobrir o alagamento só quando já está no caminho; ter menos informação e mais insegurança na volta noturna; perder tempo juntando informações de várias fontes antes do turno. [H] |
+| Motivadores | Proteger sua integridade física e a moto, que é seu meio de transporte e de sustento; chegar no horário, já que atrasos e faltas afetam sua relação com a loja; voltar para casa com segurança após o expediente. [H] |
+| Restrições/acessibilidade | Consulta rápida e sob pressão de tempo, geralmente minutos antes de sair; não consegue usar o celular enquanto pilota; pode consultar com capacete na mão, com pouca bateria ou com conexão móvel limitada; precisa de leitura imediata do nível de risco sem depender só de cores. [H] |
+| Ambiente típico de uso | Em casa, antes de sair para o trabalho, e no shopping (vestiário ou saída de funcionários), antes de voltar para casa à noite. [H] |
+| Comportamentos relevantes | Olha o celular toda vez antes de sair de casa e antes de voltar do trabalho, verificando previsão do tempo e trânsito. Se identifica risco em algum ponto do trajeto, muda o caminho, espera a chuva diminuir ou, em último caso, avisa a loja de um possível atraso. [H] |
+
+**Lacuna de conhecimento relacionada:**
+
+- [?] O trajeto de P04 atravessa mais de um município, mas as estimativas do TCC abrangem apenas a cidade de São Paulo. Ainda não sabemos como a interface deve comunicar ao usuário que parte do trajeto está fora da área coberta.
+
+**Decisões de design influenciadas por P04:**
+
+- Permitir a consulta do risco ao longo de um trajeto frequente (casa <-> trabalho), possivelmente salvo, reduzindo a quantidade de ações em consultas repetidas duas vezes ao dia.
+- Apresentar o resultado de forma resumida e imediata (ex.: "trajeto com ponto de risco alto em X"), adequada a consultas de poucos segundos antes de sair.
+- Considerar alertas antes dos horários habituais de saída e de retorno, inclusive no período noturno, relacionados à hipótese H03.
+- Indicar claramente quando parte do trajeto está fora da área coberta pelas estimativas, evitando que a ausência de dado seja interpretada como ausência de risco.
 > Repita para P02, P03... Cada integrante deve produzir ao menos uma persona.
 
 ### Síntese das personas

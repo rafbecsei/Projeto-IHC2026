@@ -75,7 +75,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 ### Persona P02 — Victor Merker Binda
 
 **Autor(a):** Victor Pimentel Lario - 22.125.064-0  
-**Tipo:** secundária  
+**Tipo:** primária
 **Base de evidências:** proto-persona a validar  
 **Hipóteses da Entrega 1 relacionadas:** H05
 
@@ -102,7 +102,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 ### Persona P03 - Viviane Santos Machado
 
 **Autor(a):** Rafael Iamashita Becsei - 22.225.037-5  
-**Tipo:** secundária  
+**Tipo:** primaria  
 **Base de evidências:** proto-persona a validar  
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H04 e H05 
 

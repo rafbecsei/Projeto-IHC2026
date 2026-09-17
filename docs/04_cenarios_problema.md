@@ -54,6 +54,7 @@ Use os tipos de questões/taxonomia definidos na aula. As perguntas devem revela
 | Q6 | Quais dificuldades Paulo encontra ao tentar relacionar informações de chuva, alagamentos e trânsito? | Permite detalhar os problemas encontrados durante as ações realizadas para avaliar o risco. | Entrevista com usuário |
 | Q7 | Que acontecimentos durante o deslocamento fazem Paulo reconsiderar o trajeto escolhido? | Permite identificar eventos externos que podem alterar suas decisões durante a atividade. | Entrevista com usuário |
 | Q8 | Como Paulo avalia se conseguiu escolher um trajeto seguro em relação a alagamentos? | Permite compreender como ele avalia se seu objetivo foi alcançado com sucesso. | Entrevista com usuário |
+| Q9 | Paulo depende apenas das informações encontradas nas plataformas ou também considera informações recebidas de outras pessoas para decidir seu trajeto? | Permite entender se a decisão de Paulo depende somente das plataformas consultadas ou também de informações recebidas de outras pessoas, revelando possíveis influências externas no seu processo de decisão. | Entrevista com usuário |
 
 ### 3. Cenário refinado
 
@@ -61,7 +62,7 @@ Em um fim de tarde de chuva intensa, Paulo Andre Oliveira está terminando seu e
 
 [NOVO: Paulo considera principalmente a intensidade da chuva, a existência de alagamentos registrados e as condições das regiões pelas quais pretende passar para avaliar o risco do deslocamento. [Q1] Ele costuma fazer essa verificação principalmente quando percebe chuva forte antes de sair do trabalho ou quando as condições climáticas pioram durante um deslocamento. [Q2]]
 
-Pelo celular, Paulo consulta a previsão do tempo, informações sobre ocorrências de alagamentos e as condições do trânsito. [NOVO: Para isso, costuma recorrer a aplicativos de previsão do tempo, navegação e fontes públicas disponíveis sobre ocorrências de alagamentos. [Q3]]
+Pelo celular, Paulo consulta a previsão do tempo, informações sobre ocorrências de alagamentos e as condições do trânsito. [NOVO: Para isso, costuma recorrer a aplicativos de previsão do tempo, navegação e fontes públicas disponíveis sobre ocorrências de alagamentos. [Q3] Além dessas fontes, Paulo também considera informações recebidas de familiares, colegas ou outras pessoas que estejam na região ou tenham passado recentemente pelo trajeto, principalmente quando relatam alagamentos, vias bloqueadas ou dificuldades de passagem. [Q9]]
 
 Porém, essas informações estão disponíveis de forma separada em diferentes fontes. Ele consegue identificar que está chovendo intensamente e que existem registros de alagamentos na cidade, mas tem dificuldade para relacionar essas informações ao risco existente nas regiões pelas quais pretende passar.
 
@@ -77,17 +78,23 @@ Essa dificuldade pode fazer com que Paulo escolha um trajeto que passe por uma �
 
 | Elemento | Evidência no cenário |
 |---|---|
-| Ator(es) | {{...}} |
-| Objetivo(s) | {{...}} |
-| Contexto | {{...}} |
-| Recursos/informações | {{...}} |
-| Ações | {{...}} |
-| Problemas/rupturas | {{...}} |
-| Consequências | {{...}} |
+| Ator(es) | Paulo Andre Oliveira, funcionário de escritório que realiza deslocamentos frequentes e possui pouco conhecimento técnico sobre precipitação e risco de alagamentos. |
+| Objetivo(s) | Avaliar se o trajeto até sua casa apresenta risco de alagamento e decidir se deve manter o caminho habitual ou procurar uma alternativa. |
+| Contexto | Fim de tarde, após o expediente, durante chuva intensa. Paulo está prestes a iniciar seu deslocamento para casa e precisa tomar uma decisão em pouco tempo. |
+| Recursos/informações | Previsão do tempo, informações sobre ocorrências de alagamentos, condições do trânsito, aplicativos de navegação, fontes públicas e informações recebidas de familiares, colegas ou outras pessoas. |
+| Ações | Consultar diferentes fontes, verificar chuva, alagamentos e trânsito, comparar essas informações com as regiões do trajeto, decidir se mantém ou altera o caminho e reconsiderar a decisão caso as condições mudem. |
+| Problemas/rupturas | Informações distribuídas em diferentes fontes, dificuldade para relacionar chuva, alagamentos e localização, dificuldade para interpretar dados sem conhecimento técnico e pouco tempo disponível para tomar a decisão. |
+| Consequências | Paulo pode escolher um trajeto que passe por uma área suscetível a alagamentos, precisar alterar ou interromper o percurso, enfrentar atrasos ou se expor a uma situação de risco. |
 
 ### 5. Implicações para as próximas entregas
 
 Quais tarefas merecem análise? Quais informações precisam ser coletadas? **Não desenhe a solução ainda.**
+
+As próximas entregas devem aprofundar principalmente as tarefas de buscar informações antes do deslocamento, relacionar chuva, alagamentos e trânsito com o trajeto e decidir se o caminho habitual deve ser mantido ou alterado.
+
+Também será necessário investigar quais fontes os usuários consultam atualmente, quais informações consideram mais importantes, quanto tempo estão dispostos a gastar nessa busca e quais dificuldades encontram para interpretar e combinar essas informações.
+
+Esses dados poderão ser utilizados posteriormente para detalhar as tarefas, necessidades e problemas do usuário antes da definição da solução de interface.
 
 > Repita para C02, C03... com autoria individual.
 

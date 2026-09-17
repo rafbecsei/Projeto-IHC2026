@@ -171,7 +171,17 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 ### Síntese das personas
 
-Explique diferenças entre os perfis e qual persona é prioritária. Evite personas duplicadas que só mudam nome/foto.
+A P01 — Paulo Andre Oliveira representa o usuário que realiza deslocamentos frequentes pela cidade e precisa consultar rapidamente o risco antes ou durante seu trajeto. Seu perfil evidencia a necessidade de informações objetivas, visualização clara do risco e facilidade de consulta em dispositivos móveis. [H]
+
+A P02 — Victor Merker Binda representa um usuário com menor familiaridade tecnológica, que tradicionalmente acompanha informações sobre chuvas por meios como televisão e notícias, mas começou a utilizar ferramentas digitais para consultar sua região. Seu perfil evidencia a importância de uma interface simples, acessível e com linguagem que não dependa de conhecimentos técnicos. [H]
+
+A P03 — Viviane Santos Machado representa uma usuária que possui um pequeno comércio e utiliza as informações sobre risco para antecipar possíveis impactos em suas atividades. Seu perfil evidencia a necessidade de apresentar o risco de forma antecipada e acompanhada de informações que auxiliem na tomada de decisões preventivas. [H]
+
+A P04 — Juliana Ferreira Costa representa uma usuária jovem e com alta familiaridade tecnológica, que utiliza transporte público para se deslocar até a faculdade. Seu principal interesse é identificar rapidamente riscos de alagamento que possam afetar seu trajeto e causar congestionamentos ou atrasos. Seu perfil evidencia a necessidade de consultas rápidas, mapas claros e informações relacionadas às regiões percorridas durante o deslocamento. [H]
+
+As diferenças entre as personas indicam que a interface deve atender tanto usuários com pouca familiaridade tecnológica quanto usuários habituados a ferramentas digitais, além de contemplar diferentes contextos de uso, como deslocamentos, residência e atividades comerciais. Dessa forma, devem ser priorizadas linguagem simples, boa legibilidade, representação visual clara do risco, consulta rápida e informações associadas à localização. [H]
+
+A P01 é definida como persona prioritária por representar o usuário final central considerado no escopo atual do projeto de IHC: uma pessoa que precisa consultar rapidamente o risco de alagamento de uma região para apoiar decisões relacionadas ao seu deslocamento. As demais personas ampliam o contexto de uso e ajudam a identificar requisitos que devem ser considerados para diferentes níveis de familiaridade tecnológica e diferentes objetivos de consulta. [H]
 
 ## 2. Mapa de empatia — equipe
 
@@ -213,17 +223,7 @@ Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos
 
 ## Síntese
 
-A P01 — Paulo Andre Oliveira representa o usuário que realiza deslocamentos frequentes pela cidade e precisa consultar rapidamente o risco antes ou durante seu trajeto. Seu perfil evidencia a necessidade de informações objetivas, visualização clara do risco e facilidade de consulta em dispositivos móveis. [H]
-
-A P02 — Victor Merker Binda representa um usuário com menor familiaridade tecnológica, que tradicionalmente acompanha informações sobre chuvas por meios como televisão e notícias, mas começou a utilizar ferramentas digitais para consultar sua região. Seu perfil evidencia a importância de uma interface simples, acessível e com linguagem que não dependa de conhecimentos técnicos. [H]
-
-A P03 — Viviane Santos Machado representa uma usuária que possui um pequeno comércio e utiliza as informações sobre risco para antecipar possíveis impactos em suas atividades. Seu perfil evidencia a necessidade de apresentar o risco de forma antecipada e acompanhada de informações que auxiliem na tomada de decisões preventivas. [H]
-
-A P04 — Juliana Ferreira Costa representa uma usuária jovem e com alta familiaridade tecnológica, que utiliza transporte público para se deslocar até a faculdade. Seu principal interesse é identificar rapidamente riscos de alagamento que possam afetar seu trajeto e causar congestionamentos ou atrasos. Seu perfil evidencia a necessidade de consultas rápidas, mapas claros e informações relacionadas às regiões percorridas durante o deslocamento. [H]
-
-As diferenças entre as personas indicam que a interface deve atender tanto usuários com pouca familiaridade tecnológica quanto usuários habituados a ferramentas digitais, além de contemplar diferentes contextos de uso, como deslocamentos, residência e atividades comerciais. Dessa forma, devem ser priorizadas linguagem simples, boa legibilidade, representação visual clara do risco, consulta rápida e informações associadas à localização. [H]
-
-A P01 é definida como persona prioritária por representar o usuário final central considerado no escopo atual do projeto de IHC: uma pessoa que precisa consultar rapidamente o risco de alagamento de uma região para apoiar decisões relacionadas ao seu deslocamento. As demais personas ampliam o contexto de uso e ajudam a identificar requisitos que devem ser considerados para diferentes níveis de familiaridade tecnológica e diferentes objetivos de consulta. [H]
+Os cenários e tarefas seguintes devem considerar principalmente a necessidade de Paulo consultar rapidamente o risco de alagamento de uma região, localizar esse risco no mapa e compreender sua intensidade sem precisar interpretar dados técnicos. Também devem permitir que ele utilize essa informação antes ou durante um deslocamento para evitar regiões potencialmente perigosas e tomar decisões com maior segurança. A interface deve priorizar uso pelo celular, linguagem simples, boa legibilidade e indicadores que não dependam somente de cores.
 
 ## Checklist
 

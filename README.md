@@ -38,14 +38,14 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 
 | Item | Descrição |
 |---|---|
-| Tema central do TCC | {{...}} |
-| Resultado técnico esperado do TCC | {{algoritmo, estudo, sistema, modelo, análise, API...}} |
-| O TCC já previa interface? | sim / não / parcialmente |
-| Capacidade técnica que pode gerar valor para pessoas | {{...}} |
-| Usuário principal adotado em IHC | {{...}} |
-| Objetivo principal desse usuário | {{...}} |
-| Interface/recorte explorado na disciplina | {{...}} |
-| Relação com o escopo formal do TCC | parte prevista / extensão conceitual / protótipo demonstrativo / outra |
+| Tema central do TCC | Estimativa de risco de alagamentos e inundações urbanas por meio da integração de dados geoespaciais, meteorológicos e históricos com técnicas de aprendizado de máquina. |
+| Resultado técnico esperado do TCC | Sistema/aplicação interativa apoiada por modelos de aprendizado de máquina para estimar a probabilidade de ocorrência de alagamentos e inundações. |
+| O TCC já previa interface? | Sim |
+| Capacidade técnica que pode gerar valor para pessoas | Estimar o risco de alagamento em diferentes regiões e disponibilizar essas informações para apoiar decisões preventivas. |
+| Usuário principal adotado em IHC | Usuário final que realiza deslocamentos pela cidade e deseja consultar o risco de alagamento antes ou durante seu trajeto. |
+| Objetivo principal desse usuário | Identificar regiões com risco de alagamento e planejar um deslocamento que evite áreas potencialmente afetadas. |
+| Interface/recorte explorado na disciplina | Interface de consulta do risco de alagamento por região, com visualização em mapa, alertas e planejamento de rotas que contornem regiões com risco de alagamento. |
+| Relação com o escopo formal do TCC | A consulta e visualização do risco fazem parte da proposta do TCC, enquanto o planejamento de rotas desviando de regiões de risco é uma extensão explorada no projeto de IHC. |
 
 > **Importante:** a tabela acima explica a relação entre os dois trabalhos. Ela não altera o compromisso formal do TCC.
 
@@ -53,10 +53,8 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 
 Escreva **um parágrafo curto e concreto** explicando: quem é o usuário escolhido, o que precisa alcançar, qual problema enfrenta ou qual atividade precisa executar, em qual contexto e como a contribuição do TCC se relaciona com essa situação.
 
-Evite começar pela tecnologia.
-
-> **Estrutura sugerida:** “`{{tipo de usuário}}` precisa `{{objetivo}}` em `{{contexto}}`. Atualmente enfrenta `{{problema/limitação}}` e utiliza `{{processo/alternativa atual}}`. O tema do TCC investiga `{{contribuição técnica}}`. Para fins da disciplina de IHC, será explorada uma interface que permita `{{forma de uso da contribuição}}`.”
-
+  Usuários que realizam deslocamentos pela cidade precisam identificar se as regiões por onde pretendem passar apresentam risco de alagamento, principalmente durante períodos de chuva intensa. Atualmente, podem precisar consultar diferentes fontes, como aplicativos de previsão do tempo, navegação, informações de trânsito e registros de alagamentos, tendo dificuldade para relacionar essas informações ao próprio trajeto. O TCC investiga a utilização de dados geoespaciais, meteorológicos e históricos com aprendizado de máquina para estimar o risco de alagamentos e inundações. Para fins da disciplina de IHC, será explorada uma interface que permita consultar essas estimativas de forma simples e visual, receber informações sobre áreas de risco e planejar rotas que evitem regiões potencialmente afetadas.  
+  
 Se alguma afirmação ainda não estiver sustentada por evidência, registre-a como hipótese na [Entrega 1](docs/01_conhecendo_o_problema.md).
 
 ## Por que pensar em interface mesmo em TCCs técnicos?
@@ -104,9 +102,9 @@ O protótipo de IHC pode, portanto, funcionar como uma demonstração do potenci
 | # | Entrega | Quantidade mínima / responsabilidade | Status |
 |---:|---|---|---|
 | 1 | [Conhecendo o projeto, o usuário e o problema](docs/01_conhecendo_o_problema.md) | 1 solução consolidada por equipe | 🟩 |
-| 2 | [Público-alvo e análise de concorrência](docs/02_analise_concorrencia.md) | no mínimo 1 concorrente/interface representativa por integrante + síntese | 🟨 |
-| 3 | [Personas, empatia, contexto e jornada](docs/03_personas_contexto_jornada.md) | 1 persona por integrante; demais artefatos consolidados | ⬜ |
-| 4 | [Cenários de análise/problema](docs/04_cenarios_problema.md) | 1 solução completa por integrante | ⬜ |
+| 2 | [Público-alvo e análise de concorrência](docs/02_analise_concorrencia.md) | no mínimo 1 concorrente/interface representativa por integrante + síntese | 🟩 |
+| 3 | [Personas, empatia, contexto e jornada](docs/03_personas_contexto_jornada.md) | 1 persona por integrante; demais artefatos consolidados | 🟩 |
+| 4 | [Cenários de análise/problema](docs/04_cenarios_problema.md) | 1 solução completa por integrante | 🟨 |
 | 5 | [Análise de tarefas: HTA, GOMS e CTT](docs/05_analise_tarefas.md) | cada integrante: pelo menos 1 HTA + 1 GOMS + 1 CTT | ⬜ |
 | 6 | [Prototipação em papel](docs/06_prototipacao_papel.md) | 1 protótipo integrado por equipe | ⬜ |
 | 7 | [Coleta de dados e aspectos éticos](docs/07_coleta_dados.md) | soluções individuais + técnicas distintas; questionário entre as técnicas | ⬜ |

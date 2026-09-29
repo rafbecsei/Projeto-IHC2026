@@ -38,7 +38,7 @@ Use esta tabela para itens importantes marcados como `[H]` ou `[?]`. Preserve o 
 | ID | Capacidade do TCC utilizada | Necessidade/problema | Persona | Cenário problema | Objetivo/tarefa | HTA/GOMS/CTT | Cenário de interação / signos | MoLIC | Tela(s) Figma | Heurística / problema | Tarefa no teste | Decisão/melhoria |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | R01 | Estimativa do risco de alagamento por região | Compreender rapidamente o risco de alagamento de uma região para apoiar o planejamento de deslocamentos. [H] | P01 | C01 | {{T01}} | {{links}} | {{...}} | {{M01}} | {{F01...}} | {{V01 ou —}} | {{UT01}} | {{...}} |
-| R02 |  |  |  |  |  |  |  |  |  |  |  |  |
+| R02 | Estimativa do risco de alagamento por região | Antecipar possíveis impactos de chuvas intensas no funcionamento de um comércio para a tomada de medidas preventivas. [H] | P03 | C02 |  |  |  |  |  |  |  |  |
 
 ## 4. Rastreabilidade de padrões de interface
 

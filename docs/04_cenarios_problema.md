@@ -26,8 +26,8 @@ Se o integrante escolher um novo problema/situação, explique por que ele passo
 
 **Autor(a):** Eric Song Watanabe — 22.125.086-3  
 **Persona(s) relacionada(s):** P01  
-**Necessidade relacionada:** R01 
-**Situação concreta da Entrega 1 relacionada:** Seção 4.5 - deslocamento durante período de chuva intensa.
+**Necessidade relacionada:** R01   
+**Situação concreta da Entrega 1 relacionada:** Seção 4.5 - deslocamento durante período de chuva intensa.    
 **Hipóteses ainda presentes:** H02, H04
 
 ### 1. Cenário inicial
@@ -101,7 +101,7 @@ Esses dados poderão ser utilizados posteriormente para detalhar as tarefas, nec
 **Autor(a):** Rafael Iamashita Becsei — 22.225.037-5  
 **Persona(s) relacionada(s):** P03  
 **Necessidade relacionada:** R02   
-**Situação concreta da Entrega 1 relacionada:** 
+**Situação concreta da Entrega 1 relacionada:**   
 **Hipóteses ainda presentes:** H01, H04, H05
 
 #### Cenário inicial

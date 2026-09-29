@@ -96,6 +96,76 @@ Também será necessário investigar quais fontes os usuários consultam atualme
 
 Esses dados poderão ser utilizados posteriormente para detalhar as tarefas, necessidades e problemas do usuário antes da definição da solução de interface.
 
+## Cenário C02 — Prevenção de impactos no comércio durante chuva intensa
+
+**Autor(a):** Rafael Iamashita Becsei — 22.225.037-5  
+**Persona(s) relacionada(s):** P03  
+**Necessidade relacionada:** R02   
+**Situação concreta da Entrega 1 relacionada:** 
+**Hipóteses ainda presentes:** H01, H04, H05
+
+#### Cenário inicial
+
+Em um dia de previsão de chuva intensa, Viviane Santos Machado está em seu pequeno comércio e percebe que o tempo começou a mudar. Como sua região costuma sofrer com alagamentos durante períodos de chuva forte, ela se preocupa com os possíveis impactos no funcionamento do estabelecimento e com seus produtos e equipamentos.
+
+Antes que a chuva fique mais intensa, Viviane procura informações sobre a previsão do tempo e sobre possíveis ocorrências de alagamento na região. Ela consegue encontrar informações gerais sobre a chuva, mas tem dificuldade para saber se a situação prevista pode afetar especificamente a região onde está seu comércio.
+
+Viviane não possui conhecimento técnico sobre precipitação ou modelos de risco e, por isso, encontra dificuldade para interpretar informações mais técnicas ou entender a gravidade da situação apenas com os dados disponíveis. Além disso, precisa conciliar a busca por informações com as atividades do próprio estabelecimento.
+
+Sem conseguir identificar com clareza a possibilidade de alagamento na região, Viviane pode ter dificuldade para decidir se deve tomar medidas preventivas, como proteger produtos e equipamentos, preparar o estabelecimento ou se organizar para uma possível interrupção das atividades naquele dia.
+
+### 2. Questões de refinamento
+
+| # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
+|---|---|---|---|
+| Q1 | Quais informações Viviane considera mais importantes para avaliar se seu comércio pode ser afetado pela chuva? | Permite identificar quais informações são relevantes para que ela avalie possíveis impactos no estabelecimento. | Entrevista com usuário |
+| Q2 | Em quais situações Viviane costuma começar a se preocupar com possíveis alagamentos no comércio? | Ajuda a compreender em que momentos essa necessidade aparece e quais acontecimentos levam à busca por informações. | Entrevista com usuário |
+| Q3 | Quais fontes Viviane costuma consultar para acompanhar a previsão do tempo e situações de alagamento? | Permite identificar os recursos utilizados atualmente para obter informações sobre a região. | Entrevista com usuário |
+| Q4 | Como Viviane decide quando deve tomar alguma medida preventiva no comércio? | Permite compreender quais critérios utiliza atualmente para decidir se precisa proteger produtos, equipamentos ou o estabelecimento. | Entrevista com usuário |
+| Q5 | Quanto tempo antes de uma chuva forte Viviane costuma procurar informações para se preparar? | Ajuda a compreender a antecedência disponível para realizar ações preventivas. | Entrevista com usuário |
+| Q6 | Quais dificuldades Viviane encontra para entender se uma previsão de chuva pode afetar seu comércio? | Permite detalhar as dificuldades encontradas ao interpretar e relacionar as informações disponíveis. | Entrevista com usuário |
+| Q7 | Quais acontecimentos durante um período de chuva fazem Viviane mudar as medidas que havia tomado? | Permite identificar eventos que podem alterar suas decisões depois que a chuva começa. | Entrevista com usuário |
+| Q8 | Como Viviane avalia se conseguiu se preparar adequadamente para uma situação de chuva intensa? | Permite compreender como ela identifica se as medidas preventivas tomadas foram suficientes. | Entrevista com usuário |
+| Q9 | Viviane considera informações de outras pessoas, como comerciantes ou moradores da região, para decidir como se preparar? | Permite verificar se informações recebidas de pessoas próximas influenciam suas decisões. | Entrevista com usuário |
+
+### 3. Cenário refinado
+
+Em um dia de previsão de chuva intensa, Viviane Santos Machado está em seu pequeno comércio e percebe que o tempo começou a mudar. Como sua região costuma sofrer com alagamentos durante períodos de chuva forte, ela se preocupa com os possíveis impactos no funcionamento do estabelecimento e com seus produtos e equipamentos.
+
+[NOVO: Viviane considera principalmente a intensidade da chuva, a possibilidade de alagamento na região e o horário em que a chuva deve ocorrer para avaliar se o comércio pode ser afetado. [Q1] Ela costuma começar a se preocupar principalmente quando há previsão de chuva forte ou quando percebe que as condições do tempo estão piorando. [Q2]]
+
+Antes que a chuva fique mais intensa, Viviane procura informações sobre a previsão do tempo e sobre possíveis ocorrências de alagamento na região. [NOVO: Para isso, costuma consultar aplicativos de previsão do tempo, notícias e outras fontes disponíveis sobre as condições da região. [Q3] Também pode considerar informações recebidas de outros comerciantes ou moradores próximos quando eles relatam que a região está começando a apresentar problemas. [Q9]]
+
+Ela consegue encontrar informações gerais sobre a chuva, mas tem dificuldade para saber se a situação prevista pode afetar especificamente a região onde está seu comércio.
+
+[NOVO: Para decidir se deve tomar alguma medida preventiva, Viviane observa a intensidade prevista da chuva, as informações sobre a região e sua experiência com ocorrências anteriores. Quando considera que existe possibilidade de impacto no comércio, procura se preparar antes que a situação se agrave. [Q4] Ela procura realizar essa verificação com antecedência suficiente para conseguir organizar o estabelecimento sem prejudicar as atividades do dia. [Q5]]
+
+Viviane não possui conhecimento técnico sobre precipitação ou modelos de risco e, por isso, encontra dificuldade para interpretar informações mais técnicas ou entender a gravidade da situação apenas com os dados disponíveis. [NOVO: Sua principal dificuldade é compreender se uma previsão de chuva intensa representa uma possibilidade concreta de alagamento na região do comércio e se a situação exige alguma ação preventiva. [Q6]]
+
+[NOVO: Durante a chuva, mudanças na intensidade da precipitação, informações sobre alagamentos próximos ou dificuldades de acesso ao estabelecimento podem fazer Viviane aumentar ou modificar as medidas preventivas que havia tomado. [Q7]]
+
+Sem conseguir identificar com clareza a possibilidade de alagamento na região, Viviane pode ter dificuldade para decidir se deve tomar medidas preventivas, como proteger produtos e equipamentos, preparar o estabelecimento ou se organizar para uma possível interrupção das atividades. [NOVO: Viviane considera que conseguiu se preparar adequadamente quando consegue proteger seus produtos e equipamentos e reduzir os impactos da chuva sobre o funcionamento do comércio. [Q8]]
+
+### 4. Elementos extraídos
+
+| Elemento | Evidência no cenário |
+|---|---|
+| Ator(es) | Viviane Santos Machado, proprietária de um pequeno comércio, que trabalha em uma região que pode sofrer impactos durante períodos de chuva intensa. |
+| Objetivo(s) | Avaliar se a chuva pode afetar seu comércio e decidir se precisa tomar medidas preventivas para proteger produtos, equipamentos e o funcionamento do estabelecimento. |
+| Contexto | Durante um período com previsão de chuva intensa, enquanto Viviane está em seu comércio e precisa se preparar para possíveis impactos. |
+| Recursos/informações | Previsão do tempo, informações sobre ocorrências de alagamento, notícias, informações sobre a região e relatos de outros comerciantes ou moradores. |
+| Ações | Consultar diferentes fontes, verificar a previsão de chuva, buscar informações sobre a região, avaliar possíveis impactos, tomar medidas preventivas e reconsiderar essas medidas caso as condições mudem. |
+| Problemas/rupturas | Informações distribuídas em diferentes fontes, dificuldade para identificar o risco específico da região, dificuldade para interpretar informações técnicas e necessidade de conciliar a busca por informações com as atividades do comércio. |
+| Consequências | Viviane pode não conseguir se preparar adequadamente, sofrer prejuízos com produtos ou equipamentos, interromper atividades do comércio e perder vendas ou precisar tomar medidas de emergência durante a chuva. |
+
+### 5. Implicações para as próximas entregas
+
+As próximas entregas devem aprofundar principalmente as tarefas de buscar informações sobre a previsão de chuva, relacionar essas informações com a região do comércio e decidir quais medidas preventivas podem ser tomadas antes ou durante um período de chuva intensa.
+
+Também será necessário investigar quais fontes Viviane utiliza atualmente, quais informações considera mais importantes, quanto tempo de antecedência precisa para se preparar e quais dificuldades encontra para interpretar informações sobre chuva e risco de alagamento.
+
+Esses dados poderão ser utilizados posteriormente para detalhar as tarefas, necessidades e problemas da usuária antes da definição da solução de interface.
+
 > Repita para C02, C03... com autoria individual.
 
 ## Checklist

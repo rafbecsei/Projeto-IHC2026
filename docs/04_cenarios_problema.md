@@ -166,6 +166,80 @@ Também será necessário investigar quais fontes Viviane utiliza atualmente, qu
 
 Esses dados poderão ser utilizados posteriormente para detalhar as tarefas, necessidades e problemas da usuária antes da definição da solução de interface.
 
+## Cenário C03 — Preparação do morador durante previsão de chuva intensa
+
+**Autor(a):** Victor Pimentel Lario — 22.125.064-0
+**Persona(s) relacionada(s):** P02
+**Necessidade relacionada:** Saber se o risco de alagamento da região em que mora é alto
+**Situação concreta da Entrega 1 relacionada:** Morador acompanhando as condições da região onde vive antes ou durante períodos de chuva intensa.
+**Hipóteses ainda presentes:** H05
+
+### 1. Cenário inicial
+
+Em um dia com previsão de chuva intensa, Victor Merker Binda está em casa acompanhando as notícias sobre as condições do tempo. Como mora em uma região que pode sofrer impactos durante períodos de chuva forte, ele começa a se preocupar com a possibilidade de ocorrer algum alagamento ou inundação próximo à sua residência.
+
+Victor procura informações sobre a previsão do tempo e sobre a situação da região onde mora. Costuma acompanhar notícias pela televisão e, quando percebe que a chuva pode ser mais intensa, também utiliza o celular para procurar informações adicionais. Entretanto, encontra dados apresentados em diferentes fontes e nem sempre consegue entender se as informações gerais sobre chuva representam um risco real para sua região.
+
+Como possui apenas conhecimentos básicos sobre chuvas e alagamentos, Victor encontra dificuldade para interpretar porcentagens, mapas ou informações mais técnicas. Mesmo quando encontra uma previsão de chuva forte, não sabe com clareza quais características da região podem aumentar o risco ou se a intensidade prevista é suficiente para exigir alguma preparação.
+
+Sem conseguir avaliar com segurança a situação, Victor pode ter dificuldade para decidir se precisa tomar alguma medida preventiva para proteger sua casa e seus bens ou se pode continuar sua rotina normalmente.
+
+### 2. Questões de refinamento
+
+| **#** | **Questão** | **Por que precisa ser respondida** | **Fonte/forma de obter resposta** |
+| ----- | ----------- | ---------------------------------- | --------------------------------- |
+| Q1 | Quais informações Victor considera mais importantes para entender se sua região apresenta risco de alagamento? | Permite identificar quais dados ajudam Victor a compreender melhor a situação da região. | Entrevista com usuário |
+| Q2 | Em quais situações Victor costuma procurar informações sobre chuva e possíveis alagamentos? | Ajuda a compreender os acontecimentos que fazem surgir a necessidade de consultar informações. | Entrevista com usuário |
+| Q3 | Quais fontes Victor utiliza atualmente para acompanhar a chuva e as condições da região? | Permite identificar os recursos e tecnologias utilizados atualmente pelo usuário. | Entrevista com usuário |
+| Q4 | O que faz Victor confiar ou desconfiar de uma informação sobre risco de alagamento? | Permite investigar diretamente quais informações adicionais aumentam sua confiança na avaliação do risco. | Entrevista com usuário |
+| Q5 | Como Victor decide se precisa tomar alguma medida preventiva em sua casa? | Permite compreender os critérios utilizados atualmente para transformar uma informação sobre chuva em uma decisão. | Entrevista com usuário |
+| Q6 | Quais informações técnicas Victor considera difíceis de interpretar? | Ajuda a detalhar as principais dificuldades de compreensão encontradas durante a consulta. | Entrevista com usuário |
+| Q7 | Quais características da região Victor acredita que podem influenciar a ocorrência de alagamentos? | Permite identificar quais informações sobre a região fazem sentido para o usuário e podem contribuir para sua avaliação. | Entrevista com usuário |
+| Q8 | Que acontecimentos durante uma chuva fazem Victor reconsiderar a situação e tomar novas medidas? | Permite identificar eventos que podem alterar suas decisões depois que a chuva começa. | Entrevista com usuário |
+| Q9 | Como Victor avalia se conseguiu se preparar adequadamente para um período de chuva intensa? | Permite compreender como ele identifica se seu objetivo foi alcançado. | Entrevista com usuário |
+
+### 3. Cenário refinado
+
+Em um dia com previsão de chuva intensa, Victor Merker Binda está em casa acompanhando as notícias sobre as condições do tempo. Como mora em uma região que pode sofrer impactos durante períodos de chuva forte, ele começa a se preocupar com a possibilidade de ocorrer algum alagamento ou inundação próximo à sua residência.
+
+[NOVO: Victor considera principalmente a intensidade da chuva, a possibilidade de alagamentos na região e informações sobre ocorrências próximas para tentar compreender a situação. [Q1] Ele costuma procurar essas informações quando vê notícias sobre previsão de chuva forte, percebe que o tempo está piorando ou recebe informações sobre problemas em outras regiões da cidade. [Q2]]
+
+Victor procura informações sobre a previsão do tempo e sobre a situação da região onde mora. Costuma acompanhar notícias pela televisão e, quando percebe que a chuva pode ser mais intensa, também utiliza o celular para procurar informações adicionais. [NOVO: Entre as fontes utilizadas estão programas de televisão, sites de notícias, aplicativos de previsão do tempo e informações encontradas em buscas pelo celular. [Q3]]
+
+Entretanto, encontra dados apresentados em diferentes fontes e nem sempre consegue entender se as informações gerais sobre chuva representam um risco real para sua região.
+
+[NOVO: Victor tende a confiar mais em uma informação quando consegue entender por que determinada região pode apresentar risco, relacionando a intensidade da chuva com informações sobre ocorrências anteriores ou características conhecidas do local. Quando encontra apenas uma porcentagem ou uma informação isolada, sente mais dificuldade para avaliar a situação. [Q4]]
+
+Como possui apenas conhecimentos básicos sobre chuvas e alagamentos, Victor encontra dificuldade para interpretar porcentagens, mapas ou informações mais técnicas. [NOVO: Dados como quantidade de precipitação em milímetros, probabilidades apresentadas sem explicação e representações cartográficas mais complexas podem dificultar sua compreensão. [Q6]]
+
+Mesmo quando encontra uma previsão de chuva forte, não sabe com clareza quais características da região podem aumentar o risco ou se a intensidade prevista é suficiente para exigir alguma preparação. [NOVO: Pela experiência cotidiana, Victor considera fatores como histórico de alagamentos próximos, intensidade da chuva e características que observa na região, mas não sabe exatamente qual é a influência de cada fator sobre o risco. [Q7]]
+
+[NOVO: Para decidir se precisa tomar alguma medida preventiva, Victor compara as informações encontradas com experiências anteriores. Quando percebe que a chuva prevista parece mais intensa ou que existem relatos de problemas próximos à sua região, começa a considerar medidas para proteger seus bens e evitar situações perigosas. [Q5]]
+
+[NOVO: Durante a chuva, aumento da intensidade da precipitação, relatos de alagamentos próximos, acúmulo de água nas ruas ou informações divulgadas nas notícias podem fazer Victor reconsiderar a situação e tomar novas medidas de prevenção. [Q8]]
+
+Sem conseguir avaliar com segurança a situação, Victor pode ter dificuldade para decidir se precisa tomar alguma medida preventiva para proteger sua casa e seus bens ou se pode continuar sua rotina normalmente. [NOVO: Victor considera que conseguiu se preparar adequadamente quando consegue tomar as medidas necessárias antes que a situação se agrave e evita danos à casa, aos seus bens ou sua exposição a uma situação perigosa. [Q9]]
+
+### 4. Elementos extraídos
+
+| **Elemento** | **Evidência no cenário** |
+| ------------ | ------------------------ |
+| Ator(es) | Victor Merker Binda, morador mais velho que possui conhecimento básico sobre chuvas e alagamentos e familiaridade limitada com ferramentas digitais. |
+| Objetivo(s) | Entender se a região onde mora apresenta risco de alagamento e decidir se precisa tomar alguma medida preventiva. |
+| Contexto | Em casa, antes ou durante um período de chuva intensa, após receber informações sobre possibilidade de chuva forte ou perceber piora nas condições do tempo. |
+| Recursos/informações | Televisão, notícias, aplicativos de previsão do tempo, buscas pelo celular, informações sobre chuva, ocorrências anteriores e características da região. |
+| Ações | Acompanhar notícias, procurar informações adicionais, comparar diferentes fontes, relacionar a chuva com sua região, avaliar a gravidade da situação e decidir se precisa tomar medidas preventivas. |
+| Problemas/rupturas | Informações distribuídas em diferentes fontes, dificuldade para interpretar porcentagens, mapas e dados técnicos, dificuldade para relacionar a previsão geral de chuva ao risco específico da região e incerteza sobre quais características locais influenciam o risco. |
+| Consequências | Victor pode deixar de tomar medidas preventivas necessárias, preparar-se tarde demais, tomar medidas desnecessárias ou ficar exposto a possíveis danos em sua casa e seus bens durante um alagamento. |
+
+### 5. Implicações para as próximas entregas
+
+As próximas entregas devem aprofundar principalmente as tarefas de buscar informações sobre chuva e alagamentos, compreender a situação específica da região onde Victor mora e decidir se existe necessidade de tomar alguma medida preventiva.
+
+Também será necessário investigar quais informações adicionais aumentam a confiança de Victor na avaliação do risco, quais características da região ele considera relevantes, quais tipos de informação apresentam maior dificuldade de compreensão e quais fontes utiliza atualmente.
+
+Esses dados poderão ser utilizados posteriormente para detalhar as tarefas, necessidades e dificuldades do usuário e compreender como informações sobre chuva e características da região influenciam sua confiança antes da definição da solução de interface.
+
 > Repita para C02, C03... com autoria individual.
 
 ## Checklist

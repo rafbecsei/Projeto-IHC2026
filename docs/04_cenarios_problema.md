@@ -101,7 +101,7 @@ Esses dados poderão ser utilizados posteriormente para detalhar as tarefas, nec
 **Autor(a):** Rafael Iamashita Becsei — 22.225.037-5  
 **Persona(s) relacionada(s):** P03  
 **Necessidade relacionada:** R02   
-**Situação concreta da Entrega 1 relacionada:**   
+**Situação concreta da Entrega 1 relacionada:** Seção 4.5, onde o usuário pretende avaliar se determinada região apresenta risco de alagamento 
 **Hipóteses ainda presentes:** H01, H04, H05
 
 #### Cenário inicial
@@ -168,11 +168,11 @@ Esses dados poderão ser utilizados posteriormente para detalhar as tarefas, nec
 
 ## Cenário C03 — Preparação do morador durante previsão de chuva intensa
 
-**Autor(a):** Victor Pimentel Lario — 22.125.064-0
-**Persona(s) relacionada(s):** P02
-**Necessidade relacionada:** Saber se o risco de alagamento da região em que mora é alto
-**Situação concreta da Entrega 1 relacionada:** Morador acompanhando as condições da região onde vive antes ou durante períodos de chuva intensa.
-**Hipóteses ainda presentes:** H05
+**Autor(a):** Victor Pimentel Lario — 22.125.064-0  
+**Persona(s) relacionada(s):** P02  
+**Necessidade relacionada:** Saber se o risco de alagamento da região em que mora é alto  
+**Situação concreta da Entrega 1 relacionada:** Morador acompanhando as condições da região onde vive antes ou durante períodos de chuva intensa.  
+**Hipóteses ainda presentes:** H05  
 
 ### 1. Cenário inicial
 
@@ -243,11 +243,11 @@ Esses dados poderão ser utilizados posteriormente para detalhar as tarefas, nec
 > Repita para C02, C03... com autoria individual.
 ## Cenário C04 — Ida para a prova de transporte público com previsão de temporal
 
-**Autor(a):** Henrique Hodel Babler — 22.125.084-8  
-**Persona(s) relacionada(s):** P04  
-**Necessidade relacionada:** R04  
-**Situação concreta da Entrega 1 relacionada:** Seção 4.5 (deslocamento durante chuva intensa), com um recorte novo: a usuária depende de transporte público e **não controla o itinerário** do veículo. A inclusão se justifica pelas dores e comportamentos registrados na P04 (descobrir o alagamento só durante o trajeto, transporte público preso em regiões afetadas, decidir entre trocar de caminho, sair mais cedo ou aguardar).  
-**Hipóteses ainda presentes:** H02, H03, H06
+**Autor(a):** Henrique Hodel Babler — 22.125.084-8    
+**Persona(s) relacionada(s):** P04    
+**Necessidade relacionada:** R04    
+**Situação concreta da Entrega 1 relacionada:** Seção 4.5 (deslocamento durante chuva intensa), com um recorte novo: a usuária depende de transporte público e **não controla o itinerário** do veículo. A inclusão se justifica pelas dores e comportamentos registrados na P04 (descobrir o alagamento só durante o trajeto, transporte público preso em regiões afetadas, decidir entre trocar de caminho, sair mais cedo ou aguardar).    
+**Hipóteses ainda presentes:** H02, H03, H06  
 
 ### 1. Cenário inicial
 

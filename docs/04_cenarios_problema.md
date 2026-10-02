@@ -241,6 +241,88 @@ Também será necessário investigar quais informações adicionais aumentam a c
 Esses dados poderão ser utilizados posteriormente para detalhar as tarefas, necessidades e dificuldades do usuário e compreender como informações sobre chuva e características da região influenciam sua confiança antes da definição da solução de interface.
 
 > Repita para C02, C03... com autoria individual.
+## Cenário C04 — Ida para a prova de transporte público com previsão de temporal
+
+**Autor(a):** Henrique Hodel Babler — 22.125.084-8  
+**Persona(s) relacionada(s):** P04  
+**Necessidade relacionada:** R04  
+**Situação concreta da Entrega 1 relacionada:** Seção 4.5 (deslocamento durante chuva intensa), com um recorte novo: a usuária depende de transporte público e **não controla o itinerário** do veículo. A inclusão se justifica pelas dores e comportamentos registrados na P04 (descobrir o alagamento só durante o trajeto, transporte público preso em regiões afetadas, decidir entre trocar de caminho, sair mais cedo ou aguardar).  
+**Hipóteses ainda presentes:** H02, H03, H06
+
+### 1. Cenário inicial
+
+Em uma quinta-feira de março, Juliana Ferreira Costa, estudante universitária de 20 anos, tem prova às 19h. Para chegar à faculdade, ela pega um ônibus perto de casa até um terminal de integração e, de lá, segue de metrô. Em um dia comum, o trajeto leva cerca de 1h10, então ela costuma sair às 17h40.
+
+Às 16h30, ainda em casa, Juliana recebe no celular uma notificação do aplicativo de previsão do tempo: alerta de temporal para o fim da tarde na cidade de São Paulo. Ela começa a pensar se deve sair mais cedo, se deve trocar o ônibus por um caminho de trem e metrô, que é cerca de 40 minutos mais longo, ou se pode manter o trajeto de sempre.
+
+Primeiro, Juliana abre o aplicativo de mapas e traça a rota habitual. O aplicativo mostra o tempo normal de 1h10, sem nenhum aviso. Ela conclui que, por enquanto, está tudo bem, mas desconfia, porque a chuva ainda não começou. Em seguida, volta ao aplicativo de previsão e vê o radar com uma mancha vermelha se aproximando e a indicação de 30 a 50 mm de chuva acumulada. Ela não sabe se essa quantidade é suficiente para alagar alguma via por onde o ônibus passa.
+
+Juliana então procura em uma rede social um perfil que divulga informações de trânsito e encontra registros de alagamento em outras partes da cidade, com nomes de ruas e avenidas que ela não conhece. Como sabe apenas onde o ônibus para, e não por quais ruas ele circula, não consegue dizer se alguma dessas ocorrências está no caminho da sua linha. No grupo da turma, um colega escreve que "a avenida perto do terminal já está enchendo", enquanto outro responde que "aqui não está chovendo nada". As mensagens não informam horário nem local exato, e Juliana não sabe em qual acreditar.
+
+Às 17h20, a chuva começa forte. Juliana abre o aplicativo de transporte público e vê que o ônibus que pegaria está parado há dez minutos, duas paradas antes do seu ponto. Ela não consegue saber se é apenas trânsito ou se há um alagamento mais à frente. Com pouco tempo para decidir, precisa escolher entre arriscar o trajeto habitual, podendo ficar presa dentro de um ônibus parado em uma via alagada e perder a prova, ou optar por precaução pelo caminho mais longo, mesmo sem saber se o risco era real.
+
+### 2. Questões de refinamento
+
+| # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
+|---|---|---|---|
+| Q1 | Por que chegar no horário nesse dia é mais crítico do que em um dia comum? | Mostra o peso do objetivo e explica a pressão sobre a decisão. | Análise da equipe [H] — validar na Entrega 7 |
+| Q2 | Chegar à faculdade é o único objetivo de Juliana nesse deslocamento? | Verifica se existe um objetivo concorrente, como não ficar exposta ao alagamento. | Análise da equipe [H] — validar na Entrega 7 |
+| Q3 | Onde e em que condições físicas Juliana consulta as informações ao longo do deslocamento? | O contexto muda bastante entre estar em casa, no ponto ou dentro do ônibus. | Análise da equipe [H] — validar na Entrega 7 |
+| Q4 | Que pressões existem sobre a decisão de Juliana? | Identifica restrições de tempo, de recursos e sociais. | Análise da equipe [H] — validar na Entrega 7 |
+| Q5 | De quem depende o alcance do objetivo de Juliana? | Revela atores que não aparecem no cenário inicial. | Análise da equipe [H] — validar na Entrega 7 |
+| Q6 | Quem precisa ser avisado sobre a decisão ou sobre a chegada de Juliana? | Identifica terceiros que dependem do resultado do deslocamento. | Análise da equipe [H] — validar na Entrega 7 |
+| Q7 | Quais estratégias alternativas Juliana conhece e quando escolhe cada uma? | Mostra as opções reais de decisão e os critérios usados. | Análise da equipe [H] — validar na Entrega 7 |
+| Q8 | Juliana sabe por quais ruas e avenidas a sua linha de ônibus circula? | Verifica se ela tem o conhecimento necessário para relacionar ocorrências ao trajeto. | Análise da equipe [H] — validar na Entrega 7 |
+| Q9 | As informações de alagamento que Juliana encontra podem ser relacionadas diretamente à linha e ao terminal que ela usa? | Verifica se as fontes atuais falam a mesma "língua" do deslocamento dela. | Análise da equipe [H] — validar na Entrega 7 |
+| Q10 | Como Juliana gostaria de tomar essa decisão, comparado a como toma hoje? | Contrapõe a forma atual à forma desejada, sem definir a solução. | Análise da equipe [H] — validar na Entrega 7 |
+| Q11 | Em que ordem Juliana consulta as fontes e por que segue essa ordem? | Detalha a sequência de ações e o hábito que a orienta. | Análise da equipe [H] — validar na Entrega 7 |
+| Q12 | Que sinais dos aplicativos ou do ambiente fazem Juliana perceber que a situação mudou? | Identifica os retornos que disparam uma nova avaliação. | Análise da equipe [H] — validar na Entrega 7 |
+| Q13 | Como Juliana sabe, a cada consulta, se já tem informação suficiente para decidir? | Mostra o critério de avaliação e onde o ciclo de consultas trava. | Análise da equipe [H] — validar na Entrega 7 |
+| Q14 | Quais são as consequências de uma decisão incorreta para Juliana? | Dimensiona o impacto do problema para os dois lados da decisão. | Análise da equipe [H] — validar na Entrega 7 |
+
+### 3. Cenário refinado
+
+Em uma quinta-feira de março, Juliana Ferreira Costa, estudante universitária de 20 anos, tem prova às 19h. [Q1] [NOVO: A disciplina não oferece prova substitutiva sem justificativa formal, e o professor costuma não permitir a entrada de alunos com mais de 20 minutos de atraso. Por isso, nesse dia, chegar no horário pesa muito mais do que em uma aula comum. [Q1] [Q5]] Para chegar à faculdade, ela pega um ônibus perto de casa até um terminal de integração e, de lá, segue de metrô. Em um dia comum, o trajeto leva cerca de 1h10, então ela costuma sair às 17h40.
+
+Às 16h30, ainda em casa, Juliana recebe no celular uma notificação do aplicativo de previsão do tempo: alerta de temporal para o fim da tarde na cidade de São Paulo. [Q12] Ela começa a pensar se deve sair mais cedo, se deve trocar o ônibus por um caminho de trem e metrô, que é cerca de 40 minutos mais longo, ou se pode manter o trajeto de sempre. [Q7] [NOVO: Ela conhece também outras duas alternativas: pedir um carro por aplicativo, que é caro e também pode ficar preso no trânsito, ou não ir e tentar justificar a ausência depois, o que considera o último recurso. Costuma escolher o trem e metrô apenas quando tem certeza de que o caminho do ônibus está comprometido, porque ele exige sair às 17h e encurta seu tempo de revisão para a prova. [Q7] [Q4]]
+
+[NOVO: Juliana não quer apenas chegar à faculdade: também quer evitar ficar presa dentro de um ônibus parado em uma via alagada, situação que já viveu uma vez e que a deixou com medo. Se precisasse escolher, preferiria chegar atrasada a ficar presa na água. [Q2]]
+
+Primeiro, Juliana abre o aplicativo de mapas e traça a rota habitual. [Q11] [NOVO: Começa por ele por hábito, já que é o mesmo aplicativo que usa todos os dias para conferir o tempo de viagem. [Q11]] O aplicativo mostra o tempo normal de 1h10, sem nenhum aviso. Ela conclui que, por enquanto, está tudo bem, mas desconfia, porque a chuva ainda não começou. [Q13] Em seguida, volta ao aplicativo de previsão e vê o radar com uma mancha vermelha se aproximando e a indicação de 30 a 50 mm de chuva acumulada. Ela não sabe se essa quantidade é suficiente para alagar alguma via por onde o ônibus passa. [Q9]
+
+Juliana então procura em uma rede social um perfil que divulga informações de trânsito e encontra registros de alagamento em outras partes da cidade, com nomes de ruas e avenidas que ela não conhece. Como sabe apenas onde o ônibus para, e não por quais ruas ele circula, não consegue dizer se alguma dessas ocorrências está no caminho da sua linha. [Q8] [Q9] [NOVO: Juliana conhece bem o ponto de embarque, o terminal e um ou outro trecho que vê pela janela, mas nunca precisou saber o itinerário completo, e o aplicativo de transporte mostra a linha como uma sequência de pontos, não como uma lista de ruas. Para tentar relacionar uma ocorrência à linha, ela precisaria abrir o mapa, procurar a rua citada e comparar visualmente com o caminho do ônibus, o que leva tempo e nem sempre dá certo. [Q8] [Q9]] No grupo da turma, um colega escreve que "a avenida perto do terminal já está enchendo", enquanto outro responde que "aqui não está chovendo nada". [Q5] As mensagens não informam horário nem local exato, e Juliana não sabe em qual acreditar. [Q13]
+
+[NOVO: A cada consulta, Juliana só se sente segura para decidir quando duas fontes diferentes apontam na mesma direção. Quando as fontes discordam ou falam de lugares que ela não reconhece, volta a consultar outra fonte, e esse ciclo consome justamente o tempo que ela tinha para decidir com antecedência. [Q13] [Q4]]
+
+Às 17h20, a chuva começa forte. [Q12] Juliana abre o aplicativo de transporte público e vê que o ônibus que pegaria está parado há dez minutos, duas paradas antes do seu ponto. [Q12] [NOVO: Ao mesmo tempo, o aplicativo de mapas, que antes indicava 1h10, passa a mostrar 1h50 para o mesmo trajeto. Para Juliana, esses dois sinais juntos indicam que algo mudou, mas não dizem o quê. [Q12]] Ela não consegue saber se é apenas trânsito ou se há um alagamento mais à frente. [Q13] [NOVO: Também percebe que, se for até o ponto, terá de consultar o celular de pé, segurando o guarda-chuva, com a bateria já em 30% e sinal fraco quando estiver no metrô. Por isso, considera que a melhor hora para decidir é ainda em casa. [Q3] [Q4]]
+
+[NOVO: A decisão dela depende de pessoas que não controla: a operadora e o motorista do ônibus, que podem desviar ou interromper a viagem sem que ela saiba antes; os colegas do grupo, cujas informações ela não consegue conferir; e o professor, que define se um atraso será aceito. [Q5] Além disso, a mãe de Juliana pede que ela avise por mensagem quando chegar à faculdade em dias de chuva forte, e, se decidir pelo caminho mais longo ou se atrasar, ela precisa avisar algum colega para comunicar o professor. [Q6]]
+
+[NOVO: Juliana gostaria de tomar essa decisão uma única vez, ainda em casa e com antecedência, sabendo se o caminho que ela realmente faz, e não a cidade inteira, tem chance de ser afetado. Hoje, ao contrário, ela decide aos poucos, em cima da hora, juntando pedaços de informação de fontes que não conversam entre si. [Q10]]
+
+Com pouco tempo para decidir, precisa escolher entre arriscar o trajeto habitual, podendo ficar presa dentro de um ônibus parado em uma via alagada e perder a prova, ou optar por precaução pelo caminho mais longo, mesmo sem saber se o risco era real. [Q14] [NOVO: Se arriscar e errar, pode perder a prova, ficar exposta a uma situação de perigo dentro do ônibus e chegar em casa muito tarde. Se for por precaução e o alagamento não acontecer, perde cerca de 40 minutos e parte do tempo de revisão. Como só descobre se a escolha foi correta durante o próprio trajeto, Juliana costuma sair com a sensação de estar apostando, e não decidindo. [Q14] [Q13]]
+
+### 4. Elementos extraídos
+
+| Elemento | Evidência no cenário |
+|---|---|
+| Ator(es) | Juliana (P04), estudante de 20 anos, alta familiaridade com aplicativos, dependente de transporte público e sem conhecimento do itinerário completo da linha. Atores secundários: motorista/operadora do ônibus, colegas do grupo da turma, professor da disciplina e mãe de Juliana. |
+| Objetivo(s) | Chegar a tempo para a prova das 19h **e** não ficar presa em um ônibus parado em via alagada. |
+| Contexto | Fim de tarde de quinta-feira em março, com alerta de temporal e prova às 19h; Juliana está em casa e precisa decidir com antecedência, sabendo que no ponto ou no metrô terá bateria baixa, guarda-chuva na mão e sinal fraco. |
+| Recursos/informações | Aplicativo de previsão do tempo, aplicativo de mapas, aplicativo de transporte público, perfil de trânsito em rede social, grupo da turma, experiência anterior com alagamentos. |
+| Ações | Abrir o aplicativo de mapas e traçar a rota; consultar o radar e a previsão; procurar ocorrências em perfil de trânsito na rede social; ler o grupo da turma; abrir o aplicativo de transporte público para ver a posição do ônibus; tentar comparar ruas citadas com o caminho da linha; decidir entre manter o trajeto ou trocar de modal e horário. |
+| Problemas/rupturas | Informações organizadas por rua e endereço, enquanto Juliana pensa o deslocamento por linha, ponto e terminal; informações que só mostram o problema depois que ele acontece, quando a decisão precisa ser antecipada; previsão genérica para a cidade inteira; mensagens contraditórias no grupo da turma; falta de controle sobre o itinerário do ônibus; ciclo de consultas que consome o tempo disponível para decidir. |
+| Consequências | Perder a prova; ficar exposta a perigo dentro de um ônibus em via alagada; chegar em casa muito tarde; ou, no erro oposto, perder 40 minutos e tempo de revisão sem necessidade. |
+
+### 5. Implicações para as próximas entregas
+
+Para quem depende de transporte público, a decisão não é por qual rua passar, mas **qual modal usar e a que horas sair**, e a referência espacial da usuária é a **linha e seus pontos**, não regiões ou endereços. Será necessário investigar se a consulta por região em um mapa (H02) corresponde à forma como esse perfil pensa o próprio deslocamento (H06).
+
+O alerta recebido por Juliana era genérico para a cidade inteira e não a ajudou a decidir. Além de verificar se alertas são úteis (H03), será preciso entender que abrangência e que antecedência tornam um alerta relevante para esse tipo de decisão.
+
+Tarefas que merecem análise na Entrega 5: relacionar informações de chuva e ocorrências ao trajeto de transporte público; decidir entre alternativas de modal e horário com antecedência; reavaliar a decisão quando surgem sinais novos (ônibus parado, aumento do tempo de rota).
+
+Informações a coletar na Entrega 7: se usuários de transporte público conhecem o itinerário das linhas que usam; com quanta antecedência tomam esse tipo de decisão; quanto confiam em informações de grupos e redes sociais; quais alternativas de deslocamento consideram e em que situações.
 
 ## Checklist
 

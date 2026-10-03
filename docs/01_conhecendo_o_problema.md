@@ -108,7 +108,9 @@ Interpretação de ocorrências de alagamentos e inundações em São Paulo para
 
 ## 1.2 Qual situação, atividade ou problema do mundo real motivou o TCC?
 
-F - O TCC é motivado pelos alagamentos e enchentes recorrentes em São Paulo, que travam a mobilidade urbana, causam prejuízos bilionários e geram riscos à vida.
+F - O projeto é motivado pela ocorrência de enchentes, alagamentos e inundações na cidade de São Paulo, eventos que podem gerar transtornos à população, danos patrimoniais e riscos à saúde e à integridade física das pessoas.  
+  
+**Fonte:** Prefeitura de São Paulo - Plano de Prevenção às Chuvas (PPC) e Portaria PREF nº 1.759/2025. <https://legislacao.prefeitura.sp.gov.br/portaria-prefeito-pref-1759-de-1-de-outubro-de-2025/consolidado?utm_source=chatgpt.com>
 
 ## 1.3 Qual é a **capacidade/contribuição central** produzida pelo TCC?
 
@@ -116,14 +118,14 @@ Nosso TCC permite prever pontos críticos de alagamento urbanos por meio do cruz
 
 ## 1.4 O que se espera que esteja diferente **para pessoas, organizações ou processos** se essa contribuição for bem-sucedida?
 
-F - As pessoas estarão melhor informadas e poderão evitar passar por situações que coloque elas e seus bens em risco. Organizações também terão acesso a mais uma ferramenta para auxiliar na predição de inundações e alagamentos.
+H - Espera-se que os usuários tenham acesso a informações mais claras sobre o risco de alagamentos e inundações, podendo utilizá-las como apoio para decisões preventivas, como evitar regiões potencialmente afetadas durante seus deslocamentos. Organizações também poderão utilizar essas estimativas como informação complementar para atividades de monitoramento e prevenção.
 
 ## 1.5 O que é mérito técnico/científico do TCC e o que seria uma possível aplicação prática?
 
 | Mérito/contribuição técnica | Possível aplicação/valor em uso |
 |---|---|
-| O algoritmo de Machine Learning avalia instantaneamente se a chuva simulada causará transbordamentos em pontos específicos da cidade. | Manter os usuários informados em tempo real através da tela de output, disparando avisos visuais no mapa para que evitem vias perigosas e protejam seus bens e sua integridade física.
-| Capacidade do modelo de IA de segmentar a cidade de São Paulo em níveis de vulnerabilidade altamente específicos. | Geração de um mapa dinâmico e visual para a Defesa Civil, permitindo rotas de fuga automáticas e emissão de alertas preventivos à população antes do início do temporal. |
+| Integração de dados geoespaciais, meteorológicos e históricos com modelos de aprendizado de máquina para estimar a probabilidade de ocorrência de alagamentos e inundações por região. | As estimativas geradas podem ser utilizadas como apoio para que usuários consultem o risco de determinadas regiões e tomem decisões preventivas. |
+| Organização e processamento de informações espaciais para relacionar características das regiões às estimativas de risco. | Essas informações podem apoiar formas de consulta por localização e, futuramente, outras possibilidades de interação relacionadas ao planejamento e prevenção, desde que sejam investigadas e justificadas pelas necessidades dos usuários. |
 
 ---
 
@@ -131,9 +133,9 @@ F - As pessoas estarão melhor informadas e poderão evitar passar por situaçõ
 
 ## 2.1 Quem interage diretamente com o produto, se já existe interface prevista?
 
-H - Usuários interessados em consultar o risco de alagamentos e inundações em regiões da cidade de São Paulo poderão interagir diretamente com a interface, visualizando informações e estimativas de risco geradas pelo sistema.
+H - O usuário direto priorizado no projeto de IHC é uma pessoa que realiza deslocamentos pela cidade e deseja consultar informações sobre risco de alagamento nas regiões por onde pretende passar, utilizando essas informações para apoiar decisões sobre seu trajeto.
 
-H - A interface também poderá ser utilizada por profissionais ou agentes envolvidos com monitoramento e prevenção de eventos hidrológicos, caso a solução seja adequada às necessidades desses públicos.
+H - Outros perfis, como profissionais envolvidos com monitoramento e prevenção de eventos hidrológicos, podem se beneficiar das estimativas produzidas pelo sistema, mas não são o público prioritário definido para as principais decisões de interação deste projeto.
 
 ## 2.2 Quem poderia **usar, configurar, administrar, operar, interpretar ou tomar decisões** a partir da contribuição técnica?
 
@@ -141,22 +143,24 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 | Perfil | Relação com a contribuição | O que faria | Status/evidência |
 |---|---|---|---|
-| Usuário final | Consulta direta da interface | Visualizaria estimativas de risco de alagamento/inundação por região e poderia usar essa informação para decidir deslocamentos ou evitar áreas de maior risco | H - Público previsto, mas ainda não validado com usuários reais |
-| Agente da Defesa Civil | Uso das previsões como apoio operacional | Interpretaria níveis de risco e poderia priorizar monitoramento, alerta ou atenção a determinadas regiões | H - Aplicação plausível, mas ainda não validada institucionalmente |
-| Desenvolvedor / administrador do sistema | Manutenção da aplicação e pipeline | Integraria novas bases, manteria o banco de dados, pipeline geoespacial, modelos e interface | F - Necessário para operação técnica da solução
+| Usuário em deslocamento | Usuário direto prioritário da interface | Consultaria informações de risco nas regiões relacionadas ao seu trajeto e utilizaria essas informações para decidir se deve manter ou alterar o caminho | H - Perfil prioritário definido para o projeto de IHC, ainda a validar com usuários reais |
+| Agente da Defesa Civil | Usuário secundário/potencial da contribuição | Poderia interpretar estimativas de risco como apoio a atividades de monitoramento e prevenção | H - Aplicação plausível, mas ainda não validada institucionalmente |
+| Desenvolvedor / administrador do sistema | Responsável pela operação técnica | Manteria dados, modelos, integrações e componentes necessários ao funcionamento da aplicação | F - Papel técnico necessário para manutenção da solução |
 
 ## 2.3 Existem pessoas afetadas que não usariam a interface diretamente?
 
 | Stakeholder | Como é afetado | Usa interface? | Status/evidência |
 |---|---|---|---|
-| Motoristas e usuários do transporte urbano | Poderiam ser afetados por mudanças de rota, bloqueios ou alertas em áreas de risco | Não | H - Impacto plausível em situações de evento |
+| Familiares ou pessoas próximas ao usuário | Podem ser afetados pelas decisões tomadas pelo usuário com base nas informações consultadas, como alteração de trajeto ou mudança no horário de deslocamento | Não | H - Impacto indireto plausível |
 | Instituições de pesquisa e universidades | Poderiam utilizar metodologia, dados processados ou resultados em estudos futuros | Não | H - Aplicação acadêmica potencial |
 
 ## 2.4 Que características desses perfis podem influenciar a interação?
 
 Considere conhecimento do domínio, experiência tecnológica, frequência de uso, necessidades de acessibilidade, responsabilidade profissional, familiaridade com métricas, linguagem técnica, urgência etc.
 
-H - As principais características que podem influenciar a interação são o nível de conhecimento técnico e a familiaridade com informações de risco, mapas e probabilidades, já que usuários finais podem precisar de uma apresentação mais simples e visual, enquanto perfis técnicos ou profissionais podem demandar informações mais detalhadas para interpretação e tomada de decisão.
+H - Para o usuário prioritário, podem influenciar a interação o nível de familiaridade com mapas e aplicativos de navegação, o conhecimento limitado sobre dados de precipitação e probabilidade de risco, a necessidade de tomar decisões em pouco tempo e o uso frequente de dispositivos móveis durante ou antes de deslocamentos.
+
+H - Também deve ser investigado como esse usuário interpreta níveis de risco e probabilidades, pois uma interpretação incorreta pode influenciar diretamente sua decisão sobre o trajeto.
 
 # 3. Entendendo objetivos e atividades
 
@@ -170,17 +174,17 @@ H - Obter informações antecipadas sobre o risco de alagamentos e inundações 
 
 | ID | Atividade/objetivo | Quem realiza | Frequência/criticidade inicial | Status/evidência |
 |---|---|---|---|---|
-| A01 | Consultar o risco de alagamento em determinada região | Usuário final | Alta frequência | H |
-| A02 | Planejar deslocamentos ou ações preventivas com base no risco apresentado | Usuário final | Alta criticidade | H |
-| A03 | Interpretar informações de risco para apoiar decisões de monitoramento e prevenção | Profissionais/órgãos responsáveis | Alta criticidade | H |
+| A01 | Consultar informações sobre o risco de alagamento em determinada região | Usuário em deslocamento | Alta frequência | H |
+| A02 | Avaliar se regiões do trajeto apresentam risco de alagamento | Usuário em deslocamento | Alta criticidade | H |
+| A03 | Decidir se deve manter ou alterar seu trajeto com base nas informações disponíveis | Usuário em deslocamento | Alta criticidade | H |
 
 ## 3.3 Qual atividade parece mais frequente? Por quê?
 
-H - A consulta do risco de alagamento por região parece ser a atividade mais frequente, pois representa a principal forma de obtenção das informações necessárias para as demais ações do usuário.
+H - A consulta de informações sobre risco de alagamento por região parece ser a atividade mais frequente, pois representa o primeiro passo para que o usuário avalie as condições do seu trajeto e tome uma decisão sobre o deslocamento.
 
 ## 3.4 Qual parece mais crítica? Que consequência existe se for mal executada?
 
-H - A interpretação das informações de risco parece ser a atividade mais crítica, pois uma interpretação incorreta pode levar a decisões inadequadas, como realizar um deslocamento por uma região com risco elevado ou deixar de adotar medidas preventivas.
+H - A decisão de manter ou alterar o trajeto parece ser a atividade mais crítica, pois uma interpretação inadequada das informações disponíveis pode levar o usuário a escolher um caminho que passe por uma região potencialmente afetada por alagamentos.
 
 ---
 
@@ -190,7 +194,7 @@ H - A interpretação das informações de risco parece ser a atividade mais cr�
 
 Pode existir software concorrente, linha de comando, planilha, notebook, script, painel técnico, processo manual, consulta a logs, análise visual, troca de mensagens, decisão por especialista etc.
 
-F - Atualmente, informações relacionadas a chuvas, alagamentos e áreas de risco são consultadas em diferentes fontes, como portais públicos, mapas, sistemas de monitoramento e alertas meteorológicos, exigindo que o usuário interprete essas informações separadamente para avaliar uma situação de risco.
+H - Atualmente, o usuário em deslocamento pode recorrer a diferentes fontes, como aplicativos de previsão do tempo, navegação, informações de trânsito e serviços públicos sobre alagamentos, tentando relacionar essas informações para avaliar as condições do seu trajeto. Essa forma de consulta ainda precisa ser validada com usuários.  
 
 ## 4.2 O que é difícil, demorado, confuso, repetitivo, arriscado ou pouco transparente?
 
@@ -198,11 +202,11 @@ H - A dispersão das informações em diferentes fontes pode dificultar a interp
 
 ## 4.3 Que informações o profissional precisa interpretar para tomar decisão?
 
-H - Profissionais podem precisar considerar informações como intensidade e acúmulo de chuva, localização das ocorrências, características das áreas de risco e condições geográficas da região para avaliar a possibilidade de um evento e definir ações preventivas.
+H - No contexto do usuário priorizado, podem ser relevantes informações como intensidade da chuva, localização de ocorrências de alagamento e condições das regiões pelas quais pretende passar. Ainda precisa ser investigado quais dessas informações o usuário realmente considera ao decidir seu trajeto.  
 
 ## 4.4 O que acontece quando a atividade falha ou quando o resultado é interpretado incorretamente?
 
-H - Uma avaliação incorreta do risco pode resultar na ausência ou atraso de ações preventivas, exposição de pessoas a regiões potencialmente perigosas ou priorização inadequada de áreas para monitoramento.
+H - Uma interpretação inadequada das informações de risco pode levar o usuário a considerar uma região segura ou pouco problemática e escolher um trajeto que passe por uma área potencialmente afetada por alagamentos.  
 
 ## 4.5 Conte uma situação concreta.
 
@@ -224,31 +228,31 @@ Escreva uma pequena narrativa com pessoa, objetivo, atividade, contexto, dificul
 
 ## 5.1 Onde e em quais situações a interação poderia ocorrer?
 
-H - A interação poderá ocorrer principalmente em situações de consulta e monitoramento do risco de alagamentos, especialmente durante períodos de chuva ou antes de deslocamentos por regiões potencialmente afetadas.
+H - A interação poderá ocorrer principalmente antes ou durante deslocamentos pela cidade, especialmente em períodos de chuva ou quando houver preocupação com possíveis alagamentos no trajeto.  
 
 ## 5.2 Em quais dispositivos/equipamentos?
 
-H - A interface poderá ser acessada principalmente por computadores e dispositivos móveis, como smartphones, permitindo consultas tanto em ambientes de trabalho quanto durante deslocamentos.
+H - O uso poderá ocorrer smartphones ou computadores, considerando que o usuário priorizado realiza consultas relacionadas ao seu deslocamento.
 
 ## 5.3 Existem condições físicas relevantes?
 
 Considere iluminação, ruído, mobilidade, conexão, privacidade, uso compartilhado, interrupções, pressão de tempo etc.
 
-H - A mobilidade, a qualidade da conexão com a internet e a pressão de tempo podem ser relevantes, principalmente durante eventos de chuva intensa, quando o usuário pode precisar consultar e interpretar rapidamente as informações apresentadas.
+H - Pressão de tempo, mobilidade, qualidade da conexão com a internet, chuva e interrupções durante o deslocamento podem influenciar a interação. Essas condições ainda precisam ser validadas com usuários.
 
 ## 5.4 Existem fatores sociais ou organizacionais?
 
 Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade profissional, auditoria, turnos e colaboração.
 
-H - Em contextos profissionais, diferentes níveis de responsabilidade podem influenciar o uso das informações. Profissionais técnicos podem interpretar os dados, enquanto gestores ou agentes responsáveis podem utilizá-los como apoio à tomada de decisão e à definição de ações preventivas.
+H - O usuário pode considerar informações recebidas de familiares, colegas ou outras pessoas ao tomar decisões sobre seu deslocamento. Ainda precisa ser investigado o quanto essas influências externas participam dessa decisão.
 
 ## 5.5 Existe necessidade de histórico, rastreabilidade ou auditoria?
 
-H - O armazenamento de previsões e informações históricas pode ser importante para comparar eventos ao longo do tempo, avaliar o desempenho do sistema e permitir análises posteriores das previsões realizadas.
+? - Ainda não sabemos se o usuário prioritário precisa consultar informações históricas para alcançar seu objetivo. Essa necessidade deverá ser investigada antes de justificar uma funcionalidade de histórico.  
 
 ## 5.6 Um erro pode produzir consequência relevante? Qual?
 
-H - Sim. Uma previsão incorreta ou uma interpretação inadequada do nível de risco pode levar o usuário a considerar uma região segura quando existe possibilidade de alagamento ou, no contexto profissional, contribuir para uma priorização inadequada de ações preventivas.
+H - Sim. Uma interpretação incorreta do nível ou da probabilidade de risco pode levar o usuário a tomar uma decisão inadequada sobre seu trajeto e passar por uma região potencialmente afetada por alagamentos.  
 
 ---
 
@@ -317,13 +321,13 @@ Responda:
 
 ## 7.2 Qual perfil será priorizado no projeto de IHC?
 
-Usuário final que deseja consultar o risco de alagamentos em determinada região da cidade de São Paulo.
+H - Pessoa que realiza deslocamentos urbanos e precisa avaliar o risco de alagamento nas regiões relacionadas ao seu trajeto.
 
-**Por que esse perfil foi escolhido?** Porque esse usuário precisa interpretar rapidamente informações de risco para apoiar decisões como evitar regiões potencialmente afetadas ou planejar deslocamentos em períodos de chuva.
+**Por que esse perfil foi escolhido?** Porque esse usuário pode precisar interpretar informações sobre risco para decidir se mantém ou altera seu deslocamento, especialmente durante períodos de chuva. Esse perfil ainda deverá ser validado com usuários reais.  
 
 ## 7.3 Qual objetivo desse usuário será priorizado?
 
-Identificar de forma rápida e clara o nível de risco de alagamento em uma determinada região, de modo a apoiar decisões preventivas.
+H - Compreender o risco de alagamento nas regiões relacionadas ao seu deslocamento para apoiar a decisão de manter ou alterar seu trajeto.
 
 ## 7.4 Que interface será explorada na disciplina?
 
@@ -331,7 +335,7 @@ Complete:
 
 > **Para fins da disciplina de IHC, será projetada uma interface que permita a `{{perfil}}` utilizar `{{capacidade/resultado do TCC}}` para `{{objetivo}}`, no contexto de `{{situação}}`.**
 
-Para fins da disciplina de IHC, será projetada uma interface que permita ao usuário final utilizar as estimativas probabilísticas de risco geradas pelo TCC para identificar regiões com maior suscetibilidade a alagamentos e apoiar decisões preventivas, especialmente em situações de chuva intensa.
+Para fins da disciplina de IHC, será projetada uma interface que permita a uma pessoa em deslocamento utilizar as estimativas probabilísticas de risco produzidas pelo projeto para compreender as condições das regiões relacionadas ao seu trajeto e apoiar decisões sobre seu deslocamento, especialmente em períodos de chuva.
 
 ## 7.5 Qual é a relação dessa interface com o TCC?
 
@@ -353,20 +357,20 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 | Possibilidade | Pode fazer sentido? | Objetivo/tarefa que justificaria | Evidência atual |
 |---|---|---|---|
-| Dashboard/visão geral | sim | Permitir ao usuário visualizar rapidamente o nível de risco nas diferentes regiões | H - compatível com o objetivo de consulta de risco |
+| Dashboard/visão geral | talvez | Poderia apoiar uma consulta rápida das condições de risco | H - precisa ser investigado se essa forma de apresentação atende à tarefa |
 | Configuração/parametrização | talvez | Permitir ajustes específicos para usuários técnicos | ? - ainda não foi definido se isso fará parte da interface |
 | Entrada/upload/seleção de dados | não | Não é uma necessidade do usuário final priorizado | F - os dados são obtidos e processados pelo próprio sistema |
 | Acompanhamento de processamento | não | Não é necessário para quem apenas consulta o risco | H - pode ser útil apenas para perfis técnicos |
 | Relatório/resultados | talvez | Permitir análise mais detalhada das previsões e eventos | H - pode ser relevante para usuários profissionais |
-| Histórico com busca/filtros | sim | Consultar riscos e ocorrências passadas por região ou período | H - útil para comparação e análise temporal |
+| Histórico com busca/filtros | talvez | Poderia permitir consulta de eventos anteriores caso essa informação seja relevante para a decisão | ? - necessidade ainda não comprovada |
 | Comparação de resultados | talvez | Comparar diferentes regiões ou períodos | H - pode ajudar na interpretação do risco |
-| Explicabilidade/detalhamento | sim | Permitir entender quais fatores contribuíram para o risco apresentado  | H - importante para aumentar compreensão e confiança |
+| Explicabilidade/detalhamento | talvez | Poderia ajudar o usuário a compreender por que determinada estimativa foi apresentada | H - precisa ser investigado quais informações realmente auxiliam a compreensão |
 | Administração/configurações globais | não  | Não é necessária para o usuário final priorizado | H - poderia existir apenas em perfil administrativo |
 | Usuários/perfis/permissões | talvez | Diferenciar acesso entre usuários comuns e profissionais | ? - ainda não definido |
 | CRUD de entidade do domínio | não  | O usuário final não precisa cadastrar manualmente dados hidrológicos ou geográficos | F - os dados vêm de fontes externas e processamento interno |
 | Auditoria/logs | talvez | Permitir análise técnica de previsões e comportamento do sistema | H - relevante principalmente para administradores |
-| Alertas/ocorrências | sim | Avisar o usuário sobre regiões com risco elevado | H - diretamente relacionado ao apoio preventivo |
-| Ajuda/documentação | sim | Explicar significado de níveis de risco, probabilidades e informações apresentadas |	H - importante para usuários sem conhecimento técnico |
+| Alertas/ocorrências | talvez | Poderiam apoiar decisões preventivas caso sejam recebidos em momento útil | H - H03 ainda aberta |
+| Ajuda/documentação | talvez | Poderia apoiar a compreensão de conceitos de risco e probabilidade | H - depende das dificuldades identificadas com usuários |  
 
 > **Atenção:** “login + dashboard + CRUD” não é uma solução universal. Cada padrão deve surgir de uma tarefa real.
 
@@ -378,19 +382,19 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 | Benefício esperado | Problema/necessidade | Usuário | Status/evidência |
 |---|---|---|---|
-| Facilitar a compreensão do risco de alagamento por região |	Informações climáticas e geográficas podem ser difíceis de interpretar isoladamente |	Usuário final |	H - necessidade ainda não validada com usuários |
-| Apoiar decisões preventivas e planejamento de deslocamentos	| Usuário pode precisar decidir se deve evitar determinada região em situação de chuva	| Usuário final |	H - aplicação plausível do sistema |
-| Apresentar informações complexas de forma simples e visual |	Probabilidades e dados hidrológicos podem ser difíceis de compreender |	Usuário final |	H - compatível com o perfil priorizado |
+| Facilitar a compreensão do risco de alagamento por região |	Informações climáticas e geográficas podem ser difíceis de interpretar isoladamente |	usuário em deslocamento |	H - necessidade ainda não validada com usuários |
+| Apoiar decisões preventivas e planejamento de deslocamentos	| Usuário pode precisar decidir se deve evitar determinada região em situação de chuva	| usuário em deslocamento |	H - aplicação plausível do sistema |
+| Apresentar informações complexas de forma simples e visual |	Probabilidades e dados hidrológicos podem ser difíceis de compreender |	usuário em deslocamento |	H - compatível com o perfil priorizado |
 
 ## 9.2 Que ações o usuário deverá conseguir realizar?
 
 | ID | O usuário precisa conseguir... | Para alcançar... | Prioridade inicial |
 |---|---|---|---|
-| F01	Consultar o risco de alagamento por região |	Avaliar rapidamente uma área de interesse |	alta
-| F02	Visualizar o nível de risco de forma clara |	Compreender a situação sem conhecimento técnico avançado |	alta
-| F03	Consultar informações relacionadas ao risco, como chuva e características da região |	Entender melhor o motivo da classificação apresentada |	média
-| F04	Consultar histórico ou ocorrências anteriores |	Comparar situações atuais com eventos passados |	média
-| F05	Receber ou visualizar alertas de risco elevado |	Apoiar decisões preventivas |	alta
+| F01 |	Consultar o risco de alagamento por região |	Avaliar rapidamente uma área de interesse |	alta
+| F02 |	Visualizar o nível de risco de forma clara |	Compreender a situação sem conhecimento técnico avançado |	alta
+| F03 |	Consultar informações relacionadas ao risco, como chuva e características da região |	Entender melhor o motivo da classificação apresentada |	média
+| F04 |	Consultar histórico ou ocorrências anteriores |	Comparar situações atuais com eventos passados |	média
+| F05 |	Receber ou visualizar alertas de risco elevado |	Apoiar decisões preventivas |	alta
 
 ## 9.3 Tecnologias/restrições já definidas no TCC
 
@@ -411,11 +415,11 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 
 | ID | Hipótese/dúvida | Por que importa | Como poderá ser investigada |
 |---|---|---|---|
-| H01	| Usuários compreendem melhor o risco quando ele é apresentado por níveis, como baixo, médio e alto, além da porcentagem. Influenciando diretamente sua interpretação	| Entrega 2 - entrevistas, análise de similares ou testes iniciais
-| H02	| Um mapa é a melhor forma de permitir a consulta de risco por região | Entrega 2 - análise de interfaces existentes e prototipação
-| H03	| Usuários consideram alertas de risco úteis para decisões preventivas | Entrega 2 - entrevistas e testes de usabilidade
-| H04	| Usuários não técnicos podem ter dificuldade para interpretar probabilidades e dados isolados	| Entrega 2 - pesquisa com usuários e testes de compreensão
-| H05	| Informações adicionais sobre chuva e características da região aumentam a confiança na previsão	| Entrega 2 - protótipos e avaliação com usuários
+| H01 | Usuários compreendem melhor o risco quando ele é apresentado por níveis, como baixo, médio e alto, junto da probabilidade. | A forma de representar o risco pode influenciar diretamente a interpretação e a decisão do usuário. | Entrevistas, testes de compreensão e protótipos. |
+| H02 | Um mapa pode ser uma forma adequada de permitir a consulta do risco por região. | A forma de localizar e relacionar o risco ao trajeto influencia a eficiência da consulta. | Análise de similares, entrevistas e testes com diferentes formas de apresentação. |
+| H03 | Alertas de risco podem ser úteis para decisões preventivas. | É necessário saber se o alerta chega em momento útil e se o usuário consegue realizar alguma ação a partir dele. | Entrevistas, questionários e testes de cenários. |
+| H04 | Usuários não técnicos podem ter dificuldade para interpretar probabilidades e dados isolados. | Uma interpretação incorreta pode produzir uma decisão inadequada ou transformar risco em sensação de certeza. | Testes de compreensão e entrevistas com usuários. |
+| H05 | Informações adicionais sobre chuva e características da região podem ajudar na compreensão da estimativa. | É necessário descobrir quais informações realmente auxiliam a decisão e quais apenas aumentam a carga cognitiva. | Entrevistas e comparação de protótipos com diferentes níveis de detalhamento. |
 
 Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
@@ -427,19 +431,19 @@ Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 |---|---|
 | Qual é a contribuição central do TCC?	| F - Desenvolvimento de uma abordagem baseada em dados geoespaciais, meteorológicos e aprendizado de máquina para estimar a probabilidade de ocorrência de alagamentos e inundações na cidade de São Paulo.
 | O TCC já previa interface?	| F - Sim. O projeto prevê uma interface para disponibilizar e facilitar a consulta das estimativas de risco geradas pelo sistema.
-| Quem é o usuário prioritário de IHC?	| H - Usuário final interessado em consultar o risco de alagamento em regiões da cidade de São Paulo.
-| O que ele precisa alcançar?	| H - Compreender rapidamente o risco de alagamento de uma região para apoiar decisões preventivas, como planejamento de deslocamentos.
-| Qual problema/atividade será estudado?	| H - A consulta e interpretação das informações de risco de alagamento apresentadas ao usuário.
-| Como isso acontece hoje?	| H - Informações relacionadas a chuva, alagamentos e condições das regiões podem ser consultadas em diferentes serviços, mapas, sistemas de monitoramento e fontes meteorológicas.
-| Qual é o contexto de uso?	| H - Principalmente consultas durante períodos de chuva ou antes de deslocamentos, possivelmente por computadores ou dispositivos móveis e, em alguns casos, sob pressão de tempo.
-| Que interface/recorte será explorado?	| H - Uma interface de consulta do risco por região, com apresentação clara do nível/probabilidade de risco e informações relevantes para sua interpretação.
+| Quem é o usuário prioritário de IHC?	| H - Pessoa que realiza deslocamentos urbanos e precisa avaliar o risco de alagamento nas regiões relacionadas ao seu trajeto.
+| O que ele precisa alcançar?	| H - Compreender o risco relacionado ao seu trajeto para apoiar a decisão de manter ou alterar seu deslocamento.
+| Qual problema/atividade será estudado?	| H - A busca, interpretação e utilização de informações sobre risco de alagamento para apoiar decisões de deslocamento.
+| Como isso acontece hoje?	| H - O usuário pode recorrer a diferentes fontes de informações meteorológicas, trânsito, navegação e ocorrências de alagamento; essa prática ainda precisa ser validada com usuários.
+| Qual é o contexto de uso?	| H - Principalmente antes ou durante deslocamentos, especialmente em períodos de chuva; condições como pressão de tempo e uso de smartphone ainda precisam ser investigadas.
+| Que interface/recorte será explorado?	| H - Uma interface voltada à consulta e compreensão das estimativas de risco relacionadas ao deslocamento do usuário.
 | Como a interface se relaciona ao TCC?	| F - A interface utiliza como base as estimativas produzidas pela contribuição técnica do TCC e já está prevista como forma de disponibilização dos resultados ao usuário.
 | Quais pontos ainda são hipóteses?	| H01-H05 - Forma mais compreensível de apresentar o risco; adequação do mapa como principal forma de consulta; utilidade dos alertas; compreensão das probabilidades por usuários não técnicos; e relevância de informações adicionais para explicar as previsões.
 
 ### Delimitação
 
-**Dentro do escopo de IHC:** projeto e avaliação da interação do usuário com a consulta de risco por região, incluindo visualização do nível de risco, probabilidades, informações complementares, mapas e possíveis alertas.
-**Fora do escopo de IHC:** treinamento e otimização dos modelos Random Forest e LSTM, processamento geoespacial, coleta e tratamento dos dados, banco de dados e demais componentes internos do sistema que não envolvem diretamente a interação com o usuário.
+**Dentro do escopo de IHC:** projeto e avaliação da interação de usuários em deslocamento com informações de risco de alagamento, incluindo a compreensão das estimativas e seu uso para apoiar decisões relacionadas ao trajeto. Formas específicas de interação, como mapas, alertas e outras representações, permanecem como possibilidades a serem investigadas.
+**Fora do escopo de IHC:** treinamento e otimização dos modelos, processamento geoespacial, coleta e tratamento dos dados, banco de dados e demais componentes internos que não envolvem diretamente a interação com o usuário.
 **Dentro do escopo formal do TCC:** coleta e integração dos dados geoespaciais e meteorológicos, processamento geoespacial, construção do dataset espaço-temporal, aplicação e comparação dos modelos Random Forest e LSTM, avaliação das previsões, simulação de cenários e disponibilização dos resultados por meio da aplicação proposta.
 **Interface da disciplina será implementada no TCC?** Não definido, a interface já faz parte da proposta do TCC, porém as decisões de IHC desenvolvidas nesta disciplina poderão ser incorporadas posteriormente conforme a evolução do projeto e o alinhamento da equipe com o orientador.
 
@@ -465,9 +469,11 @@ A Entrega 1 é uma **fotografia inicial do conhecimento**. Ela pode e deve ser r
 
 Prepare uma explicação de até três frases:
 
-1. **Problema/atividade humana:** Pessoas podem precisar identificar rapidamente regiões com maior risco de alagamento para apoiar decisões preventivas, especialmente em períodos de chuva intensa.
-2. **Contribuição técnica do TCC:** O trabalho propõe integrar dados geoespaciais, meteorológicos e históricos para treinar modelos de aprendizado de máquina capazes de classificar a ocorrência de eventos e estimar probabilidades de risco por região.
-3. **Como uma pessoa poderia utilizar essa contribuição:** O usuário poderá consultar essas estimativas por meio de uma interface, visualizar o risco de uma determinada região e utilizar essa informação como apoio para planejamento e prevenção.
+1. **Problema/atividade humana:** Pessoas que realizam deslocamentos urbanos podem precisar compreender se regiões relacionadas ao seu trajeto apresentam risco de alagamento para apoiar decisões preventivas.
+
+2. **Contribuição técnica do TCC:** O trabalho propõe integrar dados geoespaciais, meteorológicos e históricos para produzir estimativas probabilísticas de risco de alagamento por região.
+
+3. **Como uma pessoa poderia utilizar essa contribuição:** O usuário poderá consultar e interpretar essas estimativas como apoio para decisões relacionadas ao seu deslocamento.
 
 Essa síntese ajuda a apresentar o projeto para público não especializado sem reduzir seu mérito técnico.
 

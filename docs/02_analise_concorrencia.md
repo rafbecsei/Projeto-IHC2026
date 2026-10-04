@@ -39,8 +39,11 @@ Se uma hipótese da Entrega 1 for confirmada ou refutada durante esta análise, 
 
 ## 1. Público-alvo desta análise
 
-O público-alvo primário desta análise são os usuários no geral que buscam obter informações sobre os riscos e ocorrências de alagamentos e inundações.
-Como foi citado na Entrega 1, o objetivo principal é permitir que esse público consulte essas informações de forma rápida e de fácil entendimento, para apoiar decisões preventivas antes ou durante o deslocamento em áreas urbanas e em períodos de chuva ou não.
+O público-alvo primário desta análise são pessoas que realizam deslocamentos urbanos e precisam consultar informações sobre risco de alagamento nas regiões relacionadas ao seu trajeto.
+
+O objetivo da análise é compreender quais padrões de interação, formas de apresentação de risco e recursos já são utilizados em soluções semelhantes ou familiares a esse público, considerando principalmente situações de consulta antes ou durante deslocamentos em períodos de chuva.
+
+Outros perfis, como moradores interessados em consultar sua região ou profissionais de monitoramento, podem se beneficiar de informações semelhantes, mas não são o público prioritário adotado para as principais decisões de interação do projeto.
 
 ## 2. Concorrentes diretos/indiretos
 
@@ -202,47 +205,53 @@ Também é possível perceber o uso de dados atuais e históricos, característi
 
 ### Análise C04 — OpenWeather
 
-**Autor(a):** Victor P. Lario — 22.125.064-0                                                                      
-**Tipo:** Análogo                                                                                     
-**Link oficial:** https://openweathermap.org/                                                                         
-**Data de acesso:** 02/09/2026                     
+**Autor(a):** Victor P. Lario — 22.125.064-0  
+**Tipo:** Análogo  
+**Link oficial:** https://openweathermap.org/  
+**Data de acesso:** 02/09/2026
 
 #### Contexto e proposta
 
-A OpenWeather é uma plataforma voltada ao fornecimento de dados meteorológicos por meio de APIs. Ela disponibiliza informações sobre condições climáticas atuais, previsões, dados históricos, precipitação, temperatura, umidade, vento, alertas meteorológicos e mapas climáticos. Seu principal objetivo é permitir que desenvolvedores integrem dados meteorológicos diretamente em aplicações, sistemas de análise e modelos de previsão.
+A OpenWeather é uma plataforma de informações meteorológicas que apresenta condições atuais, previsões para diferentes períodos e mapas relacionados ao clima.
+
+Para este projeto, o principal interesse está em analisar como a plataforma organiza e apresenta informações meteorológicas para consulta, já que chuva e condições climáticas estão relacionadas ao contexto em que o usuário pode precisar avaliar riscos durante um deslocamento.
 
 #### Funcionalidades relevantes
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| Acesso à API de previsão climática | Criando uma conta, obtendo uma chave de API e escolhendo um plano conforme a quantidade de requisições | <img src="https://github.com/user-attachments/assets/7ad5ea0d-1cab-471c-baad-dffc7367a617" width="220"> | Direcionado principalmente a desenvolvedores e exige conhecimento básico sobre APIs |
-| Consulta de condições meteorológicas | Por meio de requisições à API utilizando latitude e longitude | <img src="https://github.com/user-attachments/assets/38d415a0-703f-4085-9706-ee6273eb703a" width="220"> | O uso de coordenadas facilita a integração com informações geográficas |
-| Previsão meteorológica | A API disponibiliza previsões para diferentes períodos de tempo | <img src="https://github.com/user-attachments/assets/a24751af-2ce1-45a7-bdfe-97b64fe3c797" width="220"> | A organização por período facilita o uso dos dados em sistemas de previsão |
- 
+| Consulta da previsão meteorológica | O usuário consulta informações sobre as condições do tempo de uma localidade, visualizando dados atuais e previsões futuras. | https://github.com/user-attachments/assets/7ad5ea0d-1cab-471c-baad-dffc7367a617 | A organização das informações permite identificar rapidamente as condições meteorológicas principais. |
+| Consulta da previsão por horário | A plataforma apresenta a previsão distribuída ao longo das horas, permitindo observar mudanças nas condições meteorológicas durante o dia. | https://github.com/user-attachments/assets/38d415a0-703f-4085-9706-ee6273eb703a | A organização temporal ajuda o usuário a entender quando determinada condição climática poderá ocorrer ou se intensificar. |
+| Visualização de informações meteorológicas no mapa | O usuário pode consultar informações climáticas representadas geograficamente em um mapa. | https://github.com/user-attachments/assets/a24751af-2ce1-45a7-bdfe-97b64fe3c797 | A representação espacial ajuda a relacionar condições meteorológicas a determinadas regiões. |
+
 #### Experiência do usuário e opiniões
 
-As avaliações dos usuários destacam positivamente a precisão das previsões, a simplicidade da interface e a facilidade de visualização das informações. Por outro lado, algumas avaliações apontam limitações no aplicativo, principalmente relacionadas à ausência de funcionalidades como radar meteorológico, poucas opções de widgets e menor quantidade de recursos de personalização.
+Durante a inspeção da interface, foi possível observar que a OpenWeather organiza as principais informações meteorológicas de forma visual e utiliza diferentes formas de apresentação, como previsão por período e representação geográfica em mapa.
+
+A previsão por horário facilita a percepção de mudanças nas condições ao longo do dia, enquanto o mapa permite relacionar informações meteorológicas a diferentes localidades.
+
+Por outro lado, a quantidade de dados apresentados pode exigir atenção do usuário para identificar quais informações são realmente importantes para sua situação. Além disso, os dados meteorológicos apresentados não indicam diretamente se existe risco de alagamento em determinada região, sendo necessária uma interpretação adicional.
 
 #### Preço/modelo de negócio
 
-A OpenWeather utiliza um modelo freemium, disponibilizando gratuitamente uma quantidade limitada de requisições e oferecendo planos pagos para aplicações que necessitam de maior volume de consultas ou acesso a funcionalidades adicionais. O plano gratuito tradicional permite até 60 chamadas por minuto e até 1 milhão de chamadas por mês para determinados serviços. Já a One Call API utiliza um modelo baseado em consumo, oferecendo gratuitamente as primeiras 1.000 chamadas diárias e cobrando pelas requisições adicionais.
+A OpenWeather possui serviços gratuitos e pagos. Para a análise de IHC desta entrega, o aspecto mais relevante não é o modelo de cobrança, mas a forma como as informações meteorológicas são organizadas e apresentadas ao usuário.
 
 #### Padrões e tendências percebidos
 
-A plataforma segue um modelo de serviço voltado principalmente para desenvolvedores, no qual o acesso aos dados é realizado por meio de APIs e chaves de autenticação. Também é possível perceber uma organização dos serviços de acordo com a necessidade e o volume de utilização do usuário. Outro padrão importante é a disponibilização dos dados utilizando formatos estruturados, como JSON, facilitando a integração com diferentes sistemas e aplicações.
+Um padrão relevante é a organização das informações de acordo com o tempo, permitindo ao usuário consultar condições atuais e previsões para períodos futuros.
 
-A plataforma também apresenta uma tendência de centralização de diferentes tipos de informações meteorológicas em uma mesma API, permitindo consultar condições atuais, previsões e dados históricos utilizando uma estrutura semelhante de requisições.
+Também é utilizado o mapa como forma de representação espacial das condições meteorológicas, permitindo relacionar informações climáticas a diferentes regiões.
+
+Outro aspecto observado é a apresentação de várias informações meteorológicas em uma mesma interface. Esse padrão pode ser útil para fornecer contexto ao usuário, mas também mostra a importância de definir quais informações são realmente necessárias para a tarefa realizada.
 
 #### Pontos positivos, limitações e lições
 
 | Ponto | Evidência | Implicação para nosso projeto |
 |---|---|---|
-| Grande variedade de dados meteorológicos | Disponibiliza temperatura, chuva, umidade, vento, pressão e outros parâmetros. | Permite utilizar diferentes variáveis climáticas como entrada para o modelo de previsão. |
-| Fácil integração através de API | Os dados podem ser consultados através de requisições utilizando uma chave de API. | Facilita a obtenção automática e periódica de dados climáticos pelo sistema. |
-| Disponibilidade de dados históricos | Alguns serviços disponibilizam mais de 47 anos de histórico meteorológico. | Pode auxiliar na análise de padrões históricos e na construção ou complementação de bases de treinamento. |
-| Modelo gratuito limitado por requisições | Os planos possuem limites de chamadas e determinadas funcionalidades dependem do plano contratado. | É necessário controlar a frequência das consultas e considerar o custo caso o volume de utilização aumente. |
-| Precisão pode variar dependendo da variável e da localização | Estudos comparativos encontraram boa proximidade para algumas variáveis, como temperatura, mas diferenças maiores para outras, como umidade. | Os dados utilizados pelo modelo devem ser comparados ou validados com fontes locais quando possível. |
-| Algumas limitações na experiência do aplicativo | Usuários relatam ausência de radar, poucos widgets e opções limitadas de personalização. | Mostra a importância de oferecer informações relevantes sem deixar de considerar funcionalidades de visualização mais avançadas para o usuário. |
+| Organização temporal da previsão | A interface apresenta informações meteorológicas distribuídas por horários e períodos futuros. | Indica a importância de comunicar claramente para qual momento ou período uma informação de risco é válida. |
+| Representação geográfica | Informações meteorológicas podem ser visualizadas em um mapa. | Reforça que a localização é um elemento importante em consultas relacionadas às condições de uma região, sem determinar ainda que o mapa seja obrigatoriamente a melhor solução para o projeto. |
+| Informações meteorológicas complementares | A plataforma reúne diferentes informações sobre as condições climáticas. | Indica que informações adicionais podem fornecer contexto, mas deve ser investigado quais realmente ajudam o usuário a tomar uma decisão. |
+| Não apresenta diretamente risco de alagamento | As informações apresentadas descrevem condições meteorológicas, mas não indicam diretamente o risco de alagamento relacionado ao trajeto do usuário. | O usuário pode precisar interpretar informações adicionais para relacionar as condições meteorológicas ao problema que deseja evitar. |
 
 ## 3. Softwares que o público-alvo usa no cotidiano
 
@@ -271,23 +280,23 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 
 | Critério | C01 | C02 | C03 | C04 | Oportunidade para o projeto |
 |---|---|---|---|---|---|
-| Navegação | O usuário que deseja verificar alagamentos pode consultar as ocorrências pelo mapa e por data, porém algumas informações exigem consultas manuais. |  | O usuário pode localizar sua região pelo mapa e selecionar equipamentos próximos para consultar dados de chuva. | A consulta é voltada principalmente a desenvolvedores por meio de APIs, não sendo direcionada ao usuário comum. | Permitir que o usuário encontre rapidamente sua localização ou região no mapa e consulte o risco sem precisar navegar por várias telas ou sistemas. |
-| Feedback/estado | Após consultar uma ocorrência, o usuário consegue identificar se ela está ativa ou inativa e se a via está transitável ou intransitável. |  | Após selecionar uma região, o usuário recebe valores de precipitação, mas ainda precisa interpretar se representam uma situação de risco. | Fornece dados meteorológicos atuais e previsões que podem ser utilizados pelo sistema para identificar mudanças nas condições climáticas. | Mostrar diretamente ao usuário o nível de risco da região, utilizando cores e classificações simples que indiquem a situação atual. |
-| Prevenção/recuperação de erro | Siglas e grande quantidade de texto podem dificultar a compreensão, principalmente para usuários que não conhecem previamente o sistema. |  | Valores técnicos de precipitação podem dificultar a compreensão de quem apenas deseja saber se existe risco em determinada região. | O acesso aos dados exige parâmetros e configurações técnicas adequadas, sendo pouco acessível diretamente ao usuário final. | Evitar que o usuário precise interpretar informações técnicas, apresentando mensagens claras quando não houver dados ou quando uma consulta não puder ser realizada. |
-| Terminologia | Termos como transitável e intransitável ajudam na decisão do usuário, porém algumas regiões são identificadas por siglas pouco intuitivas. |  | Utiliza informações como precipitação e dados de equipamentos, que podem não ser facilmente compreendidos por todos os usuários. | Utiliza termos relacionados a dados meteorológicos e APIs, direcionados principalmente a um público técnico. | Traduzir dados meteorológicos e geoespaciais para uma linguagem próxima do cotidiano, como risco baixo, médio ou alto. |
-| Acessibilidade | A quantidade de textos e as limitações em smartphones podem dificultar uma consulta rápida durante um deslocamento. |  | O mapa facilita encontrar visualmente uma região, mas a interpretação dos dados ainda pode ser uma barreira. | Por ser direcionada principalmente à integração por API, não possui como foco a consulta direta pelo usuário comum. | Criar uma interface responsiva e visual que possa ser consultada rapidamente pelo celular antes ou durante um deslocamento. |
-| Eficiência | O usuário consegue verificar ocorrências e suas condições, porém pode precisar pesquisar manualmente por data ou localização. |  | O usuário consegue encontrar dados de chuva de uma região, mas precisa interpretar os valores para entender possíveis consequências. | Permite obter automaticamente dados atuais e de previsão meteorológica, reduzindo a necessidade de coleta manual dessas informações. | Reunir dados climáticos, históricos e geoespaciais e transformar tudo em uma única estimativa de risco, permitindo que o usuário tome uma decisão rapidamente. |
+| Navegação | O usuário que deseja verificar alagamentos pode consultar as ocorrências pelo mapa e por data, porém algumas informações exigem consultas manuais. | O usuário pode pesquisar uma subprefeitura ou distrito e navegar pelo mapa, porém precisa localizar e ativar manualmente as camadas relacionadas a alagamentos entre muitas opções disponíveis. | O usuário pode localizar sua região pelo mapa e selecionar equipamentos próximos para consultar dados de chuva. | O usuário consegue consultar condições meteorológicas de uma localidade e acessar previsões organizadas por períodos, além de visualizar informações climáticas em mapa. | Permitir que o usuário encontre rapidamente sua localização ou região no mapa e consulte o risco sem precisar navegar por várias telas ou sistemas. |
+| Feedback/estado | Após consultar uma ocorrência, o usuário consegue identificar se ela está ativa ou inativa e se a via está transitável ou intransitável. | Após selecionar uma região e ativar as camadas desejadas, o mapa apresenta visualmente as informações disponíveis, como áreas de inundação, ocorrências históricas e dados de drenagem. | Após selecionar uma região, o usuário recebe valores de precipitação, mas ainda precisa interpretar se representam uma situação de risco. | A interface apresenta as condições atuais e previsões futuras, permitindo identificar mudanças meteorológicas ao longo do tempo. | Mostrar diretamente ao usuário o nível de risco da região, utilizando cores e classificações simples que indiquem a situação atual. |
+| Prevenção/recuperação de erro | Siglas e grande quantidade de texto podem dificultar a compreensão, principalmente para usuários que não conhecem previamente o sistema. | A grande quantidade de camadas e opções pode fazer com que o usuário tenha dificuldade para encontrar a informação correta, principalmente quando não conhece previamente a organização da plataforma. | Valores técnicos de precipitação podem dificultar a compreensão de quem apenas deseja saber se existe risco em determinada região. | A quantidade de informações meteorológicas pode dificultar a identificação do que é mais relevante para a situação do usuário, principalmente quando ele precisa tomar uma decisão rapidamente. | Evitar que o usuário precise interpretar informações técnicas, apresentando mensagens claras quando não houver dados ou quando uma consulta não puder ser realizada. |
+| Terminologia | Termos como transitável e intransitável ajudam na decisão do usuário, porém algumas regiões são identificadas por siglas pouco intuitivas. | A plataforma utiliza termos relacionados à gestão territorial, drenagem e informações geográficas, que podem exigir conhecimento técnico de usuários que desejam apenas consultar informações sobre alagamentos. | Utiliza informações como precipitação e dados de equipamentos, que podem não ser facilmente compreendidos por todos os usuários. | A plataforma apresenta diferentes dados meteorológicos que podem exigir alguma interpretação, principalmente quando o usuário precisa relacioná-los a uma situação de risco de alagamento. | Traduzir dados meteorológicos e geoespaciais para uma linguagem próxima do cotidiano, como risco baixo, médio ou alto. |
+| Acessibilidade | A quantidade de textos e as limitações em smartphones podem dificultar uma consulta rápida durante um deslocamento. | A visualização por mapa facilita a localização de regiões, mas a quantidade de camadas, informações e termos técnicos pode dificultar uma consulta rápida para usuários não especializados. | O mapa facilita encontrar visualmente uma região, mas a interpretação dos dados ainda pode ser uma barreira. | A organização visual e temporal facilita a consulta, porém a quantidade de informações disponíveis pode aumentar a carga de interpretação para o usuário. | Criar uma interface responsiva e visual que possa ser consultada rapidamente pelo celular antes ou durante um deslocamento. |
+| Eficiência | O usuário consegue verificar ocorrências e suas condições, porém pode precisar pesquisar manualmente por data ou localização. | A pesquisa por distrito ou subprefeitura facilita chegar a uma região específica, porém o usuário ainda precisa identificar e ativar as camadas adequadas e interpretar as informações apresentadas. | O usuário consegue encontrar dados de chuva de uma região, mas precisa interpretar os valores para entender possíveis consequências. | A apresentação das condições atuais, previsões por horário e informações no mapa permite consultar rapidamente diferentes aspectos meteorológicos em um mesmo ambiente. | Reunir dados climáticos, históricos e geoespaciais e transformar tudo em uma única estimativa de risco, permitindo que o usuário tome uma decisão rapidamente. |
 
 ## 5. Recomendações derivadas
 
 Liste recomendações com origem explícita.
 
-- **RC01:** Apresentar o nível de risco de alagamento ou inundação diretamente no mapa, utilizando classificações simples e de fácil identificação — derivada de C01, C02 e C03.
+- **RC01:** Explorar o uso de mapas para apresentar informações de risco por região, utilizando classificações simples e de fácil identificação, e validar nas próximas etapas se essa forma de apresentação atende adequadamente ao usuário priorizado — derivada de C01, C02 e C03.  
 - **RC02:** Utilizar cores e indicadores visuais para diferenciar os níveis de risco, sem depender apenas das cores para transmitir a informação — derivada de C01 e Climatempo.
 - **RC03:** Permitir que o usuário pesquise uma região específica no mapa para consultar rapidamente o risco correspondente — derivada de C02, C03, Google Maps e Waze.
-- **RC04:** Evitar a apresentação direta de dados técnicos, como valores de precipitação e informações geoespaciais, transformando-os em informações de risco mais simples e compreensíveis — derivada de C02 e C03.
+- **RC04:** Apresentar inicialmente as informações de risco de forma simples e compreensível, permitindo acesso a dados complementares, como precipitação e características da região, quando o usuário desejar mais detalhes sobre a estimativa — derivada de C02 e C03.
 - **RC05:** Priorizar uma interface responsiva e de fácil utilização em dispositivos móveis, permitindo consultas rápidas antes ou durante um deslocamento — derivada de C01, Google Maps e Waze.
-- **RC06:** Integrar dados climáticos, históricos e geoespaciais para reduzir a necessidade de consultas manuais em diferentes plataformas — derivada de C01, C02, C03 e C04.
+- **RC06:** Reduzir a necessidade de o usuário consultar diferentes plataformas e interpretar separadamente informações de chuva, histórico e localização, procurando reunir em uma mesma experiência as informações relevantes para sua decisão — derivada de C01, C02, C03 e C04.
 
 ## Referências
 

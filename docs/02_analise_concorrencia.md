@@ -33,7 +33,7 @@ Retome o mapa inicial de alternativas e produtos citado na Entrega 1. Aqui a equ
 | CGE (Centro de Gerenciamento de Emergências Climáticas de São Paulo) | análogo | Apresenta informações meteorológicas e de ocorrências de alagamento na cidade de São Paulo | F | analisar |
 | GEOSAMPA | análogo | Apresenta informações históricas de ocorrências de alagamento e inundação, dados de pluviômetros, áreas de risco e outros parâmetros | F | analisar |
 | CEMADEN (Centro Nacional de Monitoramento e Alertas de Desastres Naturais) | análogo | Apresenta dados históricos de precipitação | F | analisar |
-| API OpenWeather | análogo | Apresenta informações de condições meteorológicas e da previsão de chuvas | F | analisar |
+| OpenWeather | análogo | Apresenta informações de condições meteorológicas e da previsão de chuvas | F | analisar |
 
 Se uma hipótese da Entrega 1 for confirmada ou refutada durante esta análise, atualize `H01`, `H02`... em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
@@ -64,11 +64,11 @@ A proposta do CGE não é a mesma de nossa interface, apenas atua no mesmo domí
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| Visualização de pontos de alagamento no mapa | O usuário pode ver através de um mapa a localização dos alagamentos daquele dia | <img width="250" src="https://github.com/user-attachments/assets/a27a0870-29e1-4153-b1c1-a6bb5453d1f6" />
+| Visualização de pontos de alagamento no mapa | O usuário pode ver através de um mapa a localização dos alagamentos daquele dia | <img width="250" src="../assets/02_concorrencia/cge_mapa.png" />
  | Permite o usuário identificar em formato de mapa a localização das ocorrências de alagamento |
-| Visualização de pontos de alagamento por consulta de data | O usuário pode consultar os alagamentos de uma data específica | <img width="250" src="https://github.com/user-attachments/assets/1bc61cc2-ee8f-4fdf-b330-7268ced98d41" />
+| Visualização de pontos de alagamento por consulta de data | O usuário pode consultar os alagamentos de uma data específica | <img width="250" src="../assets/02_concorrencia/cge_data.png" />
  | Permite o usuário pesquisar e visualizar a localização das ocorrências de alagamento da data pesquisada |
-| Classificação dos pontos de alagamentos | O sistema classifica as ocorrências entre ativas e inativas, e transitáveis e intransitáveis | <img width="250" src="https://github.com/user-attachments/assets/f5b406ca-0779-40a8-972f-063712fbfdb9" />
+| Classificação dos pontos de alagamentos | O sistema classifica as ocorrências entre ativas e inativas, e transitáveis e intransitáveis | <img width="250" src="../assets/02_concorrencia/cge_classificacao.png" />
  | Permite o usuário compreender de forma mais fácil o status  e intensidade da ocorrência|
 
 
@@ -110,9 +110,9 @@ A proposta do GeoSampa não é a mesma de nossa interface, pois atua como uma pl
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| Consulta por divisão territorial | O usuário pesquisa ou seleciona uma subprefeitura ou distrito e o mapa aproxima e destaca a região escolhida |<img width="220" alt="SubPrefeitura_Distrito" src="https://github.com/user-attachments/assets/0ce9aa8e-5b20-497c-b56a-f6972eeb6f5e" /> | Permite localizar uma região de forma organizada, mesmo sem conhecer sua posição exata no mapa |
-| Visualização de áreas de inundação e alagamento | Ativando camadas que mostram áreas com potencial de inundação e registros históricos de alagamento sobre o mapa | <img width="220" alt="Alagamento_Inundação" src="https://github.com/user-attachments/assets/bc046a43-054d-4a2e-8b69-838b8bd5f232" /> | A representação no mapa facilita associar o risco a regiões conhecidas, mas depende de o usuário ativar as camadas corretas |
-| Consulta de dados de drenagem | Ativando camadas relacionadas ao sistema de drenagem | <img width="220" alt="Drenagem" src="https://github.com/user-attachments/assets/8dee2a9e-7be9-4da4-9964-34373daf5e00" /> | Reúne informações importantes para entender o risco, porém com forte caráter técnico |
+| Consulta por divisão territorial | O usuário pesquisa ou seleciona uma subprefeitura ou distrito e o mapa aproxima e destaca a região escolhida |<img width="220" alt="SubPrefeitura_Distrito" src="../assets/02_concorrencia/geosampa_divisao_territorial.png" /> | Permite localizar uma região de forma organizada, mesmo sem conhecer sua posição exata no mapa |
+| Visualização de áreas de inundação e alagamento | Ativando camadas que mostram áreas com potencial de inundação e registros históricos de alagamento sobre o mapa | <img width="220" alt="Alagamento_Inundação" src="../assets/02_concorrencia/geosampa_alagamento_inundacao.png" /> | A representação no mapa facilita associar o risco a regiões conhecidas, mas depende de o usuário ativar as camadas corretas |
+| Consulta de dados de drenagem | Ativando camadas relacionadas ao sistema de drenagem | <img width="220" alt="Drenagem" src="../assets/02_concorrencia/geosampa_drenagem.png" /> | Reúne informações importantes para entender o risco, porém com forte caráter técnico |
 
 #### Experiência do usuário e opiniões
 
@@ -164,11 +164,11 @@ Para este projeto, o principal interesse está na disponibilização de dados de
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| Visualização de dados no mapa | Por meio de um mapa interativo que apresenta geograficamente os equipamentos de monitoramento | <img width="220" src="https://github.com/user-attachments/assets/0563ccec-69ef-4234-8877-e47a13510c40" />
+| Visualização de dados no mapa | Por meio de um mapa interativo que apresenta geograficamente os equipamentos de monitoramento | <img width="220" src="../assets/02_concorrencia/cemaden_mapa.png" />
  | A representação espacial facilita a localização das informações e sua associação com regiões conhecidas pelo usuário |
-| Consulta de precipitação | Selecionando um pluviômetro no mapa para visualizar informações sobre a quantidade de chuva registrada | <img width="220" src="https://github.com/user-attachments/assets/d84a51bd-56fb-46d0-bed4-487269c4bd28" />
+| Consulta de precipitação | Selecionando um pluviômetro no mapa para visualizar informações sobre a quantidade de chuva registrada | <img width="220" src="../assets/02_concorrencia/cemaden_precipitacao.png" />
  | Permite consultar a chuva de uma região específica, porém os valores podem exigir interpretação do usuário |
-| Consulta de dados históricos | Através da seleção do equipamento e do período desejado para obter registros anteriores de precipitação | <img width="220" src="https://github.com/user-attachments/assets/7ae91941-dc34-437a-8596-87be7e0bc948" />
+| Consulta de dados históricos | Através da seleção do equipamento e do período desejado para obter registros anteriores de precipitação | <img width="220" src="../assets/02_concorrencia/cemaden_historico.png" />
  | Permite observar o comportamento da chuva ao longo do tempo |
 
 #### Experiência do usuário e opiniões
@@ -220,9 +220,9 @@ Para este projeto, o principal interesse está em analisar como a plataforma org
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| Consulta da previsão meteorológica | O usuário consulta informações sobre as condições do tempo de uma localidade, visualizando dados atuais e previsões futuras. | https://github.com/user-attachments/assets/7ad5ea0d-1cab-471c-baad-dffc7367a617 | A organização das informações permite identificar rapidamente as condições meteorológicas principais. |
-| Consulta da previsão por horário | A plataforma apresenta a previsão distribuída ao longo das horas, permitindo observar mudanças nas condições meteorológicas durante o dia. | https://github.com/user-attachments/assets/38d415a0-703f-4085-9706-ee6273eb703a | A organização temporal ajuda o usuário a entender quando determinada condição climática poderá ocorrer ou se intensificar. |
-| Visualização de informações meteorológicas no mapa | O usuário pode consultar informações climáticas representadas geograficamente em um mapa. | https://github.com/user-attachments/assets/a24751af-2ce1-45a7-bdfe-97b64fe3c797 | A representação espacial ajuda a relacionar condições meteorológicas a determinadas regiões. |
+| Consulta da previsão meteorológica | O usuário consulta informações sobre as condições do tempo de uma localidade, visualizando dados atuais e previsões futuras. | <img width="250" src="../assets/02_concorrencia/openweather_previsao.png" /> | A organização das informações permite identificar rapidamente as condições meteorológicas principais. |
+| Consulta da previsão por horário | A plataforma apresenta a previsão distribuída ao longo das horas, permitindo observar mudanças nas condições meteorológicas durante o dia. | <img width="250" src="../assets/02_concorrencia/openweather_horaria.png" /> | A organização temporal ajuda o usuário a entender quando determinada condição climática poderá ocorrer ou se intensificar. |
+| Visualização de informações meteorológicas no mapa | O usuário pode consultar informações climáticas representadas geograficamente em um mapa. | <img width="250" src="../assets/02_concorrencia/openweather_mapa.png" /> | A representação espacial ajuda a relacionar condições meteorológicas a determinadas regiões. |
 
 #### Experiência do usuário e opiniões
 
@@ -259,9 +259,9 @@ Analise interfaces que moldam a expectativa do público, mesmo que não sejam co
 
 | Software | Por que o público usa | Padrões relevantes | Prints | O que aprender |
 |---|---|---|---|---|
-| Google Maps | Consultar localizações, rotas e lugares próximos | Mapa interativo, localização atual, zoom e marcadores | <img src="https://github.com/user-attachments/assets/cd95caaa-5f55-4d64-b12e-1af1f7bd3c13" width="250"> | Utilizar padrões de navegação já familiares e facilitar a visualização dos riscos próximos |
-| Waze | Navegar e acompanhar condições e ocorrências no trajeto | Alertas no mapa, ícones de ocorrências e informações por localização | <img src="https://github.com/user-attachments/assets/60e6931e-c615-4aa2-aae4-c5a7bcc5180f" width="250"> | Mostrar alagamentos e riscos diretamente no mapa com marcadores de fácil identificação |
-| Climatempo | Consultar previsão do tempo, chuva e alertas | Cores por intensidade, mapas de chuva e níveis de alerta | <img src="https://github.com/user-attachments/assets/eacecb66-eb87-46ec-98c6-2cba9c50f3b7" width="250"> | Usar cores e indicadores visuais para representar chuva e nível de risco |
+| Google Maps | Consultar localizações, rotas e lugares próximos | Mapa interativo, localização atual, zoom e marcadores | <img src="../assets/02_concorrencia/googlemaps.png" width="250"> | Utilizar padrões de navegação já familiares e facilitar a visualização dos riscos próximos |
+| Waze | Navegar e acompanhar condições e ocorrências no trajeto | Alertas no mapa, ícones de ocorrências e informações por localização | <img src="../assets/02_concorrencia/waze.png" width="250"> | Mostrar alagamentos e riscos diretamente no mapa com marcadores de fácil identificação |
+| Climatempo | Consultar previsão do tempo, chuva e alertas | Cores por intensidade, mapas de chuva e níveis de alerta | <img src="../assets/02_concorrencia/climatempo.png" width="250"> | Usar cores e indicadores visuais para representar chuva e nível de risco |
 
 ## 3.1 Padrões de interface relevantes ao escopo de IHC
 
@@ -269,9 +269,9 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 
 | Padrão observado | Produto(s) | Para qual tarefa serve | Vantagem percebida | Risco/limitação | Aplicável ao nosso escopo? |
 |---|---|---|---|---|---|
-| Mapa Interativo | CGE, CEMADEN, Google Maps, Waze e Climatempo | visualizar informações de uma região específica | facilita a identificação e entendimento das informações de forma visual e mais clara| dados muito técnicos e excesso de informações pode atrapalhar a compreensão e confundir o usuário | sim |
+| Mapa Interativo | CGE, GeoSampa, CEMADEN, Open Weather, Google Maps, Waze e Climatempo | visualizar informações de uma região específica | facilita a identificação e entendimento das informações de forma visual e mais clara| dados muito técnicos e excesso de informações pode atrapalhar a compreensão e confundir o usuário | sim |
 | Níveis e classificação dos riscos | CGE e Climatempo | uso de diferentes classificações e cores para os níveis de atenção | a identificação e entendimento das situações que estão ocorrendo é mais rápida e simples de interpretar | o uso de algumas cores pode ser uma limitação para pessoas com distúrbios visuais como daltonismo | sim |
-| Consulta de áreas e data | CEMADEN, Google Maps, Waze | consultar informações de uma região e data especificas | ajuda a consulta de informações mais específicas e detalhadas e não apenas gerais | excesso de informações e dados muito técnicos pode interferir no entendimento  | sim |
+| Consulta por região e/ou período | CEMADEN, Google Maps, Waze | consultar informações de uma região e data especificas | ajuda a consulta de informações mais específicas e detalhadas e não apenas gerais | excesso de informações e dados muito técnicos pode interferir no entendimento  | sim |
 | Informações complementares ao risco | CGE, GeoSampa, CEMADEN e Climatempo | compreender melhor a situação da ocorrência | ajuda o usuário a interpretar as informações apresentadas | o excesso de informações pode dificultar uma consulta rápida | sim |
 
 > O objetivo não é concluir “todo concorrente tem dashboard, então teremos um”. O padrão só será adotado se apoiar uma tarefa rastreável.
@@ -280,12 +280,12 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 
 | Critério | C01 | C02 | C03 | C04 | Oportunidade para o projeto |
 |---|---|---|---|---|---|
-| Navegação | O usuário que deseja verificar alagamentos pode consultar as ocorrências pelo mapa e por data, porém algumas informações exigem consultas manuais. | O usuário pode pesquisar uma subprefeitura ou distrito e navegar pelo mapa, porém precisa localizar e ativar manualmente as camadas relacionadas a alagamentos entre muitas opções disponíveis. | O usuário pode localizar sua região pelo mapa e selecionar equipamentos próximos para consultar dados de chuva. | O usuário consegue consultar condições meteorológicas de uma localidade e acessar previsões organizadas por períodos, além de visualizar informações climáticas em mapa. | Permitir que o usuário encontre rapidamente sua localização ou região no mapa e consulte o risco sem precisar navegar por várias telas ou sistemas. |
-| Feedback/estado | Após consultar uma ocorrência, o usuário consegue identificar se ela está ativa ou inativa e se a via está transitável ou intransitável. | Após selecionar uma região e ativar as camadas desejadas, o mapa apresenta visualmente as informações disponíveis, como áreas de inundação, ocorrências históricas e dados de drenagem. | Após selecionar uma região, o usuário recebe valores de precipitação, mas ainda precisa interpretar se representam uma situação de risco. | A interface apresenta as condições atuais e previsões futuras, permitindo identificar mudanças meteorológicas ao longo do tempo. | Mostrar diretamente ao usuário o nível de risco da região, utilizando cores e classificações simples que indiquem a situação atual. |
+| Navegação | O usuário que deseja verificar alagamentos pode consultar as ocorrências pelo mapa e por data, porém algumas informações exigem consultas manuais. | O usuário pode pesquisar uma subprefeitura ou distrito e navegar pelo mapa, porém precisa localizar e ativar manualmente as camadas relacionadas a alagamentos entre muitas opções disponíveis. | O usuário pode localizar sua região pelo mapa e selecionar equipamentos próximos para consultar dados de chuva. | O usuário consegue consultar condições meteorológicas de uma localidade e acessar previsões organizadas por períodos, além de visualizar informações climáticas em mapa. | Permitir que o usuário encontre rapidamente sua localização ou região de interesse e consulte as informações de risco sem precisar navegar por várias telas ou sistemas. |
+| Feedback/estado | Após consultar uma ocorrência, o usuário consegue identificar se ela está ativa ou inativa e se a via está transitável ou intransitável. | Após selecionar uma região e ativar as camadas desejadas, o mapa apresenta visualmente as informações disponíveis, como áreas de inundação, ocorrências históricas e dados de drenagem. | Após selecionar uma região, o usuário recebe valores de precipitação, mas ainda precisa interpretar se representam uma situação de risco. | A interface apresenta as condições atuais e previsões futuras, permitindo identificar mudanças meteorológicas ao longo do tempo. | Explorar formas claras de comunicar o nível de risco e o estado da informação, utilizando classificações e indicadores visuais sem depender apenas de cores. |
 | Prevenção/recuperação de erro | Siglas e grande quantidade de texto podem dificultar a compreensão, principalmente para usuários que não conhecem previamente o sistema. | A grande quantidade de camadas e opções pode fazer com que o usuário tenha dificuldade para encontrar a informação correta, principalmente quando não conhece previamente a organização da plataforma. | Valores técnicos de precipitação podem dificultar a compreensão de quem apenas deseja saber se existe risco em determinada região. | A quantidade de informações meteorológicas pode dificultar a identificação do que é mais relevante para a situação do usuário, principalmente quando ele precisa tomar uma decisão rapidamente. | Evitar que o usuário precise interpretar informações técnicas, apresentando mensagens claras quando não houver dados ou quando uma consulta não puder ser realizada. |
 | Terminologia | Termos como transitável e intransitável ajudam na decisão do usuário, porém algumas regiões são identificadas por siglas pouco intuitivas. | A plataforma utiliza termos relacionados à gestão territorial, drenagem e informações geográficas, que podem exigir conhecimento técnico de usuários que desejam apenas consultar informações sobre alagamentos. | Utiliza informações como precipitação e dados de equipamentos, que podem não ser facilmente compreendidos por todos os usuários. | A plataforma apresenta diferentes dados meteorológicos que podem exigir alguma interpretação, principalmente quando o usuário precisa relacioná-los a uma situação de risco de alagamento. | Traduzir dados meteorológicos e geoespaciais para uma linguagem próxima do cotidiano, como risco baixo, médio ou alto. |
 | Acessibilidade | A quantidade de textos e as limitações em smartphones podem dificultar uma consulta rápida durante um deslocamento. | A visualização por mapa facilita a localização de regiões, mas a quantidade de camadas, informações e termos técnicos pode dificultar uma consulta rápida para usuários não especializados. | O mapa facilita encontrar visualmente uma região, mas a interpretação dos dados ainda pode ser uma barreira. | A organização visual e temporal facilita a consulta, porém a quantidade de informações disponíveis pode aumentar a carga de interpretação para o usuário. | Criar uma interface responsiva e visual que possa ser consultada rapidamente pelo celular antes ou durante um deslocamento. |
-| Eficiência | O usuário consegue verificar ocorrências e suas condições, porém pode precisar pesquisar manualmente por data ou localização. | A pesquisa por distrito ou subprefeitura facilita chegar a uma região específica, porém o usuário ainda precisa identificar e ativar as camadas adequadas e interpretar as informações apresentadas. | O usuário consegue encontrar dados de chuva de uma região, mas precisa interpretar os valores para entender possíveis consequências. | A apresentação das condições atuais, previsões por horário e informações no mapa permite consultar rapidamente diferentes aspectos meteorológicos em um mesmo ambiente. | Reunir dados climáticos, históricos e geoespaciais e transformar tudo em uma única estimativa de risco, permitindo que o usuário tome uma decisão rapidamente. |
+| Eficiência | O usuário consegue verificar ocorrências e suas condições, porém pode precisar pesquisar manualmente por data ou localização. | A pesquisa por distrito ou subprefeitura facilita chegar a uma região específica, porém o usuário ainda precisa identificar e ativar as camadas adequadas e interpretar as informações apresentadas. | O usuário consegue encontrar dados de chuva de uma região, mas precisa interpretar os valores para entender possíveis consequências. | A apresentação das condições atuais, previsões por horário e informações no mapa permite consultar rapidamente diferentes aspectos meteorológicos em um mesmo ambiente. | Reduzir a necessidade de consultar diferentes plataformas, reunindo em uma mesma experiência as informações relevantes para apoiar a decisão do usuário. |
 
 ## 5. Recomendações derivadas
 
@@ -297,6 +297,7 @@ Liste recomendações com origem explícita.
 - **RC04:** Apresentar inicialmente as informações de risco de forma simples e compreensível, permitindo acesso a dados complementares, como precipitação e características da região, quando o usuário desejar mais detalhes sobre a estimativa — derivada de C02 e C03.
 - **RC05:** Priorizar uma interface responsiva e de fácil utilização em dispositivos móveis, permitindo consultas rápidas antes ou durante um deslocamento — derivada de C01, Google Maps e Waze.
 - **RC06:** Reduzir a necessidade de o usuário consultar diferentes plataformas e interpretar separadamente informações de chuva, histórico e localização, procurando reunir em uma mesma experiência as informações relevantes para sua decisão — derivada de C01, C02, C03 e C04.
+- **RC07:** Deixar claro para o usuário se a informação apresentada corresponde a uma ocorrência observada, dado histórico ou estimativa prevista, indicando também quando a informação foi atualizada e para qual período ela é válida — derivada de C01, C02, C03 e C04.
 
 ## Referências
 

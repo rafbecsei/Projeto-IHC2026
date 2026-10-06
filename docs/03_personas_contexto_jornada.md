@@ -50,8 +50,9 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Tipo:** primária  
 **Base de evidências:** proto-persona a validar  
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H03 e H04
+**Biografia:** Paulo trabalha presencialmente em escritório e realiza deslocamentos frequentes pela cidade de São Paulo. Utiliza smartphone, aplicativos de mapas e previsão do tempo no dia a dia, mas não possui conhecimento técnico sobre hidrologia ou modelos de risco. Em períodos de chuva intensa, busca informações rápidas para decidir como realizar seu trajeto com maior segurança.
 
-![Persona P02](../assets/03_personas/persona_p01.svg)
+<img src="../assets/03_personas/persona_p01.svg" alt="Persona P02" width="300">
 
 | Campo | Descrição |
 |---|---|
@@ -70,7 +71,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Decisões de design influenciadas por P01:**
 
 - Apresentar o nível de risco de forma simples e visual, permitindo uma consulta rápida antes ou durante um deslocamento.
-- Destacar claramente as regiões que apresentam maior risco de alagamento, facilitando a identificação de áreas que podem ser evitadas.
+- Investigar formas de destacar regiões com maior risco, avaliando se essa representação facilita a decisão do usuário.
 - Utilizar linguagem acessível e indicadores que não dependam somente de cores, permitindo que diferentes usuários compreendam os níveis de risco.
 - Priorizar uma interface responsiva e adequada ao uso em smartphones, considerando que a consulta pode ocorrer pouco antes ou durante um deslocamento.
 - Reunir informações relevantes sobre risco, localização e condições de chuva em uma única interface, reduzindo a necessidade de consultar diferentes fontes.
@@ -78,15 +79,16 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 ### Persona P02 — Victor Merker Binda
 
 **Autor(a):** Victor Pimentel Lario - 22.125.064-0  
-**Tipo:** primária  
+**Tipo:** secundária 
 **Base de evidências:** proto-persona a validar  
 **Hipóteses da Entrega 1 relacionadas:** H05
+**Biografia:** Victor é um homem mais velho que mora em uma região que pode sofrer impactos durante períodos de chuva intensa. Possui pouca familiaridade com ferramentas digitais mais complexas e costuma acompanhar informações principalmente por televisão e notícias. Quando necessário, utiliza o celular para consultas simples sobre a situação de sua região.
 
 <img src="../assets/03_personas/persona2_p02.svg" alt="Persona P02" width="300">
 
 | Campo | Descrição |
 |---|---|
-| Faixa etária / contexto relevante | Homem mais velho que mora em uma região que pode sofrer impactos durante períodos de chuva intensa. [H] |
+| Faixa etária / contexto relevante | Homem de aproximadamente 60 anos que mora em uma região que pode sofrer impactos durante períodos de chuva intensa. [H] |
 | Ocupação/papel | Morador que acompanha as condições da região onde vive e busca se preparar para possíveis situações de alagamento ou inundação. [H] |
 | Conhecimento do domínio | Possui conhecimento básico sobre chuvas e alagamentos, adquirido principalmente pela experiência cotidiana e por informações recebidas em notícias e reportagens. Não possui conhecimento técnico sobre previsão ou modelos de risco. [H] |
 | Experiência tecnológica | Possui familiaridade básica com smartphones e utiliza principalmente funções simples, como chamadas, mensagens e aplicativos de notícias. Costuma acompanhar informações sobre chuvas e alagamentos pela televisão, mas começou a experimentar ferramentas digitais para consultar informações de sua região. [H] |
@@ -108,9 +110,10 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 ### Persona P03 - Viviane Santos Machado
 
 **Autor(a):** Rafael Iamashita Becsei - 22.225.037-5  
-**Tipo:** primaria  
+**Tipo:** secundária  
 **Base de evidências:** proto-persona a validar  
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H04 e H05 
+**Biografia:** Viviane tem 34 anos e é proprietária de um pequeno comércio. Utiliza smartphone, previsão do tempo, mapas e notícias para acompanhar situações que possam afetar sua rotina e seu estabelecimento. Em períodos de chuva intensa, busca informações que permitam se preparar com antecedência e reduzir possíveis prejuízos.
 
 <img src="../assets/03_personas/persona3_p03.svg" alt="Persona P03" width="300">
 
@@ -128,7 +131,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | Ambiente típico de uso | No estabelecimento ou em casa, principalmente antes ou durante períodos de chuva forte. [H] |
 | Comportamentos relevantes | Costuma acompanhar a previsão do tempo e notícias sobre chuva. Ao perceber possibilidade de chuva intensa, consulta o sistema para verificar sua região, observa o nível de risco e as informações adicionais apresentadas e, caso identifique uma situação de maior risco, se preparar para possíveis impactos no funcionamento do estabelecimento e instalação de comportas. [H] |
 
-**Decisões de design influenciadas por P02:**
+**Decisões de design influenciadas por P03:**
 
 - Apresentar o risco de alagamento de forma antecipada e associada à região do estabelecimento, permitindo que a usuária identifique possíveis impactos antes de uma situação crítica.
 - Disponibilizar informações complementares sobre chuva e condições da região para ajudar o usuário a compreender o motivo do risco apresentado e avaliar possíveis impactos em seu comércio.
@@ -139,9 +142,10 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 ### Persona P04 — Juliana Ferreira Costa
 
 **Autor(a):** Henrique Hodel Babler - 22.125.084-8  
-**Tipo:** primária  
+**Tipo:** secundária  
 **Base de evidências:** proto-persona a validar  
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H03 e H04
+**Biografia:** Juliana tem 20 anos, é estudante universitária e utiliza principalmente transporte público para seus deslocamentos. Possui alta familiaridade com smartphones, aplicativos de mapas, transporte e previsão do tempo. Antes de sair de casa, costuma consultar informações que possam afetar seu caminho até a faculdade.
 
 <img src="../assets/03_personas/persona4_p04.svg" alt="Persona P04" width="300">
 
@@ -166,7 +170,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 - Destacar visualmente áreas de risco que possam afetar vias utilizadas no trajeto.
 - Apresentar informações de forma resumida e objetiva, permitindo que o usuário compreenda a situação em poucos segundos.
 - Priorizar uma interface responsiva para smartphones, considerando que a consulta pode ocorrer antes ou durante o deslocamento.
-- Considerar a utilização de alertas sobre alterações no risco, relacionada à hipótese H03.
+- Investigar a utilidade de alertas sobre alterações no risco, conforme a hipótese H03.
 - Permitir que usuários com maior familiaridade tecnológica explorem o mapa e as informações apresentadas sem exigir navegação complexa.
 
 ### Síntese das personas
@@ -179,9 +183,9 @@ A P03 — Viviane Santos Machado representa uma usuária que possui um pequeno c
 
 A P04 — Juliana Ferreira Costa representa uma usuária jovem e com alta familiaridade tecnológica, que utiliza transporte público para se deslocar até a faculdade. Seu principal interesse é identificar rapidamente riscos de alagamento que possam afetar seu trajeto e causar congestionamentos ou atrasos. Seu perfil evidencia a necessidade de consultas rápidas, mapas claros e informações relacionadas às regiões percorridas durante o deslocamento. [H]
 
-As diferenças entre as personas indicam que a interface deve atender tanto usuários com pouca familiaridade tecnológica quanto usuários habituados a ferramentas digitais, além de contemplar diferentes contextos de uso, como deslocamentos, residência e atividades comerciais. Dessa forma, devem ser priorizadas linguagem simples, boa legibilidade, representação visual clara do risco, consulta rápida e informações associadas à localização. [H]
+As diferenças entre as personas indicam que, embora o projeto seja priorizado para a P01, a interface também deve considerar necessidades complementares identificadas nas personas secundárias, como diferentes níveis de familiaridade tecnológica, contextos de uso em residência, comércio e transporte público, além de necessidades de consulta rápida e linguagem simples. [H]
 
-A P01 é definida como persona prioritária por representar o usuário final central considerado no escopo atual do projeto de IHC: uma pessoa que precisa consultar rapidamente o risco de alagamento de uma região para apoiar decisões relacionadas ao seu deslocamento. As demais personas ampliam o contexto de uso e ajudam a identificar requisitos que devem ser considerados para diferentes níveis de familiaridade tecnológica e diferentes objetivos de consulta. [H]
+A P01 é definida como persona primária e prioritária por representar o usuário final central considerado no escopo atual do projeto de IHC: uma pessoa que precisa consultar rapidamente o risco de alagamento de uma região para apoiar decisões relacionadas ao seu deslocamento. As personas P02, P03 e P04 são secundárias e ampliam o contexto de uso, trazendo necessidades complementares relacionadas à familiaridade tecnológica, proteção de atividades comerciais e uso de transporte público. [H]
 
 ## 2. Mapa de empatia — equipe
 
@@ -191,6 +195,27 @@ A P01 é definida como persona prioritária por representar o usuário final cen
 ![Mapa de empatia](../assets/03_personas/mapa_empatia.svg)
 
 Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos. Diferencie **evidência** de **hipótese**.
+#### Documentação textual do mapa de empatia
+
+**O que vê:**  
+[H] Paulo vê chuva intensa, mudanças nas condições do trânsito e possíveis ocorrências de alagamento próximas ao seu trajeto. Também encontra informações espalhadas em aplicativos, mapas e notícias.
+
+**O que ouve:**  
+[H] Paulo pode ouvir notícias e alertas sobre chuva forte e alagamentos, além de receber comentários de colegas, familiares ou outras pessoas sobre regiões problemáticas.
+
+**O que fala e faz:**  
+[H] Antes de sair, Paulo pode consultar previsão do tempo, mapas e informações de trânsito. Quando encontra indícios de maior risco, pode comparar diferentes fontes e considerar alterar o trajeto ou o horário de saída.
+
+**O que pensa e sente:**  
+[H] Paulo pode sentir preocupação e incerteza ao precisar se deslocar durante uma chuva intensa, principalmente quando não consegue saber rapidamente se determinada região pode afetar seu trajeto.
+
+**Dores:**  
+[H] Pode ter dificuldade para interpretar informações diferentes ou técnicas, precisar consultar várias fontes e descobrir um alagamento somente quando já está próximo da região afetada.
+
+**Necessidades:**  
+[H] Precisa compreender rapidamente quais regiões podem apresentar maior risco e conseguir decidir com antecedência se deve manter ou alterar seu trajeto.
+
+Obs: a P01 é uma proto-persona, ou seja, não é um usuário real. Por isso estão marcadas como Hipótese.
 
 ## 3. Contexto de uso — consolidação
 
@@ -199,8 +224,8 @@ Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos
 | Usuários | Adultos que se deslocam pela cidade e precisam consultar informações sobre risco de alagamentos e inundações. | A interface deve utilizar linguagem simples e apresentar o risco de forma fácil de entender. |
 | Tarefas | Consultar o risco de uma região, visualizar informações no mapa e verificar condições antes ou durante um deslocamento. | As principais informações devem ser acessíveis rapidamente e exigir poucas ações do usuário. |
 | Equipamentos | Computadores e smartphones. | A interface deve ser responsiva e adequada principalmente ao uso em dispositivos móveis. |
-| Ambiente físico | Pode ser utilizado em casa, no trabalho ou durante deslocamentos pela cidade, inclusive em situações de chuva. | Informações importantes devem possuir boa legibilidade e fácil visualização mesmo em consultas rápidas. |
-| Ambiente social/organizacional | O usuário pode realizar a consulta individualmente ou utilizar as informações para orientar familiares, amigos ou colegas. | As informações apresentadas devem ser claras e de fácil compreensão para diferentes usuários. |
+| Ambiente físico | A consulta pode ocorrer em casa, no trabalho ou durante um deslocamento. Em situações de mobilidade, o usuário pode estar com atenção dividida, em movimento, sob chuva, segurando objetos ou utilizando o celular com uma mão. Também podem existir pressa, reflexos na tela, ruído, conexão instável ou pouca bateria. | A interface deve priorizar boa legibilidade, poucas etapas, informações resumidas e elementos fáceis de identificar, principalmente em dispositivos móveis. Essas condições ainda devem ser investigadas com usuários. |
+| Ambiente social/organizacional | A decisão de deslocamento pode ser influenciada por informações recebidas de familiares, colegas, notícias ou relatos de outras pessoas que passaram pela região. O usuário também pode precisar comunicar mudanças de trajeto ou atraso a pessoas próximas ou do trabalho. Pode existir pressão para chegar ao destino dentro de determinado horário. | A interface deve apresentar informações claras o suficiente para apoiar uma decisão rápida e facilitar a compreensão da situação. Também deve ser investigado o quanto relatos de outras pessoas influenciam a decisão do usuário. |
 | Papéis/permissões/governança | O usuário comum consulta as informações disponibilizadas pelo sistema, sem necessidade de alterar os dados utilizados na estimativa. | As funções de consulta devem ser simples e não exigir permissões ou configurações complexas. |
 | Volume de dados/histórico | O sistema utiliza dados geoespaciais, meteorológicos e registros históricos para estimar o risco de alagamentos e inundações. | O sistema deve organizar os dados e apresentar ao usuário apenas as informações necessárias para compreender o risco. |
 
@@ -212,14 +237,16 @@ Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos
 
 | Etapa | Situação/ação | Objetivo | Pensamento/emoção | Dor | Oportunidade de design | Evidência |
 |---|---|---|---|---|---|---|
-| 1 | Paulo está terminando o expediente e percebe que a chuva aumentou antes de sair do trabalho. | Entender se a chuva pode afetar seu caminho até em casa. | “Será que tem algum alagamento no meu caminho?” Preocupação e incerteza. | Não saber se a chuva representa algum risco para o deslocamento. | Disponibilizar informações atualizadas sobre risco de alagamento de forma rápida. | P01 - ambiente típico, motivadores e dores |
-| 2 | Antes de sair, Paulo pega o celular para verificar a situação das regiões por onde costuma passar. | Encontrar informações sobre possíveis áreas de risco sem precisar consultar várias fontes. | “Quero saber rapidamente onde está perigoso antes de sair.” | Ter que procurar informações em diferentes aplicativos ou fontes e interpretar dados separados. | Reunir informações climáticas, históricas e geográficas em uma única interface. | P01 - dores/frustrações e comportamentos |
-| 3 | Paulo acessa o sistema e consulta no mapa sua localização e as regiões próximas ao seu trajeto. | Identificar visualmente quais regiões apresentam risco. | “Preciso entender isso rápido, sem ficar analisando números.” | Dificuldade para interpretar porcentagens, precipitação e outros dados técnicos. | Mostrar níveis de risco com linguagem simples, indicadores visuais e informações que não dependam apenas de cores. | P01 - necessidades, restrições e conhecimento do domínio |
-| 4 | Paulo identifica que uma região de seu trajeto apresenta risco elevado de alagamento. | Decidir se deve manter o caminho habitual ou evitar aquela região. | “Melhor não passar por ali hoje.” Preocupação, mas com maior segurança para decidir. | Descobrir uma situação de risco apenas quando já estiver próximo ou dentro da região afetada. | Destacar áreas de maior risco no mapa e permitir que o usuário identifique rapidamente regiões que devem ser evitadas. | P01 - objetivos, motivadores e dores |
-| 5 | Com base nas informações apresentadas, Paulo escolhe um caminho que evita a região de maior risco e inicia seu deslocamento. | Chegar ao destino com maior segurança e menos imprevistos. | “Agora sei por onde é melhor passar.” Maior confiança e tranquilidade. | Precisar decidir o trajeto sem informações claras sobre possíveis alagamentos. | Apoiar a decisão de deslocamento apresentando o risco de forma clara e associado à localização do usuário. | P01 - objetivos e motivadores |
-| 6 | Paulo chega ao destino sem passar pela região identificada como de maior risco. | Concluir o deslocamento com segurança e perceber utilidade nas informações consultadas. | “Valeu a pena verificar antes de sair.” Sensação de segurança e confiança no sistema. | Receber informações tarde demais ou somente após enfrentar um problema no trajeto. | Manter informações de risco úteis antes e durante futuros deslocamentos, incentivando consultas preventivas. | P01 - dores, motivadores e comportamentos |
+| 1 | Paulo está terminando o expediente e percebe que a chuva aumentou antes de sair do trabalho. | Entender se a chuva pode afetar seu caminho até em casa. | “Será que tem algum alagamento no meu caminho?” Preocupação e incerteza. | Não saber se a chuva representa algum risco para o deslocamento. | Disponibilizar informações atualizadas sobre risco de alagamento de forma rápida. | [H] P01 — ambiente típico, motivadores e dores; ainda não validado com usuários reais. |
+| 2 | Antes de sair, Paulo pega o celular para verificar a situação das regiões por onde costuma passar. | Encontrar informações sobre possíveis áreas de risco sem precisar consultar várias fontes. | “Quero saber rapidamente onde está perigoso antes de sair.” | Ter que procurar informações em diferentes aplicativos ou fontes e interpretar dados separados. | Reunir informações climáticas, históricas e geográficas em uma única interface. | [H] P01 — dores/frustrações e comportamentos; ainda não validado com usuários reais. |
+| 3 | Paulo acessa o sistema e consulta no mapa sua localização e as regiões próximas ao seu trajeto. | Identificar visualmente quais regiões apresentam risco. | “Preciso entender isso rápido, sem ficar analisando números.” | Dificuldade para interpretar porcentagens, precipitação e outros dados técnicos. | Mostrar níveis de risco com linguagem simples, indicadores visuais e informações que não dependam apenas de cores. | [H] P01 — necessidades, restrições e conhecimento do domínio; ainda não validado com usuários reais. |
+| 4 | Paulo identifica que uma região de seu trajeto apresenta risco elevado de alagamento. | Decidir se deve manter o caminho habitual ou evitar aquela região. | “Melhor não passar por ali hoje.” Preocupação, mas com maior segurança para decidir. | Descobrir uma situação de risco apenas quando já estiver próximo ou dentro da região afetada. | Destacar áreas de maior risco no mapa e permitir que o usuário identifique rapidamente regiões que devem ser evitadas. | [H] P01 — objetivos, motivadores e dores; ainda não validado com usuários reais. |
+| 5 | Com base nas informações apresentadas, Paulo escolhe um caminho que evita a região de maior risco e inicia seu deslocamento. | Chegar ao destino com maior segurança e menos imprevistos. | “Agora sei por onde é melhor passar.” Maior confiança e tranquilidade. | Precisar decidir o trajeto sem informações claras sobre possíveis alagamentos. | Apoiar a decisão de deslocamento apresentando o risco de forma clara e associado à localização do usuário. | [H] P01 — objetivos e motivadores; ainda não validado com usuários reais. |
+| 6 | Paulo chega ao destino sem passar pela região identificada como de maior risco. | Concluir o deslocamento com segurança e perceber utilidade nas informações consultadas. | “Valeu a pena verificar antes de sair.” Sensação de segurança e confiança no sistema. | Receber informações tarde demais ou somente após enfrentar um problema no trajeto. | Manter informações de risco úteis antes e durante futuros deslocamentos, incentivando consultas preventivas. | [H] P01 — dores, motivadores e comportamentos; ainda não validado com usuários reais. |
 
 > A jornada considera momentos antes, durante e depois do uso do produto, relacionando o sistema ao cotidiano e à necessidade real de deslocamento da persona.
+
+> As evidências apresentadas nesta jornada têm como origem a proto-persona P01 e as hipóteses das entregas anteriores. Elas ainda não representam comportamento validado de usuários reais e deverão ser investigadas posteriormente.
 
 ## Síntese
 

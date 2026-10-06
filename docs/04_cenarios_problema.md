@@ -44,55 +44,61 @@ Essa dificuldade pode fazer com que Paulo escolha um trajeto que passe por uma �
 
 Use os tipos de questões/taxonomia definidos na aula. As perguntas devem revelar informações **ainda ausentes** do cenário, não repetir o que já foi respondido.
 
-| # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
-|---|---|---|---|
-| Q1 | Quais informações Paulo considera mais importantes para avaliar se uma região apresenta risco de alagamento? | Permite entender quais informações são necessárias para que ele alcance seu objetivo. | Entrevista com usuário |
-| Q2 | Em quais situações Paulo costuma verificar o risco de alagamento antes ou durante um deslocamento? | Ajuda a compreender melhor o ambiente e as condições em que essa necessidade surge. | Entrevista com usuário |
-| Q3 | Quais fontes Paulo costuma consultar quando há chuva intensa? | Permite identificar os recursos e tecnologias que ele utiliza atualmente para tentar alcançar seu objetivo. | Entrevista com usuário |
-| Q4 | Como Paulo decide se deve manter seu trajeto habitual ou procurar outro caminho? | Permite compreender o planejamento e os critérios utilizados atualmente para tomar a decisão. | Entrevista com usuário |
-| Q5 | Quanto tempo Paulo está disposto a gastar procurando informações antes de iniciar seu deslocamento? | Ajuda a entender a pressão de tempo existente durante a realização da atividade. | Entrevista com usuário |
-| Q6 | Quais dificuldades Paulo encontra ao tentar relacionar informações de chuva, alagamentos e trânsito? | Permite detalhar os problemas encontrados durante as ações realizadas para avaliar o risco. | Entrevista com usuário |
-| Q7 | Que acontecimentos durante o deslocamento fazem Paulo reconsiderar o trajeto escolhido? | Permite identificar eventos externos que podem alterar suas decisões durante a atividade. | Entrevista com usuário |
-| Q8 | Como Paulo avalia se conseguiu escolher um trajeto seguro em relação a alagamentos? | Permite compreender como ele avalia se seu objetivo foi alcançado com sucesso. | Entrevista com usuário |
-| Q9 | Paulo depende apenas das informações encontradas nas plataformas ou também considera informações recebidas de outras pessoas para decidir seu trajeto? | Permite entender se a decisão de Paulo depende somente das plataformas consultadas ou também de informações recebidas de outras pessoas, revelando possíveis influências externas no seu processo de decisão. | Entrevista com usuário |
+| # | Elemento | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
+|---|---|---|---|---|
+| Q1 | Ambiente/contexto | Quanto tempo Paulo normalmente tem disponível para consultar informações e decidir antes de iniciar o deslocamento? | Permite compreender a pressão de tempo existente e como ela pode limitar a busca por informações. | Análise da equipe [H]] |
+| Q2 | Atores | Além das plataformas consultadas, outras pessoas influenciam a decisão de Paulo sobre o trajeto? | Permite identificar familiares, colegas ou outras pessoas que possam participar ou influenciar sua decisão. | Análise da equipe [H]] |
+| Q3 | Objetivos | Quando existe conflito entre chegar mais rápido e evitar uma região potencialmente problemática, qual objetivo Paulo tende a priorizar? | Permite identificar objetivos concorrentes e compreender o que pesa mais em sua decisão. | Análise da equipe [H]] |
+| Q4 | Planejamento | Quais alternativas Paulo considera quando suspeita que o trajeto habitual pode apresentar problemas e quais critérios utiliza para escolher entre elas? | Permite compreender como ele planeja uma possível mudança de trajeto antes de sair. | Análise da equipe [H]] |
+| Q5 | Ações | Em que ordem Paulo consulta as diferentes fontes de informação e como compara os dados encontrados entre elas? | Permite detalhar como a atividade é realizada atualmente e onde existe maior esforço durante a consulta. | Análise da equipe [H]] |
+| Q6 | Eventos | Que mudanças ou acontecimentos durante o deslocamento fazem Paulo reconsiderar a decisão tomada antes de sair? | Permite identificar eventos que podem romper o planejamento inicial e exigir uma nova decisão. | Análise da equipe [H]] |
+| Q7 | Avaliação | Como Paulo decide que já possui informação suficiente para escolher um trajeto e parar de procurar em outras fontes? | Permite compreender o critério utilizado para encerrar a busca por informações e tomar uma decisão. | Análise da equipe [H]] |
 
 ### 3. Cenário refinado
 
 Em um fim de tarde de chuva intensa, Paulo Andre Oliveira está terminando seu expediente no escritório e precisa voltar para casa. Antes de sair, percebe que a chuva aumentou e quer saber se o trajeto que costuma fazer passa por alguma região com risco de alagamento.
 
-[NOVO: Paulo considera principalmente a intensidade da chuva, a existência de alagamentos registrados e as condições das regiões pelas quais pretende passar para avaliar o risco do deslocamento. [Q1] Ele costuma fazer essa verificação principalmente quando percebe chuva forte antes de sair do trabalho ou quando as condições climáticas pioram durante um deslocamento. [Q2]]
+[NOVO: [H] Como está saindo do trabalho e precisa chegar em casa, Paulo não pretende passar muito tempo procurando informações. Ele tende a fazer uma consulta rápida antes de sair e precisa tomar sua decisão em poucos minutos. [Q1]]
 
-Pelo celular, Paulo consulta a previsão do tempo, informações sobre ocorrências de alagamentos e as condições do trânsito. [NOVO: Para isso, costuma recorrer a aplicativos de previsão do tempo, navegação e fontes públicas disponíveis sobre ocorrências de alagamentos. [Q3] Além dessas fontes, Paulo também considera informações recebidas de familiares, colegas ou outras pessoas que estejam na região ou tenham passado recentemente pelo trajeto, principalmente quando relatam alagamentos, vias bloqueadas ou dificuldades de passagem. [Q9]]
+Pelo celular, Paulo consulta a previsão do tempo, informações sobre ocorrências de alagamentos e as condições do trânsito. Porém, essas informações estão disponíveis de forma separada em diferentes fontes.
 
-Porém, essas informações estão disponíveis de forma separada em diferentes fontes. Ele consegue identificar que está chovendo intensamente e que existem registros de alagamentos na cidade, mas tem dificuldade para relacionar essas informações ao risco existente nas regiões pelas quais pretende passar.
+[NOVO: [H] Além das plataformas consultadas, Paulo também pode considerar informações recebidas de familiares, colegas ou outras pessoas que estejam na região ou tenham passado recentemente pelo trajeto. Esses relatos podem influenciar sua percepção sobre as condições do caminho. [Q2]]
 
-[NOVO: Para decidir se mantém o caminho habitual ou procura outro, Paulo tenta comparar as informações encontradas com as regiões do seu trajeto. Quando percebe indícios de problemas em uma dessas regiões, considera utilizar um caminho alternativo. [Q4] Como normalmente está saindo do trabalho e deseja chegar em casa, não pretende gastar muito tempo alternando entre diferentes fontes para tomar essa decisão. [Q5]]
+Ele consegue identificar que está chovendo intensamente e que existem registros de alagamentos na cidade, mas tem dificuldade para relacionar essas informações ao risco existente nas regiões pelas quais pretende passar.
 
-Como Paulo não possui conhecimento técnico sobre precipitação e risco de alagamentos, ele não consegue avaliar com segurança se as condições apresentadas representam perigo para seu trajeto. [NOVO: Sua principal dificuldade é entender se a intensidade da chuva e as ocorrências encontradas realmente representam risco para os locais pelos quais pretende passar. [Q6]]
+[NOVO: [H] Quando precisa escolher entre chegar mais rápido e evitar uma região que aparenta apresentar maior risco, Paulo tende a considerar sua segurança como prioridade, embora também leve em conta o aumento do tempo de deslocamento. [Q3]]
 
-[NOVO: Mesmo depois de iniciar o deslocamento, chuva mais intensa, trânsito interrompido ou informações sobre alagamentos podem fazer Paulo reconsiderar o caminho escolhido. [Q7]]
+[NOVO: [H] Quando suspeita que o trajeto habitual pode apresentar problemas, Paulo pode considerar caminhos alternativos ou esperar uma melhora das condições antes de sair. Para escolher entre essas alternativas, tende a comparar o possível risco percebido com o tempo adicional de deslocamento. [Q4]]
 
-Essa dificuldade pode fazer com que Paulo escolha um trajeto que passe por uma área suscetível a alagamentos, expondo-se a uma situação que ele gostaria de evitar. [NOVO: Paulo considera que tomou uma decisão adequada quando consegue realizar o deslocamento sem encontrar regiões alagadas ou precisar interromper o trajeto por causa da chuva. [Q8]]
+Como Paulo não possui conhecimento técnico sobre precipitação e risco de alagamentos, ele não consegue avaliar com segurança se as condições apresentadas representam perigo para seu trajeto.
+
+[NOVO: [H] Paulo pode começar consultando a previsão do tempo para entender as condições gerais, depois verificar trânsito e rota em aplicativos de navegação e, quando ainda possui dúvidas, buscar informações sobre ocorrências de alagamento. Ao comparar as fontes, tenta relacionar os locais mencionados com as regiões pelas quais pretende passar. [Q5]]
+
+[NOVO: [H] Mesmo depois de iniciar o deslocamento, acontecimentos como aumento da intensidade da chuva, trânsito interrompido, bloqueios ou novos relatos de alagamento podem fazer Paulo reconsiderar o caminho escolhido. [Q6]]
+
+Essa dificuldade pode fazer com que Paulo escolha um trajeto que passe por uma área suscetível a alagamentos, expondo-se a uma situação que ele gostaria de evitar.
+
+[NOVO: [H] Paulo tende a encerrar a busca por informações quando considera que os dados disponíveis são suficientes para compreender se seu caminho habitual apresenta algum problema relevante e consegue escolher entre manter ou alterar o trajeto. Quando as fontes continuam contraditórias, sua incerteza permanece e a decisão se torna mais difícil. [Q7]]
 
 ### 4. Elementos extraídos
 
 | Elemento | Evidência no cenário |
 |---|---|
-| Ator(es) | Paulo Andre Oliveira, funcionário de escritório que realiza deslocamentos frequentes e possui pouco conhecimento técnico sobre precipitação e risco de alagamentos. |
-| Objetivo(s) | Avaliar se o trajeto até sua casa apresenta risco de alagamento e decidir se deve manter o caminho habitual ou procurar uma alternativa. |
-| Contexto | Fim de tarde, após o expediente, durante chuva intensa. Paulo está prestes a iniciar seu deslocamento para casa e precisa tomar uma decisão em pouco tempo. |
-| Recursos/informações | Previsão do tempo, informações sobre ocorrências de alagamentos, condições do trânsito, aplicativos de navegação, fontes públicas e informações recebidas de familiares, colegas ou outras pessoas. |
-| Ações | Consultar diferentes fontes, verificar chuva, alagamentos e trânsito, comparar essas informações com as regiões do trajeto, decidir se mantém ou altera o caminho e reconsiderar a decisão caso as condições mudem. |
-| Problemas/rupturas | Informações distribuídas em diferentes fontes, dificuldade para relacionar chuva, alagamentos e localização, dificuldade para interpretar dados sem conhecimento técnico e pouco tempo disponível para tomar a decisão. |
-| Consequências | Paulo pode escolher um trajeto que passe por uma área suscetível a alagamentos, precisar alterar ou interromper o percurso, enfrentar atrasos ou se expor a uma situação de risco. |
+| Ambiente/contexto | Paulo está terminando o expediente em um fim de tarde de chuva intensa e precisa voltar para casa. [H] Possui pouco tempo para consultar informações e tomar uma decisão antes de iniciar o deslocamento. |
+| Atores | Paulo Andre Oliveira é o ator principal. [H] Familiares, colegas ou outras pessoas que estejam na região também podem influenciar sua decisão por meio de relatos sobre as condições do trajeto. |
+| Objetivos | Avaliar se o trajeto habitual apresenta risco de alagamento e decidir se deve mantê-lo ou buscar uma alternativa. [H] Quando existe conflito entre tempo de chegada e possível risco, Paulo tende a priorizar a segurança. |
+| Planejamento | [H] Caso identifique indícios de problema no trajeto habitual, Paulo considera alternativas como mudar o caminho ou aguardar uma melhora das condições, comparando o possível risco com o tempo adicional de deslocamento. |
+| Ações | Consultar previsão do tempo, condições do trânsito e informações sobre alagamentos. [H] Paulo pode consultar essas fontes em sequência e comparar os locais mencionados com as regiões pelas quais pretende passar. |
+| Eventos | [H] Aumento da intensidade da chuva, interrupções no trânsito, bloqueios ou novos relatos de alagamento podem fazer Paulo reconsiderar o trajeto escolhido. |
+| Avaliação | [H] Paulo considera que possui informação suficiente quando consegue compreender se existe algum problema relevante no caminho e decidir entre manter ou alterar o trajeto. Quando as fontes permanecem contraditórias, sua incerteza continua. |
 
 ### 5. Implicações para as próximas entregas
 
-Quais tarefas merecem análise? Quais informações precisam ser coletadas? **Não desenhe a solução ainda.**
+As próximas entregas devem aprofundar principalmente as tarefas de buscar informações antes do deslocamento, comparar diferentes fontes, relacionar chuva, alagamentos e trânsito com o trajeto e decidir se o caminho habitual deve ser mantido ou alterado.
 
-As próximas entregas devem aprofundar principalmente as tarefas de buscar informações antes do deslocamento, relacionar chuva, alagamentos e trânsito com o trajeto e decidir se o caminho habitual deve ser mantido ou alterado.
+Também será necessário investigar quanto tempo o usuário possui para tomar essa decisão, quais pessoas ou fontes influenciam sua escolha, como ele lida com o conflito entre segurança e tempo de deslocamento, quais alternativas considera quando identifica um possível problema e quais acontecimentos podem fazê-lo reconsiderar o trajeto durante o percurso.
 
-Também será necessário investigar quais fontes os usuários consultam atualmente, quais informações consideram mais importantes, quanto tempo estão dispostos a gastar nessa busca e quais dificuldades encontram para interpretar e combinar essas informações.
+Além disso, será importante compreender em que ordem as fontes são consultadas e qual critério o usuário utiliza para considerar que já possui informações suficientes para tomar uma decisão.
 
 Esses dados poderão ser utilizados posteriormente para detalhar as tarefas, necessidades e problemas do usuário antes da definição da solução de interface.
 
@@ -265,20 +271,20 @@ Juliana então procura em uma rede social um perfil que divulga informações de
 
 | # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
 |---|---|---|---|
-| Q1 | Por que chegar no horário nesse dia é mais crítico do que em um dia comum? | Mostra o peso do objetivo e explica a pressão sobre a decisão. | Análise da equipe [H] — validar na Entrega 7 |
-| Q2 | Chegar à faculdade é o único objetivo de Juliana nesse deslocamento? | Verifica se existe um objetivo concorrente, como não ficar exposta ao alagamento. | Análise da equipe [H] — validar na Entrega 7 |
-| Q3 | Onde e em que condições físicas Juliana consulta as informações ao longo do deslocamento? | O contexto muda bastante entre estar em casa, no ponto ou dentro do ônibus. | Análise da equipe [H] — validar na Entrega 7 |
-| Q4 | Que pressões existem sobre a decisão de Juliana? | Identifica restrições de tempo, de recursos e sociais. | Análise da equipe [H] — validar na Entrega 7 |
-| Q5 | De quem depende o alcance do objetivo de Juliana? | Revela atores que não aparecem no cenário inicial. | Análise da equipe [H] — validar na Entrega 7 |
-| Q6 | Quem precisa ser avisado sobre a decisão ou sobre a chegada de Juliana? | Identifica terceiros que dependem do resultado do deslocamento. | Análise da equipe [H] — validar na Entrega 7 |
-| Q7 | Quais estratégias alternativas Juliana conhece e quando escolhe cada uma? | Mostra as opções reais de decisão e os critérios usados. | Análise da equipe [H] — validar na Entrega 7 |
-| Q8 | Juliana sabe por quais ruas e avenidas a sua linha de ônibus circula? | Verifica se ela tem o conhecimento necessário para relacionar ocorrências ao trajeto. | Análise da equipe [H] — validar na Entrega 7 |
-| Q9 | As informações de alagamento que Juliana encontra podem ser relacionadas diretamente à linha e ao terminal que ela usa? | Verifica se as fontes atuais falam a mesma "língua" do deslocamento dela. | Análise da equipe [H] — validar na Entrega 7 |
-| Q10 | Como Juliana gostaria de tomar essa decisão, comparado a como toma hoje? | Contrapõe a forma atual à forma desejada, sem definir a solução. | Análise da equipe [H] — validar na Entrega 7 |
-| Q11 | Em que ordem Juliana consulta as fontes e por que segue essa ordem? | Detalha a sequência de ações e o hábito que a orienta. | Análise da equipe [H] — validar na Entrega 7 |
-| Q12 | Que sinais dos aplicativos ou do ambiente fazem Juliana perceber que a situação mudou? | Identifica os retornos que disparam uma nova avaliação. | Análise da equipe [H] — validar na Entrega 7 |
-| Q13 | Como Juliana sabe, a cada consulta, se já tem informação suficiente para decidir? | Mostra o critério de avaliação e onde o ciclo de consultas trava. | Análise da equipe [H] — validar na Entrega 7 |
-| Q14 | Quais são as consequências de uma decisão incorreta para Juliana? | Dimensiona o impacto do problema para os dois lados da decisão. | Análise da equipe [H] — validar na Entrega 7 |
+| Q1 | Por que chegar no horário nesse dia é mais crítico do que em um dia comum? | Mostra o peso do objetivo e explica a pressão sobre a decisão. | Análise da equipe [H]] |
+| Q2 | Chegar à faculdade é o único objetivo de Juliana nesse deslocamento? | Verifica se existe um objetivo concorrente, como não ficar exposta ao alagamento. | Análise da equipe [H]] |
+| Q3 | Onde e em que condições físicas Juliana consulta as informações ao longo do deslocamento? | O contexto muda bastante entre estar em casa, no ponto ou dentro do ônibus. | Análise da equipe [H]] |
+| Q4 | Que pressões existem sobre a decisão de Juliana? | Identifica restrições de tempo, de recursos e sociais. | Análise da equipe [H]] |
+| Q5 | De quem depende o alcance do objetivo de Juliana? | Revela atores que não aparecem no cenário inicial. | Análise da equipe [H]] |
+| Q6 | Quem precisa ser avisado sobre a decisão ou sobre a chegada de Juliana? | Identifica terceiros que dependem do resultado do deslocamento. | Análise da equipe [H]] |
+| Q7 | Quais estratégias alternativas Juliana conhece e quando escolhe cada uma? | Mostra as opções reais de decisão e os critérios usados. | Análise da equipe [H]] |
+| Q8 | Juliana sabe por quais ruas e avenidas a sua linha de ônibus circula? | Verifica se ela tem o conhecimento necessário para relacionar ocorrências ao trajeto. | Análise da equipe [H]] |
+| Q9 | As informações de alagamento que Juliana encontra podem ser relacionadas diretamente à linha e ao terminal que ela usa? | Verifica se as fontes atuais falam a mesma "língua" do deslocamento dela. | Análise da equipe [H]] |
+| Q10 | Como Juliana gostaria de tomar essa decisão, comparado a como toma hoje? | Contrapõe a forma atual à forma desejada, sem definir a solução. | Análise da equipe [H]] |
+| Q11 | Em que ordem Juliana consulta as fontes e por que segue essa ordem? | Detalha a sequência de ações e o hábito que a orienta. | Análise da equipe [H]] |
+| Q12 | Que sinais dos aplicativos ou do ambiente fazem Juliana perceber que a situação mudou? | Identifica os retornos que disparam uma nova avaliação. | Análise da equipe [H]] |
+| Q13 | Como Juliana sabe, a cada consulta, se já tem informação suficiente para decidir? | Mostra o critério de avaliação e onde o ciclo de consultas trava. | Análise da equipe [H]] |
+| Q14 | Quais são as consequências de uma decisão incorreta para Juliana? | Dimensiona o impacto do problema para os dois lados da decisão. | Análise da equipe [H]] |
 
 ### 3. Cenário refinado
 

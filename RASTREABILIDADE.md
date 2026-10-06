@@ -39,6 +39,8 @@ Use esta tabela para itens importantes marcados como `[H]` ou `[?]`. Preserve o 
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | R01 | Estimativa do risco de alagamento por região | Compreender rapidamente o risco de alagamento de uma região para apoiar o planejamento de deslocamentos. [H] | P01 | C01 | {{T01}} | {{links}} | {{...}} | {{M01}} | {{F01...}} | {{V01 ou —}} | {{UT01}} | {{...}} |
 | R02 | Estimativa do risco de alagamento por região | Antecipar possíveis impactos de chuvas intensas no funcionamento de um comércio para a tomada de medidas preventivas. [H] | P03 | C02 |  |  |  |  |  |  |  |  |
+| R03 | Estimativa do risco de alagamento por região | Compreender de forma simples o risco de alagamento na região onde mora para apoiar decisões preventivas. [H] | P02 | C03 |  |  |  |  |  |  |  |  |
+| R04 | Estimativa do risco de alagamento por região | Identificar riscos de alagamento que possam afetar seu deslocamento por transporte público e apoiar decisões sobre trajeto ou horário de saída. [H] | P04 | C04 |  |  |  |  |  |  |  |  |
 
 ## 4. Rastreabilidade de padrões de interface
 

@@ -84,13 +84,13 @@ Essa dificuldade pode fazer com que Paulo escolha um trajeto que passe por uma �
 
 | Elemento | Evidência no cenário |
 |---|---|
-| Ambiente/contexto | Paulo está terminando o expediente em um fim de tarde de chuva intensa e precisa voltar para casa. [H] Possui pouco tempo para consultar informações e tomar uma decisão antes de iniciar o deslocamento. |
-| Atores | Paulo Andre Oliveira é o ator principal. [H] Familiares, colegas ou outras pessoas que estejam na região também podem influenciar sua decisão por meio de relatos sobre as condições do trajeto. |
-| Objetivos | Avaliar se o trajeto habitual apresenta risco de alagamento e decidir se deve mantê-lo ou buscar uma alternativa. [H] Quando existe conflito entre tempo de chegada e possível risco, Paulo tende a priorizar a segurança. |
-| Planejamento | [H] Caso identifique indícios de problema no trajeto habitual, Paulo considera alternativas como mudar o caminho ou aguardar uma melhora das condições, comparando o possível risco com o tempo adicional de deslocamento. |
-| Ações | Consultar previsão do tempo, condições do trânsito e informações sobre alagamentos. [H] Paulo pode consultar essas fontes em sequência e comparar os locais mencionados com as regiões pelas quais pretende passar. |
-| Eventos | [H] Aumento da intensidade da chuva, interrupções no trânsito, bloqueios ou novos relatos de alagamento podem fazer Paulo reconsiderar o trajeto escolhido. |
-| Avaliação | [H] Paulo considera que possui informação suficiente quando consegue compreender se existe algum problema relevante no caminho e decidir entre manter ou alterar o trajeto. Quando as fontes permanecem contraditórias, sua incerteza continua. |
+| Ator(es) | Paulo Andre Oliveira, funcionário de escritório que realiza deslocamentos frequentes e possui pouco conhecimento técnico sobre precipitação e risco de alagamentos. [H] Familiares, colegas ou outras pessoas que estejam na região também podem influenciar sua decisão por meio de relatos sobre as condições do trajeto. |
+| Objetivo(s) | Avaliar se o trajeto até sua casa apresenta risco de alagamento e decidir se deve manter o caminho habitual ou procurar uma alternativa. [H] Quando existe conflito entre tempo de chegada e possível risco, Paulo tende a priorizar a segurança. |
+| Contexto | Fim de tarde, após o expediente, durante chuva intensa. Paulo está prestes a iniciar seu deslocamento para casa e precisa tomar uma decisão em pouco tempo. |
+| Recursos/informações | Previsão do tempo, informações sobre ocorrências de alagamentos, condições do trânsito, aplicativos de navegação, fontes públicas e [H] informações recebidas de familiares, colegas ou outras pessoas. |
+| Ações | Consultar diferentes fontes, verificar chuva, alagamentos e trânsito, comparar essas informações com as regiões do trajeto e decidir se mantém ou altera o caminho. [H] Paulo também pode reconsiderar sua decisão caso as condições mudem durante o deslocamento. |
+| Problemas/rupturas | Informações distribuídas em diferentes fontes, dificuldade para relacionar chuva, alagamentos e localização, dificuldade para interpretar dados sem conhecimento técnico, pouco tempo disponível para decidir e [H] possibilidade de encontrar informações contraditórias. |
+| Consequências | Paulo pode escolher um trajeto que passe por uma área suscetível a alagamentos, precisar alterar ou interromper o percurso, enfrentar atrasos ou se expor a uma situação de risco. |
 
 ### 5. Implicações para as próximas entregas
 
@@ -122,61 +122,69 @@ Sem conseguir identificar com clareza a possibilidade de alagamento na região, 
 
 ### 2. Questões de refinamento
 
-| # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
-|---|---|---|---|
-| Q1 | Quais informações Viviane considera mais importantes para avaliar se seu comércio pode ser afetado pela chuva? | Permite identificar quais informações são relevantes para que ela avalie possíveis impactos no estabelecimento. | Entrevista com usuário |
-| Q2 | Em quais situações Viviane costuma começar a se preocupar com possíveis alagamentos no comércio? | Ajuda a compreender em que momentos essa necessidade aparece e quais acontecimentos levam à busca por informações. | Entrevista com usuário |
-| Q3 | Quais fontes Viviane costuma consultar para acompanhar a previsão do tempo e situações de alagamento? | Permite identificar os recursos utilizados atualmente para obter informações sobre a região. | Entrevista com usuário |
-| Q4 | Como Viviane decide quando deve tomar alguma medida preventiva no comércio? | Permite compreender quais critérios utiliza atualmente para decidir se precisa proteger produtos, equipamentos ou o estabelecimento. | Entrevista com usuário |
-| Q5 | Quanto tempo antes de uma chuva forte Viviane costuma procurar informações para se preparar? | Ajuda a compreender a antecedência disponível para realizar ações preventivas. | Entrevista com usuário |
-| Q6 | Quais dificuldades Viviane encontra para entender se uma previsão de chuva pode afetar seu comércio? | Permite detalhar as dificuldades encontradas ao interpretar e relacionar as informações disponíveis. | Entrevista com usuário |
-| Q7 | Quais acontecimentos durante um período de chuva fazem Viviane mudar as medidas que havia tomado? | Permite identificar eventos que podem alterar suas decisões depois que a chuva começa. | Entrevista com usuário |
-| Q8 | Como Viviane avalia se conseguiu se preparar adequadamente para uma situação de chuva intensa? | Permite compreender como ela identifica se as medidas preventivas tomadas foram suficientes. | Entrevista com usuário |
-| Q9 | Viviane considera informações de outras pessoas, como comerciantes ou moradores da região, para decidir como se preparar? | Permite verificar se informações recebidas de pessoas próximas influenciam suas decisões. | Entrevista com usuário |
+| # | Elemento | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
+|---|---|---|---|---|
+| Q1 | Ambiente/contexto | Quanto tempo Viviane precisa para conseguir preparar o comércio antes que uma chuva intensa comece? | Permite compreender a antecedência necessária para que medidas preventivas sejam realmente possíveis. | Análise da equipe [H] |
+| Q2 | Atores | Funcionários, clientes, outros comerciantes ou moradores da região influenciam as decisões de Viviane durante períodos de chuva intensa? | Permite identificar outras pessoas que participam ou interferem no processo de decisão. | Análise da equipe [H] |
+| Q3 | Objetivos | Quando proteger produtos e equipamentos entra em conflito com manter o comércio funcionando normalmente, o que Viviane tende a priorizar? | Permite identificar objetivos concorrentes e compreender o que pesa mais em sua decisão. | Análise da equipe [H] |
+| Q4 | Planejamento | Quais medidas preventivas Viviane considera possíveis e como decide quais devem ser realizadas primeiro? | Permite entender como ela organiza sua preparação antes que a situação se agrave. | Análise da equipe [H] |
+| Q5 | Ações | Que ações Viviane realiza fisicamente no comércio quando decide se preparar para uma possível situação de alagamento? | Permite compreender a prática real além da simples consulta de informações. | Análise da equipe [H] |
+| Q6 | Eventos | Que mudanças durante a chuva fazem Viviane aumentar, reduzir ou modificar as medidas preventivas tomadas? | Permite identificar eventos que rompem o planejamento inicial. | Análise da equipe [H] |
+| Q7 | Avaliação | Como Viviane decide que o comércio está suficientemente preparado para enfrentar a situação prevista? | Permite compreender o critério utilizado para avaliar se sua preparação foi adequada. | Análise da equipe [H] |
 
 ### 3. Cenário refinado
 
 Em um dia de previsão de chuva intensa, Viviane Santos Machado está em seu pequeno comércio e percebe que o tempo começou a mudar. Como sua região costuma sofrer com alagamentos durante períodos de chuva forte, ela se preocupa com os possíveis impactos no funcionamento do estabelecimento e com seus produtos e equipamentos.
 
-[NOVO: Viviane considera principalmente a intensidade da chuva, a possibilidade de alagamento na região e o horário em que a chuva deve ocorrer para avaliar se o comércio pode ser afetado. [Q1] Ela costuma começar a se preocupar principalmente quando há previsão de chuva forte ou quando percebe que as condições do tempo estão piorando. [Q2]]
+[NOVO: [H] Viviane precisa perceber o risco com antecedência suficiente para conseguir organizar o comércio e realizar medidas preventivas antes que a chuva se intensifique. Se recebe a informação muito tarde, algumas ações podem não ser mais possíveis sem interromper o funcionamento do estabelecimento. [Q1]]
 
-Antes que a chuva fique mais intensa, Viviane procura informações sobre a previsão do tempo e sobre possíveis ocorrências de alagamento na região. [NOVO: Para isso, costuma consultar aplicativos de previsão do tempo, notícias e outras fontes disponíveis sobre as condições da região. [Q3] Também pode considerar informações recebidas de outros comerciantes ou moradores próximos quando eles relatam que a região está começando a apresentar problemas. [Q9]]
+Antes que a chuva fique mais intensa, Viviane procura informações sobre a previsão do tempo e sobre possíveis ocorrências de alagamento na região.
+
+[NOVO: [H] Além das informações encontradas nas plataformas, decisões de Viviane também podem ser influenciadas por funcionários, clientes, comerciantes vizinhos ou moradores da região que relatam mudanças nas condições das ruas próximas. [Q2]]
 
 Ela consegue encontrar informações gerais sobre a chuva, mas tem dificuldade para saber se a situação prevista pode afetar especificamente a região onde está seu comércio.
 
-[NOVO: Para decidir se deve tomar alguma medida preventiva, Viviane observa a intensidade prevista da chuva, as informações sobre a região e sua experiência com ocorrências anteriores. Quando considera que existe possibilidade de impacto no comércio, procura se preparar antes que a situação se agrave. [Q4] Ela procura realizar essa verificação com antecedência suficiente para conseguir organizar o estabelecimento sem prejudicar as atividades do dia. [Q5]]
+[NOVO: [H] Quando manter o comércio funcionando normalmente entra em conflito com a necessidade de proteger produtos e equipamentos, Viviane tende a priorizar a redução de possíveis prejuízos, mesmo que isso provoque alguma interrupção nas atividades. [Q3]]
 
-Viviane não possui conhecimento técnico sobre precipitação ou modelos de risco e, por isso, encontra dificuldade para interpretar informações mais técnicas ou entender a gravidade da situação apenas com os dados disponíveis. [NOVO: Sua principal dificuldade é compreender se uma previsão de chuva intensa representa uma possibilidade concreta de alagamento na região do comércio e se a situação exige alguma ação preventiva. [Q6]]
+[NOVO: [H] Ao perceber possibilidade de impacto, Viviane pode organizar as medidas preventivas de acordo com sua urgência e com o risco de perda, priorizando primeiro itens mais vulneráveis ou de maior valor e depois outras adaptações no estabelecimento. [Q4]]
 
-[NOVO: Durante a chuva, mudanças na intensidade da precipitação, informações sobre alagamentos próximos ou dificuldades de acesso ao estabelecimento podem fazer Viviane aumentar ou modificar as medidas preventivas que havia tomado. [Q7]]
+Viviane não possui conhecimento técnico sobre precipitação ou modelos de risco e, por isso, encontra dificuldade para interpretar informações mais técnicas ou entender a gravidade da situação apenas com os dados disponíveis.
 
-Sem conseguir identificar com clareza a possibilidade de alagamento na região, Viviane pode ter dificuldade para decidir se deve tomar medidas preventivas, como proteger produtos e equipamentos, preparar o estabelecimento ou se organizar para uma possível interrupção das atividades. [NOVO: Viviane considera que conseguiu se preparar adequadamente quando consegue proteger seus produtos e equipamentos e reduzir os impactos da chuva sobre o funcionamento do comércio. [Q8]]
+[NOVO: [H] Quando decide se preparar, Viviane pode realizar ações como retirar produtos de locais próximos ao chão, proteger equipamentos, reorganizar objetos que possam ser danificados e orientar outras pessoas presentes no comércio. Essas ações exigem tempo e podem interferir no funcionamento normal do estabelecimento. [Q5]]
+
+[NOVO: [H] Durante a chuva, aumento da intensidade da precipitação, acúmulo de água nas proximidades, relatos de alagamentos ou dificuldade de acesso ao comércio podem fazer Viviane ampliar, reduzir ou modificar as medidas que havia planejado. [Q6]]
+
+Sem conseguir identificar com clareza a possibilidade de alagamento na região, Viviane pode ter dificuldade para decidir se deve tomar medidas preventivas, como proteger produtos e equipamentos, preparar o estabelecimento ou se organizar para uma possível interrupção das atividades.
+
+[NOVO: [H] Viviane tende a considerar o comércio suficientemente preparado quando acredita que os itens mais vulneráveis estão protegidos, que as principais medidas possíveis foram realizadas e que consegue continuar acompanhando a situação sem precisar tomar ações urgentes naquele momento. [Q7]]
 
 ### 4. Elementos extraídos
 
-| Elemento | Evidência no cenário |
-|---|---|
-| Ator(es) | Viviane Santos Machado, proprietária de um pequeno comércio, que trabalha em uma região que pode sofrer impactos durante períodos de chuva intensa. |
-| Objetivo(s) | Avaliar se a chuva pode afetar seu comércio e decidir se precisa tomar medidas preventivas para proteger produtos, equipamentos e o funcionamento do estabelecimento. |
-| Contexto | Durante um período com previsão de chuva intensa, enquanto Viviane está em seu comércio e precisa se preparar para possíveis impactos. |
-| Recursos/informações | Previsão do tempo, informações sobre ocorrências de alagamento, notícias, informações sobre a região e relatos de outros comerciantes ou moradores. |
-| Ações | Consultar diferentes fontes, verificar a previsão de chuva, buscar informações sobre a região, avaliar possíveis impactos, tomar medidas preventivas e reconsiderar essas medidas caso as condições mudem. |
-| Problemas/rupturas | Informações distribuídas em diferentes fontes, dificuldade para identificar o risco específico da região, dificuldade para interpretar informações técnicas e necessidade de conciliar a busca por informações com as atividades do comércio. |
-| Consequências | Viviane pode não conseguir se preparar adequadamente, sofrer prejuízos com produtos ou equipamentos, interromper atividades do comércio e perder vendas ou precisar tomar medidas de emergência durante a chuva. |
+| **Elemento** | **Evidência no cenário** |
+| ------------ | ------------------------ |
+| Ator(es) | Viviane Santos Machado, proprietária de um pequeno comércio. [H] Funcionários, clientes, comerciantes vizinhos e moradores da região também podem influenciar suas decisões durante períodos de chuva intensa. |
+| Objetivo(s) | Avaliar se a chuva pode afetar seu comércio e decidir se precisa tomar medidas preventivas para reduzir possíveis danos a produtos, equipamentos e ao funcionamento do estabelecimento. |
+| Contexto | Viviane está em seu comércio durante um período com previsão de chuva intensa e precisa conciliar a preparação do estabelecimento com as atividades normais do dia. [H] A antecedência disponível influencia quais medidas preventivas podem ser realizadas. |
+| Recursos/informações | Previsão do tempo, informações sobre ocorrências de alagamento, notícias, informações sobre a região e [H] relatos de funcionários, clientes, comerciantes ou moradores próximos. |
+| Ações | Consultar informações sobre chuva e alagamentos e, [H] quando considera necessário, proteger equipamentos, retirar produtos de locais vulneráveis, reorganizar o estabelecimento e acompanhar a evolução da situação. |
+| Problemas/rupturas | Informações distribuídas em diferentes fontes, dificuldade para relacionar a previsão geral ao risco específico da região, dificuldade para interpretar informações técnicas e pouco tempo para realizar medidas preventivas sem prejudicar as atividades do comércio. |
+| Consequências | Viviane pode não conseguir se preparar a tempo, sofrer prejuízos com produtos ou equipamentos, precisar interromper as atividades do comércio ou realizar medidas emergenciais durante a chuva. |
 
 ### 5. Implicações para as próximas entregas
 
-As próximas entregas devem aprofundar principalmente as tarefas de buscar informações sobre a previsão de chuva, relacionar essas informações com a região do comércio e decidir quais medidas preventivas podem ser tomadas antes ou durante um período de chuva intensa.
+As próximas entregas devem aprofundar principalmente as tarefas de acompanhar informações sobre chuva e alagamentos, avaliar como essas condições podem afetar o comércio e decidir quais medidas preventivas precisam ser realizadas.
 
-Também será necessário investigar quais fontes Viviane utiliza atualmente, quais informações considera mais importantes, quanto tempo de antecedência precisa para se preparar e quais dificuldades encontra para interpretar informações sobre chuva e risco de alagamento.
+Também será necessário investigar quanto tempo de antecedência Viviane precisa para se preparar, quais pessoas influenciam suas decisões, como ela prioriza a proteção de produtos e equipamentos em relação à continuidade das atividades e quais medidas preventivas costuma realizar fisicamente no estabelecimento.
 
-Esses dados poderão ser utilizados posteriormente para detalhar as tarefas, necessidades e problemas da usuária antes da definição da solução de interface.
+Além disso, será importante compreender quais acontecimentos durante a chuva fazem Viviane modificar o planejamento inicial e quais critérios utiliza para considerar que o comércio está suficientemente preparado.
+
+Essas informações poderão ser utilizadas posteriormente para detalhar as tarefas, necessidades, dificuldades e decisões envolvidas na preparação do comércio antes da definição da solução de interface.
 
 ## Cenário C03 — Preparação do morador durante previsão de chuva intensa
 
 **Autor(a):** Victor Pimentel Lario — 22.125.064-0  
 **Persona(s) relacionada(s):** P02  
-**Necessidade relacionada:** Saber se o risco de alagamento da região em que mora é alto  
+**Necessidade relacionada:** R03  
 **Situação concreta da Entrega 1 relacionada:** Morador acompanhando as condições da região onde vive antes ou durante períodos de chuva intensa.  
 **Hipóteses ainda presentes:** H05  
 
@@ -192,143 +200,153 @@ Sem conseguir avaliar com segurança a situação, Victor pode ter dificuldade p
 
 ### 2. Questões de refinamento
 
-| **#** | **Questão** | **Por que precisa ser respondida** | **Fonte/forma de obter resposta** |
-| ----- | ----------- | ---------------------------------- | --------------------------------- |
-| Q1 | Quais informações Victor considera mais importantes para entender se sua região apresenta risco de alagamento? | Permite identificar quais dados ajudam Victor a compreender melhor a situação da região. | Entrevista com usuário |
-| Q2 | Em quais situações Victor costuma procurar informações sobre chuva e possíveis alagamentos? | Ajuda a compreender os acontecimentos que fazem surgir a necessidade de consultar informações. | Entrevista com usuário |
-| Q3 | Quais fontes Victor utiliza atualmente para acompanhar a chuva e as condições da região? | Permite identificar os recursos e tecnologias utilizados atualmente pelo usuário. | Entrevista com usuário |
-| Q4 | O que faz Victor confiar ou desconfiar de uma informação sobre risco de alagamento? | Permite investigar diretamente quais informações adicionais aumentam sua confiança na avaliação do risco. | Entrevista com usuário |
-| Q5 | Como Victor decide se precisa tomar alguma medida preventiva em sua casa? | Permite compreender os critérios utilizados atualmente para transformar uma informação sobre chuva em uma decisão. | Entrevista com usuário |
-| Q6 | Quais informações técnicas Victor considera difíceis de interpretar? | Ajuda a detalhar as principais dificuldades de compreensão encontradas durante a consulta. | Entrevista com usuário |
-| Q7 | Quais características da região Victor acredita que podem influenciar a ocorrência de alagamentos? | Permite identificar quais informações sobre a região fazem sentido para o usuário e podem contribuir para sua avaliação. | Entrevista com usuário |
-| Q8 | Que acontecimentos durante uma chuva fazem Victor reconsiderar a situação e tomar novas medidas? | Permite identificar eventos que podem alterar suas decisões depois que a chuva começa. | Entrevista com usuário |
-| Q9 | Como Victor avalia se conseguiu se preparar adequadamente para um período de chuva intensa? | Permite compreender como ele identifica se seu objetivo foi alcançado. | Entrevista com usuário |
+| # | Elemento | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
+|---|---|---|---|---|
+| Q1 | Ambiente/contexto | Que limitações Victor encontra ao buscar informações pelo celular durante períodos de chuva, como dificuldade de navegação, conexão ou compreensão das informações apresentadas? | Permite compreender como suas limitações tecnológicas e o contexto doméstico afetam a consulta. | Análise da equipe [H] |
+| Q2 | Atores | Familiares, vizinhos ou outras pessoas da região ajudam Victor a avaliar a situação ou decidir se precisa se preparar? | Permite identificar outras pessoas que participam ou influenciam sua decisão. | Análise da equipe [H] |
+| Q3 | Objetivos | Quando existe dúvida sobre o risco, Victor prefere se preparar preventivamente mesmo podendo realizar ações desnecessárias ou continuar a rotina até ter mais certeza? | Permite identificar conflitos entre prevenção, esforço e continuidade da rotina. | Análise da equipe [H] |
+| Q4 | Planejamento | Que experiências anteriores com chuvas ou alagamentos Victor utiliza para decidir quais medidas preventivas deve tomar e em que ordem? | Permite compreender como experiências anteriores influenciam seu planejamento doméstico. | Análise da equipe [H] |
+| Q5 | Ações | Quais ações Victor realiza em casa quando decide se preparar para uma possível situação de alagamento? | Permite identificar as práticas concretas de proteção da residência e dos bens. | Análise da equipe [H] |
+| Q6 | Eventos | Que sinais durante a chuva fazem Victor perceber que a situação está piorando e que precisa tomar novas medidas? | Permite identificar acontecimentos que podem alterar o planejamento inicial. | Análise da equipe [H] |
+| Q7 | Avaliação | Como Victor decide que sua casa e seus bens estão suficientemente protegidos para a situação prevista? | Permite compreender como ele avalia se a preparação realizada foi adequada. | Análise da equipe [H] |
 
 ### 3. Cenário refinado
 
 Em um dia com previsão de chuva intensa, Victor Merker Binda está em casa acompanhando as notícias sobre as condições do tempo. Como mora em uma região que pode sofrer impactos durante períodos de chuva forte, ele começa a se preocupar com a possibilidade de ocorrer algum alagamento ou inundação próximo à sua residência.
 
-[NOVO: Victor considera principalmente a intensidade da chuva, a possibilidade de alagamentos na região e informações sobre ocorrências próximas para tentar compreender a situação. [Q1] Ele costuma procurar essas informações quando vê notícias sobre previsão de chuva forte, percebe que o tempo está piorando ou recebe informações sobre problemas em outras regiões da cidade. [Q2]]
+[NOVO: [H] Quando tenta buscar informações pelo celular, Victor pode encontrar dificuldades para navegar entre diferentes aplicativos, localizar informações específicas sobre sua região ou compreender dados apresentados de forma técnica. Essas limitações podem fazer com que ele prefira fontes mais simples ou familiares. [Q1]]
 
-Victor procura informações sobre a previsão do tempo e sobre a situação da região onde mora. Costuma acompanhar notícias pela televisão e, quando percebe que a chuva pode ser mais intensa, também utiliza o celular para procurar informações adicionais. [NOVO: Entre as fontes utilizadas estão programas de televisão, sites de notícias, aplicativos de previsão do tempo e informações encontradas em buscas pelo celular. [Q3]]
+Victor procura informações sobre a previsão do tempo e sobre a situação da região onde mora. Costuma acompanhar notícias pela televisão e, quando percebe que a chuva pode ser mais intensa, também utiliza o celular para procurar informações adicionais.
+
+[NOVO: [H] Além dessas fontes, familiares, vizinhos ou outras pessoas da região podem influenciar sua percepção da situação, principalmente quando relatam acúmulo de água, problemas em ruas próximas ou experiências recentes com a chuva. [Q2]]
 
 Entretanto, encontra dados apresentados em diferentes fontes e nem sempre consegue entender se as informações gerais sobre chuva representam um risco real para sua região.
 
-[NOVO: Victor tende a confiar mais em uma informação quando consegue entender por que determinada região pode apresentar risco, relacionando a intensidade da chuva com informações sobre ocorrências anteriores ou características conhecidas do local. Quando encontra apenas uma porcentagem ou uma informação isolada, sente mais dificuldade para avaliar a situação. [Q4]]
+[NOVO: [H] Quando existe incerteza, Victor pode ficar dividido entre se preparar preventivamente, mesmo correndo o risco de realizar ações desnecessárias, ou continuar sua rotina enquanto espera por sinais mais claros de que a situação pode se agravar. [Q3]]
 
-Como possui apenas conhecimentos básicos sobre chuvas e alagamentos, Victor encontra dificuldade para interpretar porcentagens, mapas ou informações mais técnicas. [NOVO: Dados como quantidade de precipitação em milímetros, probabilidades apresentadas sem explicação e representações cartográficas mais complexas podem dificultar sua compreensão. [Q6]]
+Como possui apenas conhecimentos básicos sobre chuvas e alagamentos, Victor encontra dificuldade para interpretar porcentagens, mapas ou informações mais técnicas.
 
-Mesmo quando encontra uma previsão de chuva forte, não sabe com clareza quais características da região podem aumentar o risco ou se a intensidade prevista é suficiente para exigir alguma preparação. [NOVO: Pela experiência cotidiana, Victor considera fatores como histórico de alagamentos próximos, intensidade da chuva e características que observa na região, mas não sabe exatamente qual é a influência de cada fator sobre o risco. [Q7]]
+[NOVO: [H] Para decidir como se preparar, Victor pode se apoiar em experiências anteriores com chuvas fortes na região. Caso já tenha observado determinados problemas em situações semelhantes, tende a priorizar primeiro as medidas que considera mais importantes para proteger sua casa e seus bens. [Q4]]
 
-[NOVO: Para decidir se precisa tomar alguma medida preventiva, Victor compara as informações encontradas com experiências anteriores. Quando percebe que a chuva prevista parece mais intensa ou que existem relatos de problemas próximos à sua região, começa a considerar medidas para proteger seus bens e evitar situações perigosas. [Q5]]
+[NOVO: [H] Quando decide se preparar, Victor pode realizar ações como retirar objetos de locais mais vulneráveis, elevar ou proteger bens que possam ser atingidos pela água, verificar entradas da residência e organizar itens importantes para facilitar uma reação caso a situação piore. [Q5]]
 
-[NOVO: Durante a chuva, aumento da intensidade da precipitação, relatos de alagamentos próximos, acúmulo de água nas ruas ou informações divulgadas nas notícias podem fazer Victor reconsiderar a situação e tomar novas medidas de prevenção. [Q8]]
+Mesmo quando encontra uma previsão de chuva forte, não sabe com clareza quais características da região podem aumentar o risco ou se a intensidade prevista é suficiente para exigir alguma preparação.
 
-Sem conseguir avaliar com segurança a situação, Victor pode ter dificuldade para decidir se precisa tomar alguma medida preventiva para proteger sua casa e seus bens ou se pode continuar sua rotina normalmente. [NOVO: Victor considera que conseguiu se preparar adequadamente quando consegue tomar as medidas necessárias antes que a situação se agrave e evita danos à casa, aos seus bens ou sua exposição a uma situação perigosa. [Q9]]
+[NOVO: [H] Durante a chuva, sinais como aumento rápido da intensidade, acúmulo de água nas ruas, relatos de alagamentos próximos ou informações divulgadas nas notícias podem fazer Victor perceber que a situação está piorando e tomar novas medidas de prevenção. [Q6]]
+
+Sem conseguir avaliar com segurança a situação, Victor pode ter dificuldade para decidir se precisa tomar alguma medida preventiva para proteger sua casa e seus bens ou se pode continuar sua rotina normalmente.
+
+[NOVO: [H] Victor tende a considerar sua casa suficientemente preparada quando acredita que os bens mais vulneráveis estão protegidos, que realizou as principais ações ao seu alcance e que consegue continuar acompanhando a situação sem precisar agir imediatamente. [Q7]]
 
 ### 4. Elementos extraídos
 
 | **Elemento** | **Evidência no cenário** |
 | ------------ | ------------------------ |
-| Ator(es) | Victor Merker Binda, morador mais velho que possui conhecimento básico sobre chuvas e alagamentos e familiaridade limitada com ferramentas digitais. |
-| Objetivo(s) | Entender se a região onde mora apresenta risco de alagamento e decidir se precisa tomar alguma medida preventiva. |
-| Contexto | Em casa, antes ou durante um período de chuva intensa, após receber informações sobre possibilidade de chuva forte ou perceber piora nas condições do tempo. |
-| Recursos/informações | Televisão, notícias, aplicativos de previsão do tempo, buscas pelo celular, informações sobre chuva, ocorrências anteriores e características da região. |
-| Ações | Acompanhar notícias, procurar informações adicionais, comparar diferentes fontes, relacionar a chuva com sua região, avaliar a gravidade da situação e decidir se precisa tomar medidas preventivas. |
-| Problemas/rupturas | Informações distribuídas em diferentes fontes, dificuldade para interpretar porcentagens, mapas e dados técnicos, dificuldade para relacionar a previsão geral de chuva ao risco específico da região e incerteza sobre quais características locais influenciam o risco. |
-| Consequências | Victor pode deixar de tomar medidas preventivas necessárias, preparar-se tarde demais, tomar medidas desnecessárias ou ficar exposto a possíveis danos em sua casa e seus bens durante um alagamento. |
+| Ator(es) | Victor Merker Binda, morador mais velho que possui conhecimento básico sobre chuvas e alagamentos e familiaridade limitada com ferramentas digitais. [H] Familiares, vizinhos ou outras pessoas da região também podem influenciar sua percepção da situação por meio de relatos e informações sobre problemas próximos. |
+| Objetivo(s) | Entender se a região onde mora apresenta risco de alagamento e decidir se precisa tomar medidas preventivas para proteger sua casa e seus bens. |
+| Contexto | Victor está em casa antes ou durante um período de chuva intensa, acompanhando notícias e procurando informações sobre sua região. [H] A familiaridade limitada com ferramentas digitais pode dificultar a busca e a interpretação das informações pelo celular. |
+| Recursos/informações | Televisão, notícias, aplicativos de previsão do tempo, buscas pelo celular, informações sobre chuva e ocorrências próximas e [H] relatos de familiares, vizinhos ou outras pessoas da região. |
+| Ações | Acompanhar notícias, procurar informações adicionais, comparar diferentes fontes e [H] utilizar experiências anteriores para decidir se precisa proteger bens, retirar objetos de locais vulneráveis ou realizar outras medidas preventivas na residência. |
+| Problemas/rupturas | Informações distribuídas em diferentes fontes, dificuldade para interpretar porcentagens, mapas e dados técnicos, dificuldade para relacionar uma previsão geral ao risco específico da região e [H] dificuldade de navegação ou compreensão ao utilizar ferramentas digitais. |
+| Consequências | Victor pode deixar de tomar medidas preventivas necessárias, preparar-se tarde demais, realizar ações desnecessárias ou ficar exposto a possíveis danos em sua casa e seus bens durante um alagamento. |
 
 ### 5. Implicações para as próximas entregas
 
-As próximas entregas devem aprofundar principalmente as tarefas de buscar informações sobre chuva e alagamentos, compreender a situação específica da região onde Victor mora e decidir se existe necessidade de tomar alguma medida preventiva.
+As próximas entregas devem aprofundar principalmente as tarefas de acompanhar informações sobre chuva e alagamentos, compreender o risco específico da região onde Victor mora e decidir se é necessário realizar medidas preventivas na residência.
 
-Também será necessário investigar quais informações adicionais aumentam a confiança de Victor na avaliação do risco, quais características da região ele considera relevantes, quais tipos de informação apresentam maior dificuldade de compreensão e quais fontes utiliza atualmente.
+Também será necessário investigar como as limitações tecnológicas afetam a busca por informações, quais pessoas influenciam suas decisões, quais experiências anteriores utiliza como referência e quais ações costuma realizar para proteger sua casa e seus bens.
 
-Esses dados poderão ser utilizados posteriormente para detalhar as tarefas, necessidades e dificuldades do usuário e compreender como informações sobre chuva e características da região influenciam sua confiança antes da definição da solução de interface.
+Além disso, será importante compreender quais acontecimentos durante a chuva fazem Victor modificar sua decisão e quais critérios utiliza para considerar que sua residência está suficientemente preparada.
 
-> Repita para C02, C03... com autoria individual.
+Essas informações poderão ser utilizadas posteriormente para detalhar as tarefas, necessidades e dificuldades do usuário, além de compreender como sua experiência cotidiana e sua familiaridade com tecnologia influenciam a tomada de decisão antes da definição da solução de interface.
+
 ## Cenário C04 — Ida para a prova de transporte público com previsão de temporal
 
-**Autor(a):** Henrique Hodel Babler — 22.125.084-8    
-**Persona(s) relacionada(s):** P04    
-**Necessidade relacionada:** R04    
-**Situação concreta da Entrega 1 relacionada:** Seção 4.5 (deslocamento durante chuva intensa), com um recorte novo: a usuária depende de transporte público e **não controla o itinerário** do veículo. A inclusão se justifica pelas dores e comportamentos registrados na P04 (descobrir o alagamento só durante o trajeto, transporte público preso em regiões afetadas, decidir entre trocar de caminho, sair mais cedo ou aguardar).    
+**Autor(a):** Henrique Hodel Babler — 22.125.084-8  
+**Persona(s) relacionada(s):** P04  
+**Necessidade relacionada:** R04  
+**Situação concreta da Entrega 1 relacionada:** Seção 4.5 (deslocamento durante chuva intensa), com um recorte novo: a usuária depende de transporte público e não controla diretamente o itinerário do veículo.  
 **Hipóteses ainda presentes:** H02, H03, H06  
 
 ### 1. Cenário inicial
 
-Em uma quinta-feira de março, Juliana Ferreira Costa, estudante universitária de 20 anos, tem prova às 19h. Para chegar à faculdade, ela pega um ônibus perto de casa até um terminal de integração e, de lá, segue de metrô. Em um dia comum, o trajeto leva cerca de 1h10, então ela costuma sair às 17h40.
+Em uma quinta-feira de março, Juliana Ferreira Costa, estudante universitária de 20 anos, tem uma prova às 19h. Para chegar à faculdade, ela pega um ônibus perto de casa até um terminal de integração e, de lá, segue de metrô. Em um dia comum, o trajeto leva aproximadamente 1h10.
 
-Às 16h30, ainda em casa, Juliana recebe no celular uma notificação do aplicativo de previsão do tempo: alerta de temporal para o fim da tarde na cidade de São Paulo. Ela começa a pensar se deve sair mais cedo, se deve trocar o ônibus por um caminho de trem e metrô, que é cerca de 40 minutos mais longo, ou se pode manter o trajeto de sempre.
+Ainda em casa, Juliana recebe no celular um alerta de temporal para o fim da tarde em São Paulo. Ela começa a pensar se deve sair mais cedo, utilizar uma alternativa de transporte ou manter o trajeto habitual.
 
-Primeiro, Juliana abre o aplicativo de mapas e traça a rota habitual. O aplicativo mostra o tempo normal de 1h10, sem nenhum aviso. Ela conclui que, por enquanto, está tudo bem, mas desconfia, porque a chuva ainda não começou. Em seguida, volta ao aplicativo de previsão e vê o radar com uma mancha vermelha se aproximando e a indicação de 30 a 50 mm de chuva acumulada. Ela não sabe se essa quantidade é suficiente para alagar alguma via por onde o ônibus passa.
+Primeiro, consulta um aplicativo de mapas para verificar as condições do percurso. Em seguida, consulta a previsão do tempo e encontra informações indicando chuva intensa, mas não consegue compreender se os dados meteorológicos representam risco de alagamento nas vias por onde o ônibus passa.
 
-Juliana então procura em uma rede social um perfil que divulga informações de trânsito e encontra registros de alagamento em outras partes da cidade, com nomes de ruas e avenidas que ela não conhece. Como sabe apenas onde o ônibus para, e não por quais ruas ele circula, não consegue dizer se alguma dessas ocorrências está no caminho da sua linha. No grupo da turma, um colega escreve que "a avenida perto do terminal já está enchendo", enquanto outro responde que "aqui não está chovendo nada". As mensagens não informam horário nem local exato, e Juliana não sabe em qual acreditar.
+Juliana também procura informações sobre ocorrências de alagamento e encontra registros associados a ruas e avenidas que não reconhece. Embora conheça os pontos em que embarca e desembarca, não conhece todo o itinerário viário da linha de ônibus e, por isso, encontra dificuldade para relacionar essas ocorrências ao seu deslocamento.
 
-Às 17h20, a chuva começa forte. Juliana abre o aplicativo de transporte público e vê que o ônibus que pegaria está parado há dez minutos, duas paradas antes do seu ponto. Ela não consegue saber se é apenas trânsito ou se há um alagamento mais à frente. Com pouco tempo para decidir, precisa escolher entre arriscar o trajeto habitual, podendo ficar presa dentro de um ônibus parado em uma via alagada e perder a prova, ou optar por precaução pelo caminho mais longo, mesmo sem saber se o risco era real.
+Além disso, encontra relatos diferentes de pessoas sobre as condições da cidade. Algumas informações indicam problemas em determinadas regiões, enquanto outras afirmam que ainda não há chuva ou interrupções.
+
+Quando a chuva começa a se intensificar, Juliana percebe alterações no tempo previsto do trajeto e no funcionamento do transporte. Porém, não consegue identificar com clareza se essas mudanças estão relacionadas a trânsito normal, chuva intensa ou possíveis alagamentos.
+
+Com pouco tempo para decidir, Juliana precisa escolher entre manter o trajeto habitual, buscar outra alternativa de transporte ou sair mais cedo, mesmo sem conseguir avaliar com segurança qual opção apresenta menor risco de atraso ou exposição a uma situação de alagamento.
 
 ### 2. Questões de refinamento
 
-| # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
-|---|---|---|---|
-| Q1 | Por que chegar no horário nesse dia é mais crítico do que em um dia comum? | Mostra o peso do objetivo e explica a pressão sobre a decisão. | Análise da equipe [H]] |
-| Q2 | Chegar à faculdade é o único objetivo de Juliana nesse deslocamento? | Verifica se existe um objetivo concorrente, como não ficar exposta ao alagamento. | Análise da equipe [H]] |
-| Q3 | Onde e em que condições físicas Juliana consulta as informações ao longo do deslocamento? | O contexto muda bastante entre estar em casa, no ponto ou dentro do ônibus. | Análise da equipe [H]] |
-| Q4 | Que pressões existem sobre a decisão de Juliana? | Identifica restrições de tempo, de recursos e sociais. | Análise da equipe [H]] |
-| Q5 | De quem depende o alcance do objetivo de Juliana? | Revela atores que não aparecem no cenário inicial. | Análise da equipe [H]] |
-| Q6 | Quem precisa ser avisado sobre a decisão ou sobre a chegada de Juliana? | Identifica terceiros que dependem do resultado do deslocamento. | Análise da equipe [H]] |
-| Q7 | Quais estratégias alternativas Juliana conhece e quando escolhe cada uma? | Mostra as opções reais de decisão e os critérios usados. | Análise da equipe [H]] |
-| Q8 | Juliana sabe por quais ruas e avenidas a sua linha de ônibus circula? | Verifica se ela tem o conhecimento necessário para relacionar ocorrências ao trajeto. | Análise da equipe [H]] |
-| Q9 | As informações de alagamento que Juliana encontra podem ser relacionadas diretamente à linha e ao terminal que ela usa? | Verifica se as fontes atuais falam a mesma "língua" do deslocamento dela. | Análise da equipe [H]] |
-| Q10 | Como Juliana gostaria de tomar essa decisão, comparado a como toma hoje? | Contrapõe a forma atual à forma desejada, sem definir a solução. | Análise da equipe [H]] |
-| Q11 | Em que ordem Juliana consulta as fontes e por que segue essa ordem? | Detalha a sequência de ações e o hábito que a orienta. | Análise da equipe [H]] |
-| Q12 | Que sinais dos aplicativos ou do ambiente fazem Juliana perceber que a situação mudou? | Identifica os retornos que disparam uma nova avaliação. | Análise da equipe [H]] |
-| Q13 | Como Juliana sabe, a cada consulta, se já tem informação suficiente para decidir? | Mostra o critério de avaliação e onde o ciclo de consultas trava. | Análise da equipe [H]] |
-| Q14 | Quais são as consequências de uma decisão incorreta para Juliana? | Dimensiona o impacto do problema para os dois lados da decisão. | Análise da equipe [H]] |
+| # | Elemento | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
+|---|---|---|---|---|
+| Q1 | Ambiente/contexto | Em quais condições Juliana costuma consultar informações quando já iniciou o deslocamento, como no ponto de ônibus, terminal ou dentro do transporte? | Permite compreender como movimento, chuva, atenção dividida e outras condições podem limitar a consulta. | Análise da equipe [H] |
+| Q2 | Atores | Quais pessoas ou organizações podem influenciar ou limitar a decisão de Juliana durante o deslocamento? | Permite identificar dependências relacionadas ao transporte, faculdade e outras pessoas envolvidas. | Análise da equipe [H] |
+| Q3 | Objetivos | Quando chegar no horário entra em conflito com evitar uma situação de risco, qual objetivo Juliana tende a priorizar? | Permite compreender como ela lida com objetivos concorrentes. | Análise da equipe [H] |
+| Q4 | Planejamento | Que alternativas de deslocamento Juliana considera e quais critérios utiliza para escolher entre elas? | Permite compreender como planeja mudanças de modal, horário ou percurso. | Análise da equipe [H] |
+| Q5 | Ações | Em que ordem Juliana costuma consultar as diferentes fontes e como tenta relacionar as informações ao transporte que utiliza? | Permite detalhar como a atividade é realizada atualmente e onde ocorre maior esforço. | Análise da equipe [H] |
+| Q6 | Eventos | Que sinais durante o deslocamento fazem Juliana perceber que seu planejamento inicial pode não funcionar mais? | Permite identificar eventos que exigem uma nova decisão. | Análise da equipe [H] |
+| Q7 | Avaliação | Como Juliana decide que possui informação suficiente para escolher entre manter ou alterar seu deslocamento? | Permite compreender o critério utilizado para encerrar a busca e tomar uma decisão. | Análise da equipe [H] |
 
 ### 3. Cenário refinado
 
-Em uma quinta-feira de março, Juliana Ferreira Costa, estudante universitária de 20 anos, tem prova às 19h. [Q1] [NOVO: A disciplina não oferece prova substitutiva sem justificativa formal, e o professor costuma não permitir a entrada de alunos com mais de 20 minutos de atraso. Por isso, nesse dia, chegar no horário pesa muito mais do que em uma aula comum. [Q1] [Q5]] Para chegar à faculdade, ela pega um ônibus perto de casa até um terminal de integração e, de lá, segue de metrô. Em um dia comum, o trajeto leva cerca de 1h10, então ela costuma sair às 17h40.
+Em uma quinta-feira de março, Juliana Ferreira Costa, estudante universitária de 20 anos, tem uma prova às 19h. Para chegar à faculdade, ela pega um ônibus perto de casa até um terminal de integração e, de lá, segue de metrô. Em um dia comum, o trajeto leva aproximadamente 1h10.
 
-Às 16h30, ainda em casa, Juliana recebe no celular uma notificação do aplicativo de previsão do tempo: alerta de temporal para o fim da tarde na cidade de São Paulo. [Q12] Ela começa a pensar se deve sair mais cedo, se deve trocar o ônibus por um caminho de trem e metrô, que é cerca de 40 minutos mais longo, ou se pode manter o trajeto de sempre. [Q7] [NOVO: Ela conhece também outras duas alternativas: pedir um carro por aplicativo, que é caro e também pode ficar preso no trânsito, ou não ir e tentar justificar a ausência depois, o que considera o último recurso. Costuma escolher o trem e metrô apenas quando tem certeza de que o caminho do ônibus está comprometido, porque ele exige sair às 17h e encurta seu tempo de revisão para a prova. [Q7] [Q4]]
+Ainda em casa, Juliana recebe no celular um alerta de temporal para o fim da tarde em São Paulo. Ela começa a pensar se deve sair mais cedo, utilizar uma alternativa de transporte ou manter o trajeto habitual.
 
-[NOVO: Juliana não quer apenas chegar à faculdade: também quer evitar ficar presa dentro de um ônibus parado em uma via alagada, situação que já viveu uma vez e que a deixou com medo. Se precisasse escolher, preferiria chegar atrasada a ficar presa na água. [Q2]]
+[NOVO: [H] Juliana tende a considerar tanto a necessidade de chegar no horário quanto sua segurança durante o deslocamento. Quando percebe possibilidade concreta de ficar presa em uma região alagada, pode aceitar um trajeto mais demorado para reduzir sua exposição ao risco. [Q3]]
 
-Primeiro, Juliana abre o aplicativo de mapas e traça a rota habitual. [Q11] [NOVO: Começa por ele por hábito, já que é o mesmo aplicativo que usa todos os dias para conferir o tempo de viagem. [Q11]] O aplicativo mostra o tempo normal de 1h10, sem nenhum aviso. Ela conclui que, por enquanto, está tudo bem, mas desconfia, porque a chuva ainda não começou. [Q13] Em seguida, volta ao aplicativo de previsão e vê o radar com uma mancha vermelha se aproximando e a indicação de 30 a 50 mm de chuva acumulada. Ela não sabe se essa quantidade é suficiente para alagar alguma via por onde o ônibus passa. [Q9]
+[NOVO: [H] Entre as alternativas consideradas podem estar sair mais cedo, utilizar outro modal de transporte ou escolher uma combinação diferente de ônibus, trem ou metrô. A escolha pode depender do tempo adicional de viagem, do custo e das informações disponíveis sobre as condições do percurso. [Q4]]
 
-Juliana então procura em uma rede social um perfil que divulga informações de trânsito e encontra registros de alagamento em outras partes da cidade, com nomes de ruas e avenidas que ela não conhece. Como sabe apenas onde o ônibus para, e não por quais ruas ele circula, não consegue dizer se alguma dessas ocorrências está no caminho da sua linha. [Q8] [Q9] [NOVO: Juliana conhece bem o ponto de embarque, o terminal e um ou outro trecho que vê pela janela, mas nunca precisou saber o itinerário completo, e o aplicativo de transporte mostra a linha como uma sequência de pontos, não como uma lista de ruas. Para tentar relacionar uma ocorrência à linha, ela precisaria abrir o mapa, procurar a rua citada e comparar visualmente com o caminho do ônibus, o que leva tempo e nem sempre dá certo. [Q8] [Q9]] No grupo da turma, um colega escreve que "a avenida perto do terminal já está enchendo", enquanto outro responde que "aqui não está chovendo nada". [Q5] As mensagens não informam horário nem local exato, e Juliana não sabe em qual acreditar. [Q13]
+Primeiro, Juliana consulta um aplicativo de mapas para verificar as condições do percurso. Em seguida, consulta a previsão do tempo e encontra informações indicando chuva intensa, mas não consegue compreender se os dados meteorológicos representam risco de alagamento nas vias por onde o ônibus passa.
 
-[NOVO: A cada consulta, Juliana só se sente segura para decidir quando duas fontes diferentes apontam na mesma direção. Quando as fontes discordam ou falam de lugares que ela não reconhece, volta a consultar outra fonte, e esse ciclo consome justamente o tempo que ela tinha para decidir com antecedência. [Q13] [Q4]]
+[NOVO: [H] Juliana pode começar pela ferramenta que utiliza habitualmente para verificar o tempo de viagem, depois consultar a previsão do tempo e, caso ainda tenha dúvidas, procurar informações sobre ocorrências de alagamento ou transporte público. Para relacionar os dados encontrados com seu deslocamento, tenta comparar nomes de ruas, pontos, terminais e trechos conhecidos da linha. [Q5]]
 
-Às 17h20, a chuva começa forte. [Q12] Juliana abre o aplicativo de transporte público e vê que o ônibus que pegaria está parado há dez minutos, duas paradas antes do seu ponto. [Q12] [NOVO: Ao mesmo tempo, o aplicativo de mapas, que antes indicava 1h10, passa a mostrar 1h50 para o mesmo trajeto. Para Juliana, esses dois sinais juntos indicam que algo mudou, mas não dizem o quê. [Q12]] Ela não consegue saber se é apenas trânsito ou se há um alagamento mais à frente. [Q13] [NOVO: Também percebe que, se for até o ponto, terá de consultar o celular de pé, segurando o guarda-chuva, com a bateria já em 30% e sinal fraco quando estiver no metrô. Por isso, considera que a melhor hora para decidir é ainda em casa. [Q3] [Q4]]
+Juliana também procura informações sobre ocorrências de alagamento e encontra registros associados a ruas e avenidas que não reconhece. Embora conheça os pontos em que embarca e desembarca, não conhece todo o itinerário viário da linha de ônibus e, por isso, encontra dificuldade para relacionar essas ocorrências ao seu deslocamento.
 
-[NOVO: A decisão dela depende de pessoas que não controla: a operadora e o motorista do ônibus, que podem desviar ou interromper a viagem sem que ela saiba antes; os colegas do grupo, cujas informações ela não consegue conferir; e o professor, que define se um atraso será aceito. [Q5] Além disso, a mãe de Juliana pede que ela avise por mensagem quando chegar à faculdade em dias de chuva forte, e, se decidir pelo caminho mais longo ou se atrasar, ela precisa avisar algum colega para comunicar o professor. [Q6]]
+Além disso, encontra relatos diferentes de pessoas sobre as condições da cidade. Algumas informações indicam problemas em determinadas regiões, enquanto outras afirmam que ainda não há chuva ou interrupções.
 
-[NOVO: Juliana gostaria de tomar essa decisão uma única vez, ainda em casa e com antecedência, sabendo se o caminho que ela realmente faz, e não a cidade inteira, tem chance de ser afetado. Hoje, ao contrário, ela decide aos poucos, em cima da hora, juntando pedaços de informação de fontes que não conversam entre si. [Q10]]
+[NOVO: [H] A decisão de Juliana também pode depender de atores que ela não controla, como a operadora de transporte, o motorista do ônibus, possíveis alterações de itinerário e regras relacionadas ao horário de chegada na faculdade. Colegas ou familiares também podem influenciar sua percepção da situação por meio de relatos. [Q2]]
 
-Com pouco tempo para decidir, precisa escolher entre arriscar o trajeto habitual, podendo ficar presa dentro de um ônibus parado em uma via alagada e perder a prova, ou optar por precaução pelo caminho mais longo, mesmo sem saber se o risco era real. [Q14] [NOVO: Se arriscar e errar, pode perder a prova, ficar exposta a uma situação de perigo dentro do ônibus e chegar em casa muito tarde. Se for por precaução e o alagamento não acontecer, perde cerca de 40 minutos e parte do tempo de revisão. Como só descobre se a escolha foi correta durante o próprio trajeto, Juliana costuma sair com a sensação de estar apostando, e não decidindo. [Q14] [Q13]]
+Quando a chuva começa a se intensificar, Juliana percebe alterações no tempo previsto do trajeto e no funcionamento do transporte. Porém, não consegue identificar com clareza se essas mudanças estão relacionadas a trânsito normal, chuva intensa ou possíveis alagamentos.
+
+[NOVO: [H] Aumento rápido do tempo estimado da viagem, ônibus parado por um período incomum, interrupção de uma linha, mudança brusca na intensidade da chuva ou novos relatos de alagamento podem fazer Juliana perceber que o planejamento inicial precisa ser revisto. [Q6]]
+
+[NOVO: [H] Caso precise consultar as informações depois de sair de casa, Juliana pode estar no ponto, terminal ou dentro do transporte, com atenção dividida entre o ambiente e o celular. Chuva, movimento de pessoas, necessidade de segurar objetos e condições de conexão podem dificultar uma consulta mais longa. [Q1]]
+
+Com pouco tempo para decidir, Juliana precisa escolher entre manter o trajeto habitual, buscar outra alternativa de transporte ou sair mais cedo, mesmo sem conseguir avaliar com segurança qual opção apresenta menor risco de atraso ou exposição a uma situação de alagamento.
+
+[NOVO: [H] Juliana tende a considerar que possui informação suficiente quando consegue relacionar a situação encontrada ao transporte que realmente utiliza e identificar uma alternativa que pareça viável. Quando as fontes continuam contraditórias ou não correspondem aos pontos, linhas ou terminais que conhece, permanece insegura e continua procurando novas informações. [Q7]]
 
 ### 4. Elementos extraídos
 
-| Elemento | Evidência no cenário |
-|---|---|
-| Ator(es) | Juliana (P04), estudante de 20 anos, alta familiaridade com aplicativos, dependente de transporte público e sem conhecimento do itinerário completo da linha. Atores secundários: motorista/operadora do ônibus, colegas do grupo da turma, professor da disciplina e mãe de Juliana. |
-| Objetivo(s) | Chegar a tempo para a prova das 19h **e** não ficar presa em um ônibus parado em via alagada. |
-| Contexto | Fim de tarde de quinta-feira em março, com alerta de temporal e prova às 19h; Juliana está em casa e precisa decidir com antecedência, sabendo que no ponto ou no metrô terá bateria baixa, guarda-chuva na mão e sinal fraco. |
-| Recursos/informações | Aplicativo de previsão do tempo, aplicativo de mapas, aplicativo de transporte público, perfil de trânsito em rede social, grupo da turma, experiência anterior com alagamentos. |
-| Ações | Abrir o aplicativo de mapas e traçar a rota; consultar o radar e a previsão; procurar ocorrências em perfil de trânsito na rede social; ler o grupo da turma; abrir o aplicativo de transporte público para ver a posição do ônibus; tentar comparar ruas citadas com o caminho da linha; decidir entre manter o trajeto ou trocar de modal e horário. |
-| Problemas/rupturas | Informações organizadas por rua e endereço, enquanto Juliana pensa o deslocamento por linha, ponto e terminal; informações que só mostram o problema depois que ele acontece, quando a decisão precisa ser antecipada; previsão genérica para a cidade inteira; mensagens contraditórias no grupo da turma; falta de controle sobre o itinerário do ônibus; ciclo de consultas que consome o tempo disponível para decidir. |
-| Consequências | Perder a prova; ficar exposta a perigo dentro de um ônibus em via alagada; chegar em casa muito tarde; ou, no erro oposto, perder 40 minutos e tempo de revisão sem necessidade. |
+| **Elemento** | **Evidência no cenário** |
+| ------------ | ------------------------ |
+| Ator(es) | Juliana Ferreira Costa, estudante universitária de 20 anos que depende de transporte público e possui alta familiaridade com smartphones e aplicativos. [H] Operadoras de transporte, motoristas, colegas e familiares também podem influenciar ou limitar suas decisões. |
+| Objetivo(s) | Chegar à faculdade dentro do horário necessário e evitar situações de risco relacionadas a possíveis alagamentos durante o deslocamento. |
+| Contexto | Fim de tarde com previsão de temporal, antes e durante um deslocamento por transporte público. [H] Depois de sair de casa, Juliana pode precisar consultar informações em movimento, com atenção dividida e sob condições ambientais desfavoráveis. |
+| Recursos/informações | Aplicativos de previsão do tempo, mapas, informações de transporte público, registros de alagamento, redes sociais, relatos de outras pessoas e informações sobre linhas, pontos e terminais. |
+| Ações | Consultar diferentes fontes, verificar o tempo previsto de viagem, acompanhar chuva e transporte, tentar relacionar ocorrências ao percurso utilizado e comparar alternativas de modal ou horário. |
+| Problemas/rupturas | Informações organizadas por ruas ou regiões que não correspondem à forma como Juliana pensa seu deslocamento, dificuldade para relacionar ocorrências à linha utilizada, informações contraditórias, falta de controle sobre o itinerário e pouco tempo para decidir. |
+| Consequências | Juliana pode se atrasar ou perder um compromisso importante, ficar presa em um transporte afetado por alagamentos, realizar um trajeto mais longo sem necessidade ou continuar o deslocamento sem saber se a decisão tomada foi adequada. |
 
 ### 5. Implicações para as próximas entregas
 
-Para quem depende de transporte público, a decisão não é por qual rua passar, mas **qual modal usar e a que horas sair**, e a referência espacial da usuária é a **linha e seus pontos**, não regiões ou endereços. Será necessário investigar se a consulta por região em um mapa (H02) corresponde à forma como esse perfil pensa o próprio deslocamento (H06).
+As próximas entregas devem aprofundar principalmente como usuários de transporte público relacionam informações de chuva e alagamentos com linhas, pontos, terminais e modais utilizados no deslocamento.
 
-O alerta recebido por Juliana era genérico para a cidade inteira e não a ajudou a decidir. Além de verificar se alertas são úteis (H03), será preciso entender que abrangência e que antecedência tornam um alerta relevante para esse tipo de decisão.
+Também será necessário investigar quais alternativas de transporte são consideradas em situações de chuva intensa, quais pessoas ou organizações influenciam essas decisões, quais sinais fazem o usuário alterar seu planejamento e quais limitações aparecem quando a consulta ocorre fora de casa.
 
-Tarefas que merecem análise na Entrega 5: relacionar informações de chuva e ocorrências ao trajeto de transporte público; decidir entre alternativas de modal e horário com antecedência; reavaliar a decisão quando surgem sinais novos (ônibus parado, aumento do tempo de rota).
+Além disso, será importante compreender se a unidade espacial mais útil para esse perfil é região, rua, linha, ponto ou terminal, além de verificar qual antecedência e nível de especificidade tornam uma informação ou alerta realmente útil para a tomada de decisão.
 
-Informações a coletar na Entrega 7: se usuários de transporte público conhecem o itinerário das linhas que usam; com quanta antecedência tomam esse tipo de decisão; quanto confiam em informações de grupos e redes sociais; quais alternativas de deslocamento consideram e em que situações.
+Essas informações poderão ser utilizadas posteriormente para detalhar as tarefas e necessidades da P04 e avaliar se hipóteses anteriores, como o uso de mapa por região e a utilidade de alertas, continuam adequadas para usuários que dependem de transporte público.
 
 ## Checklist
 

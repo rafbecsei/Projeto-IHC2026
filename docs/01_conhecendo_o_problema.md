@@ -420,6 +420,7 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 | H03 | Alertas de risco podem ser úteis para decisões preventivas. | É necessário saber se o alerta chega em momento útil e se o usuário consegue realizar alguma ação a partir dele. | Entrevistas, questionários e testes de cenários. |
 | H04 | Usuários não técnicos podem ter dificuldade para interpretar probabilidades e dados isolados. | Uma interpretação incorreta pode produzir uma decisão inadequada ou transformar risco em sensação de certeza. | Testes de compreensão e entrevistas com usuários. |
 | H05 | Informações adicionais sobre chuva e características da região podem ajudar na compreensão da estimativa. | É necessário descobrir quais informações realmente auxiliam a decisão e quais apenas aumentam a carga cognitiva. | Entrevistas e comparação de protótipos com diferentes níveis de detalhamento. |
+| H06 | Para usuários que dependem de transporte público, a forma mais útil de relacionar o risco ao deslocamento pode ser por linha, ponto, terminal ou modal, e não apenas por região ou rua. | A forma como o usuário pensa o próprio deslocamento pode influenciar diretamente como as informações de risco devem ser organizadas e consultadas. | Entrevistas e testes com usuários de transporte público e comparação de protótipos. |
 
 Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 

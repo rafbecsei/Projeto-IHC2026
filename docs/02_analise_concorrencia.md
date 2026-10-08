@@ -1,7 +1,7 @@
 # Entrega 2 — Público-alvo e análise de concorrência
 
 **Data:** 26/08/2026  
-**Status:** 🟩 Concluído  
+**Status:** 🟦 Revisada após feedback  
 **Responsabilidade mínima:** cada integrante analisa pelo menos 1 concorrente/interface representativa; a equipe produz síntese comparativa.
 
 ## Objetivo da atividade
@@ -322,3 +322,14 @@ Liste recomendações com origem explícita.
 - [ ] Opiniões de UX têm fonte.
 - [ ] A síntese compara critérios comuns e produz recomendações.
 - [ ] Não há “copiar porque o concorrente faz”; há justificativa de adequação ao público/contexto.
+
+## Histórico de revisões
+
+| O que foi alterado | Motivo |
+|---|---|
+| Refinamento da definição do público-alvo. | Manter consistência com o recorte definido na Entrega 1. |
+| Revisão da análise da OpenWeather. | Priorizar aspectos de interface e experiência do usuário em vez de aspectos técnicos da API. |
+| Complementação e padronização das análises dos sistemas similares. | Melhorar a comparação entre as soluções analisadas. |
+| Inclusão e organização das capturas de tela. | Tornar as evidências visuais das análises mais claras e rastreáveis. |
+| Revisão das recomendações de design. | Tratar as recomendações como direções a investigar e não como requisitos já definidos. |
+| Atualização das evidências relacionadas às hipóteses H01 a H05. | Registrar indícios encontrados sem considerar as hipóteses como validadas. |

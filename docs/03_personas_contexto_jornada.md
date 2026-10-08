@@ -1,7 +1,7 @@
 # Entrega 3 — Personas, mapa de empatia, contexto de uso e jornada
 
 **Data:** 02/09/2026  
-**Status:** 🟩 Concluído  
+**Status:** 🟦 Revisada após feedback  
 **Responsabilidade:** 1 persona por integrante; 1 mapa de empatia, 1 contexto de uso consolidado e 1 jornada por equipe (salvo orientação diferente do docente).
 
 ## Objetivo da atividade
@@ -264,3 +264,16 @@ Os cenários e tarefas seguintes devem considerar principalmente a necessidade d
 - [ ] Papéis administrativos, técnicos e decisórios só foram criados quando possuem objetivos/tarefas diferentes.
 - [ ] Jornada possui etapas, dores e oportunidades e não é apenas wireflow.
 - [ ] IDs das personas foram adicionados à rastreabilidade.
+
+## Histórico de revisões
+
+| O que foi alterado | Motivo |
+|---|---|
+| P01 mantida como persona primária e prioritária, enquanto P02, P03 e P04 foram classificadas como secundárias. | Tornar a classificação das personas coerente com a priorização definida pela equipe. |
+| Inclusão de pequenas biografias e maior detalhamento das personas. | Facilitar a compreensão dos perfis e de seus contextos de uso. |
+| Padronização dos arquivos visuais das personas. | Manter consistência visual entre os artefatos. |
+| Revisão do mapa de empatia e inclusão de documentação textual. | Focar o conteúdo em chuva, alagamentos, deslocamento, incerteza e tomada de decisão. |
+| Aprofundamento dos contextos físico e social de uso. | Considerar melhor as condições reais que podem afetar a interação. |
+| Revisão da jornada da P01. | Deixar explícito que o comportamento descrito ainda representa uma hipótese. |
+| Revisão das decisões de design. | Evitar tratar soluções específicas como requisitos já validados. |
+| Inclusão de R03 e R04 na matriz de rastreabilidade. | Garantir representação das necessidades relacionadas às quatro personas. |

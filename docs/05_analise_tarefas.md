@@ -117,7 +117,7 @@ A tarefa começa quando Victor decide buscar informações sobre sua região e t
 
 ### Diagrama
 
-[HTA T02](../assets/05_tarefas/hta_t02.svg)
+![HTA T02](../assets/05_tarefas/HTA02.png)
 
 ### Decomposição e planos
 

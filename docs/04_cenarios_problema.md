@@ -1,7 +1,7 @@
 # Entrega 4 — Cenários de análise/problema
 
 **Data:** 16/09/2026  
-**Status:** 🟩 Concluído   
+**Status:** 🟦 Revisada após feedback     
 **Responsabilidade:** 1 solução completa por integrante
 
 ## Objetivo da atividade
@@ -359,3 +359,16 @@ Essas informações poderão ser utilizadas posteriormente para detalhar as tare
 - [ ] O refinamento mostra claramente o que foi adicionado/alterado.
 - [ ] Cenários são diferentes o suficiente para cobrir objetivos/problemas relevantes.
 - [ ] Cada cenário está ligado a persona/necessidade na matriz de rastreabilidade.
+
+## Histórico de revisões
+
+| O que foi alterado | Motivo |
+|---|---|
+| Revisão das questões de refinamento dos cenários C01 a C04. | Garantir questões relacionadas a contexto, atores, objetivos, planejamento, ações, eventos e avaliação. |
+| Substituição de perguntas que já estavam respondidas no cenário inicial. | Fazer com que as questões de refinamento realmente acrescentem novas informações. |
+| Alteração das fontes para `Análise da equipe [H]` quando não havia entrevista realizada. | Não apresentar respostas hipotéticas como evidências coletadas com usuários. |
+| Marcação das novas informações dos cenários refinados como hipóteses. | Manter clara a diferença entre conhecimento confirmado e suposição da equipe. |
+| Aprofundamento dos cenários C01, C02 e C03. | Diferenciar melhor as situações de deslocamento, comércio e residência. |
+| Revisão do C04. | Manter a riqueza do cenário sem tratar detalhes inventados como fatos. |
+| C03 passou a utilizar R03 e foi registrada a H06. | Corrigir identificadores e manter a rastreabilidade entre cenários e hipóteses. |
+| Remoção de resíduos do template e revisão dos identificadores. | Finalizar a entrega com maior consistência documental. |

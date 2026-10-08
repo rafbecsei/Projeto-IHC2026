@@ -1,7 +1,7 @@
 # Entrega 1 — Conhecendo o projeto, o usuário e o problema
 
 **Data:** 19/08/2026  
-**Status:** 🟩 Concluído  
+**Status:** 🟦 Revisada após feedback 
 **Responsabilidade:** 1 solução consolidada por equipe
 
 ## Objetivo da atividade
@@ -500,3 +500,13 @@ Essa síntese ajuda a apresentar o projeto para público não especializado sem 
 - [ ] Hipóteses prioritárias receberam IDs e foram para a rastreabilidade.
 - [ ] O recorte de IHC é viável para modelar, prototipar e avaliar no semestre.
 - [ ] A equipe consegue explicar problema humano → contribuição computacional → forma de uso.
+
+## Histórico de revisões
+
+| O que foi alterado | Motivo |
+|---|---|
+| Refinamento do público-alvo e do usuário priorizado. | Deixar mais claro quem é o usuário central do projeto de IHC. |
+| Revisão da separação entre fatos, hipóteses e decisões ainda não validadas. | Evitar tratar suposições da equipe como informações confirmadas. |
+| Ajustes no contexto de uso e nas necessidades do usuário. | Tornar o problema e a situação de uso mais específicos. |
+| Revisão das hipóteses H01 a H05. | Evitar que mapa, alertas e outras possíveis soluções fossem tratados como requisitos já definidos. |
+| Inclusão da H06. | Registrar uma nova hipótese identificada posteriormente na Entrega 4 sobre usuários de transporte público. |

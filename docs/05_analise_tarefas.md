@@ -29,20 +29,21 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 | ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
 |---|---|---|---|---|
-| T01 | Consultar e interpretar o risco de alagamento na região do comércio para decidir se são necessárias medidas preventivas | P03 / C02 | Frequência:  Criticidade: alta, pois a informação pode apoiar decisões preventivas e evitar possíveis prejuízos ao comércio. | Rafael Iamashita Becsei — 22.225.037-5 |
+| T01 | Consultar e interpretar o risco de alagamento na região do comércio para decidir se são necessárias medidas preventivas | P03 / C02 | Frequência: depende da época do ano de chuvas / Criticidade: alta, pois a informação pode apoiar decisões preventivas e evitar possíveis prejuízos ao comércio. | Rafael Iamashita Becsei — 22.225.037-5 |
 | T02 | {{...}} | {{P01/C01}} | {{...}} | {{...}} |
 
 > Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
 
 ---
 
-## HTA — T01 {{nome da tarefa}}
+## HTA — T01 Consultar e interpretar o risco de alagamento na região do comércio
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** Rafael Iamashita Becsei — 22.225.037-5
 
 ### Descrição da tarefa
 
-{{objetivo, ponto de início, conclusão esperada, contexto}}
+A tarefa tem como objetivo permitir que Viviane consulte as informações disponíveis sobre o risco de alagamento na região de seu comércio e, a partir da interpretação dessas informações, decida se precisa fechar o estabelecimento e se preparar para evitar prejuízos.
+A tarefa começa quando Viviane identifica a necessidade de verificar a situação da região antes ou durante um período de chuva intensa, e a tarefa termina quando ela consegue avaliar a situação e decidir se deve ou não tomar alguma medida preventiva.
 
 ### Diagrama
 
@@ -52,7 +53,18 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 | ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
-| 0 | {{objetivo principal}} | {{1 }} 2 > 3 / 1 ou 2 etc.> | {{...}} |
+| 0 | Avaliar o risco de alagamento da região e decidir se é necessário tomar medidas preventivas | 1 > 2 > 3 | A informação apresentada precisa permitir que a usuária compreenda a situação e tome uma decisão |
+| 1 | Consultar informações sobre a região | 1.1 > 1.2 > 1.3 | A consulta deve exigir poucos passos e permitir que a usuária localize de forma fácil e rápida a região do comércio |
+| 1.1 | Acessar o sistema | — | O acesso não deve ser complexo ou dificultar o início da consulta |
+| 1.2 | Visualizar ou buscar a região do comércio | — | A forma de localizar a região deve ser simples e clara |
+| 1.3 | Visualizar as informações apresentadas | — | O risco deve ser apresentado de forma compreensível para uma usuária sem conhecimento técnico |
+| 2 | Interpretar as informações de risco | 2.1 > 2.2 > 2.3 | Muitas informações técnicas podem dificultar a interpretação do risco |
+| 2.1 | Identificar o nível de risco apresentado | — | O nível de risco deve ser facilmente identificado e diferenciado |
+| 2.2 | Consultar informações complementares sobre chuva e região | — | Informações adicionais devem ajudar na compreensão da previsão sem confundir o usuário |
+| 2.3 | Avaliar a possibilidade de impacto no comércio | — | o usuário precisa conseguir relacionar o risco apresentado com possíveis impactos ao estabelecimento |
+| 3 | Decidir se deve tomar medidas preventivas | 3.1 / 3.2 | A interface deve fornecer informações suficientes para apoiar a decisão do usuário |
+| 3.1 | Tomar uma medida preventiva | — | A interface deve fornecer informações suficientes para apoiar a decisão de agir |
+| 3.2 | Não tomar uma medida preventiva | — | A interface deve permitir que a usuária compreenda quando o risco não indica necessidade de ação |
 
 **Verificação do HTA:**
 

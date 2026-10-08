@@ -75,21 +75,24 @@ A tarefa começa quando Viviane identifica a necessidade de verificar a situaç�
 
 ---
 
-## GOMS — T01 {{nome da tarefa}}
+## GOMS — T01 Consultar e interpretar o risco de alagamento na região do comércio
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** Rafael Iamashita Becsei 22.225.037-5
 
 ### Goal
 
-`G0: {{meta do usuário}}`
+`G0: Consultar o risco de alagamento da região do comércio e decidir se é necessário tomar medidas preventivas`
 
 ### Métodos, operadores e regras de seleção
 
-- **Method M1:** {{...}}
-  - Operators: {{perceber, apontar, clicar, digitar, decidir... conforme o nível adotado}}
-- **Method M2:** {{...}}
-  - Operators: {{...}}
-- **Selection Rule SR1:** usar M1 quando {{condição}}; usar M2 quando {{condição}}.
+- **Method M1:** localizar a região do comércio pelo mapa
+  - Operators: visualizar o mapa; localizar a região; selecionar a localização do comércio; verificar as informações apresentadas
+- **Method M2:** localizar a região do comércio utilizando a busca
+  - Operators: selecionar o campo de busca; digitar o endereço ou região; confirmar a busca; verificar os resultados; selecionar a localidade correspondente; verificar as informações apresentadas
+- **Method M3:** interpretar o risco e decidir sobre medidas preventivas
+  - **Operators:** identificar o nível de risco; consultar informações complementares; avaliar a possibilidade de impacto ao comércio; decidir se é necessária tomar medidas; realizar uma medida preventiva, quando necessário
+- **Selection Rule SR1:** usar M1 quando a usuária consegue localizar visualmente a região do comércio no mapa; usar M2 quando não consegue localizá-la facilmente ou prefere utilizar a busca.
+- **Selection Rule SR2:** usar M3 após a região ter sido localizada e as informações de risco terem sido apresentadas
 
 > Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
 

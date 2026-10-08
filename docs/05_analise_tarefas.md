@@ -105,30 +105,50 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ---
 
-## HTA — T02 {{nome da tarefa}}
+## HTA — T02 Consultar o risco de alagamento da região e decidir sobre medidas preventivas
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** Victor Pimentel Lario — 22.125.064-0
 
 ### Descrição da tarefa
 
-{{objetivo, ponto de início, conclusão esperada, contexto}}
+Victor Merker Binda está em casa acompanhando notícias sobre a previsão de chuva intensa. Preocupado com a possibilidade de alagamentos próximos à sua residência, decide consultar as informações de risco da região pelo celular. Seu objetivo é compreender o nível de risco apresentado e avaliar se precisa tomar alguma medida preventiva para proteger sua casa e seus bens.
+
+A tarefa começa quando Victor decide buscar informações sobre sua região e termina quando consegue interpretar a situação e decidir como deve agir. Caso a chuva continue, ele pode voltar a acompanhar as informações para verificar possíveis mudanças.
 
 ### Diagrama
 
-![HTA T01](../assets/05_tarefas/hta_t01.svg)
+[HTA T02](../assets/05_tarefas/hta_t02.svg)
 
 ### Decomposição e planos
 
-| ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
+| **ID** | **Objetivo/operação** | **Plano/ordem** | **Problema ou decisão de design observada** |
 |---|---|---|---|
-| 0 | {{objetivo principal}} | {{1 }} 2 > 3 / 1 ou 2 etc.> | {{...}} |
+| 0 | Consultar o risco e decidir sobre a preparação da residência | 1 > 2 > 3 > 4, sendo 4 executada conforme a necessidade | Victor precisa compreender o risco da região para decidir se deve tomar medidas preventivas. |
+| 1 | Acessar informações da região | 1.1 > 1.2 | O acesso deve ser simples, com poucos passos. |
+| 1.1 | Abrir o sistema pelo celular | Operação | A interface inicial deve facilitar a identificação da consulta de risco. |
+| 1.2 | Localizar a região onde mora | Operação | Facilitar a localização da região, evitando navegação complexa pelo mapa. |
+| 2 | Compreender o risco apresentado | 2.1 > 2.2 | Informações técnicas podem dificultar o entendimento. |
+| 2.1 | Consultar o nível de risco da região | Operação | Exibir níveis de risco com textos e indicadores claros. |
+| 2.2 | Interpretar as informações apresentadas | Operação | Evitar depender apenas de porcentagens ou cores. |
+| 3 | Decidir se precisa tomar medidas preventivas | 3.1 > 3.2, sendo 3.2 necessária quando houver motivo para preparação | O sistema deve ajudar Victor a compreender a situação sem tomar a decisão por ele. |
+| 3.1 | Avaliar a necessidade de preparação | Operação | As informações devem facilitar a decisão do morador. |
+| 3.2 | Definir quais medidas preventivas realizar | Operação condicional | Victor pode ter dificuldade para decidir quais ações priorizar. |
+| 4 | Acompanhar possíveis mudanças na situação | Repetir a consulta quando necessário | Facilitar novas consultas e a identificação de mudanças no risco. |
 
-**Verificação do HTA:**
+**Plano 0:** Realizar 1, depois 2 e 3. Executar 4 quando desejar acompanhar a evolução da situação.
 
-- O objetivo 0 representa uma meta do usuário?
-- As subtarefas são necessárias e suficientes?
-- Os **planos** indicam ordem, alternativa, repetição ou condição?
-- A decomposição parou em nível útil para projeto de interação?
+**Plano 1:** Realizar 1.1 e depois 1.2.
+
+**Plano 2:** Realizar 2.1 e depois 2.2.
+
+**Plano 3:** Realizar 3.1. Caso exista necessidade de preparação, realizar 3.2.
+
+### Verificação do HTA
+
+- O objetivo 0 representa uma meta do usuário: entender o risco de alagamento de sua região e decidir se precisa se preparar.
+- As subtarefas contemplam o acesso às informações, a interpretação do risco, a decisão e o acompanhamento.
+- Os planos representam sequência, condições e repetição.
+- A decomposição foi interrompida em operações úteis para identificar problemas e oportunidades de design.
 
 ---
 

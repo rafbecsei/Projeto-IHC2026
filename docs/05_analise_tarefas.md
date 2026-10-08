@@ -1,7 +1,7 @@
 # Entrega 5 — Análise de tarefas: HTA, GOMS e CTT
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** {{08/10/2026}}  
+**Status:** 🟨 em andamento  
 **Responsabilidade:** cada integrante modela pelo menos 1 HTA, 1 GOMS e 1 CTT. As três técnicas podem abordar a mesma funcionalidade ou funcionalidades distintas, conforme a orientação da disciplina.
 
 ## Objetivo da atividade
@@ -29,13 +29,83 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 | ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
 |---|---|---|---|---|
-| T01 | {{...}} | {{P01/C01}} | {{...}} | {{...}} |
+| T01 | Consultar e interpretar o risco de alagamento na região do comércio para decidir se são necessárias medidas preventivas | P03 / C02 | Frequência:  Criticidade: alta, pois a informação pode apoiar decisões preventivas e evitar possíveis prejuízos ao comércio. | Rafael Iamashita Becsei — 22.225.037-5 |
+| T02 | {{...}} | {{P01/C01}} | {{...}} | {{...}} |
 
 > Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
 
 ---
 
 ## HTA — T01 {{nome da tarefa}}
+
+**Autor(a):** {{nome — matrícula}}
+
+### Descrição da tarefa
+
+{{objetivo, ponto de início, conclusão esperada, contexto}}
+
+### Diagrama
+
+![HTA T01](../assets/05_tarefas/hta_t01.svg)
+
+### Decomposição e planos
+
+| ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
+|---|---|---|---|
+| 0 | {{objetivo principal}} | {{1 }} 2 > 3 / 1 ou 2 etc.> | {{...}} |
+
+**Verificação do HTA:**
+
+- O objetivo 0 representa uma meta do usuário?
+- As subtarefas são necessárias e suficientes?
+- Os **planos** indicam ordem, alternativa, repetição ou condição?
+- A decomposição parou em nível útil para projeto de interação?
+
+---
+
+## GOMS — T01 {{nome da tarefa}}
+
+**Autor(a):** {{nome — matrícula}}
+
+### Goal
+
+`G0: {{meta do usuário}}`
+
+### Métodos, operadores e regras de seleção
+
+- **Method M1:** {{...}}
+  - Operators: {{perceber, apontar, clicar, digitar, decidir... conforme o nível adotado}}
+- **Method M2:** {{...}}
+  - Operators: {{...}}
+- **Selection Rule SR1:** usar M1 quando {{condição}}; usar M2 quando {{condição}}.
+
+> Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
+
+---
+
+## CTT — T01 {{nome da tarefa}}
+
+**Autor(a):** {{nome — matrícula}}
+
+### Descrição
+
+{{...}}
+
+### Diagrama
+
+![CTT T03](../assets/05_tarefas/ctt_t03.svg)
+
+### Legenda e relações temporais usadas
+
+| Operador/relação | Significado no diagrama | Exemplo no modelo |
+|---|---|---|
+| {{...}} | {{...}} | {{...}} |
+
+Identifique, quando aplicável, tarefas de usuário, sistema, interação e tarefas abstratas. Verifique se concorrência, escolha, habilitação, desabilitação e repetição estão representadas corretamente segundo a notação adotada em aula.
+
+---
+
+## HTA — T02 {{nome da tarefa}}
 
 **Autor(a):** {{nome — matrícula}}
 
@@ -82,7 +152,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 ---
 
-## CTT — T03 {{nome da tarefa}}
+## CTT — T02 {{nome da tarefa}}
 
 **Autor(a):** {{nome — matrícula}}
 

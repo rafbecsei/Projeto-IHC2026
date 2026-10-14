@@ -167,119 +167,141 @@ A tarefa começa quando Victor decide buscar informações sobre sua região e t
 
 ---
 
-## GOMS — T02 {{nome da tarefa}}
+## GOMS — T02 Consultar o risco de alagamento da região e decidir sobre medidas preventivas
 
-**Autor(a):** {{nome — matrícula}}
-
-### Goal
-
-`G0: {{meta do usuário}}`
-
-### Métodos, operadores e regras de seleção
-
-- **Method M1:** {{...}}
-  - Operators: {{perceber, apontar, clicar, digitar, decidir... conforme o nível adotado}}
-- **Method M2:** {{...}}
-  - Operators: {{...}}
-- **Selection Rule SR1:** usar M1 quando {{condição}}; usar M2 quando {{condição}}.
-
-> Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
-
----
-
-## CTT — T02 {{nome da tarefa}}
-
-**Autor(a):** {{nome — matrícula}}
-
-### Descrição
-
-{{...}}
-
-### Diagrama
-
-![CTT T03](../assets/05_tarefas/ctt_t03.svg)
-
-### Legenda e relações temporais usadas
-
-| Operador/relação | Significado no diagrama | Exemplo no modelo |
-|---|---|---|
-| {{...}} | {{...}} | {{...}} |
-
-Identifique, quando aplicável, tarefas de usuário, sistema, interação e tarefas abstratas. Verifique se concorrência, escolha, habilitação, desabilitação e repetição estão representadas corretamente segundo a notação adotada em aula.
-
----
-
-## HTA — T03 
-
-**Autor(a):** Eric Song Watanabe — 22.125.086-3
-
-### Descrição da tarefa
-
-
-
-### Diagrama
-
-![HTA T03](../assets/05_tarefas/HTA03.png)
-
-### Decomposição e planos
-
-| **ID** | **Objetivo/operação** | **Plano/ordem** | **Problema ou decisão de design observada** |
-|---|---|---|---|
-
-
-**Plano 0:** Realizar 1, depois 2 e 3. Executar 4 quando desejar acompanhar a evolução da situação.
-
-**Plano 1:** Realizar 1.1 e depois 1.2.
-
-**Plano 2:** Realizar 2.1 e depois 2.2.
-
-**Plano 3:** Realizar 3.1. Caso exista necessidade de preparação, realizar 3.2.
-
-### Verificação do HTA
-
-- 
-
----
-
-## GOMS — T03 {{nome da tarefa}}
-
-**Autor(a):** Eric Song Watanabe — 22.125.086-3
+**Autor(a):** Victor Pimentel Lario — 22.125.064-0
 
 ### Goal
 
-`G0: {{meta do usuário}}`
-
-### Métodos, operadores e regras de seleção
-
-- **Method M1:** {{...}}
-  - Operators: {{perceber, apontar, clicar, digitar, decidir... conforme o nível adotado}}
-- **Method M2:** {{...}}
-  - Operators: {{...}}
-- **Selection Rule SR1:** usar M1 quando {{condição}}; usar M2 quando {{condição}}.
-
-> Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
-
----
-
-## CTT — T03 {{nome da tarefa}}
-
-**Autor(a):** Eric Song Watanabe — 22.125.086-3
-
-### Descrição
-
-{{...}}
+`G0: Compreender o risco de alagamento da região onde mora e decidir se precisa tomar medidas preventivas.`
 
 ### Diagrama
 
-![CTT T03](../assets/05_tarefas/ctt_t03.svg)
+![GOMS T02](../assets/05_tarefas/goms.png)
+
+### Métodos, operadores e regras de seleção
+
+**GOAL 1: Localizar a região onde mora**
+
+**Method M1: Localizar a região por meio de busca pelo nome**
+
+- OP 1.1: Abrir o sistema pelo celular.
+- OP 1.2: Identificar o campo de busca.
+- OP 1.3: Tocar no campo de busca.
+- OP 1.4: Digitar o nome da região.
+- OP 1.5: Selecionar a região correspondente.
+- OP 1.6: Verificar se a região apresentada está correta.
+
+**Method M2: Localizar a região diretamente pelo mapa**
+
+- OP 2.1: Abrir o sistema pelo celular.
+- OP 2.2: Observar o mapa apresentado.
+- OP 2.3: Movimentar ou aproximar o mapa, se necessário.
+- OP 2.4: Identificar a região onde mora.
+- OP 2.5: Tocar na região desejada.
+- OP 2.6: Verificar se a região selecionada está correta.
+
+**Selection Rule SR1:**
+- Utilizar M1 quando Victor souber o nome da região e preferir uma consulta mais simples, sem precisar navegar pelo mapa.
+- Utilizar M2 quando Victor conseguir reconhecer visualmente sua região no mapa e preferir selecioná-la diretamente.
+
+**GOAL 2: Compreender o risco apresentado**
+
+**Method M3: Consultar e interpretar as informações de risco**
+
+- OP 3.1: Observar o nível de risco apresentado.
+- OP 3.2: Ler a descrição associada ao nível de risco.
+- OP 3.3: Identificar se a situação indica necessidade de atenção.
+- OP 3.4: Relacionar as informações apresentadas com a situação da região onde mora.
+
+**GOAL 3: Decidir sobre medidas preventivas**
+
+**Method M4: Avaliar a necessidade de preparação**
+
+- OP 4.1: Considerar o risco apresentado para sua região.
+- OP 4.2: Comparar a situação com experiências anteriores de chuva intensa.
+- OP 4.3: Decidir se precisa realizar alguma medida preventiva.
+- OP 4.4: Caso necessário, definir ações para proteger a residência e os bens.
+
+**Selection Rule SR2:**
+- Se Victor entender que existe risco que justifique preparação, decide realizar medidas preventivas.
+- Se entender que não existe necessidade imediata de preparação, continua acompanhando a situação e pode realizar outra consulta posteriormente.
+
+
+### Considerações sobre o modelo
+
+O GOMS apresenta dois métodos alternativos para localizar a região, levando em consideração a familiaridade limitada de Victor com ferramentas digitais. A busca pelo nome pode oferecer um caminho mais simples, enquanto a seleção pelo mapa permite uma consulta visual.
+
+Após localizar sua região, Victor consulta as informações de risco, interpreta o resultado e decide se precisa se preparar. O sistema deve facilitar a compreensão das informações, mas a decisão de realizar medidas preventivas continua sendo do usuário.
+
+---
+
+## CTT — T02 Consultar o risco de alagamento da região e decidir sobre medidas preventivas
+  
+
+**Autor(a):** Victor Pimentel Lario — 22.125.064-0
+
+### Descrição
+
+O modelo CTT representa a sequência de tarefas realizadas por Victor Merker Binda ao consultar o risco de alagamento de sua região e decidir se precisa tomar medidas preventivas.
+
+Inicialmente, Victor acessa o sistema pelo celular e localiza sua região, podendo realizar uma busca pelo nome ou selecionar diretamente pelo mapa. Após a seleção, o sistema processa a consulta e apresenta as informações de risco.
+
+Victor interpreta o resultado e decide se precisa realizar alguma ação preventiva. Durante a chuva, pode repetir a consulta para acompanhar possíveis mudanças na situação.
+
+O modelo diferencia tarefas realizadas pelo usuário, interações com o sistema, processamentos automáticos e tarefas abstratas.
+
+### Diagrama
+
+![HTA T02](../assets/05_tarefas/ctt.png)
+
+### Tarefas identificadas
+
+| **ID** | **Tarefa** | **Tipo** |
+|---|---|---|
+| T0 | Consultar o risco e decidir sobre a preparação | Abstrata |
+| T1 | Consultar a região onde mora | Abstrata |
+| T1.1 | Buscar a região pelo nome | Interação |
+| T1.2 | Selecionar a região pelo mapa | Interação |
+| T2 | Obter informações de risco | Abstrata |
+| T2.1 | Processar a consulta de risco | Sistema |
+| T2.2 | Apresentar as informações de risco | Interação |
+| T3 | Avaliar a situação e decidir | Abstrata |
+| T3.1 | Interpretar o nível de risco | Usuário |
+| T3.2 | Decidir sobre medidas preventivas | Usuário |
+| T4 | Acompanhar possíveis mudanças | Abstrata |
 
 ### Legenda e relações temporais usadas
 
-| Operador/relação | Significado no diagrama | Exemplo no modelo |
+| **Operador/relação** | **Significado no diagrama** | **Exemplo no modelo** |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| `>>` | Habilitação: uma tarefa começa após a conclusão da anterior. | T2 >> T3: Victor recebe as informações antes de avaliar a situação. |
+| `[]>>` | Habilitação com passagem de informação. | T1 []>> T2: a região selecionada é utilizada para realizar a consulta. |
+| `[]` | Escolha: apenas uma das tarefas alternativas é executada. | T1.1 [] T1.2: Victor pode buscar a região pelo nome ou selecioná-la no mapa. |
+| `*` | Repetição de uma tarefa. | T4*: Victor pode acompanhar novamente as condições durante a chuva. |
+| `|||` | Concorrência: tarefas podem ocorrer em paralelo ou em qualquer ordem. | Acompanhar notícias e observar as condições da chuva podem ocorrer em paralelo à consulta. |
 
-Identifique, quando aplicável, tarefas de usuário, sistema, interação e tarefas abstratas. Verifique se concorrência, escolha, habilitação, desabilitação e repetição estão representadas corretamente segundo a notação adotada em aula.
+### Relação temporal principal
+
+`T0 = T1 []>> T2 >> T3 >> T4*`
+
+**Decomposição das tarefas:**
+
+- T1 = T1.1 [] T1.2
+- T2 = T2.1 >> T2.2
+- T3 = T3.1 >> T3.2
+
+A tarefa T4 representa novas verificações da situação. Quando Victor precisa consultar novamente o risco, pode repetir o processo de consulta e avaliação.
+
+### Considerações sobre o modelo
+
+O CTT evidencia que Victor possui alternativas para localizar sua região e que as informações precisam estar disponíveis antes que ele possa avaliar o risco.
+
+O modelo também considera que o acompanhamento pode ocorrer repetidamente durante períodos de chuva intensa, permitindo que Victor reavalie a necessidade de preparação.
+
+As tarefas foram organizadas para representar tanto as interações com o sistema quanto as decisões realizadas pelo usuário, respeitando suas características e necessidades.
+
+---
 
 ## Síntese da equipe
 

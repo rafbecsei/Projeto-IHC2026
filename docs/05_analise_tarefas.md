@@ -209,6 +209,78 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ---
 
+## HTA — T03 
+
+**Autor(a):** Eric Song Watanabe — 22.125.086-3
+
+### Descrição da tarefa
+
+
+
+### Diagrama
+
+![HTA T03](../assets/05_tarefas/HTA03.png)
+
+### Decomposição e planos
+
+| **ID** | **Objetivo/operação** | **Plano/ordem** | **Problema ou decisão de design observada** |
+|---|---|---|---|
+
+
+**Plano 0:** Realizar 1, depois 2 e 3. Executar 4 quando desejar acompanhar a evolução da situação.
+
+**Plano 1:** Realizar 1.1 e depois 1.2.
+
+**Plano 2:** Realizar 2.1 e depois 2.2.
+
+**Plano 3:** Realizar 3.1. Caso exista necessidade de preparação, realizar 3.2.
+
+### Verificação do HTA
+
+- 
+
+---
+
+## GOMS — T03 {{nome da tarefa}}
+
+**Autor(a):** Eric Song Watanabe — 22.125.086-3
+
+### Goal
+
+`G0: {{meta do usuário}}`
+
+### Métodos, operadores e regras de seleção
+
+- **Method M1:** {{...}}
+  - Operators: {{perceber, apontar, clicar, digitar, decidir... conforme o nível adotado}}
+- **Method M2:** {{...}}
+  - Operators: {{...}}
+- **Selection Rule SR1:** usar M1 quando {{condição}}; usar M2 quando {{condição}}.
+
+> Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
+
+---
+
+## CTT — T03 {{nome da tarefa}}
+
+**Autor(a):** Eric Song Watanabe — 22.125.086-3
+
+### Descrição
+
+{{...}}
+
+### Diagrama
+
+![CTT T03](../assets/05_tarefas/ctt_t03.svg)
+
+### Legenda e relações temporais usadas
+
+| Operador/relação | Significado no diagrama | Exemplo no modelo |
+|---|---|---|
+| {{...}} | {{...}} | {{...}} |
+
+Identifique, quando aplicável, tarefas de usuário, sistema, interação e tarefas abstratas. Verifique se concorrência, escolha, habilitação, desabilitação e repetição estão representadas corretamente segundo a notação adotada em aula.
+
 ## Síntese da equipe
 
 Quais problemas de interação, oportunidades e requisitos apareceram a partir das modelagens? Quais tarefas irão para o protótipo e para o teste de usabilidade?

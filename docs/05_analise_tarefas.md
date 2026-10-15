@@ -1,6 +1,6 @@
 # Entrega 5 — Análise de tarefas: HTA, GOMS e CTT
 
-**Data:** {{08/10/2026}}  
+**Data:** 08/10/2026
 **Status:** 🟨 em andamento  
 **Responsabilidade:** cada integrante modela pelo menos 1 HTA, 1 GOMS e 1 CTT. As três técnicas podem abordar a mesma funcionalidade ou funcionalidades distintas, conforme a orientação da disciplina.
 
@@ -29,7 +29,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 | ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
 |---|---|---|---|---|
-| T01 | Consultar e interpretar o risco de alagamento na região do comércio para decidir se são necessárias medidas preventivas | P03 / C02 | Frequência: depende da época do ano de chuvas / Criticidade: alta, pois a informação pode apoiar decisões preventivas e evitar possíveis prejuízos ao comércio. | Rafael Iamashita Becsei — 22.225.037-5 |
+| T01 | Consultar e interpretar o risco de alagamento na região do comércio para decidir se são necessárias medidas preventivas | P03 / C02 | Frequência: depende da época do ano de chuvas / Criticidade: alta, pois a informação pode apoiar decisões preventivas e evitar possíveis prejuízos ao comércio. | Rafael Iamashita Becsei - 22.225.037-5 |
 | T02 | {{...}} | {{P01/C01}} | {{...}} | {{...}} |
 
 > Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
@@ -38,7 +38,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 ## HTA — T01 Consultar e interpretar o risco de alagamento na região do comércio
 
-**Autor(a):** Rafael Iamashita Becsei — 22.225.037-5
+**Autor(a):** Rafael Iamashita Becsei - 22.225.037-5
 
 ### Descrição da tarefa
 
@@ -77,7 +77,7 @@ A tarefa começa quando Viviane identifica a necessidade de verificar a situaç�
 
 ## GOMS — T01 Consultar e interpretar o risco de alagamento na região do comércio
 
-**Autor(a):** Rafael Iamashita Becsei 22.225.037-5
+**Autor(a):** Rafael Iamashita Becsei - 22.225.037-5
 
 ### Goal
 
@@ -98,13 +98,13 @@ A tarefa começa quando Viviane identifica a necessidade de verificar a situaç�
 
 ---
 
-## CTT — T01 {{nome da tarefa}}
+## CTT — T01 Consultar e interpretar o risco de alagamento na região do comércio
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** Rafael Iamashita Becsei - 22.225.037-5
 
 ### Descrição
 
-{{...}}
+O CTT representa a sequência e as relações temporais envolvidas na consulta do risco de alagamento da região onde está localizado o comércio de Viviane. A tarefa envolve a localização da região, a apresentação das informações pelo sistema, a interpretação do risco e a decisão sobre a necessidade de tomar medidas preventivas.
 
 ### Diagrama
 

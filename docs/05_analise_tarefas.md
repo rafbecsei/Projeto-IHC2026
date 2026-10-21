@@ -152,7 +152,7 @@ O CTT representa a sequência e as relações temporais envolvidas na consulta d
 
 ### Diagrama
 
-![CTT T03](../assets/05_tarefas/ctt_t03.svg)
+![CTT T03](../assets/05_tarefas/ctt_t01.svg)
 
 ### Legenda e relações temporais usadas
 
@@ -410,10 +410,6 @@ Essa funcionalidade representa uma possibilidade adicional de interação a ser 
 ### Goal
 
 `G0: Consultar o histórico de alagamentos de uma região e gerar um relatório com as informações desejadas.`
-
-### Diagrama
-
-![GOMS T03](../assets/05_tarefas/goms_t03.svg)
 
 ### Métodos, operadores e regras de seleção
 

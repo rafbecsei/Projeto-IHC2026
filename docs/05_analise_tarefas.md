@@ -29,7 +29,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 | ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
 |---|---|---|---|---|
-| T01 | Consultar e interpretar o risco de alagamento na região do comércio para decidir se são necessárias medidas preventivas | P03 / C02 | Frequência: depende da época do ano de chuvas / Criticidade: alta, pois a informação pode apoiar decisões preventivas e evitar possíveis prejuízos ao comércio. | Rafael Iamashita Becsei - 22.225.037-5 |
+| T01 | Consultar e interpretar o risco de alagamento de uma região para planejar o deslocamento | P01 / C01 | Frequência: depende da época do ano e de chuvas / Criticidade: alta, pois a informação pode apoiar decisões preventivas e evitar possíveis riscos à vida e financeiros. | Rafael Iamashita Becsei - 22.225.037-5 |
 | T02 | {{...}} | {{P01/C01}} | {{...}} | {{...}} |
 | T03 | Consultar o histórico de alagamentos de uma região e gerar um relatório | P01 / C01 | Frequência: eventual, principalmente quando o usuário deseja conhecer o histórico de uma região / Criticidade: média, pois permite compreender ocorrências anteriores e apoiar o planejamento de deslocamentos futuros. | Eric Song Watanabe - 22.125.086-3 |
 
@@ -37,14 +37,14 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 ---
 
-## HTA — T01 Consultar e interpretar o risco de alagamento na região do comércio
+## HTA — T01 Consultar e interpretar o risco de alagamento de uma região para planejar o deslocamento
 
 **Autor(a):** Rafael Iamashita Becsei - 22.225.037-5
 
 ### Descrição da tarefa
 
-A tarefa tem como objetivo permitir que Viviane consulte as informações disponíveis sobre o risco de alagamento na região de seu comércio e, a partir da interpretação dessas informações, decida se precisa fechar o estabelecimento e se preparar para evitar prejuízos.
-A tarefa começa quando Viviane identifica a necessidade de verificar a situação da região antes ou durante um período de chuva intensa, e a tarefa termina quando ela consegue avaliar a situação e decidir se deve ou não tomar alguma medida preventiva.
+A tarefa tem como objetivo permitir que Paulo consulte as informações disponíveis sobre o risco de alagamento nas regiões por onde pretende passar e, a partir da interpretação dessas informações, decida se deve manter seu trajeto habitual ou considerar um caminho alternativo para evitar possíveis áreas de risco.
+A tarefa começa quando Paulo identifica a necessidade de verificar as condições das regiões de seu trajeto antes ou durante um período de chuva intensa, e termina quando ele consegue avaliar os riscos apresentados e decidir como realizará seu deslocamento.
 
 ### Diagrama
 
@@ -54,18 +54,28 @@ A tarefa começa quando Viviane identifica a necessidade de verificar a situaç�
 
 | ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
-| 0 | Avaliar o risco de alagamento da região e decidir se é necessário tomar medidas preventivas | 1 > 2 > 3 | A informação apresentada precisa permitir que a usuária compreenda a situação e tome uma decisão |
-| 1 | Consultar informações sobre a região | 1.1 > 1.2 > 1.3 | A consulta deve exigir poucos passos e permitir que a usuária localize de forma fácil e rápida a região do comércio |
-| 1.1 | Acessar o sistema | — | O acesso não deve ser complexo ou dificultar o início da consulta |
-| 1.2 | Visualizar ou buscar a região do comércio | — | A forma de localizar a região deve ser simples e clara |
-| 1.3 | Visualizar as informações apresentadas | — | O risco deve ser apresentado de forma compreensível para uma usuária sem conhecimento técnico |
-| 2 | Interpretar as informações de risco | 2.1 > 2.2 > 2.3 | Muitas informações técnicas podem dificultar a interpretação do risco |
-| 2.1 | Identificar o nível de risco apresentado | — | O nível de risco deve ser facilmente identificado e diferenciado |
-| 2.2 | Consultar informações complementares sobre chuva e região | — | Informações adicionais devem ajudar na compreensão da previsão sem confundir o usuário |
-| 2.3 | Avaliar a possibilidade de impacto no comércio | — | o usuário precisa conseguir relacionar o risco apresentado com possíveis impactos ao estabelecimento |
-| 3 | Decidir se deve tomar medidas preventivas | 3.1 / 3.2 | A interface deve fornecer informações suficientes para apoiar a decisão do usuário |
-| 3.1 | Tomar uma medida preventiva | — | A interface deve fornecer informações suficientes para apoiar a decisão de agir |
-| 3.2 | Não tomar uma medida preventiva | — | A interface deve permitir que a usuária compreenda quando o risco não indica necessidade de ação |
+| 0 | Consultar e avaliar o risco de alagamento de uma região para planejar o deslocamento | 1 > 2 > 3 | O sistema deve apresentar informações claras para apoiar o planejamento do deslocamento. |
+| 1 | Localizar a região ou trajeto de interesse | 1.1 > 1.2 | A interface deve permitir localizar a região de forma simples e rápida, seja pelo mapa ou pela busca. |
+| 1.1 | Usar o mapa e navegar até a região desejada | 1.1.1 > 1.1.2 | A navegação pelo mapa deve facilitar a localização da região desejada. |
+| 1.1.1 | Acessar o mapa | — | O mapa deve ser facilmente acessível. |
+| 1.1.2 | Explorar o mapa até encontrar a região | — | A navegação deve permitir identificar a região sem dificuldade. |
+| 1.2 | Pesquisar o endereço ou região através da busca | 1.2.1 > 1.2.2 | A busca deve permitir localizar a região por endereço ou nome. |
+| 1.2.1 | Inserir endereço ou nome da região | — | O campo de busca deve ser fácil de identificar e utilizar. |
+| 1.2.2 | Selecionar endereço correspondente | — | Os resultados devem permitir identificar o endereço correto. |
+| 2 | Interpretar as informações de risco | 2.1 > 2.2 | Informações técnicas podem dificultar a compreensão do risco. |
+| 2.1 | Identificar o nível de risco apresentado da localização desejada | 2.1.1 > 2.1.2 | O nível de risco deve ser apresentado de forma clara e associado à região consultada. |
+| 2.1.1 | Visualizar a extensão da área no mapa | — | A área de risco deve ser facilmente identificada no mapa. |
+| 2.1.2 | Compreender o nível de risco exibido | — | O risco deve ser apresentado em linguagem simples e com indicadores compreensíveis. |
+| 2.2 | Consultar informações complementares sobre chuva e região | 2.2.1 > 2.2.2 | As informações adicionais devem ajudar na interpretação sem sobrecarregar o usuário. |
+| 2.2.1 | Visualizar informações da chuva na região | — | As informações sobre chuva devem ser claras e relacionadas à região consultada. |
+| 2.2.2 | Verificar outras informações complementares presentes | — | As informações complementares devem ser relevantes e organizadas. |
+| 3 | Decidir como realizar o deslocamento | 3.1 / 3.2 | As informações devem apoiar a decisão do usuário sobre seu deslocamento. |
+| 3.1 | Tomar uma medida preventiva | 3.1.1 > 3.1.2 | A interface deve ajudar o usuário a avaliar se pode manter seu planejamento. |
+| 3.1.1 | Confirmar que a região está segura | — | O nível de risco deve permitir avaliar as condições da região. |
+| 3.1.2 | Verificar outras informações complementares presentes | — | Informações adicionais podem apoiar a decisão de manter o deslocamento. |
+| 3.2 | Não tomar uma medida preventiva | 3.2.1 > 3.2.2 | O usuário deve conseguir identificar quando precisa considerar alternativas ao trajeto. |
+| 3.2.1 | Identificar uma alternativa segura | — | O mapa deve facilitar a identificação de regiões com menor risco. |
+| 3.2.2 | Definir um novo trajeto que seja mais seguro | — | As informações de risco devem apoiar a escolha de outro trajeto, sem exigir que o sistema calcule rotas. |
 
 **Verificação do HTA:**
 
@@ -82,18 +92,51 @@ A tarefa começa quando Viviane identifica a necessidade de verificar a situaç�
 
 ### Goal
 
-`G0: Consultar o risco de alagamento da região do comércio e decidir se é necessário tomar medidas preventivas`
+`G0: Consultar e avaliar o risco de alagamento para planejar o deslocamento`
 
 ### Métodos, operadores e regras de seleção
 
-- **Method M1:** localizar a região do comércio pelo mapa
-  - Operators: visualizar o mapa; localizar a região; selecionar a localização do comércio; verificar as informações apresentadas
-- **Method M2:** localizar a região do comércio utilizando a busca
-  - Operators: selecionar o campo de busca; digitar o endereço ou região; confirmar a busca; verificar os resultados; selecionar a localidade correspondente; verificar as informações apresentadas
-- **Method M3:** interpretar o risco e decidir sobre medidas preventivas
-  - **Operators:** identificar o nível de risco; consultar informações complementares; avaliar a possibilidade de impacto ao comércio; decidir se é necessária tomar medidas; realizar uma medida preventiva, quando necessário
-- **Selection Rule SR1:** usar M1 quando a usuária consegue localizar visualmente a região do comércio no mapa; usar M2 quando não consegue localizá-la facilmente ou prefere utilizar a busca.
-- **Selection Rule SR2:** usar M3 após a região ter sido localizada e as informações de risco terem sido apresentadas
+GOAL 1: Localizar a região ou trajeto de interesse
+- **Method M1:** Localizar a região pelo mapa
+  - OP 1.1: Acessar o mapa
+  - OP 1.2: Observar a região apresentada inicialmente
+  - OP 1.3: Navegar pelo mapa, movimentando ou aproximando a visualização quando necessário
+  - OP 1.4: Identificar a região por onde pretende passar.
+  - OP 1.5: Selecionar a região desejada
+  - OP 1.6: Verificar se a localização selecionada está correta
+- **Method M2:** Localizar a região pela busca
+  - OP 2.1: Identificar o campo de busca
+  - OP 2.2: Selecionar o campo de busca
+  - OP 2.3: Digitar o endereço ou nome da região
+  - OP 2.4: Verificar os resultados apresentados
+  - OP 2.5: Selecionar o endereço correspondente
+  - OP 2.6: Confirmar se a região localizada está correta
+- **Selection Rule SR1:**
+  - Utilizar M1 quando Paulo conseguir reconhecer visualmente a região desejada no mapa
+  - Utilizar M2 quando Paulo souber o endereço ou nome da região e preferir realizar uma pesquisa
+GOAL 2: Interpretar as informações de risco da região
+- **Method M3:** Consultar e interpretar o risco apresentado
+  - OP 3.1: Visualizar a extensão da área de risco no mapa
+  - OP 3.2: Identificar o nível de risco apresentado para a região
+  - OP 3.3: Ler as informações associadas ao nível de risco
+  - OP 3.4: Consultar informações complementares sobre chuva e condições da região
+  - OP 3.5: Relacionar as informações apresentadas com as regiões por onde pretende passar
+  - OP 3.6: Avaliar se o risco identificado pode afetar seu deslocamento
+GOAL 3: Decidir como realizar o deslocamento
+- **Method M4:** Manter o trajeto planejado
+  - OP 4.1: Considerar o nível de risco apresentado para a região
+  - OP 4.2: Verificar se as informações consultadas indicam algum risco relevante
+  - OP 4.3: Concluir que não há necessidade de alterar o planejamento
+  - OP 4.4: Manter o trajeto previsto
+- **Method M5:** Considerar um trajeto alternativo
+  - OP 5.1: Identificar regiões do trajeto que apresentam maior risco de alagamento
+  - OP 5.2: Consultar outras regiões que possam ser utilizadas no deslocamento
+  - OP 5.3: Comparar os níveis de risco das regiões consultadas
+  - OP 5.4: Identificar uma alternativa que apresente menor risco
+  - OP 5.5: Decidir se deve alterar o trajeto ou adiar o deslocamento
+- **Selection Rule SR2:**
+  - Utilizar M4 quando as informações consultadas não indicarem risco relevante para o deslocamento planejado.
+  - Utilizar M5 quando as informações indicarem possibilidade de alagamento em regiões que possam comprometer o deslocamento.
 
 > Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
 
@@ -105,7 +148,7 @@ A tarefa começa quando Viviane identifica a necessidade de verificar a situaç�
 
 ### Descrição
 
-O CTT representa a sequência e as relações temporais envolvidas na consulta do risco de alagamento da região onde está localizado o comércio de Viviane. A tarefa envolve a localização da região, a apresentação das informações pelo sistema, a interpretação do risco e a decisão sobre a necessidade de tomar medidas preventivas.
+O CTT representa a sequência e as relações temporais envolvidas na consulta do risco de alagamento das regiões por onde Paulo pretende passar durante seu deslocamento. A tarefa envolve a localização da região de interesse, a apresentação das informações pelo sistema, a interpretação do risco e a decisão sobre manter o trajeto planejado ou considerar um caminho alternativo para evitar possíveis áreas de risco.
 
 ### Diagrama
 
@@ -115,7 +158,9 @@ O CTT representa a sequência e as relações temporais envolvidas na consulta d
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| >> | Ativação sequencial: uma tarefa começa após a conclusão da anterior | Após localizar a região de interesse, Paulo consulta e interpreta as informações de risco. Em seguida, decide como realizar o deslocamento |
+| [] | Escolha: o usuário realiza uma entre duas tarefas alternativas | Paulo pode localizar a região pelo mapa ou pela busca. Depois de avaliar o risco, pode manter o trajeto ou considerar um caminho alternativo |
+| []>> | Ativação com passagem de informação: a tarefa seguinte utiliza informações disponibilizadas pela anterior | O sistema apresenta as informações sobre o risco, que são utilizadas por Paulo para identificar o nível de risco da região |
 
 Identifique, quando aplicável, tarefas de usuário, sistema, interação e tarefas abstratas. Verifique se concorrência, escolha, habilitação, desabilitação e repetição estão representadas corretamente segundo a notação adotada em aula.
 

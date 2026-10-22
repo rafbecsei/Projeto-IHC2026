@@ -166,186 +166,225 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ---
 
-## HTA — T02 Consultar o risco de alagamento da região e decidir sobre medidas preventivas
+## HTA — T02 Cadastrar um trajeto habitual e configurar alertas de risco de alagamento
 
-**Autor(a):** Victor Pimentel Lario — 22.125.064-0
+**Autor(a):** Victor Pimentel Lario - 22.125.064-0
 
 ### Descrição da tarefa
 
-Victor Merker Binda está em casa acompanhando notícias sobre a previsão de chuva intensa. Preocupado com a possibilidade de alagamentos próximos à sua residência, decide consultar as informações de risco da região pelo celular. Seu objetivo é compreender o nível de risco apresentado e avaliar se precisa tomar alguma medida preventiva para proteger sua casa e seus bens.
+A tarefa tem como objetivo permitir que Paulo cadastre seu trajeto habitual entre casa e trabalho e configure alertas para ser notificado quando houver risco de alagamento nas regiões relacionadas ao seu deslocamento.
 
-A tarefa começa quando Victor decide buscar informações sobre sua região e termina quando consegue interpretar a situação e decidir como deve agir. Caso a chuva continue, ele pode voltar a acompanhar as informações para verificar possíveis mudanças.
+A tarefa começa quando Paulo acessa a funcionalidade de cadastro de trajetos e termina quando ele define os locais de origem e destino, escolhe os níveis de risco para os quais deseja receber alertas e salva as configurações. Dessa forma, ele poderá receber avisos sem precisar consultar manualmente as condições das regiões a todo momento.
 
 ### Diagrama
 
-![HTA T02](../assets/05_tarefas/HTA02.png)
+![HTA T02](../assets/05_tarefas/hta_t02.svg)
 
 ### Decomposição e planos
 
-| **ID** | **Objetivo/operação** | **Plano/ordem** | **Problema ou decisão de design observada** |
+| ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
-| 0 | Consultar o risco e decidir sobre a preparação da residência | 1 > 2 > 3 > 4, sendo 4 executada conforme a necessidade | Victor precisa compreender o risco da região para decidir se deve tomar medidas preventivas. |
-| 1 | Acessar informações da região | 1.1 > 1.2 | O acesso deve ser simples, com poucos passos. |
-| 1.1 | Abrir o sistema pelo celular | Operação | A interface inicial deve facilitar a identificação da consulta de risco. |
-| 1.2 | Localizar a região onde mora | Operação | Facilitar a localização da região, evitando navegação complexa pelo mapa. |
-| 2 | Compreender o risco apresentado | 2.1 > 2.2 | Informações técnicas podem dificultar o entendimento. |
-| 2.1 | Consultar o nível de risco da região | Operação | Exibir níveis de risco com textos e indicadores claros. |
-| 2.2 | Interpretar as informações apresentadas | Operação | Evitar depender apenas de porcentagens ou cores. |
-| 3 | Decidir se precisa tomar medidas preventivas | 3.1 > 3.2, sendo 3.2 necessária quando houver motivo para preparação | O sistema deve ajudar Victor a compreender a situação sem tomar a decisão por ele. |
-| 3.1 | Avaliar a necessidade de preparação | Operação | As informações devem facilitar a decisão do morador. |
-| 3.2 | Definir quais medidas preventivas realizar | Operação condicional | Victor pode ter dificuldade para decidir quais ações priorizar. |
-| 4 | Acompanhar possíveis mudanças na situação | Repetir a consulta quando necessário | Facilitar novas consultas e a identificação de mudanças no risco. |
-
-**Plano 0:** Realizar 1, depois 2 e 3. Executar 4 quando desejar acompanhar a evolução da situação.
-
-**Plano 1:** Realizar 1.1 e depois 1.2.
-
-**Plano 2:** Realizar 2.1 e depois 2.2.
-
-**Plano 3:** Realizar 3.1. Caso exista necessidade de preparação, realizar 3.2.
+| 0 | Cadastrar trajeto habitual e configurar alertas de risco de alagamento | 1 > 2 > 3 | O sistema deve permitir cadastrar locais de deslocamento e configurar alertas de maneira simples. |
+| 1 | Definir o trajeto habitual | 1.1 / 1.2 | Paulo deve conseguir informar os locais de origem e destino de forma prática. |
+| 1.1 | Informar origem e destino pela busca | 1.1.1 > 1.1.2 | A busca deve facilitar a localização dos endereços desejados. |
+| 1.1.1 | Informar o endereço de origem | — | O campo de busca deve permitir identificar corretamente o local de partida. |
+| 1.1.2 | Informar o endereço de destino | — | O sistema deve facilitar a seleção do destino correspondente. |
+| 1.2 | Selecionar origem e destino pelo mapa | 1.2.1 > 1.2.2 | O mapa deve permitir localizar os pontos visualmente. |
+| 1.2.1 | Selecionar o ponto de origem | — | A navegação pelo mapa deve ser simples e intuitiva. |
+| 1.2.2 | Selecionar o ponto de destino | — | O destino deve ser facilmente identificado no mapa. |
+| 2 | Configurar os alertas de risco | 2.1 > 2.2 | Paulo deve conseguir personalizar os alertas de acordo com sua necessidade. |
+| 2.1 | Ativar o recebimento de notificações | — | A interface deve indicar claramente quando os alertas estão ativados. |
+| 2.2 | Selecionar os níveis de risco desejados | — | Os níveis devem ser apresentados em linguagem simples e compreensível. |
+| 3 | Confirmar o cadastro | 3.1 > 3.2 | O usuário deve conseguir conferir as informações antes de finalizar. |
+| 3.1 | Conferir os locais e alertas selecionados | — | As informações devem ser apresentadas de forma organizada para evitar erros. |
+| 3.2 | Salvar o trajeto e as configurações | — | O sistema deve apresentar uma confirmação de que o cadastro foi realizado. |
 
 ### Verificação do HTA
 
-- O objetivo 0 representa uma meta do usuário: entender o risco de alagamento de sua região e decidir se precisa se preparar.
-- As subtarefas contemplam o acesso às informações, a interpretação do risco, a decisão e o acompanhamento.
-- Os planos representam sequência, condições e repetição.
-- A decomposição foi interrompida em operações úteis para identificar problemas e oportunidades de design.
+- O objetivo 0 representa a meta de Paulo de cadastrar um trajeto habitual e configurar alertas de risco de alagamento.
+- As subtarefas contemplam a definição dos locais, a configuração dos alertas e a confirmação do cadastro.
+- Os planos apresentam a ordem das ações e as alternativas disponíveis para definir o trajeto.
+- A decomposição foi interrompida em operações relevantes para o projeto da interface, sem detalhar o processamento interno do sistema.
 
 ---
 
-## GOMS — T02 Consultar o risco de alagamento da região e decidir sobre medidas preventivas
+## GOMS — T02 Cadastrar um trajeto habitual e configurar alertas de risco de alagamento
 
-**Autor(a):** Victor Pimentel Lario — 22.125.064-0
+**Autor(a):** Victor Pimentel Lario - 22.125.064-0
 
 ### Goal
 
-`G0: Compreender o risco de alagamento da região onde mora e decidir se precisa tomar medidas preventivas.`
-
-### Diagrama
-
-![GOMS T02](../assets/05_tarefas/goms.png)
+`G0: Cadastrar um trajeto habitual e configurar alertas de risco de alagamento para acompanhar as regiões relacionadas ao deslocamento.`
 
 ### Métodos, operadores e regras de seleção
 
-**GOAL 1: Localizar a região onde mora**
+**GOAL 1: Definir o trajeto habitual**
 
-**Method M1: Localizar a região por meio de busca pelo nome**
+**Method M1: Definir origem e destino pela busca**
 
-- OP 1.1: Abrir o sistema pelo celular.
-- OP 1.2: Identificar o campo de busca.
-- OP 1.3: Tocar no campo de busca.
-- OP 1.4: Digitar o nome da região.
-- OP 1.5: Selecionar a região correspondente.
-- OP 1.6: Verificar se a região apresentada está correta.
+- OP 1.1: Acessar a funcionalidade de cadastro de trajetos.
+- OP 1.2: Identificar o campo de busca da origem.
+- OP 1.3: Digitar o endereço ou nome da região de origem.
+- OP 1.4: Selecionar o resultado correspondente.
+- OP 1.5: Digitar o endereço ou nome da região de destino.
+- OP 1.6: Selecionar o destino correspondente.
 
-**Method M2: Localizar a região diretamente pelo mapa**
+**Method M2: Definir origem e destino pelo mapa**
 
-- OP 2.1: Abrir o sistema pelo celular.
-- OP 2.2: Observar o mapa apresentado.
-- OP 2.3: Movimentar ou aproximar o mapa, se necessário.
-- OP 2.4: Identificar a região onde mora.
-- OP 2.5: Tocar na região desejada.
-- OP 2.6: Verificar se a região selecionada está correta.
+- OP 2.1: Acessar a funcionalidade de cadastro de trajetos.
+- OP 2.2: Visualizar o mapa apresentado.
+- OP 2.3: Navegar até encontrar o ponto de origem.
+- OP 2.4: Selecionar o ponto de origem.
+- OP 2.5: Navegar até encontrar o ponto de destino.
+- OP 2.6: Selecionar o ponto de destino.
 
 **Selection Rule SR1:**
-- Utilizar M1 quando Victor souber o nome da região e preferir uma consulta mais simples, sem precisar navegar pelo mapa.
-- Utilizar M2 quando Victor conseguir reconhecer visualmente sua região no mapa e preferir selecioná-la diretamente.
 
-**GOAL 2: Compreender o risco apresentado**
+- Utilizar M1 quando Paulo souber o endereço ou nome das regiões e preferir realizar uma busca.
+- Utilizar M2 quando Paulo preferir localizar visualmente a origem e o destino pelo mapa.
 
-**Method M3: Consultar e interpretar as informações de risco**
+**GOAL 2: Configurar os alertas de risco de alagamento**
 
-- OP 3.1: Observar o nível de risco apresentado.
-- OP 3.2: Ler a descrição associada ao nível de risco.
-- OP 3.3: Identificar se a situação indica necessidade de atenção.
-- OP 3.4: Relacionar as informações apresentadas com a situação da região onde mora.
+**Method M3: Ativar e personalizar as notificações**
 
-**GOAL 3: Decidir sobre medidas preventivas**
+- OP 3.1: Acessar as configurações de alertas.
+- OP 3.2: Identificar a opção de recebimento de notificações.
+- OP 3.3: Ativar os alertas.
+- OP 3.4: Visualizar os níveis de risco disponíveis.
+- OP 3.5: Selecionar os níveis de risco para os quais deseja receber notificações.
 
-**Method M4: Avaliar a necessidade de preparação**
+**GOAL 3: Confirmar o cadastro**
 
-- OP 4.1: Considerar o risco apresentado para sua região.
-- OP 4.2: Comparar a situação com experiências anteriores de chuva intensa.
-- OP 4.3: Decidir se precisa realizar alguma medida preventiva.
-- OP 4.4: Caso necessário, definir ações para proteger a residência e os bens.
+**Method M4: Conferir e salvar as informações**
+
+- OP 4.1: Visualizar os locais de origem e destino selecionados.
+- OP 4.2: Verificar se os locais estão corretos.
+- OP 4.3: Conferir os níveis de risco configurados.
+- OP 4.4: Selecionar a opção de salvar.
+- OP 4.5: Verificar a mensagem de confirmação apresentada pelo sistema.
 
 **Selection Rule SR2:**
-- Se Victor entender que existe risco que justifique preparação, decide realizar medidas preventivas.
-- Se entender que não existe necessidade imediata de preparação, continua acompanhando a situação e pode realizar outra consulta posteriormente.
 
+- Se os locais e as configurações estiverem corretos, Paulo confirma e salva o cadastro.
+- Se identificar alguma informação incorreta, retorna à etapa correspondente para realizar a correção antes de salvar.
 
-### Considerações sobre o modelo
+---## GOMS — T02 Cadastrar um trajeto habitual e configurar alertas de risco de alagamento
 
-O GOMS apresenta dois métodos alternativos para localizar a região, levando em consideração a familiaridade limitada de Victor com ferramentas digitais. A busca pelo nome pode oferecer um caminho mais simples, enquanto a seleção pelo mapa permite uma consulta visual.
+**Autor(a):** Victor Pimentel Lario - 22.125.064-0
 
-Após localizar sua região, Victor consulta as informações de risco, interpreta o resultado e decide se precisa se preparar. O sistema deve facilitar a compreensão das informações, mas a decisão de realizar medidas preventivas continua sendo do usuário.
+### Goal
 
+`G0: Cadastrar um trajeto habitual e configurar alertas de risco de alagamento para acompanhar as regiões relacionadas ao deslocamento.`
+
+### Métodos, operadores e regras de seleção
+
+**GOAL 1: Definir o trajeto habitual**
+
+**Method M1: Definir origem e destino pela busca**
+
+- OP 1.1: Acessar a funcionalidade de cadastro de trajetos.
+- OP 1.2: Identificar o campo de busca da origem.
+- OP 1.3: Digitar o endereço ou nome da região de origem.
+- OP 1.4: Selecionar o resultado correspondente.
+- OP 1.5: Digitar o endereço ou nome da região de destino.
+- OP 1.6: Selecionar o destino correspondente.
+
+**Method M2: Definir origem e destino pelo mapa**
+
+- OP 2.1: Acessar a funcionalidade de cadastro de trajetos.
+- OP 2.2: Visualizar o mapa apresentado.
+- OP 2.3: Navegar até encontrar o ponto de origem.
+- OP 2.4: Selecionar o ponto de origem.
+- OP 2.5: Navegar até encontrar o ponto de destino.
+- OP 2.6: Selecionar o ponto de destino.
+
+**Selection Rule SR1:**
+
+- Utilizar M1 quando Paulo souber o endereço ou nome das regiões e preferir realizar uma busca.
+- Utilizar M2 quando Paulo preferir localizar visualmente a origem e o destino pelo mapa.
+
+**GOAL 2: Configurar os alertas de risco de alagamento**
+
+**Method M3: Ativar e personalizar as notificações**
+
+- OP 3.1: Acessar as configurações de alertas.
+- OP 3.2: Identificar a opção de recebimento de notificações.
+- OP 3.3: Ativar os alertas.
+- OP 3.4: Visualizar os níveis de risco disponíveis.
+- OP 3.5: Selecionar os níveis de risco para os quais deseja receber notificações.
+
+**GOAL 3: Confirmar o cadastro**
+
+**Method M4: Conferir e salvar as informações**
+
+- OP 4.1: Visualizar os locais de origem e destino selecionados.
+- OP 4.2: Verificar se os locais estão corretos.
+- OP 4.3: Conferir os níveis de risco configurados.
+- OP 4.4: Selecionar a opção de salvar.
+- OP 4.5: Verificar a mensagem de confirmação apresentada pelo sistema.
+
+**Selection Rule SR2:**
+
+- Se os locais e as configurações estiverem corretos, Paulo confirma e salva o cadastro.
+- Se identificar alguma informação incorreta, retorna à etapa correspondente para realizar a correção antes de salvar.
+- 
 ---
 
-## CTT — T02 Consultar o risco de alagamento da região e decidir sobre medidas preventivas
-  
+## CTT — T02 Cadastrar um trajeto habitual e configurar alertas de risco de alagamento
 
-**Autor(a):** Victor Pimentel Lario — 22.125.064-0
+**Autor(a):** Victor Pimentel Lario - 22.125.064-0
 
 ### Descrição
 
-O modelo CTT representa a sequência de tarefas realizadas por Victor Merker Binda ao consultar o risco de alagamento de sua região e decidir se precisa tomar medidas preventivas.
+O CTT representa a sequência e as relações temporais envolvidas no cadastro de um trajeto habitual e na configuração de alertas de risco de alagamento realizados por Paulo Andre Oliveira.
 
-Inicialmente, Victor acessa o sistema pelo celular e localiza sua região, podendo realizar uma busca pelo nome ou selecionar diretamente pelo mapa. Após a seleção, o sistema processa a consulta e apresenta as informações de risco.
+Inicialmente, Paulo define os locais de origem e destino, podendo utilizar a busca por endereços ou selecionar os pontos diretamente no mapa. Em seguida, acessa as configurações de alertas, ativa as notificações e seleciona os níveis de risco que deseja acompanhar.
 
-Victor interpreta o resultado e decide se precisa realizar alguma ação preventiva. Durante a chuva, pode repetir a consulta para acompanhar possíveis mudanças na situação.
-
-O modelo diferencia tarefas realizadas pelo usuário, interações com o sistema, processamentos automáticos e tarefas abstratas.
+Por fim, Paulo confere os locais e as preferências selecionadas e confirma o cadastro. Caso encontre alguma informação incorreta, pode retornar à etapa correspondente para realizar a correção. Após o salvamento, o sistema registra as informações e apresenta uma mensagem de confirmação.
 
 ### Diagrama
 
-![HTA T02](../assets/05_tarefas/ctt.png)
+![CTT T02](../assets/05_tarefas/ctt_t02.svg)
 
 ### Tarefas identificadas
 
-| **ID** | **Tarefa** | **Tipo** |
+| ID | Tarefa | Tipo |
 |---|---|---|
-| T0 | Consultar o risco e decidir sobre a preparação | Abstrata |
-| T1 | Consultar a região onde mora | Abstrata |
-| T1.1 | Buscar a região pelo nome | Interação |
-| T1.2 | Selecionar a região pelo mapa | Interação |
-| T2 | Obter informações de risco | Abstrata |
-| T2.1 | Processar a consulta de risco | Sistema |
-| T2.2 | Apresentar as informações de risco | Interação |
-| T3 | Avaliar a situação e decidir | Abstrata |
-| T3.1 | Interpretar o nível de risco | Usuário |
-| T3.2 | Decidir sobre medidas preventivas | Usuário |
-| T4 | Acompanhar possíveis mudanças | Abstrata |
+| T0 | Cadastrar trajeto habitual e configurar alertas | Abstrata |
+| T1 | Definir origem e destino | Abstrata |
+| T1.1 | Informar origem e destino pela busca | Interação |
+| T1.2 | Selecionar origem e destino pelo mapa | Interação |
+| T2 | Configurar os alertas de risco | Abstrata |
+| T2.1 | Acessar e ativar as notificações | Interação |
+| T2.2 | Apresentar os níveis de risco disponíveis | Sistema |
+| T2.3 | Selecionar os níveis de risco desejados | Interação |
+| T3 | Confirmar o cadastro | Abstrata |
+| T3.1 | Conferir os locais e as configurações | Usuário |
+| T3.2 | Corrigir informações, caso necessário | Interação |
+| T3.3 | Solicitar o salvamento | Interação |
+| T3.4 | Registrar as informações cadastradas | Sistema |
+| T3.5 | Apresentar a confirmação do cadastro | Sistema |
 
 ### Legenda e relações temporais usadas
 
-| **Operador/relação** | **Significado no diagrama** | **Exemplo no modelo** |
+| Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| `>>` | Habilitação: uma tarefa começa após a conclusão da anterior. | T2 >> T3: Victor recebe as informações antes de avaliar a situação. |
-| `[]>>` | Habilitação com passagem de informação. | T1 []>> T2: a região selecionada é utilizada para realizar a consulta. |
-| `[]` | Escolha: apenas uma das tarefas alternativas é executada. | T1.1 [] T1.2: Victor pode buscar a região pelo nome ou selecioná-la no mapa. |
-| `*` | Repetição de uma tarefa. | T4*: Victor pode acompanhar novamente as condições durante a chuva. |
-| `|||` | Concorrência: tarefas podem ocorrer em paralelo ou em qualquer ordem. | Acompanhar notícias e observar as condições da chuva podem ocorrer em paralelo à consulta. |
+| `>>` | Ativação sequencial: uma tarefa começa após a conclusão da anterior. | Após definir os locais, Paulo configura os alertas e confirma o cadastro. |
+| `[]` | Escolha: apenas uma das tarefas alternativas é realizada. | Paulo pode informar os locais pela busca ou selecioná-los diretamente no mapa. |
+| `[]>>` | Ativação com passagem de informação: a tarefa seguinte recebe informações da anterior. | Os locais definidos e os níveis de risco selecionados são utilizados na confirmação do cadastro. |
+| `*` | Repetição: uma tarefa pode ser executada novamente. | Paulo pode revisar e corrigir as informações até que estejam corretas. |
 
 ### Relação temporal principal
 
-`T0 = T1 []>> T2 >> T3 >> T4*`
+`T0 = T1 >> T2 []>> T3`
 
 **Decomposição das tarefas:**
 
-- T1 = T1.1 [] T1.2
-- T2 = T2.1 >> T2.2
-- T3 = T3.1 >> T3.2
+- `T1 = T1.1 [] T1.2`
+- `T2 = T2.1 >> T2.2 >> T2.3`
+- `T3 = T3.1 >> T3.3 >> T3.4 >> T3.5`, quando as informações estiverem corretas.
 
-A tarefa T4 representa novas verificações da situação. Quando Victor precisa consultar novamente o risco, pode repetir o processo de consulta e avaliação.
-
-### Considerações sobre o modelo
-
-O CTT evidencia que Victor possui alternativas para localizar sua região e que as informações precisam estar disponíveis antes que ele possa avaliar o risco.
-
-O modelo também considera que o acompanhamento pode ocorrer repetidamente durante períodos de chuva intensa, permitindo que Victor reavalie a necessidade de preparação.
-
-As tarefas foram organizadas para representar tanto as interações com o sistema quanto as decisões realizadas pelo usuário, respeitando suas características e necessidades.
+Caso Paulo encontre algum erro durante T3.1, realiza T3.2 e retorna à conferência antes de executar T3.3. Esse retorno deve ser representado como uma condição de correção no diagrama, não como uma etapa obrigatória.
 
 ---
 

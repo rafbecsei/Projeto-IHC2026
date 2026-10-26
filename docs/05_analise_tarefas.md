@@ -178,7 +178,7 @@ A tarefa começa quando Paulo acessa a funcionalidade de cadastro de trajetos e 
 
 ### Diagrama
 
-![HTA T02](../assets/05_tarefas/hta_t02.svg)
+![HTA T02](../assets/05_tarefas/DiagramaHTA2.png)
 
 ### Decomposição e planos
 

@@ -344,7 +344,7 @@ Por fim, Paulo confere os locais e as preferências selecionadas e confirma o ca
 
 ### Diagrama
 
-![CTT T02](../assets/05_tarefas/CTT02.svg)
+![CTT T02](../assets/05_tarefas/CTT02.png)
 
 ### Tarefas identificadas
 

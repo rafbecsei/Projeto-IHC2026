@@ -344,7 +344,7 @@ Por fim, Paulo confere os locais e as preferências selecionadas e confirma o ca
 
 ### Diagrama
 
-![CTT T02](../assets/05_tarefas/ctt_t02.svg)
+![CTT T02](../assets/05_tarefas/CTT02.svg)
 
 ### Tarefas identificadas
 
@@ -372,7 +372,7 @@ Por fim, Paulo confere os locais e as preferências selecionadas e confirma o ca
 | `>>` | Ativação sequencial: uma tarefa começa após a conclusão da anterior. | Após definir os locais, Paulo configura os alertas e confirma o cadastro. |
 | `[]` | Escolha: apenas uma das tarefas alternativas é realizada. | Paulo pode informar os locais pela busca ou selecioná-los diretamente no mapa. |
 | `[]>>` | Ativação com passagem de informação: a tarefa seguinte recebe informações da anterior. | Os locais definidos e os níveis de risco selecionados são utilizados na confirmação do cadastro. |
-| `*` | Repetição: uma tarefa pode ser executada novamente. | Paulo pode revisar e corrigir as informações até que estejam corretas. |
+
 
 ### Relação temporal principal
 
@@ -382,7 +382,9 @@ Por fim, Paulo confere os locais e as preferências selecionadas e confirma o ca
 
 - `T1 = T1.1 [] T1.2`
 - `T2 = T2.1 >> T2.2 >> T2.3`
-- `T3 = T3.1 >> T3.3 >> T3.4 >> T3.5`, quando as informações estiverem corretas.
+- `T3 = T3.1 >> (T3.2 [] T3.3)`
+- Caso seja necessário corrigir informações (T3.2), Paulo retorna à conferência antes de salvar.
+- Após a conferência correta: `T3.3 >> T3.4 >> T3.5`.
 
 Caso Paulo encontre algum erro durante T3.1, realiza T3.2 e retorna à conferência antes de executar T3.3. Esse retorno deve ser representado como uma condição de correção no diagrama, não como uma etapa obrigatória.
 

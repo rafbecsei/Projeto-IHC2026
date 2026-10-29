@@ -67,11 +67,20 @@ As hipóteses de maior prioridade para a coleta são H01, H02 e H04, pois estão
 
 | Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Pessoas que realizam deslocamentos frequentes pela cidade de São Paulo | Realizar deslocamentos urbanos regularmente para trabalho, estudo ou outros compromissos | Representam o perfil principal associado à P01 |
+| Pessoas que utilizam smartphone para planejar ou acompanhar seus deslocamentos | Utilizar aplicativos de mapas, trânsito, transporte ou previsão do tempo com alguma frequência | Possuem hábitos tecnológicos semelhantes aos considerados para a P01 |
+| Pessoas que já precisaram alterar ou reconsiderar um trajeto durante períodos de chuva intensa | Ter vivenciado situações em que chuva, alagamentos ou problemas no trânsito afetaram seu deslocamento | Permitem investigar situações semelhantes às vivenciadas no cenário relacionado à P01 |
+| Pessoas sem conhecimento técnico especializado sobre meteorologia ou alagamentos | Não atuar profissionalmente em áreas como meteorologia, hidrologia ou gestão de riscos | Aproximam-se do nível de conhecimento do domínio considerado para a P01 |
 
 #### Aspectos éticos
 
-Analise voluntariedade, consentimento, minimização de dados, privacidade, riscos, gravação, anonimização, armazenamento e descarte. Não responda apenas “sim, por causa da LGPD”: explique **quais dados e riscos existem neste projeto**.
+A participação deverá ser voluntária e ocorrer somente após o participante compreender o objetivo da pesquisa e concordar com a coleta. Ele poderá recusar perguntas ou desistir a qualquer momento.
+
+Serão coletados apenas os dados necessários para o estudo, evitando informações pessoais como nome completo, endereço ou documentos. As respostas serão tratadas de forma confidencial e apresentadas anonimamente, utilizando identificadores como U01 e U02.
+
+Caso haja gravação de áudio ou vídeo, será solicitada autorização específica. Os dados ficarão acessíveis apenas à equipe durante o período necessário para análise e depois serão descartados.
+
+Também deve ser considerado que alguns participantes podem sentir desconforto ao relatar experiências negativas com chuvas ou alagamentos, por isso nenhuma resposta será obrigatória.
 
 ### A02 — {{autor}}
 

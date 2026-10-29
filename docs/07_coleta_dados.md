@@ -1,7 +1,7 @@
 # Entrega 7 — Coleta de dados, necessidades e aspectos éticos
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada
+**Data:** 28/10/2026
+**Status:** 🟨 não iniciada
 
 ## Objetivo da atividade
 
@@ -28,17 +28,52 @@ Quando o acesso ao perfil profissional for difícil, discuta com o docente alter
 
 ## Hipóteses e lacunas prioritárias herdadas da Entrega 1
 
-Antes de decidir “que dados coletar”, retome os itens `[H]` e `[?]` da Entrega 1 e o registro de hipóteses em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md). A coleta deve responder perguntas reais do projeto, e não apenas produzir um formulário porque a técnica foi solicitada.
+Antes de definir os dados e instrumentos de coleta, foram retomadas as hipóteses registradas ao longo das entregas anteriores. As hipóteses H01 a H05 foram definidas inicialmente na Entrega 1 e receberam indícios a partir da análise de sistemas similares realizada na Entrega 2, porém permanecem abertas por ainda não terem sido validadas diretamente com usuários. A H06 surgiu posteriormente, durante a elaboração do cenário C04 da Entrega 4, e também será considerada na coleta.
 
 | ID | Hipótese/lacuna | Evidência atual | Decisão que depende da resposta | Prioridade |
 |---|---|---|---|---|
-| H01 | {{...}} | {{...}} | {{...}} | alta / média / baixa |
+| H01 | Usuários compreendem melhor o risco quando ele é apresentado por níveis, como baixo, médio e alto, além da porcentagem. |CGE e Climatempo utilizam classificações e indicadores visuais para comunicar estados ou níveis. Isso demonstra um padrão utilizado por sistemas existentes, mas ainda não comprova que essa representação seja mais fácil de compreender pelos usuários do projeto. | Definir como o risco será apresentado, incluindo a possível utilização de níveis, porcentagens, textos explicativos ou uma combinação dessas informações. | alta |
+| H02 | Um mapa pode ser uma forma adequada de permitir a consulta do risco por região. | Mapas aparecem de forma recorrente em CGE, GeoSampa, CEMADEN, OpenWeather, Google Maps e Waze. Entretanto, ainda não foi comprovado que o mapa seja a forma mais eficiente para o público priorizado consultar o risco. | Definir se o mapa deve ser uma das principais formas de consulta ou se outras formas de localização e apresentação devem ter maior prioridade. | alta |
+| H03 | Alertas de risco podem ser úteis para decisões preventivas. | Alertas e informações sobre ocorrências aparecem em soluções como CGE, Waze e Climatempo. Ainda não existe evidência coletada com usuários que indique quando um alerta seria útil, qual antecedência seria necessária ou se ele realmente alteraria uma decisão. | Decidir se alertas devem fazer parte da interface e, caso sejam necessários, definir quando e de que forma devem ser apresentados. | média |
+| H04 | Usuários não técnicos podem ter dificuldade para interpretar probabilidades e dados isolados. | GeoSampa e CEMADEN apresentam dados e terminologias que podem exigir maior conhecimento técnico. As personas e os cenários também levantaram essa dificuldade como hipótese, mas ela ainda precisa ser investigada com usuários reais. | Definir o nível de simplificação da linguagem, o uso de explicações e a forma de apresentar probabilidades e outros dados técnicos. | alta |
+| H05 | Informações adicionais sobre chuva e características da região podem ajudar na compreensão da estimativa de risco. | Os sistemas analisados apresentam informações complementares como chuva, localização, histórico e condições meteorológicas. Ainda não se sabe quais dessas informações realmente ajudam o usuário e quais apenas aumentam a quantidade de conteúdo apresentado. | Definir quais informações complementares devem acompanhar o risco e qual nível de detalhamento é adequado. | média |
+| H06 | Para usuários que dependem de transporte público, a forma mais útil de relacionar o risco ao deslocamento pode ser por linha, ponto, terminal ou modal, e não apenas por região ou rua. | O cenário C04 levantou que a P04 pode pensar seu deslocamento principalmente por linha, ponto, terminal, modal e horário. Essa observação surgiu da análise da equipe e ainda não constitui evidência obtida com usuários. | Definir como informações de risco devem ser relacionadas ao deslocamento de usuários de transporte público e verificar se a consulta apenas por região ou mapa é suficiente. | média |
+
+As hipóteses de maior prioridade para a coleta são H01, H02 e H04, pois estão diretamente relacionadas à capacidade do usuário de localizar e compreender o risco apresentado. H03, H05 e H06 também deverão ser investigadas para verificar necessidades complementares e evitar a inclusão de funcionalidades ou informações sem evidência de utilidade.
 
 ## Parte A — necessidades e requisitos de IHC
 
 > **Responsabilidade:** solução individual por integrante.
 
-### A01 — {{autor}}
+### A01 — Eric Song Watanabe
+
+**Autor(a):** Eric Song Watanabe — 22.125.086-3
+
+#### Que dados coletar?
+
+| Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
+|---|---|---|---|
+| {{...}} | {{H01/H02/...}} | {{...}} | {{...}} |
+| Quais informações o usuário considera mais importantes para entender o risco de alagamento | H01 / H05 | Permite identificar quais informações realmente ajudam o usuário a compreender a situação  | Pode definir quais informações devem receber maior destaque na interface |
+| Como o usuário interpreta níveis de risco, porcentagens e outros dados relacionados a alagamentos | H01 / H04 | Permite verificar se a forma de apresentação do risco é compreensível para usuários sem conhecimento técnico | Pode afetar o uso de níveis, porcentagens, textos explicativos ou outras formas de representação | 
+| Como o usuário prefere localizar uma região para consultar o risco | H02 | Permite verificar se o mapa é realmente uma forma adequada de consulta ou se outras alternativas são mais fáceis | Pode definir se o mapa será a principal forma de consulta ou se deverão existir outras opções | 
+| Quais ferramentas o usuário utiliza atualmente para obter informações sobre chuva, trânsito e alagamentos | H02 | Permite compreender os hábitos atuais do usuário e como ele procura informações antes ou durante um deslocamento | Pode influenciar a organização da navegação e as formas de consulta oferecidas |
+| Em quais situações o usuário considera útil receber um alerta sobre risco de alagamento | H03 | Permite verificar se alertas realmente ajudam na tomada de decisões preventivas | Pode orientar a inclusão ou não de alertas e o momento em que devem ser apresentados |
+| Qual é o nível de conhecimento do usuário sobre chuva, precipitação, probabilidade e risco de alagamento | H04 | Permite identificar quais termos e informações podem causar dificuldade de interpretação | Pode afetar a linguagem utilizada e o nível de simplificação das informações |
+| Quais informações adicionais sobre chuva ou características da região ajudam o usuário a compreender melhor o risco | H05 | Permite descobrir quais informações complementares realmente auxiliam a decisão e quais apenas aumentam a quantidade de conteúdo | Pode definir quais dados complementares devem ser apresentados e com qual nível de detalhe |
+| Se informações sobre ocorrências anteriores de alagamento ajudam o usuário a compreender melhor a situação de uma região | H05 | Permite investigar se dados históricos aumentam a compreensão do risco ou são informações desnecessárias | Pode influenciar a inclusão de histórico de ocorrências como informação complementar |
+
+#### De quem coletar?
+
+| Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
+|---|---|---|
+| {{...}} | {{...}} | {{...}} |
+
+#### Aspectos éticos
+
+Analise voluntariedade, consentimento, minimização de dados, privacidade, riscos, gravação, anonimização, armazenamento e descarte. Não responda apenas “sim, por causa da LGPD”: explique **quais dados e riscos existem neste projeto**.
+
+### A02 — {{autor}}
 
 **Autor(a):** {{nome — matrícula}}
 
@@ -58,7 +93,46 @@ Antes de decidir “que dados coletar”, retome os itens `[H]` e `[?]` da Entre
 
 Analise voluntariedade, consentimento, minimização de dados, privacidade, riscos, gravação, anonimização, armazenamento e descarte. Não responda apenas “sim, por causa da LGPD”: explique **quais dados e riscos existem neste projeto**.
 
-> Repita A02, A03...
+### A03 — {{autor}}
+
+**Autor(a):** {{nome — matrícula}}
+
+#### Que dados coletar?
+
+| Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
+|---|---|---|---|
+| {{...}} | {{H01/H02/...}} | {{...}} | {{...}} |
+
+#### De quem coletar?
+
+| Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
+|---|---|---|
+| {{...}} | {{...}} | {{...}} |
+
+#### Aspectos éticos
+
+Analise voluntariedade, consentimento, minimização de dados, privacidade, riscos, gravação, anonimização, armazenamento e descarte. Não responda apenas “sim, por causa da LGPD”: explique **quais dados e riscos existem neste projeto**.
+
+### A04 — {{autor}}
+
+**Autor(a):** {{nome — matrícula}}
+
+#### Que dados coletar?
+
+| Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
+|---|---|---|---|
+| {{...}} | {{H01/H02/...}} | {{...}} | {{...}} |
+
+#### De quem coletar?
+
+| Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
+|---|---|---|
+| {{...}} | {{...}} | {{...}} |
+
+#### Aspectos éticos
+
+Analise voluntariedade, consentimento, minimização de dados, privacidade, riscos, gravação, anonimização, armazenamento e descarte. Não responda apenas “sim, por causa da LGPD”: explique **quais dados e riscos existem neste projeto**.
+
 
 ## Parte B — ferramentas de coleta
 

@@ -787,8 +787,11 @@ A modelagem diferencia as ações de Juliana (usuário), as interações com a i
 ---
 
 ## Síntese da equipe
+As modelagens mostraram que a interface deve facilitar a localização das informações, apresentar o risco de forma clara e oferecer alternativas de consulta sem aumentar a complexidade.
 
-Quais problemas de interação, oportunidades e requisitos apareceram a partir das modelagens? Quais tarefas irão para o protótipo e para o teste de usabilidade?
+As tarefas levantaram necessidades relacionadas à consulta do risco, cadastro de trajetos e alertas, histórico de alagamentos, geração de relatórios e consulta por transporte público.
+
+Para o protótipo e os testes de usabilidade, devem ser priorizadas as tarefas de consulta e interpretação do risco e de planejamento do deslocamento. As demais funcionalidades poderão ser avaliadas para verificar se realmente são úteis aos usuários.
 
 ## Checklist
 

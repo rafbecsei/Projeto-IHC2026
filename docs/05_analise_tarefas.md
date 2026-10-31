@@ -32,6 +32,9 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 | T01 | Consultar e interpretar o risco de alagamento de uma região para planejar o deslocamento | P01 / C01 | Frequência: depende da época do ano e de chuvas / Criticidade: alta, pois a informação pode apoiar decisões preventivas e evitar possíveis riscos à vida e financeiros. | Rafael Iamashita Becsei - 22.225.037-5 |
 | T02 | {{...}} | {{P01/C01}} | {{...}} | {{...}} |
 | T03 | Consultar o histórico de alagamentos de uma região e gerar um relatório | P01 / C01 | Frequência: eventual, principalmente quando o usuário deseja conhecer o histórico de uma região / Criticidade: média, pois permite compreender ocorrências anteriores e apoiar o planejamento de deslocamentos futuros. | Eric Song Watanabe - 22.125.086-3 |
+| T04 | Consultar o risco de alagamento ao longo da linha de transporte público utilizada e decidir como realizar o deslocamento | P04 / C04 | Frequência: eventual, concentrada em dias com previsão de chuva intensa, antes de sair de casa ou já no ponto/terminal / Criticidade: alta, pois o trecho de ônibus é o mais exposto a alagamentos e a decisão precisa ser tomada com pouco tempo, envolvendo risco de atraso em compromissos importantes e de ficar retida em um veículo afetado. | Henrique Hodel Babler — 22.125.084-8 |
+ 
+
 
 > Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
 
@@ -561,6 +564,227 @@ Durante a análise do histórico, algumas informações podem ser examinadas sem
 A geração do relatório depende dos dados obtidos anteriormente e da configuração realizada pelo usuário. Depois que o sistema gera o documento, Paulo pode apenas consultá-lo ou também exportá-lo, dependendo de sua necessidade.
 
 A modelagem diferencia as ações realizadas por Paulo, as interações com a interface e os processamentos realizados automaticamente pelo sistema.
+
+---
+ 
+## HTA — T04 Consultar o risco de alagamento ao longo da linha de transporte público
+ 
+**Autor(a):** Henrique Hodel Babler — 22.125.084-8
+ 
+### Descrição da tarefa
+ 
+A tarefa tem como objetivo permitir que Juliana Ferreira Costa consulte o risco de alagamento ao longo da linha de ônibus que utiliza para chegar ao terminal de integração e, a partir dessas informações, decida como realizará seu deslocamento até a faculdade.
+ 
+Diferentemente da consulta por região (T01), essa funcionalidade organiza as informações de risco pela forma como Juliana pensa o próprio deslocamento: por linha, ponto de embarque e terminal, e não por ruas e avenidas que ela não conhece. O foco está no trecho de ônibus até o terminal, que circula pelas vias e é o mais exposto a alagamentos; o trecho de metrô não foi modelado. [H] Essa organização parte da hipótese H06, levantada no cenário C04, e ainda precisa ser validada com usuários de transporte público.
+ 
+A tarefa começa quando Juliana recebe um alerta de temporal ou percebe chuva intensa antes de sair de casa (ou já no ponto de ônibus) e termina quando ela decide manter a linha habitual, sair mais cedo ou utilizar outra linha ou modal de transporte.
+ 
+### Diagrama
+ 
+![HTA T04](../assets/05_tarefas/hta_t04_dark.svg)
+ 
+### Decomposição e planos
+ 
+| ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
+|---|---|---|---|
+| 0 | Consultar o risco de alagamento ao longo da linha de transporte público e decidir como se deslocar | 1 > 2 > 3 > 4 | As informações de risco devem ser apresentadas na mesma unidade com que a usuária pensa o trajeto (linha, ponto, terminal), e não apenas por região. |
+| 1 | Identificar a linha de transporte utilizada | 1.1 / 1.2 > 1.3 | A usuária pode conhecer o número da linha ou apenas o ponto onde embarca; a interface deve aceitar as duas formas de entrada. |
+| 1.1 | Buscar pela linha de ônibus | — | A busca deve reconhecer número e nome da linha, inclusive com entradas parciais. |
+| 1.2 | Buscar pelo ponto de embarque ou terminal | — | Ao selecionar um ponto ou terminal, o sistema deve listar as linhas que passam por ele. |
+| 1.3 | Selecionar e confirmar a linha e o sentido do trajeto | — | Linhas possuem sentido de ida e volta; a escolha do sentido errado levaria a uma análise de trechos que não fazem parte do deslocamento. |
+| 2 | Consultar o risco ao longo da linha | 2.1 > 2.2 > 2.3 (se houver trecho de risco) | A visualização deve mostrar o itinerário completo, inclusive vias que a usuária não conhece, sem exigir que ela saiba os nomes das ruas. |
+| 2.1 | Visualizar o itinerário com os trechos de risco destacados | — | Os trechos devem ser diferenciados por nível de risco com cor e texto, não apenas por cor. |
+| 2.2 | Identificar o risco no ponto de embarque, nos trechos e no terminal | — | Ponto de embarque e terminal são referências que a usuária reconhece; devem receber destaque próprio. |
+| 2.3 | Consultar detalhes do trecho de maior risco | Opcional | Os detalhes (chuva prevista, ocorrências recentes no trecho) devem estar disponíveis sem sobrecarregar a visão geral da linha. |
+| 3 | Avaliar o impacto no deslocamento | 3.1 > 3.2 | A usuária precisa relacionar o risco ao seu trecho específico, e não à linha inteira. |
+| 3.1 | Relacionar os trechos de risco ao embarque e desembarque | — | Trechos de risco fora do intervalo entre embarque e desembarque não afetam a usuária; a interface deve permitir distinguir esse intervalo. |
+| 3.2 | Verificar a previsão do risco até o horário de passagem | — | O risco no momento da consulta pode ser diferente do risco no momento em que o ônibus passar pelo trecho. |
+| 4 | Decidir como realizar o deslocamento | 4.1 / 4.2 / 4.3 | A interface deve apoiar a decisão, sem decidir pela usuária. |
+| 4.1 | Manter a linha e o horário habituais | — | O sistema deve deixar claro quando o risco no trecho é baixo, transmitindo segurança para manter o planejamento. |
+| 4.2 | Antecipar o horário de saída | — | A previsão de evolução do risco deve indicar se sair mais cedo permite passar pelo trecho antes da piora. |
+| 4.3 | Avaliar outra linha ou modal | Repetir 1 > 2 > 3 para a alternativa | Para comparar alternativas, a usuária precisa repetir a consulta; a interface pode facilitar a comparação entre linhas consultadas. [H] |
+ 
+**Plano 0:** Realizar 1, depois 2, 3 e 4.
+ 
+**Plano 1:** Realizar 1.1 quando Juliana souber o número ou nome da linha, ou 1.2 quando souber apenas o ponto ou o terminal. Em seguida, realizar 1.3.
+ 
+**Plano 2:** Realizar 2.1 e 2.2. Realizar 2.3 somente se houver algum trecho com risco moderado ou alto no itinerário.
+ 
+**Plano 3:** Realizar 3.1 e depois 3.2.
+ 
+**Plano 4:** Realizar 4.1 se o risco no trecho utilizado for baixo e não houver previsão de piora. Realizar 4.2 se o risco for moderado ou houver previsão de piora próxima ao horário de passagem pelo trecho. Realizar 4.3 se o risco no trecho utilizado for alto ou se antecipar a saída não evitar o período de maior risco; nesse caso, repetir 1 > 2 > 3 para a nova linha ou modal até encontrar uma alternativa viável ou decidir antecipar a saída.
+ 
+### Verificação do HTA
+ 
+- O objetivo 0 representa uma meta de Juliana: saber se a linha que utiliza será afetada por alagamentos e decidir como chegar à faculdade com menor risco de atraso ou de ficar retida.
+- As subtarefas contemplam a identificação da linha, a consulta do risco ao longo do itinerário, a avaliação do impacto no trecho utilizado e a decisão sobre o deslocamento.
+- Os planos representam sequência (Plano 0, 2 e 3), alternativa (Planos 1 e 4), operação opcional (2.3) e repetição condicional (4.3).
+- A decomposição foi interrompida em operações relevantes para o projeto da interface, sem detalhar o cálculo do risco realizado pelo modelo do TCC.
+---
+ 
+## GOMS — T04 Consultar o risco de alagamento ao longo da linha de transporte público
+ 
+**Autor(a):** Henrique Hodel Babler — 22.125.084-8
+ 
+### Goal
+ 
+`G0: Consultar o risco de alagamento ao longo da linha de transporte público utilizada e decidir como realizar o deslocamento até a faculdade.`
+ 
+### Métodos, operadores e regras de seleção
+ 
+**GOAL 1: Identificar a linha de transporte utilizada**
+ 
+**Method M1: Buscar pela linha de ônibus**
+ 
+- OP 1.1: Acessar a consulta por transporte público.
+- OP 1.2: Selecionar o campo de busca de linhas.
+- OP 1.3: Digitar o número ou nome da linha.
+- OP 1.4: Selecionar a linha correspondente nos resultados.
+- OP 1.5: Selecionar o sentido do trajeto (ida ou volta).
+**Method M2: Buscar pelo ponto de embarque ou terminal**
+ 
+- OP 2.1: Acessar a consulta por transporte público.
+- OP 2.2: Selecionar o campo de busca de pontos e terminais.
+- OP 2.3: Digitar o endereço do ponto ou o nome do terminal.
+- OP 2.4: Selecionar o ponto ou terminal correspondente.
+- OP 2.5: Visualizar as linhas que passam pelo local.
+- OP 2.6: Selecionar a linha utilizada e o sentido do trajeto.
+**Selection Rule SR1:**
+ 
+- Utilizar M1 quando Juliana souber o número ou o nome da linha que utiliza.
+- Utilizar M2 quando Juliana souber apenas onde embarca ou desembarca, ou quiser descobrir quais linhas atendem um ponto ou terminal.
+**GOAL 2: Consultar o risco ao longo da linha**
+ 
+**Method M3: Analisar a visão geral do itinerário**
+ 
+- OP 3.1: Visualizar o itinerário da linha no mapa.
+- OP 3.2: Observar os trechos destacados por nível de risco.
+- OP 3.3: Identificar o nível de risco no ponto de embarque.
+- OP 3.4: Identificar o nível de risco no terminal de integração.
+- OP 3.5: Verificar se existe algum trecho com risco moderado ou alto entre o embarque e o desembarque.
+**Method M4: Analisar os detalhes de um trecho de risco**
+ 
+- OP 4.1: Visualizar o itinerário da linha no mapa.
+- OP 4.2: Identificar o nível de risco no ponto de embarque e no terminal de integração.
+- OP 4.3: Identificar o trecho com maior nível de risco entre o embarque e o desembarque.
+- OP 4.4: Selecionar o trecho.
+- OP 4.5: Ler as informações de chuva prevista e ocorrências recentes no trecho.
+- OP 4.6: Verificar a previsão de evolução do risco até o horário em que passará pelo trecho.
+- OP 4.7: Retornar à visão geral do itinerário.
+**Selection Rule SR2:**
+ 
+- Utilizar M3 quando todos os trechos entre o embarque e o desembarque apresentarem risco baixo.
+- Utilizar M4 quando algum trecho entre o embarque e o desembarque apresentar risco moderado ou alto.
+**GOAL 3: Decidir como realizar o deslocamento**
+ 
+**Method M5: Manter a linha e o horário habituais**
+ 
+- OP 5.1: Considerar o nível de risco do trecho utilizado.
+- OP 5.2: Confirmar que não há previsão de piora até o horário em que passará pelo trecho.
+- OP 5.3: Manter o planejamento habitual.
+**Method M6: Antecipar o horário de saída**
+ 
+- OP 6.1: Verificar o horário previsto para a piora do risco no trecho.
+- OP 6.2: Comparar com o horário em que passaria pelo trecho.
+- OP 6.3: Definir um novo horário de saída.
+- OP 6.4: Sair mais cedo utilizando a mesma linha.
+**Method M7: Utilizar outra linha ou outro modal**
+ 
+- OP 7.1: Retornar à consulta por transporte público.
+- OP 7.2: Buscar outra linha que conecte o ponto de partida ao terminal ou à faculdade, aplicando M1 ou M2.
+- OP 7.3: Consultar o risco ao longo da nova linha, aplicando M3 ou M4.
+- OP 7.4: Comparar o risco da nova linha com o da linha habitual.
+- OP 7.5: Escolher a alternativa com menor risco ou, se nenhuma linha for viável, optar por outro modal, como transporte por aplicativo. [H]
+**Selection Rule SR3:**
+ 
+- Utilizar M5 quando o risco no trecho utilizado for baixo e não houver previsão de piora.
+- Utilizar M6 quando o risco for moderado ou quando houver previsão de piora próxima ao horário em que Juliana passaria pelo trecho.
+- Utilizar M7 quando o risco no trecho utilizado for alto ou quando antecipar a saída não evitar o período de maior risco.
+### Considerações sobre o modelo
+ 
+O modelo GOMS mostra que a mesma meta pode ser atingida a partir de diferentes pontos de partida: Juliana pode conhecer a linha que utiliza ou apenas os pontos onde embarca e desembarca. Por isso, a interface precisa oferecer as duas formas de busca, com regras de seleção que dependem do conhecimento prévio da usuária.
+ 
+Na análise do risco, a visão geral do itinerário é suficiente quando não há trechos críticos, enquanto o detalhamento só é necessário quando algum trecho do deslocamento apresenta risco moderado ou alto. Isso evita que toda consulta exija uma análise detalhada.
+ 
+Na decisão, o método M7 reaproveita os métodos dos goals anteriores, o que indica que comparar linhas alternativas exige repetir a consulta. [H] Essa repetição sugere uma oportunidade de design: permitir comparar lado a lado o risco de duas ou mais linhas consultadas.
+
+ 
+---
+ 
+## CTT — T04 Consultar o risco de alagamento ao longo da linha de transporte público
+ 
+**Autor(a):** Henrique Hodel Babler — 22.125.084-8
+ 
+### Descrição
+ 
+O CTT representa as relações temporais envolvidas na consulta do risco de alagamento ao longo da linha de transporte público utilizada por Juliana Ferreira Costa e na decisão sobre como realizar seu deslocamento até a faculdade.
+ 
+Inicialmente, Juliana identifica a linha que utiliza, buscando pelo número da linha ou pelo ponto/terminal, e seleciona e confirma a linha e o sentido do trajeto. A linha selecionada é utilizada pelo sistema para calcular o risco nos trechos do itinerário e apresentá-los no mapa.
+ 
+Com o itinerário apresentado, Juliana analisa o risco no ponto de embarque, nos trechos intermediários e no terminal, relaciona esses trechos aos pontos que realmente utiliza e, se quiser, consulta detalhes do trecho de maior risco. Essas análises não seguem uma ordem rígida. Em seguida, verifica a previsão do risco até o horário em que passará pelo trecho.
+ 
+Por fim, com base na análise, Juliana escolhe entre manter a linha e o horário habituais, antecipar a saída ou avaliar outra linha ou modal. Na última opção, ela busca a alternativa, o sistema apresenta o risco correspondente e Juliana compara com a linha habitual antes de escolher.
+ 
+### Diagrama
+ 
+![CTT T04](../assets/05_tarefas/ctt_t04_dark.svg)
+ 
+### Tarefas identificadas
+ 
+| ID | Tarefa | Tipo |
+|---|---|---|
+| T0 | Consultar o risco de alagamento ao longo da linha e decidir como se deslocar | Abstrata |
+| T1 | Identificar a linha de transporte | Abstrata |
+| T1.1 | Buscar pela linha de ônibus | Interação |
+| T1.2 | Buscar pelo ponto de embarque ou terminal | Interação |
+| T1.3 | Selecionar e confirmar a linha e o sentido do trajeto | Interação |
+| T2 | Obter o risco ao longo da linha | Abstrata |
+| T2.1 | Calcular o risco nos trechos do itinerário | Sistema |
+| T2.2 | Apresentar o itinerário com os trechos de risco | Sistema |
+| T3 | Analisar o risco no trajeto | Abstrata |
+| T3.1 | Identificar o risco no embarque, nos trechos e no terminal | Usuário |
+| T3.2 | Relacionar os trechos de risco ao embarque e desembarque | Usuário |
+| T3.3 | Consultar detalhes do trecho de maior risco (opcional) | Interação |
+| T3.4 | Verificar a previsão do risco até o horário de passagem | Interação |
+| T4 | Decidir como realizar o deslocamento | Abstrata |
+| T4.1 | Manter a linha e o horário habituais | Usuário |
+| T4.2 | Antecipar o horário de saída | Usuário |
+| T4.3 | Avaliar outra linha ou modal | Abstrata |
+| T4.3.1 | Buscar outra linha ou modal | Interação |
+| T4.3.2 | Apresentar o risco da alternativa | Sistema |
+| T4.3.3 | Comparar com a linha habitual e escolher | Usuário |
+ 
+### Legenda e relações temporais usadas
+ 
+| Operador/relação | Significado no diagrama | Exemplo no modelo |
+|---|---|---|
+| `>>` | Ativação: a segunda tarefa começa após a conclusão da primeira. | (T3.1 \|\|\| T3.2 \|\|\| [T3.3]) >> T3.4: depois de analisar os trechos, Juliana verifica a previsão do risco. |
+| `[]>>` | Ativação com passagem de informação: a tarefa seguinte utiliza informações produzidas pela anterior. | T1 []>> T2: a linha e o sentido selecionados são usados pelo sistema para calcular o risco nos trechos. T3 []>> T4: o risco analisado é a base da decisão. |
+| `[]` | Escolha: apenas uma das tarefas alternativas é realizada. | T1.1 [] T1.2: Juliana busca pela linha ou pelo ponto/terminal. T4.1 [] T4.2 [] T4.3: mantém, antecipa ou avalia uma alternativa. |
+| `\|\|\|` | Concorrência: as tarefas podem ser realizadas em qualquer ordem. | T3.1 \|\|\| T3.2 \|\|\| [T3.3]: Juliana observa o risco, relaciona os trechos e consulta detalhes sem ordem rígida. |
+| `[T]` | Tarefa opcional. | [T3.3]: os detalhes do trecho só são consultados quando há trecho de risco moderado ou alto. |
+ 
+### Relação temporal principal
+ 
+`T0 = T1 []>> T2 []>> T3 []>> T4`
+ 
+**Decomposição das tarefas:**
+ 
+- `T1 = (T1.1 [] T1.2) []>> T1.3`
+- `T2 = T2.1 []>> T2.2`
+- `T3 = (T3.1 ||| T3.2 ||| [T3.3]) >> T3.4`
+- `T4 = T4.1 [] T4.2 [] T4.3`
+- `T4.3 = T4.3.1 []>> T4.3.2 []>> T4.3.3`
+### Considerações sobre o modelo
+ 
+O CTT evidencia que o cálculo do risco depende da linha e do sentido escolhidos por Juliana. Por isso, a confirmação do sentido (T1.3) é um ponto crítico: um erro nessa etapa faria o sistema apresentar trechos que não fazem parte do deslocamento.
+ 
+A análise do risco foi modelada com concorrência porque Juliana pode observar o mapa, relacionar os trechos aos pontos que utiliza e consultar detalhes em qualquer ordem. A verificação da previsão (T3.4) vem depois, pois depende de ela já ter identificado o trecho relevante.
+ 
+A avaliação de uma alternativa (T4.3) foi modelada como uma subtarefa finita, em vez de uma iteração sobre T1–T3, porque em CTT uma tarefa iterativa seguida de ativação nunca termina sem um operador de desativação. Ela corresponde ao método M7 do GOMS: buscar outra linha, consultar seu risco e comparar com a linha habitual. [H] A necessidade de comparar reforça a oportunidade de design, já identificada no GOMS, de permitir ver lado a lado o risco de mais de uma linha consultada.
+ 
+A modelagem diferencia as ações de Juliana (usuário), as interações com a interface e os processamentos realizados automaticamente pelo sistema.
+---
 
 ## Síntese da equipe
 

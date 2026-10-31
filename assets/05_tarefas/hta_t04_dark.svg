@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1558" height="566" viewBox="0 0 1558 566" font-family="Arial, Helvetica, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#ffffff"/></marker></defs>
+<rect width="1558" height="566" fill="#0d1117"/>
+<path d="M760,82 V100" stroke="#ffffff" fill="none"/>
+<path d="M262,100 H1290" stroke="#ffffff" fill="none"/>
+<path d="M262,100 V140" stroke="#ffffff" fill="none" marker-end="url(#a)"/>
+<path d="M1290,100 V140" stroke="#ffffff" fill="none" marker-end="url(#a)"/>
+<path d="M540,100 V370" stroke="#ffffff" fill="none" marker-end="url(#a)"/>
+<path d="M990,100 V370" stroke="#ffffff" fill="none" marker-end="url(#a)"/>
+<path d="M262,198 V216" stroke="#ffffff" fill="none"/>
+<path d="M86.0,216 H438.0" stroke="#ffffff" fill="none"/>
+<path d="M86.0,216 V250" stroke="#ffffff" fill="none" marker-end="url(#a)"/>
+<path d="M262.0,216 V250" stroke="#ffffff" fill="none" marker-end="url(#a)"/>
+<path d="M438.0,216 V250" stroke="#ffffff" fill="none" marker-end="url(#a)"/>
+<path d="M1290,198 V216" stroke="#ffffff" fill="none"/>
+<path d="M1114.0,216 H1466.0" stroke="#ffffff" fill="none"/>
+<path d="M1114.0,216 V250" stroke="#ffffff" fill="none" marker-end="url(#a)"/>
+<path d="M1290.0,216 V250" stroke="#ffffff" fill="none" marker-end="url(#a)"/>
+<path d="M1466.0,216 V250" stroke="#ffffff" fill="none" marker-end="url(#a)"/>
+<path d="M540,428 V446" stroke="#ffffff" fill="none"/>
+<path d="M364.0,446 H716.0" stroke="#ffffff" fill="none"/>
+<path d="M364.0,446 V480" stroke="#ffffff" fill="none" marker-end="url(#a)"/>
+<path d="M540.0,446 V480" stroke="#ffffff" fill="none" marker-end="url(#a)"/>
+<path d="M716.0,446 V480" stroke="#ffffff" fill="none" marker-end="url(#a)"/>
+<path d="M990,428 V446" stroke="#ffffff" fill="none"/>
+<path d="M902.0,446 H1078.0" stroke="#ffffff" fill="none"/>
+<path d="M902.0,446 V480" stroke="#ffffff" fill="none" marker-end="url(#a)"/>
+<path d="M1078.0,446 V480" stroke="#ffffff" fill="none" marker-end="url(#a)"/>
+<rect x="570.0" y="10" width="380" height="72" fill="#0d1117" stroke="#ffffff"/>
+<text fill="#ffffff" x="760" y="34.5" font-size="13" text-anchor="middle">0. Consultar o risco de alagamento ao longo da linha</text>
+<text fill="#ffffff" x="760" y="50.5" font-size="13" text-anchor="middle">de transporte público e decidir como se deslocar</text>
+<text fill="#ffffff" x="760" y="66.5" font-size="13" text-anchor="middle">1 &gt; 2 &gt; 3 &gt; 4</text>
+<rect x="147.0" y="140" width="230" height="58" fill="#0d1117" stroke="#ffffff"/>
+<text fill="#ffffff" x="262" y="157.5" font-size="13" text-anchor="middle">1. Identificar a linha de</text>
+<text fill="#ffffff" x="262" y="173.5" font-size="13" text-anchor="middle">transporte utilizada</text>
+<text fill="#ffffff" x="262" y="189.5" font-size="13" text-anchor="middle">1.1 / 1.2 &gt; 1.3</text>
+<rect x="6.0" y="250" width="160" height="66" fill="#0d1117" stroke="#ffffff"/>
+<text fill="#ffffff" x="86.0" y="279.5" font-size="13" text-anchor="middle">1.1. Buscar pela</text>
+<text fill="#ffffff" x="86.0" y="295.5" font-size="13" text-anchor="middle">linha de ônibus</text>
+<path d="M6.0,322 H166.0 M6.0,326 H166.0" stroke="#ffffff"/>
+<rect x="182.0" y="250" width="160" height="66" fill="#0d1117" stroke="#ffffff"/>
+<text fill="#ffffff" x="262.0" y="271.5" font-size="13" text-anchor="middle">1.2. Buscar pelo</text>
+<text fill="#ffffff" x="262.0" y="287.5" font-size="13" text-anchor="middle">ponto de embarque ou</text>
+<text fill="#ffffff" x="262.0" y="303.5" font-size="13" text-anchor="middle">terminal</text>
+<path d="M182.0,322 H342.0 M182.0,326 H342.0" stroke="#ffffff"/>
+<rect x="358.0" y="250" width="160" height="66" fill="#0d1117" stroke="#ffffff"/>
+<text fill="#ffffff" x="438.0" y="271.5" font-size="13" text-anchor="middle">1.3. Selecionar e</text>
+<text fill="#ffffff" x="438.0" y="287.5" font-size="13" text-anchor="middle">confirmar a linha e o</text>
+<text fill="#ffffff" x="438.0" y="303.5" font-size="13" text-anchor="middle">sentido do trajeto</text>
+<path d="M358.0,322 H518.0 M358.0,326 H518.0" stroke="#ffffff"/>
+<rect x="1175.0" y="140" width="230" height="58" fill="#0d1117" stroke="#ffffff"/>
+<text fill="#ffffff" x="1290" y="157.5" font-size="13" text-anchor="middle">4. Decidir como realizar o</text>
+<text fill="#ffffff" x="1290" y="173.5" font-size="13" text-anchor="middle">deslocamento</text>
+<text fill="#ffffff" x="1290" y="189.5" font-size="13" text-anchor="middle">4.1 / 4.2 / 4.3</text>
+<rect x="1034.0" y="250" width="160" height="66" fill="#0d1117" stroke="#ffffff"/>
+<text fill="#ffffff" x="1114.0" y="279.5" font-size="13" text-anchor="middle">4.1. Manter a linha e</text>
+<text fill="#ffffff" x="1114.0" y="295.5" font-size="13" text-anchor="middle">o horário habituais</text>
+<path d="M1034.0,322 H1194.0 M1034.0,326 H1194.0" stroke="#ffffff"/>
+<rect x="1210.0" y="250" width="160" height="66" fill="#0d1117" stroke="#ffffff"/>
+<text fill="#ffffff" x="1290.0" y="279.5" font-size="13" text-anchor="middle">4.2. Antecipar o</text>
+<text fill="#ffffff" x="1290.0" y="295.5" font-size="13" text-anchor="middle">horário de saída</text>
+<path d="M1210.0,322 H1370.0 M1210.0,326 H1370.0" stroke="#ffffff"/>
+<rect x="1386.0" y="250" width="160" height="66" fill="#0d1117" stroke="#ffffff"/>
+<text fill="#ffffff" x="1466.0" y="271.5" font-size="13" text-anchor="middle">4.3. Avaliar outra</text>
+<text fill="#ffffff" x="1466.0" y="287.5" font-size="13" text-anchor="middle">linha ou modal</text>
+<text fill="#ffffff" x="1466.0" y="303.5" font-size="13" text-anchor="middle">(repetir 1 &gt; 2 &gt; 3)</text>
+<rect x="390.0" y="370" width="300" height="58" fill="#0d1117" stroke="#ffffff"/>
+<text fill="#ffffff" x="540" y="395.5" font-size="13" text-anchor="middle">2. Consultar o risco ao longo da linha</text>
+<text fill="#ffffff" x="540" y="411.5" font-size="13" text-anchor="middle">2.1 &gt; 2.2 &gt; 2.3 (se houver trecho de risco)</text>
+<rect x="284.0" y="480" width="160" height="66" fill="#0d1117" stroke="#ffffff"/>
+<text fill="#ffffff" x="364.0" y="493.5" font-size="13" text-anchor="middle">2.1. Visualizar o</text>
+<text fill="#ffffff" x="364.0" y="509.5" font-size="13" text-anchor="middle">itinerário com os</text>
+<text fill="#ffffff" x="364.0" y="525.5" font-size="13" text-anchor="middle">trechos de risco</text>
+<text fill="#ffffff" x="364.0" y="541.5" font-size="13" text-anchor="middle">destacados</text>
+<path d="M284.0,552 H444.0 M284.0,556 H444.0" stroke="#ffffff"/>
+<rect x="460.0" y="480" width="160" height="66" fill="#0d1117" stroke="#ffffff"/>
+<text fill="#ffffff" x="540.0" y="493.5" font-size="13" text-anchor="middle">2.2. Identificar o</text>
+<text fill="#ffffff" x="540.0" y="509.5" font-size="13" text-anchor="middle">risco no ponto de</text>
+<text fill="#ffffff" x="540.0" y="525.5" font-size="13" text-anchor="middle">embarque, nos trechos</text>
+<text fill="#ffffff" x="540.0" y="541.5" font-size="13" text-anchor="middle">e no terminal</text>
+<path d="M460.0,552 H620.0 M460.0,556 H620.0" stroke="#ffffff"/>
+<rect x="636.0" y="480" width="160" height="66" fill="#0d1117" stroke="#ffffff"/>
+<text fill="#ffffff" x="716.0" y="501.5" font-size="13" text-anchor="middle">2.3. Consultar</text>
+<text fill="#ffffff" x="716.0" y="517.5" font-size="13" text-anchor="middle">detalhes do trecho de</text>
+<text fill="#ffffff" x="716.0" y="533.5" font-size="13" text-anchor="middle">maior risco</text>
+<path d="M636.0,552 H796.0 M636.0,556 H796.0" stroke="#ffffff"/>
+<rect x="875.0" y="370" width="230" height="58" fill="#0d1117" stroke="#ffffff"/>
+<text fill="#ffffff" x="990" y="387.5" font-size="13" text-anchor="middle">3. Avaliar o impacto no</text>
+<text fill="#ffffff" x="990" y="403.5" font-size="13" text-anchor="middle">deslocamento</text>
+<text fill="#ffffff" x="990" y="419.5" font-size="13" text-anchor="middle">3.1 &gt; 3.2</text>
+<rect x="822.0" y="480" width="160" height="66" fill="#0d1117" stroke="#ffffff"/>
+<text fill="#ffffff" x="902.0" y="493.5" font-size="13" text-anchor="middle">3.1. Relacionar os</text>
+<text fill="#ffffff" x="902.0" y="509.5" font-size="13" text-anchor="middle">trechos de risco ao</text>
+<text fill="#ffffff" x="902.0" y="525.5" font-size="13" text-anchor="middle">embarque e</text>
+<text fill="#ffffff" x="902.0" y="541.5" font-size="13" text-anchor="middle">desembarque</text>
+<path d="M822.0,552 H982.0 M822.0,556 H982.0" stroke="#ffffff"/>
+<rect x="998.0" y="480" width="160" height="66" fill="#0d1117" stroke="#ffffff"/>
+<text fill="#ffffff" x="1078.0" y="501.5" font-size="13" text-anchor="middle">3.2. Verificar a</text>
+<text fill="#ffffff" x="1078.0" y="517.5" font-size="13" text-anchor="middle">previsão do risco até</text>
+<text fill="#ffffff" x="1078.0" y="533.5" font-size="13" text-anchor="middle">o horário de passagem</text>
+<path d="M998.0,552 H1158.0 M998.0,556 H1158.0" stroke="#ffffff"/>
+</svg>

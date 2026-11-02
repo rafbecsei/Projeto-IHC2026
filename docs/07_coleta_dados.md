@@ -82,25 +82,35 @@ Caso haja gravação de áudio ou vídeo, será solicitada autorização especí
 
 Também deve ser considerado que alguns participantes podem sentir desconforto ao relatar experiências negativas com chuvas ou alagamentos, por isso nenhuma resposta será obrigatória.
 
-### A02 — {{autor}}
+### A02 — Rafael Iamashita Becsei
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** Rafael Iamashita Becsei - 22.225.037-5
 
 #### Que dados coletar?
 
 | Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
 |---|---|---|---|
-| {{...}} | {{H01/H02/...}} | {{...}} | {{...}} |
+| Quando o usuário consulta informações sobre chuva e alagamentos antes de se deslocar | H02 | Entender em quais situações essas informações são necessárias | Definir como facilitar o acesso à consulta de risco |
+| Quais informações considera importantes para manter ou alterar um trajeto | H01/H05 | Identificar os dados que realmente ajudam na decisão | Definir quais informações terão maior destaque na interface |
+| Como interpreta níveis e porcentagens de risco | H01/H04 | Verificar se compreende as informações apresentadas | Definir a apresentação dos níveis de risco e possíveis explicações |
+| Como prefere localizar uma região de interesse | H02 | Identificar se considera mais fácil utilizar mapa ou busca | Organizar as ferramentas de localização |
+| Em quais situações considera útil receber alertas de alagamento | H03 | Entender quando os alertas poderiam ajudar no deslocamento | Definir a necessidade e a forma de apresentação dos alertas | 
 
 #### De quem coletar?
 
 | Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Pessoas que realizam deslocamentos frequentes | Deslocar-se regularmente para trabalho ou estudo | Representam o cotidiano da persona P01, Paulo |
+| Usuários de aplicativos de mapas e previsão do tempo | Utilizar ferramentas digitais para planejar deslocamentos ou consultar condições meteorológicas | Permitem investigar hábitos semelhantes aos previstos para Paulo |
+| Pessoas que já enfrentaram problemas de deslocamento durante chuvas | Ter vivenciado situações em que chuva intensa ou alagamentos afetaram seus trajetos | Ajudam a compreender decisões semelhantes às do cenário C01 |
 
 #### Aspectos éticos
 
-Analise voluntariedade, consentimento, minimização de dados, privacidade, riscos, gravação, anonimização, armazenamento e descarte. Não responda apenas “sim, por causa da LGPD”: explique **quais dados e riscos existem neste projeto**.
+A participação será voluntária, com explicação prévia do objetivo da pesquisa e consentimento dos participantes. Eles poderão deixar de responder perguntas ou desistir a qualquer momento.
+
+Serão coletadas apenas informações sobre hábitos de deslocamento e consulta de riscos, sem solicitar nomes completos, endereços ou dados pessoais desnecessários. As respostas serão identificadas por códigos, como U01 e U02, e armazenadas com acesso restrito à equipe.
+
+Caso haja gravação, será solicitada autorização específica. Os dados serão utilizados apenas para a atividade acadêmica e descartados após o período necessário para análise. Também serão evitadas perguntas que obriguem os participantes a relatar experiências desconfortáveis com alagamentos.
 
 ### A03 — {{autor}}
 

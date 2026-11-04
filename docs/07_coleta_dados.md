@@ -112,25 +112,39 @@ Serão coletadas apenas informações sobre hábitos de deslocamento e consulta 
 
 Caso haja gravação, será solicitada autorização específica. Os dados serão utilizados apenas para a atividade acadêmica e descartados após o período necessário para análise. Também serão evitadas perguntas que obriguem os participantes a relatar experiências desconfortáveis com alagamentos.
 
-### A03 — {{autor}}
+### A03 — Victor Pimentel Lario
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** Victor Pimentel Lario — 22.125.064-0
 
 #### Que dados coletar?
 
 | Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
 |---|---|---|---|
-| {{...}} | {{H01/H02/...}} | {{...}} | {{...}} |
+| Como o usuário compreende os termos utilizados para indicar risco de alagamento | H01 / H04 | Identificar se os usuários entendem os níveis de risco e as informações apresentadas | Definir quais termos e explicações devem aparecer na interface |
+| Quais informações o usuário considera importantes ao consultar o risco de uma região | H01 / H05 | Entender quais informações realmente ajudam na interpretação do risco | Definir quais informações terão maior destaque na interface |
+| Como o usuário organiza informações relacionadas a chuva, alagamentos e deslocamentos | H04 / H05 | Identificar como os usuários relacionam diferentes tipos de informação | Orientar a organização dos conteúdos e das seções do sistema |
+| Quais dificuldades o usuário encontra ao consultar informações sobre alagamentos | H02 / H04 | Compreender os problemas enfrentados ao utilizar ferramentas semelhantes | Melhorar a navegação e a apresentação das informações |
+| Quais informações sobre chuva e histórico de alagamentos o usuário considera úteis | H05 | Verificar se informações complementares ajudam na compreensão do risco | Definir quais informações adicionais devem ser disponibilizadas |
+| Como o usuário prefere receber informações sobre situações de risco durante um deslocamento | H03 | Entender quais formas de comunicação são mais úteis em situações de chuva intensa | Orientar a apresentação de alertas e avisos na interface |
 
 #### De quem coletar?
 
 | Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Pessoas que realizam deslocamentos frequentes pela cidade | Utilizar transporte público, carro ou outros meios para trabalhar ou estudar | Representam situações semelhantes às da persona P01, Paulo |
+| Pessoas que utilizam aplicativos de mapas e previsão do tempo | Consultar ferramentas digitais para obter informações sobre deslocamentos ou condições meteorológicas | Permitem investigar hábitos de utilização de tecnologias semelhantes às previstas no projeto |
+| Pessoas que já enfrentaram dificuldades durante chuvas intensas | Ter vivenciado situações em que a chuva ou os alagamentos afetaram sua rotina | Ajudam a compreender necessidades reais relacionadas à consulta de riscos |
+| Pessoas sem conhecimento técnico sobre meteorologia | Não possuir formação específica em áreas relacionadas à previsão do tempo ou hidrologia | Permitem avaliar se a linguagem e a organização das informações são compreensíveis para usuários comuns |
 
 #### Aspectos éticos
 
-Analise voluntariedade, consentimento, minimização de dados, privacidade, riscos, gravação, anonimização, armazenamento e descarte. Não responda apenas “sim, por causa da LGPD”: explique **quais dados e riscos existem neste projeto**.
+A coleta de dados deverá respeitar a privacidade dos participantes. Antes de iniciar a atividade, será explicado o objetivo da pesquisa e solicitado o consentimento de cada pessoa. A participação será voluntária, permitindo que o participante desista a qualquer momento.
+
+Não será necessário coletar informações pessoais como nome completo, endereço ou documentos. Os participantes serão identificados por códigos, como U01 e U02, garantindo o anonimato dos resultados apresentados.
+
+Caso seja necessário realizar gravações, será solicitada autorização específica. As informações coletadas serão utilizadas apenas para fins acadêmicos, armazenadas com acesso restrito aos integrantes do grupo e descartadas após a conclusão da análise.
+
+Também será evitada a exposição de experiências pessoais que possam causar desconforto, principalmente em situações relacionadas a alagamentos ou outros problemas durante deslocamentos.
 
 ### A04 — {{autor}}
 
@@ -325,28 +339,122 @@ Cole aqui o questionário/roteiro completo ou forneça link **mais uma cópia te
 
 {{ex.: distribuição de respostas, codificação temática, agrupamento de problemas}}
 
-### Instrumento I03 — {{nome da técnica}}
+### Instrumento I03 — Classificação de Cartões
 
-**Autor(a):** {{nome — matrícula}}  
-**Técnica:** questionário / entrevista semiestruturada / observação / grupo focal / outra autorizada  
-**Objetivo:** {{...}}  
-**Público:** {{...}}
+**Autor(a):** Victor Pimentel Lario — 22.125.064-0  
+**Técnica:** Classificação de Cartões (Card Sorting)  
+**Objetivo:** Investigar como os usuários compreendem e organizam informações relacionadas a chuva, risco de alagamento e deslocamentos, identificando agrupamentos e termos que possam ajudar na organização da interface do sistema.  
+**Público:** Pessoas que realizam deslocamentos frequentes pela cidade de São Paulo, principalmente usuários de aplicativos de mapas, trânsito ou previsão do tempo.
 
 #### Procedimento padronizado de aplicação
 
-1. {{preparação}}
-2. {{apresentação/consentimento}}
-3. {{aplicação}}
-4. {{encerramento}}
-5. {{armazenamento/anonimização}}
+1. Preparar 10 cartões contendo diferentes tipos de informações relacionadas ao risco de alagamento. Os cartões poderão ser apresentados fisicamente ou em uma ferramenta digital, utilizando o mesmo conjunto para todos os participantes.
+2. Explicar ao participante o objetivo da atividade, informar que a participação é voluntária e solicitar seu consentimento. Esclarecer que não existem respostas certas ou erradas.
+3. Apresentar os cartões em ordem aleatória e solicitar que o participante organize as informações em grupos de acordo com o que considera semelhante. Ele poderá criar quantos grupos desejar e deverá atribuir um nome a cada um.
+4. Após a organização, perguntar ao participante por que escolheu aqueles agrupamentos, se encontrou alguma dificuldade e se considera algum termo confuso. Registrar os grupos, nomes e comentários.
+5. Agradecer a participação, registrar os resultados utilizando códigos anônimos e armazenar os dados com acesso restrito à equipe, descartando-os após a análise.
 
 #### Instrumento
 
-Cole aqui o questionário/roteiro completo ou forneça link **mais uma cópia textual no repositório**.
+**Instruções ao participante:**
+
+Você receberá 10 cartões com informações que poderiam aparecer em um aplicativo de consulta de risco de alagamento.
+
+Organize os cartões em grupos da maneira que fizer mais sentido para você. Depois, escolha um nome para cada grupo.
+
+Você pode criar quantos grupos quiser. Não existem respostas certas ou erradas.
+
+**Cartões utilizados:**
+
+```text
+C01 — Nível de risco de alagamento
+Indica se o risco de uma região é baixo,
+médio ou alto.
+
+C02 — Probabilidade de alagamento
+Apresenta uma porcentagem relacionada
+ao risco de alagamento.
+
+C03 — Previsão de chuva
+Mostra a previsão de chuva para
+as próximas horas.
+
+C04 — Intensidade da chuva
+Indica a quantidade ou intensidade
+da chuva em determinada região.
+
+C05 — Histórico de alagamentos
+Apresenta informações sobre
+alagamentos que ocorreram anteriormente.
+
+C06 — Ocorrências recentes
+Mostra registros recentes de
+alagamentos em uma região.
+
+C07 — Mapa de regiões
+Permite visualizar diferentes
+regiões da cidade em um mapa.
+
+C08 — Condições do trânsito
+Apresenta informações sobre
+problemas de trânsito.
+
+C09 — Alertas de risco
+Informa situações em que o risco
+de alagamento pode exigir atenção.
+
+C10 — Informações sobre a região
+Apresenta características e
+informações gerais de uma região.
+```
+
+**Perguntas após a organização:**
+
+1. Por que você decidiu organizar os cartões dessa maneira?
+2. Qual grupo você considera mais importante para consultar informações sobre risco de alagamento?
+3. Algum cartão apresentou uma informação difícil de compreender? Qual?
+4. Você mudaria o nome de algum cartão para facilitar o entendimento?
+5. Existe alguma informação que você gostaria de encontrar nesse tipo de aplicativo e que não apareceu nos cartões?
+
+**Registro dos resultados:**
+
+```text
+Participante: U___
+
+Grupo 1:
+Nome escolhido: __________________
+Cartões: _________________________
+
+Grupo 2:
+Nome escolhido: __________________
+Cartões: _________________________
+
+Grupo 3:
+Nome escolhido: __________________
+Cartões: _________________________
+
+Grupos adicionais, se houver:
+_________________________________
+
+Cartões considerados confusos:
+_________________________________
+
+Sugestões de nomes ou informações:
+_________________________________
+
+Comentários adicionais:
+_________________________________
+```
 
 #### Como os dados serão analisados
 
-{{ex.: distribuição de respostas, codificação temática, agrupamento de problemas}}
+Os agrupamentos criados pelos participantes serão comparados para identificar quais cartões aparecem juntos com maior frequência. Os nomes atribuídos aos grupos também serão analisados para compreender quais termos os usuários consideram mais naturais.
+
+As dificuldades e sugestões registradas serão organizadas por temas semelhantes, permitindo identificar possíveis problemas de compreensão e organização das informações.
+
+Os resultados serão relacionados principalmente às hipóteses H01, H04 e H05, ajudando a verificar se os termos utilizados são compreensíveis e quais informações os usuários consideram relacionadas entre si.
+
+Esses dados poderão orientar a organização dos conteúdos, a definição de categorias e a escolha de uma linguagem mais adequada para a interface do sistema.
 
 ### Instrumento I04 — {{nome da técnica}}
 

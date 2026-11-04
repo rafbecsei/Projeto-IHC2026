@@ -157,7 +157,198 @@ Analise voluntariedade, consentimento, minimização de dados, privacidade, risc
 
 > Cada integrante deve preparar uma técnica/instrumento completo. As técnicas devem ser diferentes entre si e **questionário deve estar entre as técnicas escolhidas**, conforme o enunciado da disciplina.
 
-### Instrumento I01 — {{nome da técnica}}
+### Instrumento I01 — Questionário
+
+**Autor(a):** Eric Song Watanabe — 22.125.086-3  
+**Técnica:** Questionário  
+**Objetivo:** Investigar como usuários que realizam deslocamentos frequentes consultam informações sobre chuva e alagamentos, quais informações consideram mais úteis e como compreendem diferentes formas de apresentação do risco.  
+**Público:** Pessoas que realizam deslocamentos frequentes pela cidade de São Paulo, principalmente usuários de smartphone e aplicativos de mapas, trânsito, transporte ou previsão do tempo.
+
+#### Procedimento padronizado de aplicação
+
+1. Preparar o questionário em uma ferramenta online, mantendo as mesmas perguntas para todos os participantes.
+2. Apresentar brevemente o objetivo da pesquisa e informar que a participação é voluntária e anônima.
+3. Solicitar o consentimento do participante e disponibilizar o questionário para preenchimento.
+4. Ao final, agradecer a participação e informar que as respostas serão utilizadas apenas para fins acadêmicos.
+5. Armazenar somente as respostas necessárias para a análise, sem associá-las ao nome dos participantes, e descartar os dados após o uso no projeto.
+
+#### Instrumento
+
+Cole aqui o questionário/roteiro completo ou forneça link **mais uma cópia textual no repositório**.
+
+```
+1. Com que frequência você realiza deslocamentos pela cidade de São Paulo?
+
+( ) Todos os dias
+
+( ) Algumas vezes por semana
+
+( ) Algumas vezes por mês
+
+( ) Raramente
+
+2. Antes ou durante um deslocamento em um dia de chuva, quais fontes você costuma consultar?
+É possível selecionar mais de uma opção.
+
+[ ] Aplicativos de mapas ou trânsito
+
+[ ] Aplicativos de previsão do tempo
+
+[ ] Sites ou aplicativos de notícias
+
+[ ] Redes sociais
+
+[ ] Informações de familiares, amigos ou colegas
+
+[ ] Não costumo consultar nenhuma fonte
+
+[ ] Outra: __________
+
+3. Você já alterou ou adiou um deslocamento por causa de chuva intensa ou possibilidade de alagamento?
+
+( ) Sim
+
+( ) Não
+
+4. Quais informações seriam mais importantes para decidir se você deve manter ou alterar um trajeto em um dia de chuva?
+É possível selecionar mais de uma opção.
+
+[ ] Nível de risco de alagamento
+
+[ ] Quantidade ou intensidade da chuva
+
+[ ] Locais com ocorrências recentes de alagamento
+
+[ ] Histórico de alagamentos da região
+
+[ ] Condições do trânsito
+
+[ ] Previsão para as próximas horas
+
+[ ] Outra: __________
+
+5. Qual forma você considera mais fácil para entender o risco de alagamento de uma região?
+
+( ) Porcentagem de risco
+
+( ) Níveis como baixo, médio e alto
+
+( ) Texto explicando a situação
+
+( ) Combinação entre nível, porcentagem e explicação
+
+( ) Não sei dizer
+
+6. Como você preferiria localizar uma região para consultar informações sobre risco de alagamento?
+
+( ) Procurando diretamente em um mapa
+
+( ) Digitando o endereço ou nome da região
+
+( ) Utilizando minha localização atual
+
+( ) Outra forma: __________
+
+( ) Não sei dizer
+
+7. Qual é o seu nível de familiaridade com termos relacionados a chuva, precipitação, probabilidade e risco de alagamento?
+
+( ) Muito baixo
+
+( ) Baixo
+
+( ) Médio
+
+( ) Alto
+
+( ) Muito alto
+
+8. Em quais situações você consideraria útil receber um alerta de risco de alagamento?
+É possível selecionar mais de uma opção.
+
+[ ] Antes de sair de casa
+
+[ ] Durante o deslocamento
+
+[ ] Quando o risco de uma região aumentar
+
+[ ] Quando houver uma ocorrência próxima ao meu trajeto
+
+[ ] Não considero alertas necessários
+
+[ ] Outra: __________
+
+9. Informações sobre ocorrências anteriores de alagamento em uma região seriam úteis para você?
+
+( ) Muito úteis
+
+( ) Úteis
+
+( ) Pouco úteis
+
+( ) Não seriam úteis
+
+( ) Não sei dizer
+
+10. Existe alguma informação sobre chuva, alagamentos ou deslocamentos que você considera importante e que não apareceu nas perguntas anteriores?
+
+Resposta aberta: ______________________________________
+```
+#### Como os dados serão analisados
+
+As perguntas fechadas serão analisadas pela quantidade e distribuição das respostas, permitindo identificar padrões de uso, preferências e dificuldades dos participantes.
+
+As respostas abertas serão agrupadas por temas semelhantes, buscando identificar necessidades ou problemas que não tenham sido previstos anteriormente.
+
+Os resultados serão comparados com as hipóteses H01, H02, H03, H04 e H05 para verificar quais delas apresentam evidências para serem sustentadas, refutadas ou refinadas nas próximas entregas.
+
+### Instrumento I02 — {{nome da técnica}}
+
+**Autor(a):** {{nome — matrícula}}  
+**Técnica:** questionário / entrevista semiestruturada / observação / grupo focal / outra autorizada  
+**Objetivo:** {{...}}  
+**Público:** {{...}}
+
+#### Procedimento padronizado de aplicação
+
+1. {{preparação}}
+2. {{apresentação/consentimento}}
+3. {{aplicação}}
+4. {{encerramento}}
+5. {{armazenamento/anonimização}}
+
+#### Instrumento
+
+Cole aqui o questionário/roteiro completo ou forneça link **mais uma cópia textual no repositório**.
+
+#### Como os dados serão analisados
+
+{{ex.: distribuição de respostas, codificação temática, agrupamento de problemas}}
+
+### Instrumento I03 — {{nome da técnica}}
+
+**Autor(a):** {{nome — matrícula}}  
+**Técnica:** questionário / entrevista semiestruturada / observação / grupo focal / outra autorizada  
+**Objetivo:** {{...}}  
+**Público:** {{...}}
+
+#### Procedimento padronizado de aplicação
+
+1. {{preparação}}
+2. {{apresentação/consentimento}}
+3. {{aplicação}}
+4. {{encerramento}}
+5. {{armazenamento/anonimização}}
+
+#### Instrumento
+
+Cole aqui o questionário/roteiro completo ou forneça link **mais uma cópia textual no repositório**.
+
+#### Como os dados serão analisados
+
+{{ex.: distribuição de respostas, codificação temática, agrupamento de problemas}}
+
+### Instrumento I04 — {{nome da técnica}}
 
 **Autor(a):** {{nome — matrícula}}  
 **Técnica:** questionário / entrevista semiestruturada / observação / grupo focal / outra autorizada  

@@ -3,6 +3,8 @@
 **Responsabilidade:** 1 solução integrada por equipe  
 **Projeto:** AlertaNY — Previsão de áreas com risco de alagamento em Nova York
 
+>***OBS:** Como foi falado em aula, em nosso TCC, mudamos a região de atuação de São Paulo para Nova York. Por esse motivo, mantemos em IHC o escopo de São Paulo, mas para as prints da interface, usamos o do nosso TCC com tema atualizado.
+
 ## Objetivo da atividade
 
 Explorar em baixa fidelidade as principais interações do AlertaNY antes de realizar alterações na interface final. O foco é observar se a pessoa entende as informações e consegue concluir as tarefas, e não avaliar a aparência visual das telas.

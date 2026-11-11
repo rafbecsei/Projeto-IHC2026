@@ -35,7 +35,7 @@ Modele também rupturas plausíveis: entrada inválida, falha de processamento, 
 
 ![MoLIC M01](../assets/10_molic/molic_m01.svg)
 
-**Fonte editável:** {{adicione aqui o link para o arquivo `.drawio`, `.svg` editável ou outro formato utilizado pela equipe}}
+**Fonte editável:** [molic_m01.drawio](../assets/10_molic/molic_m01.drawio)
 
 ### Leitura do diagrama
 
@@ -43,14 +43,21 @@ Explique em texto o caminho principal e pelo menos os caminhos alternativos/rupt
 
 #### Caminho principal
 
-1. {{ponto de abertura → cena...}}
-2. {{...}}
+1. A conversa começa quando Paulo deseja consultar o risco de alagamento relacionado ao seu deslocamento.
+2. Paulo informa a região ou trajeto que deseja consultar.
+3. O sistema processa a consulta e apresenta o risco calculado para a região.
+4. Paulo analisa o nível de risco e seu significado.
+5. Caso queira mais contexto, pode consultar informações complementares sobre chuva e ocorrências de alagamento.
+6. Após compreender a situação, Paulo segue para o planejamento do deslocamento.
+7. Se decidir manter o planejamento atual, a conversa é encerrada com o objetivo concluído.
 
 #### Alternativas e rupturas
 
 | Situação | Onde ocorre | Como o usuário percebe | Caminho de recuperação/saída |
 |---|---|---|---|
-| {{dado inválido}} | {{...}} | {{fala/feedback}} | {{...}} |
+| Região ou trajeto não identificado | Durante o processamento da consulta | O sistema informa que não foi possível identificar a região ou trajeto informado | Paulo revisa os dados da consulta e tenta novamente |
+| Usuário precisa de mais informações | Após visualizar o risco da região | Paulo percebe que precisa de mais contexto para compreender a situação  | Consulta informações complementares sobre chuva e ocorrências e depois retorna à análise do risco |
+| Usuário considera outro trajeto | Durante o planejamento do deslocamento | Paulo decide que deseja avaliar uma alternativa antes de concluir | Retorna à consulta de risco, informa outra região ou trajeto e realiza uma nova análise |
 
 ## M02 — {{nome do cenário/objetivo}}
 

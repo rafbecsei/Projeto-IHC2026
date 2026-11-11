@@ -1,7 +1,7 @@
 # Entrega 8 — Ciclo de vida e engenharia de usabilidade
 
 **Data:** 04/11/2026  
-**Status:** 🟨 Em Andamento  
+**Status:** 🟩 Concluída  
 **Responsabilidade:** 1 solução por equipe  
 **Projeto:** AlertaNY — Sistema de consulta de risco de alagamentos em São Paulo (recorte de IHC)
 

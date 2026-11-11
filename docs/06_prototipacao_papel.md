@@ -1,5 +1,5 @@
 **Data:** 28/10/2026  
-**Status:** 🟨 Em Andamento                                                                  
+**Status:** 🟩 Concluída                                                             
 **Responsabilidade:** 1 solução integrada por equipe  
 **Projeto:** AlertaNY — Previsão de áreas com risco de alagamento em Nova York
 
@@ -83,13 +83,17 @@ Realize uma simulação com uma pessoa que não participou da elaboração dessa
 
 | Observação | Tela/ação | Evidência | Consequência para o design |
 |---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{...}} |
+| Grande quantidade de informações apresentadas simultaneamente | Mapa / visualização das informações de risco | O participante precisou de um tempo para ler as informações e compreender a organização da tela antes de conseguir se localizar na interface | Reorganizar as informações, priorizando os dados mais importantes e deixando informações complementares em áreas secundárias |
+| Falta de clareza sobre a região que está sendo consultada | Mapa / seleção e visualização de uma região | O participante não conseguiu identificar facilmente se o mapa estava focado em uma rua ou região específica, pois não havia uma indicação clara do local selecionado. A localização atual aparecia apenas no canto superior direito | Adicionar uma identificação visível da rua ou região selecionada, diferenciando o local consultado da localização atual do usuário |
+| Repetição de informações sobre o nível de risco | Mapa / consulta do risco | O participante identificou que a informação sobre o nível de risco aparecia em três locais diferentes da tela, tornando a apresentação repetitiva | Centralizar a informação principal sobre o risco em um local de destaque e reduzir repetições desnecessárias |
 
 ## 5. Alterações após a simulação
 
 | Antes | Problema | Depois | Justificativa |
 |---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{...}} |
+| Muitas informações apresentadas simultaneamente na tela principal | Dificuldade para compreender rapidamente a organização e identificar as informações mais relevantes | Reorganizar a tela, destacando as informações principais e agrupando os dados complementares de forma mais limpa e clara | Reduzir a sobrecarga de informações e facilitar a compreensão da interface mais rapidamente |
+| A localização atual aparecia no canto superior direito, sem uma identificação clara da região selecionada no mapa | Dificuldade para saber qual rua ou região estava sendo consultada no momento, e se estava sendo consultada | Adicionar uma indicação visível com o nome da rua ou região selecionada | Permitir que o usuário identifique facilmente a área consultada e evite confundi-la com sua localização atual |
+| O nível de risco era apresentado em três locais diferentes da interface | Repetição de informações semelhantes, aumentando a quantidade de elementos na tela, elevando o tempo para compreensão da tela | Manter o nível de risco em uma área principal de destaque e remover apresentações redundantes | Tornar a interface mais objetiva e facilitar a identificação da informação principal |
 
 ## Checklist
 

@@ -1,7 +1,7 @@
 # Entrega 10 — MoLIC
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** 11/11/2026  
+**Status:** 🟨 em andamento  
 **Responsabilidade:** 1 solução completa por integrante
 
 ## Objetivo da atividade
@@ -23,13 +23,13 @@ Exemplos de conversas:
 
 Modele também rupturas plausíveis: entrada inválida, falha de processamento, ausência de resultado, permissão insuficiente, filtro sem resultados, conflito de alteração, cancelamento ou necessidade de recuperação.
 
-## M01 — {{nome do cenário/objetivo}}
+## M01 — Planejamento de deslocamento durante chuva intensa
 
-**Autor(a):** {{nome — matrícula}}  
-**Cenário de interação de origem:** {{CI01}}  
-**Objetivo(s):** {{O01}}  
-**Tarefa(s) relacionada(s):** {{T01}}  
-**Signos relevantes:** {{...}}
+**Autor(a):** Eric Song Watanabe — 22.125.086-3  
+**Cenário de interação de origem:** Planejamento de deslocamento durante chuva intensa  
+**Objetivo(s):** O01 — Planejar o deslocamento considerando o risco; O02 — Consultar o risco de alagamento da região; O03 — Compreender o significado do risco  
+**Tarefa(s) relacionada(s):** T01 — Consultar e interpretar o risco de alagamento de uma região para planejar o deslocamento  
+**Signos relevantes:** região, trajeto, nível de risco, estimativa de risco, chuva, ocorrência de alagamento, informações complementares e alternativa de trajeto
 
 ### Diagrama
 
@@ -51,6 +51,94 @@ Explique em texto o caminho principal e pelo menos os caminhos alternativos/rupt
 | Situação | Onde ocorre | Como o usuário percebe | Caminho de recuperação/saída |
 |---|---|---|---|
 | {{dado inválido}} | {{...}} | {{fala/feedback}} | {{...}} |
+
+## M02 — {{nome do cenário/objetivo}}
+
+**Autor(a):** {{nome — matrícula}}  
+**Cenário de interação de origem:** {{CI02}}  
+**Objetivo(s):** {{O02}}  
+**Tarefa(s) relacionada(s):** {{T02}}  
+**Signos relevantes:** {{...}}
+
+### Diagrama
+
+![MoLIC M02](../assets/10_molic/molic_m02.svg)
+
+**Fonte editável:** {{adicione aqui o link para o arquivo `.drawio`, `.svg` editável ou outro formato utilizado pela equipe}}
+
+### Leitura do diagrama
+
+Explique em texto o caminho principal e pelo menos os caminhos alternativos/rupturas mais importantes.
+
+#### Caminho principal
+
+1. {{ponto de abertura → cena...}}
+2. {{...}}
+
+#### Alternativas e rupturas
+
+| Situação | Onde ocorre | Como o usuário percebe | Caminho de recuperação/saída |
+|---|---|---|---|
+| {{dado inválido}} | {{...}} | {{fala/feedback}} | {{...}} |
+
+## M03 — {{nome do cenário/objetivo}}
+
+**Autor(a):** {{nome — matrícula}}  
+**Cenário de interação de origem:** {{CI03}}  
+**Objetivo(s):** {{O03}}  
+**Tarefa(s) relacionada(s):** {{T03}}  
+**Signos relevantes:** {{...}}
+
+### Diagrama
+
+![MoLIC M03](../assets/10_molic/molic_m03.svg)
+
+**Fonte editável:** {{adicione aqui o link para o arquivo `.drawio`, `.svg` editável ou outro formato utilizado pela equipe}}
+
+### Leitura do diagrama
+
+Explique em texto o caminho principal e pelo menos os caminhos alternativos/rupturas mais importantes.
+
+#### Caminho principal
+
+1. {{ponto de abertura → cena...}}
+2. {{...}}
+
+#### Alternativas e rupturas
+
+| Situação | Onde ocorre | Como o usuário percebe | Caminho de recuperação/saída |
+|---|---|---|---|
+| {{dado inválido}} | {{...}} | {{fala/feedback}} | {{...}} |
+
+## M04 — {{nome do cenário/objetivo}}
+
+**Autor(a):** {{nome — matrícula}}  
+**Cenário de interação de origem:** {{CI04}}  
+**Objetivo(s):** {{O04}}  
+**Tarefa(s) relacionada(s):** {{T04}}  
+**Signos relevantes:** {{...}}
+
+### Diagrama
+
+![MoLIC M04](../assets/10_molic/molic_m04.svg)
+
+**Fonte editável:** {{adicione aqui o link para o arquivo `.drawio`, `.svg` editável ou outro formato utilizado pela equipe}}
+
+### Leitura do diagrama
+
+Explique em texto o caminho principal e pelo menos os caminhos alternativos/rupturas mais importantes.
+
+#### Caminho principal
+
+1. {{ponto de abertura → cena...}}
+2. {{...}}
+
+#### Alternativas e rupturas
+
+| Situação | Onde ocorre | Como o usuário percebe | Caminho de recuperação/saída |
+|---|---|---|---|
+| {{dado inválido}} | {{...}} | {{fala/feedback}} | {{...}} |
+
 
 ### Checklist específico de modelagem
 

@@ -78,15 +78,32 @@ Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, elim
 
 | ID | Objetivo | Persona(s) | Cenário(s) | Prioridade |
 |---|---|---|---|---|
-| O01 | {{...}} | {{P01}} | {{CI01}} | {{...}} |
+| O01 | Planejar o deslocamento considerando o risco | P01 | CI01 | Alta |
+| O02 | Consultar o risco de alagamento da região | P01 | CI01 | Alta |
+| O03 | Compreender o significado do risco | P01 | CI01 | Alta |
+| O04 | Identificar a região de interesse | P01 | CI01 | Alta |
+| O05 | Consultar informações complementares | P01 | CI01 | Média |
+| O06 | Considerar alternativa de trajeto | P01 | CI01 | Média |
+| O07 | Consultar outra região | P01 | CI01 | Média |
 
 ## 4. Esquema conceitual de signos
 
-Consolide as informações em **uma tabela única**.
-
 | Grupo | Signo | Origem | Observações/semântica | Tipo de conteúdo | Restrição | Valor padrão | Prevenção | Recuperação |
 |---|---|---|---|---|---|---|---|---|
-| Credenciais | usuário | domínio | {{...}} | texto | não nulo | — | {{...}} | {{...}} |
+| Localização | região | domínio | Área da cidade que o usuário deseja consultar | texto/localização | Deve corresponder a uma região válida | — | PA: permitir apenas regiões reconhecidas pelo sistema | RA: informar quando a região não for encontrada e permitir nova consulta |
+| Localização | trajeto | usuário | Deslocamento que Paulo pretende realizar entre origem e destino | localização | Deve possuir origem e destino válidos | — | PP: explicar quais dados são necessários para identificar o trajeto | RA: permitir corrigir origem ou destino |
+| Risco | nível de risco | sistema | Forma simplificada de comunicar a condição de risco de alagamento | categórico | Deve estar associado a uma região e período | — | PP: explicar o significado dos níveis apresentados | — |
+| Risco | estimativa de risco | sistema | Resultado estimado para representar a possibilidade de alagamento | percentual/probabilidade | Deve estar dentro da faixa válida produzida pelo sistema | — | PP: apresentar explicação em linguagem simples | — |
+| Condições | chuva | domínio/sistema | Informação de chuva relacionada à região consultada | numérico/textual | Deve estar associada a local e período | — | PP: apresentar unidade e significado de forma compreensível | — |
+| Alagamento | ocorrência de alagamento | domínio | Registro de alagamento associado a uma região | registro | Deve possuir localização e período relacionados | — | — | — |
+| Consulta | informações complementares | sistema/domínio | Dados adicionais utilizados para ajudar Paulo a compreender a situação | conjunto de informações | Devem estar relacionadas à região consultada | — | PP: apresentar apenas informações relevantes e explicadas | — |
+| Planejamento | alternativa de trajeto | usuário | Possibilidade considerada por Paulo quando deseja evitar uma região de maior risco | localização/trajeto | Deve representar uma alternativa válida de deslocamento | — | — | RA: permitir realizar uma nova consulta caso a alternativa não seja adequada |
+
+**Legenda de prevenção e recuperação:**
+
+- `PP` — Prevenção passiva: o sistema fornece explicações para evitar erros de interpretação.
+- `PA` — Prevenção ativa: o sistema impede entradas inválidas.
+- `RA` — Recuperação apoiada: o sistema informa o problema e ajuda o usuário a corrigi-lo.
 
 ### CI02 — {{título}}
 

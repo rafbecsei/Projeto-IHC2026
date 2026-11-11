@@ -1,5 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360">
-<rect width="100%" height="100%" fill="#f6f8fa" stroke="#8c959f" stroke-width="4"/>
-<text x="480" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#24292f">PLACEHOLDER DE ARTEFATO</text>
-<text x="480" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#57606a">Substitua este arquivo pela evidência real da equipe.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="770" viewBox="0 0 660 770">
+<defs>
+  <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+    <path d="M0,0 L8,4 L0,8 z" fill="#111"/>
+  </marker>
+</defs>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#111;font-size:12px}
+.box{fill:#fff;stroke:#111;stroke-width:1}
+.dash{fill:#fff;stroke:#111;stroke-width:1;stroke-dasharray:3 2}
+.group{fill:none;stroke:#111;stroke-width:1}
+.groupdash{fill:none;stroke:#111;stroke-width:1;stroke-dasharray:3 2}
+.arrow{fill:none;stroke:#111;stroke-width:1.4;marker-end:url(#arrow)}
+</style>
+
+<rect x="0.5" y="0.5" width="659" height="769" fill="white" stroke="#111"/>
+
+<rect x="120" y="30" width="335" height="420" class="groupdash"/>
+<text x="450" y="48" text-anchor="end">Consulta de Risco</text>
+
+<rect x="160" y="80" width="185" height="42" class="dash"/>
+<line x1="201" y1="80" x2="201" y2="122" stroke="#111" stroke-dasharray="3 2"/>
+<text x="181" y="105" text-anchor="middle">PA</text>
+<text x="273" y="97" text-anchor="middle">Identificar região de</text>
+<text x="273" y="112" text-anchor="middle">interesse</text>
+
+<rect x="160" y="180" width="185" height="42" class="box"/>
+<line x1="201" y1="180" x2="201" y2="222" stroke="#111"/>
+<text x="181" y="205" text-anchor="middle">PA</text>
+<text x="273" y="197" text-anchor="middle">Consultar risco de</text>
+<text x="273" y="212" text-anchor="middle">alagamento da região</text>
+
+<rect x="160" y="280" width="185" height="42" class="box"/>
+<line x1="201" y1="280" x2="201" y2="322" stroke="#111"/>
+<text x="181" y="305" text-anchor="middle">PA</text>
+<text x="273" y="297" text-anchor="middle">Compreender o</text>
+<text x="273" y="312" text-anchor="middle">significado do risco</text>
+
+<rect x="160" y="390" width="185" height="42" class="dash"/>
+<line x1="201" y1="390" x2="201" y2="432" stroke="#111" stroke-dasharray="3 2"/>
+<text x="181" y="415" text-anchor="middle">PA</text>
+<text x="273" y="407" text-anchor="middle">Consultar informações</text>
+<text x="273" y="422" text-anchor="middle">complementares</text>
+
+<path d="M252.5 122 L252.5 180" class="arrow"/>
+<path d="M252.5 222 L252.5 280" class="arrow"/>
+<path d="M252.5 390 L252.5 322" class="arrow"/>
+
+<rect x="120" y="450" width="335" height="300" class="group"/>
+<text x="452" y="470" text-anchor="end">Planejamento de Deslocamento</text>
+
+<rect x="160" y="500" width="185" height="42" class="box"/>
+<line x1="201" y1="500" x2="201" y2="542" stroke="#111"/>
+<text x="181" y="525" text-anchor="middle">PA</text>
+<text x="273" y="517" text-anchor="middle">Planejar o deslocamento</text>
+<text x="273" y="532" text-anchor="middle">considerando o risco</text>
+
+<rect x="160" y="595" width="185" height="42" class="dash"/>
+<line x1="201" y1="595" x2="201" y2="637" stroke="#111" stroke-dasharray="3 2"/>
+<text x="181" y="620" text-anchor="middle">PA</text>
+<text x="273" y="612" text-anchor="middle">Considerar alternativa de</text>
+<text x="273" y="627" text-anchor="middle">trajeto</text>
+
+<rect x="160" y="690" width="185" height="42" class="dash"/>
+<line x1="201" y1="690" x2="201" y2="732" stroke="#111" stroke-dasharray="3 2"/>
+<text x="181" y="715" text-anchor="middle">PA</text>
+<text x="273" y="716" text-anchor="middle">Consultar outra região</text>
+
+<path d="M252.5 595 L252.5 542" class="arrow"/>
+<path d="M252.5 690 L252.5 637" class="arrow"/>
+
+<path d="M160 301 L90 301 L90 521 L160 521" class="arrow"/>
+
+<rect x="470" y="660" width="160" height="92" class="box"/>
+<text x="480" y="692">Legenda:</text>
+<text x="480" y="724">PA - Paulo Andre de Oliveira</text>
 </svg>

@@ -316,28 +316,98 @@ As respostas abertas serão agrupadas por temas semelhantes, buscando identifica
 
 Os resultados serão comparados com as hipóteses H01, H02, H03, H04 e H05 para verificar quais delas apresentam evidências para serem sustentadas, refutadas ou refinadas nas próximas entregas.
 
-### Instrumento I02 — {{nome da técnica}}
+### Instrumento I02 — Entrevista Semiestruturada
 
-**Autor(a):** {{nome — matrícula}}  
-**Técnica:** questionário / entrevista semiestruturada / observação / grupo focal / outra autorizada  
-**Objetivo:** {{...}}  
-**Público:** {{...}}
+**Autor(a):** Rafael Iamashita Becsei - 22.225.037-5  
+**Técnica:** Entrevista semiestruturada  
+**Objetivo:** Compreender como as pessoas procuram informações sobre chuva e alagamentos, quais ferramentas utilizam, como interpretam os riscos apresentados e de que maneira essas informações influenciam suas decisões durante um deslocamento.  
+**Público:** Pessoas que realizam deslocamentos frequentes para trabalho, estudo ou outras atividades, especialmente aquelas que utilizam aplicativos de mapas, trânsito ou previsão do tempo.  
 
 #### Procedimento padronizado de aplicação
 
-1. {{preparação}}
-2. {{apresentação/consentimento}}
-3. {{aplicação}}
-4. {{encerramento}}
-5. {{armazenamento/anonimização}}
+1. Preparar o roteiro de perguntas em uma ferramenta online, como o Google Forms, para apoiar o registro das respostas. Selecionar participantes que realizem deslocamentos frequentes e reservar aproximadamente 10 a 15 minutos para cada entrevista.
+2. Apresentar o objetivo da pesquisa e explicar que a participação é voluntária. Solicitar o consentimento antes de iniciar, esclarecendo que o participante poderá deixar de responder qualquer pergunta ou desistir.
+3. Conduzir a entrevista seguindo os tópicos do roteiro. Fazer as perguntas principais e utilizar perguntas complementares quando necessário para compreender melhor as experiências relatadas, sem sugerir respostas.
+4. Registrar as respostas no formulário preparado, utilizando identificadores como U01 e U02. Ao final, perguntar se o participante deseja acrescentar alguma informação e agradecer sua participação.
+5. Manter os registros acessíveis apenas à equipe do projeto. Não solicitar informações pessoais desnecessárias e realizar gravações somente mediante autorização específica. Descartar os dados após o período necessário para a análise acadêmica.
 
 #### Instrumento
 
-Cole aqui o questionário/roteiro completo ou forneça link **mais uma cópia textual no repositório**.
+**Apresentação ao participante**  
+Esta entrevista faz parte de um projeto acadêmico que investiga a consulta de informações sobre risco de alagamento em áreas urbanas.  
+Queremos compreender como as pessoas utilizam essas informações no dia a dia, principalmente quando precisam se deslocar em períodos de chuva.  
+Não existem respostas certas ou erradas. A participação é voluntária e as respostas serão utilizadas apenas para fins acadêmicos, sem identificação pessoal.  
+
+**Tópico 1 — Rotina e experiência com deslocamentos**
+
+1. Como costuma ser seu deslocamento no dia a dia? Quais meios de transporte você utiliza com mais frequência?
+2. O que costuma fazer quando precisa sair de casa e percebe que existe possibilidade de chuva forte?
+3. Você já enfrentou alguma dificuldade para chegar a um destino por causa de chuva ou alagamento? Como resolveu a situação?
+   
+**Tópico 2 — Utilização de tecnologias**
+
+4. Quais aplicativos ou outras fontes de informação você costuma utilizar para consultar a previsão do tempo ou planejar seus trajetos?
+    - Se utiliza: O que considera mais útil nessas ferramentas? Existe algo que dificulta seu uso?
+    - Se não utiliza: Como costuma obter essas informações? Existe algum motivo para não utilizar aplicativos?
+  
+**Tópico 3 — Compreensão das informações**
+
+5. Quando encontra uma informação indicando risco de alagamento em uma região, como interpreta essa informação? O que gostaria de saber para compreender melhor a situação?
+6. Ao consultar informações sobre uma região em um mapa, como você verifica se os dados apresentados correspondem ao local que deseja consultar?
+7. Quando um aplicativo apresenta várias informações sobre chuva, localização e risco ao mesmo tempo, como você costuma identificar aquilo que é mais importante?
+
+**Tópico 4 — Decisões e necessidades**
+
+8. Quais informações você considera necessárias para decidir se deve manter, alterar ou adiar um deslocamento durante uma chuva forte?
+7. Pensando nas ferramentas que utiliza atualmente, existe alguma informação ou funcionalidade que poderia ajudar você a tomar essas decisões?
+
+**Perguntas complementares**
+
+Quando necessário, o entrevistador poderá utilizar perguntas como:
+- Você poderia explicar melhor?
+- Consegue lembrar de uma situação em que isso aconteceu?
+- Por que essa informação seria importante?
+- Como você tomou essa decisão?
+- O que encontrou de mais difícil nessa situação?
+
+**Encerramento**
+
+Existe alguma outra dificuldade ou necessidade relacionada à consulta de informações sobre chuva e alagamentos que você gostaria de comentar?
+
+**Registro das respostas**
+
+Participante: ______  
+Data: _______  
+Duração: ______ minutos  
+
+Consentimento obtido: Sim / Não  
+Gravação autorizada: Sim / Não / Não realizada
+
+Tópico 1 — Rotina e deslocamentos
+Respostas:
+________________________________
+
+Tópico 2 — Utilização de tecnologias
+Respostas:
+________________________________
+
+Tópico 3 — Compreensão das informações
+Respostas:
+________________________________
+
+Tópico 4 — Decisões e necessidades
+Respostas:
+________________________________
+
+Comentários adicionais:
+________________________________
 
 #### Como os dados serão analisados
 
-{{ex.: distribuição de respostas, codificação temática, agrupamento de problemas}}
+As respostas serão organizadas por temas relacionados à rotina de deslocamento, às ferramentas utilizadas, à compreensão das informações de risco e às decisões tomadas em situações de chuva intensa.  
+Serão comparadas as experiências relatadas pelos participantes para identificar dificuldades recorrentes, necessidades semelhantes e diferenças na maneira como cada pessoa consulta as informações.  
+Os resultados serão relacionados principalmente às hipóteses H01, H02, H04 e H05, considerando também a H03 caso surjam necessidades relacionadas a avisos e alertas.  
+Essa análise poderá contribuir para definir quais informações devem receber maior destaque, como facilitar a identificação da região consultada e quais dados realmente ajudam o usuário a decidir sobre seu deslocamento.  
 
 ### Instrumento I03 — Classificação de Cartões
 

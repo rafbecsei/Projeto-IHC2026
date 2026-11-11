@@ -1,0 +1,194 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="POp-S47j9pFgavCw1oQY">
+    <mxGraphModel dx="1528" dy="811" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Nusw959Qz_cfnY43bone-52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="640" width="930" x="130" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-15" edge="1" parent="1" source="Nusw959Qz_cfnY43bone-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="Nusw959Qz_cfnY43bone-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-3" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fixedHeader=1;tableRender=collapsed;" value="" vertex="1">
+          <mxGeometry height="170" width="170" x="350" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-4" parent="Nusw959Qz_cfnY43bone-3" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="31" width="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-5" parent="Nusw959Qz_cfnY43bone-4" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="Consultar risco de alagamento" vertex="1">
+          <mxGeometry height="31" width="170" as="geometry">
+            <mxRectangle height="31" width="170" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-6" parent="Nusw959Qz_cfnY43bone-3" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="139" width="170" y="31" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-7" parent="Nusw959Qz_cfnY43bone-6" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="informar região ou trajeto&lt;div&gt;d+u: região, trajeto&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ver risco da região&lt;/div&gt;&lt;div&gt;d: nível de risco, estimativa de risco&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;compreender risco&lt;/div&gt;&lt;div&gt;d: significado do risco&lt;/div&gt;" vertex="1">
+          <mxGeometry height="139" width="170" as="geometry">
+            <mxRectangle height="139" width="170" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="410" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-12" edge="1" parent="1" source="Nusw959Qz_cfnY43bone-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="Nusw959Qz_cfnY43bone-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="u: consultar risco do deslocamento&lt;div&gt;gco: planejar deslocamento considerando o risco&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="290" x="441" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-18" edge="1" parent="1" source="Nusw959Qz_cfnY43bone-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="Nusw959Qz_cfnY43bone-6">
+          <mxGeometry relative="1" x="-0.4874" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="430" />
+              <mxPoint x="310" y="250.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="410" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="u:consultar risco" vertex="1">
+          <mxGeometry height="30" width="90" x="340" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="d:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;risco da região encontrado&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="150" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-19" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fixedHeader=1;tableRender=collapsed;dashed=1;" value="" vertex="1">
+          <mxGeometry height="87" width="170" x="350" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-20" parent="Nusw959Qz_cfnY43bone-19" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;dashed=1;" value="" vertex="1">
+          <mxGeometry height="30" width="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-21" parent="Nusw959Qz_cfnY43bone-20" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;dashed=1;" value="Corrigir consulta" vertex="1">
+          <mxGeometry height="30" width="170" as="geometry">
+            <mxRectangle height="30" width="170" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-22" parent="Nusw959Qz_cfnY43bone-19" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;dashed=1;" value="" vertex="1">
+          <mxGeometry height="57" width="170" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-23" parent="Nusw959Qz_cfnY43bone-22" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;dashed=1;" value="revisar região ou trajeto&lt;div&gt;d+u: região, trajeto&lt;/div&gt;" vertex="1">
+          <mxGeometry height="57" width="170" as="geometry">
+            <mxRectangle height="57" width="170" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-24" edge="1" parent="1" source="Nusw959Qz_cfnY43bone-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="Nusw959Qz_cfnY43bone-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="d: região/trajeto não identificado" vertex="1">
+          <mxGeometry height="30" width="190" x="250" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-26" edge="1" parent="1" source="Nusw959Qz_cfnY43bone-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="Nusw959Qz_cfnY43bone-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="568.5" />
+              <mxPoint x="550" y="425" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="u: tentar novamente" vertex="1">
+          <mxGeometry height="30" width="110" x="560" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-28" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fixedHeader=1;tableRender=collapsed;" value="" vertex="1">
+          <mxGeometry height="170" width="220" x="720" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-29" parent="Nusw959Qz_cfnY43bone-28" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="31" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-30" parent="Nusw959Qz_cfnY43bone-29" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="Consultar informações complementares" vertex="1">
+          <mxGeometry height="31" width="220" as="geometry">
+            <mxRectangle height="31" width="220" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-31" parent="Nusw959Qz_cfnY43bone-28" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="139" width="220" y="31" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-32" parent="Nusw959Qz_cfnY43bone-31" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font face=&quot;Helvetica&quot;&gt;ver condições de chuva&lt;br/&gt;d: chuva, período&lt;br/&gt;&lt;br/&gt;ver ocorrências de alagamento&lt;br/&gt;d: ocorrência de alagamento, região&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="139" width="220" as="geometry">
+            <mxRectangle height="139" width="220" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-34" edge="1" parent="1" source="Nusw959Qz_cfnY43bone-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.004;entryY=0.242;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=1.003;exitY=0.242;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" target="Nusw959Qz_cfnY43bone-31">
+          <mxGeometry relative="1" x="0.1503" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="u:_" vertex="1">
+          <mxGeometry height="30" width="26" x="607" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-36" edge="1" parent="1" source="Nusw959Qz_cfnY43bone-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.003;entryY=0.707;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryPerimeter=0;" target="Nusw959Qz_cfnY43bone-6">
+          <mxGeometry relative="1" x="0.141" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="u: voltar à analise de risco" vertex="1">
+          <mxGeometry height="30" width="151" x="545" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-38" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fixedHeader=1;tableRender=collapsed;" value="" vertex="1">
+          <mxGeometry height="83" width="170" x="745" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-39" parent="Nusw959Qz_cfnY43bone-38" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="30" width="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-40" parent="Nusw959Qz_cfnY43bone-39" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="Planejar deslocamento" vertex="1">
+          <mxGeometry height="30" width="170" as="geometry">
+            <mxRectangle height="30" width="170" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-41" parent="Nusw959Qz_cfnY43bone-38" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="53" width="170" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-42" parent="Nusw959Qz_cfnY43bone-41" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;avaliar condições consultadas&lt;br&gt;d: região, nível de risco&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="53" width="170" as="geometry">
+            <mxRectangle height="53" width="170" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-43" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.532;entryY=0.004;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="Nusw959Qz_cfnY43bone-39">
+          <mxGeometry relative="1" x="0.0096" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="301.5" />
+              <mxPoint x="640" y="370" />
+              <mxPoint x="835.4" y="370" />
+            </Array>
+            <mxPoint x="519.9999999999998" y="301.49" as="sourcePoint" />
+            <mxPoint x="831.1000000000001" y="449.99799999999993" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-44" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="u:_" vertex="1">
+          <mxGeometry height="30" width="60" x="710" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-45" edge="1" parent="1" source="Nusw959Qz_cfnY43bone-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.495;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;endArrow=none;endFill=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Nusw959Qz_cfnY43bone-47">
+          <mxGeometry relative="1" x="-0.0712" as="geometry">
+            <mxPoint x="830" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-46" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="u: manter planejamento&lt;div&gt;gcc: Planejar deslocamento&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="830" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-49" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="60" width="60" x="800" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-47" parent="Nusw959Qz_cfnY43bone-49" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="60" width="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-48" parent="Nusw959Qz_cfnY43bone-49" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="5" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-50" edge="1" parent="1" source="Nusw959Qz_cfnY43bone-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.794;entryY=0.996;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="Nusw959Qz_cfnY43bone-6">
+          <mxGeometry relative="1" x="-0.1437" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="456.5" />
+              <mxPoint x="610" y="340" />
+              <mxPoint x="485" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nusw959Qz_cfnY43bone-51" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font face=&quot;Helvetica&quot;&gt;u: consultar outra região/trajeto&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="30" width="170" x="575" y="453" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

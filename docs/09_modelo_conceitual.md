@@ -195,7 +195,7 @@ Como possui apenas conhecimentos básicos sobre chuvas e alagamentos, **Victor c
 
 Cada integrante apresenta seu mapa e a equipe cria um mapa consolidado, eliminando duplicidades.
 
-![Mapa de objetivos CI03](../assets/09_modelo_conceitual/mapa_objetivos3.svg)
+![Mapa de objetivos CI03](../assets/09_modelo_conceitual/mapa_objetivos_CI03.svg)
 
 ### Dicionário de objetivos
 

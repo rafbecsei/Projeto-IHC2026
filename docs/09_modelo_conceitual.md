@@ -149,49 +149,82 @@ Consolide as informações em **uma tabela única**.
 |---|---|---|---|---|---|---|---|---|
 | Credenciais | usuário | domínio | {{...}} | texto | não nulo | — | {{...}} | {{...}} |
 
-### CI03 — {{título}}
+### CI03 — Preparação do morador durante previsão de chuva intensa
 
-**Autor(a):** {{nome — matrícula}}  
-**Origem:** cenário problema {{C01}}
+**Autor(a):** Victor Pimentel Lario — 22.125.064-0  
+**Origem:** cenário problema C03
 
-{{cenário de interação com alterações marcadas}}
+Em um dia com previsão de chuva intensa, Victor Merker Binda está em casa acompanhando as notícias sobre as condições do tempo. Como mora em uma região que pode sofrer impactos durante períodos de chuva forte, ele começa a se preocupar com a possibilidade de ocorrer algum alagamento ou inundação próximo à sua residência.
+
+**Victor acessa o sistema pelo celular e informa a região onde mora. O sistema apresenta o risco estimado de alagamento da região, reunindo as informações disponíveis de forma simples e organizada.**
+
+Como possui apenas conhecimentos básicos sobre chuvas e alagamentos, **Victor consulta o nível de risco e uma explicação em linguagem simples sobre seu significado, sem precisar interpretar dados técnicos.**
+
+**Caso queira compreender melhor a situação, pode consultar informações complementares sobre a chuva e ocorrências de alagamento na região.**
+
+**Com essas informações, Victor avalia se precisa tomar medidas preventivas, como proteger objetos e equipamentos, verificar pontos vulneráveis da residência ou continuar acompanhando a situação.**
+
+**Durante a chuva, Victor também pode realizar novas consultas para verificar possíveis mudanças nas condições da região.** Dessa forma, consegue tomar decisões mais informadas sobre a proteção de sua casa e de seus bens.
 
 ### Diferenças relevantes
 
 | Alteração | Por que foi necessária | Evidência/artefato que justifica |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Consulta do risco específico da região onde mora | Victor tinha dificuldade para relacionar informações gerais de chuva à sua região | C03, P02 e R03 |
+| Explicações em linguagem simples | Victor possui dificuldade para interpretar dados técnicos | P02 e H04 |
+| Informações complementares sobre chuva e alagamentos | Ajudam a compreender melhor a situação | H05 e C03 |
+| Apoio à decisão sobre medidas preventivas | Victor precisa decidir se deve proteger sua residência | C03 e P02 |
+| Possibilidade de realizar novas consultas | As condições podem mudar durante a chuva | C03 e Q6 |
 
 ## 2. Design centrado na comunicação
 
-**Nome do cenário:** {{CI03}}
+**Nome do cenário:** CI03 — Preparação do morador durante previsão de chuva intensa
 
 | Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
 |---|---|---|
-| {{objetivo}} | `U: ...` / `D: ...` | {{...}} |
-| > {{subtópico}} | {{...}} | {{...}} |
+| Consultar risco de alagamento | `U: Quero saber se minha região apresenta risco de alagamento.` / `D: Informe a região que deseja consultar.` | Permitir a consulta do risco |
+| > identificar região | `U: Quero consultar onde moro.` / `D: Esta é a região selecionada.` **Signos:** região, localização | Confirmar o local consultado |
+| > compreender risco | `D: Este é o risco estimado e seu significado.` / `U: Quero entender a gravidade da situação.` **Signos:** nível de risco, estimativa de risco | Facilitar a compreensão |
+| > consultar informações complementares | `U: Quero mais informações sobre a chuva.` / `D: Estas são as informações disponíveis.` **Signos:** chuva, ocorrências, período | Complementar a avaliação |
+| Avaliar medidas preventivas | `U: Preciso decidir se devo proteger minha casa.` / `D: Estas são as condições identificadas para sua região.` | Apoiar a decisão do morador |
+| > acompanhar situação | `U: Quero verificar se o risco mudou.` / `D: Estas são as informações disponíveis para a nova consulta.` **Signos:** nível de risco, período | Permitir reavaliar a situação |
 
-**Convenção:** `U` = usuário; `D` = preposto do designer/sistema, conforme a abordagem de Engenharia Semiótica adotada na disciplina.
+**Convenção:** `U` = usuário; `D` = preposto do designer/sistema.
 
 ## 3. Mapa de objetivos
 
-Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, eliminando duplicidades e resolvendo conflitos de nomenclatura.
+Cada integrante apresenta seu mapa e a equipe cria um mapa consolidado, eliminando duplicidades.
 
-![Mapa consolidado](../assets/09_modelo_conceitual/mapa_objetivos3.svg)
+![Mapa de objetivos CI03](../assets/09_modelo_conceitual/mapa_objetivos3.svg)
 
 ### Dicionário de objetivos
 
 | ID | Objetivo | Persona(s) | Cenário(s) | Prioridade |
 |---|---|---|---|---|
-| O01 | {{...}} | {{P01}} | {{CI01}} | {{...}} |
+| O01 | Avaliar necessidade de medidas preventivas | P02 | CI03 | Alta |
+| O02 | Consultar risco de alagamento | P02 | CI03 | Alta |
+| O03 | Identificar região onde mora | P02 | CI03 | Alta |
+| O04 | Compreender nível de risco | P02 | CI03 | Alta |
+| O05 | Consultar informações complementares | P02 | CI03 | Média |
+| O06 | Acompanhar mudanças na situação | P02 | CI03 | Média |
 
 ## 4. Esquema conceitual de signos
 
-Consolide as informações em **uma tabela única**.
-
 | Grupo | Signo | Origem | Observações/semântica | Tipo de conteúdo | Restrição | Valor padrão | Prevenção | Recuperação |
 |---|---|---|---|---|---|---|---|---|
-| Credenciais | usuário | domínio | {{...}} | texto | não nulo | — | {{...}} | {{...}} |
+| Localização | região | usuário | Local onde Victor mora | texto/localização | Região válida | — | PA: sugerir regiões válidas | RA: permitir nova busca |
+| Risco | nível de risco | sistema | Classificação simplificada do risco | categórico | Associado à região e ao período | — | PP: explicar os níveis | — |
+| Risco | estimativa de risco | sistema | Possibilidade estimada de alagamento | percentual | Valor válido | — | PP: explicar o significado | — |
+| Condições | chuva | domínio/sistema | Condições de chuva da região | numérico/textual | Local e período definidos | — | PP: explicar unidades | — |
+| Alagamento | ocorrência de alagamento | domínio | Registro de alagamento próximo | registro | Local e período identificados | — | — | — |
+| Consulta | período | sistema | Referência temporal das informações | data/hora | Data válida | Consulta atual | PP: mostrar referência temporal | — |
+| Prevenção | medidas preventivas | usuário | Ações consideradas para proteger a residência | texto | — | — | — | — |
+
+**Legenda:**
+
+- `PP` — Prevenção passiva: apresenta explicações para evitar interpretações incorretas.
+- `PA` — Prevenção ativa: impede entradas inválidas.
+- `RA` — Recuperação apoiada: ajuda o usuário a corrigir erros.
 
 ### CI04 — {{título}}
 

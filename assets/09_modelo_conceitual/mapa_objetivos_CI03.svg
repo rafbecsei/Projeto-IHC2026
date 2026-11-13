@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1190" viewBox="0 0 1000 1190" font-family="Liberation Sans, Arial, sans-serif">
+<rect width="1000" height="1190" fill="#fff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker></defs>
+<rect x="70" y="5" width="605" height="755" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="667" y="35" text-anchor="end" font-size="20">Consulta de Risco</text>
+<rect x="143" y="93" width="333" height="76" fill="#fff" stroke="#000" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="217" y1="93" x2="217" y2="169" stroke="#000" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="180.0" y="138.0" text-anchor="middle" font-size="20">VM</text>
+<text x="346.5" y="125.0" text-anchor="middle" font-size="20">Identificar região</text>
+<text x="346.5" y="151.0" text-anchor="middle" font-size="20">onde mora</text>
+<rect x="143" y="273" width="333" height="76" fill="#fff" stroke="#000" stroke-width="1.5" />
+<line x1="217" y1="273" x2="217" y2="349" stroke="#000" stroke-width="1.5" />
+<text x="180.0" y="318.0" text-anchor="middle" font-size="20">VM</text>
+<text x="346.5" y="305.0" text-anchor="middle" font-size="20">Consultar risco de</text>
+<text x="346.5" y="331.0" text-anchor="middle" font-size="20">alagamento da região</text>
+<rect x="143" y="453" width="333" height="76" fill="#fff" stroke="#000" stroke-width="1.5" />
+<line x1="217" y1="453" x2="217" y2="529" stroke="#000" stroke-width="1.5" />
+<text x="180.0" y="498.0" text-anchor="middle" font-size="20">VM</text>
+<text x="346.5" y="485.0" text-anchor="middle" font-size="20">Compreender o</text>
+<text x="346.5" y="511.0" text-anchor="middle" font-size="20">nível de risco</text>
+<rect x="143" y="651" width="333" height="76" fill="#fff" stroke="#000" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="217" y1="651" x2="217" y2="727" stroke="#000" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="180.0" y="696.0" text-anchor="middle" font-size="20">VM</text>
+<text x="346.5" y="683.0" text-anchor="middle" font-size="20">Consultar informações</text>
+<text x="346.5" y="709.0" text-anchor="middle" font-size="20">complementares</text>
+<path d="M310 169 V271" fill="none" stroke="#000" stroke-width="2" marker-end="url(#a)"/>
+<path d="M310 349 V451" fill="none" stroke="#000" stroke-width="2" marker-end="url(#a)"/>
+<path d="M310 651 V531" fill="none" stroke="#000" stroke-width="2" marker-end="url(#a)"/>
+<rect x="70" y="760" width="605" height="420" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="667" y="790" text-anchor="end" font-size="20">Proteção da Residência</text>
+<rect x="143" y="850" width="333" height="76" fill="#fff" stroke="#000" stroke-width="1.5" />
+<line x1="217" y1="850" x2="217" y2="926" stroke="#000" stroke-width="1.5" />
+<text x="180.0" y="895.0" text-anchor="middle" font-size="20">VM</text>
+<text x="346.5" y="882.0" text-anchor="middle" font-size="20">Avaliar necessidade de</text>
+<text x="346.5" y="908.0" text-anchor="middle" font-size="20">medidas preventivas</text>
+<rect x="143" y="1040" width="333" height="76" fill="#fff" stroke="#000" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="217" y1="1040" x2="217" y2="1116" stroke="#000" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="180.0" y="1085.0" text-anchor="middle" font-size="20">VM</text>
+<text x="346.5" y="1072.0" text-anchor="middle" font-size="20">Acompanhar mudanças</text>
+<text x="346.5" y="1098.0" text-anchor="middle" font-size="20">na situação</text>
+<path d="M310 1040 V928" fill="none" stroke="#000" stroke-width="2" marker-end="url(#a)"/>
+<path d="M143 491 H17 V888 H141" fill="none" stroke="#000" stroke-width="2" marker-end="url(#a)"/>
+<rect x="700" y="850" width="290" height="330" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="718" y="888" font-size="20">Legenda:</text>
+<rect x="718" y="908" width="254" height="44" fill="#fff" stroke="#000" stroke-width="1.5" />
+<line x1="768" y1="908" x2="768" y2="952" stroke="#000" stroke-width="1.5" />
+<text x="743.0" y="937.0" text-anchor="middle" font-size="16">VM</text>
+<text x="870.0" y="935.6" text-anchor="middle" font-size="16">objetivo final</text>
+<rect x="718" y="966" width="254" height="56" fill="#fff" stroke="#000" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="768" y1="966" x2="768" y2="1022" stroke="#000" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="743.0" y="1001.0" text-anchor="middle" font-size="16">VM</text>
+<text x="870.0" y="989.2" text-anchor="middle" font-size="16">objetivo</text>
+<text x="870.0" y="1010.0" text-anchor="middle" font-size="16">instrumental</text>
+<path d="M720 1055 H780" stroke="#000" stroke-width="2" marker-end="url(#a)"/>
+<text x="792" y="1061" font-size="16" font-style="italic">instrumenta</text>
+<text x="792" y="1081" font-size="16" font-style="italic">diretamente</text>
+<line x1="718" y1="1106" x2="972" y2="1106" stroke="#000" stroke-width="1"/>
+<text x="718" y="1140" font-size="20">VM - Victor Merker Binda</text>
+</svg>

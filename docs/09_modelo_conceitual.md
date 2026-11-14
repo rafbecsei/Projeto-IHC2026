@@ -107,8 +107,8 @@ Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, elim
 
 ### CI02 — Prevenção de impactos no comércio durante chuva intensa
 
-**Autor(a):** Rafael Iamashita Becsei - 22.225.037-5
-**Origem:** cenário problema C02
+**Autor(a):** Rafael Iamashita Becsei - 22.225.037-5  
+**Origem:** cenário problema C02  
 
 Em um dia de previsão de chuva intensa, Viviane Santos Machado está em seu pequeno comércio e percebe que o tempo começou a mudar. Como sua região costuma sofrer com alagamentos durante períodos de chuva forte, ela se preocupa com os possíveis impactos no funcionamento do estabelecimento e com seus produtos e equipamentos.
 

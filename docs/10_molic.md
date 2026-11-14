@@ -59,19 +59,19 @@ Explique em texto o caminho principal e pelo menos os caminhos alternativos/rupt
 | Usuário precisa de mais informações | Após visualizar o risco da região | Paulo percebe que precisa de mais contexto para compreender a situação  | Consulta informações complementares sobre chuva e ocorrências e depois retorna à análise do risco |
 | Usuário considera outro trajeto | Durante o planejamento do deslocamento | Paulo decide que deseja avaliar uma alternativa antes de concluir | Retorna à consulta de risco, informa outra região ou trajeto e realiza uma nova análise |
 
-## M02 — {{nome do cenário/objetivo}}
+## M02 — Prevenção de impactos no comércio durante chuva intensa
 
-**Autor(a):** {{nome — matrícula}}  
-**Cenário de interação de origem:** {{CI02}}  
-**Objetivo(s):** {{O02}}  
-**Tarefa(s) relacionada(s):** {{T02}}  
-**Signos relevantes:** {{...}}
+**Autor(a):** Rafael Iamashita Becsei - 22.225.037-5  
+**Cenário de interação de origem:** CI02 — Prevenção de impactos no comércio durante chuva intensa  
+**Objetivo(s):** Avaliar o risco de alagamento na região do comércio; compreender sua gravidade e seu período; decidir sobre medidas preventivas      
+**Tarefa(s) relacionada(s):** Consultar e interpretar o risco de alagamento da região para avaliar medidas preventivas 
+**Signos relevantes:** região consultada, nível de risco, período de referência, informações de chuva e ocorrências de alagamento
 
 ### Diagrama
 
 ![MoLIC M02](../assets/10_molic/molic_m02.svg)
 
-**Fonte editável:** {{adicione aqui o link para o arquivo `.drawio`, `.svg` editável ou outro formato utilizado pela equipe}}
+**Fonte editável:** [molic_m02.drawio](../assets/10_molic/molic_m02.drawio)
 
 ### Leitura do diagrama
 
@@ -79,14 +79,21 @@ Explique em texto o caminho principal e pelo menos os caminhos alternativos/rupt
 
 #### Caminho principal
 
-1. {{ponto de abertura → cena...}}
-2. {{...}}
+1. A conversa começa quando Viviane deseja consultar o risco de alagamento na região onde está localizado seu comércio.
+2. Viviane informa ou seleciona a região de interesse, utilizando o nome, bairro ou mapa.
+3. O sistema processa a consulta e, quando a região é identificada, apresenta o nível de risco, seu significado e o período de referência.
+4. Viviane interpreta as informações apresentadas e avalia como o risco pode afetar seu estabelecimento.
+5. Caso precise de mais informações, pode consultar dados complementares sobre chuva e ocorrências de alagamento, retornando depois à interpretação do risco.
+6. Com base nas informações disponíveis, Viviane avalia a necessidade de adotar medidas preventivas para proteger produtos, equipamentos e o funcionamento do comércio.
+7. Após concluir sua avaliação, a conversa é encerrada com o objetivo alcançado.
 
 #### Alternativas e rupturas
 
 | Situação | Onde ocorre | Como o usuário percebe | Caminho de recuperação/saída |
 |---|---|---|---|
-| {{dado inválido}} | {{...}} | {{fala/feedback}} | {{...}} |
+| Região do comércio não identificada | Durante a definição da região consultada | O sistema informa que não conseguiu localizar a região solicitada | Viviane retorna à definição da região, corrige o nome ou seleciona uma região pelo mapa, realizando uma nova consulta |
+| Necessidade de informações complementares | Após visualizar o risco da região | Viviane percebe que precisa de mais informações para compreender a situação | Consulta informações sobre chuva e ocorrências de alagamento e retorna à interpretação do risco |
+| Necessidade de revisar o risco | Durante a avaliação de medidas preventivas | Viviane considera necessário analisar novamente as informações antes de decidir | Retorna à interpretação do risco e reavalia a situação |
 
 ## M03 — {{nome do cenário/objetivo}}
 

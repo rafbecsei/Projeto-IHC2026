@@ -105,27 +105,45 @@ Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, elim
 - `PA` — Prevenção ativa: o sistema impede entradas inválidas.
 - `RA` — Recuperação apoiada: o sistema informa o problema e ajuda o usuário a corrigi-lo.
 
-### CI02 — {{título}}
+### CI02 — Prevenção de impactos no comércio durante chuva intensa
 
-**Autor(a):** {{nome — matrícula}}  
-**Origem:** cenário problema {{C01}}
+**Autor(a):** Rafael Iamashita Becsei - 22.225.037-5
+**Origem:** cenário problema C02
 
-{{cenário de interação com alterações marcadas}}
+Em um dia de previsão de chuva intensa, Viviane Santos Machado está em seu pequeno comércio e percebe que o tempo começou a mudar. Como sua região costuma sofrer com alagamentos durante períodos de chuva forte, ela se preocupa com os possíveis impactos no funcionamento do estabelecimento e com seus produtos e equipamentos.
+
+**Antes que a chuva fique mais intensa, Viviane consulta no sistema a região onde está localizado seu comércio. O sistema identifica a região consultada e apresenta o risco estimado de alagamento, relacionando as informações disponíveis às condições daquele local.**
+
+Como Viviane não possui conhecimento técnico sobre precipitação ou modelos de risco, o sistema apresenta o nível de risco acompanhado de uma explicação em linguagem simples, permitindo que ela compreenda melhor a gravidade da situação sem precisar interpretar dados técnicos isolados.
+
+**Caso precise de mais informações, Viviane pode consultar dados complementares sobre a chuva e ocorrências de alagamento na região, considerando a situação antes de tomar uma decisão.**
+
+**Com essas informações, Viviane avalia se precisa adotar medidas preventivas, como proteger produtos e equipamentos, reorganizar itens vulneráveis ou se preparar para uma possível interrupção das atividades. A decisão sobre quais medidas tomar continua sendo dela.**
+
+**Durante a chuva, Viviane também pode realizar novas consultas para acompanhar possíveis mudanças no risco e reconsiderar as medidas adotadas. Dessa forma, consegue se preparar com mais informações e reduzir a incerteza sobre os possíveis impactos no comércio.**
 
 ### Diferenças relevantes
 
 | Alteração | Por que foi necessária | Evidência/artefato que justifica |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Consulta do risco associada à região do comércio | Viviane tinha dificuldade para relacionar informações gerais sobre chuva ao local do estabelecimento | C02, P03 e R02 |
+| Apresentação do risco em linguagem simples | Viviane não possui conhecimento técnico para interpretar dados meteorológicos isolados | C02, H01 e H04 |
+| Disponibilização de informações complementares | Informações sobre chuva e ocorrências podem ajudar a compreender melhor a situação | C02 e H05 |
+| Apoio à decisão sobre medidas preventivas | Viviane precisa decidir como proteger produtos e equipamentos sem comprometer desnecessariamente as atividades | C02 e questões de refinamento Q3, Q4 e Q5 |
+| Possibilidade de consultar novamente o risco | As condições podem mudar durante a chuva e exigir uma nova avaliação | C02 e questão de refinamento Q6 |
 
 ## 2. Design centrado na comunicação
 
-**Nome do cenário:** {{CI02}}
+**Nome do cenário:** CI02 — Prevenção de impactos no comércio durante chuva intensa
 
 | Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
 |---|---|---|
-| {{objetivo}} | `U: ...` / `D: ...` | {{...}} |
-| > {{subtópico}} | {{...}} | {{...}} |
+| Consultar risco na região do comércio | `U: Quero saber se a região do meu comércio apresenta risco de alagamento` / `D: Informe a região que deseja consultar` | Permitir que Viviane consulte o risco associado ao estabelecimento |
+| > identificar a região | `U: Quero verificar o local onde está meu comércio` / `D: Esta é a região selecionada para consulta` Signos: região, localização, comércio | Confirmar que as informações correspondem à região desejada. |
+| > compreender o risco | `U: Quero entender a gravidade do risco apresentado` / `D: Este é o nível de risco estimado para a região e seu significado` Signos: nível de risco, estimativa de risco, região | Facilitar a interpretação sem exigir conhecimento técnico |
+| > consultar informações complementares | `U: Quero saber mais sobre as condições da região` / `D: Estas são as informações disponíveis sobre chuva e ocorrências de alagamento` Signos: chuva, ocorrência, período | Oferecer informações adicionais para apoiar a avaliação |
+| Avaliar medidas preventivas | `U: Preciso decidir se devo proteger meus produtos e equipamentos` / `D: Estas são as condições de risco identificadas para a região consultada` | Apoiar a decisão de Viviane sem determinar as medidas que ela deve tomar |
+| > acompanhar mudanças no risco | `U: Quero verificar se as condições mudaram desde a última consulta` / `D: Estas são as informações disponíveis para a região neste momento` Signos: região, nível de risco, período da consulta | Permitir que Viviane reavalie a situação durante a chuva |
 
 **Convenção:** `U` = usuário; `D` = preposto do designer/sistema, conforme a abordagem de Engenharia Semiótica adotada na disciplina.
 
@@ -139,7 +157,15 @@ Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, elim
 
 | ID | Objetivo | Persona(s) | Cenário(s) | Prioridade |
 |---|---|---|---|---|
-| O01 | {{...}} | {{P01}} | {{CI01}} | {{...}} |
+| O01 | Avaliar o risco de alagamento para prevenir impactos no comércio | P03 | CI02 | Alta |
+| O02 | Identificar a região onde está localizado o comércio | P03 | CI02 | Alta |
+| O03 | Consultar o risco de alagamento da região | P03 | CI02 | Alta |
+| O04 | Compreender a gravidade e o período do risco | P03 | CI02 | Alta |
+| O05 | Consultar informações complementares sobre chuva e ocorrências | P03 | CI02 | Média |
+| O06 | Avaliar os possíveis impactos no estabelecimento | P03 | CI02 | Alta |
+| O07 | Decidir se são necessárias medidas preventivas | P03 | CI02 | Alta |
+| O08 | Definir e priorizar medidas para proteger produtos, equipamentos e o funcionamento do comércio | P03 | CI02 | Média |
+| O09 | Acompanhar mudanças no risco durante a chuva | P03 | CI02 | Média |
 
 ## 4. Esquema conceitual de signos
 
@@ -147,7 +173,12 @@ Consolide as informações em **uma tabela única**.
 
 | Grupo | Signo | Origem | Observações/semântica | Tipo de conteúdo | Restrição | Valor padrão | Prevenção | Recuperação |
 |---|---|---|---|---|---|---|---|---|
-| Credenciais | usuário | domínio | {{...}} | texto | não nulo | — | {{...}} | {{...}} |
+| Localização | Região consultada | Domínio | Identifica a região do comércio para a qual o risco será apresentado | Texto / localização | Deve corresponder a uma região válida. | — | PP: mostrar claramente o nome da região consultada | RA: permitir selecionar outra região |
+| Risco | Nível de risco | Domínio | Indica a classificação do risco estimado de alagamento na região | Categoria | Utilizar os níveis definidos pelo sistema | — | PP: apresentar o nível acompanhado de uma explicação simples | RA: informar quando não houver dados disponíveis |
+| Risco | Período de referência do risco | Domínio | Indica a qual momento ou intervalo a estimativa de risco se refere | Data / hora / período | Deve estar associado à estimativa apresentada | — | PP: identificar o período para evitar interpretações incorretas | RA: informar quando o período não estiver disponível |
+| Clima | Informações de chuva | Domínio | Apresenta dados de chuva que ajudam a compreender as condições da região | Dados meteorológicos | Informar unidade e período dos dados | — | PP: apresentar unidades e descrições compreensíveis | RA: informar a indisponibilidade dos dados |
+| Histórico | Ocorrências de alagamento | Domínio | Registros anteriores que podem complementar a avaliação da região | Registros históricos | Associar cada ocorrência a uma região e período | — | PP: diferenciar ocorrências passadas de riscos futuros | RA: indicar quando não houver registros disponíveis |
+| Consulta | Atualização das informações | Interface | Indica quando as informações de risco foram atualizadas | Data e hora | Deve representar a atualização dos dados exibidos | — | PP: mostrar a referência temporal dos dados | RA: avisar quando não houver informação de atualização |
 
 ### CI03 — Preparação do morador durante previsão de chuva intensa
 

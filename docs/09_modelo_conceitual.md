@@ -151,7 +151,7 @@ Como Viviane não possui conhecimento técnico sobre precipitação ou modelos d
 
 Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, eliminando duplicidades e resolvendo conflitos de nomenclatura.
 
-![Mapa consolidado](../assets/09_modelo_conceitual/mapa_objetivos2.svg)
+<img src="../assets/09_modelo_conceitual/mapa_objetivos2.svg" alt="Mapa de objetivos" width="550">
 
 ### Dicionário de objetivos
 

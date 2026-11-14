@@ -1,0 +1,172 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="8wWnmJsxeejkRW80F952">
+    <mxGraphModel dx="1483" dy="1081" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="80" width="290" x="269" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-7" edge="1" parent="1" source="nNYt_QOcLB9ztbeOkBTH-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="nNYt_QOcLB9ztbeOkBTH-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-6" parent="1" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="" vertex="1">
+          <mxGeometry height="60" width="150" x="339" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-8" edge="1" parent="1" source="nNYt_QOcLB9ztbeOkBTH-2" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="nNYt_QOcLB9ztbeOkBTH-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="260" as="sourcePoint" />
+            <mxPoint x="540" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Definir região do comércio&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="200" x="314" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div align=&quot;left&quot;&gt;&lt;b&gt;precond:&lt;/b&gt; usuário deseja avaliar o risco de alagamento da região de seu comércio&lt;/div&gt;&lt;div&gt;&lt;b&gt;u:&lt;/b&gt; consultar risco do comércio&lt;/div&gt;&lt;div&gt;&lt;b&gt;gco:&lt;/b&gt; avaliar risco para prevenir impactos ao comércio&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="230" x="500" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-13" edge="1" parent="1" source="nNYt_QOcLB9ztbeOkBTH-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="nNYt_QOcLB9ztbeOkBTH-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;d+u: região de interesse&amp;nbsp;&lt;/div&gt;&lt;div&gt;(ex.: nome, bairro ou seleção no mapa)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="221" x="303.5" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-19" edge="1" parent="1" source="nNYt_QOcLB9ztbeOkBTH-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="nNYt_QOcLB9ztbeOkBTH-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-27" edge="1" parent="1" source="nNYt_QOcLB9ztbeOkBTH-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="nNYt_QOcLB9ztbeOkBTH-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-12" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=light-dark(#000000,#000000);" value="" vertex="1">
+          <mxGeometry height="44" width="44" x="392" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="u: consultar risco" vertex="1">
+          <mxGeometry height="30" width="100" x="420" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;dashed=1;dashPattern=8 8;" value="" vertex="1">
+          <mxGeometry height="80" width="290" x="650" y="352" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-16" edge="1" parent="1" source="nNYt_QOcLB9ztbeOkBTH-15" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="nNYt_QOcLB9ztbeOkBTH-15" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="871" y="392" as="sourcePoint" />
+            <mxPoint x="921" y="342" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-20" edge="1" parent="1" source="nNYt_QOcLB9ztbeOkBTH-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;dashed=1;dashPattern=8 8;" target="nNYt_QOcLB9ztbeOkBTH-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;[SR] Região não identificada&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="200" x="695" y="352" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="d: não foi possível localizar a região informada" vertex="1">
+          <mxGeometry height="30" width="200" x="695" y="382" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="d: processar consulta do risco" vertex="1">
+          <mxGeometry height="30" width="170" x="450" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="u: corrigir região" vertex="1">
+          <mxGeometry height="30" width="100" x="640" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-33" edge="1" parent="1" source="nNYt_QOcLB9ztbeOkBTH-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.001;entryY=0.161;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.996;exitY=0.163;exitDx=0;exitDy=0;" target="nNYt_QOcLB9ztbeOkBTH-29">
+          <mxGeometry relative="1" x="0.1498" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="80" width="290" x="269" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-24" edge="1" parent="1" source="nNYt_QOcLB9ztbeOkBTH-23" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="nNYt_QOcLB9ztbeOkBTH-23" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="525" as="sourcePoint" />
+            <mxPoint x="540" y="475" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Interpretar o risco da região&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="200" x="314" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-41" edge="1" parent="1" source="nNYt_QOcLB9ztbeOkBTH-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="nNYt_QOcLB9ztbeOkBTH-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;d: nível de risco, significado e período de referência&lt;/div&gt;&lt;div&gt;(ex. risco alto, nas próximas horas&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="200" x="314" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="d: região e risco identificados" vertex="1">
+          <mxGeometry height="30" width="170" x="414" y="432" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-35" edge="1" parent="1" source="nNYt_QOcLB9ztbeOkBTH-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.006;entryY=0.85;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0;exitY=0.858;exitDx=0;exitDy=0;" target="nNYt_QOcLB9ztbeOkBTH-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="80" width="290" x="720" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-30" edge="1" parent="1" source="nNYt_QOcLB9ztbeOkBTH-29" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="nNYt_QOcLB9ztbeOkBTH-29" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="941" y="525" as="sourcePoint" />
+            <mxPoint x="991" y="475" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Consultar informações complementares&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="280" x="725" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;d: informações de chuva e ocorrências de alagamento&lt;/div&gt;&lt;div&gt;(ex. volume de chuva, registros recentes)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="230" x="765" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="u: ver mais informações" vertex="1">
+          <mxGeometry height="30" width="140" x="570" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="u: voltar à avaliação do risco" vertex="1">
+          <mxGeometry height="30" width="161" x="559" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-43" edge="1" parent="1" source="nNYt_QOcLB9ztbeOkBTH-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;dashed=1;dashPattern=8 8;" target="nNYt_QOcLB9ztbeOkBTH-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="249" y="680" />
+              <mxPoint x="249" y="525" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-48" edge="1" parent="1" source="nNYt_QOcLB9ztbeOkBTH-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nNYt_QOcLB9ztbeOkBTH-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="80" width="290" x="269" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-38" edge="1" parent="1" source="nNYt_QOcLB9ztbeOkBTH-37" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="nNYt_QOcLB9ztbeOkBTH-37" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="670" as="sourcePoint" />
+            <mxPoint x="540" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Avaliar necessidade de medidas preventivas&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="280" x="274" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;d: informações consolidadas para a decisão&lt;/div&gt;&lt;div&gt;(risco, período e contexto da chuva)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="242" x="293" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="u: avaliar impactos no comércio" vertex="1">
+          <mxGeometry height="30" width="180" x="420" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-44" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="u: revisar informações do risco" vertex="1">
+          <mxGeometry height="30" width="120" x="120" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-47" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="30" width="54" x="606" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-45" parent="nNYt_QOcLB9ztbeOkBTH-47" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="14" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-46" parent="nNYt_QOcLB9ztbeOkBTH-47" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fillColor=light-dark(#000000,#000000);" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="19" y="-5" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-49" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="u: concluir avaliação" vertex="1">
+          <mxGeometry height="30" width="130" x="565" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="nNYt_QOcLB9ztbeOkBTH-50" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;gcc: avaliar risco para prevenir impactos no comércio&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="170" x="570" y="700" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,7 +1,7 @@
 # Entrega 9 — Modelo conceitual e design centrado na comunicação
 
 **Data:** 04/11/2026  
-**Status:** 🟨 em andamento  
+**Status:** 🟩 Concluída
 **Responsabilidade:** soluções individuais, com consolidação da equipe para mapa de objetivos e esquema de signos.  
 
 ## Objetivo da atividade
@@ -257,27 +257,49 @@ Cada integrante apresenta seu mapa e a equipe cria um mapa consolidado, eliminan
 - `PA` — Prevenção ativa: impede entradas inválidas.
 - `RA` — Recuperação apoiada: ajuda o usuário a corrigir erros.
 
-### CI04 — {{título}}
+<!-- BLOCO 1: substitui desde a linha '### CI04 — {{título}}' até a linha anterior a '### Regras para os signos' -->
 
-**Autor(a):** {{nome — matrícula}}  
-**Origem:** cenário problema {{C01}}
+### CI04 — Ida para a prova de transporte público com previsão de temporal
 
-{{cenário de interação com alterações marcadas}}
+**Autor(a):** Henrique Hodel Babler — 22.125.084-8  
+**Origem:** cenário problema C04
+
+Em uma quinta-feira de março, Juliana Ferreira Costa, estudante universitária de 20 anos, tem uma prova às 19h. Para chegar à faculdade, pega um ônibus até um terminal de integração e segue de metrô. Ainda em casa, recebe um alerta de temporal e fica em dúvida se mantém o trajeto habitual, sai mais cedo ou busca outra alternativa.
+
+**Juliana acessa o sistema pelo celular e informa a linha de ônibus que utiliza ou, se preferir, o ponto ou terminal onde embarca. Em seguida, confirma o sentido, onde embarca e desembarca e a que horas pretende sair. [H — H06]**
+
+**O sistema apresenta o itinerário da linha com os trechos destacados por nível de risco, sem exigir que ela conheça os nomes das ruas.** Como Juliana não possui conhecimento técnico, **o nível de risco do seu trecho vem acompanhado de uma explicação em linguagem simples e da previsão até o horário em que o ônibus passará por ali.**
+
+**Caso queira compreender melhor um trecho de risco, Juliana pode consultar informações complementares sobre chuva e ocorrências de alagamento. Também pode alterar o horário de saída ou consultar outra linha e comparar as linhas consultadas.**
+
+**Com essas informações, Juliana decide entre manter a linha e o horário, antecipar a saída ou usar outra linha ou modal. O sistema apoia a decisão, mas a escolha permanece com ela. Durante a chuva, pode atualizar a consulta para verificar se o risco mudou.**
 
 ### Diferenças relevantes
 
 | Alteração | Por que foi necessária | Evidência/artefato que justifica |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| A consulta passa a ser feita por linha, ponto ou terminal, e não apenas por região ou rua | Juliana encontrava ocorrências associadas a ruas que não reconhecia e não conseguia relacioná-las à linha que utiliza | C04, R04 e T04. **[H]** Depende da H06, ainda aberta na Entrega 7 |
+| O risco é apresentado ao longo do itinerário, com destaque para o trecho entre o embarque e o desembarque | Juliana não conhece todo o itinerário da linha, apenas os pontos em que embarca e desembarca | C04 e HTA de T04 (2 e 3.1) |
+| O risco é comunicado por nível, com explicação em linguagem simples | Juliana não conseguia concluir se os dados meteorológicos representavam risco no seu trajeto | P04, H01 e H04 |
+| A previsão do risco é relacionada ao horário de passagem | O risco no momento da consulta pode ser diferente do risco quando o ônibus passar pelo trecho | HTA de T04 (3.2 e 4.2) |
+| Informações complementares, outro horário de saída e outra linha podem ser consultados | Juliana precisava repetir a busca em várias fontes para comparar alternativas | H05, GOMS de T04 (M7) e Q4 |
+| O sistema apoia a decisão sem decidir pela usuária, e a consulta pode ser atualizada | A escolha depende de fatores que só Juliana conhece, e as condições mudam durante a chuva | C04, Q3 e Q6 |
 
 ## 2. Design centrado na comunicação
 
-**Nome do cenário:** {{CI04}}
+**Nome do cenário:** CI04 — Ida para a prova de transporte público com previsão de temporal
 
 | Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
 |---|---|---|
-| {{objetivo}} | `U: ...` / `D: ...` | {{...}} |
-| > {{subtópico}} | {{...}} | {{...}} |
+| Consultar risco ao longo da linha | `U: Quero saber se a linha que eu uso pode ser afetada por alagamento.` / `D: Informe a linha que você utiliza ou o ponto ou terminal onde embarca.` | Permitir que Juliana consulte o risco a partir da forma como pensa o deslocamento |
+| > identificar linha de transporte | `U: Uso esta linha.` ou `U: Só sei o ponto onde embarco.` / `D: Estas são as linhas encontradas.` **Signos:** linha, ponto ou terminal | Aceitar as duas formas de busca e confirmar que a linha encontrada é a que ela utiliza |
+| > selecionar linha e sentido | `U: É esta linha, neste sentido; embarco aqui, desço no terminal e pretendo sair agora.` / `D: Este é o trecho que será considerado na consulta.` **Signos:** linha, sentido, ponto de embarque, ponto de desembarque, horário de saída | Garantir que o risco apresentado corresponda ao trecho realmente percorrido |
+| > analisar risco ao longo da linha | `D: Este é o itinerário da linha, com o nível de risco de cada trecho e o significado do risco no seu trecho.` / `U: Quero entender se isso afeta o meu caminho.` **Signos:** itinerário, trecho, nível de risco, significado do risco | Permitir interpretar o risco sem conhecer os nomes das ruas nem conceitos técnicos |
+| > verificar previsão até o horário de passagem | `U: Como estará quando o ônibus passar por lá? E se eu sair mais cedo?` / `D: Esta é a previsão do risco até o horário de passagem, para o horário de saída informado.` **Signos:** horário de saída, horário de passagem, previsão do risco, atualização das informações | Relacionar o risco ao momento em que Juliana estará no trecho e apoiar a decisão de antecipar a saída |
+| > examinar trecho de risco | `U: Quero entender melhor este trecho.` / `D: Estas são as informações disponíveis sobre chuva e ocorrências de alagamento neste trecho.` **Signos:** trecho, nível de risco, estimativa de risco, chuva, ocorrência de alagamento | Oferecer contexto adicional somente quando há trecho de risco moderado ou alto |
+| Decidir como realizar o deslocamento | `U: Com isso, preciso decidir como vou para a faculdade.` / `D: Este é o resumo do risco no seu trecho para a linha consultada.` **Signos:** linha, sentido, nível de risco, previsão do risco, horário de saída | Apoiar a decisão sem escolher pela usuária |
+| > comparar com outra linha | `U: Quero ver outra linha antes de decidir.` / `D: Você pode consultar outra linha; as linhas já consultadas continuam disponíveis para comparação.` **Signos:** linhas consultadas, nível de risco | Permitir avaliar alternativas sem perder o que já foi consultado |
+| > acompanhar mudanças no risco | `U: Quero verificar se o risco mudou.` / `D: Estas são as informações disponíveis neste momento.` **Signos:** atualização das informações, nível de risco, previsão do risco | Permitir reavaliar a situação durante a chuva, inclusive já no ponto de ônibus |
 
 **Convenção:** `U` = usuário; `D` = preposto do designer/sistema, conforme a abordagem de Engenharia Semiótica adotada na disciplina.
 
@@ -285,32 +307,74 @@ Cada integrante apresenta seu mapa e a equipe cria um mapa consolidado, eliminan
 
 Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, eliminando duplicidades e resolvendo conflitos de nomenclatura.
 
-![Mapa consolidado](../assets/09_modelo_conceitual/mapa_objetivos4.svg)
+![Mapa de objetivos CI04](../assets/09_modelo_conceitual/mapa_objetivos4.svg)
 
 ### Dicionário de objetivos
 
 | ID | Objetivo | Persona(s) | Cenário(s) | Prioridade |
 |---|---|---|---|---|
-| O01 | {{...}} | {{P01}} | {{CI01}} | {{...}} |
+| O01 | Decidir como realizar o deslocamento | P04 | CI04 | Alta |
+| O02 | Identificar a linha de transporte utilizada | P04 | CI04 | Alta |
+| O03 | Consultar o risco ao longo da linha | P04 | CI04 | Alta |
+| O04 | Compreender o risco no meu trecho | P04 | CI04 | Alta |
+| O05 | Verificar a previsão até o horário de passagem | P04 | CI04 | Alta |
+| O06 | Consultar detalhes do trecho de risco | P04 | CI04 | Média |
+| O07 | Comparar com outra linha ou modal | P04 | CI04 | Média |
+| O08 | Acompanhar mudanças no risco | P04 | CI04 | Média |
 
 ## 4. Esquema conceitual de signos
 
-Consolide as informações em **uma tabela única**.
-
 | Grupo | Signo | Origem | Observações/semântica | Tipo de conteúdo | Restrição | Valor padrão | Prevenção | Recuperação |
 |---|---|---|---|---|---|---|---|---|
-| Credenciais | usuário | domínio | {{...}} | texto | não nulo | — | {{...}} | {{...}} |
+| **Linha (L)** | — | domínio | Linha de ônibus utilizada por Juliana | — | — | — | — | — |
+| Linha (L) | + número | domínio | Identifica a linha | texto | não nulo; deve corresponder a uma linha existente | — | PA: sugerir apenas linhas existentes durante a digitação | RA: informar que nenhuma linha foi encontrada e manter a busca para correção |
+| Linha (L) | nome | domínio | Nome pelo qual a linha é conhecida | texto | — | — | — | — |
+| Linha (L) | sentido | domínio | Direção em que a linha é percorrida | seleção simples | ida ou volta | — | PP: identificar cada sentido pelo destino final. PAp: alertar quando o embarque e o desembarque não seguem o sentido escolhido | RA: permitir trocar o sentido e refazer a consulta |
+| Linha (L) | itinerário | domínio | Percurso da linha no sentido escolhido; composto por T | lista de trechos | 1 ou mais trechos | — | PP: destacar o ponto de embarque e o de desembarque | — |
+| **Ponto ou terminal (P)** | — | domínio | Local de parada atendido por uma ou mais linhas | — | — | — | — | — |
+| Ponto ou terminal (P) | + nome | domínio | Identifica o ponto ou terminal; permite encontrar as linhas (L) que passam por ele | texto | deve corresponder a um ponto ou terminal existente | — | PA: sugerir apenas pontos e terminais existentes | RA: informar que nada foi encontrado e permitir nova busca |
+| **Meu trecho (M)** | — | aplicação | Parte da linha que Juliana realmente percorre | — | — | — | — | — |
+| Meu trecho (M) | ponto de embarque | domínio | Onde Juliana entra no ônibus; definido por P | seleção simples | deve pertencer à linha e ao sentido escolhidos | — | PA: listar apenas os pontos da linha selecionada | RA: permitir corrigir o ponto |
+| Meu trecho (M) | ponto de desembarque | domínio | Onde Juliana desce; definido por P | seleção simples | deve vir depois do embarque no sentido escolhido | — | PA: listar apenas os pontos da linha selecionada | RA: permitir corrigir o ponto ou trocar o sentido |
+| Meu trecho (M) | horário de saída | domínio | Momento em que Juliana pretende sair | hora | não pode ser anterior ao momento da consulta | momento da consulta | PP: mostrar o formato hh:mm. PA: impedir horários já passados | RA: permitir alterar o horário e refazer a consulta |
+| Meu trecho (M) | horário de passagem | aplicação | Horário estimado em que o ônibus passará por um trecho | hora | calculado a partir do horário de saída | — | PP: indicar que o horário é estimado | — |
+| **Trecho (T)** | — | aplicação | Parte do itinerário para a qual o risco é apresentado | — | — | — | — | — |
+| Trecho (T) | + localização | domínio | Intervalo entre dois pontos do itinerário | localização | deve pertencer ao itinerário de L | — | PP: diferenciar os trechos entre o embarque e o desembarque dos demais | — |
+| Trecho (T) | nível de risco | aplicação | Forma simplificada de comunicar o risco de alagamento | seleção simples | baixo, moderado ou alto | — | PP: apresentar o nível com cor e texto, acompanhado do significado do risco | CE: informar que o risco não está disponível para a linha no momento e orientar a tentar mais tarde ou consultar outra linha |
+| Trecho (T) | significado do risco | aplicação | Explicação do que o nível representa para o deslocamento | texto | deve acompanhar o nível de risco | — | PP: usar linguagem simples, sem garantir segurança absoluta | — |
+| Trecho (T) | estimativa de risco | aplicação | Possibilidade estimada de alagamento | número real | de 0 a 100% | — | PP: apresentar apenas nos detalhes do trecho, com explicação | — |
+| Trecho (T) | previsão do risco | aplicação | Nível de risco esperado até o horário de passagem | nível de risco por horário | do momento da consulta até o horário de passagem | — | PP: indicar que é uma estimativa, e não uma ocorrência confirmada | — |
+| Trecho (T) | chuva | domínio | Chuva prevista para o trecho | número real | em mm, com o período informado | — | PP: apresentar a unidade e o período | CE: informar quando os dados não estiverem disponíveis |
+| Trecho (T) | ocorrência de alagamento | domínio | Registro de alagamento no trecho | registro | 0 ou mais por trecho, com local e período | — | PP: diferenciar ocorrência registrada de risco estimado | — |
+| **Consulta (C)** | — | aplicação | Consulta de risco realizada por Juliana | — | — | — | — | — |
+| Consulta (C) | atualização das informações | aplicação | Quando as informações apresentadas foram atualizadas | data e hora | deve corresponder aos dados exibidos | — | PP: mostrar a data e a hora da atualização | RA: permitir atualizar a consulta |
+| Consulta (C) | linhas consultadas | aplicação | Linhas já consultadas, disponíveis para comparação; composto por L | lista de linhas | 0 ou mais | — | PA: oferecer a comparação apenas quando houver mais de uma linha consultada | — |
 
-### Regras para os signos
+**Convenções:** signo-entidade em negrito, com inicial maiúscula e apelido entre parênteses; signos-atributo em minúsculas; `+` indica o atributo que identifica a entidade.
 
-- Use o vocabulário do domínio do usuário.
-- Evite duplicar o mesmo conceito com nomes diferentes.
-- Diferencie informação fornecida pelo usuário, produzida pelo sistema e derivada do domínio.
-- Registre prevenção e recuperação apenas quando fizer sentido; explique as siglas usadas.
+**Origem:** domínio (existe no mundo do usuário, independentemente do sistema) e aplicação (só faz sentido dentro do sistema). Não foram identificados signos transformados nem convencionais neste cenário.
+
+**Prevenção e recuperação:**
+
+- `PP` — Prevenção passiva: o preposto explica a linguagem da interface para evitar a ruptura.
+- `PA` — Prevenção ativa: o preposto impede falas inválidas.
+- `PAp` — Prevenção apoiada: o preposto alerta sobre uma possível ruptura e pede uma decisão do usuário.
+- `RA` — Recuperação apoiada: o preposto descreve a ruptura e ajuda o usuário a retomar a conversa.
+- `CE` — Captura de erro: o preposto explica uma ruptura que não pode ser resolvida pela interface.
+
+
+<!-- BLOCO 2: substitui a seção '## Síntese' (até a linha anterior a '## Checklist') -->
 
 ## Síntese
 
 Quais objetivos/tópicos/signos deverão necessariamente aparecer nos diagramas MoLIC?
+
+Os quatro cenários de interação têm a mesma estrutura de conversa, que deve aparecer em todos os diagramas MoLIC:
+
+- **Objetivos e tópicos:** identificar o que será consultado (região, trajeto ou linha de transporte); consultar o risco de alagamento; compreender o nível de risco e seu significado; consultar informações complementares sobre chuva e ocorrências, de forma opcional; decidir (planejar o deslocamento ou avaliar medidas preventivas), mantendo a escolha com o usuário; e reavaliar a situação por meio de uma nova consulta.
+- **Signos:** região, trajeto ou linha (com sentido, ponto de embarque, ponto de desembarque e trecho); nível de risco; significado do risco; estimativa de risco; chuva; ocorrência de alagamento; período, previsão do risco e atualização das informações.
+- **Rupturas:** as prevenções e recuperações registradas nos esquemas de signos devem aparecer como falas de ruptura e de recuperação, principalmente quando a região ou a linha não é encontrada e quando o risco não está disponível.
+
 
 ## Checklist
 

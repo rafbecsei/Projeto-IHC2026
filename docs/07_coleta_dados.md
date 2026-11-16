@@ -1,7 +1,7 @@
 # Entrega 7 — Coleta de dados, necessidades e aspectos éticos
 
 **Data:** 28/10/2026  
-**Status:** 🟨 Em Andamento
+**Status:** 🟩 Concluída
 
 ## Objetivo da atividade
 
@@ -146,25 +146,47 @@ Caso seja necessário realizar gravações, será solicitada autorização espec
 
 Também será evitada a exposição de experiências pessoais que possam causar desconforto, principalmente em situações relacionadas a alagamentos ou outros problemas durante deslocamentos.
 
-### A04 — {{autor}}
-
-**Autor(a):** {{nome — matrícula}}
-
+### A04 — Henrique Hodel Babler
+ 
+**Autor(a):** Henrique Hodel Babler — 22.125.084-8
+ 
 #### Que dados coletar?
-
+ 
 | Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
 |---|---|---|---|
-| {{...}} | {{H01/H02/...}} | {{...}} | {{...}} |
-
+| O que o usuário conclui e decide diante do mesmo risco apresentado como porcentagem, como nível ou como texto | H01 / H04 | Permite observar a compreensão diante de exemplos concretos, e não apenas a preferência declarada | Pode definir a forma de apresentar o risco e a necessidade de explicações |
+| Quais termos o usuário utiliza espontaneamente para falar de chuva forte, alagamento e risco | H04 | Permite identificar o vocabulário cotidiano do público e os termos técnicos que não são usados | Pode orientar a linguagem dos textos, rótulos e avisos da interface |
+| Como foi o último deslocamento do usuário afetado por chuva intensa: o que consultou, em que ordem e o que decidiu | H02 | Permite conhecer a atividade real, a partir de uma experiência vivida, e onde está a maior dificuldade | Pode definir qual informação deve aparecer primeiro na consulta |
+| Como o usuário encontra um lugar específico nas ferramentas que utiliza e com quais referências descreve o próprio trajeto | H02 / H06 | Permite verificar se o mapa é a forma natural de localizar uma região e se o trajeto é pensado por região, rua ou outra referência | Pode organizar as formas de localização oferecidas (mapa, busca, localização atual) |
+| Em quais momentos um aviso de risco mudaria uma decisão e em quais seria ignorado ou chegaria tarde | H03 | Permite verificar se alertas apoiam decisões preventivas ou apenas interrompem o usuário | Pode orientar a inclusão de alertas, o momento e a frequência de envio |
+| Quais informações o usuário procura para confiar em uma indicação de risco e quais considera excesso | H05 | Permite separar as informações complementares que ajudam das que apenas aumentam o conteúdo | Pode definir quais dados acompanham o risco e o que fica em um segundo nível de detalhe |
+| Em quais pontos os usuários discordam entre si sobre o que é útil | H01 / H03 / H05 | Opiniões divididas indicam necessidades diferentes dentro do mesmo perfil, que respostas individuais não revelam | Pode indicar onde a interface precisa oferecer opções em vez de uma única forma de apresentação |
+ 
 #### De quem coletar?
-
+ 
 | Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
-
+| Pessoas que realizam deslocamentos frequentes pela cidade de São Paulo | Ter 18 anos ou mais e deslocar-se para trabalho ou estudo pelo menos três vezes por semana | Representam a rotina da persona P01, Paulo |
+| Pessoas que utilizam o smartphone para planejar ou acompanhar deslocamentos | Utilizar aplicativos de mapas, trânsito ou previsão do tempo com alguma frequência | Possuem experiência tecnológica semelhante à considerada para a P01 |
+| Pessoas que já tiveram um deslocamento afetado por chuva intensa ou alagamento | Lembrar de pelo menos uma situação em que precisaram alterar, adiar ou interromper um trajeto | Permitem discutir experiências reais semelhantes às do cenário C01 |
+| Pessoas sem conhecimento técnico sobre meteorologia ou alagamentos | Não atuar nem ter formação em meteorologia, hidrologia ou gestão de riscos | Aproximam-se do conhecimento de domínio considerado para a P01 |
+ 
+Todos os participantes serão do mesmo perfil, a P01, para que a discussão compare experiências de pessoas em situação semelhante. A equipe terá acesso principalmente a colegas e conhecidos, o que configura uma amostra por conveniência; essa limitação será registrada junto com os resultados.
+ 
 #### Aspectos éticos
+ 
+A participação será voluntária e ocorrerá somente após a explicação do objetivo da pesquisa, do motivo do convite e do tempo previsto. Como os convidados tendem a ser colegas e conhecidos dos integrantes, será dito de forma explícita que recusar ou sair no meio da sessão não gera nenhum prejuízo. Menores de 18 anos não participarão.
+ 
+Serão coletados apenas relatos sobre hábitos de deslocamento e sobre a compreensão de informações de risco. Não serão pedidos nome completo, endereço ou documentos. Ao contar um deslocamento, o participante pode revelar onde mora ou trabalha; por isso, será orientado a não citar endereços, e os locais mencionados não serão registrados nos resultados, que usarão códigos como U01 e U02.
+ 
+Como a técnica da Parte B reúne várias pessoas na mesma sessão, a equipe consegue proteger os próprios registros, mas não controla o que os participantes comentam depois. Essa condição será informada antes do consentimento, com o pedido de que os relatos não sejam repetidos fora da sessão.
+ 
+O áudio só será gravado se todos os presentes autorizarem; caso contrário, o registro será feito por anotações. Os arquivos ficarão acessíveis apenas aos integrantes da equipe, serão usados somente para conferir as anotações e serão apagados após a análise.
+ 
+Relatar uma situação de alagamento pode causar desconforto. Nenhuma pergunta será obrigatória e ninguém será pressionado a falar diante do grupo.
+ 
+---
 
-Analise voluntariedade, consentimento, minimização de dados, privacidade, riscos, gravação, anonimização, armazenamento e descarte. Não responda apenas “sim, por causa da LGPD”: explique **quais dados e riscos existem neste projeto**.
 
 
 ## Parte B — ferramentas de coleta
@@ -525,33 +547,139 @@ As dificuldades e sugestões registradas serão organizadas por temas semelhante
 Os resultados serão relacionados principalmente às hipóteses H01, H04 e H05, ajudando a verificar se os termos utilizados são compreensíveis e quais informações os usuários consideram relacionadas entre si.
 
 Esses dados poderão orientar a organização dos conteúdos, a definição de categorias e a escolha de uma linguagem mais adequada para a interface do sistema.
-
-### Instrumento I04 — {{nome da técnica}}
-
-**Autor(a):** {{nome — matrícula}}  
-**Técnica:** questionário / entrevista semiestruturada / observação / grupo focal / outra autorizada  
-**Objetivo:** {{...}}  
-**Público:** {{...}}
-
+### Instrumento I04 — Grupo Focal
+ 
+**Autor(a):** Henrique Hodel Babler — 22.125.084-8  
+**Técnica:** Grupo focal  
+**Objetivo:** Obter, em uma mesma sessão, diferentes pontos de vista sobre como pessoas que se deslocam com frequência lidam com dias de chuva intensa, como compreendem diferentes formas de apresentação do risco de alagamento e em que situações avisos e informações complementares seriam úteis.  
+**Público:** Pessoas com o perfil da persona P01, conforme os critérios da A04. Todos os participantes de uma sessão pertencem a esse mesmo perfil.
+ 
+**Por que grupo focal:** o questionário (I01) mede a distribuição das respostas e a entrevista (I02) aprofunda casos individuais. O grupo focal complementa os dois ao permitir o debate: mostra em que pontos pessoas do mesmo perfil concordam, em que pontos discordam e com quais palavras explicam suas razões.
+ 
 #### Procedimento padronizado de aplicação
-
-1. {{preparação}}
-2. {{apresentação/consentimento}}
-3. {{aplicação}}
-4. {{encerramento}}
-5. {{armazenamento/anonimização}}
-
+ 
+1. Convidar de 5 a 8 participantes, conferindo os critérios da A04, e informar no convite que a sessão dura cerca de 1 hora. Reservar um local silencioso, com mesa única. Imprimir uma folha de resposta por pessoa e os três cartões de exemplo. Definir um moderador, que conduz o roteiro, e um relator, que apenas anota e controla o tempo.
+2. Receber os participantes, ler o texto de boas-vindas, explicar por que foram convidados, a duração e a condição de sigilo em grupo, e obter o consentimento de cada um. Perguntar se todos autorizam a gravação de áudio; sem a autorização de todos, registrar apenas por anotações.
+3. Conduzir as três etapas na ordem e nos tempos do roteiro. Na Etapa 2, cada pessoa escreve sua resposta individual antes do debate, e os cartões são mostrados um por vez, mudando a ordem a cada sessão (A-B-C, B-C-A, C-A-B). O moderador não opina, não descreve a solução do projeto, convida a falar quem ainda não se manifestou e limita quem estiver dominando a conversa.
+4. Perguntar se alguém quer acrescentar algo, agradecer a participação e recolher as folhas.
+5. Identificar folhas e anotações por códigos (U01, U02...), não registrar endereços ou locais citados, manter os registros acessíveis apenas à equipe e apagar o áudio e descartar as folhas após a análise.
 #### Instrumento
-
-Cole aqui o questionário/roteiro completo ou forneça link **mais uma cópia textual no repositório**.
-
+ 
+**Boas-vindas**
+ 
+Obrigado por terem vindo. Esta conversa faz parte de um projeto da disciplina de Interação Humano-Computador sobre deslocamentos em dias de chuva. Vocês foram convidados porque se deslocam com frequência pela cidade.  
+A conversa dura cerca de 1 hora. Não há respostas certas ou erradas e o grupo não precisa concordar: opiniões diferentes nos ajudam.  
+A participação é voluntária. Ninguém é obrigado a responder e qualquer pessoa pode sair quando quiser.  
+Por ser uma conversa em grupo, pedimos que o que for dito aqui não seja comentado fora da sessão. Não é preciso citar endereços.
+ 
+**Etapa 1 — Experiência recente (15 minutos)**
+ 
+1. Como é um deslocamento comum de vocês em um dia de trabalho ou estudo?
+2. Contem sobre a última vez em que uma chuva forte coincidiu com um deslocamento. O que aconteceu?
+3. Naquele dia, o que vocês consultaram e em que ordem? O que conseguiram concluir?
+4. Quando querem saber a situação de um lugar específico, como fazem para encontrá-lo nas ferramentas que usam?
+**Etapa 2 — Cartões de exemplo (25 minutos)**
+ 
+Os cartões são fictícios e se referem à mesma região e ao mesmo momento.
+ 
+```text
+Cartão A
+Risco de alagamento nesta região: 70%
+ 
+Cartão B
+Risco de alagamento nesta região: ALTO
+ 
+Cartão C
+Há grande chance de alagamento nesta região
+nas próximas duas horas.
+```
+ 
+Para cada cartão, antes de conversar, cada participante escreve na folha:
+ 
+```text
+Participante: U___          Cartão: ___
+ 
+Se o seu trajeto passasse por esta região, o que você faria?
+______________________________________________________
+ 
+O que você ainda precisaria saber?
+______________________________________________________
+```
+ 
+Depois, perguntar ao grupo:
+ 
+5. O que vocês escreveram? Por quê?
+6. O que este cartão não deixa claro?
+Depois dos três cartões:
+ 
+7. As decisões de vocês mudaram de um cartão para outro? O que causou a mudança?
+8. Que outras informações vocês procurariam antes de confiar em uma indicação como essas?
+**Etapa 3 — Avisos (15 minutos)**
+ 
+9. Vocês já receberam algum aviso de chuva ou alagamento no celular? O que fizeram depois de receber?
+10. Em que momento do dia ou do trajeto um aviso ainda ajudaria a decidir? Quando já seria tarde?
+11. O que faria vocês desativarem ou ignorarem avisos desse tipo?
+**Perguntas de apoio**
+ 
+- Alguém viveu algo diferente?
+- Pode dar um exemplo?
+- O que você fez em seguida?
+- Quem ainda não falou gostaria de comentar?
+**Encerramento (5 minutos)**
+ 
+Há alguma dificuldade em dias de chuva que não apareceu na conversa?
+ 
+**Registro da sessão (relator)**
+ 
+```text
+Sessão: ___   Data: ___/___/___   Duração: ___ min
+Moderador: ________   Relator: ________
+Participantes: U___ a U___
+Consentimento de todos: Sim / Não
+Áudio: autorizado por todos / não gravado
+Ordem dos cartões: A-B-C / B-C-A / C-A-B
+ 
+Etapa 1 — fontes citadas, ordem de consulta e dificuldades
+____________________________________________________
+ 
+Etapa 2 — decisões escritas nas folhas (nº de pessoas)
+Cartão A:  manter __  alterar __  adiar __  não sabe __
+Cartão B:  manter __  alterar __  adiar __  não sabe __
+Cartão C:  manter __  alterar __  adiar __  não sabe __
+Dúvidas e informações que faltaram: ________________
+ 
+Etapa 3 — momentos em que um aviso ajuda / não ajuda
+____________________________________________________
+ 
+Termos usados pelos participantes para chuva e risco:
+____________________________________________________
+Concordâncias do grupo: ____________________________
+Divergências: ______________________________________
+Falas marcantes (com código): ______________________
+```
+ 
 #### Como os dados serão analisados
-
-{{ex.: distribuição de respostas, codificação temática, agrupamento de problemas}}
+ 
+As folhas individuais da Etapa 2 serão analisadas por contagem das decisões escritas para cada cartão. Por serem preenchidas antes do debate, são o dado menos sujeito à influência do grupo e permitem comparar se a forma de apresentação muda a decisão.
+ 
+As anotações e, quando houver, o áudio serão agrupados por temas: fontes e ordem de consulta, forma de localizar um lugar, compreensão dos cartões, informações que faltaram e utilidade dos avisos. Para cada tema serão registradas as concordâncias e as divergências, para que a opinião de quem falou mais não seja tratada como a opinião do grupo. Os termos usados espontaneamente pelos participantes serão listados para apoiar a escolha da linguagem da interface.
+ 
+Os resultados serão relacionados à H01 e à H04 (cartões e vocabulário), à H02 (forma de localizar um lugar), à H03 (avisos) e à H05 (informações que faltaram), podendo trazer indícios para a H06 quando os participantes descreverem seus trajetos. Por envolver poucas pessoas de uma amostra por conveniência, serão tratados como indícios qualitativos e comparados com os resultados do questionário (I01), das entrevistas (I02) e da classificação de cartões (I03).
 
 ## Síntese
 
-Explique quais lacunas de conhecimento sobre usuários o conjunto de técnicas pretende reduzir. Indique explicitamente quais hipóteses da Entrega 1 deverão ficar **sustentadas, refutadas ou refinadas** após a análise dos dados. Quando os dados forem coletados/analisados, atualize o histórico em `RASTREABILIDADE.md`.
+As hipóteses H01 a H06 foram formuladas pela equipe a partir da análise de sistemas similares, das personas e dos cenários, sem contato direto com usuários. O conjunto de técnicas desta entrega pretende reduzir essa lacuna, verificando com pessoas do perfil da P01 como elas consultam informações em dias de chuva intensa, como compreendem o risco apresentado e quais informações realmente apoiam suas decisões de deslocamento.
+
+As quatro técnicas se complementam. O questionário (I01) indica a distribuição de hábitos e preferências em um número maior de pessoas. A entrevista semiestruturada (I02) aprofunda experiências individuais e as razões das decisões. A classificação de cartões (I03) mostra como os usuários agrupam e nomeiam as informações. O grupo focal (I04) confronta opiniões de pessoas do mesmo perfil e observa o que elas decidem diante de exemplos concretos de apresentação do risco.
+
+| Hipótese | Técnicas que a investigam | Resultado esperado após a análise |
+|---|---|---|
+| H01 — apresentação do risco por níveis, além da porcentagem | I01, I02, I03, I04 | Sustentada ou refutada, por reunir preferência declarada (I01), interpretação relatada (I02), compreensão dos termos (I03) e decisão diante de exemplos (I04). |
+| H02 — mapa como forma adequada de consulta por região | I01, I02, I04 | Sustentada ou refutada quanto à preferência pelo mapa; refinada quanto às formas complementares de localização, como busca por endereço e localização atual. |
+| H03 — utilidade dos alertas para decisões preventivas | I01, I04 e, de forma secundária, I02 | Refinada, definindo em quais momentos e com qual antecedência um alerta é útil, ou refutada se os participantes indicarem que não alterariam suas decisões. |
+| H04 — dificuldade de usuários não técnicos com probabilidades e dados isolados | I01, I02, I03, I04 | Sustentada ou refutada, com identificação dos termos e formatos que causam dificuldade. |
+| H05 — utilidade de informações adicionais sobre chuva e região | I01, I02, I03, I04 | Refinada, separando as informações complementares que ajudam na decisão das que apenas aumentam o conteúdo. |
+| H06 — relação do risco com linha, ponto, terminal ou modal para usuários de transporte público | I04, apenas como indício | Permanece aberta. A coleta foi direcionada à persona primária P01 e não inclui um instrumento específico para usuários de transporte público. |
 
 ## Checklist
 

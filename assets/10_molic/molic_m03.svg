@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="1230" viewBox="0 0 1640 1230" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker></defs>
+<rect width="1640" height="1230" fill="#ffffff"/>
+<polyline points="650,67 650,170" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="650,300 650,390" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="615,410 190,410 190,290" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="320,235 460,235" fill="none" stroke="#000" stroke-width="1.3" stroke-dasharray="8 4" marker-end="url(#arr)"/>
+<polyline points="685,410 1060,410" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="1060,445 685,445" fill="none" stroke="#000" stroke-width="1.3" stroke-dasharray="8 4" marker-end="url(#arr)"/>
+<polyline points="1420,425 1550,425" fill="none" stroke="#000" stroke-width="1.3" stroke-dasharray="8 4" marker-end="url(#arr)"/>
+<polyline points="615,440 260,440 260,560" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="40,635 20,635 20,140 520,140 520,170" fill="none" stroke="#000" stroke-width="1.3" stroke-dasharray="8 4" marker-end="url(#arr)"/>
+<polyline points="190,710 190,780" fill="none" stroke="#000" stroke-width="1.3" stroke-dasharray="8 4" marker-end="url(#arr)"/>
+<polyline points="640,460 640,600" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="840,650 1060,650" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="1060,715 840,715" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="650,760 650,880" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="460,960 430,960 430,700 460,700" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="840,1000 1460,1000 1460,540 675,540 675,460" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="650,1060 650,1125" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<circle cx="650.0" cy="45.0" r="22.0" fill="#000"/>
+<rect x="460" y="170" width="380" height="130" rx="8" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<line x1="460" y1="200" x2="840" y2="200" stroke="#000" stroke-width="1.3"/>
+<text x="650.0" y="190" font-size="13" font-weight="bold" text-anchor="middle">Identificar região onde mora</text>
+<text x="650.0" y="223.5" font-size="12" text-anchor="middle">informar região</text>
+<text x="650.0" y="238.5" font-size="12" text-anchor="middle">d+u: região, localização</text>
+<text x="650.0" y="253.5" font-size="12" text-anchor="middle">(nome, bairro ou seleção no mapa)</text>
+<text x="650.0" y="268.5" font-size="12" text-anchor="middle">confirmar região consultada</text>
+<text x="650.0" y="283.5" font-size="12" text-anchor="middle">d: região identificada</text>
+<rect x="615" y="390" width="70" height="70" fill="#000"/>
+<rect x="40" y="180" width="280" height="110" rx="8" fill="#fff" stroke="#000" stroke-width="1.3" stroke-dasharray="8 4"/>
+<line x1="40" y1="210" x2="320" y2="210" stroke="#000" stroke-width="1.3" stroke-dasharray="8 4"/>
+<text x="180.0" y="200" font-size="13" font-weight="bold" text-anchor="middle">[SR] Região não identificada</text>
+<text x="180.0" y="246.0" font-size="12" text-anchor="middle">d: não foi encontrada a região</text>
+<text x="180.0" y="261.0" font-size="12" text-anchor="middle">indicada; sugestões de regiões válidas</text>
+<rect x="1060" y="360" width="360" height="130" rx="8" fill="#fff" stroke="#000" stroke-width="1.3" stroke-dasharray="8 4"/>
+<line x1="1060" y1="390" x2="1420" y2="390" stroke="#000" stroke-width="1.3" stroke-dasharray="8 4"/>
+<text x="1240.0" y="380" font-size="13" font-weight="bold" text-anchor="middle">[SR] Falha na obtenção de informações</text>
+<text x="1240.0" y="428.5" font-size="12" text-anchor="middle">d: não foi possível obter os dados</text>
+<text x="1240.0" y="443.5" font-size="12" text-anchor="middle">neste momento</text>
+<text x="1240.0" y="458.5" font-size="12" text-anchor="middle">(nenhuma estimativa é exibida)</text>
+<rect x="40" y="560" width="300" height="150" rx="8" fill="#fff" stroke="#000" stroke-width="1.3" stroke-dasharray="8 4"/>
+<line x1="40" y1="590" x2="340" y2="590" stroke="#000" stroke-width="1.3" stroke-dasharray="8 4"/>
+<text x="190.0" y="580" font-size="13" font-weight="bold" text-anchor="middle">[SR] Dados insuficientes</text>
+<text x="190.0" y="631.0" font-size="12" text-anchor="middle">d: não há informações suficientes</text>
+<text x="190.0" y="646.0" font-size="12" text-anchor="middle">para uma estimativa confiável</text>
+<text x="190.0" y="661.0" font-size="12" text-anchor="middle">(ausência de dados não é</text>
+<text x="190.0" y="676.0" font-size="12" text-anchor="middle">comunicada como risco baixo)</text>
+<rect x="460" y="600" width="380" height="160" rx="8" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<line x1="460" y1="630" x2="840" y2="630" stroke="#000" stroke-width="1.3"/>
+<text x="650.0" y="620" font-size="13" font-weight="bold" text-anchor="middle">Interpretar o risco da região</text>
+<text x="650.0" y="668.5" font-size="12" text-anchor="middle">ver risco da região</text>
+<text x="650.0" y="683.5" font-size="12" text-anchor="middle">d: nível de risco, estimativa de risco</text>
+<text x="650.0" y="698.5" font-size="12" text-anchor="middle">compreender o risco</text>
+<text x="650.0" y="713.5" font-size="12" text-anchor="middle">d: explicação em linguagem simples,</text>
+<text x="650.0" y="728.5" font-size="12" text-anchor="middle">período de referência</text>
+<rect x="1060" y="600" width="360" height="160" rx="8" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<line x1="1060" y1="630" x2="1420" y2="630" stroke="#000" stroke-width="1.3"/>
+<text x="1240.0" y="620" font-size="13" font-weight="bold" text-anchor="middle">Consultar informações complementares</text>
+<text x="1240.0" y="676.0" font-size="12" text-anchor="middle">ver condições de chuva</text>
+<text x="1240.0" y="691.0" font-size="12" text-anchor="middle">d: chuva, período</text>
+<text x="1240.0" y="706.0" font-size="12" text-anchor="middle">ver ocorrências de alagamento</text>
+<text x="1240.0" y="721.0" font-size="12" text-anchor="middle">d: ocorrência de alagamento, região</text>
+<rect x="460" y="880" width="380" height="180" rx="8" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<line x1="460" y1="910" x2="840" y2="910" stroke="#000" stroke-width="1.3"/>
+<text x="650.0" y="900" font-size="13" font-weight="bold" text-anchor="middle">Avaliar necessidade de medidas preventivas</text>
+<text x="650.0" y="951.0" font-size="12" text-anchor="middle">rever a situação</text>
+<text x="650.0" y="966.0" font-size="12" text-anchor="middle">d: risco, período e contexto da chuva</text>
+<text x="650.0" y="981.0" font-size="12" text-anchor="middle">considerar medidas preventivas</text>
+<text x="650.0" y="996.0" font-size="12" text-anchor="middle">d: medidas preventivas (proteger objetos</text>
+<text x="650.0" y="1011.0" font-size="12" text-anchor="middle">e equipamentos, verificar pontos</text>
+<text x="650.0" y="1026.0" font-size="12" text-anchor="middle">vulneráveis, acompanhar a situação)</text>
+<circle cx="650.0" cy="1150.0" r="24.3" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="650.0" cy="1150.0" r="18.0" fill="#000"/>
+<circle cx="1575.0" cy="425.0" r="24.3" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="1575.0" cy="425.0" r="18.0" fill="#000"/>
+<circle cx="190.0" cy="805.0" r="24.3" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="190.0" cy="805.0" r="18.0" fill="#000"/>
+<rect x="660.6" y="87.0" width="374.9" height="62" fill="#fff"/>
+<text x="848" y="99.0" font-size="12" text-anchor="middle">precond: morador deseja saber se a região onde mora</text>
+<text x="848" y="114.0" font-size="12" text-anchor="middle">apresenta risco de alagamento na previsão de chuva intensa</text>
+<text x="848" y="129.0" font-size="12" text-anchor="middle">u: consultar risco da minha região</text>
+<text x="848" y="144.0" font-size="12" text-anchor="middle">gco: avaliar necessidade de medidas preventivas</text>
+<rect x="651.8" y="336.5" width="120.5" height="17" fill="#fff"/>
+<text x="712" y="348.5" font-size="12" text-anchor="middle">u: consultar risco</text>
+<rect x="197.3" y="336.5" width="171.4" height="17" fill="#fff"/>
+<text x="283" y="348.5" font-size="12" text-anchor="middle">d: região não identificada</text>
+<rect x="323.4" y="192.0" width="133.2" height="32" fill="#fff"/>
+<text x="390" y="204.0" font-size="12" text-anchor="middle">u: corrigir região /</text>
+<text x="390" y="219.0" font-size="12" text-anchor="middle">escolher sugestão</text>
+<rect x="786.3" y="387.5" width="171.4" height="17" fill="#fff"/>
+<text x="872" y="399.5" font-size="12" text-anchor="middle">d: falha ao obter os dados</text>
+<rect x="808.6" y="451.5" width="126.8" height="17" fill="#fff"/>
+<text x="872" y="463.5" font-size="12" text-anchor="middle">u: tentar novamente</text>
+<rect x="1418.4" y="401.5" width="133.2" height="17" fill="#fff"/>
+<text x="1485" y="413.5" font-size="12" text-anchor="middle">u: encerrar consulta</text>
+<rect x="267.0" y="491.5" width="145.9" height="17" fill="#fff"/>
+<text x="340" y="503.5" font-size="12" text-anchor="middle">d: dados insuficientes</text>
+<rect x="187.5" y="117.5" width="165.0" height="17" fill="#fff"/>
+<text x="270" y="129.5" font-size="12" text-anchor="middle">u: consultar outra região</text>
+<rect x="199.4" y="736.5" width="133.2" height="17" fill="#fff"/>
+<text x="266" y="748.5" font-size="12" text-anchor="middle">u: encerrar consulta</text>
+<rect x="510.9" y="496.0" width="114.1" height="32" fill="#fff"/>
+<text x="568" y="508.0" font-size="12" text-anchor="middle">d: risco estimado</text>
+<text x="568" y="523.0" font-size="12" text-anchor="middle">para a região</text>
+<rect x="842.1" y="627.5" width="215.9" height="17" fill="#fff"/>
+<text x="950" y="639.5" font-size="12" text-anchor="middle">u: ver informações complementares</text>
+<rect x="838.9" y="721.5" width="222.2" height="17" fill="#fff"/>
+<text x="950" y="733.5" font-size="12" text-anchor="middle">u: voltar à interpretação do risco</text>
+<rect x="653.6" y="811.5" width="196.8" height="17" fill="#fff"/>
+<text x="752" y="823.5" font-size="12" text-anchor="middle">u: avaliar medidas preventivas</text>
+<rect x="305.8" y="821.5" width="120.5" height="17" fill="#fff"/>
+<text x="366" y="833.5" font-size="12" text-anchor="middle">u: revisar o risco</text>
+<rect x="1315.2" y="864.0" width="139.6" height="32" fill="#fff"/>
+<text x="1385" y="876.0" font-size="12" text-anchor="middle">u: nova consulta</text>
+<text x="1385" y="891.0" font-size="12" text-anchor="middle">(acompanhar mudanças)</text>
+<rect x="662.5" y="1082.0" width="304.9" height="32" fill="#fff"/>
+<text x="815" y="1094.0" font-size="12" text-anchor="middle">u: concluir avaliação</text>
+<text x="815" y="1109.0" font-size="12" text-anchor="middle">gcc: avaliar necessidade de medidas preventivas</text>
+<rect x="40" y="900" width="360" height="175" rx="6" fill="#fff" stroke="#999"/>
+<text x="50" y="922" font-size="11.5" font-weight="bold">Legenda</text>
+<text x="50" y="941" font-size="11.5">●  ponto de abertura      ◉  ponto de encerramento</text>
+<text x="50" y="960" font-size="11.5">■  processamento do sistema</text>
+<text x="50" y="979" font-size="11.5">u: fala do usuário  ·  d: fala do designer (preposto)</text>
+<text x="50" y="998" font-size="11.5">d+u: signo negociado entre designer e usuário</text>
+<text x="50" y="1017" font-size="11.5">gco / gcc: objetivo iniciado / concluído</text>
+<text x="50" y="1036" font-size="11.5">[SR] cena de ruptura (contorno tracejado)</text>
+<text x="50" y="1055" font-size="11.5">seta tracejada: fala de recuperação/saída de ruptura</text>
+</svg>

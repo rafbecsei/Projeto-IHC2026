@@ -95,34 +95,46 @@ Explique em texto o caminho principal e pelo menos os caminhos alternativos/rupt
 | Necessidade de informações complementares | Após visualizar o risco da região | Viviane percebe que precisa de mais informações para compreender a situação | Consulta informações sobre chuva e ocorrências de alagamento e retorna à interpretação do risco |
 | Necessidade de revisar o risco | Durante a avaliação de medidas preventivas | Viviane considera necessário analisar novamente as informações antes de decidir | Retorna à interpretação do risco e reavalia a situação |
 
-## M03 — {{nome do cenário/objetivo}}
 
-**Autor(a):** {{nome — matrícula}}  
-**Cenário de interação de origem:** {{CI03}}  
-**Objetivo(s):** {{O03}}  
-**Tarefa(s) relacionada(s):** {{T03}}  
-**Signos relevantes:** {{...}}
+## M03 — Preparação do morador durante previsão de chuva intensa
+
+**Autor(a):** Victor Pimentel Lario — 22.125.064-0  
+**Cenário de interação de origem:** CI03 — Preparação do morador durante previsão de chuva intensa  
+**Objetivo(s):** O01 — Avaliar necessidade de medidas preventivas; O02 — Consultar risco de alagamento; O03 — Identificar região onde mora; O04 — Compreender nível de risco; O05 — Consultar informações complementares; O06 — Acompanhar mudanças na situação  
+**Tarefa(s) relacionada(s):** Consultar o risco de alagamento da região onde mora, interpretar seu significado e avaliar a necessidade de proteger a residência.  
+**Persona:** P02 — Victor Merker Binda  
+**Signos relevantes:** região, localização, nível de risco, estimativa de risco, chuva, ocorrência de alagamento, período e medidas preventivas
 
 ### Diagrama
 
 ![MoLIC M03](../assets/10_molic/molic_m03.svg)
 
-**Fonte editável:** {{adicione aqui o link para o arquivo `.drawio`, `.svg` editável ou outro formato utilizado pela equipe}}
+**Fonte editável:** [molic_m03.drawio](../assets/10_molic/molic_m03.drawio)
 
 ### Leitura do diagrama
 
-Explique em texto o caminho principal e pelo menos os caminhos alternativos/rupturas mais importantes.
-
 #### Caminho principal
 
-1. {{ponto de abertura → cena...}}
-2. {{...}}
+1. A conversa começa quando Victor Merker Binda deseja saber se a região onde mora apresenta risco de alagamento durante a previsão de chuva intensa.
+2. Victor informa ou seleciona a região de sua residência, e o sistema confirma qual região será consultada.
+3. O sistema consulta as informações disponíveis para a região e apresenta o nível e a estimativa de risco, com uma explicação em linguagem simples e indicação do período de referência.
+4. Victor interpreta o risco para compreender a gravidade da situação, sem precisar de conhecimento técnico.
+5. Se precisar de mais contexto, consulta informações complementares sobre chuva e ocorrências de alagamento e pode retornar à interpretação do risco.
+6. Com base nas informações apresentadas, Victor avalia se precisa proteger objetos e equipamentos, verificar pontos vulneráveis da residência ou continuar acompanhando a situação. A decisão é do próprio morador.
+7. Ao concluir sua avaliação, a conversa é encerrada com o objetivo alcançado. Durante a chuva, Victor também pode realizar uma nova consulta para verificar mudanças nas condições da região.
 
 #### Alternativas e rupturas
 
 | Situação | Onde ocorre | Como o usuário percebe | Caminho de recuperação/saída |
 |---|---|---|---|
-| {{dado inválido}} | {{...}} | {{fala/feedback}} | {{...}} |
+| Região não identificada | Ao selecionar a região onde mora | O sistema informa que não encontrou a região indicada | Victor corrige o nome, escolhe uma sugestão válida e refaz a consulta |
+| Falha na obtenção de informações | Durante a consulta do risco | O sistema informa que não foi possível obter os dados naquele momento | Victor tenta novamente ou encerra a consulta, sem receber uma estimativa incorreta |
+| Dados insuficientes para estimar o risco | Após consultar as informações disponíveis | O sistema explica que não há informações suficientes para apresentar uma estimativa confiável | Victor pode consultar outra região ou encerrar a conversa; a ausência de dados não é comunicada como risco baixo |
+| Necessidade de compreender melhor o risco | Após visualizar o resultado | Victor percebe que precisa de mais informações sobre chuva e ocorrências | Consulta informações complementares e retorna à interpretação do risco |
+| Mudanças durante a chuva | Após avaliar as medidas preventivas | Victor deseja conferir se o risco foi atualizado | Solicita uma nova consulta, visualiza as informações disponíveis e reavalia sua decisão |
+
+**Observação de modelagem:** O MoLIC representa a conversa do morador com o sistema, incluindo retornos e rupturas. Não representa o funcionamento interno do modelo de previsão. Os casos de falha e dados insuficientes são caminhos de recuperação propostos para a interface, coerentes com o objetivo de comunicar o risco com clareza.
+
 
 ## M04 — {{nome do cenário/objetivo}}
 

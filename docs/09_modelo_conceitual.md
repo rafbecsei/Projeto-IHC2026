@@ -230,9 +230,9 @@ A consolidação elimina duplicidades, cria identificadores únicos para todo o 
 
 Objetivos semelhantes compartilhados por diferentes personas passam a utilizar o mesmo identificador.
 
-## 2.1 Mapa de objetivos consolidado
+## 2.1 Mapa de objetivos 
 
-![Mapa de objetivos consolidado](../assets/09_modelo_conceitual/mapa_objetivos_consolidado.svg)
+![Mapa de objetivos consolidado](../assets/09_modelo_conceitual/mapa_objetivos_consolidado_final.svg)
 
 ## 2.2 Dicionário consolidado de objetivos
 

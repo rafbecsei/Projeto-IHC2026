@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="1530" viewBox="0 0 1760 1530" font-family="Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker></defs>
+<rect width="1760" height="1530" fill="#ffffff"/>
+<polyline points="760,60 760,150" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="760,280 760,330" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="735,355 400,355" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="240,300 240,215 560,215" fill="none" stroke="#000" stroke-width="1.3" stroke-dasharray="7 4" marker-end="url(#arr)"/>
+<polyline points="760,380 760,450" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="760,630 760,690" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="785,700 1350,700 1350,670" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="1150,600 960,600" fill="none" stroke="#000" stroke-width="1.3" stroke-dasharray="7 4" marker-end="url(#arr)"/>
+<polyline points="735,705 460,705" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="460,732 735,732" fill="none" stroke="#000" stroke-width="1.3" stroke-dasharray="7 4" marker-end="url(#arr)"/>
+<polyline points="80,670 40,670 40,180 560,180" fill="none" stroke="#000" stroke-width="1.3" stroke-dasharray="7 4" marker-end="url(#arr)"/>
+<polyline points="270,760 270,810" fill="none" stroke="#000" stroke-width="1.3" stroke-dasharray="7 4" marker-end="url(#arr)"/>
+<polyline points="760,740 760,900" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="960,945 1150,945" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="1150,1020 960,1020" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="1500,900 1500,718 785,718" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="560,945 420,945" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="420,1025 560,1025" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="760,1070 760,1160" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="960,1300 1010,1300 1010,1050 960,1050" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="560,1205 420,1205" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="420,1280 560,1280" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="960,1220 1700,1220 1700,245 960,245" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="960,1315 1600,1315 1600,736 785,736" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="760,1330 760,1420" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<circle cx="760" cy="40" r="20" fill="#000"/>
+<rect x="560" y="150" width="400" height="130" rx="8" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<line x1="560" y1="180" x2="960" y2="180" stroke="#000" stroke-width="1"/>
+<text x="760.0" y="170" font-size="13" font-weight="bold" text-anchor="middle">Identificar linha de transporte</text>
+<text x="760.0" y="210" font-size="12" text-anchor="middle">informar linha, ponto ou terminal</text>
+<text x="760.0" y="226" font-size="12" text-anchor="middle">d+u: número ou nome da linha;</text>
+<text x="760.0" y="242" font-size="12" text-anchor="middle">nome do ponto ou terminal</text>
+<text x="760.0" y="258" font-size="12" text-anchor="middle">(sugere apenas linhas e pontos existentes)</text>
+<rect x="735" y="330" width="50" height="50" fill="#000"/>
+<rect x="80" y="300" width="320" height="110" rx="8" fill="#fff" stroke="#000" stroke-width="1.3" stroke-dasharray="8 4"/>
+<line x1="80" y1="330" x2="400" y2="330" stroke="#000" stroke-width="1" stroke-dasharray="8 4"/>
+<text x="240.0" y="320" font-size="13" font-weight="bold" text-anchor="middle">[SR] Linha ou ponto não encontrado</text>
+<text x="240.0" y="358" font-size="12" text-anchor="middle">d: nenhuma linha, ponto ou terminal</text>
+<text x="240.0" y="374" font-size="12" text-anchor="middle">corresponde à busca;</text>
+<text x="240.0" y="390" font-size="12" text-anchor="middle">o texto buscado é mantido</text>
+<rect x="560" y="450" width="400" height="180" rx="8" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<line x1="560" y1="480" x2="960" y2="480" stroke="#000" stroke-width="1"/>
+<text x="760.0" y="470" font-size="13" font-weight="bold" text-anchor="middle">Definir meu trecho</text>
+<text x="760.0" y="511" font-size="12" text-anchor="middle">selecionar linha e sentido</text>
+<text x="760.0" y="527" font-size="12" text-anchor="middle">d+u: linha, sentido (pelo destino final)</text>
+<text x="760.0" y="543" font-size="12" text-anchor="middle">informar onde embarca e desembarca</text>
+<text x="760.0" y="559" font-size="12" text-anchor="middle">d+u: ponto de embarque, ponto de desembarque</text>
+<text x="760.0" y="575" font-size="12" text-anchor="middle">(apenas pontos da linha escolhida)</text>
+<text x="760.0" y="591" font-size="12" text-anchor="middle">informar quando pretende sair</text>
+<text x="760.0" y="607" font-size="12" text-anchor="middle">d+u: horário de saída (padrão: agora)</text>
+<rect x="735" y="690" width="50" height="50" fill="#000"/>
+<rect x="1150" y="560" width="400" height="110" rx="8" fill="#fff" stroke="#000" stroke-width="1.3" stroke-dasharray="8 4"/>
+<line x1="1150" y1="590" x2="1550" y2="590" stroke="#000" stroke-width="1" stroke-dasharray="8 4"/>
+<text x="1350.0" y="580" font-size="13" font-weight="bold" text-anchor="middle">[AL] Pontos fora do sentido escolhido</text>
+<text x="1350.0" y="618" font-size="12" text-anchor="middle">d: o desembarque não vem depois do</text>
+<text x="1350.0" y="634" font-size="12" text-anchor="middle">embarque neste sentido; deseja trocar</text>
+<text x="1350.0" y="650" font-size="12" text-anchor="middle">o sentido ou corrigir os pontos?</text>
+<rect x="80" y="640" width="380" height="120" rx="8" fill="#fff" stroke="#000" stroke-width="1.3" stroke-dasharray="8 4"/>
+<line x1="80" y1="670" x2="460" y2="670" stroke="#000" stroke-width="1" stroke-dasharray="8 4"/>
+<text x="270.0" y="660" font-size="13" font-weight="bold" text-anchor="middle">[SR] Risco indisponível para a linha</text>
+<text x="270.0" y="695" font-size="12" text-anchor="middle">d: não foi possível obter o risco</text>
+<text x="270.0" y="711" font-size="12" text-anchor="middle">desta linha neste momento</text>
+<text x="270.0" y="727" font-size="12" text-anchor="middle">(nenhuma estimativa é exibida;</text>
+<text x="270.0" y="743" font-size="12" text-anchor="middle">tente mais tarde ou consulte outra linha)</text>
+<circle cx="270" cy="830" r="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<circle cx="270" cy="830" r="14" fill="#000"/>
+<rect x="560" y="900" width="400" height="170" rx="8" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<line x1="560" y1="930" x2="960" y2="930" stroke="#000" stroke-width="1"/>
+<text x="760.0" y="920" font-size="13" font-weight="bold" text-anchor="middle">Analisar risco ao longo da linha</text>
+<text x="760.0" y="964" font-size="12" text-anchor="middle">ver itinerário da linha</text>
+<text x="760.0" y="980" font-size="12" text-anchor="middle">d: itinerário, trechos por nível de risco</text>
+<text x="760.0" y="996" font-size="12" text-anchor="middle">(meu trecho destacado: embarque → desembarque)</text>
+<text x="760.0" y="1012" font-size="12" text-anchor="middle">compreender o risco no meu trecho</text>
+<text x="760.0" y="1028" font-size="12" text-anchor="middle">d: nível de risco, significado do risco</text>
+<text x="760.0" y="1044" font-size="12" text-anchor="middle">d: atualização das informações</text>
+<rect x="1150" y="900" width="400" height="170" rx="8" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<line x1="1150" y1="930" x2="1550" y2="930" stroke="#000" stroke-width="1"/>
+<text x="1350.0" y="920" font-size="13" font-weight="bold" text-anchor="middle">Verificar previsão até o horário de passagem</text>
+<text x="1350.0" y="964" font-size="12" text-anchor="middle">ver previsão no meu trecho</text>
+<text x="1350.0" y="980" font-size="12" text-anchor="middle">d: horário de passagem (estimado),</text>
+<text x="1350.0" y="996" font-size="12" text-anchor="middle">previsão do risco</text>
+<text x="1350.0" y="1012" font-size="12" text-anchor="middle">simular outro horário de saída</text>
+<text x="1350.0" y="1028" font-size="12" text-anchor="middle">d+u: horário de saída</text>
+<text x="1350.0" y="1044" font-size="12" text-anchor="middle">(horários já passados não são aceitos)</text>
+<rect x="80" y="900" width="340" height="170" rx="8" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<line x1="80" y1="930" x2="420" y2="930" stroke="#000" stroke-width="1"/>
+<text x="250.0" y="920" font-size="13" font-weight="bold" text-anchor="middle">Examinar trecho de risco</text>
+<text x="250.0" y="972" font-size="12" text-anchor="middle">ver detalhes do trecho</text>
+<text x="250.0" y="988" font-size="12" text-anchor="middle">d: estimativa de risco (%)</text>
+<text x="250.0" y="1004" font-size="12" text-anchor="middle">d: chuva (mm, período)</text>
+<text x="250.0" y="1020" font-size="12" text-anchor="middle">d: ocorrência de alagamento</text>
+<text x="250.0" y="1036" font-size="12" text-anchor="middle">(ocorrência registrada ≠ risco estimado)</text>
+<rect x="560" y="1160" width="400" height="170" rx="8" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<line x1="560" y1="1190" x2="960" y2="1190" stroke="#000" stroke-width="1"/>
+<text x="760.0" y="1180" font-size="13" font-weight="bold" text-anchor="middle">Decidir como realizar o deslocamento</text>
+<text x="760.0" y="1216" font-size="12" text-anchor="middle">rever o risco no meu trecho</text>
+<text x="760.0" y="1232" font-size="12" text-anchor="middle">d: linha, sentido, nível de risco,</text>
+<text x="760.0" y="1248" font-size="12" text-anchor="middle">previsão do risco, horário de saída</text>
+<text x="760.0" y="1264" font-size="12" text-anchor="middle">escolher como ir</text>
+<text x="760.0" y="1280" font-size="12" text-anchor="middle">manter linha e horário, antecipar a saída</text>
+<text x="760.0" y="1296" font-size="12" text-anchor="middle">ou usar outra linha ou modal</text>
+<text x="760.0" y="1312" font-size="12" text-anchor="middle">(a decisão é da usuária)</text>
+<rect x="80" y="1160" width="340" height="150" rx="8" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<line x1="80" y1="1190" x2="420" y2="1190" stroke="#000" stroke-width="1"/>
+<text x="250.0" y="1180" font-size="13" font-weight="bold" text-anchor="middle">Comparar linhas consultadas</text>
+<text x="250.0" y="1230" font-size="12" text-anchor="middle">ver linhas consultadas</text>
+<text x="250.0" y="1246" font-size="12" text-anchor="middle">d: linhas consultadas, nível de risco</text>
+<text x="250.0" y="1262" font-size="12" text-anchor="middle">e previsão no trecho de cada linha</text>
+<text x="250.0" y="1278" font-size="12" text-anchor="middle">(precond: mais de uma linha consultada)</text>
+<circle cx="760" cy="1440" r="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<circle cx="760" cy="1440" r="14" fill="#000"/>
+<rect x="773" y="61" width="401" height="14" fill="#fff"/>
+<text x="775" y="72" font-size="12" text-anchor="start">precond: Juliana tem prova às 19h e recebeu alerta de temporal</text>
+<rect x="773" y="75" width="260" height="14" fill="#fff"/>
+<text x="775" y="86" font-size="12" text-anchor="start">u: consultar o risco da linha que eu uso</text>
+<rect x="773" y="89" width="266" height="14" fill="#fff"/>
+<text x="775" y="100" font-size="12" text-anchor="start">gco: decidir como realizar o deslocamento</text>
+<rect x="773" y="298" width="62" height="14" fill="#fff"/>
+<text x="775" y="309" font-size="12" text-anchor="start">u: buscar</text>
+<rect x="508" y="336" width="119" height="14" fill="#fff"/>
+<text x="568" y="347" font-size="12" text-anchor="middle">d: nada encontrado</text>
+<rect x="337" y="196" width="126" height="14" fill="#fff"/>
+<text x="400" y="207" font-size="12" text-anchor="middle">u: corrigir a busca</text>
+<rect x="773" y="408" width="138" height="14" fill="#fff"/>
+<text x="775" y="419" font-size="12" text-anchor="start">d: linhas encontradas</text>
+<rect x="773" y="653" width="183" height="14" fill="#fff"/>
+<text x="775" y="664" font-size="12" text-anchor="start">u: consultar risco do trecho</text>
+<rect x="978" y="681" width="164" height="14" fill="#fff"/>
+<text x="1060" y="692" font-size="12" text-anchor="middle">d: pontos fora do sentido</text>
+<rect x="992" y="558" width="126" height="14" fill="#fff"/>
+<text x="1055" y="569" font-size="12" text-anchor="middle">u: trocar sentido /</text>
+<rect x="1005" y="572" width="100" height="14" fill="#fff"/>
+<text x="1055" y="583" font-size="12" text-anchor="middle">corrigir pontos</text>
+<rect x="529" y="686" width="138" height="14" fill="#fff"/>
+<text x="598" y="697" font-size="12" text-anchor="middle">d: risco indisponível</text>
+<rect x="535" y="739" width="126" height="14" fill="#fff"/>
+<text x="598" y="750" font-size="12" text-anchor="middle">u: tentar novamente</text>
+<rect x="221" y="161" width="158" height="14" fill="#fff"/>
+<text x="300" y="172" font-size="12" text-anchor="middle">u: consultar outra linha</text>
+<rect x="283" y="779" width="132" height="14" fill="#fff"/>
+<text x="285" y="790" font-size="12" text-anchor="start">u: encerrar consulta</text>
+<rect x="773" y="797" width="113" height="14" fill="#fff"/>
+<text x="775" y="808" font-size="12" text-anchor="start">d: risco ao longo</text>
+<rect x="773" y="811" width="55" height="14" fill="#fff"/>
+<text x="775" y="822" font-size="12" text-anchor="start">da linha</text>
+<rect x="1005" y="903" width="100" height="14" fill="#fff"/>
+<text x="1055" y="914" font-size="12" text-anchor="middle">u: ver previsão</text>
+<rect x="1008" y="917" width="94" height="14" fill="#fff"/>
+<text x="1055" y="928" font-size="12" text-anchor="middle">até a passagem</text>
+<rect x="995" y="1027" width="119" height="14" fill="#fff"/>
+<text x="1055" y="1038" font-size="12" text-anchor="middle">u: voltar ao risco</text>
+<rect x="1027" y="1041" width="55" height="14" fill="#fff"/>
+<text x="1055" y="1052" font-size="12" text-anchor="middle">da linha</text>
+<rect x="1440" y="782" width="119" height="14" fill="#fff"/>
+<text x="1500" y="793" font-size="12" text-anchor="middle">u: alterar horário</text>
+<rect x="1472" y="796" width="55" height="14" fill="#fff"/>
+<text x="1500" y="807" font-size="12" text-anchor="middle">de saída</text>
+<rect x="453" y="880" width="74" height="14" fill="#fff"/>
+<text x="490" y="891" font-size="12" text-anchor="middle">u: examinar</text>
+<rect x="469" y="894" width="42" height="14" fill="#fff"/>
+<text x="490" y="905" font-size="12" text-anchor="middle">trecho</text>
+<rect x="440" y="908" width="100" height="14" fill="#fff"/>
+<text x="490" y="919" font-size="12" text-anchor="middle">(risco moderado</text>
+<rect x="462" y="922" width="55" height="14" fill="#fff"/>
+<text x="490" y="933" font-size="12" text-anchor="middle">ou alto)</text>
+<rect x="459" y="1032" width="62" height="14" fill="#fff"/>
+<text x="490" y="1043" font-size="12" text-anchor="middle">u: voltar</text>
+<rect x="773" y="1108" width="164" height="14" fill="#fff"/>
+<text x="775" y="1119" font-size="12" text-anchor="start">u: decidir o deslocamento</text>
+<rect x="1018" y="1169" width="119" height="14" fill="#fff"/>
+<text x="1020" y="1180" font-size="12" text-anchor="start">u: revisar o risco</text>
+<rect x="430" y="1186" width="119" height="14" fill="#fff"/>
+<text x="490" y="1197" font-size="12" text-anchor="middle">u: comparar linhas</text>
+<rect x="427" y="1287" width="126" height="14" fill="#fff"/>
+<text x="490" y="1298" font-size="12" text-anchor="middle">u: voltar à decisão</text>
+<rect x="1133" y="1201" width="394" height="14" fill="#fff"/>
+<text x="1330" y="1212" font-size="12" text-anchor="middle">u: consultar outra linha (as linhas consultadas são mantidas)</text>
+<rect x="1190" y="1296" width="279" height="14" fill="#fff"/>
+<text x="1330" y="1307" font-size="12" text-anchor="middle">u: atualizar consulta (acompanhar mudanças)</text>
+<rect x="773" y="1350" width="138" height="14" fill="#fff"/>
+<text x="775" y="1361" font-size="12" text-anchor="start">u: concluir a decisão</text>
+<rect x="773" y="1364" width="266" height="14" fill="#fff"/>
+<text x="775" y="1375" font-size="12" text-anchor="start">gcc: decidir como realizar o deslocamento</text>
+<rect x="80" y="1350" width="360" height="150" rx="4" fill="#fff" stroke="#999"/>
+<text x="90" y="1370" font-size="11" font-weight="bold">Legenda</text>
+<text x="90" y="1386" font-size="11">● ponto de abertura  ◉ ponto de encerramento</text>
+<text x="90" y="1402" font-size="11">■ processamento do sistema</text>
+<text x="90" y="1418" font-size="11">u: fala do usuário · d: fala do designer (preposto)</text>
+<text x="90" y="1434" font-size="11">d+u: signo negociado entre designer e usuário</text>
+<text x="90" y="1450" font-size="11">gco / gcc: objetivo iniciado / concluído</text>
+<text x="90" y="1466" font-size="11">[SR] cena de ruptura · [AL] cena de alerta (tracejadas)</text>
+<text x="90" y="1482" font-size="11">seta tracejada: fala de recuperação/saída de ruptura</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpjYzg1M2U2OS1hNWU3LTRkYzgtOGY2Ny1iN2Y4NzkwN2I4YzMAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaLVONPAhRktLkO2Mm9v76bUAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDphNTdlYjcwNS05NGYyLTQ5MzktOGU2YS1lNDZiNGZiZmFlNjNscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNolwwYfDELMXQMpwutyfsJRAAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggknrOYGMqQWTLO+iBpWbcZNm8VRbisD+Zc191aJmWa1OkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaKlatpw2SYd4bKTakBqPEV0AAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIF9qRoDhNQs8VBJGGFhIeu5OaBLxa/lR6n8vVdRlJ65DZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GUYBZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmNjODUzZTY5LWE1ZTctNGRjOC04ZjY3LWI3Zjg3OTA3YjhjMy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjZmODAyMmI3LTE1YzQtNDE0NC05ZGE5LWMxOTdjMjczYWU4ZXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCSes5gYypBZMs76IGlZtxk2bxVFuKwP5lzX3VomZZrU6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg7WfRmD5ZoZHeRjGMXCHvyoT8tfwvGPvq2Yg+VhXTV9aiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggvXupmjt5z7afRG3M9G6qA5MGduPJaTjNk5vBMYZAtWx0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQAIWcVtjS9Jt8cK8khzdKKA2dOWYx8w4iaSa1n2VtWz6PH+n9mgPA9MxGxYneKch6mXkw9mOnMU9k+4Y1DHlPC4=</c2pa:manifest></metadata></svg>

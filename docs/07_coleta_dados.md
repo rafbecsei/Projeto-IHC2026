@@ -53,7 +53,6 @@ As hipóteses de maior prioridade para a coleta são H01, H02 e H04, pois estão
 
 | Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
 |---|---|---|---|
-| {{...}} | {{H01/H02/...}} | {{...}} | {{...}} |
 | Quais informações o usuário considera mais importantes para entender o risco de alagamento | H01 / H05 | Permite identificar quais informações realmente ajudam o usuário a compreender a situação  | Pode definir quais informações devem receber maior destaque na interface |
 | Como o usuário interpreta níveis de risco, porcentagens e outros dados relacionados a alagamentos | H01 / H04 | Permite verificar se a forma de apresentação do risco é compreensível para usuários sem conhecimento técnico | Pode afetar o uso de níveis, porcentagens, textos explicativos ou outras formas de representação | 
 | Como o usuário prefere localizar uma região para consultar o risco | H02 | Permite verificar se o mapa é realmente uma forma adequada de consulta ou se outras alternativas são mais fáceis | Pode definir se o mapa será a principal forma de consulta ou se deverão existir outras opções | 
@@ -198,145 +197,157 @@ Relatar uma situação de alagamento pode causar desconforto. Nenhuma pergunta s
 **Autor(a):** Eric Song Watanabe — 22.125.086-3  
 **Técnica:** Questionário  
 **Objetivo:** Investigar como usuários que realizam deslocamentos frequentes consultam informações sobre chuva e alagamentos, quais informações consideram mais úteis e como compreendem diferentes formas de apresentação do risco.  
-**Público:** Pessoas que realizam deslocamentos frequentes pela cidade de São Paulo, principalmente usuários de smartphone e aplicativos de mapas, trânsito, transporte ou previsão do tempo.
+**Público:** Pessoas que realizam deslocamentos frequentes pela cidade de São Paulo, principalmente usuários de smartphone e aplicativos de mapas, trânsito, transporte ou previsão do tempo.  
+**Link do instrumento (Google Forms):** https://docs.google.com/forms/d/e/1FAIpQLSfXX2eySDR14vUC5eXnPi7HDVSXoHOoivrmw8AHC_PXtH09ZQ/viewform
 
 #### Procedimento padronizado de aplicação
 
-1. Preparar o questionário em uma ferramenta online, mantendo as mesmas perguntas para todos os participantes.
-2. Apresentar brevemente o objetivo da pesquisa e informar que a participação é voluntária e anônima.
-3. Solicitar o consentimento do participante e disponibilizar o questionário para preenchimento.
-4. Ao final, agradecer a participação e informar que as respostas serão utilizadas apenas para fins acadêmicos.
-5. Armazenar somente as respostas necessárias para a análise, sem associá-las ao nome dos participantes, e descartar os dados após o uso no projeto.
+1. O questionário foi construído no Google Forms, com as mesmas perguntas para todos os participantes: **https://docs.google.com/forms/d/e/1FAIpQLSfXX2eySDR14vUC5eXnPi7HDVSXoHOoivrmw8AHC_PXtH09ZQ/viewform**
+2. A primeira página do formulário apresenta o objetivo da pesquisa, o tempo estimado, a voluntariedade, os dados coletados, o uso dos dados e o anonimato. Essa apresentação é igual para todos, sem depender de explicação oral.
+3. O consentimento é obrigatório e é a única pergunta obrigatória. Quem responde "Não concordo" é levado direto ao fim do formulário, sem ver nem responder as demais perguntas.
+4. O formulário não exige login, não coleta e-mail e não pede nome, endereço ou documentos. O link foi testado em janela anônima.
+5. Antes da divulgação, o formulário passa por um piloto com 2 pessoas do perfil P01 (ver seção "Piloto dos instrumentos"). Depois, o link é divulgado a colegas e conhecidos (amostra por conveniência).
+6. As respostas ficam na conta da equipe, com acesso restrito aos integrantes, e são excluídas ao final do semestre. A cópia textual abaixo serve apenas para documentação e versionamento.
 
 #### Instrumento
 
-Cole aqui o questionário/roteiro completo ou forneça link **mais uma cópia textual no repositório**.
+**Link do instrumento:** https://docs.google.com/forms/d/e/1FAIpQLSfXX2eySDR14vUC5eXnPi7HDVSXoHOoivrmw8AHC_PXtH09ZQ/viewform
+
+Cópia textual do formulário (documentação):
+
+**Apresentação ao participante (primeira página do formulário)**
+
+Este questionário faz parte de uma atividade acadêmica da disciplina de Interação Humano-Computador (IHC). A equipe está estudando como pessoas que se deslocam pela cidade de São Paulo consultam e entendem informações sobre chuva e risco de alagamento, para orientar o projeto de uma interface.
+
+- Tempo estimado: cerca de 5 minutos.
+- Participação voluntária: você pode desistir a qualquer momento, basta fechar a página antes de enviar. Nada é registrado antes do envio.
+- Nenhuma pergunta é obrigatória, exceto a de consentimento.
+- Não existem respostas certas ou erradas.
+- Dados coletados: apenas as respostas às perguntas. Não coletamos nome, e-mail, endereço, documentos nem dados que identifiquem você.
+- Uso dos dados: análise em conjunto, apenas pela equipe, apresentada de forma agregada no trabalho da disciplina. As respostas serão excluídas ao final do semestre.
+- Anonimato: as respostas são anônimas; por isso, depois do envio, não é possível remover a resposta de uma pessoa específica.
+- Público: pessoas com 18 anos ou mais.
+
+**Consentimento (obrigatório)**
+Li as informações acima, tenho 18 anos ou mais e concordo em participar voluntariamente desta pesquisa.
+( ) Sim, concordo em participar
+( ) Não concordo → encerra o formulário
 
 ```
+SEÇÃO — Seus deslocamentos
+
 1. Com que frequência você realiza deslocamentos pela cidade de São Paulo?
-
 ( ) Todos os dias
-
 ( ) Algumas vezes por semana
-
 ( ) Algumas vezes por mês
-
 ( ) Raramente
 
 2. Antes ou durante um deslocamento em um dia de chuva, quais fontes você costuma consultar?
 É possível selecionar mais de uma opção.
-
 [ ] Aplicativos de mapas ou trânsito
-
 [ ] Aplicativos de previsão do tempo
-
 [ ] Sites ou aplicativos de notícias
-
 [ ] Redes sociais
-
 [ ] Informações de familiares, amigos ou colegas
-
 [ ] Não costumo consultar nenhuma fonte
-
 [ ] Outra: __________
 
 3. Você já alterou ou adiou um deslocamento por causa de chuva intensa ou possibilidade de alagamento?
-
 ( ) Sim
-
 ( ) Não
+( ) Não lembro
+
+SEÇÃO — Informações em dias de chuva
 
 4. Quais informações seriam mais importantes para decidir se você deve manter ou alterar um trajeto em um dia de chuva?
 É possível selecionar mais de uma opção.
-
 [ ] Nível de risco de alagamento
-
 [ ] Quantidade ou intensidade da chuva
-
 [ ] Locais com ocorrências recentes de alagamento
-
 [ ] Histórico de alagamentos da região
-
 [ ] Condições do trânsito
-
 [ ] Previsão para as próximas horas
-
 [ ] Outra: __________
 
 5. Qual forma você considera mais fácil para entender o risco de alagamento de uma região?
-
 ( ) Porcentagem de risco
-
 ( ) Níveis como baixo, médio e alto
-
 ( ) Texto explicando a situação
-
 ( ) Combinação entre nível, porcentagem e explicação
-
 ( ) Não sei dizer
 
 6. Como você preferiria localizar uma região para consultar informações sobre risco de alagamento?
-
 ( ) Procurando diretamente em um mapa
-
 ( ) Digitando o endereço ou nome da região
-
 ( ) Utilizando minha localização atual
-
+( ) Não sei dizer
 ( ) Outra forma: __________
 
-( ) Não sei dizer
-
-7. Qual é o seu nível de familiaridade com termos relacionados a chuva, precipitação, probabilidade e risco de alagamento?
-
-( ) Muito baixo
-
-( ) Baixo
-
-( ) Médio
-
-( ) Alto
-
-( ) Muito alto
-
-8. Em quais situações você consideraria útil receber um alerta de risco de alagamento?
+7. Em quais situações você consideraria útil receber um alerta de risco de alagamento?
 É possível selecionar mais de uma opção.
-
 [ ] Antes de sair de casa
-
 [ ] Durante o deslocamento
-
 [ ] Quando o risco de uma região aumentar
-
 [ ] Quando houver uma ocorrência próxima ao meu trajeto
-
 [ ] Não considero alertas necessários
-
 [ ] Outra: __________
 
-9. Informações sobre ocorrências anteriores de alagamento em uma região seriam úteis para você?
-
+8. Informações sobre ocorrências anteriores de alagamento em uma região seriam úteis para você?
 ( ) Muito úteis
-
 ( ) Úteis
-
 ( ) Pouco úteis
-
 ( ) Não seriam úteis
-
 ( ) Não sei dizer
 
-10. Existe alguma informação sobre chuva, alagamentos ou deslocamentos que você considera importante e que não apareceu nas perguntas anteriores?
+SEÇÃO — Um exemplo
 
+Imagine que um aplicativo mostre a mensagem abaixo para uma região por onde você passaria:
+"Risco de alagamento nesta região: 70%"
+
+9. O que essa mensagem significa para você?
+( ) Que 70% da área da região vai alagar
+( ) Que existe 70% de chance de ocorrer alagamento na região
+( ) Que a chuva na região terá 70% de intensidade
+( ) Não sei dizer
+( ) Outro: ______
+
+10. Se o seu trajeto passasse por essa região, o que você faria?
+( ) Manteria o trajeto
+( ) Mudaria o trajeto
+( ) Adiaria o deslocamento
+( ) Procuraria mais informações antes de decidir
+( ) Não sei dizer
+
+SEÇÃO — Para finalizar
+
+11. Qual é o seu nível de familiaridade com termos como precipitação, probabilidade e risco de alagamento?
+Escala de 1 (muito baixo) a 5 (muito alto)
+( ) 1   ( ) 2   ( ) 3   ( ) 4   ( ) 5
+
+12. Você trabalha ou tem formação em meteorologia, hidrologia ou gestão de riscos?
+( ) Sim   ( ) Não   ( ) Prefiro não responder
+
+13. Existe alguma informação sobre chuva, alagamentos ou deslocamentos que você considera importante e que não apareceu nas perguntas anteriores?
+(Opcional. Por favor, não informe nome, endereço ou outros dados pessoais.)
 Resposta aberta: ______________________________________
+
+Mensagem final: Obrigado pela sua participação! Suas respostas foram registradas de forma anônima e serão usadas apenas nesta atividade acadêmica.
 ```
+
 #### Como os dados serão analisados
 
-As perguntas fechadas serão analisadas pela quantidade e distribuição das respostas, permitindo identificar padrões de uso, preferências e dificuldades dos participantes.
+As perguntas fechadas serão analisadas pela quantidade e distribuição das respostas. As respostas abertas serão agrupadas por temas semelhantes, buscando identificar necessidades ou problemas que não tenham sido previstos anteriormente.
 
-As respostas abertas serão agrupadas por temas semelhantes, buscando identificar necessidades ou problemas que não tenham sido previstos anteriormente.
+Os resultados serão descritos com o tipo de evidência que realmente representam:
 
-Os resultados serão comparados com as hipóteses H01, H02, H03, H04 e H05 para verificar quais delas apresentam evidências para serem sustentadas, refutadas ou refinadas nas próximas entregas.
+- **preferência declarada** (P5, P6): "participantes preferiram...";
+- **utilidade percebida** (P4, P7, P8): "participantes declararam considerar útil...";
+- **comportamento relatado** (P2, P3): "participantes relataram utilizar/ter alterado...";
+- **interpretação de um exemplo** (P9, P10): "participantes interpretaram a porcentagem como...".
+
+Não serão usadas formulações como "é útil", "é melhor" ou "usuários compreendem melhor". Os resultados de preferência (P5) não serão usados isoladamente para avaliar H01 e H04; serão comparados com P9/P10 e com as decisões observadas no grupo focal (I04).
+
+Respostas de pessoas com formação técnica (P12 = Sim) serão analisadas separadamente. Por ser uma amostra por conveniência, os resultados indicam tendências do grupo respondente e não representam a população de São Paulo. Eles serão relacionados às hipóteses H01 a H05 como indícios para manter, enfraquecer ou refinar cada hipótese nas próximas entregas.
 
 ### Instrumento I02 — Entrevista Semiestruturada
 
@@ -347,7 +358,7 @@ Os resultados serão comparados com as hipóteses H01, H02, H03, H04 e H05 para 
 
 #### Procedimento padronizado de aplicação
 
-1. Preparar o roteiro de perguntas em uma ferramenta online, como o Google Forms, para apoiar o registro das respostas. Selecionar participantes que realizem deslocamentos frequentes e reservar aproximadamente 10 a 15 minutos para cada entrevista.
+1. Preparar o roteiro de perguntas em uma ferramenta online, como o Google Forms, para apoiar o registro das respostas. Selecionar participantes que realizem deslocamentos frequentes e reservar de 25 a 30 minutos para cada entrevista. Se o participante tiver pouco a relatar em algum tópico, o entrevistador pode passar ao próximo, registrando o tópico como "pouco relatado".
 2. Apresentar o objetivo da pesquisa e explicar que a participação é voluntária. Solicitar o consentimento antes de iniciar, esclarecendo que o participante poderá deixar de responder qualquer pergunta ou desistir.
 3. Conduzir a entrevista seguindo os tópicos do roteiro. Fazer as perguntas principais e utilizar perguntas complementares quando necessário para compreender melhor as experiências relatadas, sem sugerir respostas.
 4. Registrar as respostas no formulário preparado, utilizando identificadores como U01 e U02. Ao final, perguntar se o participante deseja acrescentar alguma informação e agradecer sua participação.
@@ -381,7 +392,7 @@ Não existem respostas certas ou erradas. A participação é voluntária e as r
 **Tópico 4 — Decisões e necessidades**
 
 8. Quais informações você considera necessárias para decidir se deve manter, alterar ou adiar um deslocamento durante uma chuva forte?
-7. Pensando nas ferramentas que utiliza atualmente, existe alguma informação ou funcionalidade que poderia ajudar você a tomar essas decisões?
+9. Pensando nas ferramentas que utiliza atualmente, existe alguma informação ou funcionalidade que poderia ajudar você a tomar essas decisões?
 
 **Perguntas complementares**
 
@@ -438,11 +449,13 @@ Essa análise poderá contribuir para definir quais informações devem receber 
 **Objetivo:** Investigar como os usuários compreendem e organizam informações relacionadas a chuva, risco de alagamento e deslocamentos, identificando agrupamentos e termos que possam ajudar na organização da interface do sistema.  
 **Público:** Pessoas que realizam deslocamentos frequentes pela cidade de São Paulo, principalmente usuários de aplicativos de mapas, trânsito ou previsão do tempo.
 
+**Decisão metodológica:** os cartões apresentam apenas o termo, sem explicação. A atividade mede (1) como os participantes agrupam **informações que podem aparecer na interface** e (2) a **compreensão espontânea** dos termos. Funcionalidades e formas de visualização (como mapa e alertas) foram retiradas do conjunto, porque não são conteúdos equivalentes aos demais e são investigadas no I01, I02 e I04.
+
 #### Procedimento padronizado de aplicação
 
-1. Preparar 10 cartões contendo diferentes tipos de informações relacionadas ao risco de alagamento. Os cartões poderão ser apresentados fisicamente ou em uma ferramenta digital, utilizando o mesmo conjunto para todos os participantes.
+1. Preparar 10 cartões contendo apenas o nome de diferentes informações relacionadas ao risco de alagamento. Os cartões poderão ser apresentados fisicamente ou em uma ferramenta digital, utilizando o mesmo conjunto para todos os participantes.
 2. Explicar ao participante o objetivo da atividade, informar que a participação é voluntária e solicitar seu consentimento. Esclarecer que não existem respostas certas ou erradas.
-3. Apresentar os cartões em ordem aleatória e solicitar que o participante organize as informações em grupos de acordo com o que considera semelhante. Ele poderá criar quantos grupos desejar e deverá atribuir um nome a cada um.
+3. Apresentar os cartões em ordem aleatória. Antes de agrupar, o participante lê os cartões e diz, em uma frase, o que entende por cada termo; a resposta é registrada sem correção. Se o participante não entender um termo, o aplicador registra o cartão como "não compreendido" e só então dá uma explicação neutra, padronizada para todos. Em seguida, solicitar que o participante organize as informações em grupos de acordo com o que considera semelhante. Ele poderá criar quantos grupos desejar e deverá atribuir um nome a cada um.
 4. Após a organização, perguntar ao participante por que escolheu aqueles agrupamentos, se encontrou alguma dificuldade e se considera algum termo confuso. Registrar os grupos, nomes e comentários.
 5. Agradecer a participação, registrar os resultados utilizando códigos anônimos e armazenar os dados com acesso restrito à equipe, descartando-os após a análise.
 
@@ -452,7 +465,7 @@ Essa análise poderá contribuir para definir quais informações devem receber 
 
 Você receberá 10 cartões com informações que poderiam aparecer em um aplicativo de consulta de risco de alagamento.
 
-Organize os cartões em grupos da maneira que fizer mais sentido para você. Depois, escolha um nome para cada grupo.
+Primeiro, diga em uma frase o que você entende por cada cartão. Depois, organize os cartões em grupos da maneira que fizer mais sentido para você e escolha um nome para cada grupo.
 
 Você pode criar quantos grupos quiser. Não existem respostas certas ou erradas.
 
@@ -460,44 +473,30 @@ Você pode criar quantos grupos quiser. Não existem respostas certas ou erradas
 
 ```text
 C01 — Nível de risco de alagamento
-Indica se o risco de uma região é baixo,
-médio ou alto.
-
-C02 — Probabilidade de alagamento
-Apresenta uma porcentagem relacionada
-ao risco de alagamento.
-
-C03 — Previsão de chuva
-Mostra a previsão de chuva para
-as próximas horas.
-
-C04 — Intensidade da chuva
-Indica a quantidade ou intensidade
-da chuva em determinada região.
-
-C05 — Histórico de alagamentos
-Apresenta informações sobre
-alagamentos que ocorreram anteriormente.
-
-C06 — Ocorrências recentes
-Mostra registros recentes de
-alagamentos em uma região.
-
-C07 — Mapa de regiões
-Permite visualizar diferentes
-regiões da cidade em um mapa.
-
+C02 — Probabilidade de alagamento (%)
+C03 — Previsão de chuva para as próximas horas
+C04 — Intensidade da chuva agora
+C05 — Histórico de alagamentos da região
+C06 — Ocorrências recentes de alagamento
+C07 — Vias interditadas
 C08 — Condições do trânsito
-Apresenta informações sobre
-problemas de trânsito.
+C09 — Horário previsto de maior risco
+C10 — Proximidade de rios e córregos
+```
 
-C09 — Alertas de risco
-Informa situações em que o risco
-de alagamento pode exigir atenção.
+**Explicações padronizadas (usadas somente se o participante não compreender o termo):**
 
-C10 — Informações sobre a região
-Apresenta características e
-informações gerais de uma região.
+```text
+C01 — Indica se o risco de uma região é baixo, médio ou alto.
+C02 — Porcentagem que indica a chance de ocorrer alagamento.
+C03 — Quanto deve chover nas próximas horas.
+C04 — Quanto está chovendo neste momento.
+C05 — Alagamentos que já ocorreram na região em outras ocasiões.
+C06 — Alagamentos registrados nas últimas horas.
+C07 — Ruas ou avenidas fechadas para circulação.
+C08 — Situação de congestionamento e lentidão.
+C09 — Período do dia em que o risco deve ser mais alto.
+C10 — Se a região fica perto de rios ou córregos.
 ```
 
 **Perguntas após a organização:**
@@ -512,6 +511,11 @@ informações gerais de uma região.
 
 ```text
 Participante: U___
+
+Compreensão espontânea dos termos (antes de agrupar):
+C01: ______  C02: ______  C03: ______  C04: ______  C05: ______
+C06: ______  C07: ______  C08: ______  C09: ______  C10: ______
+Cartões que precisaram de explicação: ______
 
 Grupo 1:
 Nome escolhido: __________________
@@ -539,6 +543,8 @@ _________________________________
 ```
 
 #### Como os dados serão analisados
+
+As interpretações espontâneas de cada termo serão comparadas para identificar quais cartões foram compreendidos sem explicação e quais precisaram de explicação. Esses termos são candidatos a substituição ou a texto de apoio na interface.
 
 Os agrupamentos criados pelos participantes serão comparados para identificar quais cartões aparecem juntos com maior frequência. Os nomes atribuídos aos grupos também serão analisados para compreender quais termos os usuários consideram mais naturais.
 
@@ -666,31 +672,50 @@ As anotações e, quando houver, o áudio serão agrupados por temas: fontes e o
  
 Os resultados serão relacionados à H01 e à H04 (cartões e vocabulário), à H02 (forma de localizar um lugar), à H03 (avisos) e à H05 (informações que faltaram), podendo trazer indícios para a H06 quando os participantes descreverem seus trajetos. Por envolver poucas pessoas de uma amostra por conveniência, serão tratados como indícios qualitativos e comparados com os resultados do questionário (I01), das entrevistas (I02) e da classificação de cartões (I03).
 
+O número de participantes não permite concluir estatisticamente que uma forma de apresentação é "melhor" para a população. As contagens dos cartões A/B/C serão relatadas como números absolutos (por exemplo, "4 de 6 participantes"), e não como porcentagens.
+
+## Piloto dos instrumentos
+
+Antes da coleta principal, cada instrumento será aplicado uma vez, em pequena escala, com pessoas do perfil P01 que não participarão da coleta principal:
+
+| Instrumento | Piloto | O que será verificado |
+|---|---|---|
+| I01 — Questionário | 2 respondentes + teste do link em janela anônima | perguntas ambíguas, tempo real de resposta, funcionamento do consentimento e da ramificação |
+| I02 — Entrevista | 1 entrevista | duração real, perguntas que não geram relato, dificuldade de registro |
+| I03 — Cartões | 1 participante | termos incompreensíveis, cartões que ninguém sabe onde colocar |
+| I04 — Grupo focal | ensaio com 3 pessoas | tempo de cada etapa, clareza dos cartões A/B/C, papel do relator |
+
+As alterações feitas após o piloto serão registradas nesta seção. Dados do piloto não serão misturados aos da coleta principal.
+
 ## Síntese
 
 As hipóteses H01 a H06 foram formuladas pela equipe a partir da análise de sistemas similares, das personas e dos cenários, sem contato direto com usuários. O conjunto de técnicas desta entrega pretende reduzir essa lacuna, verificando com pessoas do perfil da P01 como elas consultam informações em dias de chuva intensa, como compreendem o risco apresentado e quais informações realmente apoiam suas decisões de deslocamento.
 
-As quatro técnicas se complementam. O questionário (I01) indica a distribuição de hábitos e preferências em um número maior de pessoas. A entrevista semiestruturada (I02) aprofunda experiências individuais e as razões das decisões. A classificação de cartões (I03) mostra como os usuários agrupam e nomeiam as informações. O grupo focal (I04) confronta opiniões de pessoas do mesmo perfil e observa o que elas decidem diante de exemplos concretos de apresentação do risco.
+As quatro técnicas se complementam. O questionário (I01) indica a distribuição de hábitos e preferências declaradas em um número maior de pessoas. A entrevista semiestruturada (I02) aprofunda experiências individuais e as razões das decisões. A classificação de cartões (I03) mostra como os usuários agrupam, nomeiam e interpretam espontaneamente as informações. O grupo focal (I04) confronta opiniões de pessoas do mesmo perfil e observa o que elas decidem diante de exemplos concretos de apresentação do risco.
 
 | Hipótese | Técnicas que a investigam | Resultado esperado após a análise |
 |---|---|---|
-| H01 — apresentação do risco por níveis, além da porcentagem | I01, I02, I03, I04 | Sustentada ou refutada, por reunir preferência declarada (I01), interpretação relatada (I02), compreensão dos termos (I03) e decisão diante de exemplos (I04). |
-| H02 — mapa como forma adequada de consulta por região | I01, I02, I04 | Sustentada ou refutada quanto à preferência pelo mapa; refinada quanto às formas complementares de localização, como busca por endereço e localização atual. |
-| H03 — utilidade dos alertas para decisões preventivas | I01, I04 e, de forma secundária, I02 | Refinada, definindo em quais momentos e com qual antecedência um alerta é útil, ou refutada se os participantes indicarem que não alterariam suas decisões. |
-| H04 — dificuldade de usuários não técnicos com probabilidades e dados isolados | I01, I02, I03, I04 | Sustentada ou refutada, com identificação dos termos e formatos que causam dificuldade. |
-| H05 — utilidade de informações adicionais sobre chuva e região | I01, I02, I03, I04 | Refinada, separando as informações complementares que ajudam na decisão das que apenas aumentam o conteúdo. |
-| H06 — relação do risco com linha, ponto, terminal ou modal para usuários de transporte público | I04, apenas como indício | Permanece aberta. A coleta foi direcionada à persona primária P01 e não inclui um instrumento específico para usuários de transporte público. |
+| H01 — apresentação do risco por níveis, além da porcentagem | I01, I02, I03, I04 | Indícios para manter, enfraquecer ou refinar a hipótese, separando preferência declarada (I01 P5), interpretação de exemplo (I01 P9/P10), interpretação relatada (I02), compreensão espontânea dos termos (I03) e decisão diante de exemplos (I04). |
+| H02 — mapa como forma adequada de consulta por região | I01, I02, I04 | Indícios sobre a preferência pelo mapa e sobre formas complementares de localização, como busca por endereço e localização atual, sem assumir previamente que uma delas é superior. |
+| H03 — utilidade dos alertas para decisões preventivas | I01, I04 e, de forma secundária, I02 | Refinamento sobre momento, frequência e contexto em que um alerta poderia mudar uma decisão, ou perda de força se os participantes relatarem que ignorariam alertas. |
+| H04 — dificuldade de usuários não técnicos com probabilidades e dados isolados | I01, I02, I03, I04 | Indícios sobre termos e formatos que causam dificuldade, a partir de situações concretas (I01 P9, compreensão espontânea no I03, cartões do I04). |
+| H05 — utilidade de informações adicionais sobre chuva e região | I01, I02, I03, I04 | Refinamento, separando as informações complementares que apoiam a decisão das que geram sobrecarga. |
+| H06 — relação do risco com linha, ponto, terminal ou modal para usuários de transporte público | I04, apenas como indício | Permanece aberta. A coleta foi direcionada à persona primária P01 e não inclui um instrumento específico para usuários de transporte público; não deve ser encerrada com dados desta amostra. |
+
+Uma coleta pequena e por conveniência pode fornecer indícios, enfraquecer uma hipótese, sugerir refinamentos ou revelar segmentações, mas nem sempre permite declarar uma hipótese "confirmada" ou "refutada". A matriz de rastreabilidade só será atualizada depois da coleta e da análise, registrando para cada hipótese: instrumento que gerou a evidência, quantidade e perfil dos participantes, síntese do resultado, novo estado (aberta, refinada ou com menos força) e decisões de design afetadas.
+
+**Limitações e escopo geográfico:** a amostra é por conveniência (colegas e conhecidos da equipe). Todos os instrumentos serão aplicados com pessoas que se deslocam em São Paulo, de acordo com o escopo de IHC definido na Entrega 06. Como o TCC passou a atuar em Nova York, esses resultados não serão apresentados como evidência automática para uma interface aplicada a Nova York.
 
 ## Checklist
 
-- [ ] Hipóteses/lacunas prioritárias da Entrega 1 foram revisitadas.
-- [ ] Se o escopo de IHC foi derivado de TCC técnico, a coleta investiga a plausibilidade do usuário, tarefa e contexto adotados.
-- [ ] Perguntas não pressupõem que dashboard, CRUD, filtros ou relatórios sejam necessários; investigam a necessidade.
-- [ ] Cada dado a coletar responde uma dúvida concreta do projeto ou justifica outra necessidade de informação.
-- [ ] Parte A identifica dados e perfis de coleta de forma específica.
-- [ ] Aspectos éticos são contextualizados para o projeto.
-- [ ] Há uma técnica completa por integrante e técnicas distintas.
-- [ ] Questionário está incluído entre as técnicas.
-- [ ] Cada instrumento possui objetivo, público, procedimento e conteúdo integral.
-- [ ] Perguntas evitam indução e coletam apenas dados necessários.
-- [ ] Está claro como os dados serão analisados e usados no design.
+- [x] Hipóteses/lacunas prioritárias da Entrega 1 foram revisitadas.
+- [x] Se o escopo de IHC foi derivado de TCC técnico, a coleta investiga a plausibilidade do usuário, tarefa e contexto adotados.
+- [x] Perguntas não pressupõem que dashboard, CRUD, filtros ou relatórios sejam necessários; investigam a necessidade.
+- [x] Cada dado a coletar responde uma dúvida concreta do projeto ou justifica outra necessidade de informação.
+- [x] Parte A identifica dados e perfis de coleta de forma específica.
+- [x] Aspectos éticos são contextualizados para o projeto.
+- [x] Há uma técnica completa por integrante e técnicas distintas.
+- [x] Questionário está incluído entre as técnicas.
+- [x] Cada instrumento possui objetivo, público, procedimento e conteúdo integral.
+- [x] Perguntas evitam indução e coletam apenas dados necessários.
+- [x] Está claro como os dados serão analisados e usados no design.

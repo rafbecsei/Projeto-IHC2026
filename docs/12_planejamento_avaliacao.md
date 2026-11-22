@@ -1,7 +1,7 @@
 # Entrega 12 — Planejamento da avaliação de usabilidade (DECIDE)
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** 22/11/2026  
+**Status:** 🟨 em andamento  
 **Responsabilidade:** 1 solução por equipe
 
 ## Objetivo da atividade
@@ -38,26 +38,29 @@ Se o protótipo utiliza dados ou resultados simulados, documente isso no plano.
 
 | ID | Pergunta | Método | Métrica/evidência | Critério esperado |
 |---|---|---|---|---|
-| QA01 | {{usuários completam T01 sem ajuda?}} | observação | sucesso, ajuda, erro | {{MU01}} |
-| QA02 | {{há problemas de feedback?}} | heurística | violações H1 | {{...}} |
+| QA01 | Os usuários completam T01 sem ajuda? | Observação durante teste de usabilidade | Sucesso, ajuda, erros e conclusão da tarefa | MU01 — taxa de conclusão de pelo menos 90% |
+| QA02 | Há problemas de feedback durante a interação? | Inspeção heurística | Violações H1 — Visibilidade do estado do sistema; ausência ou insuficiência de feedback | Identificar e documentar problemas que dificultem compreender o estado ou resultado de uma ação |
+| QA03 | O usuário compreende o risco apresentado para a região consultada? | Observação e perguntas pós-tarefa | Interpretação verbal do nível/probabilidade de risco | Compreender as informações essenciais sem confundir estimativa com ocorrência confirmada |
+| QA04 | O usuário consegue localizar e interpretar as informações em tempo adequado? | Observação e cronometragem | Tempo de conclusão e dificuldades de navegação | MU02 — tempo de realização dentro do critério definido para T01 |
+| QA05 | A interface é satisfatória e as informações são claras? | Questionário pós-tarefa | Respostas em escala de satisfação de 1 a 5 | MU06 — média inicial de pelo menos 4,0 |
 
 ## C. Escopo e participantes
 
 | Item | Planejamento |
 |---|---|
-| Perfis | {{...}} |
-| Critérios de inclusão/exclusão | {{...}} |
-| Nº de participantes | {{...}} |
-| Ambiente | presencial/remoto/campo/laboratório |
-| Dispositivo | {{...}} |
-| Protótipo/versão | {{...}} |
-| Teste piloto | {{quem, quando, o que validar}} |
+| Perfis | Usuários finais interessados em consultar o risco de alagamento em regiões de Nova York, principalmente para apoiar decisões relacionadas a deslocamentos. Perfil prioritário relacionado à persona P01; os demais perfis poderão ser considerados em avaliações posteriores, de acordo com os fluxos disponíveis |
+| Critérios de inclusão/exclusão | Inclusão: pessoas maiores de 18 anos que consigam utilizar um navegador web e tenham perfil compatível com a consulta de informações de risco. Exclusão: integrantes da equipe de desenvolvimento ou pessoas que conheçam detalhadamente o funcionamento do protótipo |
+| Nº de participantes | Inclusão: pessoas maiores de 18 anos que consigam utilizar um navegador web e tenham perfil compatível com a consulta de informações de risco. Exclusão: integrantes da equipe de desenvolvimento ou pessoas que conheçam detalhadamente o funcionamento do protótipo |
+| Ambiente | Preferencialmente ambiente remoto |
+| Dispositivo | Computador ou notebook, com navegador web e acesso ao protótipo |
+| Protótipo/versão | Protótipo navegável do fluxo PF01/T01 — consulta de risco de uma região. A versão exata deverá ser identificada e registrada antes dos testes |
+| Teste piloto | Realizar previamente com 1 participante para verificar clareza do cenário, instruções, funcionamento do protótipo, duração da tarefa e adequação dos instrumentos. Registrar os ajustes necessários antes da avaliação principal |
 
 ## D. Lista de tarefas de avaliação
 
 | ID | Cenário neutro entregue ao usuário | Objetivo oculto da avaliação | Critério de sucesso | Tempo-limite (se houver) |
 |---|---|---|---|---|
-| UT01 | {{...}} | {{T01/O01}} | {{...}} | {{...}} |
+| UT01 | Você está se preparando para realizar um deslocamento e gostaria de verificar se uma região de seu interesse apresenta risco de alagamento. Utilize a interface para consultar as informações disponíveis e entender a situação da região | T01/OA01 — verificar se o usuário consegue localizar a região, realizar a consulta e compreender as informações de risco, sem auxílio, identificando possíveis problemas de navegação, busca, feedback e interpretação | Localizar a região proposta, acessar as informações de risco e explicar corretamente o que entendeu dos dados apresentados, sem ajuda direta do avaliador | Até 60 segundos, como referência inicial MU02. O tempo será registrado mesmo se excedido |
 
 > Uma boa instrução descreve o objetivo do participante sem dizer **onde clicar** ou usar o rótulo exato do controle que está sendo testado.
 
@@ -67,19 +70,19 @@ Se o protótipo utiliza dados ou resultados simulados, documente isso no plano.
 - [Roteiro de teste](../instrumentos/roteiro_teste_usabilidade.md)
 - [Planilha de observação](../instrumentos/planilha_observacao_modelo.md)
 - [Formulário de avaliação heurística](../instrumentos/formulario_heuristica_modelo.md)
-- {{questionário pré/pós-teste}}
+- Questionário pós-tarefa com escala de satisfação de 1 a 5, complementado por perguntas abertas sobre compreensão do risco, clareza das informações, dificuldades e informações que o usuário esperava encontrar
 
 ## F. Plano de análise
 
 Defina antes dos testes:
 
-- sucesso total / parcial / falha;
-- o que conta como erro, dúvida, ajuda e abandono;
-- como tempo será medido;
-- escala de satisfação pós-tarefa;
-- como observações/falas serão codificadas;
-- como problemas serão priorizados;
-- como comparar resultados às metas de usabilidade.
+- Sucesso total / parcial / falha: sucesso quando o participante realiza a tarefa e compreende as informações essenciais sem ajuda; parcial quando realiza apenas parte do objetivo ou necessita de auxílio; falha quando não consegue concluir ou interpretar adequadamente a consulta;
+- Erros, dúvidas, ajuda e abandono: registrar ações incorretas, seleções inadequadas, buscas sem sucesso, interpretações equivocadas, dificuldades, hesitações, perguntas sobre o funcionamento ou significado de elementos, orientações fornecidas pelo avaliador além da instrução inicial e interrupções da tarefa antes da conclusão do objetivo, identificando seus impactos na interação e na realização da tarefa;
+- Tempo: medir desde a apresentação/início da tarefa até sua conclusão, registrando o tempo mesmo quando houver falha ou auxílioo;
+- Satisfação pós-tarefa: utilizar escala de 1 a 5 para avaliar facilidade, clareza, compreensão e satisfação, calculando a média das respostas quando aplicável;
+- Codificação das observações/falas: organizar os registros em categorias como navegação, busca, compreensão do risco, feedback, hierarquia da informação, erros e acessibilidade; identificar padrões recorrentes;
+- Priorização dos problemas: considerar gravidade, frequência, impacto na conclusão da tarefa e risco de interpretação incorreta, classificando-os como alta, média ou baixa prioridade;
+- Comparação às metas de usabilidade: relacionar os resultados às metas MU01–MU07 da Entrega 8, distinguindo métricas aplicáveis à tarefa avaliada e metas de fluxos ainda não prototipados.
 
 ## Checklist
 

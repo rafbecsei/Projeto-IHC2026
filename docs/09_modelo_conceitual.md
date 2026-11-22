@@ -42,7 +42,7 @@ Como Paulo não possui conhecimento técnico sobre precipitação e risco de ala
 
 **Caso deseje compreender melhor a situação, Paulo pode consultar informações complementares sobre chuva e ocorrências de alagamento relacionadas à região consultada. [H — H05]**
 
-**Com essas informações, Paulo avalia se mantém seu planejamento ou se considera outra alternativa de trajeto. O sistema apoia sua interpretação, mas a decisão final permanece com Paulo.**
+**Com essas informações, Paulo avalia se mantém seu planejamento ou se considera outra alternativa de trajeto. O sistema apoia sua interpretação, mas a decisão  permanece com Paulo.**
 
 Dessa forma, Paulo consegue reunir as informações necessárias em uma mesma interação e utilizá-las como apoio para planejar seu deslocamento.
 
@@ -226,13 +226,13 @@ Os quatro mapas individuais foram utilizados como entrada para a construção de
 A consolidação elimina duplicidades, cria identificadores únicos para todo o projeto e diferencia:
 
 - **objetivos finais:** representam aquilo que efetivamente motiva a persona a utilizar o sistema;
-- **objetivos instrumentais:** representam meios utilizados para alcançar um objetivo final.
+- **objetivos instrumentais:** representam meios utilizados para alcançar um objetivo .
 
 Objetivos semelhantes compartilhados por diferentes personas passam a utilizar o mesmo identificador.
 
 ## 2.1 Mapa de objetivos 
 
-![Mapa de objetivos consolidado](../assets/09_modelo_conceitual/mapa_objetivos_consolidado_final.svg)
+![Mapa de objetivos consolidado](../assets/09_modelo_conceitual/mapa_objetivos_consolidado_final_atualizado.svg)
 
 ## 2.2 Dicionário consolidado de objetivos
 

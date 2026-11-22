@@ -1,7 +1,7 @@
 # Entrega 8 — Ciclo de vida e engenharia de usabilidade
 
 **Data:** 04/11/2026  
-**Status:** 🟩 Concluída  
+**Status:** 🟦 revisado apos feedback    
 **Responsabilidade:** 1 solução por equipe  
 **Projeto:** AlertaNY — Sistema de consulta de risco de alagamentos em São Paulo (recorte de IHC)
 
@@ -28,7 +28,7 @@ As funcionalidades de cadastro de trajetos e geração de relatórios, descritas
 | Software | Aplicação web com interface de consulta de risco de alagamentos por região. | A navegação deve ser simples, permitindo acessar rapidamente as principais informações. |
 | Hardware/dispositivos | Computadores, notebooks e smartphones com navegador de internet. | A interface deve se adaptar a diferentes tamanhos de tela, principalmente dispositivos móveis. |
 | Capacidades | Visualização de regiões no mapa, busca por localização, consulta de níveis de risco, informações de chuva, alertas e orientações de segurança. | As funcionalidades devem ser organizadas de maneira clara, priorizando a consulta e a interpretação do risco. |
-| Restrições | Dependência das informações disponíveis e possibilidade de dificuldades na interpretação de dados técnicos. Algumas funcionalidades ainda estão apenas propostas no protótipo. | Utilizar linguagem simples, explicar os níveis de risco e não apresentar funcionalidades ainda não implementadas como disponíveis. |
+| Restrições | Dependência de conexão com a internet, disponibilidade e atualização das fontes de dados, desempenho do carregamento do mapa e limitações de visualização em telas pequenas. | A interface deve apresentar estados de carregamento e indisponibilidade, priorizar informações essenciais em dispositivos móveis e informar quando os dados não puderem ser atualizados. |
 | Conectividade/latência | O acesso às informações depende de conexão com a internet, que pode apresentar instabilidade durante deslocamentos. | Apresentar indicadores de carregamento e mensagens claras quando as informações não estiverem disponíveis. |
 | Segurança/privacidade | A consulta pública de riscos não exige necessariamente identificação pessoal. Funcionalidades futuras de localização e trajetos podem envolver dados pessoais. | Evitar coleta desnecessária de informações e explicar ao usuário quando algum dado pessoal for utilizado. |
 | Volume de dados/histórico | O projeto envolve informações de diferentes regiões, previsões e registros históricos de alagamentos. | Organizar os dados por região e período, evitando apresentar muitas informações ao mesmo tempo. Filtros e buscas devem ser utilizados quando necessários. |
@@ -37,15 +37,30 @@ As funcionalidades de cadastro de trajetos e geração de relatórios, descritas
 
 ## 2. Princípios gerais do projeto
 
+Os princípios adotados foram organizados em dois grupos: princípios relacionados ao negócio/domínio do sistema e princípios direcionados à interface e à interação.
+
+### 2.1 Princípios direcionados ao negócio/domínio
+
 | Princípio/norma | Aplicabilidade ao contexto | Decisão/requisito decorrente | Fonte |
 |---|---|---|---|
-| Contexto de uso | Os usuários podem consultar o sistema antes ou durante deslocamentos, muitas vezes com pouco tempo disponível e utilizando smartphones. | Priorizar o mapa, a busca por região e a apresentação rápida das informações de risco. | Entregas 1, 3 e 4 |
-| Simplicidade e clareza | Usuários sem conhecimento técnico podem apresentar dificuldade para interpretar porcentagens, precipitação e outros indicadores. | Utilizar linguagem acessível, níveis de risco identificados por texto e explicações complementares. | Entregas 1, 3 e 7 |
-| Consistência da interface | O usuário precisa reconhecer facilmente as funcionalidades e compreender as informações apresentadas em diferentes telas. | Manter padrões de navegação, nomenclatura e apresentação dos níveis de risco. | Princípios de usabilidade e Entrega 6 |
-| Feedback ao usuário | Durante buscas e consultas, o usuário precisa compreender se o sistema está carregando, se encontrou resultados ou se ocorreu algum problema. | Apresentar mensagens de carregamento, ausência de resultados e erros de consulta. | Princípios de usabilidade |
-| LGPD — Lei nº 13.709/2018 | Poderá ser aplicável ao tratamento de dados pessoais, como localização identificável ou informações de trajetos, caso essas funcionalidades sejam implementadas. | Coletar apenas os dados necessários, informar sua finalidade e adotar medidas de proteção adequadas. | [Lei nº 13.709/2018](https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2018-787077-normaatualizada-pl.html) |
-| Acessibilidade — WCAG 2.2 | O sistema poderá ser utilizado por pessoas com diferentes capacidades visuais, motoras e níveis de familiaridade tecnológica. | Evitar depender exclusivamente de cores, utilizar contraste adequado, textos legíveis e permitir navegação por teclado. | [WCAG 2.2 — W3C](https://www.w3.org/TR/WCAG22/) |
-| Prevenção de erros | A interpretação incorreta do risco pode influenciar decisões relacionadas à segurança do usuário. | Apresentar claramente a região consultada, diferenciar risco estimado de ocorrência confirmada e evitar mensagens que garantam segurança absoluta. | Entregas 1, 4 e 5 |
+| LGPD — Lei nº 13.709/2018 | Poderá ser aplicável caso funcionalidades de localização ou trajetos utilizem dados pessoais identificáveis. | Coletar apenas os dados necessários, informar sua finalidade e evitar armazenamento desnecessário de localização ou trajetos. | [Lei nº 13.709/2018](https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2018-787077-normaatualizada-pl.html) |
+| Risco estimado não representa ocorrência confirmada | O sistema apresenta uma estimativa de risco produzida a partir de dados, e não uma confirmação de que ocorrerá um alagamento. | Utilizar termos como “risco estimado” e evitar mensagens que indiquem certeza de ocorrência ou garantia de segurança. | Entregas 1, 4 e 5 |
+| Atualidade da informação | Informações de chuva e risco podem perder validade com o passar do tempo. | Apresentar ao usuário a data ou horário de atualização das informações sempre que relevante. | Características do domínio |
+| Uso preventivo da informação | As informações apresentadas têm a finalidade de apoiar decisões relacionadas ao deslocamento e à prevenção. | Evitar apresentar o sistema como substituto de alertas oficiais ou de orientações de autoridades competentes. | Contexto do projeto |
+
+### 2.2 Princípios direcionados à interface
+
+O contexto de uso identificado nas entregas anteriores indica que o sistema pode ser consultado antes ou durante deslocamentos, muitas vezes com pouco tempo disponível e por meio de smartphones. Esse contexto justifica a adoção dos princípios abaixo.
+
+| Princípio/diretriz | Aplicabilidade ao contexto | Decisão/requisito decorrente | Fonte |
+|---|---|---|---|
+| Simplicidade e clareza | Usuários sem conhecimento técnico podem apresentar dificuldade para interpretar porcentagens, precipitação e outros indicadores. | Utilizar linguagem acessível, apresentar primeiro as informações essenciais e deixar dados complementares em segundo nível. | Entregas 1, 3 e 7 |
+| Consistência | O usuário deve reconhecer elementos semelhantes em diferentes telas e estados do sistema. | Manter padrões de navegação, nomenclatura, busca e apresentação dos níveis de risco. | Princípios de usabilidade e Entrega 6 |
+| Feedback do sistema | Durante uma busca ou consulta, o usuário precisa compreender o estado atual do processamento. | Apresentar estados de carregamento, sucesso, ausência de resultados e indisponibilidade. | Princípios de usabilidade |
+| Prevenção e recuperação de erros | Buscas incorretas ou interpretações equivocadas podem prejudicar a utilização das informações. | Indicar claramente a região consultada, apresentar mensagens de erro compreensíveis e permitir que o usuário corrija a busca. | Entregas 5 e 6 |
+| Acessibilidade — WCAG 2.2 | O sistema poderá ser utilizado por pessoas com diferentes capacidades visuais, motoras e níveis de familiaridade tecnológica. | Não depender exclusivamente de cores, utilizar contraste adequado, textos legíveis e possibilitar navegação por teclado. | [WCAG 2.2 — W3C](https://www.w3.org/TR/WCAG22/) |
+| Hierarquia visual | O nível de risco e a região consultada são informações prioritárias para a tarefa principal. | Dar maior destaque visual ao nível de risco e à identificação da região e evitar excesso de informações simultâneas. | Entrega 6 |
+| Padrões familiares de mapa e busca | Os usuários já utilizam ferramentas como mapas digitais para localizar regiões e planejar deslocamentos. | Utilizar padrões reconhecíveis de busca, seleção de região, marcadores e navegação no mapa. | Análise de concorrência e entregas anteriores |
 
 ## 3. Metas de usabilidade
 
@@ -60,7 +75,7 @@ As metas abaixo representam critérios planejados para as avaliações futuras. 
 | Meta | Para quem/tarefa | Evidência desejada | Justificativa |
 |---|---|---|---|
 | Compreensão clara dos níveis de risco | P01 e P02 / T01 | O participante consegue explicar o significado do nível apresentado utilizando suas próprias palavras. | Evitar interpretações incorretas das informações de risco. |
-| Facilidade para localizar uma região | P01 e P03 / T01 | O participante encontra a região desejada pelo mapa ou pela busca sem demonstrar dificuldade significativa. | A localização da região é necessária para realizar a consulta. |
+| Facilidade para localizar uma região | P01 e P03 / T01 | O participante encontra a região desejada pelo mapa ou pela busca sem pedir ajuda, sem realizar tentativas em locais incorretos e sem verbalizar dúvidas sobre onde realizar a busca. | A localização da região é necessária para realizar a consulta. |
 | Clareza das informações complementares | P01 e P03 / T01 | O participante compreende como as informações de chuva se relacionam com o risco apresentado. | Informações adicionais devem ajudar na interpretação, e não gerar confusão. |
 | Facilidade para compreender alertas | P01 e P04 / T02 | O participante consegue identificar a finalidade dos alertas e explicar como pretende utilizá-los. | Os alertas devem apoiar decisões preventivas sem provocar interpretações equivocadas. |
 | Navegação simples e organizada | Todas as personas / T01–T03 | O participante identifica onde encontrar as funcionalidades e consegue navegar entre as seções. | Uma navegação confusa pode aumentar o tempo necessário para consultar informações importantes. |
@@ -94,49 +109,93 @@ As metas MU04 e MU05 somente poderão ser avaliadas quando os fluxos de configur
 
 Esses limites são propostas iniciais da equipe e não representam resultados de avaliações já realizadas.
 
-### 3.3 Priorização das metas
+Os valores definidos para as metas quantitativas representam hipóteses iniciais de desempenho e deverão ser revisados após uma primeira rodada de testes ou avaliação piloto. Dessa forma, valores como 90% de conclusão, 60 segundos para consulta e média 4,0 de satisfação não são tratados como resultados já comprovados, mas como referências iniciais para orientar as avaliações.
 
-Os pesos abaixo representam a importância relativa de cada meta para o projeto e não devem ser confundidos com as métricas quantitativas definidas anteriormente.
+### 3.3 Priorização das metas gerais de usabilidade
 
-| Meta | Peso de prioridade | Justificativa |
+A priorização desta seção considera as cinco metas gerais de usabilidade de Nielsen trabalhadas na disciplina. Elas são diferentes das metas específicas MU01–MU07 apresentadas anteriormente.
+
+| Meta geral de usabilidade | Peso de prioridade | Justificativa |
 |---|---:|---|
-| MU01 — Conclusão da consulta de risco | 25% | É a funcionalidade central do sistema e deve ser priorizada. |
-| MU02 — Tempo de consulta | 20% | O usuário pode precisar tomar decisões em pouco tempo. |
-| MU03 — Interpretação correta do risco | 25% | Compreender o risco corretamente é essencial para evitar decisões inadequadas. |
-| MU04 — Configuração de alertas | 10% | Pode auxiliar no acompanhamento preventivo, caso a funcionalidade seja validada. |
-| MU05 — Consulta de histórico e relatórios | 5% | É uma funcionalidade complementar, com menor prioridade em relação à consulta atual de risco. |
-| MU06 — Satisfação dos usuários | 10% | Permite identificar dificuldades percebidas e oportunidades de melhoria. |
-| MU07 — Prevenção de interpretações incorretas | 5% | Complementa a avaliação de compreensão, com atenção especial à diferença entre estimativa e ocorrência confirmada. |
+| Baixa taxa de erros | 30% | Interpretar incorretamente uma informação de risco ou consultar a região errada pode influenciar diretamente uma decisão de deslocamento. Por isso, prevenir erros e facilitar sua recuperação é uma prioridade do sistema. |
+| Facilidade de aprendizado | 25% | O sistema deve permitir que usuários que nunca utilizaram a interface consigam realizar a consulta principal sem necessidade de treinamento prévio. |
+| Eficiência | 20% | A consulta poderá ocorrer antes ou durante um deslocamento e, em situações de chuva, o usuário pode precisar obter as informações rapidamente. |
+| Facilidade de memorização | 15% | O sistema pode ser utilizado de forma ocasional, principalmente em períodos de chuva. O usuário deve conseguir retornar à interface depois de algum tempo sem precisar reaprender o fluxo principal. |
+| Satisfação positiva do usuário | 10% | A interface deve transmitir clareza e segurança durante a consulta, evitando frustração ou excesso de esforço durante a interação. |
 | **Total** | **100%** | |
 
-A priorização considera a ordem de importância definida na Entrega 6, em que a consulta de risco (PF01) possui maior prioridade que a configuração de alertas (PF02) e a consulta de histórico (PF03).
+A prioridade atribuída à baixa taxa de erros está relacionada principalmente à necessidade de evitar interpretações equivocadas sobre o risco estimado e sobre a região consultada.
 
-O peso menor de MU07 não significa que erros de interpretação sejam pouco importantes. Essa preocupação também está contemplada em MU03, que recebeu uma das maiores prioridades.
+A facilidade de aprendizado também possui alta prioridade porque o sistema é destinado a usuários comuns, sem necessidade de treinamento ou conhecimento técnico prévio.
 
-## 4. Como o ciclo será iterado
+A eficiência é relevante porque a consulta pode ocorrer em situações nas quais o usuário possui pouco tempo disponível antes de decidir sobre seu deslocamento.
 
-O desenvolvimento da interface seguirá um processo iterativo, permitindo que problemas identificados durante a prototipação e os testes sejam utilizados para melhorar a solução.
+A facilidade de memorização é importante porque o AlertaNY pode ser utilizado apenas ocasionalmente, principalmente em períodos de chuvas intensas.
 
-Inicialmente, serão consideradas as necessidades, personas, cenários e tarefas definidos nas Entregas 1 a 5. Essas informações orientam a criação dos protótipos e a definição das metas de usabilidade.
+A satisfação permanece relevante, mas possui peso menor porque, neste projeto, garantir uma interação compreensível e com baixa possibilidade de erros possui impacto maior sobre a tarefa principal.
 
-A partir dos protótipos apresentados na Entrega 6, serão realizadas avaliações para observar como os participantes localizam regiões, interpretam os níveis de risco e utilizam as funcionalidades disponíveis.
+#### Relação entre as metas gerais e as métricas específicas
 
-Os problemas encontrados serão registrados e classificados conforme sua gravidade e impacto nas tarefas. A equipe poderá revisar a organização das telas, a linguagem utilizada, os fluxos de navegação e a forma de apresentar as informações.
+As metas MU01–MU07 continuam sendo utilizadas como métricas específicas do projeto e ajudam a operacionalizar as cinco dimensões gerais de usabilidade.
 
-Após cada revisão, o protótipo poderá ser avaliado novamente para verificar se as alterações realmente melhoraram a interação.
+| Meta específica | Relação principal com as metas gerais |
+|---|---|
+| MU01 — Taxa de conclusão da consulta | Facilidade de aprendizado e baixa taxa de erros |
+| MU02 — Tempo para localizar e consultar uma região | Eficiência |
+| MU03 — Interpretação correta do nível de risco | Baixa taxa de erros |
+| MU04 — Conclusão da configuração de alertas | Facilidade de aprendizado e eficiência, caso o fluxo seja validado |
+| MU05 — Conclusão da consulta histórica e geração de relatório | Facilidade de aprendizado e eficiência, caso o fluxo seja validado |
+| MU06 — Avaliação de facilidade após a tarefa | Satisfação positiva do usuário |
+| MU07 — Taxa de interpretações incorretas | Baixa taxa de erros |
 
-O processo seguirá as seguintes etapas:
+## 4. Ciclo de Engenharia de Usabilidade
 
-1. **Análise:** revisar necessidades, hipóteses, personas, cenários e tarefas das entregas anteriores.
-2. **Prototipação:** criar ou atualizar as telas e fluxos de interação conforme as necessidades identificadas.
-3. **Avaliação:** realizar testes com participantes e verificar as metas qualitativas e quantitativas de usabilidade.
-4. **Revisão:** identificar dificuldades e realizar modificações na interface.
-5. **Reavaliação:** testar novamente os fluxos modificados, comparando os resultados com as metas estabelecidas.
+O desenvolvimento da camada de interação do AlertaNY será organizado com base no **Ciclo de Engenharia de Usabilidade**, relacionando as atividades realizadas ao longo da disciplina com as etapas de análise, definição de requisitos, projeto, prototipação e avaliação da interface.
 
-Durante esse processo, os artefatos das entregas anteriores também poderão ser atualizados. Por exemplo, dificuldades na interpretação dos níveis de risco poderão gerar alterações nos requisitos e na interface, enquanto problemas de navegação poderão exigir ajustes nos fluxos descritos na análise de tarefas.
+O ciclo é iterativo. Portanto, os resultados das avaliações podem gerar alterações em artefatos produzidos anteriormente, como tarefas, princípios de interface, protótipos e metas de usabilidade.
 
-As hipóteses H01 a H06, registradas ao longo do projeto, também serão revisitadas conforme novas evidências forem coletadas.
+### 4.1 Aplicação do ciclo no projeto
 
-Os resultados das avaliações futuras, especialmente nas Entregas 12 a 14, serão utilizados para verificar quais metas foram atingidas e quais aspectos ainda precisam de melhorias.
+| Etapa do Ciclo de Engenharia de Usabilidade | Aplicação no AlertaNY |
+|---|---|
+| Conhecimento do usuário | As personas e seus perfis foram definidos nas entregas iniciais, identificando características, necessidades, dificuldades e contextos de uso. |
+| Análise das tarefas | As tarefas principais foram identificadas e posteriormente modeladas utilizando HTA, GOMS e CTT. |
+| Características da plataforma | Foram analisados dispositivos, conectividade, capacidade de processamento, volume de dados, privacidade e outras características relevantes da aplicação web. |
+| Princípios gerais de projeto | Foram definidos princípios de negócio/domínio e princípios de interface para orientar as decisões da solução. |
+| Metas de usabilidade | Foram definidas metas qualitativas, quantitativas e a priorização das cinco metas gerais de usabilidade de Nielsen. |
+| Projeto conceitual da interação | Cenários, tarefas e demais modelos conceituais orientam como o usuário deverá interagir com o sistema. |
+| Prototipação | A Entrega 6 utilizou protótipos de baixa fidelidade para explorar o fluxo principal PF01 antes da consolidação da interface. |
+| Avaliação | Os protótipos são avaliados por meio de simulações, walkthroughs e, nas próximas entregas, métodos formais de avaliação com usuários ou inspeção. |
+| Revisão | Problemas identificados durante as avaliações geram alterações na interface, nos fluxos e, quando necessário, nos próprios requisitos de interação. |
+| Design detalhado | Após a consolidação dos principais fluxos, padrões visuais, componentes e telas de maior fidelidade poderão ser desenvolvidos e refinados. |
 
-Dessa forma, o sistema será desenvolvido considerando continuamente as necessidades dos usuários, em vez de depender apenas das decisões iniciais da equipe.
+### 4.2 Iteração do ciclo
+
+O ciclo não ocorre apenas uma vez. Após cada avaliação, os resultados serão utilizados para verificar se os objetivos e metas definidos anteriormente continuam adequados.
+
+Por exemplo, caso participantes apresentem dificuldade para identificar a região consultada, a interface poderá ser modificada para destacar essa informação. Após a alteração, o fluxo deverá ser avaliado novamente para verificar se o problema foi reduzido.
+
+Da mesma forma, dificuldades de interpretação dos níveis de risco podem levar à revisão da linguagem, da hierarquia visual e dos princípios definidos para comunicação da informação.
+
+As hipóteses H01 a H06 e os demais artefatos produzidos anteriormente também poderão ser revisados quando novas evidências forem obtidas.
+
+As avaliações das próximas entregas serão utilizadas para alimentar novas iterações do ciclo, mantendo a relação:
+
+**analisar → definir requisitos e metas → projetar → prototipar → avaliar → revisar → avaliar novamente.**
+
+Dessa forma, o desenvolvimento da interface não depende apenas das decisões iniciais da equipe, mas evolui continuamente a partir das evidências obtidas durante as avaliações.
+
+## Histórico de revisões
+
+| O que foi alterado | Motivo |
+|---|---|
+| A linha de restrições da plataforma foi revisada. | Separar limitações reais da plataforma de dificuldades do usuário e de aspectos temporários do desenvolvimento. |
+| Os princípios gerais foram separados em princípios de negócio/domínio e princípios de interface. | Atender à estrutura conceitual solicitada pela atividade. |
+| “Contexto de uso” deixou de ser apresentado como princípio geral. | O contexto de uso é uma fonte de requisitos e decisões, e não um princípio equivalente a uma norma ou diretriz. |
+| As evidências da meta qualitativa de localização de região foram tornadas mais observáveis. | Reduzir a subjetividade da avaliação e permitir o registro de hesitações, erros e pedidos de ajuda. |
+| Foi reforçado que os valores das metas quantitativas são referências iniciais. | Deixar claro que os limites ainda deverão ser validados ou ajustados após avaliações piloto. |
+| MU04 e MU05 foram mantidas condicionadas à existência dos fluxos correspondentes. | Evitar tratar funcionalidades ainda não consolidadas como requisitos definitivos. |
+| A priorização das metas foi refeita utilizando as cinco metas gerais de usabilidade de Nielsen. | Corrigir a priorização anterior, que utilizava incorretamente MU01–MU07. |
+| MU01–MU07 foram mantidas e relacionadas às metas gerais de Nielsen. | Preservar as métricas específicas do projeto e demonstrar como elas operacionalizam dimensões gerais de usabilidade. |
+| A seção sobre iteração foi reformulada utilizando explicitamente o Ciclo de Engenharia de Usabilidade. | Relacionar o desenvolvimento da interface a um modelo teórico estudado na disciplina. |
+| Os artefatos já produzidos foram relacionados às etapas do Ciclo de Engenharia de Usabilidade. | Demonstrar como personas, tarefas, modelos, protótipos e avaliações fazem parte do mesmo processo iterativo. |

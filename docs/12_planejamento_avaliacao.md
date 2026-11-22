@@ -1,7 +1,7 @@
 # Entrega 12 — Planejamento da avaliação de usabilidade (DECIDE)
 
 **Data:** 22/11/2026  
-**Status:** 🟨 em andamento  
+**Status:** 🟩 concluida    
 **Responsabilidade:** 1 solução por equipe
 
 ## Objetivo da atividade
@@ -27,12 +27,12 @@ Se o protótipo utiliza dados ou resultados simulados, documente isso no plano.
 
 | Etapa | Aplicação no projeto |
 |---|---|
-| **D — Determine the goals** | Quais objetivos da avaliação? Relacione às metas de usabilidade da Entrega 8. |
-| **E — Explore the questions** | Quais perguntas específicas a avaliação deve responder? |
-| **C — Choose the evaluation paradigm and techniques** | Quais métodos serão usados e por quê? Ex.: inspeção heurística + observação de usuários. |
-| **I — Identify the practical issues** | Participantes, recrutamento, ambiente, equipamentos, piloto, cronograma, responsáveis, riscos técnicos. |
-| **D — Decide how to deal with ethical issues** | Consentimento, privacidade, gravação, anonimização, interrupção, dados sensíveis. |
-| **E — Evaluate, interpret and present the data** | Como dados quantitativos/qualitativos serão consolidados, comparados às metas e apresentados. |
+| **D — Determine the goals** | Avaliar se o usuário consegue consultar o risco de uma região, compreender as informações apresentadas e realizar a tarefa sem dificuldades. Relacionado às metas de usabilidade MU01–MU07 da Entrega 8, especialmente conclusão da tarefa, tempo, erros e satisfação. |
+| **E — Explore the questions** | Investigar se os usuários conseguem concluir T01 sem ajuda, compreender o nível e a probabilidade de risco, localizar as informações necessárias e se há problemas de feedback, navegação ou interpretação. |
+| **C — Choose the evaluation paradigm and techniques** | Teste de usabilidade com usuários, utilizando tarefas contextualizadas, observação direta, registro de tempo, erros e dúvidas; complementado por inspeção da interface baseada nas heurísticas de Nielsen, especialmente H1 — Visibilidade do estado do sistema. |
+| **I — Identify the practical issues** | Inicialmente, realizar teste em computador ou notebook, utilizando o protótipo navegável disponível. Planejar o recrutamento de 5 participantes, preparação do roteiro, planilha de observação, teste piloto, organização das sessões e responsáveis. A avaliação será limitada aos fluxos que estiverem implementados no protótipo. |
+| **D — Decide how to deal with ethical issues** | Participação voluntária, consentimento antes da sessão, anonimização dos registros, não coleta de dados pessoais desnecessários, ausência de gravação sem autorização e possibilidade de desistência a qualquer momento. |
+| **E — Evaluate, interpret and present the data** | Consolidar os resultados por participante e tarefa, calcular taxa de sucesso e tempo, registrar erros, dúvidas e pedidos de ajuda, analisar respostas e problemas recorrentes, comparar os resultados às metas de usabilidade e priorizar melhorias para a próxima versão. |
 
 ## B. Perguntas de avaliação
 
@@ -61,6 +61,9 @@ Se o protótipo utiliza dados ou resultados simulados, documente isso no plano.
 | ID | Cenário neutro entregue ao usuário | Objetivo oculto da avaliação | Critério de sucesso | Tempo-limite (se houver) |
 |---|---|---|---|---|
 | UT01 | Você está se preparando para realizar um deslocamento e gostaria de verificar se uma região de seu interesse apresenta risco de alagamento. Utilize a interface para consultar as informações disponíveis e entender a situação da região | T01/OA01 — verificar se o usuário consegue localizar a região, realizar a consulta e compreender as informações de risco, sem auxílio, identificando possíveis problemas de navegação, busca, feedback e interpretação | Localizar a região proposta, acessar as informações de risco e explicar corretamente o que entendeu dos dados apresentados, sem ajuda direta do avaliador | Até 60 segundos, como referência inicial MU02. O tempo será registrado mesmo se excedido |
+| UT02 | Você gostaria de verificar a situação de uma outra região da cidade. Utilize a interface para localizar essa região e consultar as informações de risco disponíveis | T01/OA01 — verificar se o usuário consegue realizar uma nova consulta, localizar outra região e compreender o comportamento da interface após a alteração da região consultada, identificando possíveis problemas de busca, navegação e feedback | Localizar uma região diferente da consulta anterior, acessar as informações correspondentes e identificar o risco apresentado, sem ajuda direta do avaliador | Até 60 segundos, como referência inicial MU02. O tempo será registrado mesmo se excedido |
+| UT03 | Após consultar uma região, você gostaria de entender melhor a situação apresentada. Explore as informações disponíveis e explique com suas próprias palavras o que elas indicam sobre o risco de alagamento naquele local | T01/OA01 — verificar se o usuário consegue interpretar as informações apresentadas, compreender o nível e a probabilidade de risco e utilizar os dados complementares disponíveis, identificando possíveis problemas de clareza, compreensão e apresentação das informações | Explicar com suas próprias palavras o que as informações apresentadas indicam sobre o risco de alagamento da região, sem ajuda direta do avaliador | Até 60 segundos, como referência inicial MU02. O tempo será registrado mesmo se excedido |
+| UT04 | Você gostaria de obter mais informações sobre as condições da região que está consultando para compreender melhor a situação. Explore as informações adicionais disponibilizadas pela interface | T01/OA01 — verificar se o usuário consegue localizar e acessar informações complementares sobre a região, identificando possíveis problemas de organização, visibilidade, navegação e compreensão dessas informações | Localizar e acessar as informações complementares disponíveis e explicar como elas contribuem para compreender a situação da região, sem ajuda direta do avaliador | Até 60 segundos, como referência inicial MU02. O tempo será registrado mesmo se excedido |
 
 > Uma boa instrução descreve o objetivo do participante sem dizer **onde clicar** ou usar o rótulo exato do controle que está sendo testado.
 

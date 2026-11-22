@@ -46,11 +46,11 @@ Em TCCs técnicos, observe especialmente se a interface comunica o estado do pro
 
 | Item | Definição |
 |---|---|
-| Versão avaliada | {{link/commit/data}} |
-| Telas/estados | {{lista completa}} |
-| Fluxos | {{M01/M02...}} |
-| Dispositivo/viewport | {{...}} |
-| Avaliadores | {{nomes}} |
+| Versão avaliada | Protótipo AlertaNY — Entrega 11 (Figma) |
+| Telas/estados | F01 — Consulta inicial/mapa; F02 — Busca com sugestões; F03 — Busca sem correspondência; F04 — Processamento da consulta; F05 — Resultado do risco; F06 — Chuva e ocorrências; F07 — Segurança e orientações |
+| Fluxos | M01 — Planejamento de deslocamento durante chuva intensa; M02 — Prevenção de impactos no comércio durante chuva intensa; M03 — Preparação do morador durante previsão de chuva intensa; M04 — Ida para a prova de transporte público com previsão de temporal |
+| Dispositivo/viewport | Computador, interface desktop |
+| Avaliadores | Rafael Iamashita Becsei |
 
 ## 3. Procedimento individual
 
@@ -76,28 +76,28 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 
 ---
 
-## Avaliador A01 — {{nome}}
+## Avaliador A01 — Rafael Iamashita Becsei
 
 ### 4. Matriz de cobertura das 10 heurísticas
 
 | Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
 |---|---|---|---|---|
-| H1 | {{...}} | sim/não | {{V01...}} | {{...}} |
-| H2 | {{...}} | sim/não |  |  |
-| H3 | {{...}} | sim/não |  |  |
-| H4 | {{...}} | sim/não |  |  |
-| H5 | {{...}} | sim/não |  |  |
-| H6 | {{...}} | sim/não |  |  |
-| H7 | {{...}} | sim/não |  |  |
-| H8 | {{...}} | sim/não |  |  |
-| H9 | {{...}} | sim/não |  |  |
-| H10 | {{...}} | sim/não |  |  |
+| H1 | F04, F05 - M01, M02 e M03 | não | - | A tela de processamento apresenta etapas da consulta, permitindo acompanhar o andamento, e o resultado informa a atualização do risco |
+| H2 | F01–F07 - M01, M02 e M03 | não | - | O risco é apresentado com categorias como baixo, moderado e alto, acompanhado de explicações e informações complementares que aproximam os dados da compreensão cotidiana do usuário |
+| H3 | F01, F02, F04, F05 e F06 - M01, M02 e M03 | não | - | O protótipo apresenta opções de cancelamento durante o processamento, retorno e realização de uma nova consulta, permitindo que o usuário não fique restrito a uma única ação |
+| H4 | F01–F07 - M01, M02 e M03 | não | - | Os níveis de risco possuem representação visual e textual, mantendo um padrão de identificação nas diferentes áreas da consulta |
+| H5 | F02, F03 e F04 - M01, M02 e M03 | não | - | A busca oferece sugestões e, no estado sem correspondência, apresenta alternativas para continuar a consulta, reduzindo a dependência de uma entrada exata |
+| H6 | F01, F02, F05 e F06 - M01, M02 e M03 | não | - | As regiões, sugestões de busca, níveis de risco, legenda e informações complementares ficam visíveis ao usuário, reduzindo a necessidade de memorizar informações |
+| H7 | F01, F02, F05 e F06 - M01, M02 e M03 | não | - | O usuário possui diferentes formas de localizar uma região, como busca textual e seleção no mapa, além de acesso às informações complementares a partir da consulta |
+| H8 | F01–F07 - M01, M02 e M03 | não | - | As informações são distribuídas em áreas distintas, organizando mapa, risco, chuva e ocorrências de maneira que cada grupo de informações tenha seu próprio espaço na interface |
+| H9 | F03 - M01, M02 e M03 | não | - | Quando a região não é encontrada, a interface apresenta um estado específico para essa situação e oferece alternativas para que o usuário possa continuar |
+| H10 | F05, F06 e F07 - M01, M02 e M03 | não | - | A interface apresenta explicações sobre o risco, informações de chuva e ocorrências e orientações preventivas, oferecendo apoio contextual para a interpretação dos dados |
 
 ### 5. Declaração de violações
 
 | ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
 |---|---|---|---|---|---:|---|---|
-| V01 | H1 | {{F02}} | {{o que ocorre, em que ação e qual consequência}} | ![print](../assets/13_heuristica/v01.svg) | 3 | {{frequência/impacto/persistência}} | {{correção específica}} |
+| | | | | | | | |
 
 **Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
 
@@ -105,7 +105,16 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 
 | Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
 |---|---|---|---|
-| {{H4}} | {{...}} | {{print}} | {{...}} |
+| H1 | Processamento da consulta de risco | {{print}} | O sistema apresenta etapas do processamento, indicando ao usuário o andamento da consulta e o que está sendo realizado. |
+| H2 | Apresentação do nível de risco em linguagem acessível | {{print}} | A categorização do risco e as explicações apresentadas aproximam o resultado técnico da interpretação de um usuário não especializado. |
+| H3 | Cancelar ou realizar outra consulta | {{print}} | O usuário pode cancelar o processamento ou seguir para outra consulta, oferecendo possibilidades de saída e continuidade. |
+| H4 | Representação dos níveis de risco | {{print}} | A representação textual e visual do risco permite manter uma forma de identificação semelhante entre o mapa e o detalhamento. |
+| H5 | Sugestões de busca e alternativas para região não encontrada | {{print}} | A interface oferece sugestões e caminhos alternativos quando o usuário não encontra a região desejada, reduzindo a chance de a busca interromper a tarefa. |
+| H6 | Legenda, sugestões e informações disponíveis na interface | {{print}} | Os elementos necessários para consultar e interpretar o risco são apresentados visualmente, sem exigir que o usuário memorize dados ou opções. |
+| H7 | Busca textual e consulta pelo mapa | {{print}} | O usuário pode utilizar diferentes formas de localizar a região, escolhendo a que melhor atende sua necessidade. |
+| H8 | Separação visual das informações | {{print}} | A organização em áreas distintas facilita identificar o mapa, o risco principal e as informações complementares, evitando concentrar tudo em um único espaço. |
+| H9 | Estado de busca sem correspondência | {{print}} | O usuário recebe retorno de que a região não foi encontrada e pode seguir alternativas para corrigir ou continuar a consulta. |
+| H10 | Explicações e orientações contextualizadas | {{print}} | O protótipo oferece explicações sobre o significado do risco, contexto meteorológico, ocorrências e orientações, auxiliando o usuário na compreensão das informações. |
 
 > Repita a seção para A02, A03... um avaliador por integrante.
 

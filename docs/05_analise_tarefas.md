@@ -1,7 +1,7 @@
 # Entrega 5 — Análise de tarefas: HTA, GOMS e CTT
 
-**Data:** 08/10/2026
-**Status:** 🟩 concluida  
+**Data:** 08/10/2026  
+**Status:** 🟦 revisado apos feedback  
 **Responsabilidade:** cada integrante modela pelo menos 1 HTA, 1 GOMS e 1 CTT. As três técnicas podem abordar a mesma funcionalidade ou funcionalidades distintas, conforme a orientação da disciplina.
 
 ## Objetivo da atividade
@@ -29,10 +29,10 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 | ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
 |---|---|---|---|---|
-| T01 | Consultar e interpretar o risco de alagamento de uma região para planejar o deslocamento | P01 / C01 | Frequência: depende da época do ano e de chuvas / Criticidade: alta, pois a informação pode apoiar decisões preventivas e evitar possíveis riscos à vida e financeiros. | Rafael Iamashita Becsei - 22.225.037-5 |
-| T02 | {{...}} | {{P01/C01}} | {{...}} | {{...}} |
-| T03 | Consultar o histórico de alagamentos de uma região e gerar um relatório | P01 / C01 | Frequência: eventual, principalmente quando o usuário deseja conhecer o histórico de uma região / Criticidade: média, pois permite compreender ocorrências anteriores e apoiar o planejamento de deslocamentos futuros. | Eric Song Watanabe - 22.125.086-3 |
-| T04 | Consultar o risco de alagamento ao longo da linha de transporte público utilizada e decidir como realizar o deslocamento | P04 / C04 | Frequência: eventual, concentrada em dias com previsão de chuva intensa, antes de sair de casa ou já no ponto/terminal / Criticidade: alta, pois o trecho de ônibus é o mais exposto a alagamentos e a decisão precisa ser tomada com pouco tempo, envolvendo risco de atraso em compromissos importantes e de ficar retida em um veículo afetado. | Henrique Hodel Babler — 22.125.084-8 |
+| T01 | Consultar e interpretar o risco de alagamento de uma região para planejar o deslocamento | P01 / C01 | Frequência: depende da época do ano e da ocorrência de chuvas intensas / Criticidade: alta, pois a informação apoia decisões preventivas relacionadas ao deslocamento. | Rafael Iamashita Becsei — 22.225.037-5 |
+| T02 | Cadastrar um trajeto habitual e configurar alertas de risco de alagamento | P01 / C01 / H03 | Frequência: eventual no cadastro ou alteração do trajeto e das preferências de alerta / Criticidade: média, pois permite acompanhar mudanças no risco sem exigir consulta manual constante. A necessidade de alertas ainda depende da validação da H03. | Victor Pimentel Lario — 22.125.064-0 |
+| T03 | Consultar o histórico de alagamentos de uma região e gerar um relatório | P01 / C01 / possibilidade adicional [H] | Frequência: eventual, principalmente quando o usuário deseja conhecer o histórico de uma região / Criticidade: média, pois pode apoiar a compreensão de ocorrências anteriores e o planejamento de deslocamentos futuros. | Eric Song Watanabe — 22.125.086-3 |
+| T04 | Consultar o risco de alagamento ao longo da linha de transporte público utilizada e decidir como realizar o deslocamento | P04 / C04 / H06 | Frequência: eventual, concentrada em dias com previsão de chuva intensa, antes ou durante o deslocamento / Criticidade: alta, pois a decisão pode afetar segurança, atraso e escolha do meio de transporte. | Henrique Hodel Babler — 22.125.084-8 |
  
 
 
@@ -57,7 +57,7 @@ A tarefa começa quando Paulo identifica a necessidade de verificar as condiçõ
 
 | ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
-| 0 | Consultar e avaliar o risco de alagamento de uma região para planejar o deslocamento | 1 > 2 > 3 | O sistema deve apresentar informações claras para apoiar o planejamento do deslocamento. |
+| 0 | Consultar e avaliar o risco de alagamento de uma região para planejar o deslocamento | **Input:** necessidade de verificar o risco nas regiões do deslocamento antes ou durante uma situação de chuva. **Plano:** realizar 1, depois 2 e 3. **Feedback:** Paulo consegue identificar e compreender o risco das regiões consultadas e decidir como realizará seu deslocamento. | O sistema deve apresentar informações claras para apoiar o planejamento do deslocamento. |
 | 1 | Localizar a região ou trajeto de interesse | 1.1 > 1.2 | A interface deve permitir localizar a região de forma simples e rápida, seja pelo mapa ou pela busca. |
 | 1.1 | Usar o mapa e navegar até a região desejada | 1.1.1 > 1.1.2 | A navegação pelo mapa deve facilitar a localização da região desejada. |
 | 1.1.1 | Acessar o mapa | — | O mapa deve ser facilmente acessível. |
@@ -73,12 +73,12 @@ A tarefa começa quando Paulo identifica a necessidade de verificar as condiçõ
 | 2.2.1 | Visualizar informações da chuva na região | — | As informações sobre chuva devem ser claras e relacionadas à região consultada. |
 | 2.2.2 | Verificar outras informações complementares presentes | — | As informações complementares devem ser relevantes e organizadas. |
 | 3 | Decidir como realizar o deslocamento | 3.1 / 3.2 | As informações devem apoiar a decisão do usuário sobre seu deslocamento. |
-| 3.1 | Tomar uma medida preventiva | 3.1.1 > 3.1.2 | A interface deve ajudar o usuário a avaliar se pode manter seu planejamento. |
-| 3.1.1 | Confirmar que a região está segura | — | O nível de risco deve permitir avaliar as condições da região. |
-| 3.1.2 | Verificar outras informações complementares presentes | — | Informações adicionais podem apoiar a decisão de manter o deslocamento. |
-| 3.2 | Não tomar uma medida preventiva | 3.2.1 > 3.2.2 | O usuário deve conseguir identificar quando precisa considerar alternativas ao trajeto. |
-| 3.2.1 | Identificar uma alternativa segura | — | O mapa deve facilitar a identificação de regiões com menor risco. |
-| 3.2.2 | Definir um novo trajeto que seja mais seguro | — | As informações de risco devem apoiar a escolha de outro trajeto, sem exigir que o sistema calcule rotas. |
+| 3.1 | Manter o planejamento atual | 3.1.1 > 3.1.2 | A interface deve ajudar o usuário a avaliar se as condições permitem manter seu planejamento. |
+| 3.1.1 | Confirmar que o risco identificado não compromete o deslocamento | — | O nível de risco deve permitir avaliar as condições das regiões consultadas. |
+| 3.1.2 | Manter o trajeto planejado | — | A decisão final deve permanecer com o usuário. |
+| 3.2 | Adotar uma medida preventiva | 3.2.1 > 3.2.2 | O usuário deve conseguir considerar alternativas quando identificar risco relevante no trajeto planejado. |
+| 3.2.1 | Identificar uma alternativa com menor risco | — | O mapa deve facilitar a consulta de outras regiões que possam ser utilizadas no deslocamento. |
+| 3.2.2 | Definir um novo trajeto ou reconsiderar o deslocamento | — | As informações de risco devem apoiar a escolha de uma alternativa, sem exigir que o sistema decida pelo usuário. |
 
 **Verificação do HTA:**
 
@@ -89,13 +89,14 @@ A tarefa começa quando Paulo identifica a necessidade de verificar as condiçõ
 
 ---
 
-## GOMS — T01 Consultar e interpretar o risco de alagamento na região do comércio
+## GOMS — T01 Consultar e interpretar o risco de alagamento de uma região para planejar o deslocamento
 
 **Autor(a):** Rafael Iamashita Becsei - 22.225.037-5
 
 ### Goal
 
-`G0: Consultar e avaliar o risco de alagamento para planejar o deslocamento`
+`GOAL 0: Consultar e avaliar o risco de alagamento para planejar o deslocamento`
+
 
 ### Métodos, operadores e regras de seleção
 
@@ -118,13 +119,23 @@ GOAL 1: Localizar a região ou trajeto de interesse
   - Utilizar M1 quando Paulo conseguir reconhecer visualmente a região desejada no mapa
   - Utilizar M2 quando Paulo souber o endereço ou nome da região e preferir realizar uma pesquisa
 GOAL 2: Interpretar as informações de risco da região
-- **Method M3:** Consultar e interpretar o risco apresentado
-  - OP 3.1: Visualizar a extensão da área de risco no mapa
-  - OP 3.2: Identificar o nível de risco apresentado para a região
-  - OP 3.3: Ler as informações associadas ao nível de risco
-  - OP 3.4: Consultar informações complementares sobre chuva e condições da região
-  - OP 3.5: Relacionar as informações apresentadas com as regiões por onde pretende passar
-  - OP 3.6: Avaliar se o risco identificado pode afetar seu deslocamento
+
+- **SUB-GOAL 2.1:** Identificar o risco apresentado
+  - OP 2.1.1: Visualizar a extensão da área de risco no mapa.
+  - OP 2.1.2: Identificar o nível de risco apresentado para a região.
+  - OP 2.1.3: Ler a explicação associada ao nível de risco.
+  - OP 2.1.4: Verificar se compreendeu o significado do risco apresentado.
+
+- **SUB-GOAL 2.2:** Consultar informações complementares
+  - OP 2.2.1: Visualizar informações sobre chuva e condições da região.
+  - OP 2.2.2: Relacionar as informações complementares com a região consultada.
+  - OP 2.2.3: Avaliar se as informações apresentadas são suficientes para compreender a situação.
+
+- **SUB-GOAL 2.3:** Avaliar o impacto no deslocamento
+  - OP 2.3.1: Relacionar o risco identificado às regiões por onde pretende passar.
+  - OP 2.3.2: Avaliar se o risco pode afetar seu deslocamento.
+  - OP 2.3.3: Confirmar que possui informações suficientes para decidir como realizará o deslocamento.
+
 GOAL 3: Decidir como realizar o deslocamento
 - **Method M4:** Manter o trajeto planejado
   - OP 4.1: Considerar o nível de risco apresentado para a região
@@ -145,17 +156,23 @@ GOAL 3: Decidir como realizar o deslocamento
 
 ---
 
-## CTT — T01 Consultar e interpretar o risco de alagamento na região do comércio
+## CTT — T01 Consultar e interpretar o risco de alagamento de uma região para planejar o deslocamento
 
 **Autor(a):** Rafael Iamashita Becsei - 22.225.037-5
 
 ### Descrição
 
-O CTT representa a sequência e as relações temporais envolvidas na consulta do risco de alagamento das regiões por onde Paulo pretende passar durante seu deslocamento. A tarefa envolve a localização da região de interesse, a apresentação das informações pelo sistema, a interpretação do risco e a decisão sobre manter o trajeto planejado ou considerar um caminho alternativo para evitar possíveis áreas de risco.
+O CTT representa a sequência e as relações temporais envolvidas na consulta do risco de alagamento das regiões por onde Paulo pretende passar durante seu deslocamento.
+
+Inicialmente, Paulo localiza a região ou trajeto de interesse utilizando o mapa ou a busca. Após a seleção, o sistema processa a região consultada e recupera ou calcula a estimativa de risco correspondente.
+
+Em seguida, o sistema apresenta as informações de risco, permitindo que Paulo identifique e interprete o nível apresentado e consulte informações complementares quando necessário.
+
+Por fim, Paulo utiliza as informações obtidas para decidir se mantém o planejamento atual ou considera uma alternativa de deslocamento.
 
 ### Diagrama
 
-![CTT T03](../assets/05_tarefas/ctt_t01.svg)
+![CTT T01](../assets/05_tarefas/ctt_t01.svg)
 
 ### Legenda e relações temporais usadas
 
@@ -187,7 +204,7 @@ A tarefa começa quando Paulo acessa a funcionalidade de cadastro de trajetos e 
 
 | ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
-| 0 | Cadastrar trajeto habitual e configurar alertas de risco de alagamento | 1 > 2 > 3 | O sistema deve permitir cadastrar locais de deslocamento e configurar alertas de maneira simples. |
+| 0 | Cadastrar trajeto habitual e configurar alertas de risco de alagamento | **Input:** Paulo deseja cadastrar ou atualizar um trajeto habitual e definir para quais níveis de risco quer receber alertas. **Plano:** realizar 1, depois 2 e 3. **Feedback:** Paulo consegue verificar que origem, destino e níveis de alerta foram registrados corretamente e recebe a confirmação do cadastro. | O sistema deve permitir cadastrar locais de deslocamento e configurar alertas de maneira simples. |
 | 1 | Definir o trajeto habitual | 1.1 / 1.2 | Paulo deve conseguir informar os locais de origem e destino de forma prática. |
 | 1.1 | Informar origem e destino pela busca | 1.1.1 > 1.1.2 | A busca deve facilitar a localização dos endereços desejados. |
 | 1.1.1 | Informar o endereço de origem | — | O campo de busca deve permitir identificar corretamente o local de partida. |
@@ -217,7 +234,7 @@ A tarefa começa quando Paulo acessa a funcionalidade de cadastro de trajetos e 
 
 ### Goal
 
-`G0: Cadastrar um trajeto habitual e configurar alertas de risco de alagamento para acompanhar as regiões relacionadas ao deslocamento.`
+`GOAL 0: Cadastrar um trajeto habitual e configurar alertas de risco de alagamento para acompanhar as regiões relacionadas ao deslocamento.`
 
 ### Métodos, operadores e regras de seleção
 
@@ -231,6 +248,7 @@ A tarefa começa quando Paulo acessa a funcionalidade de cadastro de trajetos e 
 - OP 1.4: Selecionar o resultado correspondente.
 - OP 1.5: Digitar o endereço ou nome da região de destino.
 - OP 1.6: Selecionar o destino correspondente.
+- OP 1.7: Verificar se a origem e o destino selecionados correspondem ao trajeto habitual.
 
 **Method M2: Definir origem e destino pelo mapa**
 
@@ -240,6 +258,7 @@ A tarefa começa quando Paulo acessa a funcionalidade de cadastro de trajetos e 
 - OP 2.4: Selecionar o ponto de origem.
 - OP 2.5: Navegar até encontrar o ponto de destino.
 - OP 2.6: Selecionar o ponto de destino.
+- OP 2.7: Verificar se os pontos de origem e destino selecionados estão corretos.
 
 **Selection Rule SR1:**
 
@@ -248,28 +267,29 @@ A tarefa começa quando Paulo acessa a funcionalidade de cadastro de trajetos e 
 
 **GOAL 2: Configurar os alertas de risco de alagamento**
 
-**Method M3: Ativar e personalizar as notificações**
+- **SUB-GOAL 2.1:** Ativar o recebimento de alertas
+  - OP 2.1.1: Acessar as configurações de alertas.
+  - OP 2.1.2: Identificar a opção de recebimento de notificações.
+  - OP 2.1.3: Ativar os alertas.
+  - OP 2.1.4: Verificar se o recebimento de alertas ficou ativado.
 
-- OP 3.1: Acessar as configurações de alertas.
-- OP 3.2: Identificar a opção de recebimento de notificações.
-- OP 3.3: Ativar os alertas.
-- OP 3.4: Visualizar os níveis de risco disponíveis.
-- OP 3.5: Selecionar os níveis de risco para os quais deseja receber notificações.
+- **SUB-GOAL 2.2:** Definir os níveis de risco desejados
+  - OP 2.2.1: Visualizar os níveis de risco disponíveis.
+  - OP 2.2.2: Selecionar os níveis para os quais deseja receber notificações.
+  - OP 2.2.3: Conferir se os níveis selecionados correspondem às preferências desejadas.
 
 **GOAL 3: Confirmar o cadastro**
 
-**Method M4: Conferir e salvar as informações**
+- **SUB-GOAL 3.1:** Conferir as informações configuradas
+  - OP 3.1.1: Visualizar os locais de origem e destino selecionados.
+  - OP 3.1.2: Verificar se os locais estão corretos.
+  - OP 3.1.3: Conferir os níveis de risco configurados.
+  - OP 3.1.4: Avaliar se todas as informações correspondem ao desejado.
 
-- OP 4.1: Visualizar os locais de origem e destino selecionados.
-- OP 4.2: Verificar se os locais estão corretos.
-- OP 4.3: Conferir os níveis de risco configurados.
-- OP 4.4: Selecionar a opção de salvar.
-- OP 4.5: Verificar a mensagem de confirmação apresentada pelo sistema.
-
-**Selection Rule SR2:**
-
-- Se os locais e as configurações estiverem corretos, Paulo confirma e salva o cadastro.
-- Se identificar alguma informação incorreta, retorna à etapa correspondente para realizar a correção antes de salvar.
+- **SUB-GOAL 3.2:** Salvar o cadastro
+  - OP 3.2.1: Selecionar a opção de salvar.
+  - OP 3.2.2: Aguardar o registro das informações.
+  - OP 3.2.3: Verificar a mensagem de confirmação apresentada pelo sistema.
 
 ---
 
@@ -351,7 +371,7 @@ Essa funcionalidade representa uma possibilidade adicional de interação a ser 
 
 | ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
-| 0 | Consultar o histórico de alagamentos de uma região e gerar um relatório | 1 > 2 > 3 > 4 | O processo deve permitir que o usuário encontre dados históricos, selecione informações relevantes e compreenda o relatório gerado. |
+| 0 | Consultar o histórico de alagamentos de uma região e gerar um relatório | **Input:** Paulo deseja conhecer ocorrências anteriores de alagamento em uma região e, quando necessário, gerar um relatório com essas informações. **Plano:** realizar 1, depois 2, 3 e 4. **Feedback:** Paulo consegue verificar os dados históricos consultados e visualizar o relatório gerado de acordo com a região, período e informações selecionadas. | O processo deve permitir que o usuário encontre dados históricos, selecione informações relevantes e compreenda o relatório gerado. |
 | 1 | Definir a consulta histórica | 1.1 > 1.2 > 1.3 | A configuração da consulta deve ser simples e permitir que o usuário determine claramente o que deseja analisar. |
 | 1.1 | Selecionar a região de interesse | — | O usuário precisa conseguir identificar facilmente a região que deseja consultar. |
 | 1.2 | Definir o período histórico | — | O período deve ser compreensível e permitir consultas de diferentes intervalos de tempo. |
@@ -393,7 +413,7 @@ Essa funcionalidade representa uma possibilidade adicional de interação a ser 
 
 ### Goal
 
-`G0: Consultar o histórico de alagamentos de uma região e gerar um relatório com as informações desejadas.`
+`GOAL 0: Consultar o histórico de alagamentos de uma região e gerar um relatório com as informações desejadas.`
 
 ### Métodos, operadores e regras de seleção
 
@@ -424,14 +444,19 @@ Essa funcionalidade representa uma possibilidade adicional de interação a ser 
 
 **GOAL 2: Analisar as informações históricas**
 
-**Method M3: Analisar o resumo histórico apresentado**
+- **SUB-GOAL 2.1:** Compreender o resumo histórico
+  - OP 2.1.1: Observar a quantidade de ocorrências registradas.
+  - OP 2.1.2: Identificar o período analisado.
+  - OP 2.1.3: Observar a distribuição das ocorrências ao longo do período.
+  - OP 2.1.4: Identificar períodos com maior número de registros.
+  - OP 2.1.5: Verificar se compreendeu o comportamento geral das ocorrências no período.
 
-- OP 3.1: Observar a quantidade de ocorrências registradas.
-- OP 3.2: Identificar o período analisado.
-- OP 3.3: Observar a distribuição das ocorrências ao longo do período.
-- OP 3.4: Identificar períodos com maior número de registros.
-- OP 3.5: Consultar detalhes adicionais quando necessário.
-
+- **SUB-GOAL 2.2:** Consultar detalhes quando necessário
+  - OP 2.2.1: Selecionar uma ocorrência ou período de interesse.
+  - OP 2.2.2: Visualizar as informações adicionais disponíveis.
+  - OP 2.2.3: Relacionar os detalhes consultados ao resumo histórico.
+  - OP 2.2.4: Avaliar se possui informações suficientes para prosseguir para a geração do relatório.
+  
 **GOAL 3: Gerar o relatório**
 
 **Method M4: Gerar um relatório utilizando as informações padrão**
@@ -587,7 +612,7 @@ A tarefa começa quando Juliana recebe um alerta de temporal ou percebe chuva in
  
 | ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
-| 0 | Consultar o risco de alagamento ao longo da linha de transporte público e decidir como se deslocar | 1 > 2 > 3 > 4 | As informações de risco devem ser apresentadas na mesma unidade com que a usuária pensa o trajeto (linha, ponto, terminal), e não apenas por região. |
+| 0 | Consultar o risco de alagamento ao longo da linha de transporte público e decidir como se deslocar | **Input:** Juliana percebe chuva intensa ou recebe informação de temporal e deseja verificar se a linha de transporte utilizada pode ser afetada por alagamentos. **Plano:** realizar 1, depois 2, 3 e 4. **Feedback:** Juliana consegue identificar o risco nos trechos relevantes do itinerário e decidir se mantém a linha e o horário, antecipa a saída ou considera outra alternativa. | As informações de risco devem ser apresentadas na mesma unidade com que a usuária pensa o trajeto (linha, ponto, terminal), e não apenas por região. |
 | 1 | Identificar a linha de transporte utilizada | 1.1 / 1.2 > 1.3 | A usuária pode conhecer o número da linha ou apenas o ponto onde embarca; a interface deve aceitar as duas formas de entrada. |
 | 1.1 | Buscar pela linha de ônibus | — | A busca deve reconhecer número e nome da linha, inclusive com entradas parciais. |
 | 1.2 | Buscar pelo ponto de embarque ou terminal | — | Ao selecionar um ponto ou terminal, o sistema deve listar as linhas que passam por ele. |
@@ -628,7 +653,7 @@ A tarefa começa quando Juliana recebe um alerta de temporal ou percebe chuva in
  
 ### Goal
  
-`G0: Consultar o risco de alagamento ao longo da linha de transporte público utilizada e decidir como realizar o deslocamento até a faculdade.`
+`GOAL 0: Consultar o risco de alagamento ao longo da linha de transporte público utilizada e decidir como realizar o deslocamento até a faculdade.`
  
 ### Métodos, operadores e regras de seleção
  
@@ -641,6 +666,7 @@ A tarefa começa quando Juliana recebe um alerta de temporal ou percebe chuva in
 - OP 1.3: Digitar o número ou nome da linha.
 - OP 1.4: Selecionar a linha correspondente nos resultados.
 - OP 1.5: Selecionar o sentido do trajeto (ida ou volta).
+- OP 1.6: Verificar se a linha e o sentido selecionados correspondem ao deslocamento desejado.
 **Method M2: Buscar pelo ponto de embarque ou terminal**
  
 - OP 2.1: Acessar a consulta por transporte público.
@@ -649,6 +675,7 @@ A tarefa começa quando Juliana recebe um alerta de temporal ou percebe chuva in
 - OP 2.4: Selecionar o ponto ou terminal correspondente.
 - OP 2.5: Visualizar as linhas que passam pelo local.
 - OP 2.6: Selecionar a linha utilizada e o sentido do trajeto.
+- OP 2.7: Verificar se a linha e o sentido selecionados correspondem ao deslocamento desejado.
 **Selection Rule SR1:**
  
 - Utilizar M1 quando Juliana souber o número ou o nome da linha que utiliza.
@@ -671,6 +698,7 @@ A tarefa começa quando Juliana recebe um alerta de temporal ou percebe chuva in
 - OP 4.5: Ler as informações de chuva prevista e ocorrências recentes no trecho.
 - OP 4.6: Verificar a previsão de evolução do risco até o horário em que passará pelo trecho.
 - OP 4.7: Retornar à visão geral do itinerário.
+- OP 4.8: Avaliar se as informações consultadas são suficientes para compreender o risco no trecho utilizado.
 **Selection Rule SR2:**
  
 - Utilizar M3 quando todos os trechos entre o embarque e o desembarque apresentarem risco baixo.
@@ -682,12 +710,14 @@ A tarefa começa quando Juliana recebe um alerta de temporal ou percebe chuva in
 - OP 5.1: Considerar o nível de risco do trecho utilizado.
 - OP 5.2: Confirmar que não há previsão de piora até o horário em que passará pelo trecho.
 - OP 5.3: Manter o planejamento habitual.
+- OP 5.4: Confirmar que o planejamento escolhido é compatível com as condições de risco consultadas.
 **Method M6: Antecipar o horário de saída**
  
 - OP 6.1: Verificar o horário previsto para a piora do risco no trecho.
 - OP 6.2: Comparar com o horário em que passaria pelo trecho.
 - OP 6.3: Definir um novo horário de saída.
 - OP 6.4: Sair mais cedo utilizando a mesma linha.
+- OP 6.5: Confirmar que o novo horário reduz a exposição ao período de maior risco.
 **Method M7: Utilizar outra linha ou outro modal**
  
 - OP 7.1: Retornar à consulta por transporte público.
@@ -695,6 +725,7 @@ A tarefa começa quando Juliana recebe um alerta de temporal ou percebe chuva in
 - OP 7.3: Consultar o risco ao longo da nova linha, aplicando M3 ou M4.
 - OP 7.4: Comparar o risco da nova linha com o da linha habitual.
 - OP 7.5: Escolher a alternativa com menor risco ou, se nenhuma linha for viável, optar por outro modal, como transporte por aplicativo. [H]
+- OP 7.6: Verificar se a alternativa escolhida apresenta condições mais adequadas para o deslocamento.
 **Selection Rule SR3:**
  
 - Utilizar M5 quando o risco no trecho utilizado for baixo e não houver previsão de piora.
@@ -795,13 +826,30 @@ Para o protótipo e os testes de usabilidade, devem ser priorizadas as tarefas d
 
 ## Checklist
 
-- [ ] Cada integrante produziu ao menos 1 HTA, 1 GOMS e 1 CTT.
-- [ ] Cada artefato identifica autor e tarefa.
-- [ ] Diagramas são legíveis e possuem fonte editável quando possível.
-- [ ] HTA contém planos, não apenas árvore de tópicos.
-- [ ] GOMS distingue Goals, Operators, Methods e Selection Rules.
-- [ ] CTT usa operadores temporais e tipos de tarefa coerentes.
-- [ ] Há texto explicando cada diagrama.
-- [ ] Tarefas estão ligadas a cenários/personas na rastreabilidade.
-- [ ] Em TCC técnico, as tarefas descrevem o que a pessoa faz com a contribuição/resultados, não passos internos do código.
-- [ ] CRUDs, relatórios, filtros e atividades administrativas foram escolhidos por relevância ao objetivo do usuário.
+- [X] Cada integrante produziu ao menos 1 HTA, 1 GOMS e 1 CTT.
+- [X] Cada artefato identifica autor e tarefa.
+- [X] Diagramas são legíveis e possuem fonte editável quando possível.
+- [X] HTA contém planos, não apenas árvore de tópicos.
+- [X] GOMS distingue Goals, Operators, Methods e Selection Rules.
+- [X] CTT usa operadores temporais e tipos de tarefa coerentes.
+- [X] Há texto explicando cada diagrama.
+- [X] Tarefas estão ligadas a cenários/personas na rastreabilidade.
+- [X] Em TCC técnico, as tarefas descrevem o que a pessoa faz com a contribuição/resultados, não passos internos do código.
+- [X] CRUDs, relatórios, filtros e atividades administrativas foram escolhidos por relevância ao objetivo do usuário.
+
+## Histórico de revisões
+
+| O que foi alterado | Motivo |
+|---|---|
+| Preenchimento completo da tarefa T02 na tabela de seleção de tarefas, incluindo origem, frequência, criticidade e responsável. | Corrigir o placeholder existente e explicitar a origem da tarefa no projeto. |
+| Inclusão de Input, Feedback e Plano na tarefa 0 dos HTAs T01, T02, T03 e T04. | Adequar as tabelas auxiliares ao formalismo de HTA exigido na disciplina. |
+| Revisão das alternativas de decisão do HTA T01, substituindo a oposição entre “tomar” e “não tomar” medida preventiva por “manter o planejamento atual” e “adotar uma medida preventiva”. | Corrigir a inversão conceitual, pois buscar um trajeto com menor risco também constitui uma medida preventiva. |
+| Padronização do objetivo principal dos GOMS T01, T02, T03 e T04 de `G0` para `GOAL 0`. | Adequar a nomenclatura ao formalismo utilizado na disciplina. |
+| Substituição do método único do GOAL 2 do GOMS T01 por sub-goals e operadores. | `METHOD` deve representar uma alternativa para alcançar um objetivo, e não uma única sequência obrigatória de passos. |
+| Substituição dos métodos únicos dos GOALs 2 e 3 do GOMS T02 por sub-goals e operadores. | Corrigir o uso de métodos onde não existiam maneiras alternativas de alcançar o mesmo objetivo. |
+| Remoção da Selection Rule SR2 do GOMS T02. | A regra não realizava seleção entre métodos alternativos, mas apenas descrevia uma condição de correção ou retorno. |
+| Substituição do método único do GOAL 2 do GOMS T03 por sub-goals e operadores. | Adequar a modelagem ao conceito de método do GOMS. |
+| Inclusão de operadores finais de verificação nos métodos aplicáveis dos GOMS T02 e T04. | Garantir que cada método termine com uma avaliação interna que permita verificar se o objetivo foi alcançado. |
+| Correção do título do GOMS T01 e do CTT T01 para “Consultar e interpretar o risco de alagamento de uma região para planejar o deslocamento”. | Remover a referência incorreta à “região do comércio” e manter consistência entre tarefa, persona, cenário e modelos. |
+| Correção da legenda da imagem do CTT T01 de `CTT T03` para `CTT T01`. | Corrigir uma inconsistência de identificação do artefato. |
+| Revisão da descrição textual do CTT T01 para incluir o processamento da consulta pelo sistema. | Manter a explicação textual coerente com o diagrama corrigido. |

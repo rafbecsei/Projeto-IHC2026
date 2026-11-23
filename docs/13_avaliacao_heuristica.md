@@ -47,9 +47,9 @@ Em TCCs técnicos, observe especialmente se a interface comunica o estado do pro
 | Item | Definição |
 |---|---|
 | Versão avaliada | Protótipo AlertaNY — Entrega 11 (Figma) |
-| Telas/estados | F01 — Consulta inicial/mapa; F02 — Busca com sugestões; F03 — Busca sem correspondência; F04 — Processamento da consulta; F05 — Resultado do risco; F06 — Chuva e ocorrências; F07 — Segurança e orientações |
+| Telas/estados | F01 — Início; F02 — Busca; F02E — Região não encontrada; F03 — Consultando; F04 — Risco da região; F04A — Risco atualizado; F05 — Chuva e ocorrências; F06 — Trajeto; F06E — Destino inválido; F07 — Risco do trajeto; F09 — O que posso fazer?; F10 — Falha na consulta; F11 — Dados insuficientes; F20–F29 — telas/estados do fluxo de transporte público |
 | Fluxos | M01 — Planejamento de deslocamento durante chuva intensa; M02 — Prevenção de impactos no comércio durante chuva intensa; M03 — Preparação do morador durante previsão de chuva intensa; M04 — Ida para a prova de transporte público com previsão de temporal |
-| Dispositivo/viewport | Computador, interface desktop |
+| Dispositivo/viewport | Computador, interface desktop para M01, M02 e M03; fluxo M04 com telas adaptadas para dispositivos móveis, conforme o protótipo |
 | Avaliadores | Rafael Iamashita Becsei |
 
 ## 3. Procedimento individual
@@ -82,16 +82,16 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 
 | Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
 |---|---|---|---|---|
-| H1 | F04, F05 - M01, M02 e M03 | não | - | A tela de processamento apresenta etapas da consulta, permitindo acompanhar o andamento, e o resultado informa a atualização do risco |
-| H2 | F01–F07 - M01, M02 e M03 | não | - | O risco é apresentado com categorias como baixo, moderado e alto, acompanhado de explicações e informações complementares que aproximam os dados da compreensão cotidiana do usuário |
-| H3 | F01, F02, F04, F05 e F06 - M01, M02 e M03 | não | - | O protótipo apresenta opções de cancelamento durante o processamento, retorno e realização de uma nova consulta, permitindo que o usuário não fique restrito a uma única ação |
-| H4 | F01–F07 - M01, M02 e M03 | não | - | Os níveis de risco possuem representação visual e textual, mantendo um padrão de identificação nas diferentes áreas da consulta |
-| H5 | F02, F03 e F04 - M01, M02 e M03 | não | - | A busca oferece sugestões e, no estado sem correspondência, apresenta alternativas para continuar a consulta, reduzindo a dependência de uma entrada exata |
-| H6 | F01, F02, F05 e F06 - M01, M02 e M03 | não | - | As regiões, sugestões de busca, níveis de risco, legenda e informações complementares ficam visíveis ao usuário, reduzindo a necessidade de memorizar informações |
-| H7 | F01, F02, F05 e F06 - M01, M02 e M03 | não | - | O usuário possui diferentes formas de localizar uma região, como busca textual e seleção no mapa, além de acesso às informações complementares a partir da consulta |
-| H8 | F01–F07 - M01, M02 e M03 | não | - | As informações são distribuídas em áreas distintas, organizando mapa, risco, chuva e ocorrências de maneira que cada grupo de informações tenha seu próprio espaço na interface |
-| H9 | F03 - M01, M02 e M03 | não | - | Quando a região não é encontrada, a interface apresenta um estado específico para essa situação e oferece alternativas para que o usuário possa continuar |
-| H10 | F05, F06 e F07 - M01, M02 e M03 | não | - | A interface apresenta explicações sobre o risco, informações de chuva e ocorrências e orientações preventivas, oferecendo apoio contextual para a interpretação dos dados |
+| H1 | F03, F04, F04A, F05 e estados de processamento/resultados de M04 (F20–F29) | não | - | A tela de processamento apresenta etapas da consulta, permitindo acompanhar o andamento, e o resultado informa a atualização do risco |
+| H2 | F01, F02, F04, F05, F07, F09 e telas de resultado/detalhamento de M04 (F20–F29) | não | - | O risco é apresentado com categorias como baixo, moderado e alto, acompanhado de explicações e informações complementares que aproximam os dados da compreensão cotidiana do usuário |
+| H3 | F01, F02, F02E, F03, F06, F06E, F10 e estados de cancelamento/retorno de M04 (F20–F29) | não | - | O protótipo apresenta opções de cancelamento durante o processamento, retorno e realização de uma nova consulta, permitindo que o usuário não fique restrito a uma única ação |
+| H4 | F01–F11, incluindo estados de erro, atualização e dados insuficientes, e F20–F29 | não | - | Os níveis de risco possuem representação visual e textual, mantendo um padrão de identificação nas diferentes áreas da consulta |
+| H5 | F02, F02E, F06, F06E, F10, F11 e estados de validação/configuração de M04 (F20–F29) | não | - | A busca oferece sugestões e, no estado sem correspondência, apresenta alternativas para continuar a consulta, reduzindo a dependência de uma entrada exata |
+| H6 | F01, F02, F04, F05, F07 e telas de configuração/resultados de M04 (F20–F29) | não | - | As regiões, sugestões de busca, níveis de risco, legenda e informações complementares ficam visíveis ao usuário, reduzindo a necessidade de memorizar informações |
+| H7 | F01, F02, F06, F07 e etapas de configuração/comparação de alternativas de M04 (F20–F29) | não | - | O usuário possui diferentes formas de localizar uma região, como busca textual e seleção no mapa, além de acesso às informações complementares a partir da consulta |
+| H8 | F01–F11 e F20–F29 | não | - | As informações são distribuídas em áreas distintas, organizando mapa, risco, chuva e ocorrências de maneira que cada grupo de informações tenha seu próprio espaço na interface |
+| H9 | F02E, F06E, F10, F11 e estados de erro/recuperação de M04 (F20–F29) | não | - | Quando a região não é encontrada, a interface apresenta um estado específico para essa situação e oferece alternativas para que o usuário possa continuar |
+| H10 | F05, F09 e telas de detalhamento/orientação de M04 (F20–F29) | não | - | A interface apresenta explicações sobre o risco, informações de chuva e ocorrências e orientações preventivas, oferecendo apoio contextual para a interpretação dos dados |
 
 ### 5. Declaração de violações
 
@@ -105,16 +105,16 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 
 | Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
 |---|---|---|---|
-| H1 | Processamento da consulta de risco | {{print}} | O sistema apresenta etapas do processamento, indicando ao usuário o andamento da consulta e o que está sendo realizado. |
-| H2 | Apresentação do nível de risco em linguagem acessível | {{print}} | A categorização do risco e as explicações apresentadas aproximam o resultado técnico da interpretação de um usuário não especializado. |
-| H3 | Cancelar ou realizar outra consulta | {{print}} | O usuário pode cancelar o processamento ou seguir para outra consulta, oferecendo possibilidades de saída e continuidade. |
-| H4 | Representação dos níveis de risco | {{print}} | A representação textual e visual do risco permite manter uma forma de identificação semelhante entre o mapa e o detalhamento. |
-| H5 | Sugestões de busca e alternativas para região não encontrada | {{print}} | A interface oferece sugestões e caminhos alternativos quando o usuário não encontra a região desejada, reduzindo a chance de a busca interromper a tarefa. |
-| H6 | Legenda, sugestões e informações disponíveis na interface | {{print}} | Os elementos necessários para consultar e interpretar o risco são apresentados visualmente, sem exigir que o usuário memorize dados ou opções. |
-| H7 | Busca textual e consulta pelo mapa | {{print}} | O usuário pode utilizar diferentes formas de localizar a região, escolhendo a que melhor atende sua necessidade. |
-| H8 | Separação visual das informações | {{print}} | A organização em áreas distintas facilita identificar o mapa, o risco principal e as informações complementares, evitando concentrar tudo em um único espaço. |
-| H9 | Estado de busca sem correspondência | {{print}} | O usuário recebe retorno de que a região não foi encontrada e pode seguir alternativas para corrigir ou continuar a consulta. |
-| H10 | Explicações e orientações contextualizadas | {{print}} | O protótipo oferece explicações sobre o significado do risco, contexto meteorológico, ocorrências e orientações, auxiliando o usuário na compreensão das informações. |
+| H1 | Processamento da consulta de risco | <img width="1224" height="766" alt="image" src="https://github.com/user-attachments/assets/16f12440-523f-412a-ab1a-ae0cedf3b5b2" /> | O sistema apresenta etapas do processamento, indicando ao usuário o andamento da consulta e o que está sendo realizado. |
+| H2 | Apresentação do nível de risco em linguagem acessível | <img width="2140" height="1338" alt="image" src="https://github.com/user-attachments/assets/7402707e-4d37-412b-be5f-db9a62369956" /> | A categorização do risco e as explicações apresentadas aproximam o resultado técnico da interpretação de um usuário não especializado. |
+| H3 | Cancelar ou realizar outra consulta | <img width="2150" height="1338" alt="image" src="https://github.com/user-attachments/assets/94e57a51-2970-4f49-bd5a-e6543414c02e" /> | O usuário pode cancelar o processamento ou seguir para outra consulta, oferecendo possibilidades de saída e continuidade. |
+| H4 | Representação dos níveis de risco | <img width="1988" height="1244" alt="image" src="https://github.com/user-attachments/assets/9e65c60b-305d-463a-902c-1c5105d3ab9b" /> | A representação textual e visual do risco permite manter uma forma de identificação semelhante entre o mapa e o detalhamento. |
+| H5 | Sugestões de busca e alternativas para região não encontrada | <img width="1062" height="662" alt="image" src="https://github.com/user-attachments/assets/9f7cac5e-febe-4ad1-8496-31af83a49d69" /> | A interface oferece sugestões e caminhos alternativos quando o usuário não encontra a região desejada, reduzindo a chance de a busca interromper a tarefa. |
+| H6 | Legenda, sugestões e informações disponíveis na interface | <img width="2076" height="1300" alt="image" src="https://github.com/user-attachments/assets/879c9506-8c69-404f-8693-a893bf427136" /> | Os elementos necessários para consultar e interpretar o risco são apresentados visualmente, sem exigir que o usuário memorize dados ou opções. |
+| H7 | Busca textual e consulta pelo mapa | <img width="1842" height="1154" alt="image" src="https://github.com/user-attachments/assets/3b8b8054-1cf2-40ae-8904-7db746a48e91" /> | O usuário pode utilizar diferentes formas de localizar a região, escolhendo a que melhor atende sua necessidade. |
+| H8 | Separação visual das informações | <img width="1866" height="1164" alt="image" src="https://github.com/user-attachments/assets/5cc1b5fa-d688-41f1-9679-0b1e9e209156" /> | A organização em áreas distintas facilita identificar o mapa, o risco principal e as informações complementares, evitando concentrar tudo em um único espaço. |
+| H9 | Estado de busca sem correspondência | <img width="2188" height="1370" alt="image" src="https://github.com/user-attachments/assets/7ef140d8-bb95-4944-aad6-b895de06e8c6" /> | O usuário recebe retorno de que a região não foi encontrada e pode seguir alternativas para corrigir ou continuar a consulta. |
+| H10 | Explicações e orientações contextualizadas | <img width="1950" height="1214" alt="image" src="https://github.com/user-attachments/assets/44cd3b4b-e394-4cad-926d-632876891916" /> | O protótipo oferece explicações sobre o significado do risco, contexto meteorológico, ocorrências e orientações, auxiliando o usuário na compreensão das informações. |
 
 > Repita a seção para A02, A03... um avaliador por integrante.
 

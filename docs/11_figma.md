@@ -2,7 +2,7 @@
 # Entrega 11 — Protótipo no Figma
 
 **Data:** 22/11/2026  
-**Status:** 🟨 Em andamento  
+**Status:** 🟩 concluida  
 **Responsabilidade:** 1 protótipo integrado por equipe cobrindo os fluxos MoLIC.
 
 ## Objetivo da atividade

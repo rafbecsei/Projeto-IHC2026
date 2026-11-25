@@ -1,7 +1,7 @@
 # Entrega 13 — Avaliação de IHC por inspeção heurística
 
 **Data:** 22/11/2026  
-**Status:** 🟩 concluida
+**Status:** 🟩 concluída  
 **Responsabilidade:** 1 avaliação completa por integrante, sobre todas as telas/estados relevantes do projeto.
 
 ## Objetivo da atividade
@@ -50,7 +50,7 @@ Em TCCs técnicos, observe especialmente se a interface comunica o estado do pro
 | Telas/estados | F01 - Início; F02 - Busca; F02E - Região não encontrada; F03 - Consultando; F04 - Risco da região; F04A - Risco atualizado; F05 - Chuva e ocorrências; F06 - Trajeto; F06E - Destino não identificado; F07 - Risco ao longo do trajeto; F09 - O que posso fazer?; F10 - Falha ao obter informações na consulta; F11 - Dados insuficientes |
 | Fluxos | M01 - Planejamento de deslocamento durante chuva intensa; M02 - Prevenção de impactos no comércio durante chuva intensa; M03 - Preparação do morador durante previsão de chuva intensa; M04 - Ida para a prova de transporte público com previsão de temporal |
 | Dispositivo/viewport | Computador, interface desktop para M01, M02 e M03, M04 |
-| Avaliadores | Rafael Iamashita Becsei, Eric Song Watanabe, Victor Pimentel Lario |
+| Avaliadores | Rafael Iamashita Becsei (A01), Victor Pimentel Lario (A02), Eric Song Watanabe (A03), Henrique Hodel Babler (A04) |
 
 ## 3. Procedimento individual
 
@@ -188,7 +188,49 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 
 ## Avaliador A04 - Henrique Hodel Babler
 
-> {{Pendente: matriz de cobertura (4.4), declaração de violações (5.4) e boas práticas (6.4) da inspeção individual.}}
+### 4.4. Matriz de cobertura das 10 heurísticas
+
+Protótipo avaliado: *Alerta — Protótipo (Entrega 11)* no Figma, em modo de apresentação. Foram examinados quatro fluxos: **M01/M02/M03** (consultar o risco da região, telas F01–F05, F09, F10 e F11), **M01 – Trajeto** (F06, F06E e F07), **M03 – Rupturas** (F02E, F10 e F11) e **M04 – Linha de ônibus no celular** (F20–F29, com F21E, F22E, F23L e F26).
+
+| Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
+|---|---|---|---|---|
+| H1 | Todas as telas | sim | V04, V05, V06 | Nas telas de processamento (F03 e F23L), as etapas aparecem uma a uma, há opção de cancelar e o horário da última atualização fica visível |
+| H2 | Todas as telas | não | - | As categorias baixo, moderado e alto, as explicações como "8 de cada 10 vezes" e os termos do dia a dia (embarque, desembarque, sentido) aproximam os dados da linguagem do usuário |
+| H3 | Todas as telas | não | - | Há "Cancelar consulta" (F03 e F23L), "Nova consulta", "Editar trajeto" e "Voltar ao risco…", além da seta de voltar no celular, então o usuário consegue desfazer e refazer suas ações |
+| H4 | Todas as telas | sim | V01, V07 | A cor e o rótulo do risco são os mesmos no mapa, na lista, nos cards e nas faixas por horário, tanto no desktop quanto no celular |
+| H5 | Todas as telas | sim | V08 | Em F22E, o sistema avisa quando os pontos de embarque e desembarque estão fora do sentido escolhido e bloqueia "Consultar risco do trecho". Em F27, horários que já passaram aparecem desabilitados |
+| H6 | Todas as telas | sim | V09 | A legenda do mapa, as sugestões na busca e as "Linhas consultadas" ficam sempre à vista, sem exigir memorização |
+| H7 | Todas as telas | não | - | A região pode ser localizada pelo nome ou pelo mapa, e a consulta pode ser por região, por trajeto ou por linha. Atalhos como "Áreas em atenção agora" e "Linhas consultadas" aceleram o uso para quem volta ao sistema |
+| H8 | Todas as telas | sim | V10, V11, V12 | As informações ficam em áreas distintas (mapa, risco, chuva e ocorrências), cada grupo no seu próprio espaço |
+| H9 | Todas as telas | sim | V02 | As mensagens de erro de F02E, F06E, F10, F21E e F26 usam linguagem simples, mantêm o texto digitado e oferecem uma saída, como uma sugestão, "Tentar novamente" ou "Consultar outra linha" |
+| H10 | Todas as telas | sim | V03 | Há explicações contextuais sobre o risco ("É uma estimativa, não uma garantia") e a tela "O que posso fazer?" traz telefones de emergência. Porém não há tour inicial nem uma área de ajuda |
+
+### 5.4. Declaração de violações
+
+| ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
+|---|---|---|---|---|---:|---|---|
+| V01 | H4 | F11 | A cor e a posição do botão "Consultar outra região" mudam de uma tela para outra. Em F11 ele é azul (primário) e fica à esquerda. Em F04 e F04A ele é branco (secundário) e fica à direita | ![print](../assets/13_heuristica/v01_A04.svg) | 2 | Ocorre em poucas telas e não impede a tarefa, mas quebra o padrão visual da ação | Padronizar o botão como secundário (branco) e à direita, como em F04, ou definir uma regra única de hierarquia dos botões para todas as telas |
+| V02 | H9 | F11 | A mensagem explica que faltam dados para estimar o risco, mas não diz onde o usuário pode buscar informações confiáveis sobre a região, como órgãos oficiais. O único caminho oferecido, "Ver orientações gerais", leva às orientações de outra região (ver V04) | ![print](../assets/13_heuristica/v02_A04.svg) | 2 | Só acontece quando faltam dados, mas nesse caso o usuário fica sem orientação e pode haver alagamento que o sistema não mostra | Incluir na própria tela onde se informar (Defesa Civil 199, CGE, SMS 40199) e fazer "Ver orientações gerais" abrir orientações genéricas, sem região |
+| V03 | H10 | F01 e F20 | Não há tour inicial para quem acessa pela primeira vez, nem uma área de ajuda ou guia, tanto no desktop quanto no celular | ![print](../assets/13_heuristica/v03_A04.svg) | 3 | O usuário iniciante não sabe que pode consultar pelo mapa, por trajeto ou por linha, nem o que significa "Sem estimativa", e não encontra um lugar para tirar dúvidas | Adicionar um tour curto no primeiro acesso e um ícone de ajuda ("?") fixo no cabeçalho, com um guia das funcionalidades e do significado dos níveis de risco |
+| V04 | H1 | F11 → F09 e F01 → aba Segurança | Ao clicar em "Ver orientações gerais" em F11 (Parelheiros) ou na aba "Segurança" sem ter consultado nenhuma região, o sistema abre "Orientações para Lapa · Risco Alto" com o link "Voltar ao risco de Lapa". Essa região não foi consultada pelo usuário | ![print](../assets/13_heuristica/v04_A04.svg) | 3 | O usuário recebe um nível de risco e orientações de uma região diferente da sua. A informação é enganosa em um contexto de segurança | Exibir na aba Segurança orientações gerais, sem região, quando não houver consulta ativa, e manter a região correta quando houver |
+| V05 | H1 | F23 (saída 18:00) → F28 → F29 | Depois de simular a saída às 18:00 (risco Alto), ao clicar em "Decidir como ir" a tela F28 volta a mostrar "Saída às 17:00 · Moderado". A tela F29 confirma "consultou… às 17:00" | ![print](../assets/13_heuristica/v05_A04.svg) | 3 | O usuário decide com base no horário e no risco errados. Ele pode achar que o risco é moderado quando, no horário escolhido, é alto | Levar o horário simulado para F28 e F29 e mostrar o risco correspondente a esse horário |
+| V06 | H1 | F04 → F04A | Em F04 o risco de Lapa aparece como Alto, atualizado às 17:26. Ao clicar em "Atualizar", F04A avisa que o risco mudou desde a última consulta: "Era moderado às 16:50", o que contradiz o que o usuário acabou de ver | ![print](../assets/13_heuristica/v06_A04.svg) | 2 | O aviso de mudança perde credibilidade e confunde, mas o risco atual exibido está correto | Comparar com o valor e o horário realmente exibidos ao usuário na consulta anterior, ou mostrar o aviso só quando o nível de fato mudou |
+| V07 | H4 | F22 e F27 | As opções de horário mudam entre telas. Em F22 são 17:00, 17:30 e 18:00. Em F27 são 16:30 (desabilitado), 17:00 e 18:00, ou seja, 17:30 desaparece. O texto "Formato hh:mm" sugere que dá para digitar um horário, mas não existe campo para isso | ![print](../assets/13_heuristica/v07_A04.svg) | 1 | Problema estético e de consistência, com pouco impacto na tarefa | Usar o mesmo conjunto de horários nas duas telas e incluir um campo de horário livre ou remover a dica "Formato hh:mm" |
+| V08 | H5 | F02 → F02E e F21 → F21E | O mesmo texto que gera sugestões vira erro ao clicar em "Buscar". "Lap" mostra Lapa como sugestão, mas a busca retorna "Não encontramos uma região chamada 'Lap'". No celular, "862" sugere a linha 8622-10 e o "Ponto R. Clélia, 862", mas a busca diz que "nenhuma linha, ponto ou terminal corresponde a '862'" | ![print](../assets/13_heuristica/v08_A04.svg) ![print](../assets/13_heuristica/v08b_A04.svg) | 2 | Acontece com frequência (Enter com texto parcial) e induz um erro evitável. No caso do "862", a mensagem é falsa, porque existe um ponto correspondente | Quando houver uma única correspondência, selecioná-la ao buscar. Quando houver várias, manter a lista de sugestões aberta em vez de exibir erro |
+| V09 | H6 | F25 | A tela "Comparar linhas" mostra as duas linhas com o mesmo rótulo e o mesmo texto ("Moderado · Pode haver pontos de acúmulo de água…"), sem dados que as diferenciem, como o trecho mais crítico, o risco por horário ou a porcentagem | ![print](../assets/13_heuristica/v09_A04.svg) | 2 | O usuário precisa lembrar os detalhes vistos em telas anteriores para comparar, o que torna a tela pouco útil para decidir | Exibir lado a lado o pior trecho, as faixas de risco por horário (17h, 18h, 19h) e a porcentagem de cada linha |
+| V10 | H8 | F06, F23 e F24 (também em F04/F05) | Alguns ícones ficam sobrepostos ao texto: "Informe origem e destino…" (F06), "Atualizado às 17:00" (F23) e "Chuva prevista" (F24) | ![print](../assets/13_heuristica/v10_A04.svg) | 1 | Problema estético, que prejudica a leitura sem impedir a tarefa | Ajustar o auto layout dos componentes com ícone, com espaçamento fixo entre o ícone e o texto |
+| V11 | H8 | F11 | O pino da região consultada (Parelheiros) fica parcialmente escondido atrás da legenda do mapa | ![print](../assets/13_heuristica/v11_A04.svg) | 1 | Estético, mas esconde justamente o elemento principal da consulta | Centralizar o mapa na região consultada ou reposicionar a legenda quando houver sobreposição |
+| V12 | H8 | F28 → F29 | As opções "Manter a linha e o horário", "Antecipar a saída" e "Usar outra linha ou modal" não têm efeito: é possível clicar em "Concluir" sem escolher nenhuma, e F29 não menciona a escolha feita | ![print](../assets/13_heuristica/v12_A04.svg) | 1 | São elementos que ocupam espaço e sugerem uma ação que não acontece | Remover as opções ou usá-las de fato, por exemplo para personalizar F29 e as orientações |
+
+**Observação:** na tela F09, as abas "Tenho um comércio" e "Moro na região" e as caixas de seleção da lista não respondem ao clique. Isso foi tratado como limitação do protótipo, e não como violação.
+
+### 6.4. Boas práticas - heurísticas não violadas (atividade didática)
+
+| Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
+|---|---|---|---|
+| H2 | Níveis de risco e porcentagem traduzidos ("8 de cada 10 vezes"); termos como embarque, desembarque e sentido | {{print}} | A interface usa o vocabulário de quem se desloca pela cidade, e não termos técnicos do modelo de previsão. |
+| H3 | "Cancelar consulta" (F03, F23L), "Nova consulta", "Editar trajeto", "Voltar ao risco…" e seta de voltar no celular | {{print}} | O usuário consegue interromper, desfazer e refazer as ações sem ficar preso em um caminho. |
+| H7 | Consulta por nome, pelo mapa, por trajeto ou por linha; atalhos "Áreas em atenção agora" e "Linhas consultadas" | {{print}} | Há caminhos diferentes para o mesmo objetivo, e os atalhos aceleram o uso para quem volta ao sistema. |
 
 ## 7. Consolidação da equipe
 
@@ -197,54 +239,64 @@ Problemas iguais ou muito semelhantes encontrados por avaliadores diferentes dev
 | ID consolidado | Achados individuais | Heurística | Problema | Severidade final | Prioridade | Responsável pela correção |
 |---|---|---|---|---:|---|---|
 | HC01 | V01(A02) | H4 | Os dados de chuva se contradizem: F04 diz "até 28 mm/h às 17h", mas o gráfico de F05 mostra 24 mm/h às 17h e o pico de 28 mm/h às 18h. Isso induz o usuário a errar o horário de pico | 3 | alta | {{...}} |
-| HC02 | V02(A02) | H10 | As orientações e os telefones de emergência (F09) só podem ser acessados a partir do resultado por região (F04). Não há atalho no trajeto em risco alto (F07) nem na linha de ônibus em risco alto (F23) | 3 | alta | {{...}} |
-| HC03 | V03(A01) | H10 | Não há tour inicial para quem acessa pela primeira vez nem uma aba de guia disponível durante o uso (F01) | 3 | alta | {{...}} |
-| HC04 | V03(A03) | H5 | O botão "Consultar trajeto" fica habilitado antes de o usuário escolher um destino reconhecido (ex.: "Lappa" → "Lapa"), permitindo enviar uma entrada não validada (F06) | 3 | alta | {{...}} |
-| HC05 | V01(A03) | H1 | "MONITORAMENTO AO VIVO" e "DADOS DEMONSTRATIVOS" aparecem juntos, gerando dúvida sobre a atualidade dos dados (F01) | 2 | média | {{...}} |
-| HC06 | V02(A01) | H9 | Quando faltam dados para estimar o risco, a tela não indica o que o usuário pode fazer nem onde buscar a informação (F11) | 2 | média | {{...}} |
-| HC07 | V03(A02) | H9 | A busca "862" mostra sugestões (linha 8622-10 e um ponto), mas ao buscar F21E diz que nada corresponde e que a linha tem 4 dígitos. A mensagem contradiz as sugestões e diagnostica o problema errado | 2 | média | {{...}} |
-| HC08 | V04(A02) | H8 | A legenda "Nível de risco" cobre parcialmente o marcador da região consultada no extremo sul do mapa (F11 — Parelheiros, Represa Guarapiranga) | 2 | média | {{...}} |
-| HC09 | V01(A01) | H4 | O botão "Consultar outra região" muda de cor (azul) e de posição (esquerda) em F11, enquanto nas outras telas, como F04, é branco e fica à direita | 2 | média | {{...}} |
-| HC10 | V02(A03) | H4 | A mesma ação aparece como "Encerrar consulta" em uma tela e só "Encerrar" em outra (telas de falha/dados insuficientes) | 1 | baixa | {{...}} |
+| HC02 | V04(A04) | H1 | "Ver orientações gerais" (F11, Parelheiros) e a aba "Segurança" sem consulta ativa abrem "Orientações para Lapa · Risco Alto", uma região que o usuário não consultou | 3 | alta | {{...}} |
+| HC03 | V05(A04) | H1 | Depois de simular a saída às 18:00 (risco Alto) em F23, as telas F28 e F29 voltam a mostrar "17:00 · Moderado". O usuário decide com o horário e o risco errados | 3 | alta | {{...}} |
+| HC04 | V02(A02) | H10 | As orientações e os telefones de emergência (F09) só podem ser acessados a partir do resultado por região (F04). Não há atalho no trajeto em risco alto (F07) nem na linha de ônibus em risco alto (F23) | 3 | alta | {{...}} |
+| HC05 | V03(A01), V03(A04) | H10 | Não há tour inicial para quem acessa pela primeira vez nem uma área de ajuda ou guia, no desktop (F01) e no celular (F20) | 3 | alta | {{...}} |
+| HC06 | V03(A03) | H5 | O botão "Consultar trajeto" fica habilitado antes de o usuário escolher um destino reconhecido (ex.: "Lappa" → "Lapa"), permitindo enviar uma entrada não validada (F06) | 3 | alta | {{...}} |
+| HC07 | V01(A03) | H1 | "MONITORAMENTO AO VIVO" e "DADOS DEMONSTRATIVOS" aparecem juntos, gerando dúvida sobre a atualidade dos dados (F01) | 2 | média | {{...}} |
+| HC08 | V06(A04) | H1 | F04 mostra Lapa com risco Alto às 17:26, mas ao clicar em "Atualizar", F04A diz que o risco "era moderado às 16:50", o que contradiz o que o usuário acabou de ver | 2 | média | {{...}} |
+| HC09 | V02(A01), V02(A04) | H9 | Quando faltam dados para estimar o risco (F11), a tela não diz onde buscar informação confiável, e "Ver orientações gerais" leva às orientações de outra região (ver HC02) | 2 | média | {{...}} |
+| HC10 | V03(A02), V08(A04) | H9/H5 | Um texto parcial que gera sugestões vira erro ao buscar: "Lap" sugere Lapa, mas F02E diz que a região não foi encontrada; "862" sugere a linha 8622-10 e um ponto, mas F21E diz que nada corresponde e que a linha tem 4 dígitos | 2 | média | {{...}} |
+| HC11 | V04(A02), V11(A04) | H8 | A legenda "Nível de risco" cobre parcialmente o pino da região consultada no extremo sul do mapa (F11 — Parelheiros) | 2 | média | {{...}} |
+| HC12 | V09(A04) | H6 | "Comparar linhas" (F25) mostra as duas linhas com o mesmo rótulo e texto, sem dados que as diferenciem; o usuário precisa lembrar o que viu antes | 2 | média | {{...}} |
+| HC13 | V01(A01), V01(A04) | H4 | O botão "Consultar outra região" muda de cor (azul) e de posição (esquerda) em F11, enquanto em F04 e F04A é branco e fica à direita | 2 | média | {{...}} |
+| HC14 | V02(A03) | H4 | A mesma ação aparece como "Encerrar consulta" em uma tela e só "Encerrar" em outra (telas de falha/dados insuficientes) | 1 | baixa | {{...}} |
+| HC15 | V07(A04) | H4 | As opções de horário mudam entre F22 (17:00, 17:30, 18:00) e F27 (16:30, 17:00, 18:00), e a dica "Formato hh:mm" sugere um campo de digitação que não existe | 1 | baixa | {{...}} |
+| HC16 | V10(A04) | H8 | Ícones sobrepostos ao texto em F06 ("Informe origem e destino…"), F23 ("Atualizado às 17:00") e F24 ("Chuva prevista") | 1 | baixa | {{...}} |
+| HC17 | V12(A04) | H8 | As opções de F28 ("Manter a linha e o horário", "Antecipar a saída", "Usar outra linha ou modal") não têm efeito: dá para concluir sem escolher, e F29 não menciona a escolha | 1 | baixa | {{...}} |
 
-> Nenhum problema foi encontrado por mais de um avaliador da mesma forma, então não houve fusão de achados duplicados. Como cada problema foi apontado por um único avaliador, a severidade final manteve a nota individual. Prioridade: severidade 3 = alta, 2 = média, 1 = baixa.
+> **Achados duplicados:** cinco problemas foram encontrados por dois avaliadores e foram fundidos: HC05, HC09, HC10, HC11 e HC13. Em HC10, A02 classificou o problema em H9 (a mensagem diagnostica errado) e A04 em H5 (o erro poderia ser evitado). As duas leituras foram mantidas. Em HC11, A02 deu severidade 2 e A04 deu 1; a severidade final ficou 2, porque o elemento escondido é justamente o resultado da consulta. Nos demais, a nota foi igual. Prioridade: severidade 3 = alta, 2 = média, 1 = baixa.
 >
-> **Achados relacionados:** HC02 e HC03 tratam de **acesso à ajuda (H10)**: um fala da falta de ajuda inicial e o outro da ajuda que não aparece nos fluxos de trajeto e transporte. HC06 e HC07 tratam de **mensagens de erro que não orientam bem a recuperação (H9)**. Foram mantidos separados porque ocorrem em telas diferentes e pedem correções diferentes.
+> **Achados relacionados:** HC02 e HC09 se somam: a tela de dados insuficientes não orienta o usuário e, quando ele busca orientação, recebe a de outra região. HC04 e HC05 tratam de acesso à ajuda (H10).
 >
-> **Divergências entre avaliadores:** em H9 e H10, A01 e A02 registraram violações, enquanto A03 destacou boas práticas (mensagem de F10 com "Tentar novamente", "Como ler" e "O que posso fazer?"). As visões se complementam: a ajuda e as mensagens existem e são boas no fluxo principal, mas falham em fluxos secundários e estados de exceção.
+> **Divergências entre avaliadores:** em H9 e H10, A01, A02 e A04 registraram violações, enquanto A03 destacou boas práticas (mensagem de F10 com "Tentar novamente", "Como ler" e "O que posso fazer?"). As visões se complementam: a ajuda e as mensagens existem e são boas no fluxo principal, mas falham em fluxos secundários e estados de exceção.
+>
+> **Limitação do protótipo:** em F09, as abas "Tenho um comércio" e "Moro na região" e as caixas de seleção não respondem ao clique (registrado por A04). Isso não foi tratado como violação.
 
 ## 8. Síntese e plano de melhoria
 
-**Problemas por heurística e severidade** (avaliadores A01, A02 e A03):
+**Problemas consolidados por heurística e severidade** (avaliadores A01, A02, A03 e A04):
 
 | Heurística | Sev. 1 | Sev. 2 | Sev. 3 | Total |
 |---|---:|---:|---:|---:|
-| H1 | 0 | 1 | 0 | 1 |
-| H4 | 1 | 1 | 1 | 3 |
+| H1 | 0 | 2 | 2 | 4 |
+| H4 | 2 | 1 | 1 | 4 |
 | H5 | 0 | 0 | 1 | 1 |
-| H8 | 0 | 1 | 0 | 1 |
+| H6 | 0 | 1 | 0 | 1 |
+| H8 | 2 | 1 | 0 | 3 |
 | H9 | 0 | 2 | 0 | 2 |
 | H10 | 0 | 0 | 2 | 2 |
-| **Total** | **1** | **5** | **4** | **10** |
+| **Total** | **4** | **7** | **6** | **17** |
 
-H2, H3, H6 e H7 não tiveram violações registradas por nenhum avaliador.
+H2, H3 e H7 não tiveram violações registradas por nenhum avaliador. HC10 foi contado em H9.
 
-**Problemas críticos/graves:** nenhum problema recebeu severidade 4 (catástrofe), então nada impede o teste com usuários. Os quatro problemas de severidade 3 (HC01 a HC04) devem ser corrigidos antes de uma versão final.
+**Problemas críticos/graves:** nenhum problema recebeu severidade 4 (catástrofe), então nada impede o teste com usuários. Os seis problemas de severidade 3 (HC01 a HC06) devem ser corrigidos antes de uma versão final.
 
 **Padrões recorrentes:**
-- **Consistência (H4)** foi a heurística mais violada, e cada avaliador encontrou um problema diferente: dados de chuva divergentes entre F04 e F05, botão com cor e posição diferentes em F11, e rótulo "Encerrar" com nomes diferentes. Vale fazer uma revisão geral de consistência no Figma (componentes, textos e dados).
-- **Estados de exceção** (falha, dados insuficientes, busca sem resultado) concentram 4 dos 10 problemas (HC06, HC07, HC09, HC10).
-- **Acesso à ajuda (H10)** está bom no fluxo de região, mas falta nos fluxos de trajeto e transporte e no primeiro acesso.
-- **Confiança nos dados** aparece em HC01 (valores divergentes) e HC05 ("ao vivo" junto com "demonstrativo"). As duas se relacionam com a meta MU07: o usuário não pode confundir estimativa com ocorrência nem receber informação contraditória.
+- **Estado e dados que não se mantêm entre telas.** É o padrão mais grave: o horário de pico muda de F04 para F05 (HC01), a região das orientações não é a consultada (HC02), o horário simulado se perde em F28/F29 (HC03) e o aviso de mudança contradiz o valor exibido (HC08). Por isso H1 e H4 são as heurísticas mais violadas. A correção principal é fazer as telas lerem a região, o horário e os valores da mesma consulta, em vez de textos fixos do Figma.
+- **Estados de exceção** (dados insuficientes, busca sem resultado, falha) concentram problemas de mensagem e de consistência (HC09, HC10, HC13, HC14).
+- **Acesso à ajuda (H10)** está bom no fluxo de região, mas falta nos fluxos de trajeto e transporte e no primeiro acesso (HC04, HC05).
+- **Detalhes visuais** (ícones sobrepostos, legenda cobrindo o pino, opções sem efeito) são de baixa severidade, mas aparecem em vários fluxos (HC11, HC16, HC17).
 
 **Correções antes/para a avaliação com usuários:**
-- **HC01** e **HC05** estão no caminho das tarefas UT01, UT03 e UT04 (F04 e F05). O ideal é corrigir antes dos próximos testes; se não der tempo, observar se os participantes percebem a divergência.
-- **HC02**, **HC04** e **HC07** estão nos fluxos de trajeto e transporte, que não fazem parte das tarefas UT01–UT04. Ficam para a próxima versão do protótipo.
-- **HC03**, **HC06**, **HC08**, **HC09** e **HC10** entram no plano de melhoria da próxima versão do Figma, por ordem de prioridade.
+- **HC01, HC07 e HC08** estão no caminho das tarefas UT01–UT04 (F04, F04A e F05). O ideal é corrigir antes dos próximos testes; se não der tempo, observar se os participantes percebem as divergências.
+- **HC02, HC03, HC04, HC06, HC10, HC12 e HC15–HC17** estão nos fluxos de trajeto, transporte ou orientações, que não fazem parte das tarefas UT01–UT04. Ficam para a próxima versão do protótipo.
+- **HC05, HC09, HC11, HC13 e HC14** entram no plano de melhoria da próxima versão do Figma, por ordem de prioridade.
 
 ## Checklist
 
-- [ ] Cada integrante fez uma inspeção completa e identificada. *(falta A04 — Henrique)*
+- [x] Cada integrante fez uma inspeção completa e identificada.
 - [x] Todas as telas/estados relevantes foram examinados.
 - [x] Estados administrativos, filtros, relatórios, históricos, processamento e erros foram incluídos quando existentes.
 - [x] A inspeção avaliou a interface/protótipo, não o mérito técnico do algoritmo/modelo.

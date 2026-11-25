@@ -49,8 +49,8 @@ Em TCCs técnicos, observe especialmente se a interface comunica o estado do pro
 | Versão avaliada | Protótipo AlertaNY — Entrega 11 (Figma) |
 | Telas/estados | F01 — Início; F02 — Busca; F02E — Região não encontrada; F03 — Consultando; F04 — Risco da região; F04A — Risco atualizado; F05 — Chuva e ocorrências; F06 — Trajeto; F06E — Destino não identificado; F07 — Risco ao longo do trajeto; F09 — O que posso fazer?; F10 — Falha ao obter informações na consulta; F11 — Dados insuficientes |
 | Fluxos | M01 — Planejamento de deslocamento durante chuva intensa; M02 — Prevenção de impactos no comércio durante chuva intensa; M03 — Preparação do morador durante previsão de chuva intensa; M04 — Ida para a prova de transporte público com previsão de temporal |
-| Dispositivo/viewport | Computador, interface desktop para M01, M02 e M03; fluxo M04 com telas adaptadas para dispositivos móveis, conforme o protótipo |
-| Avaliadores | Rafael Iamashita Becsei |
+| Dispositivo/viewport | Computador, interface desktop para M01, M02 e M03, M04 |
+| Avaliadores | Rafael Iamashita Becsei, Eric Song Watanabe, Victor Pimentel Lario |
 
 ## 3. Procedimento individual
 
@@ -82,26 +82,28 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 
 | Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
 |---|---|---|---|---|
-| H1 | F03, F04, F04A, F05 e estados de processamento/resultados de M04 (F20–F29) | não | - | A tela de processamento apresenta etapas da consulta, permitindo acompanhar o andamento, e o resultado informa a atualização do risco |
-| H2 | F01, F02, F04, F05, F07, F09 e telas de resultado/detalhamento de M04 (F20–F29) | não | - | O risco é apresentado com categorias como baixo, moderado e alto, acompanhado de explicações e informações complementares que aproximam os dados da compreensão cotidiana do usuário |
-| H3 | F01, F02, F02E, F03, F06, F06E, F10 e estados de cancelamento/retorno de M04 (F20–F29) | não | - | O protótipo apresenta opções de cancelamento durante o processamento, retorno e realização de uma nova consulta, permitindo que o usuário não fique restrito a uma única ação |
-| H4 | F01–F11, incluindo estados de erro, atualização e dados insuficientes, e F20–F29 | não | - | Os níveis de risco possuem representação visual e textual, mantendo um padrão de identificação nas diferentes áreas da consulta |
-| H5 | F02, F02E, F06, F06E, F10, F11 e estados de validação/configuração de M04 (F20–F29) | não | - | A busca oferece sugestões e, no estado sem correspondência, apresenta alternativas para continuar a consulta, reduzindo a dependência de uma entrada exata |
-| H6 | F01, F02, F04, F05, F07 e telas de configuração/resultados de M04 (F20–F29) | não | - | As regiões, sugestões de busca, níveis de risco, legenda e informações complementares ficam visíveis ao usuário, reduzindo a necessidade de memorizar informações |
-| H7 | F01, F02, F06, F07 e etapas de configuração/comparação de alternativas de M04 (F20–F29) | não | - | O usuário possui diferentes formas de localizar uma região, como busca textual e seleção no mapa, além de acesso às informações complementares a partir da consulta |
-| H8 | F01–F11 e F20–F29 | não | - | As informações são distribuídas em áreas distintas, organizando mapa, risco, chuva e ocorrências de maneira que cada grupo de informações tenha seu próprio espaço na interface |
-| H9 | F02E, F06E, F10, F11 e estados de erro/recuperação de M04 (F20–F29) | não | - | Quando a região não é encontrada, a interface apresenta um estado específico para essa situação e oferece alternativas para que o usuário possa continuar |
-| H10 | F05, F09 e telas de detalhamento/orientação de M04 (F20–F29) | não | - | A interface apresenta explicações sobre o risco, informações de chuva e ocorrências e orientações preventivas, oferecendo apoio contextual para a interpretação dos dados |
+| H1 | Todas as telas | não | - | As telas de processamento apresentam feedbacks, permitindo acompanhar o andamento, e o resultado das telas |
+| H2 | Todas as telas | não | - | As telas apresentam palavras, frases e expressões comuns, como as categorias baixo, moderado e alto, e a presença de explicações e informações complementares que aproximam os dados da compreensão cotidiana do usuário |
+| H3 | Todas as telas | não | - | O protótipo apresenta opções de cancelamento durante o processamento, retorno e realização de uma nova consulta, permitindo que o usuário não fique restrito e consiga refazer e desfazer suas ações |
+| H4 | Todas as telas | sim | V01 | O sistema possui representação visual e textual, mantendo um padrão de identificação nas diferentes telas |
+| H5 | Todas as telas | não | - | As regiões, sugestões de busca, níveis de risco, legenda e informações complementares apresentam instruções e descrições de forma acessível e visível para não dar chance do usuário se confundir |
+| H6 | Todas as telas | não | - | A localização das regiões pode ser feita através da busca do nome do local, mas também pode ser feita através do mapa, para usuários que não sabem o nome ou apresentam dificuldade em fazer a pesquisa, deixando flexível e eficiente para os diferentes tipos de usuários |
+| H7 | Todas as telas | não | - | As informações são distribuídas em áreas distintas, organizando mapa, risco, chuva e ocorrências de maneira que cada grupo de informações tenha seu próprio espaço na interface e apresente dados necessários |
+| H8 | Todas as telas | não | - | Quando ocorrem erros, como região não encontrada, as informações do local não encontradas e falta de dados para estimar o risco, a interface apresenta mensagens para essa situação e oferece alternativas para que o usuário possa continuar e sair dessa situação |
+| H9 | Todas as telas | sim | V02 | As mensagens de erros apresentam uma linguagem simples, explicações para contextualizar o que houve e uma solução para contornar esse problema |
+| H10 | Todas as telas | sim | V03 | A interface apresenta um tour, caso seja a primeira vez do usuário usando a interface, explicações sobre o risco, informações de chuva e ocorrências e orientações preventivas, oferecendo apoio contextual para a interpretação dos dados e para saber utilizar o sistema |
 
 ### 5. Declaração de violações
 
 | ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
 |---|---|---|---|---|---:|---|---|
-| | | | | | | | |
+| V01 | H4 | F11 | Nessa tela, identifiquei que houve troca da cor e posição do botão de Consultar outra região, levando em consideração as outras telas. Nessa tela específica, o botão está azul e na esquerda, enquanto em outras telas como a F04 está branco e na direita | ![print](../assets/13_heuristica/v01.svg) | 2 | Pouca frequência e não é um impacto grande | Para padronizar e seguir uma consistência em todas as telas, seria necessário deixar a cor como branca e a posição dele a direita do outro botão |
+| V02 | H9 | F11 | Nessa tela, identifiquei que não há um solução específica para o usuário seguir e contornar o erro, mesmo que esse caso seja pela falta de dados no sistema para estimar o risco, seria interessante se houvesse alguma dica de como o usuário poderia ser informar sobre isso ou até como se precaver | ![print](../assets/13_heuristica/v02.svg) | 2 | Para corrigir isso ou minimizar o problema, seria necessário alguma dica de como e onde o usuário poderia conseguir informações sobre isso ou como agir nesses casos, pois pode haver um alagamento no local e não mostrar no sistema |
+| V03 | H10 | F01 | Mesmo a interface sendo simples e intuitiva, identifiquei que não há um tour inicial para o usuário que acabou de acessar pela primeira vez ser contextualizado sobre as funcionalidades da ferramenta e funções que pode usar para chegar no resultado desejado, também não há uma aba de guia que possa ajudar durante o uso do sistema | ![print](../assets/13_heuristica/v03.svg) | 3 | Seria importante adicionar o tour de inicio quando o usuário entra pela primeira vez ou uma aba com guia em todas as telas que, se houver dúvidas, seja possível entender ali o que fazer |
 
 **Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
 
-### 6. Boas práticas — heurísticas não violadas (atividade didática)
+### 6. Boas práticas — heurísticas não violadas (atividade didática) PAREI AQUI
 
 | Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
 |---|---|---|---|

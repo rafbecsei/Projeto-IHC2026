@@ -47,7 +47,7 @@ Em TCCs técnicos, observe especialmente se a interface comunica o estado do pro
 | Item | Definição |
 |---|---|
 | Versão avaliada | Protótipo AlertaNY — Entrega 11 (Figma) |
-| Telas/estados | F01 — Início; F02 — Busca; F02E — Região não encontrada; F03 — Consultando; F04 — Risco da região; F04A — Risco atualizado; F05 — Chuva e ocorrências; F06 — Trajeto; F06E — Destino inválido; F07 — Risco do trajeto; F09 — O que posso fazer?; F10 — Falha na consulta; F11 — Dados insuficientes; F20–F29 — telas/estados do fluxo de transporte público |
+| Telas/estados | F01 — Início; F02 — Busca; F02E — Região não encontrada; F03 — Consultando; F04 — Risco da região; F04A — Risco atualizado; F05 — Chuva e ocorrências; F06 — Trajeto; F06E — Destino não identificado; F07 — Risco ao longo do trajeto; F09 — O que posso fazer?; F10 — Falha ao obter informações na consulta; F11 — Dados insuficientes |
 | Fluxos | M01 — Planejamento de deslocamento durante chuva intensa; M02 — Prevenção de impactos no comércio durante chuva intensa; M03 — Preparação do morador durante previsão de chuva intensa; M04 — Ida para a prova de transporte público com previsão de temporal |
 | Dispositivo/viewport | Computador, interface desktop para M01, M02 e M03; fluxo M04 com telas adaptadas para dispositivos móveis, conforme o protótipo |
 | Avaliadores | Rafael Iamashita Becsei |

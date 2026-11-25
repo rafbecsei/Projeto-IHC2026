@@ -1,4 +1,4 @@
-# Entrega 13 — Avaliação de IHC por inspeção heurística
+# Entrega 13 - Avaliação de IHC por inspeção heurística
 
 **Data:** 22/11/2026  
 **Status:** 🟨 em andamento  
@@ -46,9 +46,9 @@ Em TCCs técnicos, observe especialmente se a interface comunica o estado do pro
 
 | Item | Definição |
 |---|---|
-| Versão avaliada | Protótipo AlertaNY — Entrega 11 (Figma) |
-| Telas/estados | F01 — Início; F02 — Busca; F02E — Região não encontrada; F03 — Consultando; F04 — Risco da região; F04A — Risco atualizado; F05 — Chuva e ocorrências; F06 — Trajeto; F06E — Destino não identificado; F07 — Risco ao longo do trajeto; F09 — O que posso fazer?; F10 — Falha ao obter informações na consulta; F11 — Dados insuficientes |
-| Fluxos | M01 — Planejamento de deslocamento durante chuva intensa; M02 — Prevenção de impactos no comércio durante chuva intensa; M03 — Preparação do morador durante previsão de chuva intensa; M04 — Ida para a prova de transporte público com previsão de temporal |
+| Versão avaliada | Protótipo AlertaNY - Entrega 11 (Figma) |
+| Telas/estados | F01 - Início; F02 - Busca; F02E - Região não encontrada; F03 - Consultando; F04 - Risco da região; F04A - Risco atualizado; F05 - Chuva e ocorrências; F06 - Trajeto; F06E - Destino não identificado; F07 - Risco ao longo do trajeto; F09 - O que posso fazer?; F10 - Falha ao obter informações na consulta; F11 - Dados insuficientes |
+| Fluxos | M01 - Planejamento de deslocamento durante chuva intensa; M02 - Prevenção de impactos no comércio durante chuva intensa; M03 - Preparação do morador durante previsão de chuva intensa; M04 - Ida para a prova de transporte público com previsão de temporal |
 | Dispositivo/viewport | Computador, interface desktop para M01, M02 e M03, M04 |
 | Avaliadores | Rafael Iamashita Becsei, Eric Song Watanabe, Victor Pimentel Lario |
 
@@ -76,7 +76,7 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 
 ---
 
-## Avaliador A01 — Rafael Iamashita Becsei
+## Avaliador A01 - Rafael Iamashita Becsei
 
 ### 4.1. Matriz de cobertura das 10 heurísticas
 
@@ -103,7 +103,7 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 
 **Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
 
-### 6.1. Boas práticas — heurísticas não violadas (atividade didática)
+### 6.1. Boas práticas - heurísticas não violadas (atividade didática)
 
 | Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
 |---|---|---|---|
@@ -117,6 +117,33 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 | H8 | Separação visual das informações | <img width="1866" height="1164" alt="image" src="https://github.com/user-attachments/assets/5cc1b5fa-d688-41f1-9679-0b1e9e209156" /> | A organização em áreas distintas facilita identificar o mapa, o risco principal e as informações complementares, evitando concentrar tudo em um único espaço. |
 | H9 | Estado de busca sem correspondência | <img width="2188" height="1370" alt="image" src="https://github.com/user-attachments/assets/7ef140d8-bb95-4944-aad6-b895de06e8c6" /> | O usuário recebe retorno de que a região não foi encontrada e pode seguir alternativas para corrigir ou continuar a consulta. |
 | H10 | Explicações e orientações contextualizadas | <img width="1950" height="1214" alt="image" src="https://github.com/user-attachments/assets/44cd3b4b-e394-4cad-926d-632876891916" /> | O protótipo oferece explicações sobre o significado do risco, contexto meteorológico, ocorrências e orientações, auxiliando o usuário na compreensão das informações. |
+
+## Avaliador A03 - Eric Song Watanabe
+
+### 4.3. Matriz de cobertura das 10 heurísticas
+
+| Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
+|---|---|---|---|---|
+| H1 - Visibilidade do status do sistema | Todas as telas | sim | V01 | - |
+| H2 - Compatibilidade entre sistema e mundo real | Todas as telas | não | - | A interface utiliza termos compreensíveis como baixo, moderado e alto, além de explicar chuva, ocorrências e significado do risco em linguagem próxima do cotidiano do usuário. |
+| H3 - Controle e liberdade do usuário | Todas as telas | não | - | O usuário pode cancelar uma consulta em processamento, voltar à tela anterior, realizar uma nova consulta, editar o trajeto e encerrar consultas quando necessário. |
+| H4 - Consistência e padrões | Todas as telas | sim | V02 | - |
+| H5 - Prevenção de erros | Todas as telas | sim | V03 | - |
+| H6 - Reconhecimento em vez de lembrança | Todas as telas | não | - | Região consultada, período, nível de risco, localização atual e demais informações relevantes permanecem visíveis, reduzindo a necessidade de o usuário memorizar informações de telas anteriores. |
+| H7 - Flexibilidade e eficiência de uso | Todas as telas | não | - | O usuário pode consultar uma região por busca ou diretamente pelo mapa e pode alternar entre consulta por região e por trajeto, oferecendo caminhos diferentes para atingir objetivos semelhantes. |
+| H8 - Projeto estético e minimalista | Todas as telas | não | - | As informações são agrupadas em blocos claros e separados, e detalhes adicionais, como chuva e ocorrências, ficam disponíveis em uma tela específica em vez de sobrecarregar a tela principal. |
+| H9 - Ajudar a reconhecer, diagnosticar e recuperar erros | F09, F10 e fluxos de consulta | não | - | Em F09, o sistema explica que houve falha na obtenção dos dados, informa que nenhum nível incorreto foi exibido e oferece “Tentar novamente”. Em F10, explica a falta de dados e oferece alternativas para continuar. |
+| H10 - Ajuda e documentação | Todas as telas, especialmente F04, F05 e F08 | não | - | A interface oferece ajuda contextual, como explicação do significado do risco, seção “Como ler”, informações complementares e a tela “O que posso fazer?” com orientações relacionadas à situação. |
+
+### 5.3. Declaração de violações
+
+| ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
+|---|---|---|---|---|---:|---|---|
+| V01 | H1 - Visibilidade do status do sistema | F01 | Na mesma tela aparecem as expressões “MONITORAMENTO AO VIVO” e “DADOS DEMONSTRATIVOS”. Isso pode gerar dúvida sobre se as informações apresentadas representam dados realmente atuais ou apenas dados de demonstração. | ![print](../assets/13_heuristica/v01_A03.svg) | 2 | O problema pode causar confusão sobre a confiabilidade e atualidade das informações apresentadas, mas não impede diretamente a realização da consulta. | Deixar explícito se os dados são demonstrativos ou reais e evitar utilizar simultaneamente expressões que transmitam ideias conflitantes sobre a atualização das informações. |
+| V02 | H4 - Consistência e padrões | F09 e F10 | A ação de encerrar a consulta é apresentada com nomenclaturas diferentes. Em F09 o botão aparece como “Encerrar consulta”, enquanto em F10 aparece apenas como “Encerrar”. | ![print](../assets/13_heuristica/v02_A03.svg) | 1 | A inconsistência é pequena e não impede a execução da tarefa, mas pode gerar uma leve dúvida sobre se as duas opções representam exatamente a mesma ação. | Utilizar a mesma nomenclatura para essa ação em todas as telas, preferencialmente “Encerrar consulta”. |
+| V03 | H5 - Prevenção de erros | F06 | O usuário digitou “Lappa” no campo de destino e o sistema apresenta “Lapa” como opção reconhecida, porém o botão “Consultar trajeto” já aparece habilitado antes que o usuário selecione uma opção válida. Isso pode permitir o envio de uma entrada ainda não validada. | ![print](../assets/13_heuristica/v03_A03.svg) | 3 | O problema pode levar o usuário a iniciar uma consulta com um destino inválido ou incorreto, causando erro na consulta ou resultado diferente do esperado. | Manter o botão “Consultar trajeto” desabilitado até que o usuário selecione uma região reconhecida ou validar automaticamente a entrada antes de permitir o avanço. |
+
+**Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
 
 > Repita a seção para A02, A03... um avaliador por integrante.
 

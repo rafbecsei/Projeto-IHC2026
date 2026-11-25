@@ -30,6 +30,7 @@ O fluxograma deve representar, no mínimo: planejamento → recrutamento → con
 | ID | Perfil | Critérios que justificam participação | Integrante responsável |
 |---|---|---|---|
 | U01 | Estudante universitária que se desloca diariamente | Se desloca todos os dias, usa apps de clima/mapa, mas com pouca frequência, e já passou por alagamento. Perfil compatível com a persona P01. Não integra a equipe e não conhecia o protótipo. | Henrique Babler |
+| U02 | Estudante de cursinho, com deslocamentos curtos e pouca exposição a alagamentos | Realiza deslocamentos frequentes, geralmente em trajetos curtos feitos a pé ou de carro. Utiliza pouco aplicativos de clima e possui pouca experiência com situações de alagamento. Não integra a equipe e não conhecia o protótipo antes do teste. | Eric Song Watanabe |
 
 
 ### Passo 3 — Consentimento e privacidade
@@ -41,9 +42,9 @@ O fluxograma deve representar, no mínimo: planejamento → recrutamento → con
 
 ### Passo 4 — Teste piloto
 
-**Data:** {{...}}  
-**O que foi validado:** roteiro, duração, entendimento das instruções, protótipo, gravação.  
-**Mudanças após piloto:** {{...}}
+**Data:** 25/11/2026  
+**O que foi validado:** clareza do roteiro, entendimento das instruções, sequência das tarefas, funcionamento do protótipo e forma de registro das observações e dos tempos.  
+**Mudanças após piloto:** não foram necessárias alterações relevantes. O roteiro e as tarefas foram considerados compreensíveis e adequados para a aplicação com os participantes finais.
 
 ### Passo 5 — Tarefas
 
@@ -56,15 +57,14 @@ O fluxograma deve representar, no mínimo: planejamento → recrutamento → con
 
 ### Passo 6 — Protocolo do moderador
 
-1. Receber participante e explicar que **o produto está sendo avaliado, não a pessoa**.
-2. Obter consentimento.
-3. Aplicar perfil pré-teste mínimo necessário.
-4. Ler instruções padronizadas.
-5. Observar sem ensinar o caminho; registrar pedidos de ajuda separadamente.
-6. Se usar *think aloud*, explicar e aplicar de forma consistente.
-7. Após cada tarefa, registrar satisfação/SEQ ou escala definida.
-8. Fazer pós-teste/entrevista breve.
-9. Encerrar e explicar uso dos dados.
+1. Receber o participante e explicar que **o produto está sendo avaliado, não a pessoa**.
+2. Obter o consentimento do participante.
+3. Aplicar o perfil pré-teste mínimo necessário.
+4. Ler as instruções padronizadas de cada tarefa.
+5. Observar sem ensinar o caminho e registrar separadamente eventuais pedidos de ajuda.
+6. Após cada tarefa, registrar o grau de satisfação em escala de 1 a 5.
+7. Realizar uma breve entrevista pós-teste.
+8. Encerrar a sessão e explicar como os dados serão utilizados.
 
 ## C. Resultados — por participante
 
@@ -86,15 +86,18 @@ O fluxograma deve representar, no mínimo: planejamento → recrutamento → con
 **Link da gravação (se autorizado):** não se aplica (sessão sem gravação)  
 **Resposta pós-teste:** a participante disse que as informações estavam claras e não apontou dificuldades nem sugestões relevantes. Deu nota 4 de 5 para a facilidade de uso.
 
-### U02 — {{perfil resumido}}
+### U02 — Estudante de cursinho, com deslocamentos curtos e pouca exposição a alagamentos
 
 **Data:** 25/11/2026  **Modalidade:** pessoalmente (mesmo ambiente)  **Dispositivo:** computador com navegador  **Gravação:** não
 
-**Perfil pré-teste:** 
+**Perfil pré-teste:** estudante de cursinho que realiza deslocamentos frequentes, geralmente em trajetos curtos feitos a pé ou de carro. Utiliza pouco aplicativos de clima e tem pouca experiência com situações de alagamento no dia a dia.
 
 | Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
-|---|---|---:|---|---:|---|---|---|
-| UT01 | {{...}} | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{1–5}} | {{...}} |
+|---|---|---:|---|---:|---|---:|---|
+| UT01 | total | 0 | nenhum observado | 0 | 00:09,15 | 5 | Concluiu a consulta da região rapidamente, sem hesitação, erros ou necessidade de ajuda. Demonstrou compreender com facilidade o caminho necessário para realizar a consulta. |
+| UT02 | total | 0 | nenhum observado | 0 | 00:07,76 | 5 | Localizou e consultou outra região sem dificuldade, erros ou necessidade de ajuda. Realizou a tarefa de forma direta e com segurança. |
+| UT03 | total | 0 | nenhum observado | 0 | 00:18,91 | 5 | Conseguiu interpretar corretamente as informações apresentadas e explicar a situação com suas próprias palavras, sem confundir a estimativa de risco com uma ocorrência confirmada de alagamento. |
+| UT04 | total | 0 | dificuldade leve de localização das informações complementares | 0 | 01:03,21 | 4 | Encontrou as informações complementares e conseguiu compreender seu conteúdo sem ajuda. Entretanto, precisou navegar por várias telas e explorar diferentes opções até localizar todas as informações adicionais, o que aumentou consideravelmente o tempo de execução em comparação com as demais tarefas. |
 
 ### U03 — {{perfil resumido}}
 
@@ -114,10 +117,10 @@ O fluxograma deve representar, no mínimo: planejamento → recrutamento → con
 
 | Tarefa | Taxa de sucesso | Tempo típico | Erros recorrentes | Satisfação | Meta atendida? | Problemas prioritários |
 |---|---:|---|---|---|---|---|
-| UT01 | 1/1 (100%) | < 30 s | nenhum | 4 | sim (MU01, MU02) — parcial | nenhum até o momento |
-| UT02 | 1/1 (100%) | < 30 s | nenhum | 4 | sim (MU01, MU02) — parcial | nenhum até o momento |
-| UT03 | 1/1 (100%) | < 30 s | nenhum | 4 | sim (MU03, MU07) — parcial | nenhum até o momento |
-| UT04 | 1/1 (100%) | < 30 s | nenhum | 4 | sim (MU01, MU02) — parcial | nenhum até o momento |
+| UT01 | 2/2 (100%) | < 30 s | nenhum | 4–5 | sim (MU01, MU02) — parcial | nenhum até o momento |
+| UT02 | 2/2 (100%) | < 30 s | nenhum | 4–5 | sim (MU01, MU02) — parcial | nenhum até o momento |
+| UT03 | 2/2 (100%) | < 30 s | nenhum | 4–5 | sim (MU03, MU07) — parcial | nenhum até o momento |
+| UT04 | 2/2 (100%) | variável; U02 levou 01:03,21 | nenhum erro recorrente | 4 | sim (MU01, MU02) — parcial | localização das informações complementares pode exigir maior exploração |
 
 **Satisfação geral (MU06, meta ≥ 4,0):** 4,0 com U01. Atende à meta, mas no limite.
 
@@ -125,14 +128,18 @@ O fluxograma deve representar, no mínimo: planejamento → recrutamento → con
 
 | ID | Achado | Evidência (quant. + qual.) | Impacto | Recomendação | Artefatos a revisar |
 |---|---|---|---|---|---|
-| AU01 | O fluxo de consulta de risco (T01) foi concluído sem erros nem ajuda | U01: 4/4 tarefas com sucesso total, todas em menos de 30 s, 0 erros, 0 ajudas | Positivo: indica que o fluxo principal está claro para o perfil P01 | Manter a estrutura do fluxo e confirmar com U02–U04 | — |
-| AU02 | A satisfação ficou exatamente no limite da meta | U01 deu nota 4/5, mas não citou dificuldades | Baixo: precisa ser confirmado com mais participantes | Na pós-entrevista dos próximos participantes, perguntar o que faltou para a nota máxima | Roteiro de teste (pós-tarefa) |
+| AU01 | O fluxo principal de consulta de risco foi concluído sem erros nem ajuda pelos dois participantes | U01 e U02 concluíram 4/4 tarefas com sucesso total, 0 erros e 0 ajudas | Positivo: até o momento, o fluxo principal mostrou-se compreensível para dois perfis diferentes | Manter a estrutura do fluxo e confirmar o resultado com U03 e U04 | — |
+| AU02 | A satisfação permaneceu igual ou superior à meta definida | U01 deu nota geral 4/5. U02 deu notas 5/5 em UT01–UT03 e 4/5 em UT04 | Positivo: os participantes consideraram o sistema fácil de utilizar, embora o resultado ainda seja parcial | Confirmar a satisfação com U03 e U04 e investigar eventuais notas inferiores a 5 | Roteiro de pós-teste |
+| AU03 | A localização das informações complementares exigiu maior exploração para U02 | U02 concluiu UT04 com sucesso, sem erros ou ajuda, mas levou 01:03,21 e precisou navegar por várias telas para localizar as informações adicionais | Médio: não impediu a conclusão da tarefa, mas indica menor eficiência nesse trecho do fluxo | Avaliar se as informações complementares podem ficar mais visíveis ou ser acessadas de forma mais direta | Protótipo / fluxo T01 |
+
 
 ## F. Comparação com a avaliação heurística
 
 | Problema | Detectado na heurística? | Detectado por usuários? | O que aprendemos |
 |---|---|---|---|
-| {{problemas da Entrega 13, ex.: violações de H1}} | sim | não (U01) | Com U01, os problemas apontados na inspeção não impediram nenhuma tarefa. Ainda falta confirmar com os demais participantes. |
+| H1 — possível dúvida entre “MONITORAMENTO AO VIVO” e “DADOS DEMONSTRATIVOS” | sim | não (U01 e U02) | Até o momento, a inconsistência identificada na inspeção não impediu a realização das tarefas nem foi mencionada espontaneamente pelos participantes. |
+| H4 — nomenclatura diferente entre “Encerrar consulta” e “Encerrar” | sim | não (U01 e U02) | A diferença de nomenclatura não gerou dificuldade observável durante as sessões realizadas, mas continua sendo uma inconsistência da interface. |
+| H5 — possibilidade de consultar antes da validação completa de um destino | sim | não (U01 e U02) | Nenhum dos dois participantes encontrou esse problema durante as tarefas. A violação continua válida como problema potencial identificado pela inspeção, mesmo sem ter aparecido nas sessões realizadas até o momento. |
 
 ## G. Conclusão
 

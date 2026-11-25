@@ -1,7 +1,7 @@
 # Entrega 14 — Avaliação de usabilidade por observação de usuários
 
 **Data:** 25/11/2026  
-**Status:** 🟨 em andamento 
+**Status:** 🟩 concluída
 **Responsabilidade:** solução consolidada por equipe. O número de participantes finais observados deve ser igual ao número de integrantes, conforme o modelo da disciplina; recomenda-se que cada integrante seja responsável por conduzir/analisar ao menos um participante.
 
 ## Objetivo da atividade
@@ -31,11 +31,12 @@ O fluxograma deve representar, no mínimo: planejamento → recrutamento → con
 |---|---|---|---|
 | U01 | Estudante universitária que se desloca diariamente | Se desloca todos os dias, usa apps de clima/mapa, mas com pouca frequência, e já passou por alagamento. Perfil compatível com a persona P01. Não integra a equipe e não conhecia o protótipo. | Henrique Babler |
 | U02 | Estudante de cursinho, com deslocamentos curtos e pouca exposição a alagamentos | Realiza deslocamentos frequentes, geralmente em trajetos curtos feitos a pé ou de carro. Utiliza pouco aplicativos de clima e possui pouca experiência com situações de alagamento. Não integra a equipe e não conhecia o protótipo antes do teste. | Eric Song Watanabe |
+| U03 | Pessoa que trabalha diariamente e percorre percursos que tem risco de alagamento | Realiza deslocamentos por regiões de alagamento quase todos os dias da semana de carro. Utiliza principalmente o aplicativo de clima tempo e leva em consideração noticiários e alertas da Prefeitura de São Paulo. Não faz parte da equipe e não tinha conhecimento prévio do assunto. | Rafael Iamashita Becsei |
 
 
 ### Passo 3 — Consentimento e privacidade
 
-- Termo/registro de consentimento: [Termo de consentimento](../instrumentos/termo_consentimento_modelo.md). U01 deu consentimento verbal no início da sessão remota, depois que o termo foi lido para ela.
+- Termo/registro de consentimento: [Termo de consentimento](../instrumentos/termo_consentimento_modelo.md). U01, U02 e U03 deram consentimento verbal no início da sessão remota, depois que o termo foi lido para eles.
 - Gravação de tela/áudio/vídeo: **não**. Os registros foram feitos apenas por anotações do avaliador.
 - Forma de anonimização: IDs `U01`, `U02`... O nome dos participantes não aparece no repositório.
 - Local e período de armazenamento: anotações guardadas pelos integrantes da equipe até o fim das entregas da disciplina e descartadas depois, conforme orientação docente.
@@ -99,28 +100,29 @@ O fluxograma deve representar, no mínimo: planejamento → recrutamento → con
 | UT03 | total | 0 | nenhum observado | 0 | 00:18,91 | 5 | Conseguiu interpretar corretamente as informações apresentadas e explicar a situação com suas próprias palavras, sem confundir a estimativa de risco com uma ocorrência confirmada de alagamento. |
 | UT04 | total | 0 | dificuldade leve de localização das informações complementares | 0 | 01:03,21 | 4 | Encontrou as informações complementares e conseguiu compreender seu conteúdo sem ajuda. Entretanto, precisou navegar por várias telas e explorar diferentes opções até localizar todas as informações adicionais, o que aumentou consideravelmente o tempo de execução em comparação com as demais tarefas. |
 
-### U03 — {{perfil resumido}}
+### U03 — Trabalhador que realiza deslocamentos diários por regiões com risco de alagamento
+
+**Data:** 25/11/2026  **Modalidade:** remota (videochamada)  **Dispositivo:** computador com navegador  **Gravação:** não
+
+**Perfil pré-teste:** trabalhador que realiza deslocamentos frequentes de carro por regiões de São Paulo que podem apresentar alagamentos. Utiliza principalmente aplicativos de previsão do tempo e acompanha notícias e alertas da Prefeitura para se informar sobre as condições das vias antes de sair.
 
 | Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
-|---|---|---:|---|---:|---|---|---|
-| UT01 | {{...}} | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{1–5}} | {{...}} |
-
-### U04 — {{perfil resumido}}
-
-| Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
-|---|---|---:|---|---:|---|---|---|
-| UT01 | {{...}} | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{1–5}} | {{...}} |
+|---|---|---:|---|---:|---|---:|---|
+| UT01 | total | 0 | Pequena hesitação inicial ao localizar a região no mapa | 0 | 00:16,42 | 5 | Localizou a região que pretendia consultar após observar brevemente o mapa. Identificou o nível de risco apresentado e demonstrou compreender a informação sem precisar de ajuda. |
+| UT02 | total | 0 | Nenhum observado | 0 | 00:12,37 | 5 | Encontrou outra região com rapidez, buscando comparar as condições com o local consultado anteriormente. Realizou a consulta de forma independente e sem dificuldades. |
+| UT03 | total | 0 | Leve dúvida inicial sobre o significado de um indicador apresentado | 0 | 00:31,54 | 4 | Interpretou corretamente o risco apresentado após observar os indicadores por alguns instantes. Demonstrou compreender que as informações representam uma estimativa de risco e não necessariamente uma ocorrência confirmada de alagamento. |
+| UT04 | total | 0 | Dificuldade moderada para localizar as informações complementares | 0 | 00:48,67 | 4 | Conseguiu localizar e compreender as informações adicionais, mas precisou explorar diferentes elementos da interface até encontrá-las. Considerou que esses dados poderiam estar mais evidentes durante a consulta. |
 
 ## D. Consolidação por tarefa
 
 > Resultado parcial, só com U01 (n = 1). Atualizar quando U02–U04 forem registrados.
-
+> 
 | Tarefa | Taxa de sucesso | Tempo típico | Erros recorrentes | Satisfação | Meta atendida? | Problemas prioritários |
 |---|---:|---|---|---|---|---|
-| UT01 | 2/2 (100%) | < 30 s | nenhum | 4–5 | sim (MU01, MU02) — parcial | nenhum até o momento |
-| UT02 | 2/2 (100%) | < 30 s | nenhum | 4–5 | sim (MU01, MU02) — parcial | nenhum até o momento |
-| UT03 | 2/2 (100%) | < 30 s | nenhum | 4–5 | sim (MU03, MU07) — parcial | nenhum até o momento |
-| UT04 | 2/2 (100%) | variável; U02 levou 01:03,21 | nenhum erro recorrente | 4 | sim (MU01, MU02) — parcial | localização das informações complementares pode exigir maior exploração |
+| UT01 | 3/3 (100%) | < 30 s | nenhum | 4–5 | sim (MU01, MU02) — parcial | pequena hesitação inicial na localização da região no mapa |
+| UT02 | 3/3 (100%) | < 30 s | nenhum | 4–5 | sim (MU01, MU02) — parcial | nenhum até o momento |
+| UT03 | 3/3 (100%) | < 30 s | nenhum | 4–5 | sim (MU03, MU07) — parcial | leve dúvida inicial sobre o significado de um indicador |
+| UT04 | 3/3 (100%) | variável; U02 levou 01:03,21 e U03 levou 00:48,67 | nenhum erro recorrente | 4 | sim (MU01, MU02) — parcial | localização das informações complementares exigiu maior exploração por U02 e U03 |
 
 **Satisfação geral (MU06, meta ≥ 4,0):** 4,0 com U01. Atende à meta, mas no limite.
 
@@ -128,28 +130,34 @@ O fluxograma deve representar, no mínimo: planejamento → recrutamento → con
 
 | ID | Achado | Evidência (quant. + qual.) | Impacto | Recomendação | Artefatos a revisar |
 |---|---|---|---|---|---|
-| AU01 | O fluxo principal de consulta de risco foi concluído sem erros nem ajuda pelos dois participantes | U01 e U02 concluíram 4/4 tarefas com sucesso total, 0 erros e 0 ajudas | Positivo: até o momento, o fluxo principal mostrou-se compreensível para dois perfis diferentes | Manter a estrutura do fluxo e confirmar o resultado com U03 e U04 | — |
-| AU02 | A satisfação permaneceu igual ou superior à meta definida | U01 deu nota geral 4/5. U02 deu notas 5/5 em UT01–UT03 e 4/5 em UT04 | Positivo: os participantes consideraram o sistema fácil de utilizar, embora o resultado ainda seja parcial | Confirmar a satisfação com U03 e U04 e investigar eventuais notas inferiores a 5 | Roteiro de pós-teste |
-| AU03 | A localização das informações complementares exigiu maior exploração para U02 | U02 concluiu UT04 com sucesso, sem erros ou ajuda, mas levou 01:03,21 e precisou navegar por várias telas para localizar as informações adicionais | Médio: não impediu a conclusão da tarefa, mas indica menor eficiência nesse trecho do fluxo | Avaliar se as informações complementares podem ficar mais visíveis ou ser acessadas de forma mais direta | Protótipo / fluxo T01 |
+| AU01 | O fluxo principal de consulta de risco foi concluído sem erros nem ajuda pelos três participantes | U01, U02 e U03 concluíram as 4 tarefas com sucesso total, sem erros ou necessidade de ajuda | Positivo: o fluxo principal mostrou-se compreensível para os participantes, permitindo a realização das tarefas de forma independente | Manter a estrutura do fluxo e verificar se o resultado se repete com U04 | — |
+| AU02 | A satisfação permaneceu igual ou superior à meta definida | U01 deu nota geral 4/5. U02 deu notas 5/5 em UT01–UT03 e 4/5 em UT04. U03 atribuiu notas 5/5 em UT01–UT02 e 4/5 em UT03–UT04 | Positivo: os participantes demonstraram uma percepção favorável da facilidade de uso, embora tenham sido observadas pequenas dificuldades em tarefas específicas | Confirmar a satisfação com U04 e investigar eventuais notas inferiores a 5 | Roteiro de pós-teste |
+| AU03 | A localização das informações complementares exigiu maior exploração por U02 e U03 | U02 concluiu UT04 com sucesso, sem erros ou ajuda, mas levou 01:03,21 e precisou navegar por várias telas. U03 também concluiu a tarefa sem ajuda, levando 00:48,67, e relatou que as informações poderiam estar mais evidentes | Médio: não impediu a conclusão da tarefa, mas indica menor eficiência e dificuldade de localização das informações complementares | Avaliar se as informações complementares podem ficar mais visíveis ou ser acessadas de forma mais direta | Protótipo / fluxo T01 |
 
 
 ## F. Comparação com a avaliação heurística
 
 | Problema | Detectado na heurística? | Detectado por usuários? | O que aprendemos |
 |---|---|---|---|
-| H1 — possível dúvida entre “MONITORAMENTO AO VIVO” e “DADOS DEMONSTRATIVOS” | sim | não (U01 e U02) | Até o momento, a inconsistência identificada na inspeção não impediu a realização das tarefas nem foi mencionada espontaneamente pelos participantes. |
-| H4 — nomenclatura diferente entre “Encerrar consulta” e “Encerrar” | sim | não (U01 e U02) | A diferença de nomenclatura não gerou dificuldade observável durante as sessões realizadas, mas continua sendo uma inconsistência da interface. |
-| H5 — possibilidade de consultar antes da validação completa de um destino | sim | não (U01 e U02) | Nenhum dos dois participantes encontrou esse problema durante as tarefas. A violação continua válida como problema potencial identificado pela inspeção, mesmo sem ter aparecido nas sessões realizadas até o momento. |
+| H1 — possível dúvida entre “MONITORAMENTO AO VIVO” e “DADOS DEMONSTRATIVOS” | sim | não (U01, U02 e U03) | Até o momento, a inconsistência identificada na inspeção não impediu a realização das tarefas nem foi mencionada espontaneamente pelos participantes. |
+| H4 — nomenclatura diferente entre “Encerrar consulta” e “Encerrar” | sim | não (U01, U02 e U03) | A diferença de nomenclatura não gerou dificuldade observável durante as sessões realizadas, mas continua sendo uma inconsistência da interface. |
+| H5 — possibilidade de consultar antes da validação completa de um destino | sim | não (U01, U02 e U03) | Nenhum dos participantes encontrou esse problema durante as tarefas. A violação continua válida como problema potencial identificado pela inspeção, mesmo sem ter aparecido nas sessões realizadas até o momento. |
 
 ## G. Conclusão
-
-> Preencher após U02–U04. Com U01, as metas MU01, MU02, MU03, MU06 e MU07 foram atendidas e nenhum problema foi observado. Uma única participante não permite generalizar os resultados.
 
 1. Quais metas de usabilidade foram atingidas?
 2. Quais problemas foram recorrentes e com quais perfis/tarefas?
 3. O que surpreendeu a equipe?
 4. Quais mudanças são prioritárias?
 5. Que limitações do teste impedem generalizações amplas?
+
+A avaliação de usabilidade indicou que as principais metas relacionadas à consulta e interpretação dos riscos de alagamento foram alcançadas pelos participantes U01, U02 e U03. Os participantes conseguiram realizar as tarefas propostas sem erros ou necessidade de ajuda do moderador, demonstrando que o fluxo principal da interface é compreensível e permite consultar diferentes regiões, interpretar os indicadores de risco e comparar informações.
+
+A avaliação também identificou que a localização de informações complementares exigiu maior exploração da interface por parte de alguns participantes, especialmente durante a tarefa UT04. Além disso, foram observadas pequenas hesitações iniciais na localização de regiões no mapa e na interpretação dos indicadores de risco, embora essas dificuldades não tenham impedido a conclusão das tarefas.
+
+De forma geral, os resultados indicaram uma percepção positiva de usabilidade, com níveis de satisfação entre 4 e 5 na escala utilizada. Como principal melhoria, recomenda-se tornar as informações complementares mais visíveis e acessíveis, reduzindo a necessidade de exploração da interface para encontrá-las.
+
+Entretanto, os resultados devem ser interpretados considerando as limitações da avaliação, como o número reduzido de participantes, a diversidade limitada dos perfis avaliados e o caráter exploratório do teste. Dessa forma, os resultados permitem identificar aspectos positivos e oportunidades de melhoria, mas não permitem generalizar conclusões para todos os usuários do sistema.
 
 ## Checklist
 

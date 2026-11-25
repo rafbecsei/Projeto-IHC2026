@@ -1,5 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360">
-<rect width="100%" height="100%" fill="#f6f8fa" stroke="#8c959f" stroke-width="4"/>
-<text x="480" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#24292f">PLACEHOLDER DE ARTEFATO</text>
-<text x="480" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#57606a">Substitua este arquivo pela evidência real da equipe.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="360" viewBox="0 0 1600 360">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#222"/>
+    </marker>
+    <style>
+      .box { fill:#fff; stroke:#222; stroke-width:2; }
+      .txt { font-family: Arial, sans-serif; font-size: 24px; fill:#111; text-anchor:middle; dominant-baseline:middle; }
+      .arrow { stroke:#222; stroke-width:3; fill:none; marker-end:url(#arrow); }
+    </style>
+  </defs>
+
+  <rect class="box" x="30" y="120" width="170" height="90" rx="18"/>
+  <text class="txt" x="115" y="165">Planejamento</text>
+  <line class="arrow" x1="200" y1="165" x2="250" y2="165"/>
+
+  <rect class="box" x="250" y="120" width="170" height="90" rx="18"/>
+  <text class="txt" x="335" y="165">Recrutamento</text>
+  <line class="arrow" x1="420" y1="165" x2="470" y2="165"/>
+
+  <rect class="box" x="470" y="120" width="170" height="90" rx="18"/>
+  <text class="txt" x="555" y="165">Consentimento</text>
+  <line class="arrow" x1="640" y1="165" x2="690" y2="165"/>
+
+  <rect class="box" x="690" y="120" width="170" height="90" rx="18"/>
+  <text class="txt" x="775" y="165">Preparação</text>
+  <line class="arrow" x1="860" y1="165" x2="910" y2="165"/>
+
+  <rect class="box" x="910" y="95" width="230" height="140" rx="18"/>
+  <text class="txt" x="1025" y="145">Execução das</text>
+  <text class="txt" x="1025" y="180">tarefas /</text>
+  <text class="txt" x="1025" y="215">observação</text>
+  <line class="arrow" x1="1140" y1="165" x2="1190" y2="165"/>
+
+  <rect class="box" x="1190" y="120" width="150" height="90" rx="18"/>
+  <text class="txt" x="1265" y="165">Pós-teste</text>
+
+  <path class="arrow" d="M1340 165 H1390 V290 H1020"/>
+
+  <rect class="box" x="790" y="245" width="230" height="90" rx="18"/>
+  <text class="txt" x="905" y="278">Consolidação /</text>
+  <text class="txt" x="905" y="307">análise</text>
+
+  <line class="arrow" x1="790" y1="290" x2="740" y2="290"/>
+
+  <rect class="box" x="510" y="245" width="230" height="90" rx="18"/>
+  <text class="txt" x="625" y="290">Recomendações</text>
 </svg>

@@ -238,23 +238,23 @@ Problemas iguais ou muito semelhantes encontrados por avaliadores diferentes dev
 
 | ID consolidado | Achados individuais | Heurística | Problema | Severidade final | Prioridade | Responsável pela correção |
 |---|---|---|---|---:|---|---|
-| HC01 | V01(A02) | H4 | Os dados de chuva se contradizem: F04 diz "até 28 mm/h às 17h", mas o gráfico de F05 mostra 24 mm/h às 17h e o pico de 28 mm/h às 18h. Isso induz o usuário a errar o horário de pico | 3 | alta | {{...}} |
-| HC02 | V04(A04) | H1 | "Ver orientações gerais" (F11, Parelheiros) e a aba "Segurança" sem consulta ativa abrem "Orientações para Lapa · Risco Alto", uma região que o usuário não consultou | 3 | alta | {{...}} |
-| HC03 | V05(A04) | H1 | Depois de simular a saída às 18:00 (risco Alto) em F23, as telas F28 e F29 voltam a mostrar "17:00 · Moderado". O usuário decide com o horário e o risco errados | 3 | alta | {{...}} |
-| HC04 | V02(A02) | H10 | As orientações e os telefones de emergência (F09) só podem ser acessados a partir do resultado por região (F04). Não há atalho no trajeto em risco alto (F07) nem na linha de ônibus em risco alto (F23) | 3 | alta | {{...}} |
-| HC05 | V03(A01), V03(A04) | H10 | Não há tour inicial para quem acessa pela primeira vez nem uma área de ajuda ou guia, no desktop (F01) e no celular (F20) | 3 | alta | {{...}} |
-| HC06 | V03(A03) | H5 | O botão "Consultar trajeto" fica habilitado antes de o usuário escolher um destino reconhecido (ex.: "Lappa" → "Lapa"), permitindo enviar uma entrada não validada (F06) | 3 | alta | {{...}} |
-| HC07 | V01(A03) | H1 | "MONITORAMENTO AO VIVO" e "DADOS DEMONSTRATIVOS" aparecem juntos, gerando dúvida sobre a atualidade dos dados (F01) | 2 | média | {{...}} |
-| HC08 | V06(A04) | H1 | F04 mostra Lapa com risco Alto às 17:26, mas ao clicar em "Atualizar", F04A diz que o risco "era moderado às 16:50", o que contradiz o que o usuário acabou de ver | 2 | média | {{...}} |
-| HC09 | V02(A01), V02(A04) | H9 | Quando faltam dados para estimar o risco (F11), a tela não diz onde buscar informação confiável, e "Ver orientações gerais" leva às orientações de outra região (ver HC02) | 2 | média | {{...}} |
-| HC10 | V03(A02), V08(A04) | H9/H5 | Um texto parcial que gera sugestões vira erro ao buscar: "Lap" sugere Lapa, mas F02E diz que a região não foi encontrada; "862" sugere a linha 8622-10 e um ponto, mas F21E diz que nada corresponde e que a linha tem 4 dígitos | 2 | média | {{...}} |
-| HC11 | V04(A02), V11(A04) | H8 | A legenda "Nível de risco" cobre parcialmente o pino da região consultada no extremo sul do mapa (F11 — Parelheiros) | 2 | média | {{...}} |
-| HC12 | V09(A04) | H6 | "Comparar linhas" (F25) mostra as duas linhas com o mesmo rótulo e texto, sem dados que as diferenciem; o usuário precisa lembrar o que viu antes | 2 | média | {{...}} |
-| HC13 | V01(A01), V01(A04) | H4 | O botão "Consultar outra região" muda de cor (azul) e de posição (esquerda) em F11, enquanto em F04 e F04A é branco e fica à direita | 2 | média | {{...}} |
-| HC14 | V02(A03) | H4 | A mesma ação aparece como "Encerrar consulta" em uma tela e só "Encerrar" em outra (telas de falha/dados insuficientes) | 1 | baixa | {{...}} |
-| HC15 | V07(A04) | H4 | As opções de horário mudam entre F22 (17:00, 17:30, 18:00) e F27 (16:30, 17:00, 18:00), e a dica "Formato hh:mm" sugere um campo de digitação que não existe | 1 | baixa | {{...}} |
-| HC16 | V10(A04) | H8 | Ícones sobrepostos ao texto em F06 ("Informe origem e destino…"), F23 ("Atualizado às 17:00") e F24 ("Chuva prevista") | 1 | baixa | {{...}} |
-| HC17 | V12(A04) | H8 | As opções de F28 ("Manter a linha e o horário", "Antecipar a saída", "Usar outra linha ou modal") não têm efeito: dá para concluir sem escolher, e F29 não menciona a escolha | 1 | baixa | {{...}} |
+| HC01 | V01(A02) | H4 | Os dados de chuva se contradizem: F04 diz "até 28 mm/h às 17h", mas o gráfico de F05 mostra 24 mm/h às 17h e o pico de 28 mm/h às 18h. Isso induz o usuário a errar o horário de pico | 3 | alta | Victor Pimentel Lario |
+| HC02 | V04(A04) | H1 | "Ver orientações gerais" (F11, Parelheiros) e a aba "Segurança" sem consulta ativa abrem "Orientações para Lapa · Risco Alto", uma região que o usuário não consultou | 3 | alta | Henrique Hodel Babler |
+| HC03 | V05(A04) | H1 | Depois de simular a saída às 18:00 (risco Alto) em F23, as telas F28 e F29 voltam a mostrar "17:00 · Moderado". O usuário decide com o horário e o risco errados | 3 | alta | Eric Song Watanabe |
+| HC04 | V02(A02) | H10 | As orientações e os telefones de emergência (F09) só podem ser acessados a partir do resultado por região (F04). Não há atalho no trajeto em risco alto (F07) nem na linha de ônibus em risco alto (F23) | 3 | alta | Rafael Iamashita Becsei |
+| HC05 | V03(A01), V03(A04) | H10 | Não há tour inicial para quem acessa pela primeira vez nem uma área de ajuda ou guia, no desktop (F01) e no celular (F20) | 3 | alta | Victor Pimentel Lario |
+| HC06 | V03(A03) | H5 | O botão "Consultar trajeto" fica habilitado antes de o usuário escolher um destino reconhecido (ex.: "Lappa" → "Lapa"), permitindo enviar uma entrada não validada (F06) | 3 | alta | Eric Song Watanabe |
+| HC07 | V01(A03) | H1 | "MONITORAMENTO AO VIVO" e "DADOS DEMONSTRATIVOS" aparecem juntos, gerando dúvida sobre a atualidade dos dados (F01) | 2 | média | Rafael Iamashita Becsei |
+| HC08 | V06(A04) | H1 | F04 mostra Lapa com risco Alto às 17:26, mas ao clicar em "Atualizar", F04A diz que o risco "era moderado às 16:50", o que contradiz o que o usuário acabou de ver | 2 | média | Victor Pimentel Lario |
+| HC09 | V02(A01), V02(A04) | H9 | Quando faltam dados para estimar o risco (F11), a tela não diz onde buscar informação confiável, e "Ver orientações gerais" leva às orientações de outra região (ver HC02) | 2 | média | Henrique Hodel Babler |
+| HC10 | V03(A02), V08(A04) | H9/H5 | Um texto parcial que gera sugestões vira erro ao buscar: "Lap" sugere Lapa, mas F02E diz que a região não foi encontrada; "862" sugere a linha 8622-10 e um ponto, mas F21E diz que nada corresponde e que a linha tem 4 dígitos | 2 | média | Eric Song Watanabe |
+| HC11 | V04(A02), V11(A04) | H8 | A legenda "Nível de risco" cobre parcialmente o pino da região consultada no extremo sul do mapa (F11 — Parelheiros) | 2 | média | Rafael Iamashita Becsei |
+| HC12 | V09(A04) | H6 | "Comparar linhas" (F25) mostra as duas linhas com o mesmo rótulo e texto, sem dados que as diferenciem; o usuário precisa lembrar o que viu antes | 2 | média | Henrique Hodel Babler |
+| HC13 | V01(A01), V01(A04) | H4 | O botão "Consultar outra região" muda de cor (azul) e de posição (esquerda) em F11, enquanto em F04 e F04A é branco e fica à direita | 2 | média | Victor Pimentel Lario |
+| HC14 | V02(A03) | H4 | A mesma ação aparece como "Encerrar consulta" em uma tela e só "Encerrar" em outra (telas de falha/dados insuficientes) | 1 | baixa | Eric Song Watanabe |
+| HC15 | V07(A04) | H4 | As opções de horário mudam entre F22 (17:00, 17:30, 18:00) e F27 (16:30, 17:00, 18:00), e a dica "Formato hh:mm" sugere um campo de digitação que não existe | 1 | baixa | Rafael Iamashita Becsei |
+| HC16 | V10(A04) | H8 | Ícones sobrepostos ao texto em F06 ("Informe origem e destino…"), F23 ("Atualizado às 17:00") e F24 ("Chuva prevista") | 1 | baixa | Henrique Hodel Babler |
+| HC17 | V12(A04) | H8 | As opções de F28 ("Manter a linha e o horário", "Antecipar a saída", "Usar outra linha ou modal") não têm efeito: dá para concluir sem escolher, e F29 não menciona a escolha | 1 | baixa | Victor Pimentel Lario |
 
 > **Achados duplicados:** cinco problemas foram encontrados por dois avaliadores e foram fundidos: HC05, HC09, HC10, HC11 e HC13. Em HC10, A02 classificou o problema em H9 (a mensagem diagnostica errado) e A04 em H5 (o erro poderia ser evitado). As duas leituras foram mantidas. Em HC11, A02 deu severidade 2 e A04 deu 1; a severidade final ficou 2, porque o elemento escondido é justamente o resultado da consulta. Nos demais, a nota foi igual. Prioridade: severidade 3 = alta, 2 = média, 1 = baixa.
 >

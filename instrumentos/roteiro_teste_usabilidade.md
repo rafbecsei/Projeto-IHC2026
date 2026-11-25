@@ -3,9 +3,8 @@
 ## 1. Antes da sessão
 
 - verificar protótipo/versão;
-- testar gravação e áudio;
+- preparar cronômetro e material para registro das observações;
 - abrir formulários/planilhas;
-- limpar dados de sessão/conta de teste;
 - separar instruções das tarefas;
 - confirmar consentimento e duração;
 - quando o protótipo usar resultados/processamentos simulados, preparar dados realistas e manter a simulação consistente entre participantes.
@@ -43,7 +42,12 @@ Evite coletar dados pessoais que não sejam necessários à avaliação. Registr
 
 | ID | Instrução ao participante | O moderador pode esclarecer | O moderador não deve dizer |
 |---|---|---|---|
-| UT01 | Você está se preparando para realizar um deslocamento e gostaria de verificar se uma região de seu interesse apresenta risco de alagamento. Utilize a interface para consultar as informações disponíveis e entender a situação da região | Repetir o cenário ou esclarecer o objetivo do deslocamento e da consulta, sem acrescentar instruções sobre como utilizar a interface | Indicar onde clicar, qual campo utilizar, qual botão selecionar, onde encontrar o risco ou qual caminho seguir para concluir a tarefa |
+| UT01 | Você está se preparando para realizar um deslocamento e gostaria de verificar se uma região de seu interesse apresenta risco de alagamento. Utilize a interface para consultar as informações disponíveis e entender a situação da região. | Repetir o cenário ou esclarecer o objetivo da consulta, sem indicar como utilizar a interface. | Indicar onde clicar, qual campo utilizar, qual botão selecionar, onde encontrar o risco ou qual caminho seguir. |
+| UT02 | Você gostaria de verificar a situação de uma outra região da cidade. Utilize a interface para localizar essa região e consultar as informações de risco disponíveis. | Repetir que deve consultar outra região, sem indicar o caminho. | Informar como localizar a região, onde clicar ou qual opção selecionar. |
+| UT03 | Após consultar uma região, você gostaria de entender melhor a situação apresentada. Explore as informações disponíveis e explique com suas próprias palavras o que elas indicam sobre o risco de alagamento naquele local. | Repetir que o objetivo é explicar o que compreendeu sobre o risco. | Explicar o significado do nível de risco ou dizer qual interpretação é considerada correta. |
+| UT04 | Você gostaria de obter mais informações sobre as condições da região que está consultando para compreender melhor a situação. Explore as informações adicionais disponibilizadas pela interface. | Repetir que deve procurar informações complementares relacionadas à situação da região. | Informar onde estão as informações complementares, qual botão abrir ou qual tela acessar. |
+
+A tarefa deve expressar **objetivo do usuário**, e não indicar diretamente os controles ou o caminho de navegação que deverá ser utilizado.
 
 A tarefa deve expressar **objetivo do usuário**, e não indicar diretamente os controles ou o caminho de navegação que deverá ser utilizado.
 
@@ -53,23 +57,19 @@ Registrar início/fim, sucesso, erros, hesitações, comentários, pedidos de aj
 
 Observe também, quando pertinente:
 
-- compreensão de métricas/termos técnicos;
-- percepção de status de processamento;
-- escolha e remoção de filtros;
-- interpretação de estados vazios/erro;
-- prevenção de ações destrutivas;
-- entendimento de papéis/permissões;
-- confiança ao interpretar resultados/recomendações;
-- dificuldades de navegação, busca ou compreensão que possam afetar a conclusão da tarefa.
+- compreensão do nível de risco e das informações apresentadas;
+- distinção entre estimativa de risco e ocorrência confirmada;
+- percepção do estado de processamento da consulta;
+- compreensão de estados de erro ou dados indisponíveis;
+- facilidade para localizar uma região;
+- facilidade para localizar informações complementares;
+- dificuldades de navegação ou compreensão que possam afetar a conclusão da tarefa.
 
 ## 6. Pós-tarefa
 
-Aplicar o questionário pós-tarefa definido no plano, utilizando escala de satisfação de 1 a 5, e registrar comentários curtos, como:Aplicar o questionário pós-tarefa definido no plano, utilizando escala de satisfação de 1 a 5, e registrar comentários curtos, como:
+Aplicar o questionário pós-tarefa definido no plano, utilizando escala de satisfação de 1 a 5, e registrar comentários curtos, como:
 
 - O que tornou essa tarefa fácil ou difícil?
-- As informações apresentadas foram claras?
-- Você conseguiu compreender o risco da região consultada?
-- Sentiu falta de alguma informação para entender melhor a situação?O que tornou essa tarefa fácil ou difícil?
 - As informações apresentadas foram claras?
 - Você conseguiu compreender o risco da região consultada?
 - Sentiu falta de alguma informação para entender melhor a situação?

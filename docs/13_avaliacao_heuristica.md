@@ -118,6 +118,34 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 | H9 | Estado de busca sem correspondência | <img width="2188" height="1370" alt="image" src="https://github.com/user-attachments/assets/7ef140d8-bb95-4944-aad6-b895de06e8c6" /> | O usuário recebe retorno de que a região não foi encontrada e pode seguir alternativas para corrigir ou continuar a consulta. |
 | H10 | Explicações e orientações contextualizadas | <img width="1950" height="1214" alt="image" src="https://github.com/user-attachments/assets/44cd3b4b-e394-4cad-926d-632876891916" /> | O protótipo oferece explicações sobre o significado do risco, contexto meteorológico, ocorrências e orientações, auxiliando o usuário na compreensão das informações. |
 
+## Avaliador A02 — Victor Pimentel Lario
+
+### 4.2. Matriz de cobertura das 10 heurísticas
+
+| Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
+|---|---|---|---|---|
+| H1 | F03, F04, F04A, F23L, F23, F29 | não | - | F03 e F23L mostram as etapas da consulta (região identificada, reunindo dados, estimando risco). F04A avisa que o risco mudou desde a última consulta ("era moderado às 16:50 e agora está alto"). F04 informa o horário da atualização e há quanto tempo ela foi feita |
+| H2 | F04, F05, F24, F28 | não | - | F05 e F24 traduzem a porcentagem para a linguagem do dia a dia ("78% ... cerca de 8 de cada 10 vezes"). F24 diferencia "ocorrência registrada = já aconteceu" de "nível de risco = estimativa" |
+| H3 | F03, F07, F22, F23L, F09 | não | - | Há "Cancelar consulta" durante o processamento (F03, F23L), "Editar trajeto" (F07), "Trocar" linha (F22) e "Voltar ao risco de Lapa" (F05, F09) |
+| H4 | F02E, F04, F05, F06E, F07, F10, F11, F22, F26, F27 | sim | V01 | O cabeçalho, as cores dos níveis de risco (verde/amarelo/vermelho/cinza) e a legenda do mapa se repetem em todas as telas de desktop |
+| H5 | F02, F22E | não | - | F22E avisa que os pontos de embarque e desembarque estão fora do sentido escolhido antes de consultar, e o botão "Consultar risco do trecho" fica desabilitado até a correção. Em F02 as sugestões aparecem enquanto o usuário digita, o que reduz erros no nome da região |
+| H6 | F01, F02, F02E, F20, F21E, F25 | não | - | F01 lista "Áreas em atenção agora", F20 lista as "Linhas consultadas" e F25 guarda as linhas para comparação. F02E e F21E sugerem a opção correta ("Você quis dizer") |
+| H7 | F01, F09, F23, F27 | não | - | A região pode ser escolhida pela busca ou tocando no mapa (F01). F09 separa as orientações por perfil (vou me deslocar / tenho um comércio / moro na região). F27 permite simular outro horário de saída |
+| H8 | F11, F21, F23, F26 | sim | V04 | As telas de resultado (F04, F24) priorizam o nível de risco e deixam os detalhes (chuva, ocorrências) em uma segunda camada |
+| H9 | F02E, F06E, F10, F21E, F26 | sim | V03 | F10 explica a causa ("a conexão com as fontes de dados falhou"), diz que nenhum nível de risco foi exibido para não mostrar uma estimativa incorreta e oferece "Tentar novamente" |
+| H10 | F05, F07, F09, F23 (saída 18:00) | sim | V02 | F05 explica como ler o gráfico ("acima de 20 mm/h a chuva é muito forte...") e F09 reúne as orientações e os telefones de emergência (199, 193, SMS 40199) |
+
+### 5.2. Declaração de violações
+
+| ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
+|---|---|---|---|---|---:|---|---|
+| V01 | H4 | F04 e F05 (Lapa) | Os dados de chuva se contradizem entre as telas. F04 diz "Até 28 mm/h de chuva às 17h", mas o gráfico de F05 mostra 24 mm/h às 17h e o pico de 28 mm/h às 18h. Quem decide o horário de sair com base em F04 recebe a hora de pico errada | ![print](../assets/13_heuristica/v01_A02.svg) | 3 | O erro está no resumo que todo usuário vê no fluxo principal (alta frequência) e afeta justamente a decisão que o sistema quer apoiar: quando sair. Além disso, dados contraditórios reduzem a confiança no alerta | Gerar o resumo de F04 a partir da mesma fonte do gráfico de F05 ("Até 28 mm/h às 18h") ou mostrar o intervalo ("pico entre 17h e 19h") |
+| V02 | H10 | F07 e F23 (saída 18:00) | As orientações e os telefones de emergência (F09 "O que posso fazer?") só são acessíveis a partir do resultado por região (F04). No trajeto com destino em risco alto (F07) e na linha de ônibus com risco alto às 18:00 (F23), não há botão nem link para orientações | ![print](../assets/13_heuristica/v02_A02.svg) | 3 | Afeta os dois outros fluxos principais (trajeto e transporte) exatamente nos estados de risco alto, quando a ajuda é mais necessária. No celular não existe nem a aba "Segurança" para chegar lá por outro caminho | Repetir o botão "O que posso fazer?" em F07 e F23 (e nos estados moderado/alto do celular), levando a F09 com o perfil "Vou me deslocar" já selecionado |
+| V03 | H9 | F21 e F21E (busca "862") | Em F21, a busca "862" sugere a linha 8622-10 e o "Ponto R. Clélia, 862". Ao buscar, F21E diz que "nenhuma linha, ponto ou terminal corresponde a '862'" e que "o número da linha tem 4 dígitos". A mensagem contradiz as sugestões e diagnostica o problema errado (o ponto existe e não tem 4 dígitos) | ![print](../assets/13_heuristica/v03_A02.svg) | 2 | O usuário consegue se recuperar pela sugestão "Você quis dizer", mas a mensagem o faz acreditar que errou a digitação quando não errou | Quando houver correspondência parcial, mostrar os resultados em vez do erro. Reservar F21E para buscas sem nenhuma correspondência e ajustar o texto para "Digite o número completo da linha (ex.: 8622-10) ou o nome do ponto" |
+| V04 | H8 | F11 (Parelheiros) | O marcador da região consultada (Parelheiros), destacado com o rótulo, fica embaixo da legenda "Nível de risco", que o cobre parcialmente. O mesmo marcador cinza da Represa Guarapiranga aparece cortado pela legenda nas demais telas | ![print](../assets/13_heuristica/v01_A01.svg) | 2 | Atinge toda região do extremo sul do mapa, justamente onde está a represa. O usuário perde a confirmação visual de qual ponto foi consultado | Centralizar o mapa automaticamente na região consultada e/ou permitir recolher a legenda, que pode ficar em uma área sem marcadores |
+
+**Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
+
 ## Avaliador A03 - Eric Song Watanabe
 
 ### 4.3. Matriz de cobertura das 10 heurísticas

@@ -88,11 +88,25 @@ O fluxograma deve representar, no mínimo: planejamento → recrutamento → con
 
 ### U02 — {{perfil resumido}}
 
+**Data:** 25/11/2026  **Modalidade:** pessoalmente (mesmo ambiente)  **Dispositivo:** computador com navegador  **Gravação:** não
+
+**Perfil pré-teste:** 
+
 | Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
 |---|---|---:|---|---:|---|---|---|
 | UT01 | {{...}} | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{1–5}} | {{...}} |
 
-> Repita para U03 e U04.
+### U03 — {{perfil resumido}}
+
+| Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
+|---|---|---:|---|---:|---|---|---|
+| UT01 | {{...}} | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{1–5}} | {{...}} |
+
+### U04 — {{perfil resumido}}
+
+| Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
+|---|---|---:|---|---:|---|---|---|
+| UT01 | {{...}} | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{1–5}} | {{...}} |
 
 ## D. Consolidação por tarefa
 

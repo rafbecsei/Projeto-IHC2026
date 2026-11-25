@@ -1,4 +1,4 @@
-# Entrega 13 - Avaliação de IHC por inspeção heurística
+# Entrega 13 — Avaliação de IHC por inspeção heurística
 
 **Data:** 22/11/2026  
 **Status:** 🟨 em andamento  

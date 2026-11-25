@@ -78,7 +78,7 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 
 ## Avaliador A01 — Rafael Iamashita Becsei
 
-### 4. Matriz de cobertura das 10 heurísticas
+### 4.1. Matriz de cobertura das 10 heurísticas
 
 | Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
 |---|---|---|---|---|
@@ -93,7 +93,7 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 | H9 | Todas as telas | sim | V02 | As mensagens de erros apresentam uma linguagem simples, explicações para contextualizar o que houve e uma solução para contornar esse problema |
 | H10 | Todas as telas | sim | V03 | A interface apresenta um tour, caso seja a primeira vez do usuário usando a interface, explicações sobre o risco, informações de chuva e ocorrências e orientações preventivas, oferecendo apoio contextual para a interpretação dos dados e para saber utilizar o sistema |
 
-### 5. Declaração de violações
+### 5.1. Declaração de violações
 
 | ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
 |---|---|---|---|---|---:|---|---|
@@ -103,7 +103,7 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 
 **Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
 
-### 6. Boas práticas — heurísticas não violadas (atividade didática)
+### 6.1. Boas práticas — heurísticas não violadas (atividade didática)
 
 | Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
 |---|---|---|---|

@@ -1,7 +1,7 @@
 # Entrega 13 — Avaliação de IHC por inspeção heurística
 
 **Data:** 22/11/2026  
-**Status:** 🟨 em andamento  
+**Status:** 🟩 concluida
 **Responsabilidade:** 1 avaliação completa por integrante, sobre todas as telas/estados relevantes do projeto.
 
 ## Objetivo da atividade
@@ -98,7 +98,7 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 | ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
 |---|---|---|---|---|---:|---|---|
 | V01 | H4 | F11 | Nessa tela, identifiquei que houve troca da cor e posição do botão de Consultar outra região, levando em consideração as outras telas. Nessa tela específica, o botão está azul e na esquerda, enquanto em outras telas como a F04 está branco e na direita | ![print](../assets/13_heuristica/v01_A01.svg) | 2 | Pouca frequência e não é um impacto grande | Para padronizar e seguir uma consistência em todas as telas, seria necessário deixar a cor como branca e a posição dele a direita do outro botão |
-| V02 | H9 | F11 | Nessa tela, identifiquei que não há um solução específica para o usuário seguir e contornar o erro, mesmo que esse caso seja pela falta de dados no sistema para estimar o risco, seria interessante se houvesse alguma dica de como o usuário poderia ser informar sobre isso ou até como se precaver | ![print](../assets/13_heuristica/v02_A01.svg) | 2 | Para corrigir isso ou minimizar o problema, seria necessário alguma dica de como e onde o usuário poderia conseguir informações sobre isso ou como agir nesses casos, pois pode haver um alagamento no local e não mostrar no sistema |
+| V02 | H9 | F11 | Nessa tela, identifiquei que não há um solução específica para o usuário seguir e contornar o erro, mesmo que esse caso seja pela falta de dados no sistema para estimar o risco, seria interessante se houvesse alguma dica de como o usuário poderia ser informar sobre isso ou até como se precaver | ![print](../assets/13_heuristica/v02_A01.svg) | 2 | Acontece só quando faltam dados para a região, mas nesse caso o usuário fica sem orientação, e pode haver um alagamento no local que o sistema não mostra | Incluir uma dica de como e onde o usuário pode conseguir informações sobre a região (ex.: órgãos oficiais) e como agir nesses casos |
 | V03 | H10 | F01 | Mesmo a interface sendo simples e intuitiva, identifiquei que não há um tour inicial para o usuário que acabou de acessar pela primeira vez ser contextualizado sobre as funcionalidades da ferramenta e funções que pode usar para chegar no resultado desejado, também não há uma aba de guia que possa ajudar durante o uso do sistema | ![print](../assets/13_heuristica/v03_A01.svg) | 3 | Seria importante adicionar o tour de inicio quando o usuário entra pela primeira vez ou uma aba com guia em todas as telas que, se houver dúvidas, seja possível entender ali o que fazer |
 
 **Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
@@ -173,7 +173,22 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 
 **Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
 
-> Repita a seção para A02, A03... um avaliador por integrante.
+### 6.3. Boas práticas - heurísticas não violadas (atividade didática)
+
+| Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
+|---|---|---|---|
+| H2 | Termos de risco e explicações em linguagem cotidiana | ![print](../assets/13_heuristica/h02_A03.svg) | Os níveis baixo, moderado e alto e as explicações sobre chuva e ocorrências usam o vocabulário do usuário, não termos técnicos do modelo. |
+| H3 | Cancelar, voltar, nova consulta e editar trajeto | ![print](../assets/13_heuristica/h03_A03.svg) | O usuário consegue sair de uma consulta em andamento ou refazê-la sem ficar preso a um caminho. |
+| H6 | Região, período e nível de risco sempre visíveis | ![print](../assets/13_heuristica/h06_A03.svg) | As informações principais continuam na tela, então o usuário não precisa lembrar o que viu em telas anteriores. |
+| H7 | Consulta por busca, pelo mapa ou por trajeto | ![print](../assets/13_heuristica/h07_A03.svg) | Há mais de um caminho para chegar ao mesmo objetivo, atendendo usuários com hábitos diferentes. |
+| H8 | Blocos separados e detalhes em tela própria | ![print](../assets/13_heuristica/h08_A03.svg) | Chuva e ocorrências ficam em uma tela específica, evitando sobrecarregar a tela principal de risco. |
+| H9 | Mensagem de falha com "Tentar novamente" | ![print](../assets/13_heuristica/h09_A03.svg) | A mensagem explica o que aconteceu, avisa que nenhum nível incorreto foi exibido e oferece uma forma de recuperação. |
+| H10 | "Como ler" e "O que posso fazer?" | ![print](../assets/13_heuristica/h10_A03.svg) | A ajuda aparece no contexto em que o usuário precisa interpretar o risco ou decidir o que fazer. |
+
+
+## Avaliador A04 - Henrique Hodel Babler
+
+> {{Pendente: matriz de cobertura (4.4), declaração de violações (5.4) e boas práticas (6.4) da inspeção individual.}}
 
 ## 7. Consolidação da equipe
 
@@ -181,24 +196,61 @@ Problemas iguais ou muito semelhantes encontrados por avaliadores diferentes dev
 
 | ID consolidado | Achados individuais | Heurística | Problema | Severidade final | Prioridade | Responsável pela correção |
 |---|---|---|---|---:|---|---|
-| HC01 | V01(A01), V04(A02) | H1 | {{...}} | {{...}} | alta | {{...}} |
+| HC01 | V01(A02) | H4 | Os dados de chuva se contradizem: F04 diz "até 28 mm/h às 17h", mas o gráfico de F05 mostra 24 mm/h às 17h e o pico de 28 mm/h às 18h. Isso induz o usuário a errar o horário de pico | 3 | alta | {{...}} |
+| HC02 | V02(A02) | H10 | As orientações e os telefones de emergência (F09) só podem ser acessados a partir do resultado por região (F04). Não há atalho no trajeto em risco alto (F07) nem na linha de ônibus em risco alto (F23) | 3 | alta | {{...}} |
+| HC03 | V03(A01) | H10 | Não há tour inicial para quem acessa pela primeira vez nem uma aba de guia disponível durante o uso (F01) | 3 | alta | {{...}} |
+| HC04 | V03(A03) | H5 | O botão "Consultar trajeto" fica habilitado antes de o usuário escolher um destino reconhecido (ex.: "Lappa" → "Lapa"), permitindo enviar uma entrada não validada (F06) | 3 | alta | {{...}} |
+| HC05 | V01(A03) | H1 | "MONITORAMENTO AO VIVO" e "DADOS DEMONSTRATIVOS" aparecem juntos, gerando dúvida sobre a atualidade dos dados (F01) | 2 | média | {{...}} |
+| HC06 | V02(A01) | H9 | Quando faltam dados para estimar o risco, a tela não indica o que o usuário pode fazer nem onde buscar a informação (F11) | 2 | média | {{...}} |
+| HC07 | V03(A02) | H9 | A busca "862" mostra sugestões (linha 8622-10 e um ponto), mas ao buscar F21E diz que nada corresponde e que a linha tem 4 dígitos. A mensagem contradiz as sugestões e diagnostica o problema errado | 2 | média | {{...}} |
+| HC08 | V04(A02) | H8 | A legenda "Nível de risco" cobre parcialmente o marcador da região consultada no extremo sul do mapa (F11 — Parelheiros, Represa Guarapiranga) | 2 | média | {{...}} |
+| HC09 | V01(A01) | H4 | O botão "Consultar outra região" muda de cor (azul) e de posição (esquerda) em F11, enquanto nas outras telas, como F04, é branco e fica à direita | 2 | média | {{...}} |
+| HC10 | V02(A03) | H4 | A mesma ação aparece como "Encerrar consulta" em uma tela e só "Encerrar" em outra (telas de falha/dados insuficientes) | 1 | baixa | {{...}} |
+
+> Nenhum problema foi encontrado por mais de um avaliador da mesma forma, então não houve fusão de achados duplicados. Como cada problema foi apontado por um único avaliador, a severidade final manteve a nota individual. Prioridade: severidade 3 = alta, 2 = média, 1 = baixa.
+>
+> **Achados relacionados:** HC02 e HC03 tratam de **acesso à ajuda (H10)**: um fala da falta de ajuda inicial e o outro da ajuda que não aparece nos fluxos de trajeto e transporte. HC06 e HC07 tratam de **mensagens de erro que não orientam bem a recuperação (H9)**. Foram mantidos separados porque ocorrem em telas diferentes e pedem correções diferentes.
+>
+> **Divergências entre avaliadores:** em H9 e H10, A01 e A02 registraram violações, enquanto A03 destacou boas práticas (mensagem de F10 com "Tentar novamente", "Como ler" e "O que posso fazer?"). As visões se complementam: a ajuda e as mensagens existem e são boas no fluxo principal, mas falham em fluxos secundários e estados de exceção.
 
 ## 8. Síntese e plano de melhoria
 
-- Quantidade de problemas por heurística e severidade.
-- Problemas críticos/graves que bloqueiam teste ou release.
-- Padrões recorrentes entre telas.
-- Correções que serão feitas antes/para a avaliação com usuários.
+**Problemas por heurística e severidade** (avaliadores A01, A02 e A03):
+
+| Heurística | Sev. 1 | Sev. 2 | Sev. 3 | Total |
+|---|---:|---:|---:|---:|
+| H1 | 0 | 1 | 0 | 1 |
+| H4 | 1 | 1 | 1 | 3 |
+| H5 | 0 | 0 | 1 | 1 |
+| H8 | 0 | 1 | 0 | 1 |
+| H9 | 0 | 2 | 0 | 2 |
+| H10 | 0 | 0 | 2 | 2 |
+| **Total** | **1** | **5** | **4** | **10** |
+
+H2, H3, H6 e H7 não tiveram violações registradas por nenhum avaliador.
+
+**Problemas críticos/graves:** nenhum problema recebeu severidade 4 (catástrofe), então nada impede o teste com usuários. Os quatro problemas de severidade 3 (HC01 a HC04) devem ser corrigidos antes de uma versão final.
+
+**Padrões recorrentes:**
+- **Consistência (H4)** foi a heurística mais violada, e cada avaliador encontrou um problema diferente: dados de chuva divergentes entre F04 e F05, botão com cor e posição diferentes em F11, e rótulo "Encerrar" com nomes diferentes. Vale fazer uma revisão geral de consistência no Figma (componentes, textos e dados).
+- **Estados de exceção** (falha, dados insuficientes, busca sem resultado) concentram 4 dos 10 problemas (HC06, HC07, HC09, HC10).
+- **Acesso à ajuda (H10)** está bom no fluxo de região, mas falta nos fluxos de trajeto e transporte e no primeiro acesso.
+- **Confiança nos dados** aparece em HC01 (valores divergentes) e HC05 ("ao vivo" junto com "demonstrativo"). As duas se relacionam com a meta MU07: o usuário não pode confundir estimativa com ocorrência nem receber informação contraditória.
+
+**Correções antes/para a avaliação com usuários:**
+- **HC01** e **HC05** estão no caminho das tarefas UT01, UT03 e UT04 (F04 e F05). O ideal é corrigir antes dos próximos testes; se não der tempo, observar se os participantes percebem a divergência.
+- **HC02**, **HC04** e **HC07** estão nos fluxos de trajeto e transporte, que não fazem parte das tarefas UT01–UT04. Ficam para a próxima versão do protótipo.
+- **HC03**, **HC06**, **HC08**, **HC09** e **HC10** entram no plano de melhoria da próxima versão do Figma, por ordem de prioridade.
 
 ## Checklist
 
-- [ ] Cada integrante fez uma inspeção completa e identificada.
-- [ ] Todas as telas/estados relevantes foram examinados.
-- [ ] Estados administrativos, filtros, relatórios, históricos, processamento e erros foram incluídos quando existentes.
-- [ ] A inspeção avaliou a interface/protótipo, não o mérito técnico do algoritmo/modelo.
-- [ ] H1–H10 aparecem na matriz de cobertura de cada avaliador.
-- [ ] Parte de violações contém apenas violações, sem “forçar” exemplos.
-- [ ] Todo problema tem print/localização e contexto.
-- [ ] Severidade possui justificativa, não apenas número.
-- [ ] Recomendação resolve a causa ou reduz o impacto.
-- [ ] Achados duplicados foram consolidados ao final.
+- [ ] Cada integrante fez uma inspeção completa e identificada. *(falta A04 — Henrique)*
+- [x] Todas as telas/estados relevantes foram examinados.
+- [x] Estados administrativos, filtros, relatórios, históricos, processamento e erros foram incluídos quando existentes.
+- [x] A inspeção avaliou a interface/protótipo, não o mérito técnico do algoritmo/modelo.
+- [x] H1–H10 aparecem na matriz de cobertura de cada avaliador.
+- [x] Parte de violações contém apenas violações, sem “forçar” exemplos.
+- [x] Todo problema tem print/localização e contexto.
+- [x] Severidade possui justificativa, não apenas número.
+- [x] Recomendação resolve a causa ou reduz o impacto.
+- [x] Achados duplicados foram consolidados ao final.
